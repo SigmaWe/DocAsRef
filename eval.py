@@ -21,17 +21,17 @@ def model_eval(sys_summaries: list, ref_summaries: list, docs: list) -> dict:
 
         # calculate traditional (reference, system summary) pairs
         print('Eval trad')
-        if model_name != 'bertscore':
-            model_result['trad'] = model.compute(predictions=sys_summaries, references=ref_summaries)
-        else:
+        if model_name == 'bertscore':
             model_result['trad'] = model.compute(predictions=sys_summaries, references=ref_summaries, lang='en')
+        else:
+            model_result['trad'] = model.compute(predictions=sys_summaries, references=ref_summaries)
 
         # calculate new (document, system summary) pairs
         print('Eval new')
-        if model_name != 'bertscore':
-            model_result['new'] = model.compute(predictions=sys_summaries, references=docs)
-        else:
+        if model_name == 'bertscore':
             model_result['new'] = model.compute(predictions=sys_summaries, references=docs, lang='en')
+        else:
+            model_result['new'] = model.compute(predictions=sys_summaries, references=docs)
 
         results[model_name] = model_result
 
@@ -43,7 +43,7 @@ def realsumm_eval():
     sys_summaries, ref_summaries, docs = realsumm.read('suenes/human/realsumm/scores_dicts/',
                                                        'suenes/human/realsumm/analysis/test.tsv')
     results = model_eval(sys_summaries, ref_summaries, docs)
-    with open('results_old/realsumm.json', 'w') as outfile:
+    with open('results/realsumm.json', 'w') as outfile:
         json.dump(results, outfile, indent=4)
 
 
@@ -51,7 +51,7 @@ def newsroom_eval():
     print('[Newsroom]')
     sys_summaries, ref_summaries, docs = newsroom.read('dataloader')
     results = model_eval(sys_summaries, ref_summaries, docs)
-    with open('results_old/newsroom.json', 'w') as outfile:
+    with open('results/newsroom.json', 'w') as outfile:
         json.dump(results, outfile, indent=4)
 
 
