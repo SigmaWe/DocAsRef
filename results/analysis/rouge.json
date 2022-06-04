@@ -1,0 +1,26 @@
+{
+    "rouge1": {
+        "newsroom_trad": 0.11626681787724016,
+        "newsroom_new": 0.15102772057366848,
+        "realsumm_trad": 0.46539325890844346,
+        "realsumm_new": 0.05772503702792155
+    },
+    "rouge2": {
+        "newsroom_trad": 0.03254879869239928,
+        "newsroom_new": 0.13331792312679513,
+        "realsumm_trad": 0.22541312851689793,
+        "realsumm_new": 0.053366448811385456
+    },
+    "rougeL": {
+        "newsroom_trad": 0.09862440766091243,
+        "newsroom_new": 0.14072418907526307,
+        "realsumm_trad": 0.32939711159685164,
+        "realsumm_new": 0.057289653813359875
+    },
+    "rougeLsum": {
+        "newsroom_trad": 0.0986783363441924,
+        "newsroom_new": 0.1406671682912436,
+        "realsumm_trad": 0.32951039094674783,
+        "realsumm_new": 0.05727549191305152
+    }
+}
