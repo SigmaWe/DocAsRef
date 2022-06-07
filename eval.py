@@ -15,7 +15,7 @@ def model_eval(sys_summaries: list, ref_summaries: list, docs: list) -> dict:
         if model_name != 'bleurt':
             model = evaluate.load(model_name)
         else:
-            model = evaluate.load('bleurt', config_name='bleurt-large-512', module_type='metric')
+            model = evaluate.load('bleurt', config_name='BLEURT-20', module_type='metric')
 
         model_result = dict()
 
@@ -23,6 +23,9 @@ def model_eval(sys_summaries: list, ref_summaries: list, docs: list) -> dict:
         print('Eval trad')
         if model_name == 'bertscore':
             model_result['trad'] = model.compute(predictions=sys_summaries, references=ref_summaries, lang='en')
+        elif model_name == 'rouge':
+            model_result['trad'] = model.compute(predictions=sys_summaries, references=ref_summaries,
+                                                 use_aggregator=False)
         else:
             model_result['trad'] = model.compute(predictions=sys_summaries, references=ref_summaries)
 
@@ -30,6 +33,8 @@ def model_eval(sys_summaries: list, ref_summaries: list, docs: list) -> dict:
         print('Eval new')
         if model_name == 'bertscore':
             model_result['new'] = model.compute(predictions=sys_summaries, references=docs, lang='en')
+        elif model_name == 'rouge':
+            model_result['new'] = model.compute(predictions=sys_summaries, references=docs, use_aggregator=False)
         else:
             model_result['new'] = model.compute(predictions=sys_summaries, references=docs)
 
@@ -39,19 +44,19 @@ def model_eval(sys_summaries: list, ref_summaries: list, docs: list) -> dict:
 
 
 def realsumm_eval():
-    print('[Realsumm]')
-    sys_summaries, ref_summaries, docs = realsumm.read('suenes/human/realsumm/scores_dicts/',
-                                                       'suenes/human/realsumm/analysis/test.tsv')
+    print('[RealSumm]')
+    sys_summaries, ref_summaries, docs, _ = realsumm.read('suenes/human/realsumm/scores_dicts/',
+                                                          'suenes/human/realsumm/analysis/test.tsv')
     results = model_eval(sys_summaries, ref_summaries, docs)
-    with open('results/realsumm.json', 'w') as outfile:
+    with open('results/model/realsumm.json', 'w') as outfile:
         json.dump(results, outfile, indent=4)
 
 
 def newsroom_eval():
     print('[Newsroom]')
-    sys_summaries, ref_summaries, docs = newsroom.read('dataloader')
+    sys_summaries, ref_summaries, docs, _ = newsroom.read('dataloader')
     results = model_eval(sys_summaries, ref_summaries, docs)
-    with open('results/newsroom.json', 'w') as outfile:
+    with open('results/model/newsroom.json', 'w') as outfile:
         json.dump(results, outfile, indent=4)
 
 
