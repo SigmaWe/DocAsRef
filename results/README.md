@@ -20,7 +20,7 @@ Pearson's correlation
 
 | | Newsroom (Trad) | Newsroom (New) | RealSumm (Trad) | RealSumm (New) |
 | - | - | - | - | - |
-| ROGUE | 0.111061 | 0.276232 | 0.372121 | 0.224316 |
+| ROUGE | 0.111061 | 0.276232 | 0.372121 | 0.224316 |
 | BertScore | 0.161255 | 0.392830 | 0.329217 | 0.210390 |
 | BLEURT | 0.182725 | 0.328996 | 0.449557 | 0.203801 |
 
@@ -28,7 +28,7 @@ Kendall's tau correlation
 
 | | Newsroom (Trad) | Newsroom (New) | RealSumm (Trad) | RealSumm (New) |
 | - | - | - | - | - |
-| ROGUE | 0.106026 | 0.232939 | 0.254568 | 0.154928 |
+| ROUGE | 0.106026 | 0.232939 | 0.254568 | 0.154928 |
 | BertScore | 0.102421 | 0.270597 | 0.210638 | 0.137448 |
 | BLEURT | 0.123753 | 0.230105 | 0.296116 | 0.132269 | 
 
@@ -36,7 +36,7 @@ Spearman's correlation
 
 | | Newsroom (Trad) | Newsroom (New) | RealSumm (Trad) | RealSumm (New) |
 | - | - | - | - | - |
-| ROGUE | 0.139709 | 0.305936 | 0.364999 | 0.228713 |
+| ROUGE | 0.139709 | 0.305936 | 0.364999 | 0.228713 |
 | BertScore | 0.137906 | 0.355111 | 0.303305 | 0.203821 |
 | BLEURT | 0.165888 | 0.304950 | 0.422660 | 0.196135 |
 
@@ -58,8 +58,8 @@ For ROUGE and BERTScore, we use the F-score (`fmeasure`, `f1`) of the medians, a
 
 | | Newsroom (Trad) | Newsroom (New) | RealSumm (Trad) | RealSumm (New) |
 | - | - | - | - | - |
-| ROGUE-1 | 0.1875 | 0.044964 | 0.346153 | 0.074613 |
-| ROGUE-2 | 0.0 | 0.036036 | 0.116883 | 0.070127 |
+| ROUGE-1 | 0.1875 | 0.044964 | 0.346153 | 0.074613 |
+| ROUGE-2 | 0.0 | 0.036036 | 0.116883 | 0.070127 |
 | ROUGE-L | 0.125 | 0.039568 | 0.192307 | 0.074613 |
 | ROUGE-Lsum | 0.125 | 0.039568 | 0.192307 | 0.074613 |
 | BertScore | 0.824063 | 0.833208 | 0.889688 | 0.848760 |
@@ -68,7 +68,7 @@ For ROUGE and BERTScore, we use the F-score (`fmeasure`, `f1`) of the medians, a
 
 #### Observation
 
-For ROGUE and BLEU, the differences in results from traditional and new evaluation approaches are significant. For BertScore, BLEURT, the differences are not significant. Therefore, it seems to be better to replace with (document, system summary) pairs when we use the latter two metrics.
+For ROUGE and BLEU, the differences in results from traditional and new evaluation approaches are significant. For BertScore, BLEURT, the differences are not significant. Therefore, it seems to be better to replace with (document, system summary) pairs when we use the latter two metrics.
 
 ## Metrics
 
