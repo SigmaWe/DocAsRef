@@ -10,6 +10,7 @@ import scipy
 
 model_scores = dict()
 corr = dict()
+corr_json = dict()
 approaches = ['trad', 'new']
 
 
@@ -139,10 +140,26 @@ def calculate(dataset: str) -> None:
         corr[dataset][metric_systems_name] = my_corr
 
 
+def convert():
+    for i in corr.keys():
+        corr_json[i] = dict()
+        for j in corr[i].keys():
+            corr_json[i][j] = dict()
+            for k in corr[i][j].keys():
+                corr_json[i][j][k] = dict()
+                for l in corr[i][j][k].keys():
+                    corr_json[i][j][k][l] = dict()
+                    for (m, n) in corr[i][j][k][l].keys():
+                        corr_json[i][j][k][l]['(' + m + ', ' + n + ')'] = corr[i][j][k][l][(m, n)]
+
+
 if __name__ == '__main__':
     model_scores = read_system_scores()
     datasets = ['newsroom', 'realsumm']
     for dataset in datasets:
         calculate(dataset)
+    convert()
+    with open('results/model/corr.json', 'w') as outfile:
+        json.dump(corr_json, outfile, indent=4)
     with open('results/model/corr.pkl', 'wb') as outfile:
         pickle.dump(corr, outfile)

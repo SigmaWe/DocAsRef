@@ -1,0 +1,324 @@
+{
+    "newsroom": {
+        "rouge": {
+            "trad": {
+                "pearsonr": {
+                    "(Coherence, precision)": -0.03718525674353258,
+                    "(Coherence, recall)": 0.24087818826244045,
+                    "(Coherence, f1)": 0.05128061235817472,
+                    "(Informativeness, precision)": -0.021295317218845585,
+                    "(Informativeness, recall)": 0.3678195521647507,
+                    "(Informativeness, f1)": 0.09810315477082669,
+                    "(Fluency, precision)": -0.040500771102219724,
+                    "(Fluency, recall)": 0.19081630264136723,
+                    "(Fluency, f1)": 0.030839190011959942,
+                    "(Relevance, precision)": 0.008285913655134447,
+                    "(Relevance, recall)": 0.31898437096910026,
+                    "(Relevance, f1)": 0.1247112639108498
+                },
+                "kendalltau": {
+                    "(Coherence, precision)": 0.02291481350140993,
+                    "(Coherence, recall)": 0.18256723853758008,
+                    "(Coherence, f1)": 0.055969435629232935,
+                    "(Informativeness, precision)": 0.034419859384016704,
+                    "(Informativeness, recall)": 0.29199123353413536,
+                    "(Informativeness, f1)": 0.08720914720645004,
+                    "(Fluency, precision)": 0.015074836976394394,
+                    "(Fluency, recall)": 0.14081880561253646,
+                    "(Fluency, f1)": 0.03977768128279695,
+                    "(Relevance, precision)": 0.06163204967609552,
+                    "(Relevance, recall)": 0.2370626292171496,
+                    "(Relevance, f1)": 0.10288397823974575
+                },
+                "spearmanr": {
+                    "(Coherence, precision)": 0.03076122499894911,
+                    "(Coherence, recall)": 0.24121185541241205,
+                    "(Coherence, f1)": 0.07506431808763483,
+                    "(Informativeness, precision)": 0.048503114793481,
+                    "(Informativeness, recall)": 0.3761845720683531,
+                    "(Informativeness, f1)": 0.11731506648094661,
+                    "(Fluency, precision)": 0.02004544870133576,
+                    "(Fluency, recall)": 0.1887297401478402,
+                    "(Fluency, f1)": 0.054060302025271116,
+                    "(Relevance, precision)": 0.08225611757991914,
+                    "(Relevance, recall)": 0.3061880554509172,
+                    "(Relevance, f1)": 0.13619887083743
+                }
+            },
+            "new": {
+                "pearsonr": {
+                    "(Coherence, precision)": 0.33999335131318353,
+                    "(Coherence, recall)": 0.15894136476954568,
+                    "(Coherence, f1)": 0.1944859744333834,
+                    "(Informativeness, precision)": 0.44908956654233934,
+                    "(Informativeness, recall)": 0.30522165228140563,
+                    "(Informativeness, f1)": 0.3530565023740615,
+                    "(Fluency, precision)": 0.2816644863880592,
+                    "(Fluency, recall)": 0.12237761563932865,
+                    "(Fluency, f1)": 0.14887140376885644,
+                    "(Relevance, precision)": 0.43818370373416826,
+                    "(Relevance, recall)": 0.23997895404149797,
+                    "(Relevance, f1)": 0.282927825650849
+                },
+                "kendalltau": {
+                    "(Coherence, precision)": 0.20528733792817103,
+                    "(Coherence, recall)": 0.19072646666387802,
+                    "(Coherence, f1)": 0.19181806118814157,
+                    "(Informativeness, precision)": 0.2544192583810141,
+                    "(Informativeness, recall)": 0.3518048554090684,
+                    "(Informativeness, f1)": 0.352506641948523,
+                    "(Fluency, precision)": 0.18526861555330829,
+                    "(Fluency, recall)": 0.14683177545083864,
+                    "(Fluency, f1)": 0.147855886769678,
+                    "(Relevance, precision)": 0.23596055510275257,
+                    "(Relevance, recall)": 0.2658184287375312,
+                    "(Relevance, f1)": 0.2669704868791073
+                },
+                "spearmanr": {
+                    "(Coherence, precision)": 0.26760243671032735,
+                    "(Coherence, recall)": 0.2563638838870148,
+                    "(Coherence, f1)": 0.25779000376329586,
+                    "(Informativeness, precision)": 0.32779033866866186,
+                    "(Informativeness, recall)": 0.45842538350124357,
+                    "(Informativeness, f1)": 0.4592361177166287,
+                    "(Fluency, precision)": 0.24106841198172418,
+                    "(Fluency, recall)": 0.1996186159436789,
+                    "(Fluency, f1)": 0.20096093693375527,
+                    "(Relevance, precision)": 0.30130837991114845,
+                    "(Relevance, recall)": 0.34985375256041035,
+                    "(Relevance, f1)": 0.35122053248641644
+                }
+            }
+        },
+        "bertscore": {
+            "trad": {
+                "pearsonr": {
+                    "(Coherence, precision)": 0.025892501789149407,
+                    "(Coherence, recall)": 0.23722046345465578,
+                    "(Coherence, f1)": 0.16469568478155816,
+                    "(Informativeness, precision)": 0.02350316264092693,
+                    "(Informativeness, recall)": 0.31777139113485775,
+                    "(Informativeness, f1)": 0.21439769400685688,
+                    "(Fluency, precision)": 0.026062288219015486,
+                    "(Fluency, recall)": 0.19751990825008786,
+                    "(Fluency, f1)": 0.1388123646960004,
+                    "(Relevance, precision)": 0.06215380984028951,
+                    "(Relevance, recall)": 0.30124344109626,
+                    "(Relevance, f1)": 0.22579380641322128
+                },
+                "kendalltau": {
+                    "(Coherence, precision)": 0.009753822344838315,
+                    "(Coherence, recall)": 0.1515938976055398,
+                    "(Coherence, f1)": 0.10523763966062899,
+                    "(Informativeness, precision)": -0.0032626824937461055,
+                    "(Informativeness, recall)": 0.21055356581702045,
+                    "(Informativeness, f1)": 0.1363294674300363,
+                    "(Fluency, precision)": 0.014619515477490944,
+                    "(Fluency, recall)": 0.13020887109785,
+                    "(Fluency, f1)": 0.08871334363258723,
+                    "(Relevance, precision)": 0.04333089765548369,
+                    "(Relevance, recall)": 0.19436940420523782,
+                    "(Relevance, f1)": 0.14760663301611487
+                },
+                "spearmanr": {
+                    "(Coherence, precision)": 0.01294876084651794,
+                    "(Coherence, recall)": 0.20599280761644986,
+                    "(Coherence, f1)": 0.1432364440791715,
+                    "(Informativeness, precision)": -0.0024993828078641463,
+                    "(Informativeness, recall)": 0.2816069996214018,
+                    "(Informativeness, f1)": 0.18336352041235865,
+                    "(Fluency, precision)": 0.019678186496804407,
+                    "(Fluency, recall)": 0.176596889433331,
+                    "(Fluency, f1)": 0.12080358088159503,
+                    "(Relevance, precision)": 0.05829783480807423,
+                    "(Relevance, recall)": 0.25802983812244146,
+                    "(Relevance, f1)": 0.19682223135381496
+                }
+            },
+            "new": {
+                "pearsonr": {
+                    "(Coherence, precision)": 0.36972257345246873,
+                    "(Coherence, recall)": 0.3262767054905372,
+                    "(Coherence, f1)": 0.37694173702990974,
+                    "(Informativeness, precision)": 0.47254795471181554,
+                    "(Informativeness, recall)": 0.46967855321320995,
+                    "(Informativeness, f1)": 0.508420270820084,
+                    "(Fluency, precision)": 0.319209077307295,
+                    "(Fluency, recall)": 0.27018769185075864,
+                    "(Fluency, f1)": 0.3192978246022091,
+                    "(Relevance, precision)": 0.4292615729668579,
+                    "(Relevance, recall)": 0.40253472402753726,
+                    "(Relevance, f1)": 0.4498848511046416
+                },
+                "kendalltau": {
+                    "(Coherence, precision)": 0.2580071776649828,
+                    "(Coherence, recall)": 0.23511959572286334,
+                    "(Coherence, f1)": 0.25790309063240113,
+                    "(Informativeness, precision)": 0.330907628305214,
+                    "(Informativeness, recall)": 0.35240053088659856,
+                    "(Informativeness, f1)": 0.36311762830870115,
+                    "(Fluency, precision)": 0.2203248325021264,
+                    "(Fluency, recall)": 0.18133088088435012,
+                    "(Fluency, f1)": 0.2102382674088267,
+                    "(Relevance, precision)": 0.27648241172432747,
+                    "(Relevance, recall)": 0.2723160074499801,
+                    "(Relevance, f1)": 0.2890168088199185
+                },
+                "spearmanr": {
+                    "(Coherence, precision)": 0.3405376002340814,
+                    "(Coherence, recall)": 0.31217058619269517,
+                    "(Coherence, f1)": 0.34087637314002006,
+                    "(Informativeness, precision)": 0.4304723692737013,
+                    "(Informativeness, recall)": 0.4586768231384467,
+                    "(Informativeness, f1)": 0.4711100688613698,
+                    "(Fluency, precision)": 0.2910435585182629,
+                    "(Fluency, recall)": 0.24356445591096249,
+                    "(Fluency, f1)": 0.2799229609896067,
+                    "(Relevance, precision)": 0.3603590564034967,
+                    "(Relevance, recall)": 0.35634306507509633,
+                    "(Relevance, f1)": 0.3762665735248818
+                }
+            }
+        },
+        "bleurt": {
+            "trad": {
+                "pearsonr": {
+                    "(Coherence, scores)": 0.14322035766995506,
+                    "(Informativeness, scores)": 0.24445241427414272,
+                    "(Fluency, scores)": 0.11064265318716156,
+                    "(Relevance, scores)": 0.2325853080476041
+                },
+                "kendalltau": {
+                    "(Coherence, scores)": 0.09355544879890494,
+                    "(Informativeness, scores)": 0.18400032217429957,
+                    "(Fluency, scores)": 0.07251434063035915,
+                    "(Relevance, scores)": 0.14494307677707538
+                },
+                "spearmanr": {
+                    "(Coherence, scores)": 0.12676048564162753,
+                    "(Informativeness, scores)": 0.24446582890578955,
+                    "(Fluency, scores)": 0.09767340599904382,
+                    "(Relevance, scores)": 0.19465601567860064
+                }
+            },
+            "new": {
+                "pearsonr": {
+                    "(Coherence, scores)": 0.29987845739950403,
+                    "(Informativeness, scores)": 0.41304394241873754,
+                    "(Fluency, scores)": 0.25838578760356484,
+                    "(Relevance, scores)": 0.34467607357466923
+                },
+                "kendalltau": {
+                    "(Coherence, scores)": 0.20241891965346318,
+                    "(Informativeness, scores)": 0.3033825057286443,
+                    "(Fluency, scores)": 0.17148447210279566,
+                    "(Relevance, scores)": 0.24313651741598655
+                },
+                "spearmanr": {
+                    "(Coherence, scores)": 0.2699867231848094,
+                    "(Informativeness, scores)": 0.39923481164882607,
+                    "(Fluency, scores)": 0.22907713345573394,
+                    "(Relevance, scores)": 0.3215046976559067
+                }
+            }
+        }
+    },
+    "realsumm": {
+        "rouge": {
+            "trad": {
+                "pearsonr": {
+                    "(litepyramid_recall, precision)": 0.24299461276082013,
+                    "(litepyramid_recall, recall)": 0.48536635645409826,
+                    "(litepyramid_recall, f1)": 0.3880032006667734
+                },
+                "kendalltau": {
+                    "(litepyramid_recall, precision)": 0.15604405900563634,
+                    "(litepyramid_recall, recall)": 0.346277598766035,
+                    "(litepyramid_recall, f1)": 0.2613830574823745
+                },
+                "spearmanr": {
+                    "(litepyramid_recall, precision)": 0.22787023961410696,
+                    "(litepyramid_recall, recall)": 0.4905736143477641,
+                    "(litepyramid_recall, f1)": 0.37655581923913345
+                }
+            },
+            "new": {
+                "pearsonr": {
+                    "(litepyramid_recall, precision)": 0.0664637883071933,
+                    "(litepyramid_recall, recall)": 0.30247368312325507,
+                    "(litepyramid_recall, f1)": 0.30401072607430846
+                },
+                "kendalltau": {
+                    "(litepyramid_recall, precision)": 0.04477281276192726,
+                    "(litepyramid_recall, recall)": 0.21004171469583224,
+                    "(litepyramid_recall, f1)": 0.2099707202761816
+                },
+                "spearmanr": {
+                    "(litepyramid_recall, precision)": 0.06737260301198177,
+                    "(litepyramid_recall, recall)": 0.30943422777472535,
+                    "(litepyramid_recall, f1)": 0.3093324377620437
+                }
+            }
+        },
+        "bertscore": {
+            "trad": {
+                "pearsonr": {
+                    "(litepyramid_recall, precision)": 0.2024426423048696,
+                    "(litepyramid_recall, recall)": 0.4425855760376667,
+                    "(litepyramid_recall, f1)": 0.34262418528238114
+                },
+                "kendalltau": {
+                    "(litepyramid_recall, precision)": 0.12417174304316948,
+                    "(litepyramid_recall, recall)": 0.28882536021988614,
+                    "(litepyramid_recall, f1)": 0.21891738364585758
+                },
+                "spearmanr": {
+                    "(litepyramid_recall, precision)": 0.18164154248960682,
+                    "(litepyramid_recall, recall)": 0.4123758081899434,
+                    "(litepyramid_recall, f1)": 0.3159006035661496
+                }
+            },
+            "new": {
+                "pearsonr": {
+                    "(litepyramid_recall, precision)": 0.129904311699575,
+                    "(litepyramid_recall, recall)": 0.2831117162674629,
+                    "(litepyramid_recall, f1)": 0.21815591531593415
+                },
+                "kendalltau": {
+                    "(litepyramid_recall, precision)": 0.08739451220244475,
+                    "(litepyramid_recall, recall)": 0.18358584577743198,
+                    "(litepyramid_recall, f1)": 0.14136485821240688
+                },
+                "spearmanr": {
+                    "(litepyramid_recall, precision)": 0.12916225963484196,
+                    "(litepyramid_recall, recall)": 0.2721076670272343,
+                    "(litepyramid_recall, f1)": 0.21019407997891124
+                }
+            }
+        },
+        "bleurt": {
+            "trad": {
+                "pearsonr": {
+                    "(litepyramid_recall, scores)": 0.4495575446086458
+                },
+                "kendalltau": {
+                    "(litepyramid_recall, scores)": 0.2961164821409889
+                },
+                "spearmanr": {
+                    "(litepyramid_recall, scores)": 0.42266089299907333
+                }
+            },
+            "new": {
+                "pearsonr": {
+                    "(litepyramid_recall, scores)": 0.20380161682504735
+                },
+                "kendalltau": {
+                    "(litepyramid_recall, scores)": 0.13226979422811355
+                },
+                "spearmanr": {
+                    "(litepyramid_recall, scores)": 0.19613516786440793
+                }
+            }
+        }
+    }
+}

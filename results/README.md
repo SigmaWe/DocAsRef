@@ -16,6 +16,8 @@ The correlation between human ratings and system scores should be stronger for t
 
 We have computed system correlation in three methods of `pearsonr`, `kendalltau`, and `spearmanr`.
 
+Values in the following table are already aggregated by means in every dataset. Non-aggregated data can be found at `model/corr.json`.
+
 Pearson's correlation
 
 | | Newsroom (Trad) | Newsroom (New) | RealSumm (Trad) | RealSumm (New) |
@@ -76,7 +78,7 @@ For ROUGE and BLEU, the differences in results from traditional and new evaluati
 
 - `eval.py`: Calculate scores on four metrics in old and new approaches, yields `model/newsroom.json` and `model/realsumm.json` (model output)
 - `format.py`: Format model output from `eval.py` to feed to correlation calculator, yields `model/scores.json` (with consistent, non-aggregated format for `rouge1`, `rouge2`, `rougeL`, `rougeLsum`, `bertscore`, and `bleurt`; but aggregated format for `bleu`)
-- `corr.py`: Compute the correlation between human ratings from datasets and scores from `model/scores.json` in old and new approaches, does not support `bleu` as the scores are already aggregated, yields `model/corr.pkl`
+- `corr.py`: Compute the correlation between human ratings from datasets and scores from `model/scores.json` in old and new approaches, does not support `bleu` as the scores are already aggregated, yields `model/corr.pkl` and `model/corr.json`
 - `analysis.py`: Aggregate scores from `eval.py` and analyze by median; aggregate correlation relationships from `model/corr.pkl` and analyze by mean; yields `analysis/rouge.json`, `analysis/bertscore.json`, `analysis/bleu.json`, `analysis/bleurt.json`, and `analysis/corr.json`
 
 #### Formatted Scores
