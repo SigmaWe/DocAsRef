@@ -16,7 +16,7 @@ The correlation between human ratings and system scores should be stronger for t
 
 We have computed system correlation in three methods of `pearsonr`, `kendalltau`, and `spearmanr`.
 
-Values in the following table are already aggregated by means in every dataset. Non-aggregated data can be found at `model/corr.json`.
+Values in the following table are already aggregated by means in every dataset. Non-aggregated data can be found at `model/corr.json` and `model/corr.xlsx`, extracted by Regex `.*: ([\d.]+),?`.
 
 Pearson's correlation
 
@@ -41,6 +41,12 @@ Spearman's correlation
 | ROUGE | 0.139709 | 0.305936 | 0.364999 | 0.228713 |
 | BertScore | 0.137906 | 0.355111 | 0.303305 | 0.203821 |
 | BLEURT | 0.165888 | 0.304950 | 0.422660 | 0.196135 |
+
+Non-aggregated correlation tables
+
+![](model/corr-newsroom.jpg)
+
+![](model/corr-realsumm.jpg)
 
 #### Observation
 
