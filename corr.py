@@ -92,9 +92,13 @@ def system_judge(scores, metrics_human, metrics_system, correlation_types) -> di
     return correlations
 
 
-def realsumm_read(metrics: list) -> dict:
+def realsumm_read(metrics: list, abs: bool) -> dict:
     _, _, _, dataset_scores = realsumm.read('suenes/human/realsumm/scores_dicts/',
-                                            'suenes/human/realsumm/analysis/test.tsv')
+                                            'suenes/human/realsumm/analysis/test.tsv', abs)
+    if abs:
+        name = 'realsumm_abs'
+    else:
+        name = 'realsumm_ext'
     system_scores = dict()
     for approach in approaches:
         system_scores[approach] = dict()
@@ -104,31 +108,29 @@ def realsumm_read(metrics: list) -> dict:
                 system_scores[approach][i][metric] = dict()
                 system_scores[approach][i][metric]['litepyramid_recall'] = dataset_scores[i][
                     'litepyramid_recall']  # human score
-                system_keys = model_scores['realsumm'][metric]['trad'].keys()
+                system_keys = model_scores[name][metric]['trad'].keys()
                 for key in system_keys:
-                    system_scores[approach][i][metric][key] = model_scores['realsumm'][metric][approach][key][i]
+                    system_scores[approach][i][metric][key] = model_scores[name][metric][approach][key][i]
     return system_scores
 
 
 def calculate(dataset: str) -> None:
     corr[dataset] = dict()
-    available_metrics_systems = {
-        'rouge': ['rouge1', 'rouge2', 'rougeL', 'rougeLsum'],
-        'bertscore': ['bertscore'],
-        'bleurt': ['bleurt']
-    }
-    for id in range(len(available_metrics_systems.keys())):
-        metric_systems_name = list(available_metrics_systems.keys())[id]
-        metric_systems = available_metrics_systems[metric_systems_name]
+    available_metrics_systems = ['rouge1', 'rouge2', 'rougeL', 'rougeLsum', 'bertscore', 'bleurt']
+    for metric_systems_name in available_metrics_systems:
+        metric_systems = [metric_systems_name]
         if dataset == 'newsroom':
             system_scores = newsroom_read(metric_systems)
             metrics_human = ['Coherence', 'Informativeness', 'Fluency', 'Relevance']
-        elif dataset == 'realsumm':
-            system_scores = realsumm_read(metric_systems)
+        elif dataset == 'realsumm_abs':
+            system_scores = realsumm_read(metric_systems, abs=True)
+            metrics_human = ['litepyramid_recall']
+        elif dataset == 'realsumm_ext':
+            system_scores = realsumm_read(metric_systems, abs=False)
             metrics_human = ['litepyramid_recall']
         else:
             raise NotImplementedError()
-        if metric_systems_name == 'bleurt':
+        if metric_systems_name != 'bertscore':
             metrics_system = ['scores']
         else:
             metrics_system = ['precision', 'recall', 'f1']
@@ -155,7 +157,7 @@ def convert():
 
 if __name__ == '__main__':
     model_scores = read_system_scores()
-    datasets = ['newsroom', 'realsumm']
+    datasets = ['newsroom', 'realsumm_abs', 'realsumm_ext']
     for dataset in datasets:
         calculate(dataset)
     convert()

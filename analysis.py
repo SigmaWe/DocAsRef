@@ -4,6 +4,9 @@ from os import path
 
 import numpy as np
 
+datasets = ['newsroom', 'realsumm_abs', 'realsumm_ext']
+approaches = ['trad', 'new']
+
 
 def read_json(path_result: str) -> dict:
     with open(path_result, 'r') as infile:
@@ -15,79 +18,62 @@ def read_pkl(path_result: str) -> dict:
         return pickle.load(infile)
 
 
-def read_results() -> (dict, dict, dict):
+def read_results() -> dict:
     path_results = 'results'
-    newsroom_results = read_json(path.join(path_results, 'model/newsroom.json'))
-    realsumm_results = read_json(path.join(path_results, 'model/realsumm.json'))
-    corr_results = read_pkl(path.join(path_results, 'model/corr.pkl'))
-    return newsroom_results, realsumm_results, corr_results
+    results = dict()
+    for dataset in datasets:
+        results[dataset] = read_json(path.join(path_results, 'model/' + dataset + '.json'))
+    results['corr'] = read_pkl(path.join(path_results, 'model/corr.pkl'))
+    return results
 
 
-def extract_results(metric_name: str, newsroom_results: dict, realsumm_results: dict) -> (dict, dict, dict, dict):
-    newsroom_trad = newsroom_results[metric_name]['trad']
-    newsroom_new = newsroom_results[metric_name]['new']
-    realsumm_trad = realsumm_results[metric_name]['trad']
-    realsumm_new = realsumm_results[metric_name]['new']
-    return newsroom_trad, newsroom_new, realsumm_trad, realsumm_new
-
-
-def rouge_analysis(newsroom_results: dict, realsumm_results: dict) -> None:
+def rouge_analysis(results: dict) -> None:
     rouge_scores = dict()
-    newsroom_trad, newsroom_new, realsumm_trad, realsumm_new = extract_results('rouge', newsroom_results,
-                                                                               realsumm_results)
     metrics = ['rouge1', 'rouge2', 'rougeL', 'rougeLsum']
     for metric in metrics:
         metric_score = dict()
-        metric_score['newsroom_trad'] = np.median(newsroom_trad[metric], axis=1)[2]
-        metric_score['newsroom_new'] = np.median(newsroom_new[metric], axis=1)[2]
-        metric_score['realsumm_trad'] = np.median(realsumm_trad[metric], axis=1)[2]
-        metric_score['realsumm_new'] = np.median(realsumm_new[metric], axis=1)[2]
+        for dataset in datasets:
+            metric_score[dataset] = dict()
+            for approach in approaches:
+                metric_score[dataset][approach] = np.median(results[dataset]['rouge'][approach][metric])
         rouge_scores[metric] = metric_score
     with open('results/analysis/rouge.json', 'w') as outfile:
         json.dump(rouge_scores, outfile, indent=4)
 
 
-def bertscore_analysis(newsroom_results: dict, realsumm_results: dict) -> None:
+def bertscore_analysis(results: dict) -> None:
     bertscore_score = dict()
-    newsroom_trad, newsroom_new, realsumm_trad, realsumm_new = extract_results('bertscore', newsroom_results,
-                                                                               realsumm_results)
-    bertscore_score['newsroom_trad'] = np.median(newsroom_trad['f1'])
-    bertscore_score['newsroom_new'] = np.median(newsroom_new['f1'])
-    bertscore_score['realsumm_trad'] = np.median(realsumm_trad['f1'])
-    bertscore_score['realsumm_new'] = np.median(realsumm_new['f1'])
+    for dataset in datasets:
+        bertscore_score[dataset] = dict()
+        for approach in approaches:
+            bertscore_score[dataset][approach] = np.median(results[dataset]['bertscore'][approach]['f1'])
     with open('results/analysis/bertscore.json', 'w') as outfile:
         json.dump(bertscore_score, outfile, indent=4)
 
 
-def bleu_analysis(newsroom_results: dict, realsumm_results: dict) -> None:
+def bleu_analysis(results: dict) -> None:
     bleu_score = dict()
-    newsroom_trad, newsroom_new, realsumm_trad, realsumm_new = extract_results('bleu', newsroom_results,
-                                                                               realsumm_results)
-    bleu_score['newsroom_trad'] = newsroom_trad['bleu']
-    bleu_score['newsroom_new'] = newsroom_new['bleu']
-    bleu_score['realsumm_trad'] = realsumm_trad['bleu']
-    bleu_score['realsumm_new'] = realsumm_new['bleu']
+    for dataset in datasets:
+        bleu_score[dataset] = dict()
+        for approach in approaches:
+            bleu_score[dataset][approach] = np.median(results[dataset]['bleu'][approach]['bleu'])
     with open('results/analysis/bleu.json', 'w') as outfile:
         json.dump(bleu_score, outfile, indent=4)
 
 
-def bleurt_analysis(newsroom_results: dict, realsumm_results: dict) -> None:
+def bleurt_analysis(results: dict) -> None:
     bleurt_score = dict()
-    newsroom_trad, newsroom_new, realsumm_trad, realsumm_new = extract_results('bleurt', newsroom_results,
-                                                                               realsumm_results)
-    bleurt_score['newsroom_trad'] = np.median(newsroom_trad['scores'])
-    bleurt_score['newsroom_new'] = np.median(newsroom_new['scores'])
-    bleurt_score['realsumm_trad'] = np.median(realsumm_trad['scores'])
-    bleurt_score['realsumm_new'] = np.median(realsumm_new['scores'])
+    for dataset in datasets:
+        bleurt_score[dataset] = dict()
+        for approach in approaches:
+            bleurt_score[dataset][approach] = np.median(results[dataset]['bleurt'][approach]['scores'])
     with open('results/analysis/bleurt.json', 'w') as outfile:
         json.dump(bleurt_score, outfile, indent=4)
 
 
 def corr_analysis(corr_results: dict) -> None:
     results = dict()
-    datasets = ['newsroom', 'realsumm']
-    metrics = ['rouge', 'bertscore', 'bleurt']
-    approaches = ['trad', 'new']
+    metrics = ['rouge1', 'rouge2', 'rougeL', 'rougeLsum', 'bertscore', 'bleurt']
     for dataset in datasets:
         results[dataset] = dict()
         for metric in metrics:
@@ -102,9 +88,9 @@ def corr_analysis(corr_results: dict) -> None:
 
 
 if __name__ == '__main__':
-    newsroom_results, realsumm_results, corr_results = read_results()
-    rouge_analysis(newsroom_results, realsumm_results)
-    bertscore_analysis(newsroom_results, realsumm_results)
-    bleu_analysis(newsroom_results, realsumm_results)
-    bleurt_analysis(newsroom_results, realsumm_results)
-    corr_analysis(corr_results)
+    results = read_results()
+    rouge_analysis(results)
+    bertscore_analysis(results)
+    bleu_analysis(results)
+    bleurt_analysis(results)
+    corr_analysis(results['corr'])

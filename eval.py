@@ -43,12 +43,16 @@ def model_eval(sys_summaries: list, ref_summaries: list, docs: list) -> dict:
     return results
 
 
-def realsumm_eval():
+def realsumm_eval(abs: bool):
     print('[RealSumm]')
     sys_summaries, ref_summaries, docs, _ = realsumm.read('suenes/human/realsumm/scores_dicts/',
-                                                          'suenes/human/realsumm/analysis/test.tsv')
+                                                          'suenes/human/realsumm/analysis/test.tsv', abs)
     results = model_eval(sys_summaries, ref_summaries, docs)
-    with open('results/model/realsumm.json', 'w') as outfile:
+    if abs:
+        filename = 'realsumm_abs.json'
+    else:
+        filename = 'realsumm_ext.json'
+    with open('results/model/' + filename, 'w') as outfile:
         json.dump(results, outfile, indent=4)
 
 
@@ -62,4 +66,5 @@ def newsroom_eval():
 
 if __name__ == '__main__':
     newsroom_eval()
-    realsumm_eval()
+    realsumm_eval(abs=True)
+    realsumm_eval(abs=False)
