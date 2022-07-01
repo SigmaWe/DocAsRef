@@ -8,7 +8,19 @@ Idea: Forrest Sheng Bao (forrest.bao@gmai.com), Iowa State University
 
 ### 2022/07/01
 
-In Progress …
+#### Result
+
+Traditional Approach:
+
+![](analysis/corr_trad.jpg)
+
+New Approach:
+
+![](analysis/corr_new.jpg)
+
+#### Observation
+
+Comparing the two tables above, the new approach performs better in newsroom dataset but worse in both realsumm_abs and realsumm_ext datasets. Similar to observation on 2022/06/07.
 
 ### 2022/06/07
 
@@ -48,9 +60,7 @@ Spearman's correlation
 
 Non-aggregated correlation tables
 
-![](model/corr-newsroom.jpg)
-
-![](model/corr-realsumm.jpg)
+See `model/corr-newsroom.jpg` and `model/corr-realsumm.jpg` of commit `2e6bd48a58853558b30dbf890dc7200d7b4ccf39`
 
 #### Observation
 
@@ -90,6 +100,7 @@ For ROUGE and BLEU, the differences in results from traditional and new evaluati
 - `format.py`: Format model output from `eval.py` to feed to correlation calculator, yields `model/scores.json` (with consistent, non-aggregated format for `rouge1`, `rouge2`, `rougeL`, `rougeLsum`, `bertscore`, and `bleurt`; but aggregated format for `bleu`)
 - `corr.py`: Compute the correlation between human ratings from datasets and scores from `model/scores.json` in old and new approaches, does not support `bleu` as the scores are already aggregated, yields `model/corr.pkl` and `model/corr.json`
 - `analysis.py`: Aggregate scores from `eval.py` and analyze by median; aggregate correlation relationships from `model/corr.pkl` and analyze by mean; yields `analysis/rouge.json`, `analysis/bertscore.json`, `analysis/bleu.json`, `analysis/bleurt.json`, and `analysis/corr.json`
+- `table.py`: Generate CSV table to `analysis/corr.csv` from `analysis/corr.json` by `analysis.py`
 
 #### Formatted Scores
 
