@@ -36,3 +36,14 @@ In the pilot study, we wanna see how well ROUGE, BLEU, BLEURT, and BERTScore wor
 Do not reinvent the wheel:
 1. For the four metrics, use Huggingface's API, e.g., [BERTScore](https://huggingface.co/spaces/evaluate-metric/bertscore). 
 2. For code to load document and system summaries in RealSumm and Newsroom, please refer to the [`human` folder of SueNes' Github repo](https://github.com/forrestbao/SueNes/tree/master/human). Just copy whatever is needed into this repo. 
+
+# New approach 1: sentence-level, better similarity metrics, and better weighting methods
+The pilot study results show that when reference summaries are of good qualities, vanilla use of BERTScore is not good. Hence, we will try the following changes: 
+
+| | BERTScore | Our changes | 
+|--|--|--|
+|Comparison between |Token pairs| sentence pairs | 
+| Similarity metrics| cosine | NLI-based, semantically tell whether two sentences are related, could be trained on our own tasks | 
+| weighting scheme | IDF | semantic weighting  |
+
+
