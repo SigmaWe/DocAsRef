@@ -31,7 +31,7 @@ Because a summarization evaluation dataset (TAC2010, RealSumm, Newsroom) is usua
 
 # Pilot study: feeding document-summary pairs to reference-based metrics.
 
-In the pilot study, we wanna see how  well ROGUE, BLEU, BLEURT, and BERTSCore work when being fed with (document, system summary) pairs instead of (reference, system summary) pairs which they were originally designed for. Use the four metrics to make predictions on system summaries in the test datasets, and then compute the aligment between their predictions and human ratings, which are also in the test sets. 
+In the pilot study, we wanna see how well ROUGE, BLEU, BLEURT, and BERTScore work when being fed with (document, system summary) pairs instead of (reference, system summary) pairs which they were originally designed for. Use the four metrics to make predictions on system summaries in the test datasets, and then compute the alignment between their predictions and human ratings, which are also in the test sets. 
 
 Do not reinvent the wheel:
 1. For the four metrics, use Huggingface's API, e.g., [BERTScore](https://huggingface.co/spaces/evaluate-metric/bertscore). 
