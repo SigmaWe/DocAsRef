@@ -49,6 +49,19 @@ The pilot study results show that when reference summaries are of good qualities
 ## Approach 1.1 Sentence embedding + cosine similarity, no weighting
 The document is a list of $n$ sentences: $D=[D_1, D_2, ..., D_n]$, while the system/generated summary (to be evaluated) is a list of $m$ sentences: $S=[S_1, S_2, ..., S_m]$. And $m < < n$. 
 
+A memory-saving psedocode: 
+
+```
+for D in all_documents:
+  [D1, D2, D3] = sentence_segmenter(D) # break D into sentences
+  [E_1, E_2, ...] = sentence_embedder([D1, D2, ...]) # embed each sentence in D
+  for S in summaries_of_D (not all summaries, only those of D):
+    [S1, S2, ...] = sentence_segmenter(S) # break an S into sentences 
+    [E'_1, E'_2, ...] = sentence_embedder([S1, S2, ...]) # embed each sentence in S
+    
+    score = summary_scorer(E1, E2, ..., E'1, E'2)
+```
+
 ## Sentence weighting
 
 
