@@ -46,4 +46,31 @@ The pilot study results show that when reference summaries are of good qualities
 | Similarity metrics| cosine | NLI-based, semantically tell whether two sentences are related, could be trained on our own tasks | 
 | weighting scheme | IDF | semantic weighting  |
 
+## Approach 1.1 Sentence embedding + cosine similarity, no weighting
+The document is a list of $n$ sentences: $D=[D_1, D_2, ..., D_n]$, while the system/generated summary (to be evaluated) is a list of $m$ sentences: $S=[S_1, S_2, ..., S_m]$. And $m < < n$. 
+
+A memory-saving psedocode: 
+
+```
+for D in all_documents:
+  [D1, D2, D3] = sentence_segmenter(D) # break D into sentences
+  [E_1, E_2, ...] = sentence_embedder([D1, D2, ...]) # embed each sentence in D
+  for S in summaries_of_D (not all summaries, only those of D):
+    [S1, S2, ...] = sentence_segmenter(S) # break an S into sentences 
+    [E'_1, E'_2, ...] = sentence_embedder([S1, S2, ...]) # embed each sentence in S
+    
+    score = summary_scorer(E1, E2, ..., E'1, E'2)
+```
+
+## Sentence weighting
+
+
+f1(D1, D2, ..., S1, S2, ...) 
+
+f2( f3(D1, S1, S2, ..), f3(D2, S1, S2, ..), ...., f3(Dn, S1, S2, ...) ) 
+
+entropy ( sim(S1, D1), sim(S1, D2), ... ) 
++ 
+entropy ( sim(S2, D1), sim(S2, D2), ... )
+
 
