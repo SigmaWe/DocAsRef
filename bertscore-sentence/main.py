@@ -8,7 +8,7 @@ def newsroom_eval():
     print('[Newsroom]')
     sys_summaries, ref_summaries, docs, _ = newsroom.read('dataloader')
     results = score(sys_summaries, docs)
-    np.savetxt('results/model/newsroom.json', results, delimiter=',')
+    np.savetxt('bertscore-sentence/results/newsroom.csv', results, delimiter=',')
 
 
 def realsumm_eval(abs: bool):
@@ -20,7 +20,7 @@ def realsumm_eval(abs: bool):
         filename = 'realsumm_abs.csv'
     else:
         filename = 'realsumm_ext.csv'
-    np.savetxt('results/' + filename, results, delimiter=',')
+    np.savetxt('bertscore-sentence/results/' + filename, results, delimiter=',')
 
 
 if __name__ == '__main__':

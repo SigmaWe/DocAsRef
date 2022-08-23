@@ -1,0 +1,7 @@
+numpy
+sentence-transformers
+torch
+tqdm
+tabulate
+scipy
+evaluate
