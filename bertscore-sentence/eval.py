@@ -57,7 +57,3 @@ def score(cands: List[str], refs: List[str]) -> np.ndarray:
         del cand_sentence_emb, cand_sentences, ref_sentence_emb, ref_sentences, product_mat, cos_sim_mat
 
     return all_scores
-
-
-if __name__ == '__main__':
-    pass
