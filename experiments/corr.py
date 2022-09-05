@@ -1,21 +1,19 @@
 import json
-import pickle
 
 import numpy as np
+import scipy
 
 import dataloader.newsroom as newsroom
 import dataloader.realsumm as realsumm
-
-import scipy
+from experiments.env import datasets, approaches, eval_metrics
 
 model_scores = dict()
 corr = dict()
 corr_json = dict()
-approaches = ['trad', 'new']
 
 
 def read_system_scores() -> dict:
-    with open('results/model/scores.json', 'r') as infile:
+    with open('experiments/results/model/scores.json', 'r') as infile:
         return json.load(infile)
 
 
@@ -116,8 +114,7 @@ def realsumm_read(metrics: list, abs: bool) -> dict:
 
 def calculate(dataset: str) -> None:
     corr[dataset] = dict()
-    available_metrics_systems = ['rouge1', 'rouge2', 'rougeL', 'rougeLsum', 'bertscore', 'bleurt']
-    for metric_systems_name in available_metrics_systems:
+    for metric_systems_name in eval_metrics:
         metric_systems = [metric_systems_name]
         if dataset == 'newsroom':
             system_scores = newsroom_read(metric_systems)
@@ -130,10 +127,12 @@ def calculate(dataset: str) -> None:
             metrics_human = ['litepyramid_recall']
         else:
             raise NotImplementedError()
-        if metric_systems_name != 'bertscore':
-            metrics_system = ['scores']
-        else:
+        if metric_systems_name == 'bertscore':
             metrics_system = ['precision', 'recall', 'f1']
+        elif metric_systems_name == 'bertscore-sentence':
+            metrics_system = ['P', 'R', 'F']
+        else:
+            metrics_system = ['scores']
         correlation_types = ['pearsonr', 'kendalltau', 'spearmanr']
         my_corr = dict()
         for approach in approaches:
@@ -155,13 +154,26 @@ def convert():
                         corr_json[i][j][k][l]['(' + m + ', ' + n + ')'] = corr[i][j][k][l][(m, n)]
 
 
+def summarize(corr_results: dict) -> None:
+    results = dict()
+    for dataset in datasets:
+        results[dataset] = dict()
+        for metric in eval_metrics:
+            results[dataset][metric] = dict()
+            for approach in approaches:
+                results[dataset][metric][approach] = dict()
+                for corr_type in corr_results[dataset][metric][approach].keys():
+                    values = list(corr_results[dataset][metric][approach][corr_type].values())
+                    results[dataset][metric][approach][corr_type] = np.mean(values)
+    with open('experiments/results/analysis/corr.json', 'w') as outfile:
+        json.dump(results, outfile, indent=4)
+
+
 if __name__ == '__main__':
     model_scores = read_system_scores()
-    datasets = ['newsroom', 'realsumm_abs', 'realsumm_ext']
     for dataset in datasets:
         calculate(dataset)
     convert()
-    with open('results/model/corr.json', 'w') as outfile:
+    with open('experiments/results/analysis/corr_full.json', 'w') as outfile:
         json.dump(corr_json, outfile, indent=4)
-    with open('results/model/corr.pkl', 'wb') as outfile:
-        pickle.dump(corr, outfile)
+    summarize(corr_json)

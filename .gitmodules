@@ -1,6 +1,3 @@
 [submodule "suenes"]
 	path = suenes
 	url = https://github.com/forrestbao/SueNes.git
-[submodule "bertscore"]
-	path = bertscore
-	url = https://github.com/Tiiiger/bert_score.git

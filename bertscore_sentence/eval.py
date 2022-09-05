@@ -1,3 +1,4 @@
+import typing
 from typing import List
 
 import numpy as np
@@ -8,7 +9,7 @@ from tqdm import tqdm
 embedder = sentence_transformers.SentenceTransformer("all-MiniLM-L6-v2")
 
 
-def score(cands: List[str], refs: List[str]) -> np.ndarray:
+def score_np(cands: List[str], refs: List[str]) -> np.ndarray:
     all_scores = np.zeros((len(cands), 3))
 
     def bert_encode(piece: str):
@@ -30,9 +31,9 @@ def score(cands: List[str], refs: List[str]) -> np.ndarray:
         cos_sim_mat = np.zeros((len(ref_sentence_emb), len(cand_sentence_emb)))
         for i in range(len(ref_sentence_emb)):
             for j in range(len(cand_sentence_emb)):
-                numerator = np.inner(np.reshape(ref_sentence_emb[i], (1, -1)), cand_sentence_emb[j])[
-                    0]  # ndarray: (1,) -> float32
-                denominator = np.inner(np.linalg.norm(ref_sentence_emb[i]), np.linalg.norm(cand_sentence_emb[j]))  # float32
+                numerator = np.dot(ref_sentence_emb[i], cand_sentence_emb[j])  # float32
+                denominator = np.dot(np.linalg.norm(ref_sentence_emb[i]),
+                                     np.linalg.norm(cand_sentence_emb[j]))  # float32
                 cos_sim = np.divide(numerator, denominator)  # float32
                 product_mat[i][j] = numerator
                 cos_sim_mat[i][j] = cos_sim
@@ -57,3 +58,12 @@ def score(cands: List[str], refs: List[str]) -> np.ndarray:
         del cand_sentence_emb, cand_sentences, ref_sentence_emb, ref_sentences, product_mat, cos_sim_mat
 
     return all_scores
+
+
+def score(cands: List[str], refs: List[str]) -> typing.Dict:
+    score_arr = score_np(cands, refs)
+    return {
+        "P": score_arr[:, 0].tolist(),
+        "R": score_arr[:, 1].tolist(),
+        "F": score_arr[:, 2].tolist()
+    }
