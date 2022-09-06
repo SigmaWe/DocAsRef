@@ -27,15 +27,15 @@ def format(model_name: str) -> None:
     if model_name == 'rouge':
         metrics = ['rouge1', 'rouge2', 'rougeL', 'rougeLsum']
         for dataset in datasets:
-            dataset_scores = dict()
+            rouge_scores = dict()
             for metric in metrics:
-                dataset_scores[metric] = dict()
+                rouge_scores[metric] = dict()
                 for approach in approaches:
                     approach_scores = results[dataset]['rouge'][approach][metric]
                     formatted_approach_scores = dict()
                     formatted_approach_scores['scores'] = approach_scores
-                    dataset_scores[metric][approach] = formatted_approach_scores
-            formatted_scores[dataset] = dataset_scores
+                    rouge_scores[metric][approach] = formatted_approach_scores
+            formatted_scores[dataset].update(rouge_scores)
     elif model_name == 'bertscore':
         for dataset in datasets:
             formatted_scores[dataset]['bertscore'] = dict()
@@ -50,6 +50,8 @@ def format(model_name: str) -> None:
 
 if __name__ == '__main__':
     results = read_results()
+    for dataset in datasets:
+        formatted_scores[dataset] = dict()
     for model_name in models:
         format(model_name)
     with open('experiments/results/model/scores.json', 'w') as outfile:
