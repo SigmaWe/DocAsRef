@@ -1,0 +1,260 @@
+{
+    "newsroom": {
+        "rouge1": {
+            "trad": {
+                "pearsonr": 0.15594249486568784,
+                "kendalltau": 0.13788245334788404,
+                "spearmanr": 0.19422953722132658
+            },
+            "new": {
+                "pearsonr": 0.35301906569089203,
+                "kendalltau": 0.3623974921358623,
+                "spearmanr": 0.4931065602901854
+            }
+        },
+        "rouge2": {
+            "trad": {
+                "pearsonr": 0.09906912440128854,
+                "kendalltau": 0.1736061319196385,
+                "spearmanr": 0.22242954647595403
+            },
+            "new": {
+                "pearsonr": 0.383044478348745,
+                "kendalltau": 0.39786281705558957,
+                "spearmanr": 0.5316462884744069
+            }
+        },
+        "rougeL": {
+            "trad": {
+                "pearsonr": 0.11404086626399206,
+                "kendalltau": 0.10839223608693188,
+                "spearmanr": 0.1527986179285339
+            },
+            "new": {
+                "pearsonr": 0.3682307190843051,
+                "kendalltau": 0.3792736856542359,
+                "spearmanr": 0.514666647351939
+            }
+        },
+        "rougeLsum": {
+            "trad": {
+                "pearsonr": 0.11404086626399206,
+                "kendalltau": 0.10839223608693188,
+                "spearmanr": 0.1527986179285339
+            },
+            "new": {
+                "pearsonr": 0.3682307190843051,
+                "kendalltau": 0.3792736856542359,
+                "spearmanr": 0.514666647351939
+            }
+        },
+        "bertscore": {
+            "trad": {
+                "pearsonr": 0.24541120828484178,
+                "kendalltau": 0.15771009090540875,
+                "spearmanr": 0.22072231494306593
+            },
+            "new": {
+                "pearsonr": 0.5975276928019416,
+                "kendalltau": 0.4296411054226859,
+                "spearmanr": 0.572623101261796
+            }
+        },
+        "bleurt": {
+            "trad": {
+                "pearsonr": 0.27532424304311137,
+                "kendalltau": 0.18443826168386956,
+                "spearmanr": 0.25724109388897687
+            },
+            "new": {
+                "pearsonr": 0.500418689833811,
+                "kendalltau": 0.35941080436909734,
+                "spearmanr": 0.4887551064348671
+            }
+        },
+        "bertscore-sentence": {
+            "trad": {
+                "pearsonr": 0.3950569363848006,
+                "kendalltau": 0.2638873451309672,
+                "spearmanr": 0.3654780641514826
+            },
+            "new": {
+                "pearsonr": 0.6060635102496172,
+                "kendalltau": 0.4076748330975401,
+                "spearmanr": 0.5492327860912533
+            }
+        }
+    },
+    "realsumm_abs": {
+        "rouge1": {
+            "trad": {
+                "pearsonr": 0.5840501663551281,
+                "kendalltau": 0.41054106736403634,
+                "spearmanr": 0.5728265389879345
+            },
+            "new": {
+                "pearsonr": 0.3233123444275029,
+                "kendalltau": 0.21543617665062453,
+                "spearmanr": 0.31698043204022797
+            }
+        },
+        "rouge2": {
+            "trad": {
+                "pearsonr": 0.5655386668052393,
+                "kendalltau": 0.4129394700887854,
+                "spearmanr": 0.5758401967870274
+            },
+            "new": {
+                "pearsonr": 0.32411722841106394,
+                "kendalltau": 0.2173068213130148,
+                "spearmanr": 0.32019622910470497
+            }
+        },
+        "rougeL": {
+            "trad": {
+                "pearsonr": 0.5128340976719938,
+                "kendalltau": 0.35970070962517414,
+                "spearmanr": 0.5103572079605415
+            },
+            "new": {
+                "pearsonr": 0.32676399139344814,
+                "kendalltau": 0.2174161106949151,
+                "spearmanr": 0.3200441891567805
+            }
+        },
+        "rougeLsum": {
+            "trad": {
+                "pearsonr": 0.5128340976719938,
+                "kendalltau": 0.35970070962517414,
+                "spearmanr": 0.5103572079605415
+            },
+            "new": {
+                "pearsonr": 0.32676399139344814,
+                "kendalltau": 0.2174161106949151,
+                "spearmanr": 0.3200441891567805
+            }
+        },
+        "bertscore": {
+            "trad": {
+                "pearsonr": 0.4485387299573101,
+                "kendalltau": 0.29818264860627125,
+                "spearmanr": 0.426788121569247
+            },
+            "new": {
+                "pearsonr": 0.1843464988148289,
+                "kendalltau": 0.12601846722602164,
+                "spearmanr": 0.18643893251659446
+            }
+        },
+        "bleurt": {
+            "trad": {
+                "pearsonr": 0.563952586514187,
+                "kendalltau": 0.3872695851067014,
+                "spearmanr": 0.544854186997014
+            },
+            "new": {
+                "pearsonr": 0.23286948740253804,
+                "kendalltau": 0.1517981417498496,
+                "spearmanr": 0.22489503658025942
+            }
+        },
+        "bertscore-sentence": {
+            "trad": {
+                "pearsonr": 0.30134438094366467,
+                "kendalltau": 0.20152579689330677,
+                "spearmanr": 0.2935817793939491
+            },
+            "new": {
+                "pearsonr": 0.26269740043661566,
+                "kendalltau": 0.1726991823066133,
+                "spearmanr": 0.25188143950668057
+            }
+        }
+    },
+    "realsumm_ext": {
+        "rouge1": {
+            "trad": {
+                "pearsonr": 0.2547127415815572,
+                "kendalltau": 0.14861665986848718,
+                "spearmanr": 0.20988246942755948
+            },
+            "new": {
+                "pearsonr": 0.17056769992946544,
+                "kendalltau": 0.11668324576907085,
+                "spearmanr": 0.1707065957005945
+            }
+        },
+        "rouge2": {
+            "trad": {
+                "pearsonr": 0.2971352930625117,
+                "kendalltau": 0.19116419778764435,
+                "spearmanr": 0.2712405237874062
+            },
+            "new": {
+                "pearsonr": 0.16979206605718555,
+                "kendalltau": 0.119155874680575,
+                "spearmanr": 0.1740230088329624
+            }
+        },
+        "rougeL": {
+            "trad": {
+                "pearsonr": 0.24168161174441327,
+                "kendalltau": 0.15966207551799702,
+                "spearmanr": 0.2316855126892376
+            },
+            "new": {
+                "pearsonr": 0.17064807216820463,
+                "kendalltau": 0.11848948672705939,
+                "spearmanr": 0.17271776887656132
+            }
+        },
+        "rougeLsum": {
+            "trad": {
+                "pearsonr": 0.24168161174441327,
+                "kendalltau": 0.15966207551799702,
+                "spearmanr": 0.2316855126892376
+            },
+            "new": {
+                "pearsonr": 0.17064807216820463,
+                "kendalltau": 0.11848948672705939,
+                "spearmanr": 0.17271776887656132
+            }
+        },
+        "bertscore": {
+            "trad": {
+                "pearsonr": 0.2173538197936912,
+                "kendalltau": 0.131976338110626,
+                "spearmanr": 0.19006138926914687
+            },
+            "new": {
+                "pearsonr": 0.06441269536095717,
+                "kendalltau": 0.03716705089203253,
+                "spearmanr": 0.05413504774692588
+            }
+        },
+        "bleurt": {
+            "trad": {
+                "pearsonr": 0.27598957193708096,
+                "kendalltau": 0.16132519703275214,
+                "spearmanr": 0.2330385330499019
+            },
+            "new": {
+                "pearsonr": 0.060340399628791466,
+                "kendalltau": 0.02998768175674908,
+                "spearmanr": 0.043881550693140134
+            }
+        },
+        "bertscore-sentence": {
+            "trad": {
+                "pearsonr": 0.1803729132282912,
+                "kendalltau": 0.11686020053780327,
+                "spearmanr": 0.1677936767550086
+            },
+            "new": {
+                "pearsonr": 0.12019553217313887,
+                "kendalltau": 0.08366103280702623,
+                "spearmanr": 0.123095355213393
+            }
+        }
+    }
+}
