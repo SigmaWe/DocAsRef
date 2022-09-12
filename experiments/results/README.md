@@ -6,6 +6,20 @@ Idea: Forrest Sheng Bao (forrest.bao@gmai.com), Iowa State University
 
 ## Analysis
 
+### 2022/09/09
+
+There is a new evaluation metric added: BertScore-Sentence with cosine similarity, which has been described at the root of the project as Approach 1.1.
+
+#### Results
+
+- [Correlation (Full) between Human and System Scores](analysis/corr_full.csv)
+- [Correlation (Summary) between Human and System Scores](analysis/corr.csv)
+- [All Scores](model/scores.json)
+
+I replicated the experiment on `models=['bertscore']` and `models=['bertscore', 'bertscore-sentence']` and the correlation of vanilla BertScore is still high, which contradicts the earlier results in July. The code to evaluate vanilla BertScore has never changed, and there seems to be no significant change in the library, which indicates that the dataloader for dataset `newsroom` might have caused the wrong results in July.
+
+From the current results, BertScore-Sentence does not differ significantly from BertScore in approach `new` and dataset `newsroom`, but BertScore-Sentence could help to improve the low correlation in approach `new` and datasets `realsumm_abs` and `realsumm_ext`, which is significant but not strong enough; also, BertScore's result in approach `new` and dataset `newsroom` is good and outperforms other metrics and approaches. Therefore, human reference should no longer be needed for evaluating the dataset `newsroom`.
+
 ### 2022/07/01
 
 #### Result

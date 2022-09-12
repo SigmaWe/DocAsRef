@@ -142,6 +142,10 @@ def calculate(dataset: str) -> None:
 
 
 def convert():
+    # corr: key(dataset), key(eval_metric), key(approach), key(corr_metric), tuple(human_metric, system_metric),
+    #       value(corr)
+    # corr_json: key(dataset), key(eval_metric), key(approach), key(corr_metric),
+    #            key(string(human_metric, system_metric)), value(corr)
     for i in corr.keys():
         corr_json[i] = dict()
         for j in corr[i].keys():
@@ -155,6 +159,7 @@ def convert():
 
 
 def summarize(corr_results: dict) -> None:
+    # corr_json_summarized: key(dataset), key(eval_metric), key(approach), key(corr_metric), value(mean_corr)
     results = dict()
     for dataset in datasets:
         results[dataset] = dict()
