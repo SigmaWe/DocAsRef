@@ -5,6 +5,7 @@
 # forrest dot bao at gmail dot com 
 
 from ast import dump
+from tkinter import E
 import pandas 
 import typing 
 import html
@@ -170,15 +171,123 @@ def pool_human_rating(
     return df
 
 
-def get_scores(documents: typing.List[str], ref_summaries: typing.List[str], system_summaries: typing.List[str]):
-    pass 
 
-def eval_newsroom(newsroom_csv: str = "../dataloader/newsroom-human-eval.csv", consensus_method:str = "mean"):
-    df = load_newsroom(newsroom_csv=newsroom_csv, consensus_method=consensus_method)
+import evaluate
+# import sys
+# sys.path.append("../")
+# import bertscore_sentence.eval as bertscore_sentence
 
-    print (df)
+import functools
+import env
+import numpy, scipy
 
-    return  df 
+
+# TODO: Use dict rather than branch in eval 
+# ref_{free,based}_metrics is a dict {str:function}
+# ref_based_metrics = {
+#     "bleurt": evaluate.load('bleurt', config_name='BLEURT-20', module_type='metric'), 
+#     "rouge": functools.partial( evaluate.load("rouge"), use_aggregator=False)
+
+#     }
+
+# ref_free_metrics = {    
+#     "bertscore-sentence": bertscore_sentence
+# }
+# all metrics shall return a dict {metric_name: List[float]}
+
+def flatten_batch_result_to_DF(batch_result: dict) -> pandas.DataFrame:
+    """Flatten a batch result to a Pandas DataFrame 
+
+    The batch result is a multi-level dict  returned by eval.model_eval function in this lib:
+    {
+        "bleurt":{
+            "trad":{
+                "metric 1": List[float]
+                "metric 2": List[float]
+                ...
+            }
+            "new": {
+                "metric 1": List[float]
+                "metric 2": List[float]
+                ...
+            }
+        }
+
+    }
+
+    """
+
+    # Create a placeholder multiindex Dataframe
+    index= pandas.MultiIndex.from_tuples([], names = ["approach", "model", "score_name"])
+    df =pandas.DataFrame((), columns =index)
+
+
+    for model_name in batch_result: # key in dict
+        for approach in batch_result[model_name]: # key in dict
+            for score_name, score_list in batch_result[model_name][approach].items(): 
+                # detailed_score_name_tuple.append( (approach, model_name, score_name) )
+                df[approach, model_name, score_name] = score_list
+
+    return df 
+                
+
+
+def eval_summary_level(
+    df:pandas.DataFrame, 
+    document_column: str="ArticleText",
+    system_summary_column: str="SystemSummary", 
+    reference_summary_column: str="ReferenceSummary", 
+    human_metrics: typing.List[str] = ["CoherenceRating", "FluencyRating", "InformativenessRating", "RelevanceRating"], 
+    exp_models = env.models, 
+    exp_approaches = env.approaches
+):
+    """Get summary-level scores for system summaries using various scoring methods. 
+
+    Summary-level evaluation means that we compute corraltion for each document and then average across documents 
+
+    """
+
+    import eval 
+
+    # batching based on articles. Also saves memory. 
+    for articleID in df["ArticleID"].unique(): # summary-level, we so need to loop over articles 
+        print (articleID)
+        batch = df [ df["ArticleID"] == articleID] 
+
+        # without .to_numpy(), will run into issues starting from 2nd iteration 
+        docs   = batch[document_column].to_numpy()
+        cands  = batch[system_summary_column].to_numpy()
+        refs   = batch[reference_summary_column].to_numpy()
+
+        human_scores = batch[human_metrics] # a DF
+
+        batch_result = eval.model_eval(cands, refs, docs, exp_models, exp_approaches)
+        result_df = flatten_batch_result_to_DF(batch_result)
+        # result_df[approach, model, score_name] ===> a list for each pair in the batch 
+
+        # correlation_types = ['pearsonr', 'kendalltau', 'spearmanr']
+        for human_score_name, human_score in human_scores.iteritems(): 
+            for (approach, model, score_name) in result_df.columns:
+                metric_score = result_df[(approach, model, score_name)]
+                cc = scipy.stats.spearmanr(human_score, metric_score)[0]
+
+                print (articleID, human_score_name, approach, model, score_name,  cc)
+
+
+def eval_system_level():
+    """Get system-level scores for system summaries using various scoring methods. 
+
+    System-level evaluation means that we compute corraltion for each system and then average across systems
+
+    """
+
+    pass
+
+if __name__ == "__main__":
+    # df = pandas.read_csv('merged.csv',              quotechar="'", doublequote=False,                escapechar= "\\" )
+    eval_summary_level(df)
+
+
 
 
 

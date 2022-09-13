@@ -2,13 +2,14 @@ import json
 
 import evaluate
 
-import bertscore_sentence.eval as bertscore_sentence
-import dataloader.newsroom as newsroom
-import dataloader.realsumm as realsumm
-from experiments.env import models, approaches
+# import bertscore_sentence.eval as bertscore_sentence
+# import dataloader.newsroom as newsroom
+# import dataloader.realsumm as realsumm
+from env import models, approaches
+import typing 
 
 
-def model_eval(sys_summaries: list, ref_summaries: list, docs: list) -> dict:
+def model_eval(sys_summaries: list, ref_summaries: list, docs: list, models:typing.List[str], approaches:typing.List[str]) -> dict:
     results = dict()
 
     for model_name in models:
@@ -32,38 +33,10 @@ def model_eval(sys_summaries: list, ref_summaries: list, docs: list) -> dict:
             elif model_name == 'rouge':
                 model_result[approach] = model.compute(predictions=cands, references=refs, use_aggregator=False)
             elif model_name == 'bertscore-sentence':
-                model_result[approach] = model.score(cands=cands, refs=refs)
+                model_result[approach] = model.compute(cands=cands, refs=refs)
             else:
                 model_result[approach] = model.compute(predictions=cands, references=refs)
 
         results[model_name] = model_result
 
     return results
-
-
-def realsumm_eval(abs: bool):
-    print('[RealSumm] abs=' + str(abs))
-    sys_summaries, ref_summaries, docs, _ = realsumm.read('suenes/human/realsumm/scores_dicts/',
-                                                          'suenes/human/realsumm/analysis/test.tsv', abs)
-    results = model_eval(sys_summaries, ref_summaries, docs)
-    if abs:
-        filename = 'realsumm_abs.json'
-    else:
-        filename = 'realsumm_ext.json'
-    with open('experiments/results/model/' + filename, 'w') as outfile:
-        json.dump(results, outfile, indent=4)
-
-
-def newsroom_eval():
-    print('[Newsroom]')
-    sys_summaries, ref_summaries, docs, _ = newsroom.read('dataloader')
-    results = model_eval(sys_summaries, ref_summaries, docs)
-    with open('experiments/results/model/newsroom.json', 'w') as outfile:
-        json.dump(results, outfile, indent=4)
-
-
-if __name__ == '__main__':
-    evaluate.enable_progress_bar()
-    newsroom_eval()
-    realsumm_eval(abs=True)
-    realsumm_eval(abs=False)
