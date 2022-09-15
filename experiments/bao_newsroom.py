@@ -182,6 +182,7 @@ def pool_human_rating(
     return df
 
 # print nested dictionaries 
+# https://stackoverflow.com/questions/50929768/pandas-multiindex-more-than-2-levels-dataframe-to-nested-dict-json
 def nest(d: dict) -> dict:
     result = {}
     for key, value in d.items():
@@ -214,7 +215,7 @@ if __name__ == "__main__":
         # to see where to get the CSV and JSONL files 
         dump_csv=human_evaluation_csv_with_refs)
     df = pool_human_rating(df)
-    corr_df = eval.eval_summary_level(df, debug=True)
+    corr_df = eval.eval_summary_level(df, debug=False)
     with pandas.option_context('display.max_rows', None,
                        'display.max_columns', None,
                        'display.precision', 3,

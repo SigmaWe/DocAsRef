@@ -62,7 +62,8 @@ def score_np(predictions: List[str], references: List[str]) -> np.ndarray:
     return all_scores
 
 
-def compute(cands: List[str], refs: List[str]) -> typing.Dict:
+def compute(predictions: List[str], references: List[str]) -> typing.Dict:
+    cands, refs = predictions, references # simple renaming. 
     score_arr = score_np(cands, refs)
     return {
         "P": score_arr[:, 0].tolist(),
