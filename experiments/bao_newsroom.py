@@ -1,18 +1,16 @@
-# Use pandas to redo it
+# Data loader and experiment code for Newsroom 
 
 # Copyleft 2022 Forrest Sheng Bao 
 # with Iowa State University and Textea Inc. 
 # forrest dot bao at gmail dot com 
 
-from ast import dump
-from tkinter import E
+from textwrap import indent
 import pandas 
 import typing 
 import html
 import difflib 
 import json 
 import tqdm
-
 
 def clean_text(s:str):
     """Clean up the text in doc or summ in newsroom dataset
@@ -82,30 +80,46 @@ def append_reference_summaries_to_newsroom_human_evaluation(
     # 1. extract all article IDs and titles. This avoids repeated string
     # matching later. It will save 3x7-1 times of the time. 
     
-    id2title, id2ref = {}, {}
-    for id in df["ArticleID"].unique():
-        titles = df[df['ArticleID']==id] ['ArticleTitle'].unique()
-        assert len(titles) == 1, "More than one articleTitle per articleID, wrong! "
-        title= titles[0]
-        id2title[id] = title
-        id2ref[id] = ""
+    # id2title, id2ref = {}, {}   
+    # for id in df["ArticleID"].unique():
+    #     titles = df[df['ArticleID']==id] ['ArticleTitle'].unique()
+    #     assert len(titles) == 1, "More than one articleTitle per articleID, wrong! "
+    #     title= titles[0]
+    #     id2title[id] = title
+    #     id2ref[id] = ""
 
-    # 2. Pair articleIDs to reference summaries in newsroom_raw_jsonl 
+
+    title2ref = {title: "" for title in df["ArticleTitle"].unique()}         
+
+    # # 2. Pair articleIDs to reference summaries in newsroom_raw_jsonl 
+    # with open(newsroom_test_jsonl, 'r') as f:
+    #     for line in tqdm.tqdm(f):
+    #         sample = json.loads(line)
+    #         title_from_newsroom_jsonl = sample["title"]
+    #         ref_from_newsroom_jsonl = sample["summary"]
+    #         for articleID, title_from_human_evaluation_csv in id2title.items():
+    #             ref = id2ref[articleID]
+    #             if ref == "": # only compare those not matched 
+    #                 if difflib.SequenceMatcher(
+    #                     a=title_from_newsroom_jsonl, b=title_from_human_evaluation_csv).quick_ratio() > 0.9:
+    #                         id2ref[articleID] = ref_from_newsroom_jsonl
+
     with open(newsroom_test_jsonl, 'r') as f:
         for line in tqdm.tqdm(f):
             sample = json.loads(line)
             title_from_newsroom_jsonl = sample["title"]
             ref_from_newsroom_jsonl = sample["summary"]
-            for articleID, title_from_human_evaluation_csv in id2title.items():
-                ref = id2ref[articleID]
+            for title_from_human_evaluation_csv, ref in title2ref.items():
                 if ref == "": # only compare those not matched 
                     if difflib.SequenceMatcher(
                         a=title_from_newsroom_jsonl, b=title_from_human_evaluation_csv).quick_ratio() > 0.9:
-                        id2ref[articleID] = ref_from_newsroom_jsonl
-                        print 
+                            title2ref[title_from_human_evaluation_csv] = ref_from_newsroom_jsonl
+
 
     # 3. insert a column called ref summary in input dataframe 
-    df["ReferenceSummary"] = df["ArticleID"].map(id2ref)
+    # df["ReferenceSummary"] = df["ArticleID"].map(id2ref)
+
+    df["ReferenceSummary"] = df["ArticleTitle"].map(title2ref)
 
     # 4. Dump the DF with Reference Summaries to a new CSV file 
     if dump_csv != "":
@@ -113,18 +127,16 @@ def append_reference_summaries_to_newsroom_human_evaluation(
                 index=False, 
                 # FIXME: I am not sure about the three options below 
                 # Need to use the same settings when loading dumpped CSV.
-                quotechar="'", 
-                doublequote=False, 
                 escapechar= "\\" ) 
 
     return df
 
 
-if __name__ == "__main__":
-    df = append_reference_summaries_to_newsroom_human_evaluation(
-        "../dataloader/newsroom-human-eval.csv", 
-        "/media/forrest/12T_EasyStore1/data/NLP/resources/newsroom/test.jsonl", 
-        dump_csv='merged.csv')
+# if __name__ == "__main__":
+#     df = append_reference_summaries_to_newsroom_human_evaluation(
+#         "../dataloader/newsroom-human-eval.csv", 
+#         "/media/forrest/12T_EasyStore1/data/NLP/resources/newsroom/test.jsonl", 
+#         dump_csv='merged.csv')
 
 def pool_human_rating(
     df: pandas.DataFrame, 
@@ -145,7 +157,6 @@ def pool_human_rating(
     In [5]: df.iloc[1]
     Out[5]: 
     ArticleID                                                              144
-    ArticleTitle             '16 & Pregnant' Couple Arrested, Toddler Taken...
     System                                                           fragments
     ArticleText              Jacksonville, Ark., police arrested reality TV...
     SystemSummary            Jacksonville , Ark. , police arrested reality ...
@@ -161,133 +172,61 @@ def pool_human_rating(
     # exec(f'df_grouped = df_raw.groupby(by=["ArticleID", "System", "ArticleText", "SystemSummary"]).{consensus_method}().reset_index()')   
 
     if pool_method == "mean":
-        df = df.groupby(by=["ArticleID", "ArticleTitle", "System", "ArticleText", "SystemSummary"]).mean().reset_index()  
+        df = df.groupby(by=["ArticleID", "System", "ArticleText", "SystemSummary", "ReferenceSummary"]).mean().reset_index()  
     elif pool_method == "median":
-        df = df.groupby(by=["ArticleID", "ArticleTitle", "System", "ArticleText", "SystemSummary"]).median().reset_index()  
+        df = df.groupby(by=["ArticleID", "System", "ArticleText", "SystemSummary", "ReferenceSummary"]).median().reset_index()  
     else: 
         print ("Wrong consensus method")
         exit()
     
     return df
 
+# print nested dictionaries 
+def nest(d: dict) -> dict:
+    result = {}
+    for key, value in d.items():
+        target = result
+        for k in key[:-1]:  # traverse all keys but the last
+            target = target.setdefault(k, {})
+        target[key[-1]] = value
+    return result
 
-
-import evaluate
-# import sys
-# sys.path.append("../")
-# import bertscore_sentence.eval as bertscore_sentence
-
-import functools
-import env
-import numpy, scipy
-
-
-# TODO: Use dict rather than branch in eval 
-# ref_{free,based}_metrics is a dict {str:function}
-# ref_based_metrics = {
-#     "bleurt": evaluate.load('bleurt', config_name='BLEURT-20', module_type='metric'), 
-#     "rouge": functools.partial( evaluate.load("rouge"), use_aggregator=False)
-
-#     }
-
-# ref_free_metrics = {    
-#     "bertscore-sentence": bertscore_sentence
-# }
-# all metrics shall return a dict {metric_name: List[float]}
-
-def flatten_batch_result_to_DF(batch_result: dict) -> pandas.DataFrame:
-    """Flatten a batch result to a Pandas DataFrame 
-
-    The batch result is a multi-level dict  returned by eval.model_eval function in this lib:
-    {
-        "bleurt":{
-            "trad":{
-                "metric 1": List[float]
-                "metric 2": List[float]
-                ...
-            }
-            "new": {
-                "metric 1": List[float]
-                "metric 2": List[float]
-                ...
-            }
-        }
-
-    }
-
-    """
-
-    # Create a placeholder multiindex Dataframe
-    index= pandas.MultiIndex.from_tuples([], names = ["approach", "model", "score_name"])
-    df =pandas.DataFrame((), columns =index)
-
-
-    for model_name in batch_result: # key in dict
-        for approach in batch_result[model_name]: # key in dict
-            for score_name, score_list in batch_result[model_name][approach].items(): 
-                # detailed_score_name_tuple.append( (approach, model_name, score_name) )
-                df[approach, model_name, score_name] = score_list
-
-    return df 
-                
-
-
-def eval_summary_level(
-    df:pandas.DataFrame, 
-    document_column: str="ArticleText",
-    system_summary_column: str="SystemSummary", 
-    reference_summary_column: str="ReferenceSummary", 
-    human_metrics: typing.List[str] = ["CoherenceRating", "FluencyRating", "InformativenessRating", "RelevanceRating"], 
-    exp_models = env.models, 
-    exp_approaches = env.approaches
-):
-    """Get summary-level scores for system summaries using various scoring methods. 
-
-    Summary-level evaluation means that we compute corraltion for each document and then average across documents 
-
-    """
-
-    import eval 
-
-    # batching based on articles. Also saves memory. 
-    for articleID in df["ArticleID"].unique(): # summary-level, we so need to loop over articles 
-        print (articleID)
-        batch = df [ df["ArticleID"] == articleID] 
-
-        # without .to_numpy(), will run into issues starting from 2nd iteration 
-        docs   = batch[document_column].to_numpy()
-        cands  = batch[system_summary_column].to_numpy()
-        refs   = batch[reference_summary_column].to_numpy()
-
-        human_scores = batch[human_metrics] # a DF
-
-        batch_result = eval.model_eval(cands, refs, docs, exp_models, exp_approaches)
-        result_df = flatten_batch_result_to_DF(batch_result)
-        # result_df[approach, model, score_name] ===> a list for each pair in the batch 
-
-        # correlation_types = ['pearsonr', 'kendalltau', 'spearmanr']
-        for human_score_name, human_score in human_scores.iteritems(): 
-            for (approach, model, score_name) in result_df.columns:
-                metric_score = result_df[(approach, model, score_name)]
-                cc = scipy.stats.spearmanr(human_score, metric_score)[0]
-
-                print (articleID, human_score_name, approach, model, score_name,  cc)
-
-
-def eval_system_level():
-    """Get system-level scores for system summaries using various scoring methods. 
-
-    System-level evaluation means that we compute corraltion for each system and then average across systems
-
-    """
-
-    pass
+def df_to_nested_dict(df: pandas.DataFrame) -> dict:
+    d = df.to_dict(orient='index')
+    return {k: nest(v) for k, v in d.items()}
 
 if __name__ == "__main__":
-    # df = pandas.read_csv('merged.csv',              quotechar="'", doublequote=False,                escapechar= "\\" )
-    eval_summary_level(df)
+    import eval # DocAsRef's
+    import os.path 
 
+    human_evaluation_csv_with_refs = 'newsroom_human_eval_with_refs.csv'
+    
+    if os.path.exists(human_evaluation_csv_with_refs):
+        print ("Loading data...")
+        df = pandas.read_csv(human_evaluation_csv_with_refs, escapechar= "\\" )
+    else:
+        print ("Appending reference summaries to Newsroom human evaluation part...")
+        df = append_reference_summaries_to_newsroom_human_evaluation(
+        "../dataloader/newsroom-human-eval.csv", 
+        "/media/forrest/12T_EasyStore1/data/NLP/resources/newsroom/test.jsonl", 
+        # See doc above for function 
+        # append_reference_summaries_to_newsroom_human_evaluation
+        # to see where to get the CSV and JSONL files 
+        dump_csv=human_evaluation_csv_with_refs)
+    df = pool_human_rating(df)
+    corr_df = eval.eval_summary_level(df, debug=True)
+    with pandas.option_context('display.max_rows', None,
+                       'display.max_columns', None,
+                       'display.precision', 3,
+                       ):
+        print(corr_df['average'])
 
+    with open("newsroom_results.json", 'w') as f:
+        json_ugly = corr_df.to_json(orient="index")
+        json_parsed = json.loads(json_ugly)
+        f.write(json.dumps(json_parsed, indent=2))
+        # f.write(str((corr_df.to_dict())))
+    
 
 
 

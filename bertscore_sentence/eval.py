@@ -9,7 +9,9 @@ from tqdm import tqdm
 embedder = sentence_transformers.SentenceTransformer("all-MiniLM-L6-v2")
 
 
-def score_np(cands: List[str], refs: List[str]) -> np.ndarray:
+def score_np(predictions: List[str], references: List[str]) -> np.ndarray:
+    cands, refs = predictions, references # simple renaming. 
+
     all_scores = np.zeros((len(cands), 3))
 
     def bert_encode(piece: str):
@@ -60,7 +62,7 @@ def score_np(cands: List[str], refs: List[str]) -> np.ndarray:
     return all_scores
 
 
-def score(cands: List[str], refs: List[str]) -> typing.Dict:
+def compute(cands: List[str], refs: List[str]) -> typing.Dict:
     score_arr = score_np(cands, refs)
     return {
         "P": score_arr[:, 0].tolist(),
