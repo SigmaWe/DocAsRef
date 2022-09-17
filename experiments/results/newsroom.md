@@ -1,3 +1,7 @@
+
+The result below has the following cofigurations: 
+1. `idf` in BERTScore is False/default. 
+
 ```
 corr_metric  aspect                 approach  model               score_name
 pearsonr     CoherenceRating        trad      rouge               rouge1       -0.081

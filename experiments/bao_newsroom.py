@@ -113,7 +113,7 @@ def append_reference_summaries_to_newsroom_human_evaluation(
                 if ref == "": # only compare those not matched 
                     if difflib.SequenceMatcher(
                         a=title_from_newsroom_jsonl, b=title_from_human_evaluation_csv).quick_ratio() > 0.9:
-                            title2ref[title_from_human_evaluation_csv] = ref_from_newsroom_jsonl
+                            title2ref[title_from_human_evaluation_csv] = clean_text(ref_from_newsroom_jsonl)
 
 
     # 3. insert a column called ref summary in input dataframe 

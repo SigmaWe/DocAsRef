@@ -59,7 +59,7 @@ def model_eval(
             cands = sys_summaries
             refs = ref_summaries if approach == "trad" else docs
             if model_name == 'bertscore':
-                model_result = model.compute(predictions=cands, references=refs, lang='en')
+                model_result = model.compute(predictions=cands, references=refs, lang='en', use_fast_tokenizer=True)
             elif model_name == 'rouge':
                 model_result = model.compute(predictions=cands, references=refs, use_aggregator=False)
             elif model_name == 'bertscore-sentence':
@@ -69,7 +69,8 @@ def model_eval(
 
             # model_result is a dict, e.g., {'ROUGE-1': [0.1, 0.9, 0.8], 'ROUGE-2':[0.5, 0.7 0.8]} each item in a value-list corresponds to a (doc, sys summ) pair  or a (ref summ, sys summ) pair. 
             for score_name, score_list in model_result.items():
-                batch_result_df[approach, model_name, score_name] = score_list
+                if score_name != "hashcode":
+                    batch_result_df[approach, model_name, score_name] = score_list
 
     return batch_result_df
 
@@ -102,6 +103,7 @@ def eval_summary_level(
     system_summary_column: str      = env.system_summary_column, 
     reference_summary_column: str   = env.reference_summary_column, 
     human_metrics: typing.List[str] = env.human_metrics, 
+    pre_calculated_metrics: typing.List[str] = [], # some datasets contain metric scores 
     debug = False 
 ):
     """Get summary-level scores for system summaries using various scoring methods. 
@@ -129,24 +131,27 @@ def eval_summary_level(
 
     for batchID, doc in enumerate(tqdm.tqdm ( dataset_df[document_column].unique())):
 
-        # corr_df[doc] = 
+        if debug: 
+            if batchID > 2 : 
+                break 
+
 
         batch = dataset_df [ dataset_df[document_column] == doc] 
         # without .to_numpy(), will run into issues starting from 2nd iteration 
         docs   = batch[document_column].to_numpy()
         sys_summs  = batch[system_summary_column].to_numpy()
         ref_summs   = batch[reference_summary_column].to_numpy()
-
         human_scores = batch[human_metrics] # a DF
 
         batch_result_df = model_eval(sys_summs, ref_summs, docs, exp_models, exp_approaches)
-        # result_df[approach, model, score_name] ===> a list for each pair in the batch 
+        # batch_result_df[approach, model, score_name] ===> a list for each pair in the batch 
+
+        # Insert precalculated metrics 
+        if isinstance(pre_calculated_metrics, list) and len(pre_calculated_metrics)> 0: 
+            for score_name in pre_calculated_metrics: 
+                batch_result_df["ByRealSumm","ByRealSumm",score_name] = batch[score_name].to_numpy()
 
         corr_df = batched_corr(corr_df, human_scores, batch_result_df, corr_metrics, batchID)
-
-        if debug: 
-            if batchID > 2 : 
-                break 
 
     final_corr_df = corr_df.mean(axis=1)
     corr_df['average'] = final_corr_df # last column 
