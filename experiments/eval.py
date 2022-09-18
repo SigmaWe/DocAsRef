@@ -149,7 +149,7 @@ def eval_summary_level(
         # Insert precalculated metrics 
         if isinstance(pre_calculated_metrics, list) and len(pre_calculated_metrics)> 0: 
             for score_name in pre_calculated_metrics: 
-                batch_result_df["ByRealSumm","ByRealSumm",score_name] = batch[score_name].to_numpy()
+                batch_result_df["PreCalc","PreCalc",score_name] = batch[score_name].to_numpy()
 
         corr_df = batched_corr(corr_df, human_scores, batch_result_df, corr_metrics, batchID)
 

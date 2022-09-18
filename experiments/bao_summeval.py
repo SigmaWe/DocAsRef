@@ -15,17 +15,25 @@ def pool_human_rating(
 # input list:
 # [{'coherence': 2, 'consistency': 1, 'fluency': 4, 'relevance': 2},
 #  {'coherence': 1, 'consistency': 1, 'fluency': 2, 'relevance': 1},
-#  {'coherence': 1, 'consistency': 1, 'fluency': 3, 'relevance': 2}]        
-    ratings = {}
-    for human_metric in ['coherence', 'consistency', 'fluency', 'relevance']: 
-        tmp = 0 
-        for i in range(3): 
-            tmp += human_ratings[i][human_metric]
+#  {'coherence': 1, 'consistency': 1, 'fluency': 3, 'relevance': 2}]    
 
-        if pool_method == "mean": 
-            ratings[human_metric] = tmp/3
+    df = pandas.DataFrame(human_ratings)
 
-    return ratings 
+    if pool_method == "mean": 
+        q = df.mean() 
+
+    return q.to_dict()
+
+    # ratings = {}
+    # for human_metric in ['coherence', 'consistency', 'fluency', 'relevance']: 
+    #     tmp = 0 
+    #     for i in range(3): 
+    #         tmp += human_ratings[i][human_metric]
+
+    #     if pool_method == "mean": 
+    #         ratings[human_metric] = tmp/3
+
+    # return ratings 
 
 def load_summeval(paired_jsonl="summeval_annotations.aligned.paired.scored.jsonl"):
     human_metrics = ['coherence', 'consistency', 'fluency', 'relevance']
@@ -33,6 +41,8 @@ def load_summeval(paired_jsonl="summeval_annotations.aligned.paired.scored.jsonl
         dataset = [json.loads(line) for line in fd]
 
         df = pandas.DataFrame(dataset)
+
+        # return df 
     # df.columns ==> 
     # ['id', 'decoded', 'expert_annotations', 'turker_annotations',
     #    'references', 'model_id', 'filepath', 'metric_scores_1',
@@ -54,16 +64,16 @@ def load_summeval(paired_jsonl="summeval_annotations.aligned.paired.scored.jsonl
         # clean up 
         df = df.rename(columns={'decoded':'SystemSummary', 'text':'ArticleText','model_id':'system'})
         for index, row in df.iterrows():
-            row["ReferenceSummary"] = row["references"][0]
+            df.at[index, "ReferenceSummary"] = row["references"][0]
 
             pooled_human_ratings = pool_human_rating(row['expert_annotations'])
             for human_metric in human_metrics:
-                row[human_metric] = pooled_human_ratings[human_metric]
+                df.at[index, human_metric] = pooled_human_ratings[human_metric]
 
             for column in ['ArticleText', 'SystemSummary', 'ReferenceSummary']:
-                row[column] = clean_text(row[column])
+                df.at[index, column] = clean_text(row[column])
 
-        df = df.drop(columns=['filepath', 'metric_scores_1', 'metric_scores_6', 'metric_scores_11', 'expert_annotations', 'turker_annotations'])
+#        df = df.drop(columns=['filepath', 'metric_scores_1', 'metric_scores_6', 'metric_scores_11', 'expert_annotations', 'turker_annotations', 'references'])
 
 
     return df 
@@ -93,6 +103,7 @@ if __name__ == "__main__":
     with pandas.option_context('display.max_rows', None,
                        'display.max_columns', None,
                        'display.precision', 3,
+                       'display.float_format', lambda x: '%.3f' % x
                        ):
         with open("result_summeval.md", 'w') as f:
             f.write(corr_df['average'].to_string())

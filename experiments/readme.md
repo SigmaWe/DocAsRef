@@ -1,10 +1,10 @@
 # Getting Source data files
 * Newsroom: You will need two files to begin
-  - `newsroom-human-eval.csv`: The human evaluation result. But it does not have reference summaries. So you will need the second file. Our script `bao_newsroom.py` will merge the two. To get the first file, simply: 
+  - `newsroom-human-eval.csv`: The human evaluation result, including documents and system summaries but no reference summaries. To get the first file, simply: 
     ```shell
     wget https://github.com/lil-lab/newsroom/raw/master/humaneval/newsroom-human-eval.csv
     ```
-  - `test.jsonl`: The test split of Newsroom. No automatic script. You will have to fill out a web form [here](https://lil.nlp.cornell.edu/newsroom/download/index.html) and then follow the link in your email to download. `test.jsonl` is in the downloaded tar ball. 
+  - `test.jsonl`: The test split of Newsroom, containing reference summaries. No automatic script. You will have to fill out a web form [here](https://lil.nlp.cornell.edu/newsroom/download/index.html) and then follow the link in your email to download. `test.jsonl` is in the downloaded tar ball. 
 * Realsumm: 
   ```shell 
    wget -O src.txt "https://drive.google.com/uc?export=download&id=1z1_i3cCQOd-1PWfaoFwO34YgCvdJemH7"
@@ -13,6 +13,11 @@
 
    wget -O ext.pkl "https://github.com/neulab/REALSumm/blob/master/scores_dicts/ext.pkl?raw=true"
   ```
+* TAC: We assume that you have fully recursively extracted the two files. 
+  - [`GuidedSumm2010_eval.tgz`](https://tac.nist.gov/protected/past-aquaint-aquaint2/2010/GuidedSumm2010_eval.tgz
+) Downloadable from web, containing human evaluation results and system summaries. 
+  - `TAC2010_Summarization_Documents.tgz` Emailed by NIST, containing the documents for which summaries are generated and rated. 
+  Both files require you to apply to NIST for access. 
 
 
 # GPU
