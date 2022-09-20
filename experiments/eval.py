@@ -76,6 +76,8 @@ def model_eval(
 
 def batched_corr(corr_df, human_scores, batch_result_df, corr_metrics, batchID):
     """Compute the correlations between human scores and automated metric scores on batch of samples, each of which is a pair of (doc, sys summ) or (ref summ, sys summ)
+
+    Iteratively add rows to corr_df. 
     """
 
     corr_metric_mapping = {"pearsonr": scipy.stats.pearsonr, "spearmanr": scipy.stats.spearmanr}
@@ -94,6 +96,18 @@ def batched_corr(corr_df, human_scores, batch_result_df, corr_metrics, batchID):
                     ] = cc 
     return  corr_df
 
+def pool_multidoc(dataset_df, result_df):
+    """Pool muiltidocument evaluation results 
+
+    TODO: use a Pandas smart way rather than for-loops
+    It seems impossible though 
+    """
+    
+    return result_df
+    
+
+
+
 def eval_summary_level(
     dataset_df:pandas.DataFrame, 
     exp_approaches: typing.List[str] = env.approaches,
@@ -104,7 +118,8 @@ def eval_summary_level(
     reference_summary_column: str   = env.reference_summary_column, 
     human_metrics: typing.List[str] = env.human_metrics, 
     pre_calculated_metrics: typing.List[str] = [], # some datasets contain metric scores 
-    debug = False 
+    debug = False, 
+    is_multi = False # multi-document summarization
 ):
     """Get summary-level scores for system summaries using various scoring methods. 
 
@@ -135,7 +150,6 @@ def eval_summary_level(
             if batchID > 2 : 
                 break 
 
-
         batch = dataset_df [ dataset_df[document_column] == doc] 
         # without .to_numpy(), will run into issues starting from 2nd iteration 
         docs   = batch[document_column].to_numpy()
@@ -144,6 +158,10 @@ def eval_summary_level(
         human_scores = batch[human_metrics] # a DF
 
         batch_result_df = model_eval(sys_summs, ref_summs, docs, exp_models, exp_approaches)
+
+        if is_multi:
+            batch_result_df = pool_multidoc(batch, batch_result_df)
+
         # batch_result_df[approach, model, score_name] ===> a list for each pair in the batch 
 
         # Insert precalculated metrics 

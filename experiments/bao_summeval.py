@@ -112,11 +112,11 @@ if __name__ == "__main__":
                        'display.precision', 3,
                        'display.float_format', lambda x: '%.3f' % x
                        ):
-        with open("result_summeval.md", 'w') as f:
+        with open("results/result_summeval.md", 'w') as f:
             f.write(corr_df['average'].to_string())
         print(corr_df['average'])
 
-    with open(f"result_summeval.json", 'w') as f:
+    with open(f"results/result_summeval.json", 'w') as f:
         json_ugly = corr_df.to_json(orient="index")
         json_parsed = json.loads(json_ugly)
         f.write(json.dumps(json_parsed, indent=2))

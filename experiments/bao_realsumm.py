@@ -106,9 +106,13 @@ if __name__ == "__main__":
                        'display.max_columns', None,
                        'display.precision', 3,
                        ):
+        with open(f"results/result_realsumm_{system_type}.md", 'w') as f:
+            f.write("```")
+            f.write(corr_df['average'].to_string())
+            f.write("```")
         print(corr_df['average'])
 
-    with open(f"result_realsumm_{system_type}.json", 'w') as f:
+    with open(f"results/result_realsumm_{system_type}.json", 'w') as f:
         json_ugly = corr_df.to_json(orient="index")
         json_parsed = json.loads(json_ugly)
         f.write(json.dumps(json_parsed, indent=2))
