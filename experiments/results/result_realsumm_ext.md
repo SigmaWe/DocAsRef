@@ -1,4 +1,5 @@
-```corr_metric  aspect              approach  model               score_name          
+```
+corr_metric  aspect              approach  model               score_name          
 pearsonr     litepyramid_recall  trad      rouge               rouge1                  0.195
                                                                rouge2                  0.211
                                                                rougeL                  0.154
@@ -70,4 +71,5 @@ spearmanr    litepyramid_recall  trad      rouge               rouge1           
                                                                mover_score             0.190
                                                                bert_recall_score       0.192
                                                                bert_precision_score    0.077
-                                                               bert_f_score            0.178```
+                                                               bert_f_score            0.178
+```

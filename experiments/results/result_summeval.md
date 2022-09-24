@@ -1,3 +1,4 @@
+```
 corr_metric  aspect       approach  model               score_name               
 pearsonr     consistency  trad      rouge               rouge1                       0.214
                                                         rouge2                       0.212
@@ -407,3 +408,4 @@ spearmanr    consistency  trad      rouge               rouge1                  
                                                         summaqa_avg_prob             0.142
                                                         summaqa_avg_fscore           0.154
                                                         supert                       0.238
+```

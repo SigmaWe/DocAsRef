@@ -96,30 +96,47 @@ def batched_corr(corr_df, human_scores, batch_result_df, corr_metrics, batchID):
                     ] = cc 
     return  corr_df
 
-def pool_multidoc(dataset_df, result_df):
+def pool_multidoc(batch_df: pandas.DataFrame, result_df: pandas.DataFrame):
     """Pool muiltidocument evaluation results 
-
-    TODO: use a Pandas smart way rather than for-loops
-    It seems impossible though 
     """
+    docsetID_and_System = batch_df[['docsetID', 'System']]
+    # print (docsetID_and_System.shape, result_df.shape)
+
+    docsetID_and_System = docsetID_and_System.reset_index(drop=True) 
+    # reset index from 0 because batch_df's index is a segment of a much longer index range 
+    # if not reset index, cannot concat below without ignore_index due to misaligned indexes 
+    # We do not use ignore_index below because it will otherwise reset multiindex column headers to 0 to N. 
+    combined = pandas.concat([docsetID_and_System, result_df], axis=1)
+
+
+    combined_pooled = combined.groupby(['docsetID', 'System']).mean()
+    # combined_pooled = combined_pooled.drop(["index", 'docsetID', 'System'], axis=1)
+
+    # Drop scores of the common summary
+    human_scores = batch_df.drop(['ArticleText', 'ReferenceSummary',
+       'SystemSummary'], axis=1)
+    human_scores = batch_df.groupby(['docsetID', 'System']).mean() 
+
     
-    return result_df
-    
+    # print (batch_df_new.shape, combined_pooled.shape)
 
+    # The returned DataFrame does not have multi-indexed columns but has tuples as column names 
+    return human_scores, combined_pooled
 
-
+# TODO: Default value shouldn't be tied to env 
 def eval_summary_level(
     dataset_df:pandas.DataFrame, 
     exp_approaches: typing.List[str] = env.approaches,
     exp_models: typing.List[str]    = env.models,
     corr_metrics: typing.List[str]  = env.corr_metrics, 
     document_column: str            = env.document_column, 
+    docID_column: str               = env.docID_column,  # TODO: some in newsroom, realsumm, summeval have not supported this yet 
     system_summary_column: str      = env.system_summary_column, 
     reference_summary_column: str   = env.reference_summary_column, 
     human_metrics: typing.List[str] = env.human_metrics, 
     pre_calculated_metrics: typing.List[str] = [], # some datasets contain metric scores 
     debug = False, 
-    is_multi = False # multi-document summarization
+    is_multi = False, # multi-document summarization
 ):
     """Get summary-level scores for system summaries using various scoring methods. 
 
@@ -144,13 +161,13 @@ def eval_summary_level(
     # We could let the multilevel on columns,
     #  but the code will be slightly longer.
 
-    for batchID, doc in enumerate(tqdm.tqdm ( dataset_df[document_column].unique())):
+    for batchID, docID in enumerate(tqdm.tqdm ( dataset_df[docID_column].unique())):
 
         if debug: 
             if batchID > 2 : 
                 break 
 
-        batch = dataset_df [ dataset_df[document_column] == doc] 
+        batch = dataset_df [ dataset_df[docID_column] == docID]
         # without .to_numpy(), will run into issues starting from 2nd iteration 
         docs   = batch[document_column].to_numpy()
         sys_summs  = batch[system_summary_column].to_numpy()
@@ -159,8 +176,8 @@ def eval_summary_level(
 
         batch_result_df = model_eval(sys_summs, ref_summs, docs, exp_models, exp_approaches)
 
-        if is_multi:
-            batch_result_df = pool_multidoc(batch, batch_result_df)
+        if is_multi: # average the scores for multiple documents to the same reference 
+            human_scores, batch_result_df = pool_multidoc(batch, batch_result_df)
 
         # batch_result_df[approach, model, score_name] ===> a list for each pair in the batch 
 

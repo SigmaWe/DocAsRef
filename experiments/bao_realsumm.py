@@ -91,11 +91,11 @@ def load_realsumm(pickfile:str):
         
 if __name__ == "__main__":
 
-    import eval # DocAsRef's
-
     system_type = "ext" # or "abs"
 
     dataset_df = load_realsumm(f'{system_type}.pkl')
+
+    import eval # DocAsRef's
 
     corr_df = eval.eval_summary_level(dataset_df, pre_calculated_metrics=['rouge_1_f_score',
        'rouge_2_recall', 'rouge_l_recall', 'rouge_2_precision',
@@ -107,9 +107,9 @@ if __name__ == "__main__":
                        'display.precision', 3,
                        ):
         with open(f"results/result_realsumm_{system_type}.md", 'w') as f:
-            f.write("```")
+            f.write("```\n")
             f.write(corr_df['average'].to_string())
-            f.write("```")
+            f.write("\n```")
         print(corr_df['average'])
 
     with open(f"results/result_realsumm_{system_type}.json", 'w') as f:

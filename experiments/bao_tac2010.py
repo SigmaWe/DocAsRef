@@ -50,7 +50,7 @@ def merge_article_summary_score(articles, summaries, scores, debug=False ):
 
                 tmp_dataset_df = pandas.DataFrame.from_dict(row)
 
-                dataset_df = pandas.concat([dataset_df, tmp_dataset_df])
+                dataset_df = pandas.concat([dataset_df, tmp_dataset_df], ignore_index=True)
         counter += 1 
         if debug and counter > 3:
             break 
@@ -120,25 +120,25 @@ def load_tac(dataroot:str, debug=False):
         
 if __name__ == "__main__":
 
-    debug= False 
-    
-    dataset_df = load_tac("/media/forrest/12T_EasyStore1/data/NLP/resources/TAC_DUC/TAC2010", debug=debug)
-
     import pickle
-    pickle.dump(dataset_df, open("tac_df.pkl", 'wb'))
+    debug= True 
 
-    # corr_df = eval.eval_summary_level(dataset_df, pre_calculated_metrics=['rouge_1_f_score',
-    #    'rouge_2_recall', 'rouge_l_recall', 'rouge_2_precision',
-    #    'rouge_2_f_score', 'rouge_1_precision', 'rouge_1_recall',
-    #    'rouge_l_precision', 'rouge_l_f_score', 'js-2', 'mover_score',
-    #    'bert_recall_score', 'bert_precision_score', 'bert_f_score'], debug=False)
-    # with pandas.option_context('display.max_rows', None,
-    #                    'display.max_columns', None,
-    #                    'display.precision', 3,
-    #                    ):
-    #     print(corr_df['average'])
+    if debug: 
+        dataset_df = pickle.load(open('tac_df.pkl', 'rb'))
+    else:  
+        dataset_df = load_tac("/media/forrest/12T_EasyStore1/data/NLP/resources/TAC_DUC/TAC2010", debug=debug)
+        pickle.dump(dataset_df, open("tac_df.pkl", 'wb'))
+ 
+    import eval 
 
-    # with open(f"result_realsumm_{system_type}.json", 'w') as f:
-    #     json_ugly = corr_df.to_json(orient="index")
-    #     json_parsed = json.loads(json_ugly)
-    #     f.write(json.dumps(json_parsed, indent=2))
+    corr_df = eval.eval_summary_level(dataset_df, debug=debug, is_multi=True )
+    with pandas.option_context('display.max_rows', None,
+                       'display.max_columns', None,
+                       'display.precision', 3,
+                       ):
+        print(corr_df['average'])
+
+    with open(f"result_tac2010.json", 'w') as f:
+        json_ugly = corr_df.to_json(orient="index")
+        json_parsed = json.loads(json_ugly)
+        f.write(json.dumps(json_parsed, indent=2))
