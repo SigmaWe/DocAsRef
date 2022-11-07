@@ -4,7 +4,7 @@ from typing import List
 import numpy as np
 import sentence_transformers
 import torch
-from tqdm import tqdm
+from tqdm.auto import trange
 
 embedder = sentence_transformers.SentenceTransformer("all-MiniLM-L6-v2")
 
@@ -26,7 +26,7 @@ def score_np(predictions: List[str], references: List[str]) -> np.ndarray:
                 sentence_emb.append(embedder.encode(sentence, convert_to_numpy=True))
         return sentence_emb, sentences
 
-    for index in tqdm(range(len(cands))):  # all pieces, len(cands) == len(refs)
+    for index in trange(len(cands), desc="bertscore-sentence cands", leave=False):  # all pieces, len(cands) == len(refs)
         cand_sentence_emb, cand_sentences = bert_encode(cands[index])
         ref_sentence_emb, ref_sentences = bert_encode(refs[index])
         product_mat = np.zeros((len(ref_sentence_emb), len(cand_sentence_emb)))
