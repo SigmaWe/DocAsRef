@@ -1,14 +1,19 @@
 import typing
 import evaluate
+import spacy
+
+nlp = spacy.load("en_core_web_lg")
 
 
-def extract_topk_sentence(ref: str, topk: int) -> str:
-    topk_tokens = ref.split(" ")[0:topk]
-    return " ".join(topk_tokens)
+def extract_topk_doc(ref: str, topk: int) -> str:
+    doc = nlp(ref)
+    doc_sents = [sent.text for sent in doc.sents]
+    topk_sents = doc_sents[0:topk]
+    return " ".join(topk_sents)
 
 
 def extract_topk(references: typing.List[str], topk: int) -> typing.List[str]:
-    return [extract_topk_sentence(ref, topk) for ref in references]
+    return [extract_topk_doc(ref, topk) for ref in references]
 
 
 def bertscore_compute(predictions: typing.List[str], references: typing.List[str], topk: int) -> typing.Dict:
