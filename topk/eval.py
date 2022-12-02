@@ -1,8 +1,11 @@
-import typing
-import evaluate
-import spacy
+import sys
+from os import path
 
-nlp = spacy.load("en_core_web_lg")
+file_path = path.abspath(__file__)
+sys.path.append(path.dirname(path.dirname(file_path)))
+
+import typing
+from dar_env import nlp, bertscore, rouge, bleurt
 
 
 def extract_topk_doc(ref: str, topk: int) -> str:
@@ -18,7 +21,7 @@ def extract_topk(references: typing.List[str], topk: int) -> typing.List[str]:
 
 def bertscore_compute(predictions: typing.List[str], references: typing.List[str], topk: int) -> typing.Dict:
     refs = extract_topk(references, topk)
-    return evaluate.load("bertscore").compute(
+    return bertscore.compute(
         predictions=predictions,
         references=refs,
         lang='en',
@@ -28,7 +31,7 @@ def bertscore_compute(predictions: typing.List[str], references: typing.List[str
 
 def rouge_compute(predictions: typing.List[str], references: typing.List[str], topk: int) -> typing.Dict:
     refs = extract_topk(references, topk)
-    return evaluate.load("rouge").compute(
+    return rouge.compute(
         predictions=predictions,
         references=refs,
         use_aggregator=False
@@ -37,7 +40,7 @@ def rouge_compute(predictions: typing.List[str], references: typing.List[str], t
 
 def bleurt_compute(predictions: typing.List[str], references: typing.List[str], topk: int) -> typing.Dict:
     refs = extract_topk(references, topk)
-    return evaluate.load("bleurt", config_name="BLEURT-20", module_type="metric").compute(
+    return bleurt.compute(
         predictions=predictions,
         references=refs
     )
