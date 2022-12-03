@@ -27,4 +27,4 @@ def mnli_sim_mat(cand, ref) -> np.ndarray:
 
 
 def bertscore_sentence_compute(predictions: typing.List[str], references: typing.List[str]) -> typing.Dict:
-    return eval.compute(predictions=predictions, references=references, sim_mat=mnli_sim_mat)
+    return eval.compute(predictions=predictions, references=references, sim_mat_f=mnli_sim_mat)

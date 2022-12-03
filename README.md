@@ -18,7 +18,7 @@ Do not reinvent the wheel:
 
 Metrics: ROUGE, BERTScore, BLEURT
 
-Integrated in [EvalBase](https://github.com/SigmaWe/EvalBase)
+Integrated into [EvalBase](https://github.com/SigmaWe/EvalBase)](https://github.com/SigmaWe/EvalBase)
 
 For non-integrated metrics, add the following, as well as changes specified in "Usage" part of other approaches, to `env.py` of EvalBase:
 
@@ -28,7 +28,7 @@ sys.path.append("/path/to/DocAsRef/")
 ```
 
 ## Approach 1: sentence-level, better similarity metrics, and better weighting methods
-The pilot study results show that when reference summaries are of good qualities, vanilla use of BERTScore is not good. Hence, we will try the following changes: 
+The pilot study results show that when reference summaries are of good quality, vanilla use of BERTScore is not good. Hence, we will try the following changes: 
 
 | | BERTScore | Our changes | 
 |--|--|--|
@@ -40,7 +40,7 @@ The pilot study results show that when reference summaries are of good qualities
 
 The document is a list of $n$ sentences: $D=[D_1, D_2, ..., D_n]$, while the system/generated summary (to be evaluated) is a list of $m$ sentences: $S=[S_1, S_2, ..., S_m]$. And $m < < n$. 
 
-A memory-saving psedocode: 
+A memory-saving pseudocode: 
 
 ```
 for D in all_documents:
@@ -59,13 +59,23 @@ Usage:
 ```python
 import bertscore_sentence.eval as bertscore_sentence
 metrics = {
-    "bertscore-sentence": functools.partial(bertscore_sentence.compute)
+    "bertscore-sentence": functools.partial(bertscore_sentence.compute),
 }
 ```
 
 ### Approach 1.2
 
 Use a bi-sentence model, instead of cosine similarity in Approach 1.1. In this new approach, we do not have to embed individual sentences. Instead, we embed a pair of sentences (one from documents and one from system summaries).
+
+Implemented in `/mnli`
+
+Usage:
+```python
+import mnli.eval as mnli
+metrics = {
+    "bertscore-sentence-mnli": functools.partial(mnli.bertscore_sentence_compute),
+}
+```
 
 ### Approach 1.3 (Ruixuan)
 

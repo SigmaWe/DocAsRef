@@ -12,7 +12,7 @@ from dar_env import nlp
 from dar_env import sent_embedder as embedder
 
 
-def cos_sim_mat(cand, ref) -> np.ndarray:
+def cos_sim_mat_f(cand, ref) -> np.ndarray:
     def bert_encode(piece: str):
         sentence_emb = list()
         doc = nlp(piece)
@@ -36,13 +36,13 @@ def cos_sim_mat(cand, ref) -> np.ndarray:
     return sim_mat, cand_sentences, ref_sentences
 
 
-def score_np(predictions: typing.List[str], references: typing.List[str], sim_mat: typing.Callable) -> np.ndarray:
+def score_np(predictions: typing.List[str], references: typing.List[str], sim_mat_f: typing.Callable) -> np.ndarray:
     cands, refs = predictions, references # simple renaming. 
 
     all_scores = np.zeros((len(cands), 3))
 
-    for index in trange(len(cands), desc="bertscore-sentence cands {}".format(sim_mat.__name__), leave=False):  # all pieces, len(cands) == len(refs)
-        sim_mat, cand_sentences, ref_sentences = cos_sim_mat(cand=cands[index], ref=refs[index])
+    for index in trange(len(cands), desc="bertscore-sentence cands {}".format(sim_mat_f.__name__), leave=False):  # all pieces, len(cands) == len(refs)
+        sim_mat, cand_sentences, ref_sentences = sim_mat_f(cand=cands[index], ref=refs[index])
 
         def sum_max(is_r: bool) -> float:
             sum_result = 0.0
@@ -65,9 +65,9 @@ def score_np(predictions: typing.List[str], references: typing.List[str], sim_ma
     return all_scores
 
 
-def compute(predictions: typing.List[str], references: typing.List[str], sim_mat: typing.Callable = cos_sim_mat) -> typing.Dict:
+def compute(predictions: typing.List[str], references: typing.List[str], sim_mat_f: typing.Callable = cos_sim_mat_f) -> typing.Dict:
     cands, refs = predictions, references # simple renaming. 
-    score_arr = score_np(predictions=cands, references=refs, sim_mat=sim_mat)
+    score_arr = score_np(predictions=cands, references=refs, sim_mat_f=sim_mat_f)
     return {
         "P": score_arr[:, 0].tolist(),
         "R": score_arr[:, 1].tolist(),
