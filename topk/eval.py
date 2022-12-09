@@ -1,15 +1,14 @@
 import sys
 from os import path
-
 file_path = path.abspath(__file__)
 sys.path.append(path.dirname(path.dirname(file_path)))
 
 import typing
-from dar_env import nlp, bertscore, rouge, bleurt
+from dar_env import nlp_spacy, bertscore, rouge, bleurt
 
 
 def extract_topk_doc(ref: str, topk: int) -> str:
-    doc = nlp(ref)
+    doc = nlp_spacy(ref)
     doc_sents = [sent.text for sent in doc.sents]
     topk_sents = doc_sents[0:topk]
     return " ".join(topk_sents)

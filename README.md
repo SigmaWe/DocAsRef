@@ -58,8 +58,10 @@ Implemented in `/bertscore_sentence`
 Usage:
 ```python
 import bertscore_sentence.eval as bertscore_sentence
+import dar_env
 metrics = {
-    "bertscore-sentence": functools.partial(bertscore_sentence.compute),
+    "bertscore-sentence-cos-mpnet": functools.partial(bertscore_sentence.compute, embedder=dar_env.sent_embedder_mpnet),
+    "bertscore-sentence-cos-roberta": functools.partial(bertscore_sentence.compute, embedder=dar_env.sent_embedder_roberta),
 }
 ```
 
@@ -72,8 +74,10 @@ Implemented in `/mnli`
 Usage:
 ```python
 import mnli.eval as mnli
+import dar_env
 metrics = {
-    "bertscore-sentence-mnli": functools.partial(mnli.bertscore_sentence_compute),
+    "bertscore-sentence-mnli-roberta": functools.partial(mnli.bertscore_sentence_compute, classifier=dar_env.mnli_classifier_roberta),
+    "bertscore-sentence-mnli-bart": functools.partial(mnli.bertscore_sentence_compute, classifier=dar_env.mnli_classifier_bart),
 }
 ```
 
