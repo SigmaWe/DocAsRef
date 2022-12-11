@@ -4,42 +4,40 @@ file_path = path.abspath(__file__)
 sys.path.append(path.dirname(path.dirname(file_path)))
 
 import typing
-from dar_env import nlp_spacy, bertscore, rouge, bleurt
+import classic.eval as classic
+from type_piece import EvalPieces
 
 
-def extract_topk_doc(ref: str, topk: int) -> str:
-    doc = nlp_spacy(ref)
-    doc_sents = [sent.text for sent in doc.sents]
-    topk_sents = doc_sents[0:topk]
+def extract_topk_doc(ref_segments: typing.List[str], topk: int) -> str:
+    topk_sents = ref_segments[0:topk]
     return " ".join(topk_sents)
 
 
-def extract_topk(references: typing.List[str], topk: int) -> typing.List[str]:
-    return [extract_topk_doc(ref, topk) for ref in references]
+def extract_topk(ref_segments_list: typing.List[typing.List[str]], topk: int) -> typing.List[str]:
+    return [extract_topk_doc(ref_segments, topk) for ref_segments in ref_segments_list]
 
 
-def bertscore_compute(predictions: typing.List[str], references: typing.List[str], topk: int) -> typing.Dict:
-    refs = extract_topk(references, topk)
-    return bertscore.compute(
-        predictions=predictions,
-        references=refs,
-        lang='en',
-        use_fast_tokenizer=True
-    )
+def data_topk(predictions: EvalPieces, references: EvalPieces, topk: int) -> typing.Tuple[str, str]:
+    preds = predictions.raw_list
+    refs = extract_topk(references.segments_list, topk)
+    return preds, refs
 
 
-def rouge_compute(predictions: typing.List[str], references: typing.List[str], topk: int) -> typing.Dict:
-    refs = extract_topk(references, topk)
-    return rouge.compute(
-        predictions=predictions,
-        references=refs,
-        use_aggregator=False
-    )
+def bertscore_compute(predictions: EvalPieces, references: EvalPieces, topk: int) -> typing.Dict:
+    preds, refs = data_topk(predictions, references, topk)
+    return classic.bertscore_partial(predictions=preds, references=refs)
 
 
-def bleurt_compute(predictions: typing.List[str], references: typing.List[str], topk: int) -> typing.Dict:
-    refs = extract_topk(references, topk)
-    return bleurt.compute(
-        predictions=predictions,
-        references=refs
-    )
+def rouge_compute(predictions: EvalPieces, references: EvalPieces, topk: int) -> typing.Dict:
+    preds, refs = data_topk(predictions, references, topk)
+    return classic.rouge_partial(predictions=preds, references=refs)
+
+
+def bleurt_compute(predictions: EvalPieces, references: EvalPieces, topk: int) -> typing.Dict:
+    preds, refs = data_topk(predictions, references, topk)
+    return classic.bleurt_partial(predictions=preds, references=refs)
+
+
+def moverscore_compute(predictions: EvalPieces, references: EvalPieces, n_gram: int, topk: int) -> typing.Dict:
+    preds, refs = data_topk(predictions, references, topk)
+    return classic.moverscore_partial(predictions=preds, references=refs, n_gram=n_gram)

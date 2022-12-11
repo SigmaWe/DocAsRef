@@ -7,26 +7,19 @@ import typing
 from bertscore_sentence import eval
 import numpy as np
 from mnli.sim import similarity
-from dar_env import nlp_spacy
 import functools
 import transformers
+from type_piece import EvalPieces
 
 
-def mnli_sim_mat(cand: str, ref: str, classifier: transformers.Pipeline) -> np.ndarray:
-    def segmentation(piece: str):
-        doc = nlp_spacy(piece)
-        doc_sents = [sent.text for sent in doc.sents]
-        return doc_sents
-
-    cand_sents = segmentation(cand)
-    ref_sents = segmentation(ref)
-    sent_pairs = [" ".join([x, y]) for x in ref_sents for y in cand_sents]
-    sim_mat = np.empty((len(ref_sents), len(cand_sents)))
+def mnli_sim_mat(cand_segments: typing.List[str], ref_segments: typing.List[str], classifier: transformers.Pipeline) -> np.ndarray:
+    sent_pairs = [" ".join([x, y]) for x in ref_segments for y in cand_segments]
+    sim_mat = np.empty((len(ref_segments), len(cand_segments)))
     sim_mat.flat = similarity(sent_pairs, classifier)
-    return sim_mat, cand_sents, ref_sents
+    return sim_mat
 
 
-def bertscore_sentence_compute(predictions: typing.List[str], references: typing.List[str], classifier: transformers.Pipeline) -> typing.Dict:
+def bertscore_sentence_compute(predictions: EvalPieces, references: EvalPieces, classifier: transformers.Pipeline) -> typing.Dict:
     sim_mat_f = functools.partial(mnli_sim_mat, classifier=classifier)
     sim_mat_f.__name__ = " ".join(["mnli", classifier.__name__])
     return eval.compute(predictions=predictions, references=references, sim_mat_f=sim_mat_f)

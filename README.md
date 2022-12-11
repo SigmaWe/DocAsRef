@@ -14,17 +14,29 @@ Do not reinvent the wheel:
 
 # Approaches
 
-## Approach 0: just replacing human summaries with documents
-
-Metrics: ROUGE, BERTScore, BLEURT
-
-Integrated into [EvalBase](https://github.com/SigmaWe/EvalBase)](https://github.com/SigmaWe/EvalBase)
-
-For non-integrated metrics, add the following, as well as changes specified in "Usage" part of other approaches, to `env.py` of EvalBase:
+For metrics, add the following, as well as changes specified in "Usage" part of other approaches, to `env.py` of [EvalBase](https://github.com/SigmaWe/EvalBase)](https://github.com/SigmaWe/EvalBase):
 
 ```python
 import sys
 sys.path.append("/path/to/DocAsRef/")
+```
+
+## Approach 0: just replacing human summaries with documents
+
+Metrics: BERTScore, ROUGE, BLEURT, MoverScore
+
+Implemented in `/classic`
+
+Usage:
+```python
+import classic.eval as classic
+metrics = {
+    "bertscore": classic.bertscore_compute,
+    "rouge": classic.rouge_compute,
+    "bleurt": classic.bleurt_compute,
+    "moverscore-1gram": functools.partial(classic.moverscore_compute, n_gram=1),
+    "moverscore-2gram": functools.partial(classic.moverscore_compute, n_gram=2),
+}
 ```
 
 ## Approach 1: sentence-level, better similarity metrics, and better weighting methods

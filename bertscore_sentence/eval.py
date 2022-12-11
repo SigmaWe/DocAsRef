@@ -7,23 +7,21 @@ import typing
 import numpy as np
 import torch
 from tqdm.auto import trange
-from dar_env import nlp_spacy
 import functools
 import sentence_transformers
+from type_piece import EvalPieces
 
 
-def cos_sim_mat_f(cand, ref, embedder) -> np.ndarray:
-    def bert_encode(piece: str):
-        sentence_emb = list()
-        doc = nlp_spacy(piece)
-        doc_sents = [sent.text for sent in doc.sents]
-        for sentence in doc_sents:
+def cos_sim_mat_f(cand_segments: typing.List[str], ref_segments: typing.List[str], embedder) -> np.ndarray:
+    def bert_encode(piece_segments: typing.List[str]):
+        sent_emb = list()
+        for sent in piece_segments:
             with torch.no_grad():
-                sentence_emb.append(embedder.encode(sentence, convert_to_numpy=True))
-        return sentence_emb, doc_sents
+                sent_emb.append(embedder.encode(sent, convert_to_numpy=True))
+        return sent_emb
 
-    ref_sent_emb_list, ref_sents = bert_encode(ref)
-    cand_sent_emb_list, cand_sents = bert_encode(cand)
+    ref_sent_emb_list = bert_encode(ref_segments)
+    cand_sent_emb_list = bert_encode(cand_segments)
     ref_sent_emb = np.stack(ref_sent_emb_list, axis=0)
     cand_sent_emb = np.stack(cand_sent_emb_list, axis=0)
     numerators = np.inner(ref_sent_emb, cand_sent_emb)
@@ -31,15 +29,15 @@ def cos_sim_mat_f(cand, ref, embedder) -> np.ndarray:
     cand_sent_emb_norms = np.linalg.norm(cand_sent_emb, axis=1)
     denominators = np.outer(ref_sent_emb_norms, cand_sent_emb_norms)
     sim_mat = np.divide(numerators, denominators)
-    return sim_mat, cand_sents, ref_sents
+    return sim_mat
 
 
-def score_np(predictions: typing.List[str], references: typing.List[str], sim_mat_f: typing.Callable) -> np.ndarray:
-    cands, refs = predictions, references # simple renaming. 
+def score_np(predictions: EvalPieces, references: EvalPieces, sim_mat_f: typing.Callable) -> np.ndarray:
+    cands, refs = predictions.segments_list, references.segments_list
     all_scores = np.empty((len(cands), 3))
 
     for index in trange(len(cands), desc="bertscore-sentence {}".format(sim_mat_f.__name__), leave=False):  # all pieces, len(cands) == len(refs)
-        sim_mat, cand_sents, ref_sents = sim_mat_f(cand=cands[index], ref=refs[index])
+        sim_mat = sim_mat_f(cand_segments=cands[index], ref_segments=refs[index])
 
         def sum_max(is_r: bool) -> float:
             if is_r:
@@ -47,16 +45,16 @@ def score_np(predictions: typing.List[str], references: typing.List[str], sim_ma
             else:
                 return np.sum(np.max(sim_mat, axis=0))  # equals to np.sum(np.max(sim_mat.T, axis=1))
 
-        R = (1 / len(ref_sents)) * sum_max(True)
-        P = (1 / len(cand_sents)) * sum_max(False)
+        R = (1 / len(refs[index])) * sum_max(True)
+        P = (1 / len(cands[index])) * sum_max(False)
         F = 2 * ((P * R) / (P + R))
         all_scores[index, :] = np.array([P, R, F])
-        del sim_mat
+        np.nan_to_num(all_scores, copy=False, nan=0, posinf=1, neginf=-1)
 
     return all_scores
 
 
-def compute(predictions: typing.List[str], references: typing.List[str], sim_mat_f: typing.Optional[typing.Callable] = None, embedder: typing.Optional[sentence_transformers.SentenceTransformer] = None) -> typing.Dict:
+def compute(predictions: EvalPieces, references: EvalPieces, sim_mat_f: typing.Optional[typing.Callable] = None, embedder: typing.Optional[sentence_transformers.SentenceTransformer] = None) -> typing.Dict:
     cands, refs = predictions, references # simple renaming
     if sim_mat_f is None:  # cosine similarity by default
         sim_mat_f = functools.partial(cos_sim_mat_f, embedder=embedder)
