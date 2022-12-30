@@ -3,17 +3,17 @@ from os import path
 file_path = path.abspath(__file__)
 sys.path.append(path.dirname(path.dirname(file_path)))
 
-import typing
 import numpy as np
 import torch
 from tqdm.auto import trange
 import functools
-import sentence_transformers
-from type_piece import EvalPieces
+import dar_type
+from text_preprocess import list_segmentation
+import warnings
 
 
-def cos_sim_mat_f(cand_segments: typing.List[str], ref_segments: typing.List[str], embedder) -> np.ndarray:
-    def bert_encode(piece_segments: typing.List[str]):
+def cos_sim_mat_f(cand_segments: dar_type.TextSegments, ref_segments: dar_type.TextSegments, embedder: dar_type.Embedder) -> np.ndarray:
+    def bert_encode(piece_segments: dar_type.TextSegments):
         sent_emb = list()
         for sent in piece_segments:
             with torch.no_grad():
@@ -32,8 +32,8 @@ def cos_sim_mat_f(cand_segments: typing.List[str], ref_segments: typing.List[str
     return sim_mat
 
 
-def score_np(predictions: EvalPieces, references: EvalPieces, sim_mat_f: typing.Callable) -> np.ndarray:
-    cands, refs = predictions.segments_list, references.segments_list
+def score_np(predictions: dar_type.TextList, references: dar_type.TextList, sim_mat_f: dar_type.SimilarityMatrixFunc) -> np.ndarray:
+    cands, refs = list_segmentation(predictions), list_segmentation(references)
     all_scores = np.empty((len(cands), 3))
 
     for index in trange(len(cands), desc="bertscore-sentence {}".format(sim_mat_f.__name__), leave=False):  # all pieces, len(cands) == len(refs)
@@ -45,23 +45,38 @@ def score_np(predictions: EvalPieces, references: EvalPieces, sim_mat_f: typing.
             else:
                 return np.sum(np.max(sim_mat, axis=0))  # equals to np.sum(np.max(sim_mat.T, axis=1))
 
-        R = (1 / len(refs[index])) * sum_max(True)
-        P = (1 / len(cands[index])) * sum_max(False)
-        F = 2 * ((P * R) / (P + R))
-        all_scores[index, :] = np.array([P, R, F])
-        np.nan_to_num(all_scores, copy=False, nan=0, posinf=1, neginf=-1)
+        has_empty = False
+        if len(refs[index]) == 0:
+            warnings.warn("empty ref str", dar_type.DocWarning)
+            has_empty = True
+        if len(cands[index]) == 0:
+            warnings.warn("empty cand str", dar_type.DocWarning)
+            has_empty = True
+        if has_empty:
+            warnings.warn("detail: [ref] {}; [cand] {}".format(refs[index], cands[index]), dar_type.DocWarning)
+
+        if not has_empty:
+            R = (1 / len(refs[index])) * sum_max(True)
+            P = (1 / len(cands[index])) * sum_max(False)
+            F = 2 * ((P * R) / (P + R))
+            all_scores[index, :] = np.array([P, R, F])
+        else:
+            all_scores[index, :] = np.zeros((3,))
 
     return all_scores
 
 
-def compute(predictions: EvalPieces, references: EvalPieces, sim_mat_f: typing.Optional[typing.Callable] = None, embedder: typing.Optional[sentence_transformers.SentenceTransformer] = None) -> typing.Dict:
+def compute(predictions: dar_type.TextList, references: dar_type.TextList, sim_mat_f: dar_type.SimilarityMatrixFunc) -> dar_type.MetricScoreDict:
     cands, refs = predictions, references # simple renaming
-    if sim_mat_f is None:  # cosine similarity by default
-        sim_mat_f = functools.partial(cos_sim_mat_f, embedder=embedder)
-        sim_mat_f.__name__ = " ".join(["cos", embedder.__name__])
     score_arr = score_np(predictions=cands, references=refs, sim_mat_f=sim_mat_f)
     return {
         "P": score_arr[:, 0].tolist(),
         "R": score_arr[:, 1].tolist(),
         "F": score_arr[:, 2].tolist()
     }
+
+
+def compute_cos(predictions: dar_type.TextList, references: dar_type.TextList, embedder: dar_type.Embedder) -> dar_type.MetricScoreDict:
+    cos_sim_mat_f_with_embedder: dar_type.SimilarityMatrixFunc = functools.partial(cos_sim_mat_f, embedder=embedder)
+    cos_sim_mat_f_with_embedder.__name__ = " ".join(["cos", embedder.__name__])
+    return compute(predictions=predictions, references=references, sim_mat_f=cos_sim_mat_f_with_embedder)

@@ -21,6 +21,22 @@ import sys
 sys.path.append("/path/to/DocAsRef/")
 ```
 
+To ignore some unnecessary warnings, use the following code in `eval.py`:
+
+```python
+import warnings
+import pandas
+warnings.filterwarnings(
+    action="ignore",
+    message="You seem to be using the pipelines sequentially on GPU. In order to maximize efficiency please use a dataset",
+    category=UserWarning
+)
+warnings.simplefilter(
+    action="ignore",
+    category=pandas.errors.PerformanceWarning
+)
+```
+
 ## Approach 0: just replacing human summaries with documents
 
 Metrics: BERTScore, ROUGE, BLEURT, MoverScore
@@ -88,8 +104,9 @@ Usage:
 import mnli.eval as mnli
 import dar_env
 metrics = {
-    "bertscore-sentence-mnli-roberta": functools.partial(mnli.bertscore_sentence_compute, classifier=dar_env.mnli_classifier_roberta),
-    "bertscore-sentence-mnli-bart": functools.partial(mnli.bertscore_sentence_compute, classifier=dar_env.mnli_classifier_bart),
+    "bertscore-sentence-mnli-roberta": functools.partial(mnli.bertscore_sentence_compute, classifiers=dar_env.mnli_classifiers["roberta"]),
+    "bertscore-sentence-mnli-bart": functools.partial(mnli.bertscore_sentence_compute, classifiers=dar_env.mnli_classifiers["bart"]),
+    "bertscore-sentence-mnli-deberta": functools.partial(mnli.bertscore_sentence_compute, classifiers=dar_env.mnli_classifiers["deberta"]),
 }
 ```
 
@@ -108,16 +125,18 @@ entropy ( sim(S1, D1), sim(S1, D2), ... )
 + 
 entropy ( sim(S2, D1), sim(S2, D2), ... )
 
-### Approach 1.5 Pseudo-reference by Top-K
+### Approach 1.5 Pseudo-reference by Top-K and Top-P
 
 Implemented in `topk/`
 
 Usage:
 ```python
-import topk.eval as topk
+import top.eval as top
 metrics = {
-    "bertscore-top10": functools.partial(topk.bertscore_compute, topk=10),
-    "bertscore-top20": functools.partial(topk.bertscore_compute, topk=20),
+    "bertscore-topk-5": functools.partial(top.topk_compute, metric_compute_f=classic.bertscore_compute, topk=5),
+    "bertscore-topk-10": functools.partial(top.topk_compute, metric_compute_f=classic.bertscore_compute, topk=10),
+    "bertscore-topp-0.5": functools.partial(top.topp_compute, metric_compute_f=classic.bertscore_compute, topp=0.5),
+    "bertscore-topp-0.7": functools.partial(top.topp_compute, metric_compute_f=classic.bertscore_compute, topp=0.7),
     # you may define other metrics with different topk parameter, and replace bertscore_compute by rouge_compute and bleurt_compute
 }
 ```

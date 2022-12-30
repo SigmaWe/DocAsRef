@@ -6,9 +6,13 @@ tqdm
 tabulate
 scipy
 evaluate
+datasets
 pandas
 rouge_score
 bert_score
 git+https://github.com/google-research/bleurt.git
 pyemd
 git+https://github.com/AIPHES/emnlp19-moverscore.git
+spacy
+en-core-web-lg @ https://github.com/explosion/spacy-models/releases/download/en_core_web_lg-3.4.1/en_core_web_lg-3.4.1-py3-none-any.whl
+pytorch-pretrained-bert
