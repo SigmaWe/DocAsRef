@@ -1,8 +1,3 @@
-import sys
-from os import path
-file_path = path.abspath(__file__)
-sys.path.append(path.dirname(path.dirname(file_path)))
-
 import numpy as np
 import torch
 from tqdm.auto import trange
@@ -14,16 +9,20 @@ import warnings
 
 def cos_sim_mat_f(cand_segments: dar_type.TextSegments, ref_segments: dar_type.TextSegments, embedder: dar_type.Embedder) -> np.ndarray:
     def bert_encode(piece_segments: dar_type.TextSegments):
-        sent_emb = list()
+        sent_emb_list = list()
         for sent in piece_segments:
             with torch.no_grad():
-                sent_emb.append(embedder.encode(sent, convert_to_numpy=True))
-        return sent_emb
+                sent_emb_list.append(embedder.encode(sent, convert_to_numpy=True))
+        return np.stack(sent_emb_list, axis=0)
 
-    ref_sent_emb_list = bert_encode(ref_segments)
-    cand_sent_emb_list = bert_encode(cand_segments)
-    ref_sent_emb = np.stack(ref_sent_emb_list, axis=0)
-    cand_sent_emb = np.stack(cand_sent_emb_list, axis=0)
+    # def bert_encode_multiprocess(piece_segments: dar_type.TextSegments):
+    #     pool = embedder.start_multi_process_pool()
+    #     sent_emb = embedder.encode_multi_process(sentences=piece_segments, pool=pool, batch_size=8)
+    #     embedder.stop_multi_process_pool(pool)
+    #     return sent_emb
+
+    ref_sent_emb = bert_encode(ref_segments)
+    cand_sent_emb = bert_encode(cand_segments)
     numerators = np.inner(ref_sent_emb, cand_sent_emb)
     ref_sent_emb_norms = np.linalg.norm(ref_sent_emb, axis=1)
     cand_sent_emb_norms = np.linalg.norm(cand_sent_emb, axis=1)

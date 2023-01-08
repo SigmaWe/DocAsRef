@@ -2,6 +2,7 @@ import typing
 import numpy as np
 import sentence_transformers
 import transformers
+from datasets.arrow_dataset import Dataset
 
 
 MetricScoreList = typing.List[float]
@@ -17,6 +18,7 @@ class Embedder(sentence_transformers.SentenceTransformer):
 
 class SimilarityMatrixFunc(typing.Protocol):
     __name__: str
+
     def __call__(self, cand_segments: TextSegments, ref_segments: TextSegments) -> np.ndarray:
         ...
 
@@ -42,3 +44,17 @@ class DocWarning(Warning):
     Warning raised when the document is malformed
     e.g., an empty document, which is meaningless to metrics
     """
+
+
+class MNLICategory(typing.TypedDict):
+    label: str
+    score: float
+
+
+MNLICategories = typing.List[MNLICategory]
+
+
+MNLISimilarityExpression = typing.Callable[[MNLICategories], float]
+
+
+SummaryLengthExpression = typing.Callable[[typing.Optional[Dataset]], typing.Optional[int]]

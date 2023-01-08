@@ -14,46 +14,24 @@ Do not reinvent the wheel:
 
 # Approaches
 
-For metrics, add the following, as well as changes specified in "Usage" part of other approaches, to `env.py` of [EvalBase](https://github.com/SigmaWe/EvalBase)](https://github.com/SigmaWe/EvalBase):
+For evaluation, set correct path to [EvalBase](https://github.com/SigmaWe/EvalBase), in [`eval.py`](eval.py)
 
-```python
-import sys
-sys.path.append("/path/to/DocAsRef/")
-```
+For metrics, reference [`env_grp/`](env_grp/)
 
-To ignore some unnecessary warnings, use the following code in `eval.py`:
+We have 4 groups of environments:
 
-```python
-import warnings
-import pandas
-warnings.filterwarnings(
-    action="ignore",
-    message="You seem to be using the pipelines sequentially on GPU. In order to maximize efficiency please use a dataset",
-    category=UserWarning
-)
-warnings.simplefilter(
-    action="ignore",
-    category=pandas.errors.PerformanceWarning
-)
-```
+- Group 1: classic (bertscore, rouge, bleurt)
+- Group 2: bertscore-sentence (cos, mnli)
+- Group 3: AnyRef (bart, pegasus-xum) + Group 1
+- Group 4: Top + Group 1
+- Group 5: AnyRef (pegasus-newsroom, pegasus-large) + Group 1
+- Group 6: AnyRef (pegasus-cnndm, pegasus-x-large) + Group 1
 
 ## Approach 0: just replacing human summaries with documents
 
 Metrics: BERTScore, ROUGE, BLEURT, MoverScore
 
 Implemented in `/classic`
-
-Usage:
-```python
-import classic.eval as classic
-metrics = {
-    "bertscore": classic.bertscore_compute,
-    "rouge": classic.rouge_compute,
-    "bleurt": classic.bleurt_compute,
-    "moverscore-1gram": functools.partial(classic.moverscore_compute, n_gram=1),
-    "moverscore-2gram": functools.partial(classic.moverscore_compute, n_gram=2),
-}
-```
 
 ## Approach 1: sentence-level, better similarity metrics, and better weighting methods
 The pilot study results show that when reference summaries are of good quality, vanilla use of BERTScore is not good. Hence, we will try the following changes: 
@@ -83,32 +61,11 @@ for D in all_documents:
 
 Implemented in `/bertscore_sentence`
 
-Usage:
-```python
-import bertscore_sentence.eval as bertscore_sentence
-import dar_env
-metrics = {
-    "bertscore-sentence-cos-mpnet": functools.partial(bertscore_sentence.compute, embedder=dar_env.sent_embedder_mpnet),
-    "bertscore-sentence-cos-roberta": functools.partial(bertscore_sentence.compute, embedder=dar_env.sent_embedder_roberta),
-}
-```
-
 ### Approach 1.2
 
-Use a bi-sentence model, instead of cosine similarity in Approach 1.1. In this new approach, we do not have to embed individual sentences. Instead, we embed a pair of sentences (one from documents and one from system summaries).
+Use a bi-sentence model, instead of cosine similarity in Approach 1.1. In this new approach, we do not have to embed individual sentences. Instead, we embed a pair of sentences (one from documents and one from system summaries). We use models `roberta-large-mnli`, `facebook/bart-large-mnli`, and `microsoft/deberta-xlarge-mnli` with different expressions for similarity.
 
 Implemented in `/mnli`
-
-Usage:
-```python
-import mnli.eval as mnli
-import dar_env
-metrics = {
-    "bertscore-sentence-mnli-roberta": functools.partial(mnli.bertscore_sentence_compute, classifiers=dar_env.mnli_classifiers["roberta"]),
-    "bertscore-sentence-mnli-bart": functools.partial(mnli.bertscore_sentence_compute, classifiers=dar_env.mnli_classifiers["bart"]),
-    "bertscore-sentence-mnli-deberta": functools.partial(mnli.bertscore_sentence_compute, classifiers=dar_env.mnli_classifiers["deberta"]),
-}
-```
 
 ### Approach 1.3 (Ruixuan)
 
@@ -129,14 +86,8 @@ entropy ( sim(S2, D1), sim(S2, D2), ... )
 
 Implemented in `topk/`
 
-Usage:
-```python
-import top.eval as top
-metrics = {
-    "bertscore-topk-5": functools.partial(top.topk_compute, metric_compute_f=classic.bertscore_compute, topk=5),
-    "bertscore-topk-10": functools.partial(top.topk_compute, metric_compute_f=classic.bertscore_compute, topk=10),
-    "bertscore-topp-0.5": functools.partial(top.topp_compute, metric_compute_f=classic.bertscore_compute, topp=0.5),
-    "bertscore-topp-0.7": functools.partial(top.topp_compute, metric_compute_f=classic.bertscore_compute, topp=0.7),
-    # you may define other metrics with different topk parameter, and replace bertscore_compute by rouge_compute and bleurt_compute
-}
-```
+### Approach 1.6 Pseudo-reference using decent enough summarizers
+
+Instead of top-k and top-p in Approach 1.5, we use models `google/pegasus-xsum` and `facebook/bart-large-cnn` to generate pseudo-reference from documents.
+
+Implemented in `anyref/`
