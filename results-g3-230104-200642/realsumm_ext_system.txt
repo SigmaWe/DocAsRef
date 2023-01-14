@@ -1,0 +1,115 @@
+corr_metric  aspect              approach  model                     score_name          
+pearsonr     litepyramid_recall  new       bertscore                 precision              0.171
+                                                                     recall                 0.135
+                                                                     f1                     0.170
+                                           bertscore-anyref-bart     precision              0.199
+                                                                     recall                 0.202
+                                                                     f1                     0.217
+                                           bertscore-anyref-pegasus  precision              0.136
+                                                                     recall                 0.185
+                                                                     f1                     0.172
+                                           rouge                     rouge1                 0.239
+                                                                     rouge2                 0.243
+                                                                     rougeL                 0.233
+                                                                     rougeLsum              0.233
+                                           rouge-anyref-bart         rouge1                 0.193
+                                                                     rouge2                 0.196
+                                                                     rougeL                 0.190
+                                                                     rougeLsum              0.190
+                                           rouge-anyref-pegasus      rouge1                 0.180
+                                                                     rouge2                 0.240
+                                                                     rougeL                 0.201
+                                                                     rougeLsum              0.201
+                                           bleurt                    scores                 0.073
+                                           bleurt-anyref-bart        scores                 0.237
+                                           bleurt-anyref-pegasus     scores                 0.239
+                                 PreCalc   PreCalc                   rouge_1_f_score        0.360
+                                                                     rouge_2_recall         0.459
+                                                                     rouge_l_recall         0.477
+                                                                     rouge_2_precision      0.378
+                                                                     rouge_2_f_score        0.414
+                                                                     rouge_1_precision      0.263
+                                                                     rouge_1_recall         0.463
+                                                                     rouge_l_precision      0.304
+                                                                     rouge_l_f_score        0.389
+                                                                     js-2                   0.431
+                                                                     mover_score            0.310
+                                                                     bert_recall_score      0.459
+                                                                     bert_precision_score   0.310
+                                                                     bert_f_score           0.406
+kendalltau   litepyramid_recall  new       bertscore                 precision              0.093
+                                                                     recall                 0.093
+                                                                     f1                     0.112
+                                           bertscore-anyref-bart     precision              0.130
+                                                                     recall                 0.183
+                                                                     f1                     0.174
+                                           bertscore-anyref-pegasus  precision              0.098
+                                                                     recall                 0.113
+                                                                     f1                     0.116
+                                           rouge                     rouge1                 0.209
+                                                                     rouge2                 0.210
+                                                                     rougeL                 0.193
+                                                                     rougeLsum              0.193
+                                           rouge-anyref-bart         rouge1                 0.145
+                                                                     rouge2                 0.174
+                                                                     rougeL                 0.175
+                                                                     rougeLsum              0.175
+                                           rouge-anyref-pegasus      rouge1                 0.159
+                                                                     rouge2                 0.134
+                                                                     rougeL                 0.134
+                                                                     rougeLsum              0.134
+                                           bleurt                    scores                 0.049
+                                           bleurt-anyref-bart        scores                 0.193
+                                           bleurt-anyref-pegasus     scores                 0.198
+                                 PreCalc   PreCalc                   rouge_1_f_score        0.239
+                                                                     rouge_2_recall         0.343
+                                                                     rouge_l_recall         0.314
+                                                                     rouge_2_precision      0.283
+                                                                     rouge_2_f_score        0.308
+                                                                     rouge_1_precision      0.177
+                                                                     rouge_1_recall         0.299
+                                                                     rouge_l_precision      0.217
+                                                                     rouge_l_f_score        0.266
+                                                                     js-2                   0.310
+                                                                     mover_score            0.227
+                                                                     bert_recall_score      0.332
+                                                                     bert_precision_score   0.221
+                                                                     bert_f_score           0.296
+spearmanr    litepyramid_recall  new       bertscore                 precision              0.143
+                                                                     recall                 0.138
+                                                                     f1                     0.161
+                                           bertscore-anyref-bart     precision              0.194
+                                                                     recall                 0.245
+                                                                     f1                     0.242
+                                           bertscore-anyref-pegasus  precision              0.153
+                                                                     recall                 0.165
+                                                                     f1                     0.176
+                                           rouge                     rouge1                 0.305
+                                                                     rouge2                 0.310
+                                                                     rougeL                 0.291
+                                                                     rougeLsum              0.291
+                                           rouge-anyref-bart         rouge1                 0.208
+                                                                     rouge2                 0.240
+                                                                     rougeL                 0.242
+                                                                     rougeLsum              0.242
+                                           rouge-anyref-pegasus      rouge1                 0.231
+                                                                     rouge2                 0.198
+                                                                     rougeL                 0.198
+                                                                     rougeLsum              0.198
+                                           bleurt                    scores                 0.068
+                                           bleurt-anyref-bart        scores                 0.271
+                                           bleurt-anyref-pegasus     scores                 0.286
+                                 PreCalc   PreCalc                   rouge_1_f_score        0.346
+                                                                     rouge_2_recall         0.480
+                                                                     rouge_l_recall         0.456
+                                                                     rouge_2_precision      0.395
+                                                                     rouge_2_f_score        0.437
+                                                                     rouge_1_precision      0.262
+                                                                     rouge_1_recall         0.423
+                                                                     rouge_l_precision      0.314
+                                                                     rouge_l_f_score        0.379
+                                                                     js-2                   0.435
+                                                                     mover_score            0.324
+                                                                     bert_recall_score      0.441
+                                                                     bert_precision_score   0.315
+                                                                     bert_f_score           0.403

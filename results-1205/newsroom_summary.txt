@@ -1,0 +1,913 @@
+corr_metric  aspect                 approach  model                    score_name
+pearsonr     InformativenessRating  trad      bertscore                precision    -0.070
+                                                                       recall        0.282
+                                                                       f1            0.077
+                                    new       bertscore                precision     0.684
+                                                                       recall        0.803
+                                                                       f1            0.749
+                                    trad      bertscore-top5           precision    -0.079
+                                                                       recall        0.279
+                                                                       f1            0.072
+                                    new       bertscore-top5           precision     0.565
+                                                                       recall        0.685
+                                                                       f1            0.642
+                                    trad      bertscore-top10          precision    -0.071
+                                                                       recall        0.281
+                                                                       f1            0.076
+                                    new       bertscore-top10          precision     0.631
+                                                                       recall        0.752
+                                                                       f1            0.702
+                                    trad      bertscore-top20          precision    -0.071
+                                                                       recall        0.281
+                                                                       f1            0.076
+                                    new       bertscore-top20          precision     0.676
+                                                                       recall        0.795
+                                                                       f1            0.742
+                                    trad      bertscore-sentence       P             0.159
+                                                                       R             0.300
+                                                                       F             0.221
+                                    new       bertscore-sentence       P             0.722
+                                                                       R             0.735
+                                                                       F             0.756
+                                    trad      bertscore-sentence-mnli  P            -0.128
+                                                                       R             0.029
+                                                                       F            -0.067
+                                    new       bertscore-sentence-mnli  P             0.512
+                                                                       R             0.324
+                                                                       F             0.390
+                                    trad      rouge                    rouge1       -0.050
+                                                                       rouge2       -0.091
+                                                                       rougeL       -0.086
+                                                                       rougeLsum    -0.086
+                                    new       rouge                    rouge1        0.779
+                                                                       rouge2        0.788
+                                                                       rougeL        0.788
+                                                                       rougeLsum     0.788
+                                    trad      rouge-top5               rouge1       -0.056
+                                                                       rouge2       -0.097
+                                                                       rougeL       -0.092
+                                                                       rougeLsum    -0.092
+                                    new       rouge-top5               rouge1        0.672
+                                                                       rouge2        0.603
+                                                                       rougeL        0.628
+                                                                       rougeLsum     0.628
+                                    trad      rouge-top10              rouge1       -0.050
+                                                                       rouge2       -0.091
+                                                                       rougeL       -0.086
+                                                                       rougeLsum    -0.086
+                                    new       rouge-top10              rouge1        0.728
+                                                                       rouge2        0.663
+                                                                       rougeL        0.692
+                                                                       rougeLsum     0.692
+                                    trad      rouge-top20              rouge1       -0.050
+                                                                       rouge2       -0.091
+                                                                       rougeL       -0.086
+                                                                       rougeLsum    -0.086
+                                    new       rouge-top20              rouge1        0.764
+                                                                       rouge2        0.721
+                                                                       rougeL        0.742
+                                                                       rougeLsum     0.742
+                                    trad      bleurt                   scores        0.075
+                                    new       bleurt                   scores        0.606
+                                    trad      bleurt-top5              scores        0.069
+                                    new       bleurt-top5              scores        0.569
+                                    trad      bleurt-top10             scores        0.075
+                                    new       bleurt-top10             scores        0.603
+                                    trad      bleurt-top20             scores        0.075
+                                    new       bleurt-top20             scores        0.603
+             RelevanceRating        trad      bertscore                precision    -0.020
+                                                                       recall        0.280
+                                                                       f1            0.107
+                                    new       bertscore                precision     0.682
+                                                                       recall        0.746
+                                                                       f1            0.725
+                                    trad      bertscore-top5           precision    -0.030
+                                                                       recall        0.276
+                                                                       f1            0.102
+                                    new       bertscore-top5           precision     0.574
+                                                                       recall        0.641
+                                                                       f1            0.624
+                                    trad      bertscore-top10          precision    -0.021
+                                                                       recall        0.280
+                                                                       f1            0.107
+                                    new       bertscore-top10          precision     0.633
+                                                                       recall        0.701
+                                                                       f1            0.680
+                                    trad      bertscore-top20          precision    -0.021
+                                                                       recall        0.280
+                                                                       f1            0.107
+                                    new       bertscore-top20          precision     0.676
+                                                                       recall        0.741
+                                                                       f1            0.719
+                                    trad      bertscore-sentence       P             0.182
+                                                                       R             0.292
+                                                                       F             0.232
+                                    new       bertscore-sentence       P             0.756
+                                                                       R             0.731
+                                                                       F             0.762
+                                    trad      bertscore-sentence-mnli  P            -0.095
+                                                                       R             0.041
+                                                                       F            -0.039
+                                    new       bertscore-sentence-mnli  P             0.584
+                                                                       R             0.288
+                                                                       F             0.364
+                                    trad      rouge                    rouge1       -0.013
+                                                                       rouge2       -0.059
+                                                                       rougeL       -0.054
+                                                                       rougeLsum    -0.054
+                                    new       rouge                    rouge1        0.709
+                                                                       rouge2        0.719
+                                                                       rougeL        0.714
+                                                                       rougeLsum     0.714
+                                    trad      rouge-top5               rouge1       -0.022
+                                                                       rouge2       -0.067
+                                                                       rougeL       -0.063
+                                                                       rougeLsum    -0.063
+                                    new       rouge-top5               rouge1        0.626
+                                                                       rouge2        0.556
+                                                                       rougeL        0.578
+                                                                       rougeLsum     0.578
+                                    trad      rouge-top10              rouge1       -0.013
+                                                                       rouge2       -0.059
+                                                                       rougeL       -0.054
+                                                                       rougeLsum    -0.054
+                                    new       rouge-top10              rouge1        0.658
+                                                                       rouge2        0.591
+                                                                       rougeL        0.616
+                                                                       rougeLsum     0.616
+                                    trad      rouge-top20              rouge1       -0.013
+                                                                       rouge2       -0.059
+                                                                       rougeL       -0.054
+                                                                       rougeLsum    -0.054
+                                    new       rouge-top20              rouge1        0.689
+                                                                       rouge2        0.644
+                                                                       rougeL        0.662
+                                                                       rougeLsum     0.662
+                                    trad      bleurt                   scores        0.101
+                                    new       bleurt                   scores        0.586
+                                    trad      bleurt-top5              scores        0.094
+                                    new       bleurt-top5              scores        0.539
+                                    trad      bleurt-top10             scores        0.101
+                                    new       bleurt-top10             scores        0.579
+                                    trad      bleurt-top20             scores        0.101
+                                    new       bleurt-top20             scores        0.584
+             CoherenceRating        trad      bertscore                precision    -0.044
+                                                                       recall        0.242
+                                                                       f1            0.075
+                                    new       bertscore                precision     0.646
+                                                                       recall        0.714
+                                                                       f1            0.688
+                                    trad      bertscore-top5           precision    -0.053
+                                                                       recall        0.239
+                                                                       f1            0.070
+                                    new       bertscore-top5           precision     0.550
+                                                                       recall        0.629
+                                                                       f1            0.605
+                                    trad      bertscore-top10          precision    -0.044
+                                                                       recall        0.242
+                                                                       f1            0.075
+                                    new       bertscore-top10          precision     0.606
+                                                                       recall        0.681
+                                                                       f1            0.654
+                                    trad      bertscore-top20          precision    -0.044
+                                                                       recall        0.242
+                                                                       f1            0.075
+                                    new       bertscore-top20          precision     0.643
+                                                                       recall        0.710
+                                                                       f1            0.685
+                                    trad      bertscore-sentence       P             0.106
+                                                                       R             0.211
+                                                                       F             0.153
+                                    new       bertscore-sentence       P             0.662
+                                                                       R             0.601
+                                                                       F             0.639
+                                    trad      bertscore-sentence-mnli  P            -0.149
+                                                                       R            -0.017
+                                                                       F            -0.102
+                                    new       bertscore-sentence-mnli  P             0.460
+                                                                       R             0.234
+                                                                       F             0.293
+                                    trad      rouge                    rouge1       -0.081
+                                                                       rouge2       -0.112
+                                                                       rougeL       -0.107
+                                                                       rougeLsum    -0.107
+                                    new       rouge                    rouge1        0.621
+                                                                       rouge2        0.643
+                                                                       rougeL        0.650
+                                                                       rougeLsum     0.650
+                                    trad      rouge-top5               rouge1       -0.091
+                                                                       rouge2       -0.122
+                                                                       rougeL       -0.117
+                                                                       rougeLsum    -0.117
+                                    new       rouge-top5               rouge1        0.565
+                                                                       rouge2        0.521
+                                                                       rougeL        0.554
+                                                                       rougeLsum     0.554
+                                    trad      rouge-top10              rouge1       -0.081
+                                                                       rouge2       -0.112
+                                                                       rougeL       -0.107
+                                                                       rougeLsum    -0.107
+                                    new       rouge-top10              rouge1        0.601
+                                                                       rouge2        0.562
+                                                                       rougeL        0.595
+                                                                       rougeLsum     0.595
+                                    trad      rouge-top20              rouge1       -0.081
+                                                                       rouge2       -0.112
+                                                                       rougeL       -0.107
+                                                                       rougeLsum    -0.107
+                                    new       rouge-top20              rouge1        0.620
+                                                                       rouge2        0.600
+                                                                       rougeL        0.630
+                                                                       rougeLsum     0.630
+                                    trad      bleurt                   scores        0.026
+                                    new       bleurt                   scores        0.612
+                                    trad      bleurt-top5              scores        0.019
+                                    new       bleurt-top5              scores        0.556
+                                    trad      bleurt-top10             scores        0.025
+                                    new       bleurt-top10             scores        0.595
+                                    trad      bleurt-top20             scores        0.025
+                                    new       bleurt-top20             scores        0.607
+             FluencyRating          trad      bertscore                precision    -0.032
+                                                                       recall        0.214
+                                                                       f1            0.068
+                                    new       bertscore                precision     0.590
+                                                                       recall        0.660
+                                                                       f1            0.630
+                                    trad      bertscore-top5           precision    -0.040
+                                                                       recall        0.211
+                                                                       f1            0.063
+                                    new       bertscore-top5           precision     0.505
+                                                                       recall        0.568
+                                                                       f1            0.549
+                                    trad      bertscore-top10          precision    -0.032
+                                                                       recall        0.213
+                                                                       f1            0.067
+                                    new       bertscore-top10          precision     0.559
+                                                                       recall        0.626
+                                                                       f1            0.602
+                                    trad      bertscore-top20          precision    -0.032
+                                                                       recall        0.213
+                                                                       f1            0.067
+                                    new       bertscore-top20          precision     0.589
+                                                                       recall        0.655
+                                                                       f1            0.628
+                                    trad      bertscore-sentence       P             0.090
+                                                                       R             0.187
+                                                                       F             0.134
+                                    new       bertscore-sentence       P             0.636
+                                                                       R             0.549
+                                                                       F             0.592
+                                    trad      bertscore-sentence-mnli  P            -0.146
+                                                                       R            -0.025
+                                                                       F            -0.098
+                                    new       bertscore-sentence-mnli  P             0.465
+                                                                       R             0.170
+                                                                       F             0.224
+                                    trad      rouge                    rouge1       -0.084
+                                                                       rouge2       -0.105
+                                                                       rougeL       -0.104
+                                                                       rougeLsum    -0.104
+                                    new       rouge                    rouge1        0.558
+                                                                       rouge2        0.590
+                                                                       rougeL        0.588
+                                                                       rougeLsum     0.588
+                                    trad      rouge-top5               rouge1       -0.094
+                                                                       rouge2       -0.114
+                                                                       rougeL       -0.114
+                                                                       rougeLsum    -0.114
+                                    new       rouge-top5               rouge1        0.486
+                                                                       rouge2        0.440
+                                                                       rougeL        0.470
+                                                                       rougeLsum     0.470
+                                    trad      rouge-top10              rouge1       -0.084
+                                                                       rouge2       -0.105
+                                                                       rougeL       -0.104
+                                                                       rougeLsum    -0.104
+                                    new       rouge-top10              rouge1        0.523
+                                                                       rouge2        0.478
+                                                                       rougeL        0.509
+                                                                       rougeLsum     0.509
+                                    trad      rouge-top20              rouge1       -0.084
+                                                                       rouge2       -0.105
+                                                                       rougeL       -0.104
+                                                                       rougeLsum    -0.104
+                                    new       rouge-top20              rouge1        0.541
+                                                                       rouge2        0.513
+                                                                       rougeL        0.537
+                                                                       rougeLsum     0.537
+                                    trad      bleurt                   scores        0.018
+                                    new       bleurt                   scores        0.588
+                                    trad      bleurt-top5              scores        0.013
+                                    new       bleurt-top5              scores        0.521
+                                    trad      bleurt-top10             scores        0.018
+                                    new       bleurt-top10             scores        0.569
+                                    trad      bleurt-top20             scores        0.018
+                                    new       bleurt-top20             scores        0.584
+kendalltau   InformativenessRating  trad      bertscore                precision    -0.030
+                                                                       recall        0.258
+                                                                       f1            0.122
+                                    new       bertscore                precision     0.509
+                                                                       recall        0.652
+                                                                       f1            0.587
+                                    trad      bertscore-top5           precision    -0.035
+                                                                       recall        0.256
+                                                                       f1            0.122
+                                    new       bertscore-top5           precision     0.444
+                                                                       recall        0.593
+                                                                       f1            0.526
+                                    trad      bertscore-top10          precision    -0.033
+                                                                       recall        0.255
+                                                                       f1            0.120
+                                    new       bertscore-top10          precision     0.472
+                                                                       recall        0.618
+                                                                       f1            0.553
+                                    trad      bertscore-top20          precision    -0.033
+                                                                       recall        0.255
+                                                                       f1            0.120
+                                    new       bertscore-top20          precision     0.511
+                                                                       recall        0.638
+                                                                       f1            0.583
+                                    trad      bertscore-sentence       P             0.150
+                                                                       R             0.240
+                                                                       F             0.183
+                                    new       bertscore-sentence       P             0.471
+                                                                       R             0.527
+                                                                       F             0.557
+                                    trad      bertscore-sentence-mnli  P            -0.060
+                                                                       R             0.043
+                                                                       F            -0.022
+                                    new       bertscore-sentence-mnli  P             0.293
+                                                                       R             0.251
+                                                                       F             0.298
+                                    trad      rouge                    rouge1        0.084
+                                                                       rouge2        0.043
+                                                                       rougeL        0.021
+                                                                       rougeLsum     0.021
+                                    new       rouge                    rouge1        0.638
+                                                                       rouge2        0.643
+                                                                       rougeL        0.640
+                                                                       rougeLsum     0.640
+                                    trad      rouge-top5               rouge1        0.085
+                                                                       rouge2        0.038
+                                                                       rougeL        0.020
+                                                                       rougeLsum     0.020
+                                    new       rouge-top5               rouge1        0.563
+                                                                       rouge2        0.510
+                                                                       rougeL        0.555
+                                                                       rougeLsum     0.555
+                                    trad      rouge-top10              rouge1        0.084
+                                                                       rouge2        0.043
+                                                                       rougeL        0.021
+                                                                       rougeLsum     0.021
+                                    new       rouge-top10              rouge1        0.594
+                                                                       rouge2        0.555
+                                                                       rougeL        0.592
+                                                                       rougeLsum     0.592
+                                    trad      rouge-top20              rouge1        0.084
+                                                                       rouge2        0.043
+                                                                       rougeL        0.021
+                                                                       rougeLsum     0.021
+                                    new       rouge-top20              rouge1        0.632
+                                                                       rouge2        0.600
+                                                                       rougeL        0.608
+                                                                       rougeLsum     0.608
+                                    trad      bleurt                   scores        0.127
+                                    new       bleurt                   scores        0.453
+                                    trad      bleurt-top5              scores        0.136
+                                    new       bleurt-top5              scores        0.459
+                                    trad      bleurt-top10             scores        0.129
+                                    new       bleurt-top10             scores        0.460
+                                    trad      bleurt-top20             scores        0.129
+                                    new       bleurt-top20             scores        0.446
+             RelevanceRating        trad      bertscore                precision     0.004
+                                                                       recall        0.229
+                                                                       f1            0.139
+                                    new       bertscore                precision     0.498
+                                                                       recall        0.558
+                                                                       f1            0.522
+                                    trad      bertscore-top5           precision     0.004
+                                                                       recall        0.229
+                                                                       f1            0.140
+                                    new       bertscore-top5           precision     0.413
+                                                                       recall        0.522
+                                                                       f1            0.481
+                                    trad      bertscore-top10          precision     0.005
+                                                                       recall        0.227
+                                                                       f1            0.142
+                                    new       bertscore-top10          precision     0.430
+                                                                       recall        0.520
+                                                                       f1            0.483
+                                    trad      bertscore-top20          precision     0.005
+                                                                       recall        0.227
+                                                                       f1            0.142
+                                    new       bertscore-top20          precision     0.496
+                                                                       recall        0.550
+                                                                       f1            0.523
+                                    trad      bertscore-sentence       P             0.154
+                                                                       R             0.198
+                                                                       F             0.176
+                                    new       bertscore-sentence       P             0.469
+                                                                       R             0.446
+                                                                       F             0.473
+                                    trad      bertscore-sentence-mnli  P            -0.040
+                                                                       R             0.039
+                                                                       F            -0.007
+                                    new       bertscore-sentence-mnli  P             0.345
+                                                                       R             0.211
+                                                                       F             0.259
+                                    trad      rouge                    rouge1        0.103
+                                                                       rouge2        0.063
+                                                                       rougeL        0.057
+                                                                       rougeLsum     0.057
+                                    new       rouge                    rouge1        0.541
+                                                                       rouge2        0.552
+                                                                       rougeL        0.542
+                                                                       rougeLsum     0.542
+                                    trad      rouge-top5               rouge1        0.103
+                                                                       rouge2        0.061
+                                                                       rougeL        0.058
+                                                                       rougeLsum     0.058
+                                    new       rouge-top5               rouge1        0.493
+                                                                       rouge2        0.454
+                                                                       rougeL        0.495
+                                                                       rougeLsum     0.495
+                                    trad      rouge-top10              rouge1        0.103
+                                                                       rouge2        0.063
+                                                                       rougeL        0.057
+                                                                       rougeLsum     0.057
+                                    new       rouge-top10              rouge1        0.489
+                                                                       rouge2        0.459
+                                                                       rougeL        0.490
+                                                                       rougeLsum     0.490
+                                    trad      rouge-top20              rouge1        0.103
+                                                                       rouge2        0.063
+                                                                       rougeL        0.057
+                                                                       rougeLsum     0.057
+                                    new       rouge-top20              rouge1        0.521
+                                                                       rouge2        0.506
+                                                                       rougeL        0.516
+                                                                       rougeLsum     0.516
+                                    trad      bleurt                   scores        0.105
+                                    new       bleurt                   scores        0.415
+                                    trad      bleurt-top5              scores        0.114
+                                    new       bleurt-top5              scores        0.447
+                                    trad      bleurt-top10             scores        0.107
+                                    new       bleurt-top10             scores        0.424
+                                    trad      bleurt-top20             scores        0.107
+                                    new       bleurt-top20             scores        0.414
+             CoherenceRating        trad      bertscore                precision     0.045
+                                                                       recall        0.260
+                                                                       f1            0.153
+                                    new       bertscore                precision     0.532
+                                                                       recall        0.560
+                                                                       f1            0.563
+                                    trad      bertscore-top5           precision     0.042
+                                                                       recall        0.255
+                                                                       f1            0.152
+                                    new       bertscore-top5           precision     0.455
+                                                                       recall        0.524
+                                                                       f1            0.506
+                                    trad      bertscore-top10          precision     0.042
+                                                                       recall        0.257
+                                                                       f1            0.151
+                                    new       bertscore-top10          precision     0.493
+                                                                       recall        0.553
+                                                                       f1            0.547
+                                    trad      bertscore-top20          precision     0.042
+                                                                       recall        0.257
+                                                                       f1            0.151
+                                    new       bertscore-top20          precision     0.537
+                                                                       recall        0.555
+                                                                       f1            0.568
+                                    trad      bertscore-sentence       P             0.120
+                                                                       R             0.190
+                                                                       F             0.141
+                                    new       bertscore-sentence       P             0.518
+                                                                       R             0.435
+                                                                       F             0.517
+                                    trad      bertscore-sentence-mnli  P            -0.099
+                                                                       R            -0.014
+                                                                       F            -0.079
+                                    new       bertscore-sentence-mnli  P             0.317
+                                                                       R             0.182
+                                                                       F             0.228
+                                    trad      rouge                    rouge1        0.055
+                                                                       rouge2       -0.001
+                                                                       rougeL        0.009
+                                                                       rougeLsum     0.009
+                                    new       rouge                    rouge1        0.477
+                                                                       rouge2        0.503
+                                                                       rougeL        0.504
+                                                                       rougeLsum     0.504
+                                    trad      rouge-top5               rouge1        0.047
+                                                                       rouge2       -0.009
+                                                                       rougeL        0.005
+                                                                       rougeLsum     0.005
+                                    new       rouge-top5               rouge1        0.460
+                                                                       rouge2        0.436
+                                                                       rougeL        0.482
+                                                                       rougeLsum     0.482
+                                    trad      rouge-top10              rouge1        0.055
+                                                                       rouge2       -0.001
+                                                                       rougeL        0.009
+                                                                       rougeLsum     0.009
+                                    new       rouge-top10              rouge1        0.470
+                                                                       rouge2        0.471
+                                                                       rougeL        0.505
+                                                                       rougeLsum     0.505
+                                    trad      rouge-top20              rouge1        0.055
+                                                                       rouge2       -0.001
+                                                                       rougeL        0.009
+                                                                       rougeLsum     0.009
+                                    new       rouge-top20              rouge1        0.494
+                                                                       rouge2        0.488
+                                                                       rougeL        0.493
+                                                                       rougeLsum     0.493
+                                    trad      bleurt                   scores        0.061
+                                    new       bleurt                   scores        0.497
+                                    trad      bleurt-top5              scores        0.061
+                                    new       bleurt-top5              scores        0.454
+                                    trad      bleurt-top10             scores        0.063
+                                    new       bleurt-top10             scores        0.492
+                                    trad      bleurt-top20             scores        0.063
+                                    new       bleurt-top20             scores        0.494
+             FluencyRating          trad      bertscore                precision     0.035
+                                                                       recall        0.262
+                                                                       f1            0.145
+                                    new       bertscore                precision     0.497
+                                                                       recall        0.497
+                                                                       f1            0.520
+                                    trad      bertscore-top5           precision     0.028
+                                                                       recall        0.257
+                                                                       f1            0.143
+                                    new       bertscore-top5           precision     0.412
+                                                                       recall        0.451
+                                                                       f1            0.456
+                                    trad      bertscore-top10          precision     0.032
+                                                                       recall        0.259
+                                                                       f1            0.143
+                                    new       bertscore-top10          precision     0.456
+                                                                       recall        0.490
+                                                                       f1            0.491
+                                    trad      bertscore-top20          precision     0.032
+                                                                       recall        0.259
+                                                                       f1            0.143
+                                    new       bertscore-top20          precision     0.502
+                                                                       recall        0.494
+                                                                       f1            0.518
+                                    trad      bertscore-sentence       P             0.121
+                                                                       R             0.186
+                                                                       F             0.143
+                                    new       bertscore-sentence       P             0.489
+                                                                       R             0.418
+                                                                       F             0.495
+                                    trad      bertscore-sentence-mnli  P            -0.081
+                                                                       R             0.008
+                                                                       F            -0.043
+                                    new       bertscore-sentence-mnli  P             0.354
+                                                                       R             0.119
+                                                                       F             0.153
+                                    trad      rouge                    rouge1        0.056
+                                                                       rouge2        0.022
+                                                                       rougeL        0.020
+                                                                       rougeLsum     0.020
+                                    new       rouge                    rouge1        0.391
+                                                                       rouge2        0.425
+                                                                       rougeL        0.432
+                                                                       rougeLsum     0.432
+                                    trad      rouge-top5               rouge1        0.051
+                                                                       rouge2        0.016
+                                                                       rougeL        0.016
+                                                                       rougeLsum     0.016
+                                    new       rouge-top5               rouge1        0.383
+                                                                       rouge2        0.350
+                                                                       rougeL        0.401
+                                                                       rougeLsum     0.401
+                                    trad      rouge-top10              rouge1        0.056
+                                                                       rouge2        0.022
+                                                                       rougeL        0.020
+                                                                       rougeLsum     0.020
+                                    new       rouge-top10              rouge1        0.387
+                                                                       rouge2        0.380
+                                                                       rougeL        0.419
+                                                                       rougeLsum     0.419
+                                    trad      rouge-top20              rouge1        0.056
+                                                                       rouge2        0.022
+                                                                       rougeL        0.020
+                                                                       rougeLsum     0.020
+                                    new       rouge-top20              rouge1        0.395
+                                                                       rouge2        0.400
+                                                                       rougeL        0.413
+                                                                       rougeLsum     0.413
+                                    trad      bleurt                   scores        0.055
+                                    new       bleurt                   scores        0.462
+                                    trad      bleurt-top5              scores        0.058
+                                    new       bleurt-top5              scores        0.414
+                                    trad      bleurt-top10             scores        0.055
+                                    new       bleurt-top10             scores        0.452
+                                    trad      bleurt-top20             scores        0.055
+                                    new       bleurt-top20             scores        0.463
+spearmanr    InformativenessRating  trad      bertscore                precision    -0.034
+                                                                       recall        0.315
+                                                                       f1            0.149
+                                    new       bertscore                precision     0.611
+                                                                       recall        0.750
+                                                                       f1            0.689
+                                    trad      bertscore-top5           precision    -0.038
+                                                                       recall        0.313
+                                                                       f1            0.151
+                                    new       bertscore-top5           precision     0.532
+                                                                       recall        0.692
+                                                                       f1            0.619
+                                    trad      bertscore-top10          precision    -0.035
+                                                                       recall        0.311
+                                                                       f1            0.150
+                                    new       bertscore-top10          precision     0.572
+                                                                       recall        0.718
+                                                                       f1            0.653
+                                    trad      bertscore-top20          precision    -0.035
+                                                                       recall        0.311
+                                                                       f1            0.150
+                                    new       bertscore-top20          precision     0.612
+                                                                       recall        0.738
+                                                                       f1            0.685
+                                    trad      bertscore-sentence       P             0.187
+                                                                       R             0.285
+                                                                       F             0.222
+                                    new       bertscore-sentence       P             0.567
+                                                                       R             0.637
+                                                                       F             0.662
+                                    trad      bertscore-sentence-mnli  P            -0.086
+                                                                       R             0.052
+                                                                       F            -0.034
+                                    new       bertscore-sentence-mnli  P             0.373
+                                                                       R             0.325
+                                                                       F             0.374
+                                    trad      rouge                    rouge1        0.105
+                                                                       rouge2        0.069
+                                                                       rougeL        0.035
+                                                                       rougeLsum     0.035
+                                    new       rouge                    rouge1        0.744
+                                                                       rouge2        0.746
+                                                                       rougeL        0.746
+                                                                       rougeLsum     0.746
+                                    trad      rouge-top5               rouge1        0.106
+                                                                       rouge2        0.063
+                                                                       rougeL        0.035
+                                                                       rougeLsum     0.035
+                                    new       rouge-top5               rouge1        0.658
+                                                                       rouge2        0.596
+                                                                       rougeL        0.645
+                                                                       rougeLsum     0.645
+                                    trad      rouge-top10              rouge1        0.105
+                                                                       rouge2        0.069
+                                                                       rougeL        0.035
+                                                                       rougeLsum     0.035
+                                    new       rouge-top10              rouge1        0.692
+                                                                       rouge2        0.648
+                                                                       rougeL        0.689
+                                                                       rougeLsum     0.689
+                                    trad      rouge-top20              rouge1        0.105
+                                                                       rouge2        0.069
+                                                                       rougeL        0.035
+                                                                       rougeLsum     0.035
+                                    new       rouge-top20              rouge1        0.731
+                                                                       rouge2        0.697
+                                                                       rougeL        0.709
+                                                                       rougeLsum     0.709
+                                    trad      bleurt                   scores        0.154
+                                    new       bleurt                   scores        0.549
+                                    trad      bleurt-top5              scores        0.160
+                                    new       bleurt-top5              scores        0.553
+                                    trad      bleurt-top10             scores        0.156
+                                    new       bleurt-top10             scores        0.549
+                                    trad      bleurt-top20             scores        0.156
+                                    new       bleurt-top20             scores        0.541
+             RelevanceRating        trad      bertscore                precision     0.012
+                                                                       recall        0.294
+                                                                       f1            0.171
+                                    new       bertscore                precision     0.591
+                                                                       recall        0.658
+                                                                       f1            0.617
+                                    trad      bertscore-top5           precision     0.010
+                                                                       recall        0.293
+                                                                       f1            0.175
+                                    new       bertscore-top5           precision     0.504
+                                                                       recall        0.622
+                                                                       f1            0.577
+                                    trad      bertscore-top10          precision     0.013
+                                                                       recall        0.292
+                                                                       f1            0.176
+                                    new       bertscore-top10          precision     0.523
+                                                                       recall        0.622
+                                                                       f1            0.585
+                                    trad      bertscore-top20          precision     0.013
+                                                                       recall        0.292
+                                                                       f1            0.176
+                                    new       bertscore-top20          precision     0.589
+                                                                       recall        0.653
+                                                                       f1            0.618
+                                    trad      bertscore-sentence       P             0.198
+                                                                       R             0.250
+                                                                       F             0.219
+                                    new       bertscore-sentence       P             0.559
+                                                                       R             0.550
+                                                                       F             0.580
+                                    trad      bertscore-sentence-mnli  P            -0.071
+                                                                       R             0.040
+                                                                       F            -0.023
+                                    new       bertscore-sentence-mnli  P             0.430
+                                                                       R             0.258
+                                                                       F             0.312
+                                    trad      rouge                    rouge1        0.128
+                                                                       rouge2        0.087
+                                                                       rougeL        0.063
+                                                                       rougeLsum     0.063
+                                    new       rouge                    rouge1        0.639
+                                                                       rouge2        0.648
+                                                                       rougeL        0.641
+                                                                       rougeLsum     0.641
+                                    trad      rouge-top5               rouge1        0.124
+                                                                       rouge2        0.081
+                                                                       rougeL        0.060
+                                                                       rougeLsum     0.060
+                                    new       rouge-top5               rouge1        0.585
+                                                                       rouge2        0.537
+                                                                       rougeL        0.580
+                                                                       rougeLsum     0.580
+                                    trad      rouge-top10              rouge1        0.128
+                                                                       rouge2        0.087
+                                                                       rougeL        0.063
+                                                                       rougeLsum     0.063
+                                    new       rouge-top10              rouge1        0.586
+                                                                       rouge2        0.543
+                                                                       rougeL        0.584
+                                                                       rougeLsum     0.584
+                                    trad      rouge-top20              rouge1        0.128
+                                                                       rouge2        0.087
+                                                                       rougeL        0.063
+                                                                       rougeLsum     0.063
+                                    new       rouge-top20              rouge1        0.623
+                                                                       rouge2        0.595
+                                                                       rougeL        0.615
+                                                                       rougeLsum     0.615
+                                    trad      bleurt                   scores        0.140
+                                    new       bleurt                   scores        0.507
+                                    trad      bleurt-top5              scores        0.147
+                                    new       bleurt-top5              scores        0.543
+                                    trad      bleurt-top10             scores        0.142
+                                    new       bleurt-top10             scores        0.511
+                                    trad      bleurt-top20             scores        0.142
+                                    new       bleurt-top20             scores        0.503
+             CoherenceRating        trad      bertscore                precision     0.044
+                                                                       recall        0.311
+                                                                       f1            0.185
+                                    new       bertscore                precision     0.633
+                                                                       recall        0.659
+                                                                       f1            0.663
+                                    trad      bertscore-top5           precision     0.039
+                                                                       recall        0.305
+                                                                       f1            0.186
+                                    new       bertscore-top5           precision     0.544
+                                                                       recall        0.620
+                                                                       f1            0.596
+                                    trad      bertscore-top10          precision     0.040
+                                                                       recall        0.306
+                                                                       f1            0.184
+                                    new       bertscore-top10          precision     0.586
+                                                                       recall        0.648
+                                                                       f1            0.638
+                                    trad      bertscore-top20          precision     0.040
+                                                                       recall        0.306
+                                                                       f1            0.184
+                                    new       bertscore-top20          precision     0.636
+                                                                       recall        0.651
+                                                                       f1            0.665
+                                    trad      bertscore-sentence       P             0.164
+                                                                       R             0.226
+                                                                       F             0.183
+                                    new       bertscore-sentence       P             0.610
+                                                                       R             0.530
+                                                                       F             0.616
+                                    trad      bertscore-sentence-mnli  P            -0.118
+                                                                       R            -0.021
+                                                                       F            -0.096
+                                    new       bertscore-sentence-mnli  P             0.394
+                                                                       R             0.233
+                                                                       F             0.283
+                                    trad      rouge                    rouge1        0.071
+                                                                       rouge2        0.016
+                                                                       rougeL        0.016
+                                                                       rougeLsum     0.016
+                                    new       rouge                    rouge1        0.564
+                                                                       rouge2        0.591
+                                                                       rougeL        0.591
+                                                                       rougeLsum     0.591
+                                    trad      rouge-top5               rouge1        0.063
+                                                                       rouge2        0.006
+                                                                       rougeL        0.011
+                                                                       rougeLsum     0.011
+                                    new       rouge-top5               rouge1        0.539
+                                                                       rouge2        0.514
+                                                                       rougeL        0.563
+                                                                       rougeLsum     0.563
+                                    trad      rouge-top10              rouge1        0.071
+                                                                       rouge2        0.016
+                                                                       rougeL        0.016
+                                                                       rougeLsum     0.016
+                                    new       rouge-top10              rouge1        0.562
+                                                                       rouge2        0.556
+                                                                       rougeL        0.597
+                                                                       rougeLsum     0.597
+                                    trad      rouge-top20              rouge1        0.071
+                                                                       rouge2        0.016
+                                                                       rougeL        0.016
+                                                                       rougeLsum     0.016
+                                    new       rouge-top20              rouge1        0.578
+                                                                       rouge2        0.578
+                                                                       rougeL        0.585
+                                                                       rougeLsum     0.585
+                                    trad      bleurt                   scores        0.071
+                                    new       bleurt                   scores        0.596
+                                    trad      bleurt-top5              scores        0.072
+                                    new       bleurt-top5              scores        0.548
+                                    trad      bleurt-top10             scores        0.072
+                                    new       bleurt-top10             scores        0.578
+                                    trad      bleurt-top20             scores        0.072
+                                    new       bleurt-top20             scores        0.593
+             FluencyRating          trad      bertscore                precision     0.045
+                                                                       recall        0.320
+                                                                       f1            0.187
+                                    new       bertscore                precision     0.591
+                                                                       recall        0.590
+                                                                       f1            0.618
+                                    trad      bertscore-top5           precision     0.036
+                                                                       recall        0.313
+                                                                       f1            0.184
+                                    new       bertscore-top5           precision     0.494
+                                                                       recall        0.549
+                                                                       f1            0.544
+                                    trad      bertscore-top10          precision     0.040
+                                                                       recall        0.315
+                                                                       f1            0.185
+                                    new       bertscore-top10          precision     0.540
+                                                                       recall        0.585
+                                                                       f1            0.588
+                                    trad      bertscore-top20          precision     0.040
+                                                                       recall        0.315
+                                                                       f1            0.185
+                                    new       bertscore-top20          precision     0.594
+                                                                       recall        0.586
+                                                                       f1            0.614
+                                    trad      bertscore-sentence       P             0.153
+                                                                       R             0.228
+                                                                       F             0.184
+                                    new       bertscore-sentence       P             0.593
+                                                                       R             0.503
+                                                                       F             0.587
+                                    trad      bertscore-sentence-mnli  P            -0.089
+                                                                       R             0.017
+                                                                       F            -0.054
+                                    new       bertscore-sentence-mnli  P             0.437
+                                                                       R             0.168
+                                                                       F             0.207
+                                    trad      rouge                    rouge1        0.073
+                                                                       rouge2        0.037
+                                                                       rougeL        0.025
+                                                                       rougeLsum     0.025
+                                    new       rouge                    rouge1        0.476
+                                                                       rouge2        0.511
+                                                                       rougeL        0.515
+                                                                       rougeLsum     0.515
+                                    trad      rouge-top5               rouge1        0.068
+                                                                       rouge2        0.030
+                                                                       rougeL        0.020
+                                                                       rougeLsum     0.020
+                                    new       rouge-top5               rouge1        0.466
+                                                                       rouge2        0.422
+                                                                       rougeL        0.489
+                                                                       rougeLsum     0.489
+                                    trad      rouge-top10              rouge1        0.073
+                                                                       rouge2        0.037
+                                                                       rougeL        0.025
+                                                                       rougeLsum     0.025
+                                    new       rouge-top10              rouge1        0.469
+                                                                       rouge2        0.459
+                                                                       rougeL        0.503
+                                                                       rougeLsum     0.503
+                                    trad      rouge-top20              rouge1        0.073
+                                                                       rouge2        0.037
+                                                                       rougeL        0.025
+                                                                       rougeLsum     0.025
+                                    new       rouge-top20              rouge1        0.478
+                                                                       rouge2        0.479
+                                                                       rougeL        0.497
+                                                                       rougeLsum     0.497
+                                    trad      bleurt                   scores        0.075
+                                    new       bleurt                   scores        0.562
+                                    trad      bleurt-top5              scores        0.079
+                                    new       bleurt-top5              scores        0.502
+                                    trad      bleurt-top10             scores        0.075
+                                    new       bleurt-top10             scores        0.549
+                                    trad      bleurt-top20             scores        0.075
+                                    new       bleurt-top20             scores        0.559

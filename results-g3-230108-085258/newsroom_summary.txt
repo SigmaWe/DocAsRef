@@ -1,0 +1,1441 @@
+corr_metric  aspect                 approach  model                                         score_name
+pearsonr     InformativenessRating  new       bertscore                                     precision     0.684
+                                                                                            recall        0.803
+                                                                                            f1            0.749
+                                              bertscore-anyref-bart-default                 precision     0.332
+                                                                                            recall        0.711
+                                                                                            f1            0.561
+                                              bertscore-anyref-bart-min-0.2-0.5             precision     0.307
+                                                                                            recall        0.705
+                                                                                            f1            0.548
+                                              bertscore-anyref-bart-min-0.5-0.7             precision     0.307
+                                                                                            recall        0.705
+                                                                                            f1            0.548
+                                              bertscore-anyref-bart-mean-0.2-0.5            precision     0.307
+                                                                                            recall        0.705
+                                                                                            f1            0.548
+                                              bertscore-anyref-bart-mean-0.5-0.7            precision     0.307
+                                                                                            recall        0.705
+                                                                                            f1            0.548
+                                              bertscore-anyref-bart-constant-16-32          precision     0.307
+                                                                                            recall        0.704
+                                                                                            f1            0.548
+                                              bertscore-anyref-bart-constant-32-64          precision     0.309
+                                                                                            recall        0.704
+                                                                                            f1            0.550
+                                              bertscore-anyref-pegasus-xsum-default         precision     0.026
+                                                                                            recall        0.552
+                                                                                            f1            0.324
+                                              bertscore-anyref-pegasus-xsum-min-0.2-0.5     precision     0.026
+                                                                                            recall        0.552
+                                                                                            f1            0.324
+                                              bertscore-anyref-pegasus-xsum-min-0.5-0.7     precision     0.026
+                                                                                            recall        0.552
+                                                                                            f1            0.324
+                                              bertscore-anyref-pegasus-xsum-mean-0.2-0.5    precision     0.026
+                                                                                            recall        0.552
+                                                                                            f1            0.324
+                                              bertscore-anyref-pegasus-xsum-mean-0.5-0.7    precision     0.026
+                                                                                            recall        0.552
+                                                                                            f1            0.324
+                                              bertscore-anyref-pegasus-xsum-constant-16-32  precision     0.082
+                                                                                            recall        0.624
+                                                                                            f1            0.418
+                                              bertscore-anyref-pegasus-xsum-constant-32-64  precision     0.106
+                                                                                            recall        0.631
+                                                                                            f1            0.430
+                                              rouge                                         rouge1        0.779
+                                                                                            rouge2        0.788
+                                                                                            rougeL        0.788
+                                                                                            rougeLsum     0.788
+                                              rouge-anyref-bart-default                     rouge1        0.622
+                                                                                            rouge2        0.507
+                                                                                            rougeL        0.565
+                                                                                            rougeLsum     0.565
+                                              rouge-anyref-bart-min-0.2-0.5                 rouge1        0.564
+                                                                                            rouge2        0.451
+                                                                                            rougeL        0.497
+                                                                                            rougeLsum     0.497
+                                              rouge-anyref-bart-min-0.5-0.7                 rouge1        0.564
+                                                                                            rouge2        0.451
+                                                                                            rougeL        0.497
+                                                                                            rougeLsum     0.497
+                                              rouge-anyref-bart-mean-0.2-0.5                rouge1        0.564
+                                                                                            rouge2        0.451
+                                                                                            rougeL        0.497
+                                                                                            rougeLsum     0.497
+                                              rouge-anyref-bart-mean-0.5-0.7                rouge1        0.564
+                                                                                            rouge2        0.451
+                                                                                            rougeL        0.497
+                                                                                            rougeLsum     0.497
+                                              rouge-anyref-bart-constant-16-32              rouge1        0.565
+                                                                                            rouge2        0.451
+                                                                                            rougeL        0.500
+                                                                                            rougeLsum     0.500
+                                              rouge-anyref-bart-constant-32-64              rouge1        0.571
+                                                                                            rouge2        0.454
+                                                                                            rougeL        0.504
+                                                                                            rougeLsum     0.504
+                                              rouge-anyref-pegasus-xsum-default             rouge1        0.369
+                                                                                            rouge2        0.336
+                                                                                            rougeL        0.295
+                                                                                            rougeLsum     0.295
+                                              rouge-anyref-pegasus-xsum-min-0.2-0.5         rouge1        0.369
+                                                                                            rouge2        0.336
+                                                                                            rougeL        0.295
+                                                                                            rougeLsum     0.295
+                                              rouge-anyref-pegasus-xsum-min-0.5-0.7         rouge1        0.369
+                                                                                            rouge2        0.336
+                                                                                            rougeL        0.295
+                                                                                            rougeLsum     0.295
+                                              rouge-anyref-pegasus-xsum-mean-0.2-0.5        rouge1        0.369
+                                                                                            rouge2        0.336
+                                                                                            rougeL        0.295
+                                                                                            rougeLsum     0.295
+                                              rouge-anyref-pegasus-xsum-mean-0.5-0.7        rouge1        0.369
+                                                                                            rouge2        0.336
+                                                                                            rougeL        0.295
+                                                                                            rougeLsum     0.295
+                                              rouge-anyref-pegasus-xsum-constant-16-32      rouge1        0.447
+                                                                                            rouge2        0.374
+                                                                                            rougeL        0.347
+                                                                                            rougeLsum     0.347
+                                              rouge-anyref-pegasus-xsum-constant-32-64      rouge1        0.492
+                                                                                            rouge2        0.376
+                                                                                            rougeL        0.386
+                                                                                            rougeLsum     0.386
+                                              bleurt                                        scores        0.606
+                                              bleurt-anyref-bart-default                    scores        0.501
+                                              bleurt-anyref-bart-min-0.2-0.5                scores        0.473
+                                              bleurt-anyref-bart-min-0.5-0.7                scores        0.473
+                                              bleurt-anyref-bart-mean-0.2-0.5               scores        0.473
+                                              bleurt-anyref-bart-mean-0.5-0.7               scores        0.473
+                                              bleurt-anyref-bart-constant-16-32             scores        0.473
+                                              bleurt-anyref-bart-constant-32-64             scores        0.470
+                                              bleurt-anyref-pegasus-xsum-default            scores        0.370
+                                              bleurt-anyref-pegasus-xsum-min-0.2-0.5        scores        0.370
+                                              bleurt-anyref-pegasus-xsum-min-0.5-0.7        scores        0.370
+                                              bleurt-anyref-pegasus-xsum-mean-0.2-0.5       scores        0.370
+                                              bleurt-anyref-pegasus-xsum-mean-0.5-0.7       scores        0.370
+                                              bleurt-anyref-pegasus-xsum-constant-16-32     scores        0.398
+                                              bleurt-anyref-pegasus-xsum-constant-32-64     scores        0.384
+             RelevanceRating        new       bertscore                                     precision     0.682
+                                                                                            recall        0.746
+                                                                                            f1            0.725
+                                              bertscore-anyref-bart-default                 precision     0.371
+                                                                                            recall        0.679
+                                                                                            f1            0.564
+                                              bertscore-anyref-bart-min-0.2-0.5             precision     0.354
+                                                                                            recall        0.684
+                                                                                            f1            0.563
+                                              bertscore-anyref-bart-min-0.5-0.7             precision     0.354
+                                                                                            recall        0.684
+                                                                                            f1            0.563
+                                              bertscore-anyref-bart-mean-0.2-0.5            precision     0.354
+                                                                                            recall        0.684
+                                                                                            f1            0.563
+                                              bertscore-anyref-bart-mean-0.5-0.7            precision     0.354
+                                                                                            recall        0.684
+                                                                                            f1            0.563
+                                              bertscore-anyref-bart-constant-16-32          precision     0.353
+                                                                                            recall        0.684
+                                                                                            f1            0.563
+                                              bertscore-anyref-bart-constant-32-64          precision     0.357
+                                                                                            recall        0.685
+                                                                                            f1            0.566
+                                              bertscore-anyref-pegasus-xsum-default         precision     0.083
+                                                                                            recall        0.555
+                                                                                            f1            0.356
+                                              bertscore-anyref-pegasus-xsum-min-0.2-0.5     precision     0.083
+                                                                                            recall        0.555
+                                                                                            f1            0.356
+                                              bertscore-anyref-pegasus-xsum-min-0.5-0.7     precision     0.083
+                                                                                            recall        0.555
+                                                                                            f1            0.356
+                                              bertscore-anyref-pegasus-xsum-mean-0.2-0.5    precision     0.083
+                                                                                            recall        0.555
+                                                                                            f1            0.356
+                                              bertscore-anyref-pegasus-xsum-mean-0.5-0.7    precision     0.083
+                                                                                            recall        0.555
+                                                                                            f1            0.356
+                                              bertscore-anyref-pegasus-xsum-constant-16-32  precision     0.132
+                                                                                            recall        0.603
+                                                                                            f1            0.439
+                                              bertscore-anyref-pegasus-xsum-constant-32-64  precision     0.157
+                                                                                            recall        0.613
+                                                                                            f1            0.454
+                                              rouge                                         rouge1        0.709
+                                                                                            rouge2        0.719
+                                                                                            rougeL        0.714
+                                                                                            rougeLsum     0.714
+                                              rouge-anyref-bart-default                     rouge1        0.594
+                                                                                            rouge2        0.452
+                                                                                            rougeL        0.537
+                                                                                            rougeLsum     0.537
+                                              rouge-anyref-bart-min-0.2-0.5                 rouge1        0.561
+                                                                                            rouge2        0.429
+                                                                                            rougeL        0.491
+                                                                                            rougeLsum     0.491
+                                              rouge-anyref-bart-min-0.5-0.7                 rouge1        0.561
+                                                                                            rouge2        0.429
+                                                                                            rougeL        0.491
+                                                                                            rougeLsum     0.491
+                                              rouge-anyref-bart-mean-0.2-0.5                rouge1        0.561
+                                                                                            rouge2        0.429
+                                                                                            rougeL        0.491
+                                                                                            rougeLsum     0.491
+                                              rouge-anyref-bart-mean-0.5-0.7                rouge1        0.561
+                                                                                            rouge2        0.429
+                                                                                            rougeL        0.491
+                                                                                            rougeLsum     0.491
+                                              rouge-anyref-bart-constant-16-32              rouge1        0.562
+                                                                                            rouge2        0.429
+                                                                                            rougeL        0.490
+                                                                                            rougeLsum     0.490
+                                              rouge-anyref-bart-constant-32-64              rouge1        0.567
+                                                                                            rouge2        0.432
+                                                                                            rougeL        0.495
+                                                                                            rougeLsum     0.495
+                                              rouge-anyref-pegasus-xsum-default             rouge1        0.425
+                                                                                            rouge2        0.332
+                                                                                            rougeL        0.339
+                                                                                            rougeLsum     0.339
+                                              rouge-anyref-pegasus-xsum-min-0.2-0.5         rouge1        0.425
+                                                                                            rouge2        0.332
+                                                                                            rougeL        0.339
+                                                                                            rougeLsum     0.339
+                                              rouge-anyref-pegasus-xsum-min-0.5-0.7         rouge1        0.425
+                                                                                            rouge2        0.332
+                                                                                            rougeL        0.339
+                                                                                            rougeLsum     0.339
+                                              rouge-anyref-pegasus-xsum-mean-0.2-0.5        rouge1        0.425
+                                                                                            rouge2        0.332
+                                                                                            rougeL        0.339
+                                                                                            rougeLsum     0.339
+                                              rouge-anyref-pegasus-xsum-mean-0.5-0.7        rouge1        0.425
+                                                                                            rouge2        0.332
+                                                                                            rougeL        0.339
+                                                                                            rougeLsum     0.339
+                                              rouge-anyref-pegasus-xsum-constant-16-32      rouge1        0.492
+                                                                                            rouge2        0.367
+                                                                                            rougeL        0.382
+                                                                                            rougeLsum     0.382
+                                              rouge-anyref-pegasus-xsum-constant-32-64      rouge1        0.521
+                                                                                            rouge2        0.355
+                                                                                            rougeL        0.403
+                                                                                            rougeLsum     0.403
+                                              bleurt                                        scores        0.586
+                                              bleurt-anyref-bart-default                    scores        0.475
+                                              bleurt-anyref-bart-min-0.2-0.5                scores        0.480
+                                              bleurt-anyref-bart-min-0.5-0.7                scores        0.480
+                                              bleurt-anyref-bart-mean-0.2-0.5               scores        0.480
+                                              bleurt-anyref-bart-mean-0.5-0.7               scores        0.480
+                                              bleurt-anyref-bart-constant-16-32             scores        0.481
+                                              bleurt-anyref-bart-constant-32-64             scores        0.479
+                                              bleurt-anyref-pegasus-xsum-default            scores        0.388
+                                              bleurt-anyref-pegasus-xsum-min-0.2-0.5        scores        0.388
+                                              bleurt-anyref-pegasus-xsum-min-0.5-0.7        scores        0.388
+                                              bleurt-anyref-pegasus-xsum-mean-0.2-0.5       scores        0.388
+                                              bleurt-anyref-pegasus-xsum-mean-0.5-0.7       scores        0.388
+                                              bleurt-anyref-pegasus-xsum-constant-16-32     scores        0.408
+                                              bleurt-anyref-pegasus-xsum-constant-32-64     scores        0.386
+             CoherenceRating        new       bertscore                                     precision     0.646
+                                                                                            recall        0.714
+                                                                                            f1            0.688
+                                              bertscore-anyref-bart-default                 precision     0.341
+                                                                                            recall        0.630
+                                                                                            f1            0.519
+                                              bertscore-anyref-bart-min-0.2-0.5             precision     0.330
+                                                                                            recall        0.628
+                                                                                            f1            0.518
+                                              bertscore-anyref-bart-min-0.5-0.7             precision     0.330
+                                                                                            recall        0.628
+                                                                                            f1            0.518
+                                              bertscore-anyref-bart-mean-0.2-0.5            precision     0.330
+                                                                                            recall        0.628
+                                                                                            f1            0.518
+                                              bertscore-anyref-bart-mean-0.5-0.7            precision     0.330
+                                                                                            recall        0.628
+                                                                                            f1            0.518
+                                              bertscore-anyref-bart-constant-16-32          precision     0.330
+                                                                                            recall        0.628
+                                                                                            f1            0.518
+                                              bertscore-anyref-bart-constant-32-64          precision     0.329
+                                                                                            recall        0.629
+                                                                                            f1            0.518
+                                              bertscore-anyref-pegasus-xsum-default         precision     0.097
+                                                                                            recall        0.544
+                                                                                            f1            0.364
+                                              bertscore-anyref-pegasus-xsum-min-0.2-0.5     precision     0.097
+                                                                                            recall        0.544
+                                                                                            f1            0.364
+                                              bertscore-anyref-pegasus-xsum-min-0.5-0.7     precision     0.097
+                                                                                            recall        0.544
+                                                                                            f1            0.364
+                                              bertscore-anyref-pegasus-xsum-mean-0.2-0.5    precision     0.097
+                                                                                            recall        0.544
+                                                                                            f1            0.364
+                                              bertscore-anyref-pegasus-xsum-mean-0.5-0.7    precision     0.097
+                                                                                            recall        0.544
+                                                                                            f1            0.364
+                                              bertscore-anyref-pegasus-xsum-constant-16-32  precision     0.137
+                                                                                            recall        0.575
+                                                                                            f1            0.418
+                                              bertscore-anyref-pegasus-xsum-constant-32-64  precision     0.143
+                                                                                            recall        0.579
+                                                                                            f1            0.423
+                                              rouge                                         rouge1        0.621
+                                                                                            rouge2        0.643
+                                                                                            rougeL        0.650
+                                                                                            rougeLsum     0.650
+                                              rouge-anyref-bart-default                     rouge1        0.503
+                                                                                            rouge2        0.418
+                                                                                            rougeL        0.475
+                                                                                            rougeLsum     0.475
+                                              rouge-anyref-bart-min-0.2-0.5                 rouge1        0.469
+                                                                                            rouge2        0.378
+                                                                                            rougeL        0.424
+                                                                                            rougeLsum     0.424
+                                              rouge-anyref-bart-min-0.5-0.7                 rouge1        0.469
+                                                                                            rouge2        0.378
+                                                                                            rougeL        0.424
+                                                                                            rougeLsum     0.424
+                                              rouge-anyref-bart-mean-0.2-0.5                rouge1        0.469
+                                                                                            rouge2        0.378
+                                                                                            rougeL        0.424
+                                                                                            rougeLsum     0.424
+                                              rouge-anyref-bart-mean-0.5-0.7                rouge1        0.469
+                                                                                            rouge2        0.378
+                                                                                            rougeL        0.424
+                                                                                            rougeLsum     0.424
+                                              rouge-anyref-bart-constant-16-32              rouge1        0.471
+                                                                                            rouge2        0.378
+                                                                                            rougeL        0.427
+                                                                                            rougeLsum     0.427
+                                              rouge-anyref-bart-constant-32-64              rouge1        0.471
+                                                                                            rouge2        0.382
+                                                                                            rougeL        0.426
+                                                                                            rougeLsum     0.426
+                                              rouge-anyref-pegasus-xsum-default             rouge1        0.330
+                                                                                            rouge2        0.296
+                                                                                            rougeL        0.281
+                                                                                            rougeLsum     0.281
+                                              rouge-anyref-pegasus-xsum-min-0.2-0.5         rouge1        0.330
+                                                                                            rouge2        0.296
+                                                                                            rougeL        0.281
+                                                                                            rougeLsum     0.281
+                                              rouge-anyref-pegasus-xsum-min-0.5-0.7         rouge1        0.330
+                                                                                            rouge2        0.296
+                                                                                            rougeL        0.281
+                                                                                            rougeLsum     0.281
+                                              rouge-anyref-pegasus-xsum-mean-0.2-0.5        rouge1        0.330
+                                                                                            rouge2        0.296
+                                                                                            rougeL        0.281
+                                                                                            rougeLsum     0.281
+                                              rouge-anyref-pegasus-xsum-mean-0.5-0.7        rouge1        0.330
+                                                                                            rouge2        0.296
+                                                                                            rougeL        0.281
+                                                                                            rougeLsum     0.281
+                                              rouge-anyref-pegasus-xsum-constant-16-32      rouge1        0.368
+                                                                                            rouge2        0.319
+                                                                                            rougeL        0.295
+                                                                                            rougeLsum     0.295
+                                              rouge-anyref-pegasus-xsum-constant-32-64      rouge1        0.403
+                                                                                            rouge2        0.323
+                                                                                            rougeL        0.349
+                                                                                            rougeLsum     0.349
+                                              bleurt                                        scores        0.612
+                                              bleurt-anyref-bart-default                    scores        0.401
+                                              bleurt-anyref-bart-min-0.2-0.5                scores        0.394
+                                              bleurt-anyref-bart-min-0.5-0.7                scores        0.394
+                                              bleurt-anyref-bart-mean-0.2-0.5               scores        0.394
+                                              bleurt-anyref-bart-mean-0.5-0.7               scores        0.394
+                                              bleurt-anyref-bart-constant-16-32             scores        0.395
+                                              bleurt-anyref-bart-constant-32-64             scores        0.388
+                                              bleurt-anyref-pegasus-xsum-default            scores        0.302
+                                              bleurt-anyref-pegasus-xsum-min-0.2-0.5        scores        0.302
+                                              bleurt-anyref-pegasus-xsum-min-0.5-0.7        scores        0.302
+                                              bleurt-anyref-pegasus-xsum-mean-0.2-0.5       scores        0.302
+                                              bleurt-anyref-pegasus-xsum-mean-0.5-0.7       scores        0.302
+                                              bleurt-anyref-pegasus-xsum-constant-16-32     scores        0.314
+                                              bleurt-anyref-pegasus-xsum-constant-32-64     scores        0.294
+             FluencyRating          new       bertscore                                     precision     0.590
+                                                                                            recall        0.660
+                                                                                            f1            0.630
+                                              bertscore-anyref-bart-default                 precision     0.333
+                                                                                            recall        0.597
+                                                                                            f1            0.496
+                                              bertscore-anyref-bart-min-0.2-0.5             precision     0.311
+                                                                                            recall        0.586
+                                                                                            f1            0.485
+                                              bertscore-anyref-bart-min-0.5-0.7             precision     0.311
+                                                                                            recall        0.586
+                                                                                            f1            0.485
+                                              bertscore-anyref-bart-mean-0.2-0.5            precision     0.311
+                                                                                            recall        0.586
+                                                                                            f1            0.485
+                                              bertscore-anyref-bart-mean-0.5-0.7            precision     0.311
+                                                                                            recall        0.586
+                                                                                            f1            0.485
+                                              bertscore-anyref-bart-constant-16-32          precision     0.311
+                                                                                            recall        0.586
+                                                                                            f1            0.485
+                                              bertscore-anyref-bart-constant-32-64          precision     0.311
+                                                                                            recall        0.586
+                                                                                            f1            0.485
+                                              bertscore-anyref-pegasus-xsum-default         precision     0.133
+                                                                                            recall        0.543
+                                                                                            f1            0.370
+                                              bertscore-anyref-pegasus-xsum-min-0.2-0.5     precision     0.133
+                                                                                            recall        0.543
+                                                                                            f1            0.370
+                                              bertscore-anyref-pegasus-xsum-min-0.5-0.7     precision     0.133
+                                                                                            recall        0.543
+                                                                                            f1            0.370
+                                              bertscore-anyref-pegasus-xsum-mean-0.2-0.5    precision     0.133
+                                                                                            recall        0.543
+                                                                                            f1            0.370
+                                              bertscore-anyref-pegasus-xsum-mean-0.5-0.7    precision     0.133
+                                                                                            recall        0.543
+                                                                                            f1            0.370
+                                              bertscore-anyref-pegasus-xsum-constant-16-32  precision     0.165
+                                                                                            recall        0.571
+                                                                                            f1            0.423
+                                              bertscore-anyref-pegasus-xsum-constant-32-64  precision     0.172
+                                                                                            recall        0.573
+                                                                                            f1            0.430
+                                              rouge                                         rouge1        0.558
+                                                                                            rouge2        0.590
+                                                                                            rougeL        0.588
+                                                                                            rougeLsum     0.588
+                                              rouge-anyref-bart-default                     rouge1        0.459
+                                                                                            rouge2        0.393
+                                                                                            rougeL        0.421
+                                                                                            rougeLsum     0.421
+                                              rouge-anyref-bart-min-0.2-0.5                 rouge1        0.419
+                                                                                            rouge2        0.346
+                                                                                            rougeL        0.369
+                                                                                            rougeLsum     0.369
+                                              rouge-anyref-bart-min-0.5-0.7                 rouge1        0.419
+                                                                                            rouge2        0.346
+                                                                                            rougeL        0.369
+                                                                                            rougeLsum     0.369
+                                              rouge-anyref-bart-mean-0.2-0.5                rouge1        0.419
+                                                                                            rouge2        0.346
+                                                                                            rougeL        0.369
+                                                                                            rougeLsum     0.369
+                                              rouge-anyref-bart-mean-0.5-0.7                rouge1        0.419
+                                                                                            rouge2        0.346
+                                                                                            rougeL        0.369
+                                                                                            rougeLsum     0.369
+                                              rouge-anyref-bart-constant-16-32              rouge1        0.419
+                                                                                            rouge2        0.346
+                                                                                            rougeL        0.369
+                                                                                            rougeLsum     0.369
+                                              rouge-anyref-bart-constant-32-64              rouge1        0.422
+                                                                                            rouge2        0.348
+                                                                                            rougeL        0.369
+                                                                                            rougeLsum     0.369
+                                              rouge-anyref-pegasus-xsum-default             rouge1        0.318
+                                                                                            rouge2        0.310
+                                                                                            rougeL        0.288
+                                                                                            rougeLsum     0.288
+                                              rouge-anyref-pegasus-xsum-min-0.2-0.5         rouge1        0.318
+                                                                                            rouge2        0.310
+                                                                                            rougeL        0.288
+                                                                                            rougeLsum     0.288
+                                              rouge-anyref-pegasus-xsum-min-0.5-0.7         rouge1        0.318
+                                                                                            rouge2        0.310
+                                                                                            rougeL        0.288
+                                                                                            rougeLsum     0.288
+                                              rouge-anyref-pegasus-xsum-mean-0.2-0.5        rouge1        0.318
+                                                                                            rouge2        0.310
+                                                                                            rougeL        0.288
+                                                                                            rougeLsum     0.288
+                                              rouge-anyref-pegasus-xsum-mean-0.5-0.7        rouge1        0.318
+                                                                                            rouge2        0.310
+                                                                                            rougeL        0.288
+                                                                                            rougeLsum     0.288
+                                              rouge-anyref-pegasus-xsum-constant-16-32      rouge1        0.341
+                                                                                            rouge2        0.317
+                                                                                            rougeL        0.292
+                                                                                            rougeLsum     0.292
+                                              rouge-anyref-pegasus-xsum-constant-32-64      rouge1        0.379
+                                                                                            rouge2        0.316
+                                                                                            rougeL        0.340
+                                                                                            rougeLsum     0.340
+                                              bleurt                                        scores        0.588
+                                              bleurt-anyref-bart-default                    scores        0.384
+                                              bleurt-anyref-bart-min-0.2-0.5                scores        0.371
+                                              bleurt-anyref-bart-min-0.5-0.7                scores        0.371
+                                              bleurt-anyref-bart-mean-0.2-0.5               scores        0.371
+                                              bleurt-anyref-bart-mean-0.5-0.7               scores        0.371
+                                              bleurt-anyref-bart-constant-16-32             scores        0.372
+                                              bleurt-anyref-bart-constant-32-64             scores        0.367
+                                              bleurt-anyref-pegasus-xsum-default            scores        0.271
+                                              bleurt-anyref-pegasus-xsum-min-0.2-0.5        scores        0.271
+                                              bleurt-anyref-pegasus-xsum-min-0.5-0.7        scores        0.271
+                                              bleurt-anyref-pegasus-xsum-mean-0.2-0.5       scores        0.271
+                                              bleurt-anyref-pegasus-xsum-mean-0.5-0.7       scores        0.271
+                                              bleurt-anyref-pegasus-xsum-constant-16-32     scores        0.291
+                                              bleurt-anyref-pegasus-xsum-constant-32-64     scores        0.282
+kendalltau   InformativenessRating  new       bertscore                                     precision     0.509
+                                                                                            recall        0.652
+                                                                                            f1            0.587
+                                              bertscore-anyref-bart-default                 precision     0.208
+                                                                                            recall        0.545
+                                                                                            f1            0.398
+                                              bertscore-anyref-bart-min-0.2-0.5             precision     0.205
+                                                                                            recall        0.550
+                                                                                            f1            0.377
+                                              bertscore-anyref-bart-min-0.5-0.7             precision     0.205
+                                                                                            recall        0.550
+                                                                                            f1            0.377
+                                              bertscore-anyref-bart-mean-0.2-0.5            precision     0.205
+                                                                                            recall        0.550
+                                                                                            f1            0.377
+                                              bertscore-anyref-bart-mean-0.5-0.7            precision     0.205
+                                                                                            recall        0.550
+                                                                                            f1            0.377
+                                              bertscore-anyref-bart-constant-16-32          precision     0.205
+                                                                                            recall        0.550
+                                                                                            f1            0.377
+                                              bertscore-anyref-bart-constant-32-64          precision     0.212
+                                                                                            recall        0.547
+                                                                                            f1            0.378
+                                              bertscore-anyref-pegasus-xsum-default         precision    -0.012
+                                                                                            recall        0.398
+                                                                                            f1            0.217
+                                              bertscore-anyref-pegasus-xsum-min-0.2-0.5     precision    -0.012
+                                                                                            recall        0.398
+                                                                                            f1            0.217
+                                              bertscore-anyref-pegasus-xsum-min-0.5-0.7     precision    -0.012
+                                                                                            recall        0.398
+                                                                                            f1            0.217
+                                              bertscore-anyref-pegasus-xsum-mean-0.2-0.5    precision    -0.012
+                                                                                            recall        0.398
+                                                                                            f1            0.217
+                                              bertscore-anyref-pegasus-xsum-mean-0.5-0.7    precision    -0.012
+                                                                                            recall        0.398
+                                                                                            f1            0.217
+                                              bertscore-anyref-pegasus-xsum-constant-16-32  precision     0.020
+                                                                                            recall        0.452
+                                                                                            f1            0.281
+                                              bertscore-anyref-pegasus-xsum-constant-32-64  precision     0.030
+                                                                                            recall        0.474
+                                                                                            f1            0.293
+                                              rouge                                         rouge1        0.638
+                                                                                            rouge2        0.643
+                                                                                            rougeL        0.640
+                                                                                            rougeLsum     0.640
+                                              rouge-anyref-bart-default                     rouge1        0.427
+                                                                                            rouge2        0.377
+                                                                                            rougeL        0.420
+                                                                                            rougeLsum     0.420
+                                              rouge-anyref-bart-min-0.2-0.5                 rouge1        0.384
+                                                                                            rouge2        0.336
+                                                                                            rougeL        0.369
+                                                                                            rougeLsum     0.369
+                                              rouge-anyref-bart-min-0.5-0.7                 rouge1        0.384
+                                                                                            rouge2        0.336
+                                                                                            rougeL        0.369
+                                                                                            rougeLsum     0.369
+                                              rouge-anyref-bart-mean-0.2-0.5                rouge1        0.384
+                                                                                            rouge2        0.336
+                                                                                            rougeL        0.369
+                                                                                            rougeLsum     0.369
+                                              rouge-anyref-bart-mean-0.5-0.7                rouge1        0.384
+                                                                                            rouge2        0.336
+                                                                                            rougeL        0.369
+                                                                                            rougeLsum     0.369
+                                              rouge-anyref-bart-constant-16-32              rouge1        0.386
+                                                                                            rouge2        0.336
+                                                                                            rougeL        0.371
+                                                                                            rougeLsum     0.371
+                                              rouge-anyref-bart-constant-32-64              rouge1        0.389
+                                                                                            rouge2        0.336
+                                                                                            rougeL        0.374
+                                                                                            rougeLsum     0.374
+                                              rouge-anyref-pegasus-xsum-default             rouge1        0.218
+                                                                                            rouge2        0.250
+                                                                                            rougeL        0.228
+                                                                                            rougeLsum     0.228
+                                              rouge-anyref-pegasus-xsum-min-0.2-0.5         rouge1        0.218
+                                                                                            rouge2        0.250
+                                                                                            rougeL        0.228
+                                                                                            rougeLsum     0.228
+                                              rouge-anyref-pegasus-xsum-min-0.5-0.7         rouge1        0.218
+                                                                                            rouge2        0.250
+                                                                                            rougeL        0.228
+                                                                                            rougeLsum     0.228
+                                              rouge-anyref-pegasus-xsum-mean-0.2-0.5        rouge1        0.218
+                                                                                            rouge2        0.250
+                                                                                            rougeL        0.228
+                                                                                            rougeLsum     0.228
+                                              rouge-anyref-pegasus-xsum-mean-0.5-0.7        rouge1        0.218
+                                                                                            rouge2        0.250
+                                                                                            rougeL        0.228
+                                                                                            rougeLsum     0.228
+                                              rouge-anyref-pegasus-xsum-constant-16-32      rouge1        0.257
+                                                                                            rouge2        0.291
+                                                                                            rougeL        0.249
+                                                                                            rougeLsum     0.249
+                                              rouge-anyref-pegasus-xsum-constant-32-64      rouge1        0.307
+                                                                                            rouge2        0.291
+                                                                                            rougeL        0.257
+                                                                                            rougeLsum     0.257
+                                              bleurt                                        scores        0.453
+                                              bleurt-anyref-bart-default                    scores        0.366
+                                              bleurt-anyref-bart-min-0.2-0.5                scores        0.329
+                                              bleurt-anyref-bart-min-0.5-0.7                scores        0.329
+                                              bleurt-anyref-bart-mean-0.2-0.5               scores        0.329
+                                              bleurt-anyref-bart-mean-0.5-0.7               scores        0.329
+                                              bleurt-anyref-bart-constant-16-32             scores        0.329
+                                              bleurt-anyref-bart-constant-32-64             scores        0.332
+                                              bleurt-anyref-pegasus-xsum-default            scores        0.250
+                                              bleurt-anyref-pegasus-xsum-min-0.2-0.5        scores        0.250
+                                              bleurt-anyref-pegasus-xsum-min-0.5-0.7        scores        0.250
+                                              bleurt-anyref-pegasus-xsum-mean-0.2-0.5       scores        0.250
+                                              bleurt-anyref-pegasus-xsum-mean-0.5-0.7       scores        0.250
+                                              bleurt-anyref-pegasus-xsum-constant-16-32     scores        0.286
+                                              bleurt-anyref-pegasus-xsum-constant-32-64     scores        0.252
+             RelevanceRating        new       bertscore                                     precision     0.498
+                                                                                            recall        0.558
+                                                                                            f1            0.522
+                                              bertscore-anyref-bart-default                 precision     0.223
+                                                                                            recall        0.481
+                                                                                            f1            0.376
+                                              bertscore-anyref-bart-min-0.2-0.5             precision     0.218
+                                                                                            recall        0.499
+                                                                                            f1            0.360
+                                              bertscore-anyref-bart-min-0.5-0.7             precision     0.218
+                                                                                            recall        0.499
+                                                                                            f1            0.360
+                                              bertscore-anyref-bart-mean-0.2-0.5            precision     0.218
+                                                                                            recall        0.499
+                                                                                            f1            0.360
+                                              bertscore-anyref-bart-mean-0.5-0.7            precision     0.218
+                                                                                            recall        0.499
+                                                                                            f1            0.360
+                                              bertscore-anyref-bart-constant-16-32          precision     0.218
+                                                                                            recall        0.499
+                                                                                            f1            0.360
+                                              bertscore-anyref-bart-constant-32-64          precision     0.225
+                                                                                            recall        0.497
+                                                                                            f1            0.364
+                                              bertscore-anyref-pegasus-xsum-default         precision     0.033
+                                                                                            recall        0.380
+                                                                                            f1            0.245
+                                              bertscore-anyref-pegasus-xsum-min-0.2-0.5     precision     0.033
+                                                                                            recall        0.380
+                                                                                            f1            0.245
+                                              bertscore-anyref-pegasus-xsum-min-0.5-0.7     precision     0.033
+                                                                                            recall        0.380
+                                                                                            f1            0.245
+                                              bertscore-anyref-pegasus-xsum-mean-0.2-0.5    precision     0.033
+                                                                                            recall        0.380
+                                                                                            f1            0.245
+                                              bertscore-anyref-pegasus-xsum-mean-0.5-0.7    precision     0.033
+                                                                                            recall        0.380
+                                                                                            f1            0.245
+                                              bertscore-anyref-pegasus-xsum-constant-16-32  precision     0.068
+                                                                                            recall        0.420
+                                                                                            f1            0.301
+                                              bertscore-anyref-pegasus-xsum-constant-32-64  precision     0.079
+                                                                                            recall        0.449
+                                                                                            f1            0.309
+                                              rouge                                         rouge1        0.541
+                                                                                            rouge2        0.552
+                                                                                            rougeL        0.542
+                                                                                            rougeLsum     0.542
+                                              rouge-anyref-bart-default                     rouge1        0.392
+                                                                                            rouge2        0.346
+                                                                                            rougeL        0.375
+                                                                                            rougeLsum     0.375
+                                              rouge-anyref-bart-min-0.2-0.5                 rouge1        0.340
+                                                                                            rouge2        0.309
+                                                                                            rougeL        0.329
+                                                                                            rougeLsum     0.329
+                                              rouge-anyref-bart-min-0.5-0.7                 rouge1        0.340
+                                                                                            rouge2        0.309
+                                                                                            rougeL        0.329
+                                                                                            rougeLsum     0.329
+                                              rouge-anyref-bart-mean-0.2-0.5                rouge1        0.340
+                                                                                            rouge2        0.309
+                                                                                            rougeL        0.329
+                                                                                            rougeLsum     0.329
+                                              rouge-anyref-bart-mean-0.5-0.7                rouge1        0.340
+                                                                                            rouge2        0.309
+                                                                                            rougeL        0.329
+                                                                                            rougeLsum     0.329
+                                              rouge-anyref-bart-constant-16-32              rouge1        0.342
+                                                                                            rouge2        0.309
+                                                                                            rougeL        0.328
+                                                                                            rougeLsum     0.328
+                                              rouge-anyref-bart-constant-32-64              rouge1        0.344
+                                                                                            rouge2        0.309
+                                                                                            rougeL        0.330
+                                                                                            rougeLsum     0.330
+                                              rouge-anyref-pegasus-xsum-default             rouge1        0.262
+                                                                                            rouge2        0.255
+                                                                                            rougeL        0.215
+                                                                                            rougeLsum     0.215
+                                              rouge-anyref-pegasus-xsum-min-0.2-0.5         rouge1        0.262
+                                                                                            rouge2        0.255
+                                                                                            rougeL        0.215
+                                                                                            rougeLsum     0.215
+                                              rouge-anyref-pegasus-xsum-min-0.5-0.7         rouge1        0.262
+                                                                                            rouge2        0.255
+                                                                                            rougeL        0.215
+                                                                                            rougeLsum     0.215
+                                              rouge-anyref-pegasus-xsum-mean-0.2-0.5        rouge1        0.262
+                                                                                            rouge2        0.255
+                                                                                            rougeL        0.215
+                                                                                            rougeLsum     0.215
+                                              rouge-anyref-pegasus-xsum-mean-0.5-0.7        rouge1        0.262
+                                                                                            rouge2        0.255
+                                                                                            rougeL        0.215
+                                                                                            rougeLsum     0.215
+                                              rouge-anyref-pegasus-xsum-constant-16-32      rouge1        0.284
+                                                                                            rouge2        0.285
+                                                                                            rougeL        0.227
+                                                                                            rougeLsum     0.227
+                                              rouge-anyref-pegasus-xsum-constant-32-64      rouge1        0.326
+                                                                                            rouge2        0.261
+                                                                                            rougeL        0.242
+                                                                                            rougeLsum     0.242
+                                              bleurt                                        scores        0.415
+                                              bleurt-anyref-bart-default                    scores        0.349
+                                              bleurt-anyref-bart-min-0.2-0.5                scores        0.317
+                                              bleurt-anyref-bart-min-0.5-0.7                scores        0.317
+                                              bleurt-anyref-bart-mean-0.2-0.5               scores        0.317
+                                              bleurt-anyref-bart-mean-0.5-0.7               scores        0.317
+                                              bleurt-anyref-bart-constant-16-32             scores        0.319
+                                              bleurt-anyref-bart-constant-32-64             scores        0.321
+                                              bleurt-anyref-pegasus-xsum-default            scores        0.267
+                                              bleurt-anyref-pegasus-xsum-min-0.2-0.5        scores        0.267
+                                              bleurt-anyref-pegasus-xsum-min-0.5-0.7        scores        0.267
+                                              bleurt-anyref-pegasus-xsum-mean-0.2-0.5       scores        0.267
+                                              bleurt-anyref-pegasus-xsum-mean-0.5-0.7       scores        0.267
+                                              bleurt-anyref-pegasus-xsum-constant-16-32     scores        0.285
+                                              bleurt-anyref-pegasus-xsum-constant-32-64     scores        0.263
+             CoherenceRating        new       bertscore                                     precision     0.532
+                                                                                            recall        0.560
+                                                                                            f1            0.563
+                                              bertscore-anyref-bart-default                 precision     0.262
+                                                                                            recall        0.497
+                                                                                            f1            0.400
+                                              bertscore-anyref-bart-min-0.2-0.5             precision     0.258
+                                                                                            recall        0.499
+                                                                                            f1            0.400
+                                              bertscore-anyref-bart-min-0.5-0.7             precision     0.258
+                                                                                            recall        0.499
+                                                                                            f1            0.400
+                                              bertscore-anyref-bart-mean-0.2-0.5            precision     0.258
+                                                                                            recall        0.499
+                                                                                            f1            0.400
+                                              bertscore-anyref-bart-mean-0.5-0.7            precision     0.258
+                                                                                            recall        0.499
+                                                                                            f1            0.400
+                                              bertscore-anyref-bart-constant-16-32          precision     0.258
+                                                                                            recall        0.499
+                                                                                            f1            0.400
+                                              bertscore-anyref-bart-constant-32-64          precision     0.263
+                                                                                            recall        0.498
+                                                                                            f1            0.400
+                                              bertscore-anyref-pegasus-xsum-default         precision     0.076
+                                                                                            recall        0.422
+                                                                                            f1            0.282
+                                              bertscore-anyref-pegasus-xsum-min-0.2-0.5     precision     0.076
+                                                                                            recall        0.422
+                                                                                            f1            0.282
+                                              bertscore-anyref-pegasus-xsum-min-0.5-0.7     precision     0.076
+                                                                                            recall        0.422
+                                                                                            f1            0.282
+                                              bertscore-anyref-pegasus-xsum-mean-0.2-0.5    precision     0.076
+                                                                                            recall        0.422
+                                                                                            f1            0.282
+                                              bertscore-anyref-pegasus-xsum-mean-0.5-0.7    precision     0.076
+                                                                                            recall        0.422
+                                                                                            f1            0.282
+                                              bertscore-anyref-pegasus-xsum-constant-16-32  precision     0.102
+                                                                                            recall        0.438
+                                                                                            f1            0.314
+                                              bertscore-anyref-pegasus-xsum-constant-32-64  precision     0.101
+                                                                                            recall        0.477
+                                                                                            f1            0.334
+                                              rouge                                         rouge1        0.477
+                                                                                            rouge2        0.503
+                                                                                            rougeL        0.504
+                                                                                            rougeLsum     0.504
+                                              rouge-anyref-bart-default                     rouge1        0.353
+                                                                                            rouge2        0.303
+                                                                                            rougeL        0.354
+                                                                                            rougeLsum     0.354
+                                              rouge-anyref-bart-min-0.2-0.5                 rouge1        0.328
+                                                                                            rouge2        0.255
+                                                                                            rougeL        0.307
+                                                                                            rougeLsum     0.307
+                                              rouge-anyref-bart-min-0.5-0.7                 rouge1        0.328
+                                                                                            rouge2        0.255
+                                                                                            rougeL        0.307
+                                                                                            rougeLsum     0.307
+                                              rouge-anyref-bart-mean-0.2-0.5                rouge1        0.328
+                                                                                            rouge2        0.255
+                                                                                            rougeL        0.307
+                                                                                            rougeLsum     0.307
+                                              rouge-anyref-bart-mean-0.5-0.7                rouge1        0.328
+                                                                                            rouge2        0.255
+                                                                                            rougeL        0.307
+                                                                                            rougeLsum     0.307
+                                              rouge-anyref-bart-constant-16-32              rouge1        0.330
+                                                                                            rouge2        0.255
+                                                                                            rougeL        0.309
+                                                                                            rougeLsum     0.309
+                                              rouge-anyref-bart-constant-32-64              rouge1        0.333
+                                                                                            rouge2        0.256
+                                                                                            rougeL        0.310
+                                                                                            rougeLsum     0.310
+                                              rouge-anyref-pegasus-xsum-default             rouge1        0.184
+                                                                                            rouge2        0.204
+                                                                                            rougeL        0.192
+                                                                                            rougeLsum     0.192
+                                              rouge-anyref-pegasus-xsum-min-0.2-0.5         rouge1        0.184
+                                                                                            rouge2        0.204
+                                                                                            rougeL        0.192
+                                                                                            rougeLsum     0.192
+                                              rouge-anyref-pegasus-xsum-min-0.5-0.7         rouge1        0.184
+                                                                                            rouge2        0.204
+                                                                                            rougeL        0.192
+                                                                                            rougeLsum     0.192
+                                              rouge-anyref-pegasus-xsum-mean-0.2-0.5        rouge1        0.184
+                                                                                            rouge2        0.204
+                                                                                            rougeL        0.192
+                                                                                            rougeLsum     0.192
+                                              rouge-anyref-pegasus-xsum-mean-0.5-0.7        rouge1        0.184
+                                                                                            rouge2        0.204
+                                                                                            rougeL        0.192
+                                                                                            rougeLsum     0.192
+                                              rouge-anyref-pegasus-xsum-constant-16-32      rouge1        0.213
+                                                                                            rouge2        0.230
+                                                                                            rougeL        0.210
+                                                                                            rougeLsum     0.210
+                                              rouge-anyref-pegasus-xsum-constant-32-64      rouge1        0.272
+                                                                                            rouge2        0.231
+                                                                                            rougeL        0.251
+                                                                                            rougeLsum     0.251
+                                              bleurt                                        scores        0.497
+                                              bleurt-anyref-bart-default                    scores        0.289
+                                              bleurt-anyref-bart-min-0.2-0.5                scores        0.263
+                                              bleurt-anyref-bart-min-0.5-0.7                scores        0.263
+                                              bleurt-anyref-bart-mean-0.2-0.5               scores        0.263
+                                              bleurt-anyref-bart-mean-0.5-0.7               scores        0.263
+                                              bleurt-anyref-bart-constant-16-32             scores        0.263
+                                              bleurt-anyref-bart-constant-32-64             scores        0.265
+                                              bleurt-anyref-pegasus-xsum-default            scores        0.198
+                                              bleurt-anyref-pegasus-xsum-min-0.2-0.5        scores        0.198
+                                              bleurt-anyref-pegasus-xsum-min-0.5-0.7        scores        0.198
+                                              bleurt-anyref-pegasus-xsum-mean-0.2-0.5       scores        0.198
+                                              bleurt-anyref-pegasus-xsum-mean-0.5-0.7       scores        0.198
+                                              bleurt-anyref-pegasus-xsum-constant-16-32     scores        0.215
+                                              bleurt-anyref-pegasus-xsum-constant-32-64     scores        0.178
+             FluencyRating          new       bertscore                                     precision     0.497
+                                                                                            recall        0.497
+                                                                                            f1            0.520
+                                              bertscore-anyref-bart-default                 precision     0.242
+                                                                                            recall        0.464
+                                                                                            f1            0.381
+                                              bertscore-anyref-bart-min-0.2-0.5             precision     0.238
+                                                                                            recall        0.459
+                                                                                            f1            0.378
+                                              bertscore-anyref-bart-min-0.5-0.7             precision     0.238
+                                                                                            recall        0.459
+                                                                                            f1            0.378
+                                              bertscore-anyref-bart-mean-0.2-0.5            precision     0.238
+                                                                                            recall        0.459
+                                                                                            f1            0.378
+                                              bertscore-anyref-bart-mean-0.5-0.7            precision     0.238
+                                                                                            recall        0.459
+                                                                                            f1            0.378
+                                              bertscore-anyref-bart-constant-16-32          precision     0.238
+                                                                                            recall        0.459
+                                                                                            f1            0.378
+                                              bertscore-anyref-bart-constant-32-64          precision     0.240
+                                                                                            recall        0.459
+                                                                                            f1            0.376
+                                              bertscore-anyref-pegasus-xsum-default         precision     0.093
+                                                                                            recall        0.427
+                                                                                            f1            0.284
+                                              bertscore-anyref-pegasus-xsum-min-0.2-0.5     precision     0.093
+                                                                                            recall        0.427
+                                                                                            f1            0.284
+                                              bertscore-anyref-pegasus-xsum-min-0.5-0.7     precision     0.093
+                                                                                            recall        0.427
+                                                                                            f1            0.284
+                                              bertscore-anyref-pegasus-xsum-mean-0.2-0.5    precision     0.093
+                                                                                            recall        0.427
+                                                                                            f1            0.284
+                                              bertscore-anyref-pegasus-xsum-mean-0.5-0.7    precision     0.093
+                                                                                            recall        0.427
+                                                                                            f1            0.284
+                                              bertscore-anyref-pegasus-xsum-constant-16-32  precision     0.122
+                                                                                            recall        0.449
+                                                                                            f1            0.318
+                                              bertscore-anyref-pegasus-xsum-constant-32-64  precision     0.094
+                                                                                            recall        0.470
+                                                                                            f1            0.321
+                                              rouge                                         rouge1        0.391
+                                                                                            rouge2        0.425
+                                                                                            rougeL        0.432
+                                                                                            rougeLsum     0.432
+                                              rouge-anyref-bart-default                     rouge1        0.300
+                                                                                            rouge2        0.310
+                                                                                            rougeL        0.309
+                                                                                            rougeLsum     0.309
+                                              rouge-anyref-bart-min-0.2-0.5                 rouge1        0.283
+                                                                                            rouge2        0.267
+                                                                                            rougeL        0.282
+                                                                                            rougeLsum     0.282
+                                              rouge-anyref-bart-min-0.5-0.7                 rouge1        0.283
+                                                                                            rouge2        0.267
+                                                                                            rougeL        0.282
+                                                                                            rougeLsum     0.282
+                                              rouge-anyref-bart-mean-0.2-0.5                rouge1        0.283
+                                                                                            rouge2        0.267
+                                                                                            rougeL        0.282
+                                                                                            rougeLsum     0.282
+                                              rouge-anyref-bart-mean-0.5-0.7                rouge1        0.283
+                                                                                            rouge2        0.267
+                                                                                            rougeL        0.282
+                                                                                            rougeLsum     0.282
+                                              rouge-anyref-bart-constant-16-32              rouge1        0.282
+                                                                                            rouge2        0.267
+                                                                                            rougeL        0.280
+                                                                                            rougeLsum     0.280
+                                              rouge-anyref-bart-constant-32-64              rouge1        0.281
+                                                                                            rouge2        0.265
+                                                                                            rougeL        0.279
+                                                                                            rougeLsum     0.279
+                                              rouge-anyref-pegasus-xsum-default             rouge1        0.192
+                                                                                            rouge2        0.237
+                                                                                            rougeL        0.189
+                                                                                            rougeLsum     0.189
+                                              rouge-anyref-pegasus-xsum-min-0.2-0.5         rouge1        0.192
+                                                                                            rouge2        0.237
+                                                                                            rougeL        0.189
+                                                                                            rougeLsum     0.189
+                                              rouge-anyref-pegasus-xsum-min-0.5-0.7         rouge1        0.192
+                                                                                            rouge2        0.237
+                                                                                            rougeL        0.189
+                                                                                            rougeLsum     0.189
+                                              rouge-anyref-pegasus-xsum-mean-0.2-0.5        rouge1        0.192
+                                                                                            rouge2        0.237
+                                                                                            rougeL        0.189
+                                                                                            rougeLsum     0.189
+                                              rouge-anyref-pegasus-xsum-mean-0.5-0.7        rouge1        0.192
+                                                                                            rouge2        0.237
+                                                                                            rougeL        0.189
+                                                                                            rougeLsum     0.189
+                                              rouge-anyref-pegasus-xsum-constant-16-32      rouge1        0.214
+                                                                                            rouge2        0.251
+                                                                                            rougeL        0.206
+                                                                                            rougeLsum     0.206
+                                              rouge-anyref-pegasus-xsum-constant-32-64      rouge1        0.249
+                                                                                            rouge2        0.259
+                                                                                            rougeL        0.224
+                                                                                            rougeLsum     0.224
+                                              bleurt                                        scores        0.462
+                                              bleurt-anyref-bart-default                    scores        0.293
+                                              bleurt-anyref-bart-min-0.2-0.5                scores        0.267
+                                              bleurt-anyref-bart-min-0.5-0.7                scores        0.267
+                                              bleurt-anyref-bart-mean-0.2-0.5               scores        0.267
+                                              bleurt-anyref-bart-mean-0.5-0.7               scores        0.267
+                                              bleurt-anyref-bart-constant-16-32             scores        0.269
+                                              bleurt-anyref-bart-constant-32-64             scores        0.265
+                                              bleurt-anyref-pegasus-xsum-default            scores        0.192
+                                              bleurt-anyref-pegasus-xsum-min-0.2-0.5        scores        0.192
+                                              bleurt-anyref-pegasus-xsum-min-0.5-0.7        scores        0.192
+                                              bleurt-anyref-pegasus-xsum-mean-0.2-0.5       scores        0.192
+                                              bleurt-anyref-pegasus-xsum-mean-0.5-0.7       scores        0.192
+                                              bleurt-anyref-pegasus-xsum-constant-16-32     scores        0.214
+                                              bleurt-anyref-pegasus-xsum-constant-32-64     scores        0.197
+spearmanr    InformativenessRating  new       bertscore                                     precision     0.611
+                                                                                            recall        0.750
+                                                                                            f1            0.689
+                                              bertscore-anyref-bart-default                 precision     0.264
+                                                                                            recall        0.642
+                                                                                            f1            0.473
+                                              bertscore-anyref-bart-min-0.2-0.5             precision     0.260
+                                                                                            recall        0.648
+                                                                                            f1            0.456
+                                              bertscore-anyref-bart-min-0.5-0.7             precision     0.260
+                                                                                            recall        0.648
+                                                                                            f1            0.456
+                                              bertscore-anyref-bart-mean-0.2-0.5            precision     0.260
+                                                                                            recall        0.648
+                                                                                            f1            0.456
+                                              bertscore-anyref-bart-mean-0.5-0.7            precision     0.260
+                                                                                            recall        0.648
+                                                                                            f1            0.456
+                                              bertscore-anyref-bart-constant-16-32          precision     0.260
+                                                                                            recall        0.648
+                                                                                            f1            0.456
+                                              bertscore-anyref-bart-constant-32-64          precision     0.268
+                                                                                            recall        0.644
+                                                                                            f1            0.458
+                                              bertscore-anyref-pegasus-xsum-default         precision    -0.011
+                                                                                            recall        0.477
+                                                                                            f1            0.271
+                                              bertscore-anyref-pegasus-xsum-min-0.2-0.5     precision    -0.011
+                                                                                            recall        0.477
+                                                                                            f1            0.271
+                                              bertscore-anyref-pegasus-xsum-min-0.5-0.7     precision    -0.011
+                                                                                            recall        0.477
+                                                                                            f1            0.271
+                                              bertscore-anyref-pegasus-xsum-mean-0.2-0.5    precision    -0.011
+                                                                                            recall        0.477
+                                                                                            f1            0.271
+                                              bertscore-anyref-pegasus-xsum-mean-0.5-0.7    precision    -0.011
+                                                                                            recall        0.477
+                                                                                            f1            0.271
+                                              bertscore-anyref-pegasus-xsum-constant-16-32  precision     0.032
+                                                                                            recall        0.541
+                                                                                            f1            0.350
+                                              bertscore-anyref-pegasus-xsum-constant-32-64  precision     0.049
+                                                                                            recall        0.568
+                                                                                            f1            0.368
+                                              rouge                                         rouge1        0.744
+                                                                                            rouge2        0.746
+                                                                                            rougeL        0.746
+                                                                                            rougeLsum     0.746
+                                              rouge-anyref-bart-default                     rouge1        0.519
+                                                                                            rouge2        0.463
+                                                                                            rougeL        0.510
+                                                                                            rougeLsum     0.510
+                                              rouge-anyref-bart-min-0.2-0.5                 rouge1        0.468
+                                                                                            rouge2        0.412
+                                                                                            rougeL        0.448
+                                                                                            rougeLsum     0.448
+                                              rouge-anyref-bart-min-0.5-0.7                 rouge1        0.468
+                                                                                            rouge2        0.412
+                                                                                            rougeL        0.448
+                                                                                            rougeLsum     0.448
+                                              rouge-anyref-bart-mean-0.2-0.5                rouge1        0.468
+                                                                                            rouge2        0.412
+                                                                                            rougeL        0.448
+                                                                                            rougeLsum     0.448
+                                              rouge-anyref-bart-mean-0.5-0.7                rouge1        0.468
+                                                                                            rouge2        0.412
+                                                                                            rougeL        0.448
+                                                                                            rougeLsum     0.448
+                                              rouge-anyref-bart-constant-16-32              rouge1        0.470
+                                                                                            rouge2        0.412
+                                                                                            rougeL        0.450
+                                                                                            rougeLsum     0.450
+                                              rouge-anyref-bart-constant-32-64              rouge1        0.474
+                                                                                            rouge2        0.410
+                                                                                            rougeL        0.455
+                                                                                            rougeLsum     0.455
+                                              rouge-anyref-pegasus-xsum-default             rouge1        0.285
+                                                                                            rouge2        0.318
+                                                                                            rougeL        0.271
+                                                                                            rougeLsum     0.271
+                                              rouge-anyref-pegasus-xsum-min-0.2-0.5         rouge1        0.285
+                                                                                            rouge2        0.318
+                                                                                            rougeL        0.271
+                                                                                            rougeLsum     0.271
+                                              rouge-anyref-pegasus-xsum-min-0.5-0.7         rouge1        0.285
+                                                                                            rouge2        0.318
+                                                                                            rougeL        0.271
+                                                                                            rougeLsum     0.271
+                                              rouge-anyref-pegasus-xsum-mean-0.2-0.5        rouge1        0.285
+                                                                                            rouge2        0.318
+                                                                                            rougeL        0.271
+                                                                                            rougeLsum     0.271
+                                              rouge-anyref-pegasus-xsum-mean-0.5-0.7        rouge1        0.285
+                                                                                            rouge2        0.318
+                                                                                            rougeL        0.271
+                                                                                            rougeLsum     0.271
+                                              rouge-anyref-pegasus-xsum-constant-16-32      rouge1        0.339
+                                                                                            rouge2        0.364
+                                                                                            rougeL        0.299
+                                                                                            rougeLsum     0.299
+                                              rouge-anyref-pegasus-xsum-constant-32-64      rouge1        0.391
+                                                                                            rouge2        0.362
+                                                                                            rougeL        0.308
+                                                                                            rougeLsum     0.308
+                                              bleurt                                        scores        0.549
+                                              bleurt-anyref-bart-default                    scores        0.440
+                                              bleurt-anyref-bart-min-0.2-0.5                scores        0.404
+                                              bleurt-anyref-bart-min-0.5-0.7                scores        0.404
+                                              bleurt-anyref-bart-mean-0.2-0.5               scores        0.404
+                                              bleurt-anyref-bart-mean-0.5-0.7               scores        0.404
+                                              bleurt-anyref-bart-constant-16-32             scores        0.404
+                                              bleurt-anyref-bart-constant-32-64             scores        0.407
+                                              bleurt-anyref-pegasus-xsum-default            scores        0.317
+                                              bleurt-anyref-pegasus-xsum-min-0.2-0.5        scores        0.317
+                                              bleurt-anyref-pegasus-xsum-min-0.5-0.7        scores        0.317
+                                              bleurt-anyref-pegasus-xsum-mean-0.2-0.5       scores        0.317
+                                              bleurt-anyref-pegasus-xsum-mean-0.5-0.7       scores        0.317
+                                              bleurt-anyref-pegasus-xsum-constant-16-32     scores        0.358
+                                              bleurt-anyref-pegasus-xsum-constant-32-64     scores        0.319
+             RelevanceRating        new       bertscore                                     precision     0.591
+                                                                                            recall        0.658
+                                                                                            f1            0.617
+                                              bertscore-anyref-bart-default                 precision     0.290
+                                                                                            recall        0.576
+                                                                                            f1            0.472
+                                              bertscore-anyref-bart-min-0.2-0.5             precision     0.287
+                                                                                            recall        0.596
+                                                                                            f1            0.454
+                                              bertscore-anyref-bart-min-0.5-0.7             precision     0.287
+                                                                                            recall        0.596
+                                                                                            f1            0.454
+                                              bertscore-anyref-bart-mean-0.2-0.5            precision     0.287
+                                                                                            recall        0.596
+                                                                                            f1            0.454
+                                              bertscore-anyref-bart-mean-0.5-0.7            precision     0.287
+                                                                                            recall        0.596
+                                                                                            f1            0.454
+                                              bertscore-anyref-bart-constant-16-32          precision     0.287
+                                                                                            recall        0.596
+                                                                                            f1            0.454
+                                              bertscore-anyref-bart-constant-32-64          precision     0.294
+                                                                                            recall        0.594
+                                                                                            f1            0.458
+                                              bertscore-anyref-pegasus-xsum-default         precision     0.048
+                                                                                            recall        0.460
+                                                                                            f1            0.305
+                                              bertscore-anyref-pegasus-xsum-min-0.2-0.5     precision     0.048
+                                                                                            recall        0.460
+                                                                                            f1            0.305
+                                              bertscore-anyref-pegasus-xsum-min-0.5-0.7     precision     0.048
+                                                                                            recall        0.460
+                                                                                            f1            0.305
+                                              bertscore-anyref-pegasus-xsum-mean-0.2-0.5    precision     0.048
+                                                                                            recall        0.460
+                                                                                            f1            0.305
+                                              bertscore-anyref-pegasus-xsum-mean-0.5-0.7    precision     0.048
+                                                                                            recall        0.460
+                                                                                            f1            0.305
+                                              bertscore-anyref-pegasus-xsum-constant-16-32  precision     0.090
+                                                                                            recall        0.509
+                                                                                            f1            0.374
+                                              bertscore-anyref-pegasus-xsum-constant-32-64  precision     0.104
+                                                                                            recall        0.541
+                                                                                            f1            0.393
+                                              rouge                                         rouge1        0.639
+                                                                                            rouge2        0.648
+                                                                                            rougeL        0.641
+                                                                                            rougeLsum     0.641
+                                              rouge-anyref-bart-default                     rouge1        0.478
+                                                                                            rouge2        0.414
+                                                                                            rougeL        0.462
+                                                                                            rougeLsum     0.462
+                                              rouge-anyref-bart-min-0.2-0.5                 rouge1        0.422
+                                                                                            rouge2        0.376
+                                                                                            rougeL        0.413
+                                                                                            rougeLsum     0.413
+                                              rouge-anyref-bart-min-0.5-0.7                 rouge1        0.422
+                                                                                            rouge2        0.376
+                                                                                            rougeL        0.413
+                                                                                            rougeLsum     0.413
+                                              rouge-anyref-bart-mean-0.2-0.5                rouge1        0.422
+                                                                                            rouge2        0.376
+                                                                                            rougeL        0.413
+                                                                                            rougeLsum     0.413
+                                              rouge-anyref-bart-mean-0.5-0.7                rouge1        0.422
+                                                                                            rouge2        0.376
+                                                                                            rougeL        0.413
+                                                                                            rougeLsum     0.413
+                                              rouge-anyref-bart-constant-16-32              rouge1        0.422
+                                                                                            rouge2        0.376
+                                                                                            rougeL        0.411
+                                                                                            rougeLsum     0.411
+                                              rouge-anyref-bart-constant-32-64              rouge1        0.426
+                                                                                            rouge2        0.375
+                                                                                            rougeL        0.415
+                                                                                            rougeLsum     0.415
+                                              rouge-anyref-pegasus-xsum-default             rouge1        0.334
+                                                                                            rouge2        0.307
+                                                                                            rougeL        0.279
+                                                                                            rougeLsum     0.279
+                                              rouge-anyref-pegasus-xsum-min-0.2-0.5         rouge1        0.334
+                                                                                            rouge2        0.307
+                                                                                            rougeL        0.279
+                                                                                            rougeLsum     0.279
+                                              rouge-anyref-pegasus-xsum-min-0.5-0.7         rouge1        0.334
+                                                                                            rouge2        0.307
+                                                                                            rougeL        0.279
+                                                                                            rougeLsum     0.279
+                                              rouge-anyref-pegasus-xsum-mean-0.2-0.5        rouge1        0.334
+                                                                                            rouge2        0.307
+                                                                                            rougeL        0.279
+                                                                                            rougeLsum     0.279
+                                              rouge-anyref-pegasus-xsum-mean-0.5-0.7        rouge1        0.334
+                                                                                            rouge2        0.307
+                                                                                            rougeL        0.279
+                                                                                            rougeLsum     0.279
+                                              rouge-anyref-pegasus-xsum-constant-16-32      rouge1        0.371
+                                                                                            rouge2        0.343
+                                                                                            rougeL        0.296
+                                                                                            rougeLsum     0.296
+                                              rouge-anyref-pegasus-xsum-constant-32-64      rouge1        0.426
+                                                                                            rouge2        0.335
+                                                                                            rougeL        0.316
+                                                                                            rougeLsum     0.316
+                                              bleurt                                        scores        0.507
+                                              bleurt-anyref-bart-default                    scores        0.430
+                                              bleurt-anyref-bart-min-0.2-0.5                scores        0.409
+                                              bleurt-anyref-bart-min-0.5-0.7                scores        0.409
+                                              bleurt-anyref-bart-mean-0.2-0.5               scores        0.409
+                                              bleurt-anyref-bart-mean-0.5-0.7               scores        0.409
+                                              bleurt-anyref-bart-constant-16-32             scores        0.410
+                                              bleurt-anyref-bart-constant-32-64             scores        0.413
+                                              bleurt-anyref-pegasus-xsum-default            scores        0.346
+                                              bleurt-anyref-pegasus-xsum-min-0.2-0.5        scores        0.346
+                                              bleurt-anyref-pegasus-xsum-min-0.5-0.7        scores        0.346
+                                              bleurt-anyref-pegasus-xsum-mean-0.2-0.5       scores        0.346
+                                              bleurt-anyref-pegasus-xsum-mean-0.5-0.7       scores        0.346
+                                              bleurt-anyref-pegasus-xsum-constant-16-32     scores        0.377
+                                              bleurt-anyref-pegasus-xsum-constant-32-64     scores        0.351
+             CoherenceRating        new       bertscore                                     precision     0.633
+                                                                                            recall        0.659
+                                                                                            f1            0.663
+                                              bertscore-anyref-bart-default                 precision     0.332
+                                                                                            recall        0.584
+                                                                                            f1            0.486
+                                              bertscore-anyref-bart-min-0.2-0.5             precision     0.326
+                                                                                            recall        0.587
+                                                                                            f1            0.488
+                                              bertscore-anyref-bart-min-0.5-0.7             precision     0.326
+                                                                                            recall        0.587
+                                                                                            f1            0.488
+                                              bertscore-anyref-bart-mean-0.2-0.5            precision     0.326
+                                                                                            recall        0.587
+                                                                                            f1            0.488
+                                              bertscore-anyref-bart-mean-0.5-0.7            precision     0.326
+                                                                                            recall        0.587
+                                                                                            f1            0.488
+                                              bertscore-anyref-bart-constant-16-32          precision     0.326
+                                                                                            recall        0.587
+                                                                                            f1            0.488
+                                              bertscore-anyref-bart-constant-32-64          precision     0.332
+                                                                                            recall        0.588
+                                                                                            f1            0.489
+                                              bertscore-anyref-pegasus-xsum-default         precision     0.088
+                                                                                            recall        0.501
+                                                                                            f1            0.339
+                                              bertscore-anyref-pegasus-xsum-min-0.2-0.5     precision     0.088
+                                                                                            recall        0.501
+                                                                                            f1            0.339
+                                              bertscore-anyref-pegasus-xsum-min-0.5-0.7     precision     0.088
+                                                                                            recall        0.501
+                                                                                            f1            0.339
+                                              bertscore-anyref-pegasus-xsum-mean-0.2-0.5    precision     0.088
+                                                                                            recall        0.501
+                                                                                            f1            0.339
+                                              bertscore-anyref-pegasus-xsum-mean-0.5-0.7    precision     0.088
+                                                                                            recall        0.501
+                                                                                            f1            0.339
+                                              bertscore-anyref-pegasus-xsum-constant-16-32  precision     0.118
+                                                                                            recall        0.526
+                                                                                            f1            0.383
+                                              bertscore-anyref-pegasus-xsum-constant-32-64  precision     0.122
+                                                                                            recall        0.567
+                                                                                            f1            0.408
+                                              rouge                                         rouge1        0.564
+                                                                                            rouge2        0.591
+                                                                                            rougeL        0.591
+                                                                                            rougeLsum     0.591
+                                              rouge-anyref-bart-default                     rouge1        0.440
+                                                                                            rouge2        0.381
+                                                                                            rougeL        0.436
+                                                                                            rougeLsum     0.436
+                                              rouge-anyref-bart-min-0.2-0.5                 rouge1        0.417
+                                                                                            rouge2        0.330
+                                                                                            rougeL        0.379
+                                                                                            rougeLsum     0.379
+                                              rouge-anyref-bart-min-0.5-0.7                 rouge1        0.417
+                                                                                            rouge2        0.330
+                                                                                            rougeL        0.379
+                                                                                            rougeLsum     0.379
+                                              rouge-anyref-bart-mean-0.2-0.5                rouge1        0.417
+                                                                                            rouge2        0.330
+                                                                                            rougeL        0.379
+                                                                                            rougeLsum     0.379
+                                              rouge-anyref-bart-mean-0.5-0.7                rouge1        0.417
+                                                                                            rouge2        0.330
+                                                                                            rougeL        0.379
+                                                                                            rougeLsum     0.379
+                                              rouge-anyref-bart-constant-16-32              rouge1        0.419
+                                                                                            rouge2        0.330
+                                                                                            rougeL        0.381
+                                                                                            rougeLsum     0.381
+                                              rouge-anyref-bart-constant-32-64              rouge1        0.422
+                                                                                            rouge2        0.330
+                                                                                            rougeL        0.381
+                                                                                            rougeLsum     0.381
+                                              rouge-anyref-pegasus-xsum-default             rouge1        0.258
+                                                                                            rouge2        0.257
+                                                                                            rougeL        0.258
+                                                                                            rougeLsum     0.258
+                                              rouge-anyref-pegasus-xsum-min-0.2-0.5         rouge1        0.258
+                                                                                            rouge2        0.257
+                                                                                            rougeL        0.258
+                                                                                            rougeLsum     0.258
+                                              rouge-anyref-pegasus-xsum-min-0.5-0.7         rouge1        0.258
+                                                                                            rouge2        0.257
+                                                                                            rougeL        0.258
+                                                                                            rougeLsum     0.258
+                                              rouge-anyref-pegasus-xsum-mean-0.2-0.5        rouge1        0.258
+                                                                                            rouge2        0.257
+                                                                                            rougeL        0.258
+                                                                                            rougeLsum     0.258
+                                              rouge-anyref-pegasus-xsum-mean-0.5-0.7        rouge1        0.258
+                                                                                            rouge2        0.257
+                                                                                            rougeL        0.258
+                                                                                            rougeLsum     0.258
+                                              rouge-anyref-pegasus-xsum-constant-16-32      rouge1        0.294
+                                                                                            rouge2        0.285
+                                                                                            rougeL        0.272
+                                                                                            rougeLsum     0.272
+                                              rouge-anyref-pegasus-xsum-constant-32-64      rouge1        0.349
+                                                                                            rouge2        0.296
+                                                                                            rougeL        0.311
+                                                                                            rougeLsum     0.311
+                                              bleurt                                        scores        0.596
+                                              bleurt-anyref-bart-default                    scores        0.358
+                                              bleurt-anyref-bart-min-0.2-0.5                scores        0.329
+                                              bleurt-anyref-bart-min-0.5-0.7                scores        0.329
+                                              bleurt-anyref-bart-mean-0.2-0.5               scores        0.329
+                                              bleurt-anyref-bart-mean-0.5-0.7               scores        0.329
+                                              bleurt-anyref-bart-constant-16-32             scores        0.329
+                                              bleurt-anyref-bart-constant-32-64             scores        0.333
+                                              bleurt-anyref-pegasus-xsum-default            scores        0.258
+                                              bleurt-anyref-pegasus-xsum-min-0.2-0.5        scores        0.258
+                                              bleurt-anyref-pegasus-xsum-min-0.5-0.7        scores        0.258
+                                              bleurt-anyref-pegasus-xsum-mean-0.2-0.5       scores        0.258
+                                              bleurt-anyref-pegasus-xsum-mean-0.5-0.7       scores        0.258
+                                              bleurt-anyref-pegasus-xsum-constant-16-32     scores        0.279
+                                              bleurt-anyref-pegasus-xsum-constant-32-64     scores        0.239
+             FluencyRating          new       bertscore                                     precision     0.591
+                                                                                            recall        0.590
+                                                                                            f1            0.618
+                                              bertscore-anyref-bart-default                 precision     0.307
+                                                                                            recall        0.544
+                                                                                            f1            0.467
+                                              bertscore-anyref-bart-min-0.2-0.5             precision     0.303
+                                                                                            recall        0.544
+                                                                                            f1            0.463
+                                              bertscore-anyref-bart-min-0.5-0.7             precision     0.303
+                                                                                            recall        0.544
+                                                                                            f1            0.463
+                                              bertscore-anyref-bart-mean-0.2-0.5            precision     0.303
+                                                                                            recall        0.544
+                                                                                            f1            0.463
+                                              bertscore-anyref-bart-mean-0.5-0.7            precision     0.303
+                                                                                            recall        0.544
+                                                                                            f1            0.463
+                                              bertscore-anyref-bart-constant-16-32          precision     0.303
+                                                                                            recall        0.544
+                                                                                            f1            0.463
+                                              bertscore-anyref-bart-constant-32-64          precision     0.303
+                                                                                            recall        0.545
+                                                                                            f1            0.461
+                                              bertscore-anyref-pegasus-xsum-default         precision     0.123
+                                                                                            recall        0.509
+                                                                                            f1            0.351
+                                              bertscore-anyref-pegasus-xsum-min-0.2-0.5     precision     0.123
+                                                                                            recall        0.509
+                                                                                            f1            0.351
+                                              bertscore-anyref-pegasus-xsum-min-0.5-0.7     precision     0.123
+                                                                                            recall        0.509
+                                                                                            f1            0.351
+                                              bertscore-anyref-pegasus-xsum-mean-0.2-0.5    precision     0.123
+                                                                                            recall        0.509
+                                                                                            f1            0.351
+                                              bertscore-anyref-pegasus-xsum-mean-0.5-0.7    precision     0.123
+                                                                                            recall        0.509
+                                                                                            f1            0.351
+                                              bertscore-anyref-pegasus-xsum-constant-16-32  precision     0.154
+                                                                                            recall        0.538
+                                                                                            f1            0.401
+                                              bertscore-anyref-pegasus-xsum-constant-32-64  precision     0.129
+                                                                                            recall        0.564
+                                                                                            f1            0.403
+                                              rouge                                         rouge1        0.476
+                                                                                            rouge2        0.511
+                                                                                            rougeL        0.515
+                                                                                            rougeLsum     0.515
+                                              rouge-anyref-bart-default                     rouge1        0.374
+                                                                                            rouge2        0.373
+                                                                                            rougeL        0.382
+                                                                                            rougeLsum     0.382
+                                              rouge-anyref-bart-min-0.2-0.5                 rouge1        0.360
+                                                                                            rouge2        0.322
+                                                                                            rougeL        0.346
+                                                                                            rougeLsum     0.346
+                                              rouge-anyref-bart-min-0.5-0.7                 rouge1        0.360
+                                                                                            rouge2        0.322
+                                                                                            rougeL        0.346
+                                                                                            rougeLsum     0.346
+                                              rouge-anyref-bart-mean-0.2-0.5                rouge1        0.360
+                                                                                            rouge2        0.322
+                                                                                            rougeL        0.346
+                                                                                            rougeLsum     0.346
+                                              rouge-anyref-bart-mean-0.5-0.7                rouge1        0.360
+                                                                                            rouge2        0.322
+                                                                                            rougeL        0.346
+                                                                                            rougeLsum     0.346
+                                              rouge-anyref-bart-constant-16-32              rouge1        0.359
+                                                                                            rouge2        0.322
+                                                                                            rougeL        0.345
+                                                                                            rougeLsum     0.345
+                                              rouge-anyref-bart-constant-32-64              rouge1        0.360
+                                                                                            rouge2        0.320
+                                                                                            rougeL        0.342
+                                                                                            rougeLsum     0.342
+                                              rouge-anyref-pegasus-xsum-default             rouge1        0.265
+                                                                                            rouge2        0.297
+                                                                                            rougeL        0.264
+                                                                                            rougeLsum     0.264
+                                              rouge-anyref-pegasus-xsum-min-0.2-0.5         rouge1        0.265
+                                                                                            rouge2        0.297
+                                                                                            rougeL        0.264
+                                                                                            rougeLsum     0.264
+                                              rouge-anyref-pegasus-xsum-min-0.5-0.7         rouge1        0.265
+                                                                                            rouge2        0.297
+                                                                                            rougeL        0.264
+                                                                                            rougeLsum     0.264
+                                              rouge-anyref-pegasus-xsum-mean-0.2-0.5        rouge1        0.265
+                                                                                            rouge2        0.297
+                                                                                            rougeL        0.264
+                                                                                            rougeLsum     0.264
+                                              rouge-anyref-pegasus-xsum-mean-0.5-0.7        rouge1        0.265
+                                                                                            rouge2        0.297
+                                                                                            rougeL        0.264
+                                                                                            rougeLsum     0.264
+                                              rouge-anyref-pegasus-xsum-constant-16-32      rouge1        0.290
+                                                                                            rouge2        0.315
+                                                                                            rougeL        0.277
+                                                                                            rougeLsum     0.277
+                                              rouge-anyref-pegasus-xsum-constant-32-64      rouge1        0.325
+                                                                                            rouge2        0.322
+                                                                                            rougeL        0.287
+                                                                                            rougeLsum     0.287
+                                              bleurt                                        scores        0.562
+                                              bleurt-anyref-bart-default                    scores        0.350
+                                              bleurt-anyref-bart-min-0.2-0.5                scores        0.328
+                                              bleurt-anyref-bart-min-0.5-0.7                scores        0.328
+                                              bleurt-anyref-bart-mean-0.2-0.5               scores        0.328
+                                              bleurt-anyref-bart-mean-0.5-0.7               scores        0.328
+                                              bleurt-anyref-bart-constant-16-32             scores        0.331
+                                              bleurt-anyref-bart-constant-32-64             scores        0.328
+                                              bleurt-anyref-pegasus-xsum-default            scores        0.245
+                                              bleurt-anyref-pegasus-xsum-min-0.2-0.5        scores        0.245
+                                              bleurt-anyref-pegasus-xsum-min-0.5-0.7        scores        0.245
+                                              bleurt-anyref-pegasus-xsum-mean-0.2-0.5       scores        0.245
+                                              bleurt-anyref-pegasus-xsum-mean-0.5-0.7       scores        0.245
+                                              bleurt-anyref-pegasus-xsum-constant-16-32     scores        0.276
+                                              bleurt-anyref-pegasus-xsum-constant-32-64     scores        0.252

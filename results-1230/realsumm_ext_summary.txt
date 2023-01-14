@@ -1,0 +1,1009 @@
+corr_metric  aspect              approach  model                                     score_name          
+pearsonr     litepyramid_recall  trad      bertscore                                 precision               0.077
+                                                                                     recall                  0.206
+                                                                                     f1                      0.156
+                                 new       bertscore                                 precision               0.013
+                                                                                     recall                  0.091
+                                                                                     f1                      0.057
+                                 trad      bertscore-topk-5                          precision               0.082
+                                                                                     recall                  0.213
+                                                                                     f1                      0.162
+                                 new       bertscore-topk-5                          precision              -0.037
+                                                                                     recall                  0.031
+                                                                                     f1                     -0.006
+                                 trad      bertscore-topk-10                         precision               0.078
+                                                                                     recall                  0.205
+                                                                                     f1                      0.155
+                                 new       bertscore-topk-10                         precision               0.008
+                                                                                     recall                  0.105
+                                                                                     f1                      0.056
+                                 trad      bertscore-topk-20                         precision               0.078
+                                                                                     recall                  0.205
+                                                                                     f1                      0.155
+                                 new       bertscore-topk-20                         precision               0.012
+                                                                                     recall                  0.087
+                                                                                     f1                      0.055
+                                 trad      bertscore-topp-0.2                        precision              -0.007
+                                                                                     recall                  0.105
+                                                                                     f1                      0.060
+                                 new       bertscore-topp-0.2                        precision              -0.002
+                                                                                     recall                  0.066
+                                                                                     f1                      0.032
+                                 trad      bertscore-topp-0.5                        precision               0.039
+                                                                                     recall                  0.175
+                                                                                     f1                      0.121
+                                 new       bertscore-topp-0.5                        precision               0.008
+                                                                                     recall                  0.092
+                                                                                     f1                      0.054
+                                 trad      bertscore-topp-0.7                        precision               0.059
+                                                                                     recall                  0.186
+                                                                                     f1                      0.138
+                                 new       bertscore-topp-0.7                        precision               0.019
+                                                                                     recall                  0.092
+                                                                                     f1                      0.063
+                                 trad      bertscore-sentence-cos-mpnet              P                       0.067
+                                                                                     R                       0.125
+                                                                                     F                       0.101
+                                 new       bertscore-sentence-cos-mpnet              P                       0.009
+                                                                                     R                       0.090
+                                                                                     F                       0.074
+                                 trad      bertscore-sentence-cos-mpnet-topk-5       P                       0.095
+                                                                                     R                       0.192
+                                                                                     F                       0.151
+                                 new       bertscore-sentence-cos-mpnet-topk-5       P                      -0.016
+                                                                                     R                       0.029
+                                                                                     F                       0.002
+                                 trad      bertscore-sentence-cos-mpnet-topk-10      P                       0.090
+                                                                                     R                       0.181
+                                                                                     F                       0.141
+                                 new       bertscore-sentence-cos-mpnet-topk-10      P                       0.020
+                                                                                     R                       0.117
+                                                                                     F                       0.074
+                                 trad      bertscore-sentence-cos-mpnet-topk-20      P                       0.090
+                                                                                     R                       0.181
+                                                                                     F                       0.141
+                                 new       bertscore-sentence-cos-mpnet-topk-20      P                       0.012
+                                                                                     R                       0.092
+                                                                                     F                       0.073
+                                 trad      bertscore-sentence-cos-mpnet-topp-0.2     P                       0.043
+                                                                                     R                       0.086
+                                                                                     F                       0.061
+                                 new       bertscore-sentence-cos-mpnet-topp-0.2     P                       0.019
+                                                                                     R                       0.070
+                                                                                     F                       0.040
+                                 trad      bertscore-sentence-cos-mpnet-topp-0.5     P                       0.076
+                                                                                     R                       0.153
+                                                                                     F                       0.107
+                                 new       bertscore-sentence-cos-mpnet-topp-0.5     P                       0.031
+                                                                                     R                       0.107
+                                                                                     F                       0.087
+                                 trad      bertscore-sentence-cos-mpnet-topp-0.7     P                       0.093
+                                                                                     R                       0.181
+                                                                                     F                       0.142
+                                 new       bertscore-sentence-cos-mpnet-topp-0.7     P                       0.022
+                                                                                     R                       0.095
+                                                                                     F                       0.076
+                                 trad      bertscore-sentence-cos-roberta            P                       0.034
+                                                                                     R                       0.127
+                                                                                     F                       0.076
+                                 new       bertscore-sentence-cos-roberta            P                      -0.001
+                                                                                     R                       0.061
+                                                                                     F                       0.041
+                                 trad      bertscore-sentence-cos-roberta-topk-5     P                       0.073
+                                                                                     R                       0.187
+                                                                                     F                       0.130
+                                 new       bertscore-sentence-cos-roberta-topk-5     P                      -0.028
+                                                                                     R                       0.013
+                                                                                     F                      -0.012
+                                 trad      bertscore-sentence-cos-roberta-topk-10    P                       0.067
+                                                                                     R                       0.176
+                                                                                     F                       0.117
+                                 new       bertscore-sentence-cos-roberta-topk-10    P                       0.012
+                                                                                     R                       0.094
+                                                                                     F                       0.048
+                                 trad      bertscore-sentence-cos-roberta-topk-20    P                       0.067
+                                                                                     R                       0.176
+                                                                                     F                       0.117
+                                 new       bertscore-sentence-cos-roberta-topk-20    P                      -0.001
+                                                                                     R                       0.064
+                                                                                     F                       0.043
+                                 trad      bertscore-sentence-cos-roberta-topp-0.2   P                       0.012
+                                                                                     R                       0.064
+                                                                                     F                       0.034
+                                 new       bertscore-sentence-cos-roberta-topp-0.2   P                       0.010
+                                                                                     R                       0.061
+                                                                                     F                       0.030
+                                 trad      bertscore-sentence-cos-roberta-topp-0.5   P                       0.061
+                                                                                     R                       0.132
+                                                                                     F                       0.090
+                                 new       bertscore-sentence-cos-roberta-topp-0.5   P                       0.018
+                                                                                     R                       0.082
+                                                                                     F                       0.055
+                                 trad      bertscore-sentence-cos-roberta-topp-0.7   P                       0.067
+                                                                                     R                       0.170
+                                                                                     F                       0.117
+                                 new       bertscore-sentence-cos-roberta-topp-0.7   P                       0.010
+                                                                                     R                       0.072
+                                                                                     F                       0.049
+                                 trad      bertscore-sentence-mnli-roberta           P                       0.075
+                                                                                     R                       0.051
+                                                                                     F                       0.064
+                                 new       bertscore-sentence-mnli-roberta           P                       0.057
+                                                                                     R                       0.032
+                                                                                     F                       0.038
+                                 trad      bertscore-sentence-mnli-roberta-topk-5    P                       0.055
+                                                                                     R                       0.069
+                                                                                     F                       0.065
+                                 new       bertscore-sentence-mnli-roberta-topk-5    P                      -0.035
+                                                                                     R                       0.046
+                                                                                     F                       0.004
+                                 trad      bertscore-sentence-mnli-roberta-topk-10   P                       0.055
+                                                                                     R                       0.066
+                                                                                     F                       0.062
+                                 new       bertscore-sentence-mnli-roberta-topk-10   P                       0.038
+                                                                                     R                       0.091
+                                                                                     F                       0.087
+                                 trad      bertscore-sentence-mnli-roberta-topk-20   P                       0.055
+                                                                                     R                       0.066
+                                                                                     F                       0.062
+                                 new       bertscore-sentence-mnli-roberta-topk-20   P                       0.030
+                                                                                     R                       0.052
+                                                                                     F                       0.059
+                                 trad      bertscore-sentence-mnli-roberta-topp-0.2  P                      -0.042
+                                                                                     R                       0.014
+                                                                                     F                      -0.025
+                                 new       bertscore-sentence-mnli-roberta-topp-0.2  P                       0.013
+                                                                                     R                       0.069
+                                                                                     F                       0.044
+                                 trad      bertscore-sentence-mnli-roberta-topp-0.5  P                       0.021
+                                                                                     R                       0.060
+                                                                                     F                       0.038
+                                 new       bertscore-sentence-mnli-roberta-topp-0.5  P                       0.048
+                                                                                     R                       0.054
+                                                                                     F                       0.053
+                                 trad      bertscore-sentence-mnli-roberta-topp-0.7  P                       0.040
+                                                                                     R                       0.063
+                                                                                     F                       0.048
+                                 new       bertscore-sentence-mnli-roberta-topp-0.7  P                       0.040
+                                                                                     R                       0.042
+                                                                                     F                       0.048
+                                 trad      bertscore-sentence-mnli-bart              P                      -0.004
+                                                                                     R                      -0.011
+                                                                                     F                      -0.013
+                                 new       bertscore-sentence-mnli-bart              P                       0.058
+                                                                                     R                       0.046
+                                                                                     F                       0.046
+                                 trad      bertscore-sentence-mnli-bart-topk-5       P                       0.004
+                                                                                     R                       0.004
+                                                                                     F                       0.000
+                                 new       bertscore-sentence-mnli-bart-topk-5       P                       0.012
+                                                                                     R                       0.043
+                                                                                     F                       0.024
+                                 trad      bertscore-sentence-mnli-bart-topk-10      P                      -0.002
+                                                                                     R                       0.001
+                                                                                     F                      -0.004
+                                 new       bertscore-sentence-mnli-bart-topk-10      P                       0.079
+                                                                                     R                       0.080
+                                                                                     F                       0.075
+                                 trad      bertscore-sentence-mnli-bart-topk-20      P                      -0.002
+                                                                                     R                       0.001
+                                                                                     F                      -0.004
+                                 new       bertscore-sentence-mnli-bart-topk-20      P                       0.032
+                                                                                     R                       0.054
+                                                                                     F                       0.052
+                                 trad      bertscore-sentence-mnli-bart-topp-0.2     P                      -0.047
+                                                                                     R                      -0.035
+                                                                                     F                      -0.040
+                                 new       bertscore-sentence-mnli-bart-topp-0.2     P                       0.034
+                                                                                     R                       0.072
+                                                                                     F                       0.052
+                                 trad      bertscore-sentence-mnli-bart-topp-0.5     P                      -0.045
+                                                                                     R                      -0.025
+                                                                                     F                      -0.036
+                                 new       bertscore-sentence-mnli-bart-topp-0.5     P                       0.069
+                                                                                     R                       0.054
+                                                                                     F                       0.056
+                                 trad      bertscore-sentence-mnli-bart-topp-0.7     P                       0.012
+                                                                                     R                       0.008
+                                                                                     F                       0.008
+                                 new       bertscore-sentence-mnli-bart-topp-0.7     P                       0.057
+                                                                                     R                       0.054
+                                                                                     F                       0.054
+                                 trad      bertscore-sentence-mnli-deberta           P                      -0.022
+                                                                                     R                      -0.006
+                                                                                     F                      -0.009
+                                 new       bertscore-sentence-mnli-deberta           P                       0.041
+                                                                                     R                       0.048
+                                                                                     F                       0.044
+                                 trad      bertscore-sentence-mnli-deberta-topk-5    P                      -0.014
+                                                                                     R                      -0.008
+                                                                                     F                      -0.007
+                                 new       bertscore-sentence-mnli-deberta-topk-5    P                      -0.014
+                                                                                     R                       0.011
+                                                                                     F                      -0.012
+                                 trad      bertscore-sentence-mnli-deberta-topk-10   P                      -0.014
+                                                                                     R                      -0.002
+                                                                                     F                      -0.003
+                                 new       bertscore-sentence-mnli-deberta-topk-10   P                       0.073
+                                                                                     R                       0.075
+                                                                                     F                       0.070
+                                 trad      bertscore-sentence-mnli-deberta-topk-20   P                      -0.014
+                                                                                     R                      -0.002
+                                                                                     F                      -0.003
+                                 new       bertscore-sentence-mnli-deberta-topk-20   P                       0.031
+                                                                                     R                       0.060
+                                                                                     F                       0.051
+                                 trad      bertscore-sentence-mnli-deberta-topp-0.2  P                      -0.012
+                                                                                     R                      -0.003
+                                                                                     F                      -0.011
+                                 new       bertscore-sentence-mnli-deberta-topp-0.2  P                       0.040
+                                                                                     R                       0.057
+                                                                                     F                       0.040
+                                 trad      bertscore-sentence-mnli-deberta-topp-0.5  P                       0.001
+                                                                                     R                      -0.003
+                                                                                     F                       0.002
+                                 new       bertscore-sentence-mnli-deberta-topp-0.5  P                       0.064
+                                                                                     R                       0.058
+                                                                                     F                       0.051
+                                 trad      bertscore-sentence-mnli-deberta-topp-0.7  P                      -0.006
+                                                                                     R                      -0.016
+                                                                                     F                      -0.007
+                                 new       bertscore-sentence-mnli-deberta-topp-0.7  P                       0.044
+                                                                                     R                       0.051
+                                                                                     F                       0.047
+                                 trad      rouge                                     rouge1                  0.195
+                                                                                     rouge2                  0.211
+                                                                                     rougeL                  0.154
+                                                                                     rougeLsum               0.154
+                                 new       rouge                                     rouge1                  0.135
+                                                                                     rouge2                  0.121
+                                                                                     rougeL                  0.090
+                                                                                     rougeLsum               0.090
+                                 trad      rouge-topk-5                              rouge1                  0.198
+                                                                                     rouge2                  0.211
+                                                                                     rougeL                  0.162
+                                                                                     rougeLsum               0.162
+                                 new       rouge-topk-5                              rouge1                  0.034
+                                                                                     rouge2                  0.009
+                                                                                     rougeL                  0.016
+                                                                                     rougeLsum               0.016
+                                 trad      rouge-topk-10                             rouge1                  0.195
+                                                                                     rouge2                  0.211
+                                                                                     rougeL                  0.154
+                                                                                     rougeLsum               0.154
+                                 new       rouge-topk-10                             rouge1                  0.138
+                                                                                     rouge2                  0.109
+                                                                                     rougeL                  0.082
+                                                                                     rougeLsum               0.082
+                                 trad      rouge-topk-20                             rouge1                  0.195
+                                                                                     rouge2                  0.211
+                                                                                     rougeL                  0.154
+                                                                                     rougeLsum               0.154
+                                 new       rouge-topk-20                             rouge1                  0.133
+                                                                                     rouge2                  0.112
+                                                                                     rougeL                  0.082
+                                                                                     rougeLsum               0.082
+                                 trad      rouge-topp-0.2                            rouge1                  0.021
+                                                                                     rouge2                  0.085
+                                                                                     rougeL                  0.018
+                                                                                     rougeLsum               0.018
+                                 new       rouge-topp-0.2                            rouge1                  0.082
+                                                                                     rouge2                  0.059
+                                                                                     rougeL                  0.054
+                                                                                     rougeLsum               0.054
+                                 trad      rouge-topp-0.5                            rouge1                  0.106
+                                                                                     rouge2                  0.152
+                                                                                     rougeL                  0.096
+                                                                                     rougeLsum               0.096
+                                 new       rouge-topp-0.5                            rouge1                  0.133
+                                                                                     rouge2                  0.106
+                                                                                     rougeL                  0.086
+                                                                                     rougeLsum               0.086
+                                 trad      rouge-topp-0.7                            rouge1                  0.146
+                                                                                     rouge2                  0.171
+                                                                                     rougeL                  0.136
+                                                                                     rougeLsum               0.136
+                                 new       rouge-topp-0.7                            rouge1                  0.136
+                                                                                     rouge2                  0.118
+                                                                                     rougeL                  0.084
+                                                                                     rougeLsum               0.084
+                                 trad      bleurt                                    scores                  0.191
+                                 new       bleurt                                    scores                  0.083
+                                 trad      bleurt-topk-5                             scores                  0.200
+                                 new       bleurt-topk-5                             scores                 -0.007
+                                 trad      bleurt-topk-10                            scores                  0.191
+                                 new       bleurt-topk-10                            scores                  0.102
+                                 trad      bleurt-topk-20                            scores                  0.191
+                                 new       bleurt-topk-20                            scores                  0.086
+                                 trad      bleurt-topp-0.2                           scores                  0.044
+                                 new       bleurt-topp-0.2                           scores                  0.055
+                                 trad      bleurt-topp-0.5                           scores                  0.115
+                                 new       bleurt-topp-0.5                           scores                  0.085
+                                 trad      bleurt-topp-0.7                           scores                  0.156
+                                 new       bleurt-topp-0.7                           scores                  0.072
+                                 PreCalc   PreCalc                                   rouge_1_f_score         0.187
+                                                                                     rouge_2_recall          0.236
+                                                                                     rouge_l_recall          0.251
+                                                                                     rouge_2_precision       0.163
+                                                                                     rouge_2_f_score         0.206
+                                                                                     rouge_1_precision       0.093
+                                                                                     rouge_1_recall          0.257
+                                                                                     rouge_l_precision       0.092
+                                                                                     rouge_l_f_score         0.188
+                                                                                     js-2                    0.195
+                                                                                     mover_score             0.205
+                                                                                     bert_recall_score       0.241
+                                                                                     bert_precision_score    0.088
+                                                                                     bert_f_score            0.182
+kendalltau   litepyramid_recall  trad      bertscore                                 precision               0.055
+                                                                                     recall                  0.145
+                                                                                     f1                      0.114
+                                 new       bertscore                                 precision               0.029
+                                                                                     recall                  0.070
+                                                                                     f1                      0.049
+                                 trad      bertscore-topk-5                          precision               0.058
+                                                                                     recall                  0.152
+                                                                                     f1                      0.121
+                                 new       bertscore-topk-5                          precision              -0.033
+                                                                                     recall                  0.025
+                                                                                     f1                     -0.013
+                                 trad      bertscore-topk-10                         precision               0.055
+                                                                                     recall                  0.144
+                                                                                     f1                      0.116
+                                 new       bertscore-topk-10                         precision               0.025
+                                                                                     recall                  0.082
+                                                                                     f1                      0.039
+                                 trad      bertscore-topk-20                         precision               0.055
+                                                                                     recall                  0.144
+                                                                                     f1                      0.116
+                                 new       bertscore-topk-20                         precision               0.029
+                                                                                     recall                  0.068
+                                                                                     f1                      0.040
+                                 trad      bertscore-topp-0.2                        precision              -0.001
+                                                                                     recall                  0.075
+                                                                                     f1                      0.039
+                                 new       bertscore-topp-0.2                        precision               0.001
+                                                                                     recall                  0.030
+                                                                                     f1                      0.015
+                                 trad      bertscore-topp-0.5                        precision               0.018
+                                                                                     recall                  0.111
+                                                                                     f1                      0.075
+                                 new       bertscore-topp-0.5                        precision               0.024
+                                                                                     recall                  0.073
+                                                                                     f1                      0.043
+                                 trad      bertscore-topp-0.7                        precision               0.029
+                                                                                     recall                  0.139
+                                                                                     f1                      0.097
+                                 new       bertscore-topp-0.7                        precision               0.034
+                                                                                     recall                  0.069
+                                                                                     f1                      0.048
+                                 trad      bertscore-sentence-cos-mpnet              P                       0.064
+                                                                                     R                       0.098
+                                                                                     F                       0.084
+                                 new       bertscore-sentence-cos-mpnet              P                      -0.008
+                                                                                     R                       0.058
+                                                                                     F                       0.059
+                                 trad      bertscore-sentence-cos-mpnet-topk-5       P                       0.091
+                                                                                     R                       0.120
+                                                                                     F                       0.110
+                                 new       bertscore-sentence-cos-mpnet-topk-5       P                      -0.016
+                                                                                     R                      -0.001
+                                                                                     F                       0.002
+                                 trad      bertscore-sentence-cos-mpnet-topk-10      P                       0.086
+                                                                                     R                       0.114
+                                                                                     F                       0.104
+                                 new       bertscore-sentence-cos-mpnet-topk-10      P                       0.016
+                                                                                     R                       0.095
+                                                                                     F                       0.080
+                                 trad      bertscore-sentence-cos-mpnet-topk-20      P                       0.086
+                                                                                     R                       0.114
+                                                                                     F                       0.104
+                                 new       bertscore-sentence-cos-mpnet-topk-20      P                      -0.005
+                                                                                     R                       0.069
+                                                                                     F                       0.060
+                                 trad      bertscore-sentence-cos-mpnet-topp-0.2     P                       0.050
+                                                                                     R                       0.029
+                                                                                     F                       0.065
+                                 new       bertscore-sentence-cos-mpnet-topp-0.2     P                       0.017
+                                                                                     R                       0.063
+                                                                                     F                       0.044
+                                 trad      bertscore-sentence-cos-mpnet-topp-0.5     P                       0.072
+                                                                                     R                       0.089
+                                                                                     F                       0.082
+                                 new       bertscore-sentence-cos-mpnet-topp-0.5     P                       0.027
+                                                                                     R                       0.082
+                                                                                     F                       0.067
+                                 trad      bertscore-sentence-cos-mpnet-topp-0.7     P                       0.089
+                                                                                     R                       0.101
+                                                                                     F                       0.102
+                                 new       bertscore-sentence-cos-mpnet-topp-0.7     P                       0.007
+                                                                                     R                       0.063
+                                                                                     F                       0.058
+                                 trad      bertscore-sentence-cos-roberta            P                       0.045
+                                                                                     R                       0.113
+                                                                                     F                       0.057
+                                 new       bertscore-sentence-cos-roberta            P                      -0.016
+                                                                                     R                       0.039
+                                                                                     F                       0.019
+                                 trad      bertscore-sentence-cos-roberta-topk-5     P                       0.069
+                                                                                     R                       0.143
+                                                                                     F                       0.095
+                                 new       bertscore-sentence-cos-roberta-topk-5     P                      -0.026
+                                                                                     R                      -0.002
+                                                                                     F                      -0.007
+                                 trad      bertscore-sentence-cos-roberta-topk-10    P                       0.066
+                                                                                     R                       0.128
+                                                                                     F                       0.081
+                                 new       bertscore-sentence-cos-roberta-topk-10    P                      -0.004
+                                                                                     R                       0.072
+                                                                                     F                       0.056
+                                 trad      bertscore-sentence-cos-roberta-topk-20    P                       0.066
+                                                                                     R                       0.128
+                                                                                     F                       0.081
+                                 new       bertscore-sentence-cos-roberta-topk-20    P                      -0.015
+                                                                                     R                       0.041
+                                                                                     F                       0.025
+                                 trad      bertscore-sentence-cos-roberta-topp-0.2   P                       0.022
+                                                                                     R                       0.038
+                                                                                     F                       0.028
+                                 new       bertscore-sentence-cos-roberta-topp-0.2   P                      -0.000
+                                                                                     R                       0.046
+                                                                                     F                       0.032
+                                 trad      bertscore-sentence-cos-roberta-topp-0.5   P                       0.050
+                                                                                     R                       0.083
+                                                                                     F                       0.074
+                                 new       bertscore-sentence-cos-roberta-topp-0.5   P                       0.015
+                                                                                     R                       0.059
+                                                                                     F                       0.042
+                                 trad      bertscore-sentence-cos-roberta-topp-0.7   P                       0.067
+                                                                                     R                       0.126
+                                                                                     F                       0.085
+                                 new       bertscore-sentence-cos-roberta-topp-0.7   P                      -0.004
+                                                                                     R                       0.043
+                                                                                     F                       0.029
+                                 trad      bertscore-sentence-mnli-roberta           P                       0.056
+                                                                                     R                       0.045
+                                                                                     F                       0.066
+                                 new       bertscore-sentence-mnli-roberta           P                       0.051
+                                                                                     R                       0.010
+                                                                                     F                       0.013
+                                 trad      bertscore-sentence-mnli-roberta-topk-5    P                       0.046
+                                                                                     R                       0.058
+                                                                                     F                       0.061
+                                 new       bertscore-sentence-mnli-roberta-topk-5    P                      -0.025
+                                                                                     R                       0.034
+                                                                                     F                       0.005
+                                 trad      bertscore-sentence-mnli-roberta-topk-10   P                       0.048
+                                                                                     R                       0.056
+                                                                                     F                       0.069
+                                 new       bertscore-sentence-mnli-roberta-topk-10   P                       0.047
+                                                                                     R                       0.070
+                                                                                     F                       0.071
+                                 trad      bertscore-sentence-mnli-roberta-topk-20   P                       0.048
+                                                                                     R                       0.056
+                                                                                     F                       0.069
+                                 new       bertscore-sentence-mnli-roberta-topk-20   P                       0.043
+                                                                                     R                       0.029
+                                                                                     F                       0.030
+                                 trad      bertscore-sentence-mnli-roberta-topp-0.2  P                      -0.025
+                                                                                     R                      -0.011
+                                                                                     F                      -0.025
+                                 new       bertscore-sentence-mnli-roberta-topp-0.2  P                       0.033
+                                                                                     R                       0.049
+                                                                                     F                       0.029
+                                 trad      bertscore-sentence-mnli-roberta-topp-0.5  P                       0.017
+                                                                                     R                       0.033
+                                                                                     F                       0.030
+                                 new       bertscore-sentence-mnli-roberta-topp-0.5  P                       0.051
+                                                                                     R                       0.036
+                                                                                     F                       0.044
+                                 trad      bertscore-sentence-mnli-roberta-topp-0.7  P                       0.040
+                                                                                     R                       0.053
+                                                                                     F                       0.036
+                                 new       bertscore-sentence-mnli-roberta-topp-0.7  P                       0.040
+                                                                                     R                       0.024
+                                                                                     F                       0.027
+                                 trad      bertscore-sentence-mnli-bart              P                      -0.013
+                                                                                     R                      -0.009
+                                                                                     F                      -0.013
+                                 new       bertscore-sentence-mnli-bart              P                       0.022
+                                                                                     R                       0.020
+                                                                                     F                       0.014
+                                 trad      bertscore-sentence-mnli-bart-topk-5       P                      -0.000
+                                                                                     R                       0.001
+                                                                                     F                      -0.008
+                                 new       bertscore-sentence-mnli-bart-topk-5       P                       0.006
+                                                                                     R                       0.007
+                                                                                     F                       0.012
+                                 trad      bertscore-sentence-mnli-bart-topk-10      P                      -0.007
+                                                                                     R                      -0.002
+                                                                                     F                      -0.013
+                                 new       bertscore-sentence-mnli-bart-topk-10      P                       0.048
+                                                                                     R                       0.053
+                                                                                     F                       0.041
+                                 trad      bertscore-sentence-mnli-bart-topk-20      P                      -0.007
+                                                                                     R                      -0.002
+                                                                                     F                      -0.013
+                                 new       bertscore-sentence-mnli-bart-topk-20      P                       0.020
+                                                                                     R                       0.029
+                                                                                     F                       0.030
+                                 trad      bertscore-sentence-mnli-bart-topp-0.2     P                      -0.025
+                                                                                     R                      -0.045
+                                                                                     F                      -0.022
+                                 new       bertscore-sentence-mnli-bart-topp-0.2     P                       0.034
+                                                                                     R                       0.049
+                                                                                     F                       0.029
+                                 trad      bertscore-sentence-mnli-bart-topp-0.5     P                      -0.036
+                                                                                     R                      -0.040
+                                                                                     F                      -0.046
+                                 new       bertscore-sentence-mnli-bart-topp-0.5     P                       0.048
+                                                                                     R                       0.033
+                                                                                     F                       0.047
+                                 trad      bertscore-sentence-mnli-bart-topp-0.7     P                       0.008
+                                                                                     R                      -0.002
+                                                                                     F                      -0.003
+                                 new       bertscore-sentence-mnli-bart-topp-0.7     P                       0.033
+                                                                                     R                       0.040
+                                                                                     F                       0.033
+                                 trad      bertscore-sentence-mnli-deberta           P                      -0.010
+                                                                                     R                      -0.021
+                                                                                     F                      -0.021
+                                 new       bertscore-sentence-mnli-deberta           P                       0.049
+                                                                                     R                       0.012
+                                                                                     F                       0.020
+                                 trad      bertscore-sentence-mnli-deberta-topk-5    P                      -0.005
+                                                                                     R                      -0.021
+                                                                                     F                      -0.004
+                                 new       bertscore-sentence-mnli-deberta-topk-5    P                      -0.004
+                                                                                     R                       0.009
+                                                                                     F                      -0.006
+                                 trad      bertscore-sentence-mnli-deberta-topk-10   P                      -0.004
+                                                                                     R                      -0.015
+                                                                                     F                      -0.003
+                                 new       bertscore-sentence-mnli-deberta-topk-10   P                       0.035
+                                                                                     R                       0.034
+                                                                                     F                       0.038
+                                 trad      bertscore-sentence-mnli-deberta-topk-20   P                      -0.004
+                                                                                     R                      -0.015
+                                                                                     F                      -0.003
+                                 new       bertscore-sentence-mnli-deberta-topk-20   P                       0.043
+                                                                                     R                       0.017
+                                                                                     F                       0.021
+                                 trad      bertscore-sentence-mnli-deberta-topp-0.2  P                      -0.022
+                                                                                     R                      -0.028
+                                                                                     F                      -0.015
+                                 new       bertscore-sentence-mnli-deberta-topp-0.2  P                       0.042
+                                                                                     R                       0.033
+                                                                                     F                       0.016
+                                 trad      bertscore-sentence-mnli-deberta-topp-0.5  P                      -0.020
+                                                                                     R                      -0.020
+                                                                                     F                      -0.010
+                                 new       bertscore-sentence-mnli-deberta-topp-0.5  P                       0.060
+                                                                                     R                       0.022
+                                                                                     F                       0.029
+                                 trad      bertscore-sentence-mnli-deberta-topp-0.7  P                      -0.004
+                                                                                     R                      -0.021
+                                                                                     F                      -0.010
+                                 new       bertscore-sentence-mnli-deberta-topp-0.7  P                       0.047
+                                                                                     R                       0.018
+                                                                                     F                       0.014
+                                 trad      rouge                                     rouge1                  0.141
+                                                                                     rouge2                  0.163
+                                                                                     rougeL                  0.111
+                                                                                     rougeLsum               0.111
+                                 new       rouge                                     rouge1                  0.093
+                                                                                     rouge2                  0.078
+                                                                                     rougeL                  0.048
+                                                                                     rougeLsum               0.048
+                                 trad      rouge-topk-5                              rouge1                  0.142
+                                                                                     rouge2                  0.162
+                                                                                     rougeL                  0.111
+                                                                                     rougeLsum               0.111
+                                 new       rouge-topk-5                              rouge1                  0.002
+                                                                                     rouge2                  0.008
+                                                                                     rougeL                  0.006
+                                                                                     rougeLsum               0.006
+                                 trad      rouge-topk-10                             rouge1                  0.141
+                                                                                     rouge2                  0.163
+                                                                                     rougeL                  0.111
+                                                                                     rougeLsum               0.111
+                                 new       rouge-topk-10                             rouge1                  0.095
+                                                                                     rouge2                  0.075
+                                                                                     rougeL                  0.035
+                                                                                     rougeLsum               0.035
+                                 trad      rouge-topk-20                             rouge1                  0.141
+                                                                                     rouge2                  0.163
+                                                                                     rougeL                  0.111
+                                                                                     rougeLsum               0.111
+                                 new       rouge-topk-20                             rouge1                  0.090
+                                                                                     rouge2                  0.073
+                                                                                     rougeL                  0.048
+                                                                                     rougeLsum               0.048
+                                 trad      rouge-topp-0.2                            rouge1                 -0.003
+                                                                                     rouge2                  0.044
+                                                                                     rougeL                 -0.004
+                                                                                     rougeLsum              -0.004
+                                 new       rouge-topp-0.2                            rouge1                  0.046
+                                                                                     rouge2                  0.033
+                                                                                     rougeL                  0.023
+                                                                                     rougeLsum               0.023
+                                 trad      rouge-topp-0.5                            rouge1                  0.053
+                                                                                     rouge2                  0.098
+                                                                                     rougeL                  0.074
+                                                                                     rougeLsum               0.074
+                                 new       rouge-topp-0.5                            rouge1                  0.082
+                                                                                     rouge2                  0.059
+                                                                                     rougeL                  0.055
+                                                                                     rougeLsum               0.055
+                                 trad      rouge-topp-0.7                            rouge1                  0.098
+                                                                                     rouge2                  0.125
+                                                                                     rougeL                  0.100
+                                                                                     rougeLsum               0.100
+                                 new       rouge-topp-0.7                            rouge1                  0.092
+                                                                                     rouge2                  0.074
+                                                                                     rougeL                  0.052
+                                                                                     rougeLsum               0.052
+                                 trad      bleurt                                    scores                  0.117
+                                 new       bleurt                                    scores                  0.067
+                                 trad      bleurt-topk-5                             scores                  0.122
+                                 new       bleurt-topk-5                             scores                 -0.008
+                                 trad      bleurt-topk-10                            scores                  0.117
+                                 new       bleurt-topk-10                            scores                  0.070
+                                 trad      bleurt-topk-20                            scores                  0.117
+                                 new       bleurt-topk-20                            scores                  0.069
+                                 trad      bleurt-topp-0.2                           scores                  0.012
+                                 new       bleurt-topp-0.2                           scores                  0.041
+                                 trad      bleurt-topp-0.5                           scores                  0.064
+                                 new       bleurt-topp-0.5                           scores                  0.079
+                                 trad      bleurt-topp-0.7                           scores                  0.086
+                                 new       bleurt-topp-0.7                           scores                  0.063
+                                 PreCalc   PreCalc                                   rouge_1_f_score         0.132
+                                                                                     rouge_2_recall          0.196
+                                                                                     rouge_l_recall          0.188
+                                                                                     rouge_2_precision       0.143
+                                                                                     rouge_2_f_score         0.167
+                                                                                     rouge_1_precision       0.073
+                                                                                     rouge_1_recall          0.192
+                                                                                     rouge_l_precision       0.072
+                                                                                     rouge_l_f_score         0.145
+                                                                                     js-2                    0.151
+                                                                                     mover_score             0.152
+                                                                                     bert_recall_score       0.162
+                                                                                     bert_precision_score    0.064
+                                                                                     bert_f_score            0.151
+spearmanr    litepyramid_recall  trad      bertscore                                 precision               0.069
+                                                                                     recall                  0.173
+                                                                                     f1                      0.138
+                                 new       bertscore                                 precision               0.036
+                                                                                     recall                  0.086
+                                                                                     f1                      0.058
+                                 trad      bertscore-topk-5                          precision               0.070
+                                                                                     recall                  0.185
+                                                                                     f1                      0.150
+                                 new       bertscore-topk-5                          precision              -0.039
+                                                                                     recall                  0.034
+                                                                                     f1                     -0.012
+                                 trad      bertscore-topk-10                         precision               0.068
+                                                                                     recall                  0.175
+                                                                                     f1                      0.140
+                                 new       bertscore-topk-10                         precision               0.033
+                                                                                     recall                  0.097
+                                                                                     f1                      0.048
+                                 trad      bertscore-topk-20                         precision               0.068
+                                                                                     recall                  0.175
+                                                                                     f1                      0.140
+                                 new       bertscore-topk-20                         precision               0.038
+                                                                                     recall                  0.082
+                                                                                     f1                      0.048
+                                 trad      bertscore-topp-0.2                        precision               0.001
+                                                                                     recall                  0.084
+                                                                                     f1                      0.045
+                                 new       bertscore-topp-0.2                        precision              -0.001
+                                                                                     recall                  0.037
+                                                                                     f1                      0.015
+                                 trad      bertscore-topp-0.5                        precision               0.022
+                                                                                     recall                  0.133
+                                                                                     f1                      0.089
+                                 new       bertscore-topp-0.5                        precision               0.029
+                                                                                     recall                  0.087
+                                                                                     f1                      0.052
+                                 trad      bertscore-topp-0.7                        precision               0.038
+                                                                                     recall                  0.167
+                                                                                     f1                      0.123
+                                 new       bertscore-topp-0.7                        precision               0.043
+                                                                                     recall                  0.085
+                                                                                     f1                      0.056
+                                 trad      bertscore-sentence-cos-mpnet              P                       0.082
+                                                                                     R                       0.117
+                                                                                     F                       0.104
+                                 new       bertscore-sentence-cos-mpnet              P                      -0.009
+                                                                                     R                       0.070
+                                                                                     F                       0.074
+                                 trad      bertscore-sentence-cos-mpnet-topk-5       P                       0.115
+                                                                                     R                       0.146
+                                                                                     F                       0.134
+                                 new       bertscore-sentence-cos-mpnet-topk-5       P                      -0.024
+                                                                                     R                      -0.003
+                                                                                     F                      -0.004
+                                 trad      bertscore-sentence-cos-mpnet-topk-10      P                       0.109
+                                                                                     R                       0.138
+                                                                                     F                       0.127
+                                 new       bertscore-sentence-cos-mpnet-topk-10      P                       0.019
+                                                                                     R                       0.113
+                                                                                     F                       0.093
+                                 trad      bertscore-sentence-cos-mpnet-topk-20      P                       0.109
+                                                                                     R                       0.138
+                                                                                     F                       0.127
+                                 new       bertscore-sentence-cos-mpnet-topk-20      P                      -0.006
+                                                                                     R                       0.086
+                                                                                     F                       0.073
+                                 trad      bertscore-sentence-cos-mpnet-topp-0.2     P                       0.061
+                                                                                     R                       0.040
+                                                                                     F                       0.082
+                                 new       bertscore-sentence-cos-mpnet-topp-0.2     P                       0.016
+                                                                                     R                       0.076
+                                                                                     F                       0.051
+                                 trad      bertscore-sentence-cos-mpnet-topp-0.5     P                       0.090
+                                                                                     R                       0.101
+                                                                                     F                       0.103
+                                 new       bertscore-sentence-cos-mpnet-topp-0.5     P                       0.030
+                                                                                     R                       0.097
+                                                                                     F                       0.078
+                                 trad      bertscore-sentence-cos-mpnet-topp-0.7     P                       0.112
+                                                                                     R                       0.124
+                                                                                     F                       0.128
+                                 new       bertscore-sentence-cos-mpnet-topp-0.7     P                       0.007
+                                                                                     R                       0.078
+                                                                                     F                       0.070
+                                 trad      bertscore-sentence-cos-roberta            P                       0.053
+                                                                                     R                       0.135
+                                                                                     F                       0.069
+                                 new       bertscore-sentence-cos-roberta            P                      -0.018
+                                                                                     R                       0.048
+                                                                                     F                       0.023
+                                 trad      bertscore-sentence-cos-roberta-topk-5     P                       0.083
+                                                                                     R                       0.172
+                                                                                     F                       0.116
+                                 new       bertscore-sentence-cos-roberta-topk-5     P                      -0.032
+                                                                                     R                      -0.005
+                                                                                     F                      -0.013
+                                 trad      bertscore-sentence-cos-roberta-topk-10    P                       0.080
+                                                                                     R                       0.153
+                                                                                     F                       0.099
+                                 new       bertscore-sentence-cos-roberta-topk-10    P                      -0.002
+                                                                                     R                       0.091
+                                                                                     F                       0.069
+                                 trad      bertscore-sentence-cos-roberta-topk-20    P                       0.080
+                                                                                     R                       0.153
+                                                                                     F                       0.099
+                                 new       bertscore-sentence-cos-roberta-topk-20    P                      -0.016
+                                                                                     R                       0.049
+                                                                                     F                       0.027
+                                 trad      bertscore-sentence-cos-roberta-topp-0.2   P                       0.023
+                                                                                     R                       0.049
+                                                                                     F                       0.031
+                                 new       bertscore-sentence-cos-roberta-topp-0.2   P                       0.002
+                                                                                     R                       0.058
+                                                                                     F                       0.039
+                                 trad      bertscore-sentence-cos-roberta-topp-0.5   P                       0.055
+                                                                                     R                       0.103
+                                                                                     F                       0.086
+                                 new       bertscore-sentence-cos-roberta-topp-0.5   P                       0.020
+                                                                                     R                       0.068
+                                                                                     F                       0.048
+                                 trad      bertscore-sentence-cos-roberta-topp-0.7   P                       0.079
+                                                                                     R                       0.154
+                                                                                     F                       0.105
+                                 new       bertscore-sentence-cos-roberta-topp-0.7   P                      -0.004
+                                                                                     R                       0.056
+                                                                                     F                       0.035
+                                 trad      bertscore-sentence-mnli-roberta           P                       0.072
+                                                                                     R                       0.055
+                                                                                     F                       0.084
+                                 new       bertscore-sentence-mnli-roberta           P                       0.065
+                                                                                     R                       0.015
+                                                                                     F                       0.014
+                                 trad      bertscore-sentence-mnli-roberta-topk-5    P                       0.058
+                                                                                     R                       0.071
+                                                                                     F                       0.076
+                                 new       bertscore-sentence-mnli-roberta-topk-5    P                      -0.031
+                                                                                     R                       0.038
+                                                                                     F                       0.010
+                                 trad      bertscore-sentence-mnli-roberta-topk-10   P                       0.060
+                                                                                     R                       0.067
+                                                                                     F                       0.086
+                                 new       bertscore-sentence-mnli-roberta-topk-10   P                       0.056
+                                                                                     R                       0.089
+                                                                                     F                       0.091
+                                 trad      bertscore-sentence-mnli-roberta-topk-20   P                       0.060
+                                                                                     R                       0.067
+                                                                                     F                       0.086
+                                 new       bertscore-sentence-mnli-roberta-topk-20   P                       0.055
+                                                                                     R                       0.038
+                                                                                     F                       0.039
+                                 trad      bertscore-sentence-mnli-roberta-topp-0.2  P                      -0.032
+                                                                                     R                      -0.008
+                                                                                     F                      -0.028
+                                 new       bertscore-sentence-mnli-roberta-topp-0.2  P                       0.042
+                                                                                     R                       0.063
+                                                                                     F                       0.046
+                                 trad      bertscore-sentence-mnli-roberta-topp-0.5  P                       0.020
+                                                                                     R                       0.042
+                                                                                     F                       0.042
+                                 new       bertscore-sentence-mnli-roberta-topp-0.5  P                       0.064
+                                                                                     R                       0.047
+                                                                                     F                       0.056
+                                 trad      bertscore-sentence-mnli-roberta-topp-0.7  P                       0.051
+                                                                                     R                       0.065
+                                                                                     F                       0.050
+                                 new       bertscore-sentence-mnli-roberta-topp-0.7  P                       0.054
+                                                                                     R                       0.032
+                                                                                     F                       0.035
+                                 trad      bertscore-sentence-mnli-bart              P                      -0.005
+                                                                                     R                      -0.003
+                                                                                     F                      -0.007
+                                 new       bertscore-sentence-mnli-bart              P                       0.035
+                                                                                     R                       0.021
+                                                                                     F                       0.017
+                                 trad      bertscore-sentence-mnli-bart-topk-5       P                       0.005
+                                                                                     R                       0.008
+                                                                                     F                      -0.002
+                                 new       bertscore-sentence-mnli-bart-topk-5       P                       0.013
+                                                                                     R                       0.009
+                                                                                     F                       0.020
+                                 trad      bertscore-sentence-mnli-bart-topk-10      P                      -0.004
+                                                                                     R                       0.005
+                                                                                     F                      -0.007
+                                 new       bertscore-sentence-mnli-bart-topk-10      P                       0.061
+                                                                                     R                       0.067
+                                                                                     F                       0.053
+                                 trad      bertscore-sentence-mnli-bart-topk-20      P                      -0.004
+                                                                                     R                       0.005
+                                                                                     F                      -0.007
+                                 new       bertscore-sentence-mnli-bart-topk-20      P                       0.028
+                                                                                     R                       0.033
+                                                                                     F                       0.040
+                                 trad      bertscore-sentence-mnli-bart-topp-0.2     P                      -0.027
+                                                                                     R                      -0.047
+                                                                                     F                      -0.026
+                                 new       bertscore-sentence-mnli-bart-topp-0.2     P                       0.042
+                                                                                     R                       0.062
+                                                                                     F                       0.040
+                                 trad      bertscore-sentence-mnli-bart-topp-0.5     P                      -0.035
+                                                                                     R                      -0.038
+                                                                                     F                      -0.047
+                                 new       bertscore-sentence-mnli-bart-topp-0.5     P                       0.057
+                                                                                     R                       0.045
+                                                                                     F                       0.059
+                                 trad      bertscore-sentence-mnli-bart-topp-0.7     P                       0.013
+                                                                                     R                       0.003
+                                                                                     F                       0.003
+                                 new       bertscore-sentence-mnli-bart-topp-0.7     P                       0.043
+                                                                                     R                       0.048
+                                                                                     F                       0.042
+                                 trad      bertscore-sentence-mnli-deberta           P                      -0.017
+                                                                                     R                      -0.027
+                                                                                     F                      -0.027
+                                 new       bertscore-sentence-mnli-deberta           P                       0.058
+                                                                                     R                       0.012
+                                                                                     F                       0.023
+                                 trad      bertscore-sentence-mnli-deberta-topk-5    P                      -0.009
+                                                                                     R                      -0.025
+                                                                                     F                      -0.006
+                                 new       bertscore-sentence-mnli-deberta-topk-5    P                      -0.005
+                                                                                     R                       0.008
+                                                                                     F                      -0.009
+                                 trad      bertscore-sentence-mnli-deberta-topk-10   P                      -0.007
+                                                                                     R                      -0.018
+                                                                                     F                      -0.004
+                                 new       bertscore-sentence-mnli-deberta-topk-10   P                       0.047
+                                                                                     R                       0.044
+                                                                                     F                       0.052
+                                 trad      bertscore-sentence-mnli-deberta-topk-20   P                      -0.007
+                                                                                     R                      -0.018
+                                                                                     F                      -0.004
+                                 new       bertscore-sentence-mnli-deberta-topk-20   P                       0.051
+                                                                                     R                       0.024
+                                                                                     F                       0.031
+                                 trad      bertscore-sentence-mnli-deberta-topp-0.2  P                      -0.025
+                                                                                     R                      -0.032
+                                                                                     F                      -0.018
+                                 new       bertscore-sentence-mnli-deberta-topp-0.2  P                       0.055
+                                                                                     R                       0.041
+                                                                                     F                       0.025
+                                 trad      bertscore-sentence-mnli-deberta-topp-0.5  P                      -0.023
+                                                                                     R                      -0.023
+                                                                                     F                      -0.010
+                                 new       bertscore-sentence-mnli-deberta-topp-0.5  P                       0.073
+                                                                                     R                       0.026
+                                                                                     F                       0.037
+                                 trad      bertscore-sentence-mnli-deberta-topp-0.7  P                      -0.006
+                                                                                     R                      -0.024
+                                                                                     F                      -0.013
+                                 new       bertscore-sentence-mnli-deberta-topp-0.7  P                       0.057
+                                                                                     R                       0.022
+                                                                                     F                       0.021
+                                 trad      rouge                                     rouge1                  0.165
+                                                                                     rouge2                  0.193
+                                                                                     rougeL                  0.134
+                                                                                     rougeLsum               0.134
+                                 new       rouge                                     rouge1                  0.110
+                                                                                     rouge2                  0.096
+                                                                                     rougeL                  0.060
+                                                                                     rougeLsum               0.060
+                                 trad      rouge-topk-5                              rouge1                  0.164
+                                                                                     rouge2                  0.192
+                                                                                     rougeL                  0.134
+                                                                                     rougeLsum               0.134
+                                 new       rouge-topk-5                              rouge1                  0.004
+                                                                                     rouge2                  0.013
+                                                                                     rougeL                  0.011
+                                                                                     rougeLsum               0.011
+                                 trad      rouge-topk-10                             rouge1                  0.165
+                                                                                     rouge2                  0.193
+                                                                                     rougeL                  0.134
+                                                                                     rougeLsum               0.134
+                                 new       rouge-topk-10                             rouge1                  0.113
+                                                                                     rouge2                  0.092
+                                                                                     rougeL                  0.046
+                                                                                     rougeLsum               0.046
+                                 trad      rouge-topk-20                             rouge1                  0.165
+                                                                                     rouge2                  0.193
+                                                                                     rougeL                  0.134
+                                                                                     rougeLsum               0.134
+                                 new       rouge-topk-20                             rouge1                  0.106
+                                                                                     rouge2                  0.092
+                                                                                     rougeL                  0.061
+                                                                                     rougeLsum               0.061
+                                 trad      rouge-topp-0.2                            rouge1                 -0.004
+                                                                                     rouge2                  0.055
+                                                                                     rougeL                 -0.006
+                                                                                     rougeLsum              -0.006
+                                 new       rouge-topp-0.2                            rouge1                  0.053
+                                                                                     rouge2                  0.043
+                                                                                     rougeL                  0.032
+                                                                                     rougeLsum               0.032
+                                 trad      rouge-topp-0.5                            rouge1                  0.061
+                                                                                     rouge2                  0.121
+                                                                                     rougeL                  0.089
+                                                                                     rougeLsum               0.089
+                                 new       rouge-topp-0.5                            rouge1                  0.098
+                                                                                     rouge2                  0.075
+                                                                                     rougeL                  0.067
+                                                                                     rougeLsum               0.067
+                                 trad      rouge-topp-0.7                            rouge1                  0.113
+                                                                                     rouge2                  0.151
+                                                                                     rougeL                  0.123
+                                                                                     rougeLsum               0.123
+                                 new       rouge-topp-0.7                            rouge1                  0.110
+                                                                                     rouge2                  0.091
+                                                                                     rougeL                  0.066
+                                                                                     rougeLsum               0.066
+                                 trad      bleurt                                    scores                  0.150
+                                 new       bleurt                                    scores                  0.078
+                                 trad      bleurt-topk-5                             scores                  0.154
+                                 new       bleurt-topk-5                             scores                 -0.014
+                                 trad      bleurt-topk-10                            scores                  0.150
+                                 new       bleurt-topk-10                            scores                  0.086
+                                 trad      bleurt-topk-20                            scores                  0.150
+                                 new       bleurt-topk-20                            scores                  0.083
+                                 trad      bleurt-topp-0.2                           scores                  0.015
+                                 new       bleurt-topp-0.2                           scores                  0.050
+                                 trad      bleurt-topp-0.5                           scores                  0.082
+                                 new       bleurt-topp-0.5                           scores                  0.097
+                                 trad      bleurt-topp-0.7                           scores                  0.107
+                                 new       bleurt-topp-0.7                           scores                  0.075
+                                 PreCalc   PreCalc                                   rouge_1_f_score         0.153
+                                                                                     rouge_2_recall          0.221
+                                                                                     rouge_l_recall          0.214
+                                                                                     rouge_2_precision       0.169
+                                                                                     rouge_2_f_score         0.196
+                                                                                     rouge_1_precision       0.083
+                                                                                     rouge_1_recall          0.218
+                                                                                     rouge_l_precision       0.084
+                                                                                     rouge_l_f_score         0.165
+                                                                                     js-2                    0.180
+                                                                                     mover_score             0.190
+                                                                                     bert_recall_score       0.192
+                                                                                     bert_precision_score    0.077
+                                                                                     bert_f_score            0.178

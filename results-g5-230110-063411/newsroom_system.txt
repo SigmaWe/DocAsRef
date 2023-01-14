@@ -1,0 +1,1441 @@
+corr_metric  aspect                 approach  model                                             score_name
+pearsonr     InformativenessRating  new       bertscore                                         precision     0.390
+                                                                                                recall        0.180
+                                                                                                f1            0.300
+                                              bertscore-anyref-pegasus-newsroom-default         precision     0.425
+                                                                                                recall        0.513
+                                                                                                f1            0.518
+                                              bertscore-anyref-pegasus-newsroom-min-0.2-0.5     precision     0.419
+                                                                                                recall        0.598
+                                                                                                f1            0.590
+                                              bertscore-anyref-pegasus-newsroom-min-0.5-0.7     precision     0.419
+                                                                                                recall        0.598
+                                                                                                f1            0.590
+                                              bertscore-anyref-pegasus-newsroom-mean-0.2-0.5    precision     0.419
+                                                                                                recall        0.598
+                                                                                                f1            0.590
+                                              bertscore-anyref-pegasus-newsroom-mean-0.5-0.7    precision     0.419
+                                                                                                recall        0.598
+                                                                                                f1            0.590
+                                              bertscore-anyref-pegasus-newsroom-constant-16-32  precision     0.419
+                                                                                                recall        0.597
+                                                                                                f1            0.589
+                                              bertscore-anyref-pegasus-newsroom-constant-32-64  precision     0.425
+                                                                                                recall        0.513
+                                                                                                f1            0.518
+                                              bertscore-anyref-pegasus-cnndm-default            precision     0.404
+                                                                                                recall        0.331
+                                                                                                f1            0.405
+                                              bertscore-anyref-pegasus-cnndm-min-0.2-0.5        precision     0.406
+                                                                                                recall        0.337
+                                                                                                f1            0.410
+                                              bertscore-anyref-pegasus-cnndm-min-0.5-0.7        precision     0.406
+                                                                                                recall        0.337
+                                                                                                f1            0.410
+                                              bertscore-anyref-pegasus-cnndm-mean-0.2-0.5       precision     0.406
+                                                                                                recall        0.337
+                                                                                                f1            0.410
+                                              bertscore-anyref-pegasus-cnndm-mean-0.5-0.7       precision     0.406
+                                                                                                recall        0.337
+                                                                                                f1            0.410
+                                              bertscore-anyref-pegasus-cnndm-constant-16-32     precision     0.406
+                                                                                                recall        0.337
+                                                                                                f1            0.410
+                                              bertscore-anyref-pegasus-cnndm-constant-32-64     precision     0.404
+                                                                                                recall        0.331
+                                                                                                f1            0.405
+                                              rouge                                             rouge1        0.109
+                                                                                                rouge2        0.128
+                                                                                                rougeL        0.104
+                                                                                                rougeLsum     0.104
+                                              rouge-anyref-pegasus-newsroom-default             rouge1        0.363
+                                                                                                rouge2        0.329
+                                                                                                rougeL        0.341
+                                                                                                rougeLsum     0.341
+                                              rouge-anyref-pegasus-newsroom-min-0.2-0.5         rouge1        0.378
+                                                                                                rouge2        0.358
+                                                                                                rougeL        0.374
+                                                                                                rougeLsum     0.374
+                                              rouge-anyref-pegasus-newsroom-min-0.5-0.7         rouge1        0.378
+                                                                                                rouge2        0.358
+                                                                                                rougeL        0.374
+                                                                                                rougeLsum     0.374
+                                              rouge-anyref-pegasus-newsroom-mean-0.2-0.5        rouge1        0.378
+                                                                                                rouge2        0.358
+                                                                                                rougeL        0.374
+                                                                                                rougeLsum     0.374
+                                              rouge-anyref-pegasus-newsroom-mean-0.5-0.7        rouge1        0.378
+                                                                                                rouge2        0.358
+                                                                                                rougeL        0.374
+                                                                                                rougeLsum     0.374
+                                              rouge-anyref-pegasus-newsroom-constant-16-32      rouge1        0.377
+                                                                                                rouge2        0.358
+                                                                                                rougeL        0.373
+                                                                                                rougeLsum     0.373
+                                              rouge-anyref-pegasus-newsroom-constant-32-64      rouge1        0.363
+                                                                                                rouge2        0.329
+                                                                                                rougeL        0.341
+                                                                                                rougeLsum     0.341
+                                              rouge-anyref-pegasus-cnndm-default                rouge1        0.282
+                                                                                                rouge2        0.219
+                                                                                                rougeL        0.203
+                                                                                                rougeLsum     0.203
+                                              rouge-anyref-pegasus-cnndm-min-0.2-0.5            rouge1        0.281
+                                                                                                rouge2        0.220
+                                                                                                rougeL        0.204
+                                                                                                rougeLsum     0.204
+                                              rouge-anyref-pegasus-cnndm-min-0.5-0.7            rouge1        0.281
+                                                                                                rouge2        0.220
+                                                                                                rougeL        0.204
+                                                                                                rougeLsum     0.204
+                                              rouge-anyref-pegasus-cnndm-mean-0.2-0.5           rouge1        0.281
+                                                                                                rouge2        0.220
+                                                                                                rougeL        0.204
+                                                                                                rougeLsum     0.204
+                                              rouge-anyref-pegasus-cnndm-mean-0.5-0.7           rouge1        0.281
+                                                                                                rouge2        0.220
+                                                                                                rougeL        0.204
+                                                                                                rougeLsum     0.204
+                                              rouge-anyref-pegasus-cnndm-constant-16-32         rouge1        0.281
+                                                                                                rouge2        0.220
+                                                                                                rougeL        0.204
+                                                                                                rougeLsum     0.204
+                                              rouge-anyref-pegasus-cnndm-constant-32-64         rouge1        0.282
+                                                                                                rouge2        0.219
+                                                                                                rougeL        0.203
+                                                                                                rougeLsum     0.203
+                                              bleurt                                            scores        0.378
+                                              bleurt-anyref-pegasus-newsroom-default            scores        0.263
+                                              bleurt-anyref-pegasus-newsroom-min-0.2-0.5        scores        0.335
+                                              bleurt-anyref-pegasus-newsroom-min-0.5-0.7        scores        0.335
+                                              bleurt-anyref-pegasus-newsroom-mean-0.2-0.5       scores        0.335
+                                              bleurt-anyref-pegasus-newsroom-mean-0.5-0.7       scores        0.335
+                                              bleurt-anyref-pegasus-newsroom-constant-16-32     scores        0.333
+                                              bleurt-anyref-pegasus-newsroom-constant-32-64     scores        0.263
+                                              bleurt-anyref-pegasus-cnndm-default               scores        0.165
+                                              bleurt-anyref-pegasus-cnndm-min-0.2-0.5           scores        0.166
+                                              bleurt-anyref-pegasus-cnndm-min-0.5-0.7           scores        0.166
+                                              bleurt-anyref-pegasus-cnndm-mean-0.2-0.5          scores        0.166
+                                              bleurt-anyref-pegasus-cnndm-mean-0.5-0.7          scores        0.166
+                                              bleurt-anyref-pegasus-cnndm-constant-16-32        scores        0.166
+                                              bleurt-anyref-pegasus-cnndm-constant-32-64        scores        0.165
+             RelevanceRating        new       bertscore                                         precision     0.259
+                                                                                                recall        0.122
+                                                                                                f1            0.202
+                                              bertscore-anyref-pegasus-newsroom-default         precision     0.460
+                                                                                                recall        0.510
+                                                                                                f1            0.537
+                                              bertscore-anyref-pegasus-newsroom-min-0.2-0.5     precision     0.451
+                                                                                                recall        0.492
+                                                                                                f1            0.544
+                                              bertscore-anyref-pegasus-newsroom-min-0.5-0.7     precision     0.451
+                                                                                                recall        0.492
+                                                                                                f1            0.544
+                                              bertscore-anyref-pegasus-newsroom-mean-0.2-0.5    precision     0.451
+                                                                                                recall        0.492
+                                                                                                f1            0.544
+                                              bertscore-anyref-pegasus-newsroom-mean-0.5-0.7    precision     0.451
+                                                                                                recall        0.492
+                                                                                                f1            0.544
+                                              bertscore-anyref-pegasus-newsroom-constant-16-32  precision     0.451
+                                                                                                recall        0.492
+                                                                                                f1            0.544
+                                              bertscore-anyref-pegasus-newsroom-constant-32-64  precision     0.460
+                                                                                                recall        0.510
+                                                                                                f1            0.537
+                                              bertscore-anyref-pegasus-cnndm-default            precision     0.442
+                                                                                                recall        0.352
+                                                                                                f1            0.438
+                                              bertscore-anyref-pegasus-cnndm-min-0.2-0.5        precision     0.442
+                                                                                                recall        0.350
+                                                                                                f1            0.437
+                                              bertscore-anyref-pegasus-cnndm-min-0.5-0.7        precision     0.442
+                                                                                                recall        0.350
+                                                                                                f1            0.437
+                                              bertscore-anyref-pegasus-cnndm-mean-0.2-0.5       precision     0.442
+                                                                                                recall        0.350
+                                                                                                f1            0.437
+                                              bertscore-anyref-pegasus-cnndm-mean-0.5-0.7       precision     0.442
+                                                                                                recall        0.350
+                                                                                                f1            0.437
+                                              bertscore-anyref-pegasus-cnndm-constant-16-32     precision     0.442
+                                                                                                recall        0.350
+                                                                                                f1            0.437
+                                              bertscore-anyref-pegasus-cnndm-constant-32-64     precision     0.442
+                                                                                                recall        0.352
+                                                                                                f1            0.438
+                                              rouge                                             rouge1        0.002
+                                                                                                rouge2        0.018
+                                                                                                rougeL        0.002
+                                                                                                rougeLsum     0.002
+                                              rouge-anyref-pegasus-newsroom-default             rouge1        0.356
+                                                                                                rouge2        0.331
+                                                                                                rougeL        0.338
+                                                                                                rougeLsum     0.338
+                                              rouge-anyref-pegasus-newsroom-min-0.2-0.5         rouge1        0.394
+                                                                                                rouge2        0.360
+                                                                                                rougeL        0.374
+                                                                                                rougeLsum     0.374
+                                              rouge-anyref-pegasus-newsroom-min-0.5-0.7         rouge1        0.394
+                                                                                                rouge2        0.360
+                                                                                                rougeL        0.374
+                                                                                                rougeLsum     0.374
+                                              rouge-anyref-pegasus-newsroom-mean-0.2-0.5        rouge1        0.394
+                                                                                                rouge2        0.360
+                                                                                                rougeL        0.374
+                                                                                                rougeLsum     0.374
+                                              rouge-anyref-pegasus-newsroom-mean-0.5-0.7        rouge1        0.394
+                                                                                                rouge2        0.360
+                                                                                                rougeL        0.374
+                                                                                                rougeLsum     0.374
+                                              rouge-anyref-pegasus-newsroom-constant-16-32      rouge1        0.394
+                                                                                                rouge2        0.360
+                                                                                                rougeL        0.374
+                                                                                                rougeLsum     0.374
+                                              rouge-anyref-pegasus-newsroom-constant-32-64      rouge1        0.356
+                                                                                                rouge2        0.331
+                                                                                                rougeL        0.338
+                                                                                                rougeLsum     0.338
+                                              rouge-anyref-pegasus-cnndm-default                rouge1        0.311
+                                                                                                rouge2        0.203
+                                                                                                rougeL        0.237
+                                                                                                rougeLsum     0.237
+                                              rouge-anyref-pegasus-cnndm-min-0.2-0.5            rouge1        0.311
+                                                                                                rouge2        0.203
+                                                                                                rougeL        0.237
+                                                                                                rougeLsum     0.237
+                                              rouge-anyref-pegasus-cnndm-min-0.5-0.7            rouge1        0.311
+                                                                                                rouge2        0.203
+                                                                                                rougeL        0.237
+                                                                                                rougeLsum     0.237
+                                              rouge-anyref-pegasus-cnndm-mean-0.2-0.5           rouge1        0.311
+                                                                                                rouge2        0.203
+                                                                                                rougeL        0.237
+                                                                                                rougeLsum     0.237
+                                              rouge-anyref-pegasus-cnndm-mean-0.5-0.7           rouge1        0.311
+                                                                                                rouge2        0.203
+                                                                                                rougeL        0.237
+                                                                                                rougeLsum     0.237
+                                              rouge-anyref-pegasus-cnndm-constant-16-32         rouge1        0.311
+                                                                                                rouge2        0.203
+                                                                                                rougeL        0.237
+                                                                                                rougeLsum     0.237
+                                              rouge-anyref-pegasus-cnndm-constant-32-64         rouge1        0.311
+                                                                                                rouge2        0.203
+                                                                                                rougeL        0.237
+                                                                                                rougeLsum     0.237
+                                              bleurt                                            scores        0.301
+                                              bleurt-anyref-pegasus-newsroom-default            scores        0.266
+                                              bleurt-anyref-pegasus-newsroom-min-0.2-0.5        scores        0.296
+                                              bleurt-anyref-pegasus-newsroom-min-0.5-0.7        scores        0.296
+                                              bleurt-anyref-pegasus-newsroom-mean-0.2-0.5       scores        0.296
+                                              bleurt-anyref-pegasus-newsroom-mean-0.5-0.7       scores        0.296
+                                              bleurt-anyref-pegasus-newsroom-constant-16-32     scores        0.295
+                                              bleurt-anyref-pegasus-newsroom-constant-32-64     scores        0.266
+                                              bleurt-anyref-pegasus-cnndm-default               scores        0.095
+                                              bleurt-anyref-pegasus-cnndm-min-0.2-0.5           scores        0.095
+                                              bleurt-anyref-pegasus-cnndm-min-0.5-0.7           scores        0.095
+                                              bleurt-anyref-pegasus-cnndm-mean-0.2-0.5          scores        0.095
+                                              bleurt-anyref-pegasus-cnndm-mean-0.5-0.7          scores        0.095
+                                              bleurt-anyref-pegasus-cnndm-constant-16-32        scores        0.095
+                                              bleurt-anyref-pegasus-cnndm-constant-32-64        scores        0.095
+             CoherenceRating        new       bertscore                                         precision     0.132
+                                                                                                recall       -0.181
+                                                                                                f1           -0.053
+                                              bertscore-anyref-pegasus-newsroom-default         precision     0.326
+                                                                                                recall        0.262
+                                                                                                f1            0.323
+                                              bertscore-anyref-pegasus-newsroom-min-0.2-0.5     precision     0.338
+                                                                                                recall        0.331
+                                                                                                f1            0.384
+                                              bertscore-anyref-pegasus-newsroom-min-0.5-0.7     precision     0.338
+                                                                                                recall        0.331
+                                                                                                f1            0.384
+                                              bertscore-anyref-pegasus-newsroom-mean-0.2-0.5    precision     0.338
+                                                                                                recall        0.331
+                                                                                                f1            0.384
+                                              bertscore-anyref-pegasus-newsroom-mean-0.5-0.7    precision     0.338
+                                                                                                recall        0.331
+                                                                                                f1            0.384
+                                              bertscore-anyref-pegasus-newsroom-constant-16-32  precision     0.339
+                                                                                                recall        0.330
+                                                                                                f1            0.383
+                                              bertscore-anyref-pegasus-newsroom-constant-32-64  precision     0.326
+                                                                                                recall        0.262
+                                                                                                f1            0.323
+                                              bertscore-anyref-pegasus-cnndm-default            precision     0.188
+                                                                                                recall        0.126
+                                                                                                f1            0.171
+                                              bertscore-anyref-pegasus-cnndm-min-0.2-0.5        precision     0.190
+                                                                                                recall        0.137
+                                                                                                f1            0.179
+                                              bertscore-anyref-pegasus-cnndm-min-0.5-0.7        precision     0.190
+                                                                                                recall        0.137
+                                                                                                f1            0.179
+                                              bertscore-anyref-pegasus-cnndm-mean-0.2-0.5       precision     0.190
+                                                                                                recall        0.137
+                                                                                                f1            0.179
+                                              bertscore-anyref-pegasus-cnndm-mean-0.5-0.7       precision     0.190
+                                                                                                recall        0.137
+                                                                                                f1            0.179
+                                              bertscore-anyref-pegasus-cnndm-constant-16-32     precision     0.190
+                                                                                                recall        0.137
+                                                                                                f1            0.179
+                                              bertscore-anyref-pegasus-cnndm-constant-32-64     precision     0.188
+                                                                                                recall        0.126
+                                                                                                f1            0.171
+                                              rouge                                             rouge1       -0.289
+                                                                                                rouge2       -0.274
+                                                                                                rougeL       -0.293
+                                                                                                rougeLsum    -0.293
+                                              rouge-anyref-pegasus-newsroom-default             rouge1        0.255
+                                                                                                rouge2        0.215
+                                                                                                rougeL        0.210
+                                                                                                rougeLsum     0.210
+                                              rouge-anyref-pegasus-newsroom-min-0.2-0.5         rouge1        0.261
+                                                                                                rouge2        0.228
+                                                                                                rougeL        0.228
+                                                                                                rougeLsum     0.228
+                                              rouge-anyref-pegasus-newsroom-min-0.5-0.7         rouge1        0.261
+                                                                                                rouge2        0.228
+                                                                                                rougeL        0.228
+                                                                                                rougeLsum     0.228
+                                              rouge-anyref-pegasus-newsroom-mean-0.2-0.5        rouge1        0.261
+                                                                                                rouge2        0.228
+                                                                                                rougeL        0.228
+                                                                                                rougeLsum     0.228
+                                              rouge-anyref-pegasus-newsroom-mean-0.5-0.7        rouge1        0.261
+                                                                                                rouge2        0.228
+                                                                                                rougeL        0.228
+                                                                                                rougeLsum     0.228
+                                              rouge-anyref-pegasus-newsroom-constant-16-32      rouge1        0.260
+                                                                                                rouge2        0.228
+                                                                                                rougeL        0.228
+                                                                                                rougeLsum     0.228
+                                              rouge-anyref-pegasus-newsroom-constant-32-64      rouge1        0.255
+                                                                                                rouge2        0.215
+                                                                                                rougeL        0.210
+                                                                                                rougeLsum     0.210
+                                              rouge-anyref-pegasus-cnndm-default                rouge1        0.118
+                                                                                                rouge2        0.065
+                                                                                                rougeL        0.052
+                                                                                                rougeLsum     0.052
+                                              rouge-anyref-pegasus-cnndm-min-0.2-0.5            rouge1        0.115
+                                                                                                rouge2        0.066
+                                                                                                rougeL        0.054
+                                                                                                rougeLsum     0.054
+                                              rouge-anyref-pegasus-cnndm-min-0.5-0.7            rouge1        0.115
+                                                                                                rouge2        0.066
+                                                                                                rougeL        0.054
+                                                                                                rougeLsum     0.054
+                                              rouge-anyref-pegasus-cnndm-mean-0.2-0.5           rouge1        0.115
+                                                                                                rouge2        0.066
+                                                                                                rougeL        0.054
+                                                                                                rougeLsum     0.054
+                                              rouge-anyref-pegasus-cnndm-mean-0.5-0.7           rouge1        0.115
+                                                                                                rouge2        0.066
+                                                                                                rougeL        0.054
+                                                                                                rougeLsum     0.054
+                                              rouge-anyref-pegasus-cnndm-constant-16-32         rouge1        0.115
+                                                                                                rouge2        0.066
+                                                                                                rougeL        0.054
+                                                                                                rougeLsum     0.054
+                                              rouge-anyref-pegasus-cnndm-constant-32-64         rouge1        0.118
+                                                                                                rouge2        0.065
+                                                                                                rougeL        0.052
+                                                                                                rougeLsum     0.052
+                                              bleurt                                            scores        0.022
+                                              bleurt-anyref-pegasus-newsroom-default            scores        0.130
+                                              bleurt-anyref-pegasus-newsroom-min-0.2-0.5        scores        0.175
+                                              bleurt-anyref-pegasus-newsroom-min-0.5-0.7        scores        0.175
+                                              bleurt-anyref-pegasus-newsroom-mean-0.2-0.5       scores        0.175
+                                              bleurt-anyref-pegasus-newsroom-mean-0.5-0.7       scores        0.175
+                                              bleurt-anyref-pegasus-newsroom-constant-16-32     scores        0.174
+                                              bleurt-anyref-pegasus-newsroom-constant-32-64     scores        0.130
+                                              bleurt-anyref-pegasus-cnndm-default               scores       -0.036
+                                              bleurt-anyref-pegasus-cnndm-min-0.2-0.5           scores       -0.034
+                                              bleurt-anyref-pegasus-cnndm-min-0.5-0.7           scores       -0.034
+                                              bleurt-anyref-pegasus-cnndm-mean-0.2-0.5          scores       -0.034
+                                              bleurt-anyref-pegasus-cnndm-mean-0.5-0.7          scores       -0.034
+                                              bleurt-anyref-pegasus-cnndm-constant-16-32        scores       -0.034
+                                              bleurt-anyref-pegasus-cnndm-constant-32-64        scores       -0.036
+             FluencyRating          new       bertscore                                         precision     0.107
+                                                                                                recall       -0.226
+                                                                                                f1           -0.096
+                                              bertscore-anyref-pegasus-newsroom-default         precision     0.180
+                                                                                                recall        0.150
+                                                                                                f1            0.180
+                                              bertscore-anyref-pegasus-newsroom-min-0.2-0.5     precision     0.248
+                                                                                                recall        0.240
+                                                                                                f1            0.280
+                                              bertscore-anyref-pegasus-newsroom-min-0.5-0.7     precision     0.248
+                                                                                                recall        0.240
+                                                                                                f1            0.280
+                                              bertscore-anyref-pegasus-newsroom-mean-0.2-0.5    precision     0.248
+                                                                                                recall        0.240
+                                                                                                f1            0.280
+                                              bertscore-anyref-pegasus-newsroom-mean-0.5-0.7    precision     0.248
+                                                                                                recall        0.240
+                                                                                                f1            0.280
+                                              bertscore-anyref-pegasus-newsroom-constant-16-32  precision     0.248
+                                                                                                recall        0.240
+                                                                                                f1            0.279
+                                              bertscore-anyref-pegasus-newsroom-constant-32-64  precision     0.180
+                                                                                                recall        0.150
+                                                                                                f1            0.180
+                                              bertscore-anyref-pegasus-cnndm-default            precision     0.091
+                                                                                                recall        0.045
+                                                                                                f1            0.073
+                                              bertscore-anyref-pegasus-cnndm-min-0.2-0.5        precision     0.094
+                                                                                                recall        0.058
+                                                                                                f1            0.082
+                                              bertscore-anyref-pegasus-cnndm-min-0.5-0.7        precision     0.094
+                                                                                                recall        0.058
+                                                                                                f1            0.082
+                                              bertscore-anyref-pegasus-cnndm-mean-0.2-0.5       precision     0.094
+                                                                                                recall        0.058
+                                                                                                f1            0.082
+                                              bertscore-anyref-pegasus-cnndm-mean-0.5-0.7       precision     0.094
+                                                                                                recall        0.058
+                                                                                                f1            0.082
+                                              bertscore-anyref-pegasus-cnndm-constant-16-32     precision     0.094
+                                                                                                recall        0.058
+                                                                                                f1            0.082
+                                              bertscore-anyref-pegasus-cnndm-constant-32-64     precision     0.091
+                                                                                                recall        0.045
+                                                                                                f1            0.073
+                                              rouge                                             rouge1       -0.354
+                                                                                                rouge2       -0.337
+                                                                                                rougeL       -0.362
+                                                                                                rougeLsum    -0.362
+                                              rouge-anyref-pegasus-newsroom-default             rouge1        0.043
+                                                                                                rouge2        0.023
+                                                                                                rougeL        0.010
+                                                                                                rougeLsum     0.010
+                                              rouge-anyref-pegasus-newsroom-min-0.2-0.5         rouge1        0.124
+                                                                                                rouge2        0.094
+                                                                                                rougeL        0.092
+                                                                                                rougeLsum     0.092
+                                              rouge-anyref-pegasus-newsroom-min-0.5-0.7         rouge1        0.124
+                                                                                                rouge2        0.094
+                                                                                                rougeL        0.092
+                                                                                                rougeLsum     0.092
+                                              rouge-anyref-pegasus-newsroom-mean-0.2-0.5        rouge1        0.124
+                                                                                                rouge2        0.094
+                                                                                                rougeL        0.092
+                                                                                                rougeLsum     0.092
+                                              rouge-anyref-pegasus-newsroom-mean-0.5-0.7        rouge1        0.124
+                                                                                                rouge2        0.094
+                                                                                                rougeL        0.092
+                                                                                                rougeLsum     0.092
+                                              rouge-anyref-pegasus-newsroom-constant-16-32      rouge1        0.124
+                                                                                                rouge2        0.094
+                                                                                                rougeL        0.092
+                                                                                                rougeLsum     0.092
+                                              rouge-anyref-pegasus-newsroom-constant-32-64      rouge1        0.043
+                                                                                                rouge2        0.023
+                                                                                                rougeL        0.010
+                                                                                                rougeLsum     0.010
+                                              rouge-anyref-pegasus-cnndm-default                rouge1       -0.085
+                                                                                                rouge2       -0.088
+                                                                                                rougeL       -0.121
+                                                                                                rougeLsum    -0.121
+                                              rouge-anyref-pegasus-cnndm-min-0.2-0.5            rouge1       -0.089
+                                                                                                rouge2       -0.086
+                                                                                                rougeL       -0.119
+                                                                                                rougeLsum    -0.119
+                                              rouge-anyref-pegasus-cnndm-min-0.5-0.7            rouge1       -0.089
+                                                                                                rouge2       -0.086
+                                                                                                rougeL       -0.119
+                                                                                                rougeLsum    -0.119
+                                              rouge-anyref-pegasus-cnndm-mean-0.2-0.5           rouge1       -0.089
+                                                                                                rouge2       -0.086
+                                                                                                rougeL       -0.119
+                                                                                                rougeLsum    -0.119
+                                              rouge-anyref-pegasus-cnndm-mean-0.5-0.7           rouge1       -0.089
+                                                                                                rouge2       -0.086
+                                                                                                rougeL       -0.119
+                                                                                                rougeLsum    -0.119
+                                              rouge-anyref-pegasus-cnndm-constant-16-32         rouge1       -0.089
+                                                                                                rouge2       -0.086
+                                                                                                rougeL       -0.119
+                                                                                                rougeLsum    -0.119
+                                              rouge-anyref-pegasus-cnndm-constant-32-64         rouge1       -0.085
+                                                                                                rouge2       -0.088
+                                                                                                rougeL       -0.121
+                                                                                                rougeLsum    -0.121
+                                              bleurt                                            scores       -0.069
+                                              bleurt-anyref-pegasus-newsroom-default            scores       -0.036
+                                              bleurt-anyref-pegasus-newsroom-min-0.2-0.5        scores        0.028
+                                              bleurt-anyref-pegasus-newsroom-min-0.5-0.7        scores        0.028
+                                              bleurt-anyref-pegasus-newsroom-mean-0.2-0.5       scores        0.028
+                                              bleurt-anyref-pegasus-newsroom-mean-0.5-0.7       scores        0.028
+                                              bleurt-anyref-pegasus-newsroom-constant-16-32     scores        0.028
+                                              bleurt-anyref-pegasus-newsroom-constant-32-64     scores       -0.036
+                                              bleurt-anyref-pegasus-cnndm-default               scores       -0.145
+                                              bleurt-anyref-pegasus-cnndm-min-0.2-0.5           scores       -0.143
+                                              bleurt-anyref-pegasus-cnndm-min-0.5-0.7           scores       -0.143
+                                              bleurt-anyref-pegasus-cnndm-mean-0.2-0.5          scores       -0.143
+                                              bleurt-anyref-pegasus-cnndm-mean-0.5-0.7          scores       -0.143
+                                              bleurt-anyref-pegasus-cnndm-constant-16-32        scores       -0.143
+                                              bleurt-anyref-pegasus-cnndm-constant-32-64        scores       -0.145
+kendalltau   InformativenessRating  new       bertscore                                         precision     0.310
+                                                                                                recall        0.216
+                                                                                                f1            0.266
+                                              bertscore-anyref-pegasus-newsroom-default         precision     0.307
+                                                                                                recall        0.344
+                                                                                                f1            0.362
+                                              bertscore-anyref-pegasus-newsroom-min-0.2-0.5     precision     0.298
+                                                                                                recall        0.426
+                                                                                                f1            0.415
+                                              bertscore-anyref-pegasus-newsroom-min-0.5-0.7     precision     0.298
+                                                                                                recall        0.426
+                                                                                                f1            0.415
+                                              bertscore-anyref-pegasus-newsroom-mean-0.2-0.5    precision     0.298
+                                                                                                recall        0.426
+                                                                                                f1            0.415
+                                              bertscore-anyref-pegasus-newsroom-mean-0.5-0.7    precision     0.298
+                                                                                                recall        0.426
+                                                                                                f1            0.415
+                                              bertscore-anyref-pegasus-newsroom-constant-16-32  precision     0.299
+                                                                                                recall        0.425
+                                                                                                f1            0.415
+                                              bertscore-anyref-pegasus-newsroom-constant-32-64  precision     0.307
+                                                                                                recall        0.344
+                                                                                                f1            0.362
+                                              bertscore-anyref-pegasus-cnndm-default            precision     0.251
+                                                                                                recall        0.217
+                                                                                                f1            0.270
+                                              bertscore-anyref-pegasus-cnndm-min-0.2-0.5        precision     0.252
+                                                                                                recall        0.223
+                                                                                                f1            0.272
+                                              bertscore-anyref-pegasus-cnndm-min-0.5-0.7        precision     0.252
+                                                                                                recall        0.223
+                                                                                                f1            0.272
+                                              bertscore-anyref-pegasus-cnndm-mean-0.2-0.5       precision     0.252
+                                                                                                recall        0.223
+                                                                                                f1            0.272
+                                              bertscore-anyref-pegasus-cnndm-mean-0.5-0.7       precision     0.252
+                                                                                                recall        0.223
+                                                                                                f1            0.272
+                                              bertscore-anyref-pegasus-cnndm-constant-16-32     precision     0.252
+                                                                                                recall        0.223
+                                                                                                f1            0.272
+                                              bertscore-anyref-pegasus-cnndm-constant-32-64     precision     0.251
+                                                                                                recall        0.217
+                                                                                                f1            0.270
+                                              rouge                                             rouge1        0.106
+                                                                                                rouge2        0.131
+                                                                                                rougeL        0.124
+                                                                                                rougeLsum     0.124
+                                              rouge-anyref-pegasus-newsroom-default             rouge1        0.247
+                                                                                                rouge2        0.236
+                                                                                                rougeL        0.224
+                                                                                                rougeLsum     0.224
+                                              rouge-anyref-pegasus-newsroom-min-0.2-0.5         rouge1        0.244
+                                                                                                rouge2        0.235
+                                                                                                rougeL        0.243
+                                                                                                rougeLsum     0.243
+                                              rouge-anyref-pegasus-newsroom-min-0.5-0.7         rouge1        0.244
+                                                                                                rouge2        0.235
+                                                                                                rougeL        0.243
+                                                                                                rougeLsum     0.243
+                                              rouge-anyref-pegasus-newsroom-mean-0.2-0.5        rouge1        0.244
+                                                                                                rouge2        0.235
+                                                                                                rougeL        0.243
+                                                                                                rougeLsum     0.243
+                                              rouge-anyref-pegasus-newsroom-mean-0.5-0.7        rouge1        0.244
+                                                                                                rouge2        0.235
+                                                                                                rougeL        0.243
+                                                                                                rougeLsum     0.243
+                                              rouge-anyref-pegasus-newsroom-constant-16-32      rouge1        0.244
+                                                                                                rouge2        0.235
+                                                                                                rougeL        0.241
+                                                                                                rougeLsum     0.241
+                                              rouge-anyref-pegasus-newsroom-constant-32-64      rouge1        0.247
+                                                                                                rouge2        0.236
+                                                                                                rougeL        0.224
+                                                                                                rougeLsum     0.224
+                                              rouge-anyref-pegasus-cnndm-default                rouge1        0.161
+                                                                                                rouge2        0.147
+                                                                                                rougeL        0.144
+                                                                                                rougeLsum     0.144
+                                              rouge-anyref-pegasus-cnndm-min-0.2-0.5            rouge1        0.156
+                                                                                                rouge2        0.149
+                                                                                                rougeL        0.146
+                                                                                                rougeLsum     0.146
+                                              rouge-anyref-pegasus-cnndm-min-0.5-0.7            rouge1        0.156
+                                                                                                rouge2        0.149
+                                                                                                rougeL        0.146
+                                                                                                rougeLsum     0.146
+                                              rouge-anyref-pegasus-cnndm-mean-0.2-0.5           rouge1        0.156
+                                                                                                rouge2        0.149
+                                                                                                rougeL        0.146
+                                                                                                rougeLsum     0.146
+                                              rouge-anyref-pegasus-cnndm-mean-0.5-0.7           rouge1        0.156
+                                                                                                rouge2        0.149
+                                                                                                rougeL        0.146
+                                                                                                rougeLsum     0.146
+                                              rouge-anyref-pegasus-cnndm-constant-16-32         rouge1        0.156
+                                                                                                rouge2        0.149
+                                                                                                rougeL        0.146
+                                                                                                rougeLsum     0.146
+                                              rouge-anyref-pegasus-cnndm-constant-32-64         rouge1        0.161
+                                                                                                rouge2        0.147
+                                                                                                rougeL        0.144
+                                                                                                rougeLsum     0.144
+                                              bleurt                                            scores        0.220
+                                              bleurt-anyref-pegasus-newsroom-default            scores        0.181
+                                              bleurt-anyref-pegasus-newsroom-min-0.2-0.5        scores        0.243
+                                              bleurt-anyref-pegasus-newsroom-min-0.5-0.7        scores        0.243
+                                              bleurt-anyref-pegasus-newsroom-mean-0.2-0.5       scores        0.243
+                                              bleurt-anyref-pegasus-newsroom-mean-0.5-0.7       scores        0.243
+                                              bleurt-anyref-pegasus-newsroom-constant-16-32     scores        0.242
+                                              bleurt-anyref-pegasus-newsroom-constant-32-64     scores        0.181
+                                              bleurt-anyref-pegasus-cnndm-default               scores        0.061
+                                              bleurt-anyref-pegasus-cnndm-min-0.2-0.5           scores        0.064
+                                              bleurt-anyref-pegasus-cnndm-min-0.5-0.7           scores        0.064
+                                              bleurt-anyref-pegasus-cnndm-mean-0.2-0.5          scores        0.064
+                                              bleurt-anyref-pegasus-cnndm-mean-0.5-0.7          scores        0.064
+                                              bleurt-anyref-pegasus-cnndm-constant-16-32        scores        0.064
+                                              bleurt-anyref-pegasus-cnndm-constant-32-64        scores        0.061
+             RelevanceRating        new       bertscore                                         precision     0.204
+                                                                                                recall        0.226
+                                                                                                f1            0.211
+                                              bertscore-anyref-pegasus-newsroom-default         precision     0.339
+                                                                                                recall        0.364
+                                                                                                f1            0.379
+                                              bertscore-anyref-pegasus-newsroom-min-0.2-0.5     precision     0.317
+                                                                                                recall        0.353
+                                                                                                f1            0.388
+                                              bertscore-anyref-pegasus-newsroom-min-0.5-0.7     precision     0.317
+                                                                                                recall        0.353
+                                                                                                f1            0.388
+                                              bertscore-anyref-pegasus-newsroom-mean-0.2-0.5    precision     0.317
+                                                                                                recall        0.353
+                                                                                                f1            0.388
+                                              bertscore-anyref-pegasus-newsroom-mean-0.5-0.7    precision     0.317
+                                                                                                recall        0.353
+                                                                                                f1            0.388
+                                              bertscore-anyref-pegasus-newsroom-constant-16-32  precision     0.319
+                                                                                                recall        0.354
+                                                                                                f1            0.388
+                                              bertscore-anyref-pegasus-newsroom-constant-32-64  precision     0.339
+                                                                                                recall        0.364
+                                                                                                f1            0.379
+                                              bertscore-anyref-pegasus-cnndm-default            precision     0.339
+                                                                                                recall        0.212
+                                                                                                f1            0.328
+                                              bertscore-anyref-pegasus-cnndm-min-0.2-0.5        precision     0.338
+                                                                                                recall        0.210
+                                                                                                f1            0.323
+                                              bertscore-anyref-pegasus-cnndm-min-0.5-0.7        precision     0.338
+                                                                                                recall        0.210
+                                                                                                f1            0.323
+                                              bertscore-anyref-pegasus-cnndm-mean-0.2-0.5       precision     0.338
+                                                                                                recall        0.210
+                                                                                                f1            0.323
+                                              bertscore-anyref-pegasus-cnndm-mean-0.5-0.7       precision     0.338
+                                                                                                recall        0.210
+                                                                                                f1            0.323
+                                              bertscore-anyref-pegasus-cnndm-constant-16-32     precision     0.338
+                                                                                                recall        0.210
+                                                                                                f1            0.323
+                                              bertscore-anyref-pegasus-cnndm-constant-32-64     precision     0.339
+                                                                                                recall        0.212
+                                                                                                f1            0.328
+                                              rouge                                             rouge1        0.076
+                                                                                                rouge2        0.101
+                                                                                                rougeL        0.086
+                                                                                                rougeLsum     0.086
+                                              rouge-anyref-pegasus-newsroom-default             rouge1        0.256
+                                                                                                rouge2        0.257
+                                                                                                rougeL        0.240
+                                                                                                rougeLsum     0.240
+                                              rouge-anyref-pegasus-newsroom-min-0.2-0.5         rouge1        0.269
+                                                                                                rouge2        0.253
+                                                                                                rougeL        0.258
+                                                                                                rougeLsum     0.258
+                                              rouge-anyref-pegasus-newsroom-min-0.5-0.7         rouge1        0.269
+                                                                                                rouge2        0.253
+                                                                                                rougeL        0.258
+                                                                                                rougeLsum     0.258
+                                              rouge-anyref-pegasus-newsroom-mean-0.2-0.5        rouge1        0.269
+                                                                                                rouge2        0.253
+                                                                                                rougeL        0.258
+                                                                                                rougeLsum     0.258
+                                              rouge-anyref-pegasus-newsroom-mean-0.5-0.7        rouge1        0.269
+                                                                                                rouge2        0.253
+                                                                                                rougeL        0.258
+                                                                                                rougeLsum     0.258
+                                              rouge-anyref-pegasus-newsroom-constant-16-32      rouge1        0.269
+                                                                                                rouge2        0.253
+                                                                                                rougeL        0.256
+                                                                                                rougeLsum     0.256
+                                              rouge-anyref-pegasus-newsroom-constant-32-64      rouge1        0.256
+                                                                                                rouge2        0.257
+                                                                                                rougeL        0.240
+                                                                                                rougeLsum     0.240
+                                              rouge-anyref-pegasus-cnndm-default                rouge1        0.253
+                                                                                                rouge2        0.201
+                                                                                                rougeL        0.209
+                                                                                                rougeLsum     0.209
+                                              rouge-anyref-pegasus-cnndm-min-0.2-0.5            rouge1        0.249
+                                                                                                rouge2        0.198
+                                                                                                rougeL        0.209
+                                                                                                rougeLsum     0.209
+                                              rouge-anyref-pegasus-cnndm-min-0.5-0.7            rouge1        0.249
+                                                                                                rouge2        0.198
+                                                                                                rougeL        0.209
+                                                                                                rougeLsum     0.209
+                                              rouge-anyref-pegasus-cnndm-mean-0.2-0.5           rouge1        0.249
+                                                                                                rouge2        0.198
+                                                                                                rougeL        0.209
+                                                                                                rougeLsum     0.209
+                                              rouge-anyref-pegasus-cnndm-mean-0.5-0.7           rouge1        0.249
+                                                                                                rouge2        0.198
+                                                                                                rougeL        0.209
+                                                                                                rougeLsum     0.209
+                                              rouge-anyref-pegasus-cnndm-constant-16-32         rouge1        0.249
+                                                                                                rouge2        0.198
+                                                                                                rougeL        0.209
+                                                                                                rougeLsum     0.209
+                                              rouge-anyref-pegasus-cnndm-constant-32-64         rouge1        0.253
+                                                                                                rouge2        0.201
+                                                                                                rougeL        0.209
+                                                                                                rougeLsum     0.209
+                                              bleurt                                            scores        0.299
+                                              bleurt-anyref-pegasus-newsroom-default            scores        0.187
+                                              bleurt-anyref-pegasus-newsroom-min-0.2-0.5        scores        0.209
+                                              bleurt-anyref-pegasus-newsroom-min-0.5-0.7        scores        0.209
+                                              bleurt-anyref-pegasus-newsroom-mean-0.2-0.5       scores        0.209
+                                              bleurt-anyref-pegasus-newsroom-mean-0.5-0.7       scores        0.209
+                                              bleurt-anyref-pegasus-newsroom-constant-16-32     scores        0.208
+                                              bleurt-anyref-pegasus-newsroom-constant-32-64     scores        0.187
+                                              bleurt-anyref-pegasus-cnndm-default               scores        0.054
+                                              bleurt-anyref-pegasus-cnndm-min-0.2-0.5           scores        0.054
+                                              bleurt-anyref-pegasus-cnndm-min-0.5-0.7           scores        0.054
+                                              bleurt-anyref-pegasus-cnndm-mean-0.2-0.5          scores        0.054
+                                              bleurt-anyref-pegasus-cnndm-mean-0.5-0.7          scores        0.054
+                                              bleurt-anyref-pegasus-cnndm-constant-16-32        scores        0.054
+                                              bleurt-anyref-pegasus-cnndm-constant-32-64        scores        0.054
+             CoherenceRating        new       bertscore                                         precision     0.114
+                                                                                                recall       -0.015
+                                                                                                f1            0.033
+                                              bertscore-anyref-pegasus-newsroom-default         precision     0.269
+                                                                                                recall        0.178
+                                                                                                f1            0.241
+                                              bertscore-anyref-pegasus-newsroom-min-0.2-0.5     precision     0.244
+                                                                                                recall        0.237
+                                                                                                f1            0.264
+                                              bertscore-anyref-pegasus-newsroom-min-0.5-0.7     precision     0.244
+                                                                                                recall        0.237
+                                                                                                f1            0.264
+                                              bertscore-anyref-pegasus-newsroom-mean-0.2-0.5    precision     0.244
+                                                                                                recall        0.237
+                                                                                                f1            0.264
+                                              bertscore-anyref-pegasus-newsroom-mean-0.5-0.7    precision     0.244
+                                                                                                recall        0.237
+                                                                                                f1            0.264
+                                              bertscore-anyref-pegasus-newsroom-constant-16-32  precision     0.245
+                                                                                                recall        0.236
+                                                                                                f1            0.264
+                                              bertscore-anyref-pegasus-newsroom-constant-32-64  precision     0.269
+                                                                                                recall        0.178
+                                                                                                f1            0.241
+                                              bertscore-anyref-pegasus-cnndm-default            precision     0.122
+                                                                                                recall        0.081
+                                                                                                f1            0.116
+                                              bertscore-anyref-pegasus-cnndm-min-0.2-0.5        precision     0.123
+                                                                                                recall        0.091
+                                                                                                f1            0.125
+                                              bertscore-anyref-pegasus-cnndm-min-0.5-0.7        precision     0.123
+                                                                                                recall        0.091
+                                                                                                f1            0.125
+                                              bertscore-anyref-pegasus-cnndm-mean-0.2-0.5       precision     0.123
+                                                                                                recall        0.091
+                                                                                                f1            0.125
+                                              bertscore-anyref-pegasus-cnndm-mean-0.5-0.7       precision     0.123
+                                                                                                recall        0.091
+                                                                                                f1            0.125
+                                              bertscore-anyref-pegasus-cnndm-constant-16-32     precision     0.123
+                                                                                                recall        0.091
+                                                                                                f1            0.125
+                                              bertscore-anyref-pegasus-cnndm-constant-32-64     precision     0.122
+                                                                                                recall        0.081
+                                                                                                f1            0.116
+                                              rouge                                             rouge1       -0.161
+                                                                                                rouge2       -0.140
+                                                                                                rougeL       -0.150
+                                                                                                rougeLsum    -0.150
+                                              rouge-anyref-pegasus-newsroom-default             rouge1        0.214
+                                                                                                rouge2        0.197
+                                                                                                rougeL        0.184
+                                                                                                rougeLsum     0.184
+                                              rouge-anyref-pegasus-newsroom-min-0.2-0.5         rouge1        0.176
+                                                                                                rouge2        0.159
+                                                                                                rougeL        0.150
+                                                                                                rougeLsum     0.150
+                                              rouge-anyref-pegasus-newsroom-min-0.5-0.7         rouge1        0.176
+                                                                                                rouge2        0.159
+                                                                                                rougeL        0.150
+                                                                                                rougeLsum     0.150
+                                              rouge-anyref-pegasus-newsroom-mean-0.2-0.5        rouge1        0.176
+                                                                                                rouge2        0.159
+                                                                                                rougeL        0.150
+                                                                                                rougeLsum     0.150
+                                              rouge-anyref-pegasus-newsroom-mean-0.5-0.7        rouge1        0.176
+                                                                                                rouge2        0.159
+                                                                                                rougeL        0.150
+                                                                                                rougeLsum     0.150
+                                              rouge-anyref-pegasus-newsroom-constant-16-32      rouge1        0.176
+                                                                                                rouge2        0.159
+                                                                                                rougeL        0.148
+                                                                                                rougeLsum     0.148
+                                              rouge-anyref-pegasus-newsroom-constant-32-64      rouge1        0.214
+                                                                                                rouge2        0.197
+                                                                                                rougeL        0.184
+                                                                                                rougeLsum     0.184
+                                              rouge-anyref-pegasus-cnndm-default                rouge1        0.112
+                                                                                                rouge2        0.102
+                                                                                                rougeL        0.094
+                                                                                                rougeLsum     0.094
+                                              rouge-anyref-pegasus-cnndm-min-0.2-0.5            rouge1        0.107
+                                                                                                rouge2        0.105
+                                                                                                rougeL        0.097
+                                                                                                rougeLsum     0.097
+                                              rouge-anyref-pegasus-cnndm-min-0.5-0.7            rouge1        0.107
+                                                                                                rouge2        0.105
+                                                                                                rougeL        0.097
+                                                                                                rougeLsum     0.097
+                                              rouge-anyref-pegasus-cnndm-mean-0.2-0.5           rouge1        0.107
+                                                                                                rouge2        0.105
+                                                                                                rougeL        0.097
+                                                                                                rougeLsum     0.097
+                                              rouge-anyref-pegasus-cnndm-mean-0.5-0.7           rouge1        0.107
+                                                                                                rouge2        0.105
+                                                                                                rougeL        0.097
+                                                                                                rougeLsum     0.097
+                                              rouge-anyref-pegasus-cnndm-constant-16-32         rouge1        0.107
+                                                                                                rouge2        0.105
+                                                                                                rougeL        0.097
+                                                                                                rougeLsum     0.097
+                                              rouge-anyref-pegasus-cnndm-constant-32-64         rouge1        0.112
+                                                                                                rouge2        0.102
+                                                                                                rougeL        0.094
+                                                                                                rougeLsum     0.094
+                                              bleurt                                            scores        0.027
+                                              bleurt-anyref-pegasus-newsroom-default            scores        0.122
+                                              bleurt-anyref-pegasus-newsroom-min-0.2-0.5        scores        0.145
+                                              bleurt-anyref-pegasus-newsroom-min-0.5-0.7        scores        0.145
+                                              bleurt-anyref-pegasus-newsroom-mean-0.2-0.5       scores        0.145
+                                              bleurt-anyref-pegasus-newsroom-mean-0.5-0.7       scores        0.145
+                                              bleurt-anyref-pegasus-newsroom-constant-16-32     scores        0.144
+                                              bleurt-anyref-pegasus-newsroom-constant-32-64     scores        0.122
+                                              bleurt-anyref-pegasus-cnndm-default               scores       -0.041
+                                              bleurt-anyref-pegasus-cnndm-min-0.2-0.5           scores       -0.038
+                                              bleurt-anyref-pegasus-cnndm-min-0.5-0.7           scores       -0.038
+                                              bleurt-anyref-pegasus-cnndm-mean-0.2-0.5          scores       -0.038
+                                              bleurt-anyref-pegasus-cnndm-mean-0.5-0.7          scores       -0.038
+                                              bleurt-anyref-pegasus-cnndm-constant-16-32        scores       -0.038
+                                              bleurt-anyref-pegasus-cnndm-constant-32-64        scores       -0.041
+             FluencyRating          new       bertscore                                         precision     0.081
+                                                                                                recall       -0.033
+                                                                                                f1            0.015
+                                              bertscore-anyref-pegasus-newsroom-default         precision     0.186
+                                                                                                recall        0.104
+                                                                                                f1            0.138
+                                              bertscore-anyref-pegasus-newsroom-min-0.2-0.5     precision     0.209
+                                                                                                recall        0.148
+                                                                                                f1            0.200
+                                              bertscore-anyref-pegasus-newsroom-min-0.5-0.7     precision     0.209
+                                                                                                recall        0.148
+                                                                                                f1            0.200
+                                              bertscore-anyref-pegasus-newsroom-mean-0.2-0.5    precision     0.209
+                                                                                                recall        0.148
+                                                                                                f1            0.200
+                                              bertscore-anyref-pegasus-newsroom-mean-0.5-0.7    precision     0.209
+                                                                                                recall        0.148
+                                                                                                f1            0.200
+                                              bertscore-anyref-pegasus-newsroom-constant-16-32  precision     0.210
+                                                                                                recall        0.149
+                                                                                                f1            0.200
+                                              bertscore-anyref-pegasus-newsroom-constant-32-64  precision     0.186
+                                                                                                recall        0.104
+                                                                                                f1            0.138
+                                              bertscore-anyref-pegasus-cnndm-default            precision     0.095
+                                                                                                recall        0.073
+                                                                                                f1            0.105
+                                              bertscore-anyref-pegasus-cnndm-min-0.2-0.5        precision     0.096
+                                                                                                recall        0.083
+                                                                                                f1            0.114
+                                              bertscore-anyref-pegasus-cnndm-min-0.5-0.7        precision     0.096
+                                                                                                recall        0.083
+                                                                                                f1            0.114
+                                              bertscore-anyref-pegasus-cnndm-mean-0.2-0.5       precision     0.096
+                                                                                                recall        0.083
+                                                                                                f1            0.114
+                                              bertscore-anyref-pegasus-cnndm-mean-0.5-0.7       precision     0.096
+                                                                                                recall        0.083
+                                                                                                f1            0.114
+                                              bertscore-anyref-pegasus-cnndm-constant-16-32     precision     0.096
+                                                                                                recall        0.083
+                                                                                                f1            0.114
+                                              bertscore-anyref-pegasus-cnndm-constant-32-64     precision     0.095
+                                                                                                recall        0.073
+                                                                                                f1            0.105
+                                              rouge                                             rouge1       -0.215
+                                                                                                rouge2       -0.208
+                                                                                                rougeL       -0.210
+                                                                                                rougeLsum    -0.210
+                                              rouge-anyref-pegasus-newsroom-default             rouge1        0.050
+                                                                                                rouge2        0.059
+                                                                                                rougeL        0.026
+                                                                                                rougeLsum     0.026
+                                              rouge-anyref-pegasus-newsroom-min-0.2-0.5         rouge1        0.067
+                                                                                                rouge2        0.059
+                                                                                                rougeL        0.045
+                                                                                                rougeLsum     0.045
+                                              rouge-anyref-pegasus-newsroom-min-0.5-0.7         rouge1        0.067
+                                                                                                rouge2        0.059
+                                                                                                rougeL        0.045
+                                                                                                rougeLsum     0.045
+                                              rouge-anyref-pegasus-newsroom-mean-0.2-0.5        rouge1        0.067
+                                                                                                rouge2        0.059
+                                                                                                rougeL        0.045
+                                                                                                rougeLsum     0.045
+                                              rouge-anyref-pegasus-newsroom-mean-0.5-0.7        rouge1        0.067
+                                                                                                rouge2        0.059
+                                                                                                rougeL        0.045
+                                                                                                rougeLsum     0.045
+                                              rouge-anyref-pegasus-newsroom-constant-16-32      rouge1        0.067
+                                                                                                rouge2        0.059
+                                                                                                rougeL        0.042
+                                                                                                rougeLsum     0.042
+                                              rouge-anyref-pegasus-newsroom-constant-32-64      rouge1        0.050
+                                                                                                rouge2        0.059
+                                                                                                rougeL        0.026
+                                                                                                rougeLsum     0.026
+                                              rouge-anyref-pegasus-cnndm-default                rouge1       -0.043
+                                                                                                rouge2       -0.042
+                                                                                                rougeL       -0.055
+                                                                                                rougeLsum    -0.055
+                                              rouge-anyref-pegasus-cnndm-min-0.2-0.5            rouge1       -0.048
+                                                                                                rouge2       -0.040
+                                                                                                rougeL       -0.053
+                                                                                                rougeLsum    -0.053
+                                              rouge-anyref-pegasus-cnndm-min-0.5-0.7            rouge1       -0.048
+                                                                                                rouge2       -0.040
+                                                                                                rougeL       -0.053
+                                                                                                rougeLsum    -0.053
+                                              rouge-anyref-pegasus-cnndm-mean-0.2-0.5           rouge1       -0.048
+                                                                                                rouge2       -0.040
+                                                                                                rougeL       -0.053
+                                                                                                rougeLsum    -0.053
+                                              rouge-anyref-pegasus-cnndm-mean-0.5-0.7           rouge1       -0.048
+                                                                                                rouge2       -0.040
+                                                                                                rougeL       -0.053
+                                                                                                rougeLsum    -0.053
+                                              rouge-anyref-pegasus-cnndm-constant-16-32         rouge1       -0.048
+                                                                                                rouge2       -0.040
+                                                                                                rougeL       -0.053
+                                                                                                rougeLsum    -0.053
+                                              rouge-anyref-pegasus-cnndm-constant-32-64         rouge1       -0.043
+                                                                                                rouge2       -0.042
+                                                                                                rougeL       -0.055
+                                                                                                rougeLsum    -0.055
+                                              bleurt                                            scores       -0.042
+                                              bleurt-anyref-pegasus-newsroom-default            scores        0.000
+                                              bleurt-anyref-pegasus-newsroom-min-0.2-0.5        scores        0.034
+                                              bleurt-anyref-pegasus-newsroom-min-0.5-0.7        scores        0.034
+                                              bleurt-anyref-pegasus-newsroom-mean-0.2-0.5       scores        0.034
+                                              bleurt-anyref-pegasus-newsroom-mean-0.5-0.7       scores        0.034
+                                              bleurt-anyref-pegasus-newsroom-constant-16-32     scores        0.035
+                                              bleurt-anyref-pegasus-newsroom-constant-32-64     scores        0.000
+                                              bleurt-anyref-pegasus-cnndm-default               scores       -0.150
+                                              bleurt-anyref-pegasus-cnndm-min-0.2-0.5           scores       -0.148
+                                              bleurt-anyref-pegasus-cnndm-min-0.5-0.7           scores       -0.148
+                                              bleurt-anyref-pegasus-cnndm-mean-0.2-0.5          scores       -0.148
+                                              bleurt-anyref-pegasus-cnndm-mean-0.5-0.7          scores       -0.148
+                                              bleurt-anyref-pegasus-cnndm-constant-16-32        scores       -0.148
+                                              bleurt-anyref-pegasus-cnndm-constant-32-64        scores       -0.150
+spearmanr    InformativenessRating  new       bertscore                                         precision     0.440
+                                                                                                recall        0.311
+                                                                                                f1            0.360
+                                              bertscore-anyref-pegasus-newsroom-default         precision     0.433
+                                                                                                recall        0.510
+                                                                                                f1            0.511
+                                              bertscore-anyref-pegasus-newsroom-min-0.2-0.5     precision     0.423
+                                                                                                recall        0.607
+                                                                                                f1            0.589
+                                              bertscore-anyref-pegasus-newsroom-min-0.5-0.7     precision     0.423
+                                                                                                recall        0.607
+                                                                                                f1            0.589
+                                              bertscore-anyref-pegasus-newsroom-mean-0.2-0.5    precision     0.423
+                                                                                                recall        0.607
+                                                                                                f1            0.589
+                                              bertscore-anyref-pegasus-newsroom-mean-0.5-0.7    precision     0.423
+                                                                                                recall        0.607
+                                                                                                f1            0.589
+                                              bertscore-anyref-pegasus-newsroom-constant-16-32  precision     0.425
+                                                                                                recall        0.606
+                                                                                                f1            0.589
+                                              bertscore-anyref-pegasus-newsroom-constant-32-64  precision     0.433
+                                                                                                recall        0.510
+                                                                                                f1            0.511
+                                              bertscore-anyref-pegasus-cnndm-default            precision     0.361
+                                                                                                recall        0.305
+                                                                                                f1            0.378
+                                              bertscore-anyref-pegasus-cnndm-min-0.2-0.5        precision     0.363
+                                                                                                recall        0.310
+                                                                                                f1            0.382
+                                              bertscore-anyref-pegasus-cnndm-min-0.5-0.7        precision     0.363
+                                                                                                recall        0.310
+                                                                                                f1            0.382
+                                              bertscore-anyref-pegasus-cnndm-mean-0.2-0.5       precision     0.363
+                                                                                                recall        0.310
+                                                                                                f1            0.382
+                                              bertscore-anyref-pegasus-cnndm-mean-0.5-0.7       precision     0.363
+                                                                                                recall        0.310
+                                                                                                f1            0.382
+                                              bertscore-anyref-pegasus-cnndm-constant-16-32     precision     0.363
+                                                                                                recall        0.310
+                                                                                                f1            0.382
+                                              bertscore-anyref-pegasus-cnndm-constant-32-64     precision     0.361
+                                                                                                recall        0.305
+                                                                                                f1            0.378
+                                              rouge                                             rouge1        0.184
+                                                                                                rouge2        0.213
+                                                                                                rougeL        0.204
+                                                                                                rougeLsum     0.204
+                                              rouge-anyref-pegasus-newsroom-default             rouge1        0.367
+                                                                                                rouge2        0.347
+                                                                                                rougeL        0.345
+                                                                                                rougeLsum     0.345
+                                              rouge-anyref-pegasus-newsroom-min-0.2-0.5         rouge1        0.375
+                                                                                                rouge2        0.359
+                                                                                                rougeL        0.374
+                                                                                                rougeLsum     0.374
+                                              rouge-anyref-pegasus-newsroom-min-0.5-0.7         rouge1        0.375
+                                                                                                rouge2        0.359
+                                                                                                rougeL        0.374
+                                                                                                rougeLsum     0.374
+                                              rouge-anyref-pegasus-newsroom-mean-0.2-0.5        rouge1        0.375
+                                                                                                rouge2        0.359
+                                                                                                rougeL        0.374
+                                                                                                rougeLsum     0.374
+                                              rouge-anyref-pegasus-newsroom-mean-0.5-0.7        rouge1        0.375
+                                                                                                rouge2        0.359
+                                                                                                rougeL        0.374
+                                                                                                rougeLsum     0.374
+                                              rouge-anyref-pegasus-newsroom-constant-16-32      rouge1        0.375
+                                                                                                rouge2        0.359
+                                                                                                rougeL        0.371
+                                                                                                rougeLsum     0.371
+                                              rouge-anyref-pegasus-newsroom-constant-32-64      rouge1        0.367
+                                                                                                rouge2        0.347
+                                                                                                rougeL        0.345
+                                                                                                rougeLsum     0.345
+                                              rouge-anyref-pegasus-cnndm-default                rouge1        0.237
+                                                                                                rouge2        0.213
+                                                                                                rougeL        0.214
+                                                                                                rougeLsum     0.214
+                                              rouge-anyref-pegasus-cnndm-min-0.2-0.5            rouge1        0.232
+                                                                                                rouge2        0.215
+                                                                                                rougeL        0.215
+                                                                                                rougeLsum     0.215
+                                              rouge-anyref-pegasus-cnndm-min-0.5-0.7            rouge1        0.232
+                                                                                                rouge2        0.215
+                                                                                                rougeL        0.215
+                                                                                                rougeLsum     0.215
+                                              rouge-anyref-pegasus-cnndm-mean-0.2-0.5           rouge1        0.232
+                                                                                                rouge2        0.215
+                                                                                                rougeL        0.215
+                                                                                                rougeLsum     0.215
+                                              rouge-anyref-pegasus-cnndm-mean-0.5-0.7           rouge1        0.232
+                                                                                                rouge2        0.215
+                                                                                                rougeL        0.215
+                                                                                                rougeLsum     0.215
+                                              rouge-anyref-pegasus-cnndm-constant-16-32         rouge1        0.232
+                                                                                                rouge2        0.215
+                                                                                                rougeL        0.215
+                                                                                                rougeLsum     0.215
+                                              rouge-anyref-pegasus-cnndm-constant-32-64         rouge1        0.237
+                                                                                                rouge2        0.213
+                                                                                                rougeL        0.214
+                                                                                                rougeLsum     0.214
+                                              bleurt                                            scores        0.325
+                                              bleurt-anyref-pegasus-newsroom-default            scores        0.260
+                                              bleurt-anyref-pegasus-newsroom-min-0.2-0.5        scores        0.348
+                                              bleurt-anyref-pegasus-newsroom-min-0.5-0.7        scores        0.348
+                                              bleurt-anyref-pegasus-newsroom-mean-0.2-0.5       scores        0.348
+                                              bleurt-anyref-pegasus-newsroom-mean-0.5-0.7       scores        0.348
+                                              bleurt-anyref-pegasus-newsroom-constant-16-32     scores        0.346
+                                              bleurt-anyref-pegasus-newsroom-constant-32-64     scores        0.260
+                                              bleurt-anyref-pegasus-cnndm-default               scores        0.082
+                                              bleurt-anyref-pegasus-cnndm-min-0.2-0.5           scores        0.085
+                                              bleurt-anyref-pegasus-cnndm-min-0.5-0.7           scores        0.085
+                                              bleurt-anyref-pegasus-cnndm-mean-0.2-0.5          scores        0.085
+                                              bleurt-anyref-pegasus-cnndm-mean-0.5-0.7          scores        0.085
+                                              bleurt-anyref-pegasus-cnndm-constant-16-32        scores        0.085
+                                              bleurt-anyref-pegasus-cnndm-constant-32-64        scores        0.082
+             RelevanceRating        new       bertscore                                         precision     0.304
+                                                                                                recall        0.323
+                                                                                                f1            0.293
+                                              bertscore-anyref-pegasus-newsroom-default         precision     0.485
+                                                                                                recall        0.519
+                                                                                                f1            0.551
+                                              bertscore-anyref-pegasus-newsroom-min-0.2-0.5     precision     0.482
+                                                                                                recall        0.503
+                                                                                                f1            0.573
+                                              bertscore-anyref-pegasus-newsroom-min-0.5-0.7     precision     0.482
+                                                                                                recall        0.503
+                                                                                                f1            0.573
+                                              bertscore-anyref-pegasus-newsroom-mean-0.2-0.5    precision     0.482
+                                                                                                recall        0.503
+                                                                                                f1            0.573
+                                              bertscore-anyref-pegasus-newsroom-mean-0.5-0.7    precision     0.482
+                                                                                                recall        0.503
+                                                                                                f1            0.573
+                                              bertscore-anyref-pegasus-newsroom-constant-16-32  precision     0.484
+                                                                                                recall        0.503
+                                                                                                f1            0.573
+                                              bertscore-anyref-pegasus-newsroom-constant-32-64  precision     0.485
+                                                                                                recall        0.519
+                                                                                                f1            0.551
+                                              bertscore-anyref-pegasus-cnndm-default            precision     0.460
+                                                                                                recall        0.316
+                                                                                                f1            0.451
+                                              bertscore-anyref-pegasus-cnndm-min-0.2-0.5        precision     0.460
+                                                                                                recall        0.314
+                                                                                                f1            0.446
+                                              bertscore-anyref-pegasus-cnndm-min-0.5-0.7        precision     0.460
+                                                                                                recall        0.314
+                                                                                                f1            0.446
+                                              bertscore-anyref-pegasus-cnndm-mean-0.2-0.5       precision     0.460
+                                                                                                recall        0.314
+                                                                                                f1            0.446
+                                              bertscore-anyref-pegasus-cnndm-mean-0.5-0.7       precision     0.460
+                                                                                                recall        0.314
+                                                                                                f1            0.446
+                                              bertscore-anyref-pegasus-cnndm-constant-16-32     precision     0.460
+                                                                                                recall        0.314
+                                                                                                f1            0.446
+                                              bertscore-anyref-pegasus-cnndm-constant-32-64     precision     0.460
+                                                                                                recall        0.316
+                                                                                                f1            0.451
+                                              rouge                                             rouge1        0.111
+                                                                                                rouge2        0.144
+                                                                                                rougeL        0.127
+                                                                                                rougeLsum     0.127
+                                              rouge-anyref-pegasus-newsroom-default             rouge1        0.369
+                                                                                                rouge2        0.367
+                                                                                                rougeL        0.342
+                                                                                                rougeLsum     0.342
+                                              rouge-anyref-pegasus-newsroom-min-0.2-0.5         rouge1        0.409
+                                                                                                rouge2        0.384
+                                                                                                rougeL        0.394
+                                                                                                rougeLsum     0.394
+                                              rouge-anyref-pegasus-newsroom-min-0.5-0.7         rouge1        0.409
+                                                                                                rouge2        0.384
+                                                                                                rougeL        0.394
+                                                                                                rougeLsum     0.394
+                                              rouge-anyref-pegasus-newsroom-mean-0.2-0.5        rouge1        0.409
+                                                                                                rouge2        0.384
+                                                                                                rougeL        0.394
+                                                                                                rougeLsum     0.394
+                                              rouge-anyref-pegasus-newsroom-mean-0.5-0.7        rouge1        0.409
+                                                                                                rouge2        0.384
+                                                                                                rougeL        0.394
+                                                                                                rougeLsum     0.394
+                                              rouge-anyref-pegasus-newsroom-constant-16-32      rouge1        0.409
+                                                                                                rouge2        0.384
+                                                                                                rougeL        0.391
+                                                                                                rougeLsum     0.391
+                                              rouge-anyref-pegasus-newsroom-constant-32-64      rouge1        0.369
+                                                                                                rouge2        0.367
+                                                                                                rougeL        0.342
+                                                                                                rougeLsum     0.342
+                                              rouge-anyref-pegasus-cnndm-default                rouge1        0.373
+                                                                                                rouge2        0.291
+                                                                                                rougeL        0.321
+                                                                                                rougeLsum     0.321
+                                              rouge-anyref-pegasus-cnndm-min-0.2-0.5            rouge1        0.371
+                                                                                                rouge2        0.289
+                                                                                                rougeL        0.319
+                                                                                                rougeLsum     0.319
+                                              rouge-anyref-pegasus-cnndm-min-0.5-0.7            rouge1        0.371
+                                                                                                rouge2        0.289
+                                                                                                rougeL        0.319
+                                                                                                rougeLsum     0.319
+                                              rouge-anyref-pegasus-cnndm-mean-0.2-0.5           rouge1        0.371
+                                                                                                rouge2        0.289
+                                                                                                rougeL        0.319
+                                                                                                rougeLsum     0.319
+                                              rouge-anyref-pegasus-cnndm-mean-0.5-0.7           rouge1        0.371
+                                                                                                rouge2        0.289
+                                                                                                rougeL        0.319
+                                                                                                rougeLsum     0.319
+                                              rouge-anyref-pegasus-cnndm-constant-16-32         rouge1        0.371
+                                                                                                rouge2        0.289
+                                                                                                rougeL        0.319
+                                                                                                rougeLsum     0.319
+                                              rouge-anyref-pegasus-cnndm-constant-32-64         rouge1        0.373
+                                                                                                rouge2        0.291
+                                                                                                rougeL        0.321
+                                                                                                rougeLsum     0.321
+                                              bleurt                                            scores        0.427
+                                              bleurt-anyref-pegasus-newsroom-default            scores        0.267
+                                              bleurt-anyref-pegasus-newsroom-min-0.2-0.5        scores        0.318
+                                              bleurt-anyref-pegasus-newsroom-min-0.5-0.7        scores        0.318
+                                              bleurt-anyref-pegasus-newsroom-mean-0.2-0.5       scores        0.318
+                                              bleurt-anyref-pegasus-newsroom-mean-0.5-0.7       scores        0.318
+                                              bleurt-anyref-pegasus-newsroom-constant-16-32     scores        0.316
+                                              bleurt-anyref-pegasus-newsroom-constant-32-64     scores        0.267
+                                              bleurt-anyref-pegasus-cnndm-default               scores        0.063
+                                              bleurt-anyref-pegasus-cnndm-min-0.2-0.5           scores        0.062
+                                              bleurt-anyref-pegasus-cnndm-min-0.5-0.7           scores        0.062
+                                              bleurt-anyref-pegasus-cnndm-mean-0.2-0.5          scores        0.062
+                                              bleurt-anyref-pegasus-cnndm-mean-0.5-0.7          scores        0.062
+                                              bleurt-anyref-pegasus-cnndm-constant-16-32        scores        0.062
+                                              bleurt-anyref-pegasus-cnndm-constant-32-64        scores        0.063
+             CoherenceRating        new       bertscore                                         precision     0.166
+                                                                                                recall       -0.026
+                                                                                                f1            0.043
+                                              bertscore-anyref-pegasus-newsroom-default         precision     0.380
+                                                                                                recall        0.290
+                                                                                                f1            0.364
+                                              bertscore-anyref-pegasus-newsroom-min-0.2-0.5     precision     0.354
+                                                                                                recall        0.376
+                                                                                                f1            0.411
+                                              bertscore-anyref-pegasus-newsroom-min-0.5-0.7     precision     0.354
+                                                                                                recall        0.376
+                                                                                                f1            0.411
+                                              bertscore-anyref-pegasus-newsroom-mean-0.2-0.5    precision     0.354
+                                                                                                recall        0.376
+                                                                                                f1            0.411
+                                              bertscore-anyref-pegasus-newsroom-mean-0.5-0.7    precision     0.354
+                                                                                                recall        0.376
+                                                                                                f1            0.411
+                                              bertscore-anyref-pegasus-newsroom-constant-16-32  precision     0.354
+                                                                                                recall        0.375
+                                                                                                f1            0.411
+                                              bertscore-anyref-pegasus-newsroom-constant-32-64  precision     0.380
+                                                                                                recall        0.290
+                                                                                                f1            0.364
+                                              bertscore-anyref-pegasus-cnndm-default            precision     0.179
+                                                                                                recall        0.127
+                                                                                                f1            0.168
+                                              bertscore-anyref-pegasus-cnndm-min-0.2-0.5        precision     0.182
+                                                                                                recall        0.140
+                                                                                                f1            0.178
+                                              bertscore-anyref-pegasus-cnndm-min-0.5-0.7        precision     0.182
+                                                                                                recall        0.140
+                                                                                                f1            0.178
+                                              bertscore-anyref-pegasus-cnndm-mean-0.2-0.5       precision     0.182
+                                                                                                recall        0.140
+                                                                                                f1            0.178
+                                              bertscore-anyref-pegasus-cnndm-mean-0.5-0.7       precision     0.182
+                                                                                                recall        0.140
+                                                                                                f1            0.178
+                                              bertscore-anyref-pegasus-cnndm-constant-16-32     precision     0.182
+                                                                                                recall        0.140
+                                                                                                f1            0.178
+                                              bertscore-anyref-pegasus-cnndm-constant-32-64     precision     0.179
+                                                                                                recall        0.127
+                                                                                                f1            0.168
+                                              rouge                                             rouge1       -0.229
+                                                                                                rouge2       -0.202
+                                                                                                rougeL       -0.221
+                                                                                                rougeLsum    -0.221
+                                              rouge-anyref-pegasus-newsroom-default             rouge1        0.312
+                                                                                                rouge2        0.287
+                                                                                                rougeL        0.275
+                                                                                                rougeLsum     0.275
+                                              rouge-anyref-pegasus-newsroom-min-0.2-0.5         rouge1        0.271
+                                                                                                rouge2        0.245
+                                                                                                rougeL        0.243
+                                                                                                rougeLsum     0.243
+                                              rouge-anyref-pegasus-newsroom-min-0.5-0.7         rouge1        0.271
+                                                                                                rouge2        0.245
+                                                                                                rougeL        0.243
+                                                                                                rougeLsum     0.243
+                                              rouge-anyref-pegasus-newsroom-mean-0.2-0.5        rouge1        0.271
+                                                                                                rouge2        0.245
+                                                                                                rougeL        0.243
+                                                                                                rougeLsum     0.243
+                                              rouge-anyref-pegasus-newsroom-mean-0.5-0.7        rouge1        0.271
+                                                                                                rouge2        0.245
+                                                                                                rougeL        0.243
+                                                                                                rougeLsum     0.243
+                                              rouge-anyref-pegasus-newsroom-constant-16-32      rouge1        0.271
+                                                                                                rouge2        0.245
+                                                                                                rougeL        0.240
+                                                                                                rougeLsum     0.240
+                                              rouge-anyref-pegasus-newsroom-constant-32-64      rouge1        0.312
+                                                                                                rouge2        0.287
+                                                                                                rougeL        0.275
+                                                                                                rougeLsum     0.275
+                                              rouge-anyref-pegasus-cnndm-default                rouge1        0.159
+                                                                                                rouge2        0.148
+                                                                                                rougeL        0.137
+                                                                                                rougeLsum     0.137
+                                              rouge-anyref-pegasus-cnndm-min-0.2-0.5            rouge1        0.152
+                                                                                                rouge2        0.150
+                                                                                                rougeL        0.139
+                                                                                                rougeLsum     0.139
+                                              rouge-anyref-pegasus-cnndm-min-0.5-0.7            rouge1        0.152
+                                                                                                rouge2        0.150
+                                                                                                rougeL        0.139
+                                                                                                rougeLsum     0.139
+                                              rouge-anyref-pegasus-cnndm-mean-0.2-0.5           rouge1        0.152
+                                                                                                rouge2        0.150
+                                                                                                rougeL        0.139
+                                                                                                rougeLsum     0.139
+                                              rouge-anyref-pegasus-cnndm-mean-0.5-0.7           rouge1        0.152
+                                                                                                rouge2        0.150
+                                                                                                rougeL        0.139
+                                                                                                rougeLsum     0.139
+                                              rouge-anyref-pegasus-cnndm-constant-16-32         rouge1        0.152
+                                                                                                rouge2        0.150
+                                                                                                rougeL        0.139
+                                                                                                rougeLsum     0.139
+                                              rouge-anyref-pegasus-cnndm-constant-32-64         rouge1        0.159
+                                                                                                rouge2        0.148
+                                                                                                rougeL        0.137
+                                                                                                rougeLsum     0.137
+                                              bleurt                                            scores        0.033
+                                              bleurt-anyref-pegasus-newsroom-default            scores        0.183
+                                              bleurt-anyref-pegasus-newsroom-min-0.2-0.5        scores        0.211
+                                              bleurt-anyref-pegasus-newsroom-min-0.5-0.7        scores        0.211
+                                              bleurt-anyref-pegasus-newsroom-mean-0.2-0.5       scores        0.211
+                                              bleurt-anyref-pegasus-newsroom-mean-0.5-0.7       scores        0.211
+                                              bleurt-anyref-pegasus-newsroom-constant-16-32     scores        0.210
+                                              bleurt-anyref-pegasus-newsroom-constant-32-64     scores        0.183
+                                              bleurt-anyref-pegasus-cnndm-default               scores       -0.083
+                                              bleurt-anyref-pegasus-cnndm-min-0.2-0.5           scores       -0.078
+                                              bleurt-anyref-pegasus-cnndm-min-0.5-0.7           scores       -0.078
+                                              bleurt-anyref-pegasus-cnndm-mean-0.2-0.5          scores       -0.078
+                                              bleurt-anyref-pegasus-cnndm-mean-0.5-0.7          scores       -0.078
+                                              bleurt-anyref-pegasus-cnndm-constant-16-32        scores       -0.078
+                                              bleurt-anyref-pegasus-cnndm-constant-32-64        scores       -0.083
+             FluencyRating          new       bertscore                                         precision     0.131
+                                                                                                recall       -0.054
+                                                                                                f1            0.012
+                                              bertscore-anyref-pegasus-newsroom-default         precision     0.259
+                                                                                                recall        0.161
+                                                                                                f1            0.213
+                                              bertscore-anyref-pegasus-newsroom-min-0.2-0.5     precision     0.309
+                                                                                                recall        0.233
+                                                                                                f1            0.295
+                                              bertscore-anyref-pegasus-newsroom-min-0.5-0.7     precision     0.309
+                                                                                                recall        0.233
+                                                                                                f1            0.295
+                                              bertscore-anyref-pegasus-newsroom-mean-0.2-0.5    precision     0.309
+                                                                                                recall        0.233
+                                                                                                f1            0.295
+                                              bertscore-anyref-pegasus-newsroom-mean-0.5-0.7    precision     0.309
+                                                                                                recall        0.233
+                                                                                                f1            0.295
+                                              bertscore-anyref-pegasus-newsroom-constant-16-32  precision     0.310
+                                                                                                recall        0.234
+                                                                                                f1            0.295
+                                              bertscore-anyref-pegasus-newsroom-constant-32-64  precision     0.259
+                                                                                                recall        0.161
+                                                                                                f1            0.213
+                                              bertscore-anyref-pegasus-cnndm-default            precision     0.154
+                                                                                                recall        0.110
+                                                                                                f1            0.145
+                                              bertscore-anyref-pegasus-cnndm-min-0.2-0.5        precision     0.155
+                                                                                                recall        0.123
+                                                                                                f1            0.153
+                                              bertscore-anyref-pegasus-cnndm-min-0.5-0.7        precision     0.155
+                                                                                                recall        0.123
+                                                                                                f1            0.153
+                                              bertscore-anyref-pegasus-cnndm-mean-0.2-0.5       precision     0.155
+                                                                                                recall        0.123
+                                                                                                f1            0.153
+                                              bertscore-anyref-pegasus-cnndm-mean-0.5-0.7       precision     0.155
+                                                                                                recall        0.123
+                                                                                                f1            0.153
+                                              bertscore-anyref-pegasus-cnndm-constant-16-32     precision     0.155
+                                                                                                recall        0.123
+                                                                                                f1            0.153
+                                              bertscore-anyref-pegasus-cnndm-constant-32-64     precision     0.154
+                                                                                                recall        0.110
+                                                                                                f1            0.145
+                                              rouge                                             rouge1       -0.302
+                                                                                                rouge2       -0.285
+                                                                                                rougeL       -0.301
+                                                                                                rougeLsum    -0.301
+                                              rouge-anyref-pegasus-newsroom-default             rouge1        0.074
+                                                                                                rouge2        0.075
+                                                                                                rougeL        0.045
+                                                                                                rougeLsum     0.045
+                                              rouge-anyref-pegasus-newsroom-min-0.2-0.5         rouge1        0.127
+                                                                                                rouge2        0.094
+                                                                                                rougeL        0.093
+                                                                                                rougeLsum     0.093
+                                              rouge-anyref-pegasus-newsroom-min-0.5-0.7         rouge1        0.127
+                                                                                                rouge2        0.094
+                                                                                                rougeL        0.093
+                                                                                                rougeLsum     0.093
+                                              rouge-anyref-pegasus-newsroom-mean-0.2-0.5        rouge1        0.127
+                                                                                                rouge2        0.094
+                                                                                                rougeL        0.093
+                                                                                                rougeLsum     0.093
+                                              rouge-anyref-pegasus-newsroom-mean-0.5-0.7        rouge1        0.127
+                                                                                                rouge2        0.094
+                                                                                                rougeL        0.093
+                                                                                                rougeLsum     0.093
+                                              rouge-anyref-pegasus-newsroom-constant-16-32      rouge1        0.127
+                                                                                                rouge2        0.094
+                                                                                                rougeL        0.090
+                                                                                                rougeLsum     0.090
+                                              rouge-anyref-pegasus-newsroom-constant-32-64      rouge1        0.074
+                                                                                                rouge2        0.075
+                                                                                                rougeL        0.045
+                                                                                                rougeLsum     0.045
+                                              rouge-anyref-pegasus-cnndm-default                rouge1       -0.039
+                                                                                                rouge2       -0.055
+                                                                                                rougeL       -0.074
+                                                                                                rougeLsum    -0.074
+                                              rouge-anyref-pegasus-cnndm-min-0.2-0.5            rouge1       -0.048
+                                                                                                rouge2       -0.052
+                                                                                                rougeL       -0.071
+                                                                                                rougeLsum    -0.071
+                                              rouge-anyref-pegasus-cnndm-min-0.5-0.7            rouge1       -0.048
+                                                                                                rouge2       -0.052
+                                                                                                rougeL       -0.071
+                                                                                                rougeLsum    -0.071
+                                              rouge-anyref-pegasus-cnndm-mean-0.2-0.5           rouge1       -0.048
+                                                                                                rouge2       -0.052
+                                                                                                rougeL       -0.071
+                                                                                                rougeLsum    -0.071
+                                              rouge-anyref-pegasus-cnndm-mean-0.5-0.7           rouge1       -0.048
+                                                                                                rouge2       -0.052
+                                                                                                rougeL       -0.071
+                                                                                                rougeLsum    -0.071
+                                              rouge-anyref-pegasus-cnndm-constant-16-32         rouge1       -0.048
+                                                                                                rouge2       -0.052
+                                                                                                rougeL       -0.071
+                                                                                                rougeLsum    -0.071
+                                              rouge-anyref-pegasus-cnndm-constant-32-64         rouge1       -0.039
+                                                                                                rouge2       -0.055
+                                                                                                rougeL       -0.074
+                                                                                                rougeLsum    -0.074
+                                              bleurt                                            scores       -0.063
+                                              bleurt-anyref-pegasus-newsroom-default            scores       -0.006
+                                              bleurt-anyref-pegasus-newsroom-min-0.2-0.5        scores        0.046
+                                              bleurt-anyref-pegasus-newsroom-min-0.5-0.7        scores        0.046
+                                              bleurt-anyref-pegasus-newsroom-mean-0.2-0.5       scores        0.046
+                                              bleurt-anyref-pegasus-newsroom-mean-0.5-0.7       scores        0.046
+                                              bleurt-anyref-pegasus-newsroom-constant-16-32     scores        0.046
+                                              bleurt-anyref-pegasus-newsroom-constant-32-64     scores       -0.006
+                                              bleurt-anyref-pegasus-cnndm-default               scores       -0.221
+                                              bleurt-anyref-pegasus-cnndm-min-0.2-0.5           scores       -0.218
+                                              bleurt-anyref-pegasus-cnndm-min-0.5-0.7           scores       -0.218
+                                              bleurt-anyref-pegasus-cnndm-mean-0.2-0.5          scores       -0.218
+                                              bleurt-anyref-pegasus-cnndm-mean-0.5-0.7          scores       -0.218
+                                              bleurt-anyref-pegasus-cnndm-constant-16-32        scores       -0.218
+                                              bleurt-anyref-pegasus-cnndm-constant-32-64        scores       -0.221

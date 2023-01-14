@@ -1,0 +1,49 @@
+corr_metric  aspect                 approach  model                                            score_name
+pearsonr     InformativenessRating  new       pagerank-cos-mpnet-entropy                       score        -0.143
+                                              pagerank-cos-mpnet-sum                           score        -0.109
+                                              pagerank-mnli-deberta-entail_contradict-entropy  score        -0.183
+                                              pagerank-mnli-deberta-entail_contradict-sum      score        -0.155
+             RelevanceRating        new       pagerank-cos-mpnet-entropy                       score        -0.117
+                                              pagerank-cos-mpnet-sum                           score        -0.016
+                                              pagerank-mnli-deberta-entail_contradict-entropy  score        -0.062
+                                              pagerank-mnli-deberta-entail_contradict-sum      score        -0.058
+             CoherenceRating        new       pagerank-cos-mpnet-entropy                       score        -0.033
+                                              pagerank-cos-mpnet-sum                           score        -0.100
+                                              pagerank-mnli-deberta-entail_contradict-entropy  score         0.198
+                                              pagerank-mnli-deberta-entail_contradict-sum      score         0.176
+             FluencyRating          new       pagerank-cos-mpnet-entropy                       score        -0.155
+                                              pagerank-cos-mpnet-sum                           score        -0.067
+                                              pagerank-mnli-deberta-entail_contradict-entropy  score         0.298
+                                              pagerank-mnli-deberta-entail_contradict-sum      score         0.279
+kendalltau   InformativenessRating  new       pagerank-cos-mpnet-entropy                       score        -0.071
+                                              pagerank-cos-mpnet-sum                           score        -0.064
+                                              pagerank-mnli-deberta-entail_contradict-entropy  score        -0.078
+                                              pagerank-mnli-deberta-entail_contradict-sum      score        -0.054
+             RelevanceRating        new       pagerank-cos-mpnet-entropy                       score        -0.022
+                                              pagerank-cos-mpnet-sum                           score        -0.078
+                                              pagerank-mnli-deberta-entail_contradict-entropy  score        -0.067
+                                              pagerank-mnli-deberta-entail_contradict-sum      score        -0.044
+             CoherenceRating        new       pagerank-cos-mpnet-entropy                       score         0.007
+                                              pagerank-cos-mpnet-sum                           score        -0.125
+                                              pagerank-mnli-deberta-entail_contradict-entropy  score         0.125
+                                              pagerank-mnli-deberta-entail_contradict-sum      score         0.153
+             FluencyRating          new       pagerank-cos-mpnet-entropy                       score        -0.083
+                                              pagerank-cos-mpnet-sum                           score        -0.062
+                                              pagerank-mnli-deberta-entail_contradict-entropy  score         0.143
+                                              pagerank-mnli-deberta-entail_contradict-sum      score         0.169
+spearmanr    InformativenessRating  new       pagerank-cos-mpnet-entropy                       score        -0.113
+                                              pagerank-cos-mpnet-sum                           score        -0.072
+                                              pagerank-mnli-deberta-entail_contradict-entropy  score        -0.128
+                                              pagerank-mnli-deberta-entail_contradict-sum      score        -0.082
+             RelevanceRating        new       pagerank-cos-mpnet-entropy                       score        -0.054
+                                              pagerank-cos-mpnet-sum                           score        -0.097
+                                              pagerank-mnli-deberta-entail_contradict-entropy  score        -0.105
+                                              pagerank-mnli-deberta-entail_contradict-sum      score        -0.068
+             CoherenceRating        new       pagerank-cos-mpnet-entropy                       score         0.011
+                                              pagerank-cos-mpnet-sum                           score        -0.187
+                                              pagerank-mnli-deberta-entail_contradict-entropy  score         0.177
+                                              pagerank-mnli-deberta-entail_contradict-sum      score         0.216
+             FluencyRating          new       pagerank-cos-mpnet-entropy                       score        -0.110
+                                              pagerank-cos-mpnet-sum                           score        -0.092
+                                              pagerank-mnli-deberta-entail_contradict-entropy  score         0.235
+                                              pagerank-mnli-deberta-entail_contradict-sum      score         0.264

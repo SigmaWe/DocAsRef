@@ -1,0 +1,481 @@
+corr_metric  aspect                 approach  model                            score_name
+pearsonr     InformativenessRating  trad      bertscore                        precision     0.511
+                                                                               recall        0.285
+                                                                               f1            0.430
+                                    new       bertscore                        precision     0.390
+                                                                               recall        0.180
+                                                                               f1            0.300
+                                    trad      bertscore-sentence-cos-mpnet     P             0.449
+                                                                               R             0.503
+                                                                               F             0.500
+                                    new       bertscore-sentence-cos-mpnet     P             0.423
+                                                                               R             0.317
+                                                                               F             0.364
+                                    trad      bertscore-sentence-cos-roberta   P             0.486
+                                                                               R             0.500
+                                                                               F             0.512
+                                    new       bertscore-sentence-cos-roberta   P             0.476
+                                                                               R             0.337
+                                                                               F             0.397
+                                    trad      bertscore-sentence-mnli-roberta  P             0.225
+                                                                               R             0.231
+                                                                               F             0.214
+                                    new       bertscore-sentence-mnli-roberta  P             0.060
+                                                                               R            -0.018
+                                                                               F            -0.010
+                                    trad      bertscore-sentence-mnli-bart     P             0.065
+                                                                               R             0.006
+                                                                               F             0.037
+                                    new       bertscore-sentence-mnli-bart     P            -0.342
+                                                                               R             0.001
+                                                                               F            -0.342
+                                    trad      rouge                            rouge1        0.368
+                                                                               rouge2        0.414
+                                                                               rougeL        0.359
+                                                                               rougeLsum     0.359
+                                    new       rouge                            rouge1        0.109
+                                                                               rouge2        0.128
+                                                                               rougeL        0.104
+                                                                               rougeLsum     0.104
+                                    trad      bleurt                           scores        0.385
+                                    new       bleurt                           scores        0.378
+             RelevanceRating        trad      bertscore                        precision     0.487
+                                                                               recall        0.301
+                                                                               f1            0.430
+                                    new       bertscore                        precision     0.259
+                                                                               recall        0.122
+                                                                               f1            0.202
+                                    trad      bertscore-sentence-cos-mpnet     P             0.358
+                                                                               R             0.378
+                                                                               F             0.395
+                                    new       bertscore-sentence-cos-mpnet     P             0.506
+                                                                               R             0.254
+                                                                               F             0.337
+                                    trad      bertscore-sentence-cos-roberta   P             0.416
+                                                                               R             0.402
+                                                                               F             0.432
+                                    new       bertscore-sentence-cos-roberta   P             0.558
+                                                                               R             0.301
+                                                                               F             0.401
+                                    trad      bertscore-sentence-mnli-roberta  P             0.195
+                                                                               R             0.210
+                                                                               F             0.196
+                                    new       bertscore-sentence-mnli-roberta  P             0.107
+                                                                               R            -0.181
+                                                                               F            -0.183
+                                    trad      bertscore-sentence-mnli-bart     P            -0.052
+                                                                               R            -0.116
+                                                                               F            -0.086
+                                    new       bertscore-sentence-mnli-bart     P            -0.317
+                                                                               R             0.117
+                                                                               F            -0.317
+                                    trad      rouge                            rouge1        0.337
+                                                                               rouge2        0.352
+                                                                               rougeL        0.328
+                                                                               rougeLsum     0.328
+                                    new       rouge                            rouge1        0.002
+                                                                               rouge2        0.018
+                                                                               rougeL        0.002
+                                                                               rougeLsum     0.002
+                                    trad      bleurt                           scores        0.300
+                                    new       bleurt                           scores        0.301
+             CoherenceRating        trad      bertscore                        precision     0.407
+                                                                               recall        0.149
+                                                                               f1            0.298
+                                    new       bertscore                        precision     0.132
+                                                                               recall       -0.181
+                                                                               f1           -0.053
+                                    trad      bertscore-sentence-cos-mpnet     P             0.323
+                                                                               R             0.330
+                                                                               F             0.351
+                                    new       bertscore-sentence-cos-mpnet     P             0.344
+                                                                               R            -0.063
+                                                                               F            -0.005
+                                    trad      bertscore-sentence-cos-roberta   P             0.326
+                                                                               R             0.298
+                                                                               F             0.333
+                                    new       bertscore-sentence-cos-roberta   P             0.405
+                                                                               R            -0.037
+                                                                               F             0.037
+                                    trad      bertscore-sentence-mnli-roberta  P             0.137
+                                                                               R             0.161
+                                                                               F             0.139
+                                    new       bertscore-sentence-mnli-roberta  P             0.133
+                                                                               R            -0.211
+                                                                               F            -0.183
+                                    trad      bertscore-sentence-mnli-bart     P            -0.005
+                                                                               R            -0.056
+                                                                               F            -0.033
+                                    new       bertscore-sentence-mnli-bart     P            -0.188
+                                                                               R            -0.044
+                                                                               F            -0.188
+                                    trad      rouge                            rouge1        0.289
+                                                                               rouge2        0.279
+                                                                               rougeL        0.239
+                                                                               rougeLsum     0.239
+                                    new       rouge                            rouge1       -0.289
+                                                                               rouge2       -0.274
+                                                                               rougeL       -0.293
+                                                                               rougeLsum    -0.293
+                                    trad      bleurt                           scores        0.210
+                                    new       bleurt                           scores        0.022
+             FluencyRating          trad      bertscore                        precision     0.348
+                                                                               recall        0.149
+                                                                               f1            0.269
+                                    new       bertscore                        precision     0.107
+                                                                               recall       -0.226
+                                                                               f1           -0.096
+                                    trad      bertscore-sentence-cos-mpnet     P             0.212
+                                                                               R             0.206
+                                                                               F             0.227
+                                    new       bertscore-sentence-cos-mpnet     P             0.368
+                                                                               R            -0.114
+                                                                               F            -0.054
+                                    trad      bertscore-sentence-cos-roberta   P             0.244
+                                                                               R             0.220
+                                                                               F             0.247
+                                    new       bertscore-sentence-cos-roberta   P             0.405
+                                                                               R            -0.079
+                                                                               F            -0.005
+                                    trad      bertscore-sentence-mnli-roberta  P             0.071
+                                                                               R             0.064
+                                                                               F             0.064
+                                    new       bertscore-sentence-mnli-roberta  P             0.089
+                                                                               R            -0.234
+                                                                               F            -0.214
+                                    trad      bertscore-sentence-mnli-bart     P            -0.176
+                                                                               R            -0.228
+                                                                               F            -0.206
+                                    new       bertscore-sentence-mnli-bart     P            -0.183
+                                                                               R            -0.116
+                                                                               F            -0.183
+                                    trad      rouge                            rouge1        0.195
+                                                                               rouge2        0.188
+                                                                               rougeL        0.148
+                                                                               rougeLsum     0.148
+                                    new       rouge                            rouge1       -0.354
+                                                                               rouge2       -0.337
+                                                                               rougeL       -0.362
+                                                                               rougeLsum    -0.362
+                                    trad      bleurt                           scores        0.102
+                                    new       bleurt                           scores       -0.069
+kendalltau   InformativenessRating  trad      bertscore                        precision     0.347
+                                                                               recall        0.178
+                                                                               f1            0.271
+                                    new       bertscore                        precision     0.310
+                                                                               recall        0.216
+                                                                               f1            0.266
+                                    trad      bertscore-sentence-cos-mpnet     P             0.310
+                                                                               R             0.352
+                                                                               F             0.349
+                                    new       bertscore-sentence-cos-mpnet     P             0.349
+                                                                               R             0.217
+                                                                               F             0.239
+                                    trad      bertscore-sentence-cos-roberta   P             0.326
+                                                                               R             0.331
+                                                                               F             0.344
+                                    new       bertscore-sentence-cos-roberta   P             0.343
+                                                                               R             0.217
+                                                                               F             0.265
+                                    trad      bertscore-sentence-mnli-roberta  P             0.138
+                                                                               R             0.152
+                                                                               F             0.146
+                                    new       bertscore-sentence-mnli-roberta  P             0.026
+                                                                               R            -0.015
+                                                                               F             0.015
+                                    trad      bertscore-sentence-mnli-bart     P            -0.021
+                                                                               R            -0.025
+                                                                               F            -0.037
+                                    new       bertscore-sentence-mnli-bart     P            -0.089
+                                                                               R            -0.049
+                                                                               F            -0.032
+                                    trad      rouge                            rouge1        0.248
+                                                                               rouge2        0.295
+                                                                               rougeL        0.247
+                                                                               rougeLsum     0.247
+                                    new       rouge                            rouge1        0.106
+                                                                               rouge2        0.131
+                                                                               rougeL        0.124
+                                                                               rougeLsum     0.124
+                                    trad      bleurt                           scores        0.273
+                                    new       bleurt                           scores        0.220
+             RelevanceRating        trad      bertscore                        precision     0.332
+                                                                               recall        0.203
+                                                                               f1            0.289
+                                    new       bertscore                        precision     0.204
+                                                                               recall        0.226
+                                                                               f1            0.211
+                                    trad      bertscore-sentence-cos-mpnet     P             0.228
+                                                                               R             0.249
+                                                                               F             0.245
+                                    new       bertscore-sentence-cos-mpnet     P             0.395
+                                                                               R             0.216
+                                                                               F             0.237
+                                    trad      bertscore-sentence-cos-roberta   P             0.280
+                                                                               R             0.289
+                                                                               F             0.300
+                                    new       bertscore-sentence-cos-roberta   P             0.384
+                                                                               R             0.248
+                                                                               F             0.297
+                                    trad      bertscore-sentence-mnli-roberta  P             0.099
+                                                                               R             0.074
+                                                                               F             0.099
+                                    new       bertscore-sentence-mnli-roberta  P             0.075
+                                                                               R            -0.093
+                                                                               F            -0.070
+                                    trad      bertscore-sentence-mnli-bart     P            -0.018
+                                                                               R            -0.036
+                                                                               F            -0.043
+                                    new       bertscore-sentence-mnli-bart     P            -0.098
+                                                                               R            -0.074
+                                                                               F            -0.066
+                                    trad      rouge                            rouge1        0.252
+                                                                               rouge2        0.289
+                                                                               rougeL        0.253
+                                                                               rougeLsum     0.253
+                                    new       rouge                            rouge1        0.076
+                                                                               rouge2        0.101
+                                                                               rougeL        0.086
+                                                                               rougeLsum     0.086
+                                    trad      bleurt                           scores        0.200
+                                    new       bleurt                           scores        0.299
+             CoherenceRating        trad      bertscore                        precision     0.281
+                                                                               recall        0.099
+                                                                               f1            0.192
+                                    new       bertscore                        precision     0.114
+                                                                               recall       -0.015
+                                                                               f1            0.033
+                                    trad      bertscore-sentence-cos-mpnet     P             0.188
+                                                                               R             0.216
+                                                                               F             0.227
+                                    new       bertscore-sentence-cos-mpnet     P             0.255
+                                                                               R            -0.021
+                                                                               F             0.014
+                                    trad      bertscore-sentence-cos-roberta   P             0.186
+                                                                               R             0.185
+                                                                               F             0.208
+                                    new       bertscore-sentence-cos-roberta   P             0.266
+                                                                               R             0.003
+                                                                               F             0.055
+                                    trad      bertscore-sentence-mnli-roberta  P             0.090
+                                                                               R             0.113
+                                                                               F             0.096
+                                    new       bertscore-sentence-mnli-roberta  P             0.074
+                                                                               R            -0.125
+                                                                               F            -0.088
+                                    trad      bertscore-sentence-mnli-bart     P             0.005
+                                                                               R            -0.036
+                                                                               F            -0.011
+                                    new       bertscore-sentence-mnli-bart     P            -0.101
+                                                                               R            -0.180
+                                                                               F            -0.146
+                                    trad      rouge                            rouge1        0.208
+                                                                               rouge2        0.224
+                                                                               rougeL        0.174
+                                                                               rougeLsum     0.174
+                                    new       rouge                            rouge1       -0.161
+                                                                               rouge2       -0.140
+                                                                               rougeL       -0.150
+                                                                               rougeLsum    -0.150
+                                    trad      bleurt                           scores        0.152
+                                    new       bleurt                           scores        0.027
+             FluencyRating          trad      bertscore                        precision     0.293
+                                                                               recall        0.122
+                                                                               f1            0.217
+                                    new       bertscore                        precision     0.081
+                                                                               recall       -0.033
+                                                                               f1            0.015
+                                    trad      bertscore-sentence-cos-mpnet     P             0.173
+                                                                               R             0.189
+                                                                               F             0.193
+                                    new       bertscore-sentence-cos-mpnet     P             0.290
+                                                                               R            -0.023
+                                                                               F             0.011
+                                    trad      bertscore-sentence-cos-roberta   P             0.189
+                                                                               R             0.190
+                                                                               F             0.216
+                                    new       bertscore-sentence-cos-roberta   P             0.304
+                                                                               R            -0.005
+                                                                               F             0.051
+                                    trad      bertscore-sentence-mnli-roberta  P             0.042
+                                                                               R             0.031
+                                                                               F             0.041
+                                    new       bertscore-sentence-mnli-roberta  P             0.069
+                                                                               R            -0.138
+                                                                               F            -0.110
+                                    trad      bertscore-sentence-mnli-bart     P            -0.122
+                                                                               R            -0.171
+                                                                               F            -0.144
+                                    new       bertscore-sentence-mnli-bart     P            -0.173
+                                                                               R            -0.241
+                                                                               F            -0.227
+                                    trad      rouge                            rouge1        0.167
+                                                                               rouge2        0.170
+                                                                               rougeL        0.136
+                                                                               rougeLsum     0.136
+                                    new       rouge                            rouge1       -0.215
+                                                                               rouge2       -0.208
+                                                                               rougeL       -0.210
+                                                                               rougeLsum    -0.210
+                                    trad      bleurt                           scores        0.111
+                                    new       bleurt                           scores       -0.042
+spearmanr    InformativenessRating  trad      bertscore                        precision     0.505
+                                                                               recall        0.248
+                                                                               f1            0.392
+                                    new       bertscore                        precision     0.440
+                                                                               recall        0.311
+                                                                               f1            0.360
+                                    trad      bertscore-sentence-cos-mpnet     P             0.443
+                                                                               R             0.507
+                                                                               F             0.504
+                                    new       bertscore-sentence-cos-mpnet     P             0.498
+                                                                               R             0.297
+                                                                               F             0.332
+                                    trad      bertscore-sentence-cos-roberta   P             0.467
+                                                                               R             0.489
+                                                                               F             0.512
+                                    new       bertscore-sentence-cos-roberta   P             0.485
+                                                                               R             0.306
+                                                                               F             0.372
+                                    trad      bertscore-sentence-mnli-roberta  P             0.201
+                                                                               R             0.232
+                                                                               F             0.212
+                                    new       bertscore-sentence-mnli-roberta  P             0.042
+                                                                               R            -0.011
+                                                                               F             0.038
+                                    trad      bertscore-sentence-mnli-bart     P            -0.024
+                                                                               R            -0.037
+                                                                               F            -0.046
+                                    new       bertscore-sentence-mnli-bart     P            -0.118
+                                                                               R            -0.069
+                                                                               F            -0.047
+                                    trad      rouge                            rouge1        0.368
+                                                                               rouge2        0.416
+                                                                               rougeL        0.360
+                                                                               rougeLsum     0.360
+                                    new       rouge                            rouge1        0.184
+                                                                               rouge2        0.213
+                                                                               rougeL        0.204
+                                                                               rougeLsum     0.204
+                                    trad      bleurt                           scores        0.399
+                                    new       bleurt                           scores        0.325
+             RelevanceRating        trad      bertscore                        precision     0.474
+                                                                               recall        0.276
+                                                                               f1            0.404
+                                    new       bertscore                        precision     0.304
+                                                                               recall        0.323
+                                                                               f1            0.293
+                                    trad      bertscore-sentence-cos-mpnet     P             0.316
+                                                                               R             0.354
+                                                                               F             0.347
+                                    new       bertscore-sentence-cos-mpnet     P             0.566
+                                                                               R             0.317
+                                                                               F             0.346
+                                    trad      bertscore-sentence-cos-roberta   P             0.377
+                                                                               R             0.400
+                                                                               F             0.410
+                                    new       bertscore-sentence-cos-roberta   P             0.541
+                                                                               R             0.360
+                                                                               F             0.424
+                                    trad      bertscore-sentence-mnli-roberta  P             0.151
+                                                                               R             0.118
+                                                                               F             0.157
+                                    new       bertscore-sentence-mnli-roberta  P             0.120
+                                                                               R            -0.141
+                                                                               F            -0.104
+                                    trad      bertscore-sentence-mnli-bart     P            -0.034
+                                                                               R            -0.064
+                                                                               F            -0.064
+                                    new       bertscore-sentence-mnli-bart     P            -0.127
+                                                                               R            -0.098
+                                                                               F            -0.084
+                                    trad      rouge                            rouge1        0.359
+                                                                               rouge2        0.393
+                                                                               rougeL        0.358
+                                                                               rougeLsum     0.358
+                                    new       rouge                            rouge1        0.111
+                                                                               rouge2        0.144
+                                                                               rougeL        0.127
+                                                                               rougeLsum     0.127
+                                    trad      bleurt                           scores        0.301
+                                    new       bleurt                           scores        0.427
+             CoherenceRating        trad      bertscore                        precision     0.410
+                                                                               recall        0.139
+                                                                               f1            0.290
+                                    new       bertscore                        precision     0.166
+                                                                               recall       -0.026
+                                                                               f1            0.043
+                                    trad      bertscore-sentence-cos-mpnet     P             0.286
+                                                                               R             0.322
+                                                                               F             0.336
+                                    new       bertscore-sentence-cos-mpnet     P             0.362
+                                                                               R            -0.044
+                                                                               F             0.005
+                                    trad      bertscore-sentence-cos-roberta   P             0.280
+                                                                               R             0.282
+                                                                               F             0.313
+                                    new       bertscore-sentence-cos-roberta   P             0.381
+                                                                               R            -0.005
+                                                                               F             0.073
+                                    trad      bertscore-sentence-mnli-roberta  P             0.124
+                                                                               R             0.153
+                                                                               F             0.139
+                                    new       bertscore-sentence-mnli-roberta  P             0.126
+                                                                               R            -0.178
+                                                                               F            -0.132
+                                    trad      bertscore-sentence-mnli-bart     P             0.006
+                                                                               R            -0.038
+                                                                               F            -0.015
+                                    new       bertscore-sentence-mnli-bart     P            -0.154
+                                                                               R            -0.270
+                                                                               F            -0.241
+                                    trad      rouge                            rouge1        0.313
+                                                                               rouge2        0.317
+                                                                               rougeL        0.269
+                                                                               rougeLsum     0.269
+                                    new       rouge                            rouge1       -0.229
+                                                                               rouge2       -0.202
+                                                                               rougeL       -0.221
+                                                                               rougeLsum    -0.221
+                                    trad      bleurt                           scores        0.239
+                                    new       bleurt                           scores        0.033
+             FluencyRating          trad      bertscore                        precision     0.434
+                                                                               recall        0.172
+                                                                               f1            0.325
+                                    new       bertscore                        precision     0.131
+                                                                               recall       -0.054
+                                                                               f1            0.012
+                                    trad      bertscore-sentence-cos-mpnet     P             0.248
+                                                                               R             0.281
+                                                                               F             0.281
+                                    new       bertscore-sentence-cos-mpnet     P             0.423
+                                                                               R            -0.032
+                                                                               F             0.016
+                                    trad      bertscore-sentence-cos-roberta   P             0.279
+                                                                               R             0.294
+                                                                               F             0.312
+                                    new       bertscore-sentence-cos-roberta   P             0.445
+                                                                               R            -0.001
+                                                                               F             0.073
+                                    trad      bertscore-sentence-mnli-roberta  P             0.048
+                                                                               R             0.052
+                                                                               F             0.054
+                                    new       bertscore-sentence-mnli-roberta  P             0.103
+                                                                               R            -0.208
+                                                                               F            -0.164
+                                    trad      bertscore-sentence-mnli-bart     P            -0.184
+                                                                               R            -0.243
+                                                                               F            -0.212
+                                    new       bertscore-sentence-mnli-bart     P            -0.267
+                                                                               R            -0.358
+                                                                               F            -0.332
+                                    trad      rouge                            rouge1        0.263
+                                                                               rouge2        0.250
+                                                                               rougeL        0.208
+                                                                               rougeLsum     0.208
+                                    new       rouge                            rouge1       -0.302
+                                                                               rouge2       -0.285
+                                                                               rougeL       -0.301
+                                                                               rougeLsum    -0.301
+                                    trad      bleurt                           scores        0.154
+                                    new       bleurt                           scores       -0.063

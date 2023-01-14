@@ -1,0 +1,124 @@
+corr_metric  aspect              approach  model                                              score_name          
+pearsonr     litepyramid_recall  new       bertscore-sentence-mnli-roberta-not_neutral        P                      -0.243
+                                                                                              R                      -0.049
+                                                                                              F                      -0.068
+                                           bertscore-sentence-mnli-roberta-entail_only        P                      -0.144
+                                                                                              R                      -0.073
+                                                                                              F                      -0.085
+                                           bertscore-sentence-mnli-roberta-entail_contradict  P                      -0.125
+                                                                                              R                      -0.027
+                                                                                              F                      -0.230
+                                           bertscore-sentence-mnli-bart-not_neutral           P                      -0.103
+                                                                                              R                      -0.095
+                                                                                              F                      -0.087
+                                           bertscore-sentence-mnli-bart-entail_only           P                      -0.008
+                                                                                              R                       0.055
+                                                                                              F                       0.071
+                                           bertscore-sentence-mnli-bart-entail_contradict     P                      -0.001
+                                                                                              R                       0.153
+                                                                                              F                       0.266
+                                           bertscore-sentence-mnli-deberta-not_neutral        P                      -0.104
+                                                                                              R                      -0.050
+                                                                                              F                      -0.040
+                                           bertscore-sentence-mnli-deberta-entail_only        P                      -0.015
+                                                                                              R                       0.075
+                                                                                              F                       0.088
+                                           bertscore-sentence-mnli-deberta-entail_contradict  P                      -0.003
+                                                                                              R                       0.159
+                                                                                              F                       0.189
+                                 PreCalc   PreCalc                                            rouge_1_f_score         0.360
+                                                                                              rouge_2_recall          0.459
+                                                                                              rouge_l_recall          0.477
+                                                                                              rouge_2_precision       0.378
+                                                                                              rouge_2_f_score         0.414
+                                                                                              rouge_1_precision       0.263
+                                                                                              rouge_1_recall          0.463
+                                                                                              rouge_l_precision       0.304
+                                                                                              rouge_l_f_score         0.389
+                                                                                              js-2                    0.431
+                                                                                              mover_score             0.310
+                                                                                              bert_recall_score       0.459
+                                                                                              bert_precision_score    0.310
+                                                                                              bert_f_score            0.406
+kendalltau   litepyramid_recall  new       bertscore-sentence-mnli-roberta-not_neutral        P                      -0.181
+                                                                                              R                      -0.024
+                                                                                              F                      -0.042
+                                           bertscore-sentence-mnli-roberta-entail_only        P                      -0.116
+                                                                                              R                      -0.033
+                                                                                              F                      -0.036
+                                           bertscore-sentence-mnli-roberta-entail_contradict  P                      -0.110
+                                                                                              R                       0.003
+                                                                                              F                      -0.013
+                                           bertscore-sentence-mnli-bart-not_neutral           P                      -0.094
+                                                                                              R                      -0.082
+                                                                                              F                      -0.084
+                                           bertscore-sentence-mnli-bart-entail_only           P                      -0.014
+                                                                                              R                       0.063
+                                                                                              F                       0.057
+                                           bertscore-sentence-mnli-bart-entail_contradict     P                      -0.007
+                                                                                              R                       0.126
+                                                                                              F                       0.187
+                                           bertscore-sentence-mnli-deberta-not_neutral        P                      -0.056
+                                                                                              R                      -0.033
+                                                                                              F                      -0.027
+                                           bertscore-sentence-mnli-deberta-entail_only        P                      -0.002
+                                                                                              R                       0.083
+                                                                                              F                       0.084
+                                           bertscore-sentence-mnli-deberta-entail_contradict  P                       0.011
+                                                                                              R                       0.142
+                                                                                              F                       0.141
+                                 PreCalc   PreCalc                                            rouge_1_f_score         0.239
+                                                                                              rouge_2_recall          0.343
+                                                                                              rouge_l_recall          0.314
+                                                                                              rouge_2_precision       0.283
+                                                                                              rouge_2_f_score         0.308
+                                                                                              rouge_1_precision       0.177
+                                                                                              rouge_1_recall          0.299
+                                                                                              rouge_l_precision       0.217
+                                                                                              rouge_l_f_score         0.266
+                                                                                              js-2                    0.310
+                                                                                              mover_score             0.227
+                                                                                              bert_recall_score       0.332
+                                                                                              bert_precision_score    0.221
+                                                                                              bert_f_score            0.296
+spearmanr    litepyramid_recall  new       bertscore-sentence-mnli-roberta-not_neutral        P                      -0.261
+                                                                                              R                      -0.040
+                                                                                              F                      -0.065
+                                           bertscore-sentence-mnli-roberta-entail_only        P                      -0.167
+                                                                                              R                      -0.050
+                                                                                              F                      -0.060
+                                           bertscore-sentence-mnli-roberta-entail_contradict  P                      -0.161
+                                                                                              R                       0.001
+                                                                                              F                      -0.021
+                                           bertscore-sentence-mnli-bart-not_neutral           P                      -0.144
+                                                                                              R                      -0.124
+                                                                                              F                      -0.132
+                                           bertscore-sentence-mnli-bart-entail_only           P                      -0.016
+                                                                                              R                       0.100
+                                                                                              F                       0.091
+                                           bertscore-sentence-mnli-bart-entail_contradict     P                      -0.008
+                                                                                              R                       0.192
+                                                                                              F                       0.274
+                                           bertscore-sentence-mnli-deberta-not_neutral        P                      -0.081
+                                                                                              R                      -0.042
+                                                                                              F                      -0.032
+                                           bertscore-sentence-mnli-deberta-entail_only        P                       0.000
+                                                                                              R                       0.122
+                                                                                              F                       0.124
+                                           bertscore-sentence-mnli-deberta-entail_contradict  P                       0.016
+                                                                                              R                       0.199
+                                                                                              F                       0.201
+                                 PreCalc   PreCalc                                            rouge_1_f_score         0.346
+                                                                                              rouge_2_recall          0.480
+                                                                                              rouge_l_recall          0.456
+                                                                                              rouge_2_precision       0.395
+                                                                                              rouge_2_f_score         0.437
+                                                                                              rouge_1_precision       0.262
+                                                                                              rouge_1_recall          0.423
+                                                                                              rouge_l_precision       0.314
+                                                                                              rouge_l_f_score         0.379
+                                                                                              js-2                    0.435
+                                                                                              mover_score             0.324
+                                                                                              bert_recall_score       0.441
+                                                                                              bert_precision_score    0.315
+                                                                                              bert_f_score            0.403

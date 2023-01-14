@@ -1,0 +1,145 @@
+corr_metric  aspect                 approach  model                                                               score_name
+pearsonr     InformativenessRating  new       bertscore-sentence-pagerank-cos-mpnet-entropy                       P             0.528
+                                                                                                                  R             0.336
+                                                                                                                  F             0.367
+                                              bertscore-sentence-pagerank-cos-mpnet-sum                           P             0.539
+                                                                                                                  R             0.280
+                                                                                                                  F             0.427
+                                              bertscore-sentence-pagerank-mnli-deberta-entail_contradict-entropy  P             0.399
+                                                                                                                  R             0.051
+                                                                                                                  F             0.160
+                                              bertscore-sentence-pagerank-mnli-deberta-entail_contradict-sum      P            -0.026
+                                                                                                                  R             0.109
+                                                                                                                  F            -0.465
+             RelevanceRating        new       bertscore-sentence-pagerank-cos-mpnet-entropy                       P             0.578
+                                                                                                                  R             0.213
+                                                                                                                  F             0.306
+                                              bertscore-sentence-pagerank-cos-mpnet-sum                           P             0.563
+                                                                                                                  R             0.215
+                                                                                                                  F             0.349
+                                              bertscore-sentence-pagerank-mnli-deberta-entail_contradict-entropy  P             0.328
+                                                                                                                  R            -0.064
+                                                                                                                  F             0.062
+                                              bertscore-sentence-pagerank-mnli-deberta-entail_contradict-sum      P             0.012
+                                                                                                                  R             0.072
+                                                                                                                  F            -0.546
+             CoherenceRating        new       bertscore-sentence-pagerank-cos-mpnet-entropy                       P             0.382
+                                                                                                                  R            -0.061
+                                                                                                                  F             0.005
+                                              bertscore-sentence-pagerank-cos-mpnet-sum                           P             0.395
+                                                                                                                  R            -0.075
+                                                                                                                  F             0.014
+                                              bertscore-sentence-pagerank-mnli-deberta-entail_contradict-entropy  P             0.367
+                                                                                                                  R            -0.111
+                                                                                                                  F             0.099
+                                              bertscore-sentence-pagerank-mnli-deberta-entail_contradict-sum      P             0.082
+                                                                                                                  R             0.086
+                                                                                                                  F            -0.440
+             FluencyRating          new       bertscore-sentence-pagerank-cos-mpnet-entropy                       P             0.429
+                                                                                                                  R            -0.159
+                                                                                                                  F            -0.068
+                                              bertscore-sentence-pagerank-cos-mpnet-sum                           P             0.406
+                                                                                                                  R            -0.172
+                                                                                                                  F            -0.042
+                                              bertscore-sentence-pagerank-mnli-deberta-entail_contradict-entropy  P             0.194
+                                                                                                                  R            -0.175
+                                                                                                                  F             0.108
+                                              bertscore-sentence-pagerank-mnli-deberta-entail_contradict-sum      P             0.030
+                                                                                                                  R             0.042
+                                                                                                                  F            -0.434
+kendalltau   InformativenessRating  new       bertscore-sentence-pagerank-cos-mpnet-entropy                       P             0.403
+                                                                                                                  R             0.228
+                                                                                                                  F             0.254
+                                              bertscore-sentence-pagerank-cos-mpnet-sum                           P             0.413
+                                                                                                                  R             0.219
+                                                                                                                  F             0.296
+                                              bertscore-sentence-pagerank-mnli-deberta-entail_contradict-entropy  P             0.278
+                                                                                                                  R            -0.019
+                                                                                                                  F             0.072
+                                              bertscore-sentence-pagerank-mnli-deberta-entail_contradict-sum      P             0.068
+                                                                                                                  R            -0.038
+                                                                                                                  F            -0.188
+             RelevanceRating        new       bertscore-sentence-pagerank-cos-mpnet-entropy                       P             0.404
+                                                                                                                  R             0.176
+                                                                                                                  F             0.227
+                                              bertscore-sentence-pagerank-cos-mpnet-sum                           P             0.415
+                                                                                                                  R             0.187
+                                                                                                                  F             0.271
+                                              bertscore-sentence-pagerank-mnli-deberta-entail_contradict-entropy  P             0.176
+                                                                                                                  R             0.025
+                                                                                                                  F            -0.010
+                                              bertscore-sentence-pagerank-mnli-deberta-entail_contradict-sum      P             0.055
+                                                                                                                  R             0.002
+                                                                                                                  F            -0.283
+             CoherenceRating        new       bertscore-sentence-pagerank-cos-mpnet-entropy                       P             0.263
+                                                                                                                  R            -0.019
+                                                                                                                  F             0.020
+                                              bertscore-sentence-pagerank-cos-mpnet-sum                           P             0.282
+                                                                                                                  R            -0.013
+                                                                                                                  F             0.038
+                                              bertscore-sentence-pagerank-mnli-deberta-entail_contradict-entropy  P             0.231
+                                                                                                                  R            -0.042
+                                                                                                                  F             0.117
+                                              bertscore-sentence-pagerank-mnli-deberta-entail_contradict-sum      P             0.089
+                                                                                                                  R            -0.012
+                                                                                                                  F            -0.273
+             FluencyRating          new       bertscore-sentence-pagerank-cos-mpnet-entropy                       P             0.310
+                                                                                                                  R            -0.056
+                                                                                                                  F            -0.003
+                                              bertscore-sentence-pagerank-cos-mpnet-sum                           P             0.311
+                                                                                                                  R            -0.061
+                                                                                                                  F             0.013
+                                              bertscore-sentence-pagerank-mnli-deberta-entail_contradict-entropy  P             0.141
+                                                                                                                  R            -0.030
+                                                                                                                  F             0.050
+                                              bertscore-sentence-pagerank-mnli-deberta-entail_contradict-sum      P             0.069
+                                                                                                                  R            -0.025
+                                                                                                                  F            -0.260
+spearmanr    InformativenessRating  new       bertscore-sentence-pagerank-cos-mpnet-entropy                       P             0.569
+                                                                                                                  R             0.322
+                                                                                                                  F             0.353
+                                              bertscore-sentence-pagerank-cos-mpnet-sum                           P             0.578
+                                                                                                                  R             0.316
+                                                                                                                  F             0.430
+                                              bertscore-sentence-pagerank-mnli-deberta-entail_contradict-entropy  P             0.391
+                                                                                                                  R            -0.022
+                                                                                                                  F             0.092
+                                              bertscore-sentence-pagerank-mnli-deberta-entail_contradict-sum      P             0.106
+                                                                                                                  R            -0.056
+                                                                                                                  F            -0.269
+             RelevanceRating        new       bertscore-sentence-pagerank-cos-mpnet-entropy                       P             0.597
+                                                                                                                  R             0.275
+                                                                                                                  F             0.346
+                                              bertscore-sentence-pagerank-cos-mpnet-sum                           P             0.601
+                                                                                                                  R             0.284
+                                                                                                                  F             0.407
+                                              bertscore-sentence-pagerank-mnli-deberta-entail_contradict-entropy  P             0.246
+                                                                                                                  R             0.030
+                                                                                                                  F            -0.010
+                                              bertscore-sentence-pagerank-mnli-deberta-entail_contradict-sum      P             0.084
+                                                                                                                  R             0.004
+                                                                                                                  F            -0.394
+             CoherenceRating        new       bertscore-sentence-pagerank-cos-mpnet-entropy                       P             0.381
+                                                                                                                  R            -0.044
+                                                                                                                  F             0.019
+                                              bertscore-sentence-pagerank-cos-mpnet-sum                           P             0.406
+                                                                                                                  R            -0.023
+                                                                                                                  F             0.054
+                                              bertscore-sentence-pagerank-mnli-deberta-entail_contradict-entropy  P             0.327
+                                                                                                                  R            -0.064
+                                                                                                                  F             0.155
+                                              bertscore-sentence-pagerank-mnli-deberta-entail_contradict-sum      P             0.124
+                                                                                                                  R            -0.022
+                                                                                                                  F            -0.387
+             FluencyRating          new       bertscore-sentence-pagerank-cos-mpnet-entropy                       P             0.451
+                                                                                                                  R            -0.088
+                                                                                                                  F            -0.004
+                                              bertscore-sentence-pagerank-cos-mpnet-sum                           P             0.447
+                                                                                                                  R            -0.071
+                                                                                                                  F             0.037
+                                              bertscore-sentence-pagerank-mnli-deberta-entail_contradict-entropy  P             0.202
+                                                                                                                  R            -0.055
+                                                                                                                  F             0.061
+                                              bertscore-sentence-pagerank-mnli-deberta-entail_contradict-sum      P             0.092
+                                                                                                                  R            -0.045
+                                                                                                                  F            -0.359

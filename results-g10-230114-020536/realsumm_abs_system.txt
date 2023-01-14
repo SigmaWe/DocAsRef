@@ -1,0 +1,169 @@
+corr_metric  aspect              approach  model                                                       score_name          
+pearsonr     litepyramid_recall  new       bertscore-sentence-mnli-roberta-entail_contradict           P                       0.149
+                                                                                                       R                       0.101
+                                                                                                       F                       0.192
+                                           bertscore-sentence-mnli-roberta-entail_contradict-topk-5    P                       0.291
+                                                                                                       R                       0.269
+                                                                                                       F                       0.285
+                                           bertscore-sentence-mnli-roberta-entail_contradict-topk-10   P                       0.278
+                                                                                                       R                       0.167
+                                                                                                       F                       0.103
+                                           bertscore-sentence-mnli-roberta-entail_contradict-topk-20   P                       0.198
+                                                                                                       R                       0.095
+                                                                                                       F                       0.122
+                                           bertscore-sentence-mnli-roberta-entail_contradict-topp-0.2  P                       0.132
+                                                                                                       R                       0.220
+                                                                                                       F                       0.025
+                                           bertscore-sentence-mnli-roberta-entail_contradict-topp-0.5  P                       0.118
+                                                                                                       R                       0.111
+                                                                                                       F                       0.013
+                                           bertscore-sentence-mnli-roberta-entail_contradict-topp-0.7  P                       0.172
+                                                                                                       R                       0.117
+                                                                                                       F                      -0.118
+                                           bertscore-sentence-mnli-deberta-entail_contradict           P                       0.269
+                                                                                                       R                       0.196
+                                                                                                       F                       0.192
+                                           bertscore-sentence-mnli-deberta-entail_contradict-topk-5    P                       0.318
+                                                                                                       R                       0.286
+                                                                                                       F                       0.228
+                                           bertscore-sentence-mnli-deberta-entail_contradict-topk-10   P                       0.288
+                                                                                                       R                       0.236
+                                                                                                       F                       0.202
+                                           bertscore-sentence-mnli-deberta-entail_contradict-topk-20   P                       0.295
+                                                                                                       R                       0.202
+                                                                                                       F                       0.146
+                                           bertscore-sentence-mnli-deberta-entail_contradict-topp-0.2  P                       0.163
+                                                                                                       R                       0.241
+                                                                                                       F                       0.152
+                                           bertscore-sentence-mnli-deberta-entail_contradict-topp-0.5  P                       0.185
+                                                                                                       R                       0.179
+                                                                                                       F                       0.234
+                                           bertscore-sentence-mnli-deberta-entail_contradict-topp-0.7  P                       0.277
+                                                                                                       R                       0.202
+                                                                                                       F                       0.253
+                                 PreCalc   PreCalc                                                     rouge_1_f_score         0.710
+                                                                                                       rouge_2_recall          0.677
+                                                                                                       rouge_l_recall          0.686
+                                                                                                       rouge_2_precision       0.634
+                                                                                                       rouge_2_f_score         0.671
+                                                                                                       rouge_1_precision       0.601
+                                                                                                       rouge_1_recall          0.685
+                                                                                                       rouge_l_precision       0.617
+                                                                                                       rouge_l_f_score         0.706
+                                                                                                       js-2                    0.677
+                                                                                                       mover_score             0.614
+                                                                                                       bert_recall_score       0.747
+                                                                                                       bert_precision_score    0.586
+                                                                                                       bert_f_score            0.712
+kendalltau   litepyramid_recall  new       bertscore-sentence-mnli-roberta-entail_contradict           P                       0.097
+                                                                                                       R                       0.110
+                                                                                                       F                       0.129
+                                           bertscore-sentence-mnli-roberta-entail_contradict-topk-5    P                       0.186
+                                                                                                       R                       0.168
+                                                                                                       F                       0.179
+                                           bertscore-sentence-mnli-roberta-entail_contradict-topk-10   P                       0.178
+                                                                                                       R                       0.125
+                                                                                                       F                       0.143
+                                           bertscore-sentence-mnli-roberta-entail_contradict-topk-20   P                       0.111
+                                                                                                       R                       0.140
+                                                                                                       F                       0.159
+                                           bertscore-sentence-mnli-roberta-entail_contradict-topp-0.2  P                       0.088
+                                                                                                       R                       0.157
+                                                                                                       F                       0.153
+                                           bertscore-sentence-mnli-roberta-entail_contradict-topp-0.5  P                       0.085
+                                                                                                       R                       0.107
+                                                                                                       F                       0.123
+                                           bertscore-sentence-mnli-roberta-entail_contradict-topp-0.7  P                       0.115
+                                                                                                       R                       0.119
+                                                                                                       F                       0.080
+                                           bertscore-sentence-mnli-deberta-entail_contradict           P                       0.169
+                                                                                                       R                       0.153
+                                                                                                       F                       0.189
+                                           bertscore-sentence-mnli-deberta-entail_contradict-topk-5    P                       0.182
+                                                                                                       R                       0.196
+                                                                                                       F                       0.186
+                                           bertscore-sentence-mnli-deberta-entail_contradict-topk-10   P                       0.159
+                                                                                                       R                       0.159
+                                                                                                       F                       0.147
+                                           bertscore-sentence-mnli-deberta-entail_contradict-topk-20   P                       0.178
+                                                                                                       R                       0.167
+                                                                                                       F                       0.164
+                                           bertscore-sentence-mnli-deberta-entail_contradict-topp-0.2  P                       0.115
+                                                                                                       R                       0.175
+                                                                                                       F                       0.190
+                                           bertscore-sentence-mnli-deberta-entail_contradict-topp-0.5  P                       0.108
+                                                                                                       R                       0.140
+                                                                                                       F                       0.164
+                                           bertscore-sentence-mnli-deberta-entail_contradict-topp-0.7  P                       0.169
+                                                                                                       R                       0.158
+                                                                                                       F                       0.203
+                                 PreCalc   PreCalc                                                     rouge_1_f_score         0.498
+                                                                                                       rouge_2_recall          0.495
+                                                                                                       rouge_l_recall          0.473
+                                                                                                       rouge_2_precision       0.482
+                                                                                                       rouge_2_f_score         0.501
+                                                                                                       rouge_1_precision       0.428
+                                                                                                       rouge_1_recall          0.463
+                                                                                                       rouge_l_precision       0.434
+                                                                                                       rouge_l_f_score         0.511
+                                                                                                       js-2                    0.497
+                                                                                                       mover_score             0.406
+                                                                                                       bert_recall_score       0.522
+                                                                                                       bert_precision_score    0.385
+                                                                                                       bert_f_score            0.480
+spearmanr    litepyramid_recall  new       bertscore-sentence-mnli-roberta-entail_contradict           P                       0.146
+                                                                                                       R                       0.164
+                                                                                                       F                       0.180
+                                           bertscore-sentence-mnli-roberta-entail_contradict-topk-5    P                       0.256
+                                                                                                       R                       0.257
+                                                                                                       F                       0.264
+                                           bertscore-sentence-mnli-roberta-entail_contradict-topk-10   P                       0.252
+                                                                                                       R                       0.185
+                                                                                                       F                       0.207
+                                           bertscore-sentence-mnli-roberta-entail_contradict-topk-20   P                       0.174
+                                                                                                       R                       0.212
+                                                                                                       F                       0.226
+                                           bertscore-sentence-mnli-roberta-entail_contradict-topp-0.2  P                       0.139
+                                                                                                       R                       0.230
+                                                                                                       F                       0.224
+                                           bertscore-sentence-mnli-roberta-entail_contradict-topp-0.5  P                       0.114
+                                                                                                       R                       0.152
+                                                                                                       F                       0.172
+                                           bertscore-sentence-mnli-roberta-entail_contradict-topp-0.7  P                       0.173
+                                                                                                       R                       0.172
+                                                                                                       F                       0.109
+                                           bertscore-sentence-mnli-deberta-entail_contradict           P                       0.258
+                                                                                                       R                       0.225
+                                                                                                       F                       0.278
+                                           bertscore-sentence-mnli-deberta-entail_contradict-topk-5    P                       0.267
+                                                                                                       R                       0.291
+                                                                                                       F                       0.274
+                                           bertscore-sentence-mnli-deberta-entail_contradict-topk-10   P                       0.238
+                                                                                                       R                       0.241
+                                                                                                       F                       0.226
+                                           bertscore-sentence-mnli-deberta-entail_contradict-topk-20   P                       0.267
+                                                                                                       R                       0.255
+                                                                                                       F                       0.250
+                                           bertscore-sentence-mnli-deberta-entail_contradict-topp-0.2  P                       0.174
+                                                                                                       R                       0.261
+                                                                                                       F                       0.291
+                                           bertscore-sentence-mnli-deberta-entail_contradict-topp-0.5  P                       0.164
+                                                                                                       R                       0.203
+                                                                                                       F                       0.239
+                                           bertscore-sentence-mnli-deberta-entail_contradict-topp-0.7  P                       0.249
+                                                                                                       R                       0.230
+                                                                                                       F                       0.289
+                                 PreCalc   PreCalc                                                     rouge_1_f_score         0.677
+                                                                                                       rouge_2_recall          0.677
+                                                                                                       rouge_l_recall          0.657
+                                                                                                       rouge_2_precision       0.661
+                                                                                                       rouge_2_f_score         0.685
+                                                                                                       rouge_1_precision       0.592
+                                                                                                       rouge_1_recall          0.639
+                                                                                                       rouge_l_precision       0.611
+                                                                                                       rouge_l_f_score         0.691
+                                                                                                       js-2                    0.676
+                                                                                                       mover_score             0.574
+                                                                                                       bert_recall_score       0.698
+                                                                                                       bert_precision_score    0.537
+                                                                                                       bert_f_score            0.654
