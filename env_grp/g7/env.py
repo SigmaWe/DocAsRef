@@ -1,10 +1,10 @@
-# Group 5: AnyRef (pegasus-newsroom, pegasus-cnndm) + Group 1
+# [DROPPED] Group 7: AnyRef (pegasus-x-large) + Group 1
 
 from env_grp.g1.env import *
 
 ### MODELS ###
 
-anyref_whitelist = ["pegasus-newsroom", "pegasus-cnndm"]
+anyref_whitelist = ["pegasus-x-large"]
 if "anyref.summarizers" in sys.modules:
     del sys.modules["anyref.summarizers"]
 from anyref.summarizers import anyref_summarizers

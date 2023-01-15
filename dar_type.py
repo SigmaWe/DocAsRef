@@ -23,6 +23,9 @@ class SimilarityMatrixFunc(typing.Protocol):
         ...
 
 
+SimpleSimilarityMatrixFunc = typing.Callable[[TextSegments, TextSegments], np.ndarray]
+
+
 Pipeline = transformers.Pipeline
 
 
@@ -52,9 +55,11 @@ class MNLICategory(typing.TypedDict):
 
 
 MNLICategories = typing.List[MNLICategory]
-
-
 MNLISimilarityExpression = typing.Callable[[MNLICategories], float]
 
 
 SummaryLengthExpression = typing.Callable[[typing.Optional[Dataset]], typing.Optional[int]]
+
+SentenceWeightFunction = typing.Callable[[np.ndarray], float]
+
+IdfScoreFunction = typing.Callable[[TextSegments, np.ndarray], np.ndarray]

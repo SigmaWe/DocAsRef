@@ -18,14 +18,19 @@ For evaluation, set correct path to [EvalBase](https://github.com/SigmaWe/EvalBa
 
 For metrics, reference [`env_grp/`](env_grp/)
 
-We have 4 groups of environments:
+We have these groups of environments:
 
 - Group 1: classic (bertscore, rouge, bleurt)
 - Group 2: bertscore-sentence (cos, mnli)
 - Group 3: AnyRef (bart, pegasus-xum) + Group 1
 - Group 4: Top + Group 1
-- Group 5: AnyRef (pegasus-newsroom, pegasus-large) + Group 1
-- Group 6: AnyRef (pegasus-cnndm, pegasus-x-large) + Group 1
+- Group 5: AnyRef (pegasus-newsroom, pegasus-cnndm) + Group 1
+- Group 6: AnyRef (pegasus-large) + Group 1
+- <del>Group 7 (Dropped): AnyRef (pegasus-x-large) + Group 1</del>
+- Group 8: PageRank + Group 2
+- Group 9: AnyRef (pegasus-newsroom) + Group 2
+- Group 10: Top + Group 2
+- Group 11: classic bertscore + deberta-large-mnli
 
 ## Approach 0: just replacing human summaries with documents
 
@@ -63,7 +68,7 @@ Implemented in `/bertscore_sentence`
 
 ### Approach 1.2
 
-Use a bi-sentence model, instead of cosine similarity in Approach 1.1. In this new approach, we do not have to embed individual sentences. Instead, we embed a pair of sentences (one from documents and one from system summaries). We use models `roberta-large-mnli`, `facebook/bart-large-mnli`, and `microsoft/deberta-xlarge-mnli` with different expressions for similarity.
+Use a bi-sentence model, instead of cosine similarity in Approach 1.1. In this new approach, we do not have to embed individual sentences. Instead, we embed a pair of sentences (one from documents and one from system summaries). We use models `roberta-large-mnli`, `facebook/bart-large-mnli`, `microsoft/deberta-xlarge-mnli`, and `microsoft/deberta-large-mnli` with different expressions for similarity.
 
 Implemented in `/mnli`
 
@@ -81,6 +86,8 @@ f2( f3(D1, S1, S2, ..), f3(D2, S1, S2, ..), ...., f3(Dn, S1, S2, ...) )
 entropy ( sim(S1, D1), sim(S1, D2), ... ) 
 + 
 entropy ( sim(S2, D1), sim(S2, D2), ... )
+
+Implemented in `/pagerank`
 
 ### Approach 1.5 Pseudo-reference by Top-K and Top-P
 

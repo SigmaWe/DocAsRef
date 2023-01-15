@@ -2,7 +2,7 @@ import pandas
 from ast import literal_eval as make_tuple
 
 datasets = ["summeval", "newsroom", "realsumm_abs", "realsumm_ext"]
-path_tmpl = "/home/turx/dar-archive/results-g2-230107-190500/{}_summary.json"
+path_tmpl = "/home/turx/dar-archive/results-1230/{}_summary.json"
 
 for dataset in datasets:
     print("Dataset: {}".format(dataset))
@@ -14,4 +14,5 @@ for dataset in datasets:
                             'display.precision', 2,
                             'display.float_format', lambda x: '%.2f' % x
                             ):
-        print(df.loc["average", ("pearsonr", slice(None), "new", "bertscore-sentence-mnli-bart-entail_only", slice(None))].to_string())
+        # TODO: turn multiindex to regular 2d table by unstack
+        print(df.loc["average", ("pearsonr", slice(None), "new", slice(None), "P")].to_string())
