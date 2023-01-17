@@ -17,13 +17,13 @@ pearsonr     consistency  new       bertscore-sentence-mnli-roberta-not_neutral 
                                     bertscore-sentence-mnli-bart-entail_contradict     P                            0.500
                                                                                        R                            0.201
                                                                                        F                            0.228
-                                    bertscore-sentence-mnli-deberta-not_neutral        P                            0.391
+                                    bertscore-sentence-mnli-deberta-xlarge-not_neutral        P                            0.391
                                                                                        R                           -0.026
                                                                                        F                            0.068
-                                    bertscore-sentence-mnli-deberta-entail_only        P                            0.533
+                                    bertscore-sentence-mnli-deberta-xlarge-entail_only        P                            0.533
                                                                                        R                            0.198
                                                                                        F                            0.275
-                                    bertscore-sentence-mnli-deberta-entail_contradict  P                            0.548
+                                    bertscore-sentence-mnli-deberta-xlarge-entail_contradict  P                            0.548
                                                                                        R                            0.231
                                                                                        F                            0.269
                           PreCalc   PreCalc                                            rouge_1_precision            0.152
@@ -73,13 +73,13 @@ pearsonr     consistency  new       bertscore-sentence-mnli-roberta-not_neutral 
                                     bertscore-sentence-mnli-bart-entail_contradict     P                            0.179
                                                                                        R                            0.167
                                                                                        F                            0.185
-                                    bertscore-sentence-mnli-deberta-not_neutral        P                            0.114
+                                    bertscore-sentence-mnli-deberta-xlarge-not_neutral        P                            0.114
                                                                                        R                            0.029
                                                                                        F                            0.066
-                                    bertscore-sentence-mnli-deberta-entail_only        P                            0.187
+                                    bertscore-sentence-mnli-deberta-xlarge-entail_only        P                            0.187
                                                                                        R                            0.136
                                                                                        F                            0.165
-                                    bertscore-sentence-mnli-deberta-entail_contradict  P                            0.199
+                                    bertscore-sentence-mnli-deberta-xlarge-entail_contradict  P                            0.199
                                                                                        R                            0.166
                                                                                        F                            0.185
                           PreCalc   PreCalc                                            rouge_1_precision            0.146
@@ -129,13 +129,13 @@ pearsonr     consistency  new       bertscore-sentence-mnli-roberta-not_neutral 
                                     bertscore-sentence-mnli-bart-entail_contradict     P                            0.139
                                                                                        R                           -0.062
                                                                                        F                           -0.030
-                                    bertscore-sentence-mnli-deberta-not_neutral        P                            0.041
+                                    bertscore-sentence-mnli-deberta-xlarge-not_neutral        P                            0.041
                                                                                        R                           -0.223
                                                                                        F                           -0.185
-                                    bertscore-sentence-mnli-deberta-entail_only        P                            0.101
+                                    bertscore-sentence-mnli-deberta-xlarge-entail_only        P                            0.101
                                                                                        R                           -0.100
                                                                                        F                           -0.067
-                                    bertscore-sentence-mnli-deberta-entail_contradict  P                            0.118
+                                    bertscore-sentence-mnli-deberta-xlarge-entail_contradict  P                            0.118
                                                                                        R                           -0.070
                                                                                        F                           -0.046
                           PreCalc   PreCalc                                            rouge_1_precision            0.185
@@ -185,13 +185,13 @@ pearsonr     consistency  new       bertscore-sentence-mnli-roberta-not_neutral 
                                     bertscore-sentence-mnli-bart-entail_contradict     P                            0.383
                                                                                        R                            0.108
                                                                                        F                            0.144
-                                    bertscore-sentence-mnli-deberta-not_neutral        P                            0.327
+                                    bertscore-sentence-mnli-deberta-xlarge-not_neutral        P                            0.327
                                                                                        R                           -0.049
                                                                                        F                            0.036
-                                    bertscore-sentence-mnli-deberta-entail_only        P                            0.389
+                                    bertscore-sentence-mnli-deberta-xlarge-entail_only        P                            0.389
                                                                                        R                            0.092
                                                                                        F                            0.157
-                                    bertscore-sentence-mnli-deberta-entail_contradict  P                            0.400
+                                    bertscore-sentence-mnli-deberta-xlarge-entail_contradict  P                            0.400
                                                                                        R                            0.119
                                                                                        F                            0.169
                           PreCalc   PreCalc                                            rouge_1_precision            0.161
@@ -241,13 +241,13 @@ kendalltau   consistency  new       bertscore-sentence-mnli-roberta-not_neutral 
                                     bertscore-sentence-mnli-bart-entail_contradict     P                            0.294
                                                                                        R                            0.113
                                                                                        F                            0.138
-                                    bertscore-sentence-mnli-deberta-not_neutral        P                            0.279
+                                    bertscore-sentence-mnli-deberta-xlarge-not_neutral        P                            0.279
                                                                                        R                           -0.040
                                                                                        F                            0.017
-                                    bertscore-sentence-mnli-deberta-entail_only        P                            0.334
+                                    bertscore-sentence-mnli-deberta-xlarge-entail_only        P                            0.334
                                                                                        R                            0.099
                                                                                        F                            0.145
-                                    bertscore-sentence-mnli-deberta-entail_contradict  P                            0.342
+                                    bertscore-sentence-mnli-deberta-xlarge-entail_contradict  P                            0.342
                                                                                        R                            0.126
                                                                                        F                            0.157
                           PreCalc   PreCalc                                            rouge_1_precision            0.083
@@ -297,13 +297,13 @@ kendalltau   consistency  new       bertscore-sentence-mnli-roberta-not_neutral 
                                     bertscore-sentence-mnli-bart-entail_contradict     P                            0.092
                                                                                        R                            0.109
                                                                                        F                            0.107
-                                    bertscore-sentence-mnli-deberta-not_neutral        P                            0.087
+                                    bertscore-sentence-mnli-deberta-xlarge-not_neutral        P                            0.087
                                                                                        R                            0.014
                                                                                        F                            0.030
-                                    bertscore-sentence-mnli-deberta-entail_only        P                            0.123
+                                    bertscore-sentence-mnli-deberta-xlarge-entail_only        P                            0.123
                                                                                        R                            0.089
                                                                                        F                            0.102
-                                    bertscore-sentence-mnli-deberta-entail_contradict  P                            0.128
+                                    bertscore-sentence-mnli-deberta-xlarge-entail_contradict  P                            0.128
                                                                                        R                            0.103
                                                                                        F                            0.106
                           PreCalc   PreCalc                                            rouge_1_precision            0.105
@@ -353,13 +353,13 @@ kendalltau   consistency  new       bertscore-sentence-mnli-roberta-not_neutral 
                                     bertscore-sentence-mnli-bart-entail_contradict     P                            0.104
                                                                                        R                           -0.016
                                                                                        F                            0.002
-                                    bertscore-sentence-mnli-deberta-not_neutral        P                            0.102
+                                    bertscore-sentence-mnli-deberta-xlarge-not_neutral        P                            0.102
                                                                                        R                           -0.133
                                                                                        F                           -0.109
-                                    bertscore-sentence-mnli-deberta-entail_only        P                            0.133
+                                    bertscore-sentence-mnli-deberta-xlarge-entail_only        P                            0.133
                                                                                        R                           -0.046
                                                                                        F                           -0.028
-                                    bertscore-sentence-mnli-deberta-entail_contradict  P                            0.143
+                                    bertscore-sentence-mnli-deberta-xlarge-entail_contradict  P                            0.143
                                                                                        R                           -0.024
                                                                                        F                           -0.015
                           PreCalc   PreCalc                                            rouge_1_precision            0.106
@@ -409,13 +409,13 @@ kendalltau   consistency  new       bertscore-sentence-mnli-roberta-not_neutral 
                                     bertscore-sentence-mnli-bart-entail_contradict     P                            0.240
                                                                                        R                            0.069
                                                                                        F                            0.085
-                                    bertscore-sentence-mnli-deberta-not_neutral        P                            0.246
+                                    bertscore-sentence-mnli-deberta-xlarge-not_neutral        P                            0.246
                                                                                        R                           -0.042
                                                                                        F                           -0.002
-                                    bertscore-sentence-mnli-deberta-entail_only        P                            0.262
+                                    bertscore-sentence-mnli-deberta-xlarge-entail_only        P                            0.262
                                                                                        R                            0.045
                                                                                        F                            0.079
-                                    bertscore-sentence-mnli-deberta-entail_contradict  P                            0.268
+                                    bertscore-sentence-mnli-deberta-xlarge-entail_contradict  P                            0.268
                                                                                        R                            0.063
                                                                                        F                            0.078
                           PreCalc   PreCalc                                            rouge_1_precision            0.088
@@ -465,13 +465,13 @@ spearmanr    consistency  new       bertscore-sentence-mnli-roberta-not_neutral 
                                     bertscore-sentence-mnli-bart-entail_contradict     P                            0.356
                                                                                        R                            0.140
                                                                                        F                            0.169
-                                    bertscore-sentence-mnli-deberta-not_neutral        P                            0.337
+                                    bertscore-sentence-mnli-deberta-xlarge-not_neutral        P                            0.337
                                                                                        R                           -0.053
                                                                                        F                            0.020
-                                    bertscore-sentence-mnli-deberta-entail_only        P                            0.403
+                                    bertscore-sentence-mnli-deberta-xlarge-entail_only        P                            0.403
                                                                                        R                            0.121
                                                                                        F                            0.177
-                                    bertscore-sentence-mnli-deberta-entail_contradict  P                            0.412
+                                    bertscore-sentence-mnli-deberta-xlarge-entail_contradict  P                            0.412
                                                                                        R                            0.155
                                                                                        F                            0.192
                           PreCalc   PreCalc                                            rouge_1_precision            0.101
@@ -521,13 +521,13 @@ spearmanr    consistency  new       bertscore-sentence-mnli-roberta-not_neutral 
                                     bertscore-sentence-mnli-bart-entail_contradict     P                            0.119
                                                                                        R                            0.144
                                                                                        F                            0.144
-                                    bertscore-sentence-mnli-deberta-not_neutral        P                            0.114
+                                    bertscore-sentence-mnli-deberta-xlarge-not_neutral        P                            0.114
                                                                                        R                            0.017
                                                                                        F                            0.040
-                                    bertscore-sentence-mnli-deberta-entail_only        P                            0.159
+                                    bertscore-sentence-mnli-deberta-xlarge-entail_only        P                            0.159
                                                                                        R                            0.115
                                                                                        F                            0.133
-                                    bertscore-sentence-mnli-deberta-entail_contradict  P                            0.167
+                                    bertscore-sentence-mnli-deberta-xlarge-entail_contradict  P                            0.167
                                                                                        R                            0.136
                                                                                        F                            0.142
                           PreCalc   PreCalc                                            rouge_1_precision            0.144
@@ -577,13 +577,13 @@ spearmanr    consistency  new       bertscore-sentence-mnli-roberta-not_neutral 
                                     bertscore-sentence-mnli-bart-entail_contradict     P                            0.138
                                                                                        R                           -0.020
                                                                                        F                            0.002
-                                    bertscore-sentence-mnli-deberta-not_neutral        P                            0.127
+                                    bertscore-sentence-mnli-deberta-xlarge-not_neutral        P                            0.127
                                                                                        R                           -0.178
                                                                                        F                           -0.151
-                                    bertscore-sentence-mnli-deberta-entail_only        P                            0.169
+                                    bertscore-sentence-mnli-deberta-xlarge-entail_only        P                            0.169
                                                                                        R                           -0.063
                                                                                        F                           -0.037
-                                    bertscore-sentence-mnli-deberta-entail_contradict  P                            0.181
+                                    bertscore-sentence-mnli-deberta-xlarge-entail_contradict  P                            0.181
                                                                                        R                           -0.029
                                                                                        F                           -0.017
                           PreCalc   PreCalc                                            rouge_1_precision            0.145
@@ -633,13 +633,13 @@ spearmanr    consistency  new       bertscore-sentence-mnli-roberta-not_neutral 
                                     bertscore-sentence-mnli-bart-entail_contradict     P                            0.294
                                                                                        R                            0.085
                                                                                        F                            0.104
-                                    bertscore-sentence-mnli-deberta-not_neutral        P                            0.301
+                                    bertscore-sentence-mnli-deberta-xlarge-not_neutral        P                            0.301
                                                                                        R                           -0.054
                                                                                        F                           -0.005
-                                    bertscore-sentence-mnli-deberta-entail_only        P                            0.322
+                                    bertscore-sentence-mnli-deberta-xlarge-entail_only        P                            0.322
                                                                                        R                            0.057
                                                                                        F                            0.099
-                                    bertscore-sentence-mnli-deberta-entail_contradict  P                            0.329
+                                    bertscore-sentence-mnli-deberta-xlarge-entail_contradict  P                            0.329
                                                                                        R                            0.081
                                                                                        F                            0.100
                           PreCalc   PreCalc                                            rouge_1_precision            0.108

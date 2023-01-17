@@ -20,25 +20,25 @@ pearsonr     InformativenessRating  new       bertscore-sentence-mnli-roberta-en
                                               bertscore-sentence-mnli-roberta-entail_contradict-topp-0.7  P            0.466
                                                                                                           R            0.368
                                                                                                           F            0.286
-                                              bertscore-sentence-mnli-deberta-entail_contradict           P            0.504
+                                              bertscore-sentence-mnli-deberta-xlarge-entail_contradict           P            0.504
                                                                                                           R            0.489
                                                                                                           F            0.220
-                                              bertscore-sentence-mnli-deberta-entail_contradict-topk-5    P            0.424
+                                              bertscore-sentence-mnli-deberta-xlarge-entail_contradict-topk-5    P            0.424
                                                                                                           R            0.500
                                                                                                           F            0.458
-                                              bertscore-sentence-mnli-deberta-entail_contradict-topk-10   P            0.426
+                                              bertscore-sentence-mnli-deberta-xlarge-entail_contradict-topk-10   P            0.426
                                                                                                           R            0.492
                                                                                                           F            0.343
-                                              bertscore-sentence-mnli-deberta-entail_contradict-topk-20   P            0.467
+                                              bertscore-sentence-mnli-deberta-xlarge-entail_contradict-topk-20   P            0.467
                                                                                                           R            0.491
                                                                                                           F            0.311
-                                              bertscore-sentence-mnli-deberta-entail_contradict-topp-0.2  P            0.406
+                                              bertscore-sentence-mnli-deberta-xlarge-entail_contradict-topp-0.2  P            0.406
                                                                                                           R            0.506
                                                                                                           F            0.446
-                                              bertscore-sentence-mnli-deberta-entail_contradict-topp-0.5  P            0.453
+                                              bertscore-sentence-mnli-deberta-xlarge-entail_contradict-topp-0.5  P            0.453
                                                                                                           R            0.505
                                                                                                           F            0.356
-                                              bertscore-sentence-mnli-deberta-entail_contradict-topp-0.7  P            0.485
+                                              bertscore-sentence-mnli-deberta-xlarge-entail_contradict-topp-0.7  P            0.485
                                                                                                           R            0.498
                                                                                                           F            0.264
              RelevanceRating        new       bertscore-sentence-mnli-roberta-entail_contradict           P            0.549
@@ -62,25 +62,25 @@ pearsonr     InformativenessRating  new       bertscore-sentence-mnli-roberta-en
                                               bertscore-sentence-mnli-roberta-entail_contradict-topp-0.7  P            0.503
                                                                                                           R            0.317
                                                                                                           F            0.263
-                                              bertscore-sentence-mnli-deberta-entail_contradict           P            0.543
+                                              bertscore-sentence-mnli-deberta-xlarge-entail_contradict           P            0.543
                                                                                                           R            0.423
                                                                                                           F            0.170
-                                              bertscore-sentence-mnli-deberta-entail_contradict-topk-5    P            0.416
+                                              bertscore-sentence-mnli-deberta-xlarge-entail_contradict-topk-5    P            0.416
                                                                                                           R            0.427
                                                                                                           F            0.400
-                                              bertscore-sentence-mnli-deberta-entail_contradict-topk-10   P            0.435
+                                              bertscore-sentence-mnli-deberta-xlarge-entail_contradict-topk-10   P            0.435
                                                                                                           R            0.415
                                                                                                           F            0.264
-                                              bertscore-sentence-mnli-deberta-entail_contradict-topk-20   P            0.475
+                                              bertscore-sentence-mnli-deberta-xlarge-entail_contradict-topk-20   P            0.475
                                                                                                           R            0.423
                                                                                                           F            0.259
-                                              bertscore-sentence-mnli-deberta-entail_contradict-topp-0.2  P            0.404
+                                              bertscore-sentence-mnli-deberta-xlarge-entail_contradict-topp-0.2  P            0.404
                                                                                                           R            0.430
                                                                                                           F            0.377
-                                              bertscore-sentence-mnli-deberta-entail_contradict-topp-0.5  P            0.456
+                                              bertscore-sentence-mnli-deberta-xlarge-entail_contradict-topp-0.5  P            0.456
                                                                                                           R            0.429
                                                                                                           F            0.285
-                                              bertscore-sentence-mnli-deberta-entail_contradict-topp-0.7  P            0.516
+                                              bertscore-sentence-mnli-deberta-xlarge-entail_contradict-topp-0.7  P            0.516
                                                                                                           R            0.430
                                                                                                           F            0.212
              CoherenceRating        new       bertscore-sentence-mnli-roberta-entail_contradict           P            0.492
@@ -104,25 +104,25 @@ pearsonr     InformativenessRating  new       bertscore-sentence-mnli-roberta-en
                                               bertscore-sentence-mnli-roberta-entail_contradict-topp-0.7  P            0.470
                                                                                                           R            0.363
                                                                                                           F            0.300
-                                              bertscore-sentence-mnli-deberta-entail_contradict           P            0.520
+                                              bertscore-sentence-mnli-deberta-xlarge-entail_contradict           P            0.520
                                                                                                           R            0.450
                                                                                                           F            0.184
-                                              bertscore-sentence-mnli-deberta-entail_contradict-topk-5    P            0.420
+                                              bertscore-sentence-mnli-deberta-xlarge-entail_contradict-topk-5    P            0.420
                                                                                                           R            0.479
                                                                                                           F            0.449
-                                              bertscore-sentence-mnli-deberta-entail_contradict-topk-10   P            0.437
+                                              bertscore-sentence-mnli-deberta-xlarge-entail_contradict-topk-10   P            0.437
                                                                                                           R            0.469
                                                                                                           F            0.303
-                                              bertscore-sentence-mnli-deberta-entail_contradict-topk-20   P            0.481
+                                              bertscore-sentence-mnli-deberta-xlarge-entail_contradict-topk-20   P            0.481
                                                                                                           R            0.462
                                                                                                           F            0.282
-                                              bertscore-sentence-mnli-deberta-entail_contradict-topp-0.2  P            0.413
+                                              bertscore-sentence-mnli-deberta-xlarge-entail_contradict-topp-0.2  P            0.413
                                                                                                           R            0.494
                                                                                                           F            0.446
-                                              bertscore-sentence-mnli-deberta-entail_contradict-topp-0.5  P            0.472
+                                              bertscore-sentence-mnli-deberta-xlarge-entail_contradict-topp-0.5  P            0.472
                                                                                                           R            0.483
                                                                                                           F            0.328
-                                              bertscore-sentence-mnli-deberta-entail_contradict-topp-0.7  P            0.494
+                                              bertscore-sentence-mnli-deberta-xlarge-entail_contradict-topp-0.7  P            0.494
                                                                                                           R            0.468
                                                                                                           F            0.246
              FluencyRating          new       bertscore-sentence-mnli-roberta-entail_contradict           P            0.501
@@ -146,25 +146,25 @@ pearsonr     InformativenessRating  new       bertscore-sentence-mnli-roberta-en
                                               bertscore-sentence-mnli-roberta-entail_contradict-topp-0.7  P            0.448
                                                                                                           R            0.352
                                                                                                           F            0.282
-                                              bertscore-sentence-mnli-deberta-entail_contradict           P            0.502
+                                              bertscore-sentence-mnli-deberta-xlarge-entail_contradict           P            0.502
                                                                                                           R            0.406
                                                                                                           F            0.175
-                                              bertscore-sentence-mnli-deberta-entail_contradict-topk-5    P            0.378
+                                              bertscore-sentence-mnli-deberta-xlarge-entail_contradict-topk-5    P            0.378
                                                                                                           R            0.418
                                                                                                           F            0.380
-                                              bertscore-sentence-mnli-deberta-entail_contradict-topk-10   P            0.398
+                                              bertscore-sentence-mnli-deberta-xlarge-entail_contradict-topk-10   P            0.398
                                                                                                           R            0.419
                                                                                                           F            0.282
-                                              bertscore-sentence-mnli-deberta-entail_contradict-topk-20   P            0.437
+                                              bertscore-sentence-mnli-deberta-xlarge-entail_contradict-topk-20   P            0.437
                                                                                                           R            0.419
                                                                                                           F            0.274
-                                              bertscore-sentence-mnli-deberta-entail_contradict-topp-0.2  P            0.373
+                                              bertscore-sentence-mnli-deberta-xlarge-entail_contradict-topp-0.2  P            0.373
                                                                                                           R            0.430
                                                                                                           F            0.394
-                                              bertscore-sentence-mnli-deberta-entail_contradict-topp-0.5  P            0.430
+                                              bertscore-sentence-mnli-deberta-xlarge-entail_contradict-topp-0.5  P            0.430
                                                                                                           R            0.428
                                                                                                           F            0.307
-                                              bertscore-sentence-mnli-deberta-entail_contradict-topp-0.7  P            0.459
+                                              bertscore-sentence-mnli-deberta-xlarge-entail_contradict-topp-0.7  P            0.459
                                                                                                           R            0.421
                                                                                                           F            0.238
 kendalltau   InformativenessRating  new       bertscore-sentence-mnli-roberta-entail_contradict           P            0.296
@@ -188,25 +188,25 @@ kendalltau   InformativenessRating  new       bertscore-sentence-mnli-roberta-en
                                               bertscore-sentence-mnli-roberta-entail_contradict-topp-0.7  P            0.285
                                                                                                           R            0.336
                                                                                                           F            0.289
-                                              bertscore-sentence-mnli-deberta-entail_contradict           P            0.305
+                                              bertscore-sentence-mnli-deberta-xlarge-entail_contradict           P            0.305
                                                                                                           R            0.377
                                                                                                           F            0.212
-                                              bertscore-sentence-mnli-deberta-entail_contradict-topk-5    P            0.326
+                                              bertscore-sentence-mnli-deberta-xlarge-entail_contradict-topk-5    P            0.326
                                                                                                           R            0.421
                                                                                                           F            0.359
-                                              bertscore-sentence-mnli-deberta-entail_contradict-topk-10   P            0.301
+                                              bertscore-sentence-mnli-deberta-xlarge-entail_contradict-topk-10   P            0.301
                                                                                                           R            0.404
                                                                                                           F            0.289
-                                              bertscore-sentence-mnli-deberta-entail_contradict-topk-20   P            0.305
+                                              bertscore-sentence-mnli-deberta-xlarge-entail_contradict-topk-20   P            0.305
                                                                                                           R            0.380
                                                                                                           F            0.250
-                                              bertscore-sentence-mnli-deberta-entail_contradict-topp-0.2  P            0.294
+                                              bertscore-sentence-mnli-deberta-xlarge-entail_contradict-topp-0.2  P            0.294
                                                                                                           R            0.425
                                                                                                           F            0.345
-                                              bertscore-sentence-mnli-deberta-entail_contradict-topp-0.5  P            0.318
+                                              bertscore-sentence-mnli-deberta-xlarge-entail_contradict-topp-0.5  P            0.318
                                                                                                           R            0.399
                                                                                                           F            0.276
-                                              bertscore-sentence-mnli-deberta-entail_contradict-topp-0.7  P            0.308
+                                              bertscore-sentence-mnli-deberta-xlarge-entail_contradict-topp-0.7  P            0.308
                                                                                                           R            0.393
                                                                                                           F            0.227
              RelevanceRating        new       bertscore-sentence-mnli-roberta-entail_contradict           P            0.345
@@ -230,25 +230,25 @@ kendalltau   InformativenessRating  new       bertscore-sentence-mnli-roberta-en
                                               bertscore-sentence-mnli-roberta-entail_contradict-topp-0.7  P            0.324
                                                                                                           R            0.259
                                                                                                           F            0.241
-                                              bertscore-sentence-mnli-deberta-entail_contradict           P            0.350
+                                              bertscore-sentence-mnli-deberta-xlarge-entail_contradict           P            0.350
                                                                                                           R            0.304
                                                                                                           F            0.150
-                                              bertscore-sentence-mnli-deberta-entail_contradict-topk-5    P            0.320
+                                              bertscore-sentence-mnli-deberta-xlarge-entail_contradict-topk-5    P            0.320
                                                                                                           R            0.334
                                                                                                           F            0.295
-                                              bertscore-sentence-mnli-deberta-entail_contradict-topk-10   P            0.295
+                                              bertscore-sentence-mnli-deberta-xlarge-entail_contradict-topk-10   P            0.295
                                                                                                           R            0.316
                                                                                                           F            0.217
-                                              bertscore-sentence-mnli-deberta-entail_contradict-topk-20   P            0.319
+                                              bertscore-sentence-mnli-deberta-xlarge-entail_contradict-topk-20   P            0.319
                                                                                                           R            0.325
                                                                                                           F            0.202
-                                              bertscore-sentence-mnli-deberta-entail_contradict-topp-0.2  P            0.289
+                                              bertscore-sentence-mnli-deberta-xlarge-entail_contradict-topp-0.2  P            0.289
                                                                                                           R            0.333
                                                                                                           F            0.287
-                                              bertscore-sentence-mnli-deberta-entail_contradict-topp-0.5  P            0.311
+                                              bertscore-sentence-mnli-deberta-xlarge-entail_contradict-topp-0.5  P            0.311
                                                                                                           R            0.318
                                                                                                           F            0.205
-                                              bertscore-sentence-mnli-deberta-entail_contradict-topp-0.7  P            0.347
+                                              bertscore-sentence-mnli-deberta-xlarge-entail_contradict-topp-0.7  P            0.347
                                                                                                           R            0.325
                                                                                                           F            0.170
              CoherenceRating        new       bertscore-sentence-mnli-roberta-entail_contradict           P            0.334
@@ -272,25 +272,25 @@ kendalltau   InformativenessRating  new       bertscore-sentence-mnli-roberta-en
                                               bertscore-sentence-mnli-roberta-entail_contradict-topp-0.7  P            0.307
                                                                                                           R            0.314
                                                                                                           F            0.281
-                                              bertscore-sentence-mnli-deberta-entail_contradict           P            0.372
+                                              bertscore-sentence-mnli-deberta-xlarge-entail_contradict           P            0.372
                                                                                                           R            0.351
                                                                                                           F            0.180
-                                              bertscore-sentence-mnli-deberta-entail_contradict-topk-5    P            0.336
+                                              bertscore-sentence-mnli-deberta-xlarge-entail_contradict-topk-5    P            0.336
                                                                                                           R            0.382
                                                                                                           F            0.334
-                                              bertscore-sentence-mnli-deberta-entail_contradict-topk-10   P            0.326
+                                              bertscore-sentence-mnli-deberta-xlarge-entail_contradict-topk-10   P            0.326
                                                                                                           R            0.372
                                                                                                           F            0.265
-                                              bertscore-sentence-mnli-deberta-entail_contradict-topk-20   P            0.356
+                                              bertscore-sentence-mnli-deberta-xlarge-entail_contradict-topk-20   P            0.356
                                                                                                           R            0.355
                                                                                                           F            0.235
-                                              bertscore-sentence-mnli-deberta-entail_contradict-topp-0.2  P            0.300
+                                              bertscore-sentence-mnli-deberta-xlarge-entail_contradict-topp-0.2  P            0.300
                                                                                                           R            0.403
                                                                                                           F            0.340
-                                              bertscore-sentence-mnli-deberta-entail_contradict-topp-0.5  P            0.335
+                                              bertscore-sentence-mnli-deberta-xlarge-entail_contradict-topp-0.5  P            0.335
                                                                                                           R            0.370
                                                                                                           F            0.260
-                                              bertscore-sentence-mnli-deberta-entail_contradict-topp-0.7  P            0.338
+                                              bertscore-sentence-mnli-deberta-xlarge-entail_contradict-topp-0.7  P            0.338
                                                                                                           R            0.366
                                                                                                           F            0.210
              FluencyRating          new       bertscore-sentence-mnli-roberta-entail_contradict           P            0.368
@@ -314,25 +314,25 @@ kendalltau   InformativenessRating  new       bertscore-sentence-mnli-roberta-en
                                               bertscore-sentence-mnli-roberta-entail_contradict-topp-0.7  P            0.323
                                                                                                           R            0.300
                                                                                                           F            0.242
-                                              bertscore-sentence-mnli-deberta-entail_contradict           P            0.385
+                                              bertscore-sentence-mnli-deberta-xlarge-entail_contradict           P            0.385
                                                                                                           R            0.304
                                                                                                           F            0.157
-                                              bertscore-sentence-mnli-deberta-entail_contradict-topk-5    P            0.306
+                                              bertscore-sentence-mnli-deberta-xlarge-entail_contradict-topk-5    P            0.306
                                                                                                           R            0.326
                                                                                                           F            0.276
-                                              bertscore-sentence-mnli-deberta-entail_contradict-topk-10   P            0.302
+                                              bertscore-sentence-mnli-deberta-xlarge-entail_contradict-topk-10   P            0.302
                                                                                                           R            0.331
                                                                                                           F            0.249
-                                              bertscore-sentence-mnli-deberta-entail_contradict-topk-20   P            0.332
+                                              bertscore-sentence-mnli-deberta-xlarge-entail_contradict-topk-20   P            0.332
                                                                                                           R            0.327
                                                                                                           F            0.224
-                                              bertscore-sentence-mnli-deberta-entail_contradict-topp-0.2  P            0.287
+                                              bertscore-sentence-mnli-deberta-xlarge-entail_contradict-topp-0.2  P            0.287
                                                                                                           R            0.337
                                                                                                           F            0.287
-                                              bertscore-sentence-mnli-deberta-entail_contradict-topp-0.5  P            0.319
+                                              bertscore-sentence-mnli-deberta-xlarge-entail_contradict-topp-0.5  P            0.319
                                                                                                           R            0.327
                                                                                                           F            0.233
-                                              bertscore-sentence-mnli-deberta-entail_contradict-topp-0.7  P            0.341
+                                              bertscore-sentence-mnli-deberta-xlarge-entail_contradict-topp-0.7  P            0.341
                                                                                                           R            0.318
                                                                                                           F            0.192
 spearmanr    InformativenessRating  new       bertscore-sentence-mnli-roberta-entail_contradict           P            0.365
@@ -356,25 +356,25 @@ spearmanr    InformativenessRating  new       bertscore-sentence-mnli-roberta-en
                                               bertscore-sentence-mnli-roberta-entail_contradict-topp-0.7  P            0.354
                                                                                                           R            0.406
                                                                                                           F            0.347
-                                              bertscore-sentence-mnli-deberta-entail_contradict           P            0.394
+                                              bertscore-sentence-mnli-deberta-xlarge-entail_contradict           P            0.394
                                                                                                           R            0.473
                                                                                                           F            0.259
-                                              bertscore-sentence-mnli-deberta-entail_contradict-topk-5    P            0.404
+                                              bertscore-sentence-mnli-deberta-xlarge-entail_contradict-topk-5    P            0.404
                                                                                                           R            0.514
                                                                                                           F            0.439
-                                              bertscore-sentence-mnli-deberta-entail_contradict-topk-10   P            0.381
+                                              bertscore-sentence-mnli-deberta-xlarge-entail_contradict-topk-10   P            0.381
                                                                                                           R            0.492
                                                                                                           F            0.355
-                                              bertscore-sentence-mnli-deberta-entail_contradict-topk-20   P            0.396
+                                              bertscore-sentence-mnli-deberta-xlarge-entail_contradict-topk-20   P            0.396
                                                                                                           R            0.476
                                                                                                           F            0.319
-                                              bertscore-sentence-mnli-deberta-entail_contradict-topp-0.2  P            0.362
+                                              bertscore-sentence-mnli-deberta-xlarge-entail_contradict-topp-0.2  P            0.362
                                                                                                           R            0.518
                                                                                                           F            0.423
-                                              bertscore-sentence-mnli-deberta-entail_contradict-topp-0.5  P            0.405
+                                              bertscore-sentence-mnli-deberta-xlarge-entail_contradict-topp-0.5  P            0.405
                                                                                                           R            0.495
                                                                                                           F            0.348
-                                              bertscore-sentence-mnli-deberta-entail_contradict-topp-0.7  P            0.395
+                                              bertscore-sentence-mnli-deberta-xlarge-entail_contradict-topp-0.7  P            0.395
                                                                                                           R            0.489
                                                                                                           F            0.281
              RelevanceRating        new       bertscore-sentence-mnli-roberta-entail_contradict           P            0.423
@@ -398,25 +398,25 @@ spearmanr    InformativenessRating  new       bertscore-sentence-mnli-roberta-en
                                               bertscore-sentence-mnli-roberta-entail_contradict-topp-0.7  P            0.403
                                                                                                           R            0.339
                                                                                                           F            0.309
-                                              bertscore-sentence-mnli-deberta-entail_contradict           P            0.434
+                                              bertscore-sentence-mnli-deberta-xlarge-entail_contradict           P            0.434
                                                                                                           R            0.384
                                                                                                           F            0.189
-                                              bertscore-sentence-mnli-deberta-entail_contradict-topk-5    P            0.395
+                                              bertscore-sentence-mnli-deberta-xlarge-entail_contradict-topk-5    P            0.395
                                                                                                           R            0.417
                                                                                                           F            0.367
-                                              bertscore-sentence-mnli-deberta-entail_contradict-topk-10   P            0.368
+                                              bertscore-sentence-mnli-deberta-xlarge-entail_contradict-topk-10   P            0.368
                                                                                                           R            0.392
                                                                                                           F            0.273
-                                              bertscore-sentence-mnli-deberta-entail_contradict-topk-20   P            0.400
+                                              bertscore-sentence-mnli-deberta-xlarge-entail_contradict-topk-20   P            0.400
                                                                                                           R            0.405
                                                                                                           F            0.260
-                                              bertscore-sentence-mnli-deberta-entail_contradict-topp-0.2  P            0.356
+                                              bertscore-sentence-mnli-deberta-xlarge-entail_contradict-topp-0.2  P            0.356
                                                                                                           R            0.413
                                                                                                           F            0.367
-                                              bertscore-sentence-mnli-deberta-entail_contradict-topp-0.5  P            0.390
+                                              bertscore-sentence-mnli-deberta-xlarge-entail_contradict-topp-0.5  P            0.390
                                                                                                           R            0.396
                                                                                                           F            0.264
-                                              bertscore-sentence-mnli-deberta-entail_contradict-topp-0.7  P            0.431
+                                              bertscore-sentence-mnli-deberta-xlarge-entail_contradict-topp-0.7  P            0.431
                                                                                                           R            0.410
                                                                                                           F            0.220
              CoherenceRating        new       bertscore-sentence-mnli-roberta-entail_contradict           P            0.412
@@ -440,25 +440,25 @@ spearmanr    InformativenessRating  new       bertscore-sentence-mnli-roberta-en
                                               bertscore-sentence-mnli-roberta-entail_contradict-topp-0.7  P            0.385
                                                                                                           R            0.395
                                                                                                           F            0.341
-                                              bertscore-sentence-mnli-deberta-entail_contradict           P            0.458
+                                              bertscore-sentence-mnli-deberta-xlarge-entail_contradict           P            0.458
                                                                                                           R            0.446
                                                                                                           F            0.217
-                                              bertscore-sentence-mnli-deberta-entail_contradict-topk-5    P            0.422
+                                              bertscore-sentence-mnli-deberta-xlarge-entail_contradict-topk-5    P            0.422
                                                                                                           R            0.480
                                                                                                           F            0.425
-                                              bertscore-sentence-mnli-deberta-entail_contradict-topk-10   P            0.410
+                                              bertscore-sentence-mnli-deberta-xlarge-entail_contradict-topk-10   P            0.410
                                                                                                           R            0.461
                                                                                                           F            0.330
-                                              bertscore-sentence-mnli-deberta-entail_contradict-topk-20   P            0.445
+                                              bertscore-sentence-mnli-deberta-xlarge-entail_contradict-topk-20   P            0.445
                                                                                                           R            0.453
                                                                                                           F            0.290
-                                              bertscore-sentence-mnli-deberta-entail_contradict-topp-0.2  P            0.380
+                                              bertscore-sentence-mnli-deberta-xlarge-entail_contradict-topp-0.2  P            0.380
                                                                                                           R            0.500
                                                                                                           F            0.418
-                                              bertscore-sentence-mnli-deberta-entail_contradict-topp-0.5  P            0.423
+                                              bertscore-sentence-mnli-deberta-xlarge-entail_contradict-topp-0.5  P            0.423
                                                                                                           R            0.464
                                                                                                           F            0.322
-                                              bertscore-sentence-mnli-deberta-entail_contradict-topp-0.7  P            0.423
+                                              bertscore-sentence-mnli-deberta-xlarge-entail_contradict-topp-0.7  P            0.423
                                                                                                           R            0.461
                                                                                                           F            0.257
              FluencyRating          new       bertscore-sentence-mnli-roberta-entail_contradict           P            0.454
@@ -482,24 +482,24 @@ spearmanr    InformativenessRating  new       bertscore-sentence-mnli-roberta-en
                                               bertscore-sentence-mnli-roberta-entail_contradict-topp-0.7  P            0.398
                                                                                                           R            0.360
                                                                                                           F            0.292
-                                              bertscore-sentence-mnli-deberta-entail_contradict           P            0.471
+                                              bertscore-sentence-mnli-deberta-xlarge-entail_contradict           P            0.471
                                                                                                           R            0.386
                                                                                                           F            0.205
-                                              bertscore-sentence-mnli-deberta-entail_contradict-topk-5    P            0.376
+                                              bertscore-sentence-mnli-deberta-xlarge-entail_contradict-topk-5    P            0.376
                                                                                                           R            0.405
                                                                                                           F            0.351
-                                              bertscore-sentence-mnli-deberta-entail_contradict-topk-10   P            0.370
+                                              bertscore-sentence-mnli-deberta-xlarge-entail_contradict-topk-10   P            0.370
                                                                                                           R            0.401
                                                                                                           F            0.301
-                                              bertscore-sentence-mnli-deberta-entail_contradict-topk-20   P            0.414
+                                              bertscore-sentence-mnli-deberta-xlarge-entail_contradict-topk-20   P            0.414
                                                                                                           R            0.409
                                                                                                           F            0.291
-                                              bertscore-sentence-mnli-deberta-entail_contradict-topp-0.2  P            0.359
+                                              bertscore-sentence-mnli-deberta-xlarge-entail_contradict-topp-0.2  P            0.359
                                                                                                           R            0.427
                                                                                                           F            0.356
-                                              bertscore-sentence-mnli-deberta-entail_contradict-topp-0.5  P            0.394
+                                              bertscore-sentence-mnli-deberta-xlarge-entail_contradict-topp-0.5  P            0.394
                                                                                                           R            0.399
                                                                                                           F            0.293
-                                              bertscore-sentence-mnli-deberta-entail_contradict-topp-0.7  P            0.418
+                                              bertscore-sentence-mnli-deberta-xlarge-entail_contradict-topp-0.7  P            0.418
                                                                                                           R            0.400
                                                                                                           F            0.247

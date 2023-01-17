@@ -1,0 +1,295 @@
+corr_metric  aspect              approach  model                                                                  score_name          
+pearsonr     litepyramid_recall  new       bertscore-sentence-cos-mpnet-anyref-pegasus-newsroom-default           P                      -0.102
+                                                                                                                  R                       0.153
+                                                                                                                  F                      -0.030
+                                           bertscore-sentence-cos-mpnet-anyref-pegasus-newsroom-min-0.2-0.5       P                      -0.104
+                                                                                                                  R                       0.151
+                                                                                                                  F                      -0.031
+                                           bertscore-sentence-cos-mpnet-anyref-pegasus-newsroom-min-0.5-0.7       P                      -0.104
+                                                                                                                  R                       0.151
+                                                                                                                  F                      -0.031
+                                           bertscore-sentence-cos-mpnet-anyref-pegasus-newsroom-mean-0.2-0.5      P                      -0.104
+                                                                                                                  R                       0.151
+                                                                                                                  F                      -0.031
+                                           bertscore-sentence-cos-mpnet-anyref-pegasus-newsroom-mean-0.5-0.7      P                      -0.104
+                                                                                                                  R                       0.151
+                                                                                                                  F                      -0.031
+                                           bertscore-sentence-cos-mpnet-anyref-pegasus-newsroom-constant-16-32    P                      -0.104
+                                                                                                                  R                       0.153
+                                                                                                                  F                      -0.029
+                                           bertscore-sentence-cos-mpnet-anyref-pegasus-newsroom-constant-32-64    P                      -0.102
+                                                                                                                  R                       0.153
+                                                                                                                  F                      -0.030
+                                           bertscore-sentence-cos-mpnet-anyref-pegasus-cnndm-default              P                      -0.085
+                                                                                                                  R                       0.192
+                                                                                                                  F                       0.021
+                                           bertscore-sentence-cos-mpnet-anyref-pegasus-cnndm-min-0.2-0.5          P                      -0.085
+                                                                                                                  R                       0.192
+                                                                                                                  F                       0.021
+                                           bertscore-sentence-cos-mpnet-anyref-pegasus-cnndm-min-0.5-0.7          P                      -0.085
+                                                                                                                  R                       0.192
+                                                                                                                  F                       0.021
+                                           bertscore-sentence-cos-mpnet-anyref-pegasus-cnndm-mean-0.2-0.5         P                      -0.085
+                                                                                                                  R                       0.192
+                                                                                                                  F                       0.021
+                                           bertscore-sentence-cos-mpnet-anyref-pegasus-cnndm-mean-0.5-0.7         P                      -0.085
+                                                                                                                  R                       0.192
+                                                                                                                  F                       0.021
+                                           bertscore-sentence-cos-mpnet-anyref-pegasus-cnndm-constant-16-32       P                      -0.085
+                                                                                                                  R                       0.192
+                                                                                                                  F                       0.021
+                                           bertscore-sentence-cos-mpnet-anyref-pegasus-cnndm-constant-32-64       P                      -0.085
+                                                                                                                  R                       0.192
+                                                                                                                  F                       0.021
+                                           bertscore-sentence-cos-roberta-anyref-pegasus-newsroom-default         P                      -0.101
+                                                                                                                  R                       0.163
+                                                                                                                  F                      -0.020
+                                           bertscore-sentence-cos-roberta-anyref-pegasus-newsroom-min-0.2-0.5     P                      -0.101
+                                                                                                                  R                       0.149
+                                                                                                                  F                      -0.025
+                                           bertscore-sentence-cos-roberta-anyref-pegasus-newsroom-min-0.5-0.7     P                      -0.101
+                                                                                                                  R                       0.149
+                                                                                                                  F                      -0.025
+                                           bertscore-sentence-cos-roberta-anyref-pegasus-newsroom-mean-0.2-0.5    P                      -0.101
+                                                                                                                  R                       0.149
+                                                                                                                  F                      -0.025
+                                           bertscore-sentence-cos-roberta-anyref-pegasus-newsroom-mean-0.5-0.7    P                      -0.101
+                                                                                                                  R                       0.149
+                                                                                                                  F                      -0.025
+                                           bertscore-sentence-cos-roberta-anyref-pegasus-newsroom-constant-16-32  P                      -0.103
+                                                                                                                  R                       0.148
+                                                                                                                  F                      -0.027
+                                           bertscore-sentence-cos-roberta-anyref-pegasus-newsroom-constant-32-64  P                      -0.101
+                                                                                                                  R                       0.163
+                                                                                                                  F                      -0.020
+                                           bertscore-sentence-cos-roberta-anyref-pegasus-cnndm-default            P                      -0.101
+                                                                                                                  R                       0.146
+                                                                                                                  F                       0.011
+                                           bertscore-sentence-cos-roberta-anyref-pegasus-cnndm-min-0.2-0.5        P                      -0.101
+                                                                                                                  R                       0.146
+                                                                                                                  F                       0.011
+                                           bertscore-sentence-cos-roberta-anyref-pegasus-cnndm-min-0.5-0.7        P                      -0.101
+                                                                                                                  R                       0.146
+                                                                                                                  F                       0.011
+                                           bertscore-sentence-cos-roberta-anyref-pegasus-cnndm-mean-0.2-0.5       P                      -0.101
+                                                                                                                  R                       0.146
+                                                                                                                  F                       0.011
+                                           bertscore-sentence-cos-roberta-anyref-pegasus-cnndm-mean-0.5-0.7       P                      -0.101
+                                                                                                                  R                       0.146
+                                                                                                                  F                       0.011
+                                           bertscore-sentence-cos-roberta-anyref-pegasus-cnndm-constant-16-32     P                      -0.101
+                                                                                                                  R                       0.146
+                                                                                                                  F                       0.011
+                                           bertscore-sentence-cos-roberta-anyref-pegasus-cnndm-constant-32-64     P                      -0.101
+                                                                                                                  R                       0.146
+                                                                                                                  F                       0.011
+                                 PreCalc   PreCalc                                                                rouge_1_f_score         0.553
+                                                                                                                  rouge_2_recall          0.591
+                                                                                                                  rouge_l_recall          0.622
+                                                                                                                  rouge_2_precision       0.329
+                                                                                                                  rouge_2_f_score         0.489
+                                                                                                                  rouge_1_precision       0.224
+                                                                                                                  rouge_1_recall          0.661
+                                                                                                                  rouge_l_precision       0.228
+                                                                                                                  rouge_l_f_score         0.501
+                                                                                                                  js-2                    0.490
+                                                                                                                  mover_score             0.511
+                                                                                                                  bert_recall_score       0.606
+                                                                                                                  bert_precision_score    0.242
+                                                                                                                  bert_f_score            0.470
+kendalltau   litepyramid_recall  new       bertscore-sentence-cos-mpnet-anyref-pegasus-newsroom-default           P                      -0.074
+                                                                                                                  R                       0.110
+                                                                                                                  F                      -0.023
+                                           bertscore-sentence-cos-mpnet-anyref-pegasus-newsroom-min-0.2-0.5       P                      -0.075
+                                                                                                                  R                       0.103
+                                                                                                                  F                      -0.025
+                                           bertscore-sentence-cos-mpnet-anyref-pegasus-newsroom-min-0.5-0.7       P                      -0.075
+                                                                                                                  R                       0.103
+                                                                                                                  F                      -0.025
+                                           bertscore-sentence-cos-mpnet-anyref-pegasus-newsroom-mean-0.2-0.5      P                      -0.075
+                                                                                                                  R                       0.103
+                                                                                                                  F                      -0.025
+                                           bertscore-sentence-cos-mpnet-anyref-pegasus-newsroom-mean-0.5-0.7      P                      -0.075
+                                                                                                                  R                       0.103
+                                                                                                                  F                      -0.025
+                                           bertscore-sentence-cos-mpnet-anyref-pegasus-newsroom-constant-16-32    P                      -0.073
+                                                                                                                  R                       0.105
+                                                                                                                  F                      -0.023
+                                           bertscore-sentence-cos-mpnet-anyref-pegasus-newsroom-constant-32-64    P                      -0.074
+                                                                                                                  R                       0.110
+                                                                                                                  F                      -0.023
+                                           bertscore-sentence-cos-mpnet-anyref-pegasus-cnndm-default              P                      -0.074
+                                                                                                                  R                       0.141
+                                                                                                                  F                       0.009
+                                           bertscore-sentence-cos-mpnet-anyref-pegasus-cnndm-min-0.2-0.5          P                      -0.074
+                                                                                                                  R                       0.141
+                                                                                                                  F                       0.009
+                                           bertscore-sentence-cos-mpnet-anyref-pegasus-cnndm-min-0.5-0.7          P                      -0.074
+                                                                                                                  R                       0.141
+                                                                                                                  F                       0.009
+                                           bertscore-sentence-cos-mpnet-anyref-pegasus-cnndm-mean-0.2-0.5         P                      -0.074
+                                                                                                                  R                       0.141
+                                                                                                                  F                       0.009
+                                           bertscore-sentence-cos-mpnet-anyref-pegasus-cnndm-mean-0.5-0.7         P                      -0.074
+                                                                                                                  R                       0.141
+                                                                                                                  F                       0.009
+                                           bertscore-sentence-cos-mpnet-anyref-pegasus-cnndm-constant-16-32       P                      -0.074
+                                                                                                                  R                       0.141
+                                                                                                                  F                       0.009
+                                           bertscore-sentence-cos-mpnet-anyref-pegasus-cnndm-constant-32-64       P                      -0.074
+                                                                                                                  R                       0.141
+                                                                                                                  F                       0.009
+                                           bertscore-sentence-cos-roberta-anyref-pegasus-newsroom-default         P                      -0.081
+                                                                                                                  R                       0.115
+                                                                                                                  F                      -0.017
+                                           bertscore-sentence-cos-roberta-anyref-pegasus-newsroom-min-0.2-0.5     P                      -0.084
+                                                                                                                  R                       0.110
+                                                                                                                  F                      -0.024
+                                           bertscore-sentence-cos-roberta-anyref-pegasus-newsroom-min-0.5-0.7     P                      -0.084
+                                                                                                                  R                       0.110
+                                                                                                                  F                      -0.024
+                                           bertscore-sentence-cos-roberta-anyref-pegasus-newsroom-mean-0.2-0.5    P                      -0.084
+                                                                                                                  R                       0.110
+                                                                                                                  F                      -0.024
+                                           bertscore-sentence-cos-roberta-anyref-pegasus-newsroom-mean-0.5-0.7    P                      -0.084
+                                                                                                                  R                       0.110
+                                                                                                                  F                      -0.024
+                                           bertscore-sentence-cos-roberta-anyref-pegasus-newsroom-constant-16-32  P                      -0.083
+                                                                                                                  R                       0.108
+                                                                                                                  F                      -0.024
+                                           bertscore-sentence-cos-roberta-anyref-pegasus-newsroom-constant-32-64  P                      -0.081
+                                                                                                                  R                       0.115
+                                                                                                                  F                      -0.017
+                                           bertscore-sentence-cos-roberta-anyref-pegasus-cnndm-default            P                      -0.073
+                                                                                                                  R                       0.103
+                                                                                                                  F                      -0.001
+                                           bertscore-sentence-cos-roberta-anyref-pegasus-cnndm-min-0.2-0.5        P                      -0.073
+                                                                                                                  R                       0.103
+                                                                                                                  F                      -0.001
+                                           bertscore-sentence-cos-roberta-anyref-pegasus-cnndm-min-0.5-0.7        P                      -0.073
+                                                                                                                  R                       0.103
+                                                                                                                  F                      -0.001
+                                           bertscore-sentence-cos-roberta-anyref-pegasus-cnndm-mean-0.2-0.5       P                      -0.073
+                                                                                                                  R                       0.103
+                                                                                                                  F                      -0.001
+                                           bertscore-sentence-cos-roberta-anyref-pegasus-cnndm-mean-0.5-0.7       P                      -0.073
+                                                                                                                  R                       0.103
+                                                                                                                  F                      -0.001
+                                           bertscore-sentence-cos-roberta-anyref-pegasus-cnndm-constant-16-32     P                      -0.073
+                                                                                                                  R                       0.103
+                                                                                                                  F                      -0.001
+                                           bertscore-sentence-cos-roberta-anyref-pegasus-cnndm-constant-32-64     P                      -0.073
+                                                                                                                  R                       0.103
+                                                                                                                  F                      -0.001
+                                 PreCalc   PreCalc                                                                rouge_1_f_score         0.420
+                                                                                                                  rouge_2_recall          0.469
+                                                                                                                  rouge_l_recall          0.505
+                                                                                                                  rouge_2_precision       0.255
+                                                                                                                  rouge_2_f_score         0.357
+                                                                                                                  rouge_1_precision       0.182
+                                                                                                                  rouge_1_recall          0.525
+                                                                                                                  rouge_l_precision       0.180
+                                                                                                                  rouge_l_f_score         0.384
+                                                                                                                  js-2                    0.360
+                                                                                                                  mover_score             0.396
+                                                                                                                  bert_recall_score       0.456
+                                                                                                                  bert_precision_score    0.185
+                                                                                                                  bert_f_score            0.333
+spearmanr    litepyramid_recall  new       bertscore-sentence-cos-mpnet-anyref-pegasus-newsroom-default           P                      -0.102
+                                                                                                                  R                       0.141
+                                                                                                                  F                      -0.034
+                                           bertscore-sentence-cos-mpnet-anyref-pegasus-newsroom-min-0.2-0.5       P                      -0.104
+                                                                                                                  R                       0.132
+                                                                                                                  F                      -0.038
+                                           bertscore-sentence-cos-mpnet-anyref-pegasus-newsroom-min-0.5-0.7       P                      -0.104
+                                                                                                                  R                       0.132
+                                                                                                                  F                      -0.038
+                                           bertscore-sentence-cos-mpnet-anyref-pegasus-newsroom-mean-0.2-0.5      P                      -0.104
+                                                                                                                  R                       0.132
+                                                                                                                  F                      -0.038
+                                           bertscore-sentence-cos-mpnet-anyref-pegasus-newsroom-mean-0.5-0.7      P                      -0.104
+                                                                                                                  R                       0.132
+                                                                                                                  F                      -0.038
+                                           bertscore-sentence-cos-mpnet-anyref-pegasus-newsroom-constant-16-32    P                      -0.100
+                                                                                                                  R                       0.135
+                                                                                                                  F                      -0.035
+                                           bertscore-sentence-cos-mpnet-anyref-pegasus-newsroom-constant-32-64    P                      -0.102
+                                                                                                                  R                       0.141
+                                                                                                                  F                      -0.034
+                                           bertscore-sentence-cos-mpnet-anyref-pegasus-cnndm-default              P                      -0.097
+                                                                                                                  R                       0.183
+                                                                                                                  F                       0.008
+                                           bertscore-sentence-cos-mpnet-anyref-pegasus-cnndm-min-0.2-0.5          P                      -0.097
+                                                                                                                  R                       0.183
+                                                                                                                  F                       0.008
+                                           bertscore-sentence-cos-mpnet-anyref-pegasus-cnndm-min-0.5-0.7          P                      -0.097
+                                                                                                                  R                       0.183
+                                                                                                                  F                       0.008
+                                           bertscore-sentence-cos-mpnet-anyref-pegasus-cnndm-mean-0.2-0.5         P                      -0.097
+                                                                                                                  R                       0.183
+                                                                                                                  F                       0.008
+                                           bertscore-sentence-cos-mpnet-anyref-pegasus-cnndm-mean-0.5-0.7         P                      -0.097
+                                                                                                                  R                       0.183
+                                                                                                                  F                       0.008
+                                           bertscore-sentence-cos-mpnet-anyref-pegasus-cnndm-constant-16-32       P                      -0.097
+                                                                                                                  R                       0.183
+                                                                                                                  F                       0.008
+                                           bertscore-sentence-cos-mpnet-anyref-pegasus-cnndm-constant-32-64       P                      -0.097
+                                                                                                                  R                       0.183
+                                                                                                                  F                       0.008
+                                           bertscore-sentence-cos-roberta-anyref-pegasus-newsroom-default         P                      -0.106
+                                                                                                                  R                       0.147
+                                                                                                                  F                      -0.026
+                                           bertscore-sentence-cos-roberta-anyref-pegasus-newsroom-min-0.2-0.5     P                      -0.113
+                                                                                                                  R                       0.140
+                                                                                                                  F                      -0.034
+                                           bertscore-sentence-cos-roberta-anyref-pegasus-newsroom-min-0.5-0.7     P                      -0.113
+                                                                                                                  R                       0.140
+                                                                                                                  F                      -0.034
+                                           bertscore-sentence-cos-roberta-anyref-pegasus-newsroom-mean-0.2-0.5    P                      -0.113
+                                                                                                                  R                       0.140
+                                                                                                                  F                      -0.034
+                                           bertscore-sentence-cos-roberta-anyref-pegasus-newsroom-mean-0.5-0.7    P                      -0.113
+                                                                                                                  R                       0.140
+                                                                                                                  F                      -0.034
+                                           bertscore-sentence-cos-roberta-anyref-pegasus-newsroom-constant-16-32  P                      -0.110
+                                                                                                                  R                       0.138
+                                                                                                                  F                      -0.034
+                                           bertscore-sentence-cos-roberta-anyref-pegasus-newsroom-constant-32-64  P                      -0.106
+                                                                                                                  R                       0.147
+                                                                                                                  F                      -0.026
+                                           bertscore-sentence-cos-roberta-anyref-pegasus-cnndm-default            P                      -0.098
+                                                                                                                  R                       0.137
+                                                                                                                  F                      -0.004
+                                           bertscore-sentence-cos-roberta-anyref-pegasus-cnndm-min-0.2-0.5        P                      -0.098
+                                                                                                                  R                       0.137
+                                                                                                                  F                      -0.004
+                                           bertscore-sentence-cos-roberta-anyref-pegasus-cnndm-min-0.5-0.7        P                      -0.098
+                                                                                                                  R                       0.137
+                                                                                                                  F                      -0.004
+                                           bertscore-sentence-cos-roberta-anyref-pegasus-cnndm-mean-0.2-0.5       P                      -0.098
+                                                                                                                  R                       0.137
+                                                                                                                  F                      -0.004
+                                           bertscore-sentence-cos-roberta-anyref-pegasus-cnndm-mean-0.5-0.7       P                      -0.098
+                                                                                                                  R                       0.137
+                                                                                                                  F                      -0.004
+                                           bertscore-sentence-cos-roberta-anyref-pegasus-cnndm-constant-16-32     P                      -0.098
+                                                                                                                  R                       0.137
+                                                                                                                  F                      -0.004
+                                           bertscore-sentence-cos-roberta-anyref-pegasus-cnndm-constant-32-64     P                      -0.098
+                                                                                                                  R                       0.137
+                                                                                                                  F                      -0.004
+                                 PreCalc   PreCalc                                                                rouge_1_f_score         0.525
+                                                                                                                  rouge_2_recall          0.562
+                                                                                                                  rouge_l_recall          0.603
+                                                                                                                  rouge_2_precision       0.329
+                                                                                                                  rouge_2_f_score         0.452
+                                                                                                                  rouge_1_precision       0.234
+                                                                                                                  rouge_1_recall          0.627
+                                                                                                                  rouge_l_precision       0.238
+                                                                                                                  rouge_l_f_score         0.485
+                                                                                                                  js-2                    0.458
+                                                                                                                  mover_score             0.495
+                                                                                                                  bert_recall_score       0.568
+                                                                                                                  bert_precision_score    0.242
+                                                                                                                  bert_f_score            0.427

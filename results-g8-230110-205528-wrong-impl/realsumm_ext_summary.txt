@@ -1,8 +1,8 @@
 corr_metric  aspect              approach  model                                            score_name          
 pearsonr     litepyramid_recall  new       pagerank-cos-mpnet-entropy                       score                  -0.022
                                            pagerank-cos-mpnet-sum                           score                   0.018
-                                           pagerank-mnli-deberta-entail_contradict-entropy  score                  -0.034
-                                           pagerank-mnli-deberta-entail_contradict-sum      score                  -0.044
+                                           pagerank-mnli-deberta-xlarge-entail_contradict-entropy  score                  -0.034
+                                           pagerank-mnli-deberta-xlarge-entail_contradict-sum      score                  -0.044
                                  PreCalc   PreCalc                                          rouge_1_f_score         0.187
                                                                                             rouge_2_recall          0.236
                                                                                             rouge_l_recall          0.251
@@ -19,8 +19,8 @@ pearsonr     litepyramid_recall  new       pagerank-cos-mpnet-entropy           
                                                                                             bert_f_score            0.182
 kendalltau   litepyramid_recall  new       pagerank-cos-mpnet-entropy                       score                  -0.006
                                            pagerank-cos-mpnet-sum                           score                   0.017
-                                           pagerank-mnli-deberta-entail_contradict-entropy  score                  -0.011
-                                           pagerank-mnli-deberta-entail_contradict-sum      score                  -0.020
+                                           pagerank-mnli-deberta-xlarge-entail_contradict-entropy  score                  -0.011
+                                           pagerank-mnli-deberta-xlarge-entail_contradict-sum      score                  -0.020
                                  PreCalc   PreCalc                                          rouge_1_f_score         0.132
                                                                                             rouge_2_recall          0.196
                                                                                             rouge_l_recall          0.188
@@ -37,8 +37,8 @@ kendalltau   litepyramid_recall  new       pagerank-cos-mpnet-entropy           
                                                                                             bert_f_score            0.151
 spearmanr    litepyramid_recall  new       pagerank-cos-mpnet-entropy                       score                  -0.007
                                            pagerank-cos-mpnet-sum                           score                   0.018
-                                           pagerank-mnli-deberta-entail_contradict-entropy  score                  -0.015
-                                           pagerank-mnli-deberta-entail_contradict-sum      score                  -0.025
+                                           pagerank-mnli-deberta-xlarge-entail_contradict-entropy  score                  -0.015
+                                           pagerank-mnli-deberta-xlarge-entail_contradict-sum      score                  -0.025
                                  PreCalc   PreCalc                                          rouge_1_f_score         0.153
                                                                                             rouge_2_recall          0.221
                                                                                             rouge_l_recall          0.214

@@ -1,8 +1,8 @@
 corr_metric  aspect       approach  model                                            score_name               
 pearsonr     consistency  new       pagerank-cos-mpnet-entropy                       score                        0.011
                                     pagerank-cos-mpnet-sum                           score                       -0.019
-                                    pagerank-mnli-deberta-entail_contradict-entropy  score                        0.002
-                                    pagerank-mnli-deberta-entail_contradict-sum      score                        0.005
+                                    pagerank-mnli-deberta-xlarge-entail_contradict-entropy  score                        0.002
+                                    pagerank-mnli-deberta-xlarge-entail_contradict-sum      score                        0.005
                           PreCalc   PreCalc                                          rouge_1_precision            0.152
                                                                                      rouge_1_recall               0.219
                                                                                      rouge_1_f_score              0.222
@@ -34,8 +34,8 @@ pearsonr     consistency  new       pagerank-cos-mpnet-entropy                  
                                                                                      supert                       0.408
              relevance    new       pagerank-cos-mpnet-entropy                       score                       -0.126
                                     pagerank-cos-mpnet-sum                           score                        0.051
-                                    pagerank-mnli-deberta-entail_contradict-entropy  score                       -0.005
-                                    pagerank-mnli-deberta-entail_contradict-sum      score                        0.031
+                                    pagerank-mnli-deberta-xlarge-entail_contradict-entropy  score                       -0.005
+                                    pagerank-mnli-deberta-xlarge-entail_contradict-sum      score                        0.031
                           PreCalc   PreCalc                                          rouge_1_precision            0.146
                                                                                      rouge_1_recall               0.274
                                                                                      rouge_1_f_score              0.271
@@ -67,8 +67,8 @@ pearsonr     consistency  new       pagerank-cos-mpnet-entropy                  
                                                                                      supert                       0.255
              coherence    new       pagerank-cos-mpnet-entropy                       score                       -0.120
                                     pagerank-cos-mpnet-sum                           score                       -0.014
-                                    pagerank-mnli-deberta-entail_contradict-entropy  score                       -0.011
-                                    pagerank-mnli-deberta-entail_contradict-sum      score                        0.002
+                                    pagerank-mnli-deberta-xlarge-entail_contradict-entropy  score                       -0.011
+                                    pagerank-mnli-deberta-xlarge-entail_contradict-sum      score                        0.002
                           PreCalc   PreCalc                                          rouge_1_precision            0.185
                                                                                      rouge_1_recall               0.094
                                                                                      rouge_1_f_score              0.127
@@ -100,8 +100,8 @@ pearsonr     consistency  new       pagerank-cos-mpnet-entropy                  
                                                                                      supert                       0.130
              fluency      new       pagerank-cos-mpnet-entropy                       score                       -0.028
                                     pagerank-cos-mpnet-sum                           score                       -0.021
-                                    pagerank-mnli-deberta-entail_contradict-entropy  score                       -0.007
-                                    pagerank-mnli-deberta-entail_contradict-sum      score                        0.010
+                                    pagerank-mnli-deberta-xlarge-entail_contradict-entropy  score                       -0.007
+                                    pagerank-mnli-deberta-xlarge-entail_contradict-sum      score                        0.010
                           PreCalc   PreCalc                                          rouge_1_precision            0.161
                                                                                      rouge_1_recall               0.100
                                                                                      rouge_1_f_score              0.150
@@ -133,8 +133,8 @@ pearsonr     consistency  new       pagerank-cos-mpnet-entropy                  
                                                                                      supert                       0.303
 kendalltau   consistency  new       pagerank-cos-mpnet-entropy                       score                        0.023
                                     pagerank-cos-mpnet-sum                           score                        0.014
-                                    pagerank-mnli-deberta-entail_contradict-entropy  score                        0.015
-                                    pagerank-mnli-deberta-entail_contradict-sum      score                        0.017
+                                    pagerank-mnli-deberta-xlarge-entail_contradict-entropy  score                        0.015
+                                    pagerank-mnli-deberta-xlarge-entail_contradict-sum      score                        0.017
                           PreCalc   PreCalc                                          rouge_1_precision            0.083
                                                                                      rouge_1_recall               0.150
                                                                                      rouge_1_f_score              0.127
@@ -166,8 +166,8 @@ kendalltau   consistency  new       pagerank-cos-mpnet-entropy                  
                                                                                      supert                       0.284
              relevance    new       pagerank-cos-mpnet-entropy                       score                       -0.098
                                     pagerank-cos-mpnet-sum                           score                        0.025
-                                    pagerank-mnli-deberta-entail_contradict-entropy  score                       -0.017
-                                    pagerank-mnli-deberta-entail_contradict-sum      score                        0.010
+                                    pagerank-mnli-deberta-xlarge-entail_contradict-entropy  score                       -0.017
+                                    pagerank-mnli-deberta-xlarge-entail_contradict-sum      score                        0.010
                           PreCalc   PreCalc                                          rouge_1_precision            0.105
                                                                                      rouge_1_recall               0.194
                                                                                      rouge_1_f_score              0.188
@@ -199,8 +199,8 @@ kendalltau   consistency  new       pagerank-cos-mpnet-entropy                  
                                                                                      supert                       0.166
              coherence    new       pagerank-cos-mpnet-entropy                       score                       -0.093
                                     pagerank-cos-mpnet-sum                           score                       -0.015
-                                    pagerank-mnli-deberta-entail_contradict-entropy  score                       -0.010
-                                    pagerank-mnli-deberta-entail_contradict-sum      score                        0.003
+                                    pagerank-mnli-deberta-xlarge-entail_contradict-entropy  score                       -0.010
+                                    pagerank-mnli-deberta-xlarge-entail_contradict-sum      score                        0.003
                           PreCalc   PreCalc                                          rouge_1_precision            0.106
                                                                                      rouge_1_recall               0.081
                                                                                      rouge_1_f_score              0.090
@@ -232,8 +232,8 @@ kendalltau   consistency  new       pagerank-cos-mpnet-entropy                  
                                                                                      supert                       0.097
              fluency      new       pagerank-cos-mpnet-entropy                       score                        0.045
                                     pagerank-cos-mpnet-sum                           score                       -0.042
-                                    pagerank-mnli-deberta-entail_contradict-entropy  score                       -0.013
-                                    pagerank-mnli-deberta-entail_contradict-sum      score                       -0.008
+                                    pagerank-mnli-deberta-xlarge-entail_contradict-entropy  score                       -0.013
+                                    pagerank-mnli-deberta-xlarge-entail_contradict-sum      score                       -0.008
                           PreCalc   PreCalc                                          rouge_1_precision            0.088
                                                                                      rouge_1_recall               0.076
                                                                                      rouge_1_f_score              0.085
@@ -265,8 +265,8 @@ kendalltau   consistency  new       pagerank-cos-mpnet-entropy                  
                                                                                      supert                       0.194
 spearmanr    consistency  new       pagerank-cos-mpnet-entropy                       score                        0.025
                                     pagerank-cos-mpnet-sum                           score                        0.014
-                                    pagerank-mnli-deberta-entail_contradict-entropy  score                        0.017
-                                    pagerank-mnli-deberta-entail_contradict-sum      score                        0.019
+                                    pagerank-mnli-deberta-xlarge-entail_contradict-entropy  score                        0.017
+                                    pagerank-mnli-deberta-xlarge-entail_contradict-sum      score                        0.019
                           PreCalc   PreCalc                                          rouge_1_precision            0.101
                                                                                      rouge_1_recall               0.177
                                                                                      rouge_1_f_score              0.152
@@ -298,8 +298,8 @@ spearmanr    consistency  new       pagerank-cos-mpnet-entropy                  
                                                                                      supert                       0.343
              relevance    new       pagerank-cos-mpnet-entropy                       score                       -0.110
                                     pagerank-cos-mpnet-sum                           score                        0.026
-                                    pagerank-mnli-deberta-entail_contradict-entropy  score                       -0.018
-                                    pagerank-mnli-deberta-entail_contradict-sum      score                        0.014
+                                    pagerank-mnli-deberta-xlarge-entail_contradict-entropy  score                       -0.018
+                                    pagerank-mnli-deberta-xlarge-entail_contradict-sum      score                        0.014
                           PreCalc   PreCalc                                          rouge_1_precision            0.144
                                                                                      rouge_1_recall               0.247
                                                                                      rouge_1_f_score              0.250
@@ -331,8 +331,8 @@ spearmanr    consistency  new       pagerank-cos-mpnet-entropy                  
                                                                                      supert                       0.214
              coherence    new       pagerank-cos-mpnet-entropy                       score                       -0.106
                                     pagerank-cos-mpnet-sum                           score                       -0.017
-                                    pagerank-mnli-deberta-entail_contradict-entropy  score                       -0.010
-                                    pagerank-mnli-deberta-entail_contradict-sum      score                        0.005
+                                    pagerank-mnli-deberta-xlarge-entail_contradict-entropy  score                       -0.010
+                                    pagerank-mnli-deberta-xlarge-entail_contradict-sum      score                        0.005
                           PreCalc   PreCalc                                          rouge_1_precision            0.145
                                                                                      rouge_1_recall               0.105
                                                                                      rouge_1_f_score              0.120
@@ -364,8 +364,8 @@ spearmanr    consistency  new       pagerank-cos-mpnet-entropy                  
                                                                                      supert                       0.119
              fluency      new       pagerank-cos-mpnet-entropy                       score                        0.048
                                     pagerank-cos-mpnet-sum                           score                       -0.044
-                                    pagerank-mnli-deberta-entail_contradict-entropy  score                       -0.016
-                                    pagerank-mnli-deberta-entail_contradict-sum      score                       -0.010
+                                    pagerank-mnli-deberta-xlarge-entail_contradict-entropy  score                       -0.016
+                                    pagerank-mnli-deberta-xlarge-entail_contradict-sum      score                       -0.010
                           PreCalc   PreCalc                                          rouge_1_precision            0.108
                                                                                      rouge_1_recall               0.091
                                                                                      rouge_1_f_score              0.101

@@ -1,0 +1,7 @@
+bertscore-deberta-large-mnli
+bertscore-deberta-large-mnli-topk-5
+bertscore-deberta-large-mnli-topk-10
+bertscore-deberta-large-mnli-topk-20
+bertscore-deberta-large-mnli-topp-0.2
+bertscore-deberta-large-mnli-topp-0.5
+bertscore-deberta-large-mnli-topp-0.7

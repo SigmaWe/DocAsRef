@@ -17,13 +17,13 @@ pearsonr     litepyramid_recall  new       bertscore-sentence-mnli-roberta-not_n
                                            bertscore-sentence-mnli-bart-entail_contradict     P                       0.273
                                                                                               R                       0.180
                                                                                               F                       0.147
-                                           bertscore-sentence-mnli-deberta-not_neutral        P                       0.118
+                                           bertscore-sentence-mnli-deberta-xlarge-not_neutral        P                       0.118
                                                                                               R                       0.074
                                                                                               F                       0.088
-                                           bertscore-sentence-mnli-deberta-entail_only        P                       0.273
+                                           bertscore-sentence-mnli-deberta-xlarge-entail_only        P                       0.273
                                                                                               R                       0.190
                                                                                               F                       0.227
-                                           bertscore-sentence-mnli-deberta-entail_contradict  P                       0.269
+                                           bertscore-sentence-mnli-deberta-xlarge-entail_contradict  P                       0.269
                                                                                               R                       0.196
                                                                                               F                       0.192
                                  PreCalc   PreCalc                                            rouge_1_f_score         0.710
@@ -58,13 +58,13 @@ kendalltau   litepyramid_recall  new       bertscore-sentence-mnli-roberta-not_n
                                            bertscore-sentence-mnli-bart-entail_contradict     P                       0.200
                                                                                               R                       0.142
                                                                                               F                       0.144
-                                           bertscore-sentence-mnli-deberta-not_neutral        P                       0.115
+                                           bertscore-sentence-mnli-deberta-xlarge-not_neutral        P                       0.115
                                                                                               R                       0.056
                                                                                               F                       0.063
-                                           bertscore-sentence-mnli-deberta-entail_only        P                       0.175
+                                           bertscore-sentence-mnli-deberta-xlarge-entail_only        P                       0.175
                                                                                               R                       0.178
                                                                                               F                       0.186
-                                           bertscore-sentence-mnli-deberta-entail_contradict  P                       0.169
+                                           bertscore-sentence-mnli-deberta-xlarge-entail_contradict  P                       0.169
                                                                                               R                       0.153
                                                                                               F                       0.189
                                  PreCalc   PreCalc                                            rouge_1_f_score         0.498
@@ -99,13 +99,13 @@ spearmanr    litepyramid_recall  new       bertscore-sentence-mnli-roberta-not_n
                                            bertscore-sentence-mnli-bart-entail_contradict     P                       0.298
                                                                                               R                       0.196
                                                                                               F                       0.206
-                                           bertscore-sentence-mnli-deberta-not_neutral        P                       0.176
+                                           bertscore-sentence-mnli-deberta-xlarge-not_neutral        P                       0.176
                                                                                               R                       0.088
                                                                                               F                       0.095
-                                           bertscore-sentence-mnli-deberta-entail_only        P                       0.269
+                                           bertscore-sentence-mnli-deberta-xlarge-entail_only        P                       0.269
                                                                                               R                       0.259
                                                                                               F                       0.269
-                                           bertscore-sentence-mnli-deberta-entail_contradict  P                       0.258
+                                           bertscore-sentence-mnli-deberta-xlarge-entail_contradict  P                       0.258
                                                                                               R                       0.225
                                                                                               F                       0.278
                                  PreCalc   PreCalc                                            rouge_1_f_score         0.677

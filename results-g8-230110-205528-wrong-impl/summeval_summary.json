@@ -205,7 +205,7 @@
     "99": null,
     "average": -0.019002233
   },
-  "('pearsonr', 'consistency', 'new', 'pagerank-mnli-deberta-entail_contradict-entropy', 'score')": {
+  "('pearsonr', 'consistency', 'new', 'pagerank-mnli-deberta-xlarge-entail_contradict-entropy', 'score')": {
     "0": -0.0167371214,
     "1": -0.2248992527,
     "2": -0.0956048421,
@@ -308,7 +308,7 @@
     "99": null,
     "average": 0.0023214058
   },
-  "('pearsonr', 'consistency', 'new', 'pagerank-mnli-deberta-entail_contradict-sum', 'score')": {
+  "('pearsonr', 'consistency', 'new', 'pagerank-mnli-deberta-xlarge-entail_contradict-sum', 'score')": {
     "0": 0.0165344421,
     "1": -0.2248992552,
     "2": -0.0956048393,
@@ -3604,7 +3604,7 @@
     "99": null,
     "average": 0.0510598762
   },
-  "('pearsonr', 'relevance', 'new', 'pagerank-mnli-deberta-entail_contradict-entropy', 'score')": {
+  "('pearsonr', 'relevance', 'new', 'pagerank-mnli-deberta-xlarge-entail_contradict-entropy', 'score')": {
     "0": 0.132971866,
     "1": 0.3793161942,
     "2": -0.341512728,
@@ -3707,7 +3707,7 @@
     "99": -0.3574365139,
     "average": -0.0051820061
   },
-  "('pearsonr', 'relevance', 'new', 'pagerank-mnli-deberta-entail_contradict-sum', 'score')": {
+  "('pearsonr', 'relevance', 'new', 'pagerank-mnli-deberta-xlarge-entail_contradict-sum', 'score')": {
     "0": -0.0106514573,
     "1": 0.3793161934,
     "2": -0.3415127274,
@@ -7003,7 +7003,7 @@
     "99": null,
     "average": -0.0137895831
   },
-  "('pearsonr', 'coherence', 'new', 'pagerank-mnli-deberta-entail_contradict-entropy', 'score')": {
+  "('pearsonr', 'coherence', 'new', 'pagerank-mnli-deberta-xlarge-entail_contradict-entropy', 'score')": {
     "0": 0.0552823005,
     "1": -0.1951756687,
     "2": -0.0622796696,
@@ -7106,7 +7106,7 @@
     "99": -0.0577838664,
     "average": -0.0112397085
   },
-  "('pearsonr', 'coherence', 'new', 'pagerank-mnli-deberta-entail_contradict-sum', 'score')": {
+  "('pearsonr', 'coherence', 'new', 'pagerank-mnli-deberta-xlarge-entail_contradict-sum', 'score')": {
     "0": 0.0674800517,
     "1": -0.1951756763,
     "2": -0.06227967,
@@ -10402,7 +10402,7 @@
     "99": null,
     "average": -0.0206549216
   },
-  "('pearsonr', 'fluency', 'new', 'pagerank-mnli-deberta-entail_contradict-entropy', 'score')": {
+  "('pearsonr', 'fluency', 'new', 'pagerank-mnli-deberta-xlarge-entail_contradict-entropy', 'score')": {
     "0": 0.0270758903,
     "1": -0.2133372114,
     "2": -0.144138832,
@@ -10505,7 +10505,7 @@
     "99": -0.4516155454,
     "average": -0.0065541723
   },
-  "('pearsonr', 'fluency', 'new', 'pagerank-mnli-deberta-entail_contradict-sum', 'score')": {
+  "('pearsonr', 'fluency', 'new', 'pagerank-mnli-deberta-xlarge-entail_contradict-sum', 'score')": {
     "0": -0.2570023077,
     "1": -0.2133372133,
     "2": -0.1441388308,
@@ -13801,7 +13801,7 @@
     "99": null,
     "average": 0.013522631
   },
-  "('kendalltau', 'consistency', 'new', 'pagerank-mnli-deberta-entail_contradict-entropy', 'score')": {
+  "('kendalltau', 'consistency', 'new', 'pagerank-mnli-deberta-xlarge-entail_contradict-entropy', 'score')": {
     "0": 0.0126349674,
     "1": -0.0444261658,
     "2": -0.1606438658,
@@ -13904,7 +13904,7 @@
     "99": null,
     "average": 0.0148097818
   },
-  "('kendalltau', 'consistency', 'new', 'pagerank-mnli-deberta-entail_contradict-sum', 'score')": {
+  "('kendalltau', 'consistency', 'new', 'pagerank-mnli-deberta-xlarge-entail_contradict-sum', 'score')": {
     "0": 0.0126349674,
     "1": -0.0444261658,
     "2": -0.1606438658,
@@ -17200,7 +17200,7 @@
     "99": null,
     "average": 0.025179393
   },
-  "('kendalltau', 'relevance', 'new', 'pagerank-mnli-deberta-entail_contradict-entropy', 'score')": {
+  "('kendalltau', 'relevance', 'new', 'pagerank-mnli-deberta-xlarge-entail_contradict-entropy', 'score')": {
     "0": 0.0711680684,
     "1": 0.3529432894,
     "2": -0.3137883279,
@@ -17303,7 +17303,7 @@
     "99": -0.2570117621,
     "average": -0.0168732438
   },
-  "('kendalltau', 'relevance', 'new', 'pagerank-mnli-deberta-entail_contradict-sum', 'score')": {
+  "('kendalltau', 'relevance', 'new', 'pagerank-mnli-deberta-xlarge-entail_contradict-sum', 'score')": {
     "0": 0.0355840342,
     "1": 0.3529432894,
     "2": -0.3137883279,
@@ -20599,7 +20599,7 @@
     "99": null,
     "average": -0.0146582551
   },
-  "('kendalltau', 'coherence', 'new', 'pagerank-mnli-deberta-entail_contradict-entropy', 'score')": {
+  "('kendalltau', 'coherence', 'new', 'pagerank-mnli-deberta-xlarge-entail_contradict-entropy', 'score')": {
     "0": -0.0349909254,
     "1": -0.1118033989,
     "2": -0.0314140431,
@@ -20702,7 +20702,7 @@
     "99": -0.0834057656,
     "average": -0.0098935468
   },
-  "('kendalltau', 'coherence', 'new', 'pagerank-mnli-deberta-entail_contradict-sum', 'score')": {
+  "('kendalltau', 'coherence', 'new', 'pagerank-mnli-deberta-xlarge-entail_contradict-sum', 'score')": {
     "0": 0.0349909254,
     "1": -0.1118033989,
     "2": -0.0314140431,
@@ -23998,7 +23998,7 @@
     "99": null,
     "average": -0.0416611263
   },
-  "('kendalltau', 'fluency', 'new', 'pagerank-mnli-deberta-entail_contradict-entropy', 'score')": {
+  "('kendalltau', 'fluency', 'new', 'pagerank-mnli-deberta-xlarge-entail_contradict-entropy', 'score')": {
     "0": -0.0695048047,
     "1": -0.0200804832,
     "2": -0.0403786427,
@@ -24101,7 +24101,7 @@
     "99": -0.5287679909,
     "average": -0.0125482511
   },
-  "('kendalltau', 'fluency', 'new', 'pagerank-mnli-deberta-entail_contradict-sum', 'score')": {
+  "('kendalltau', 'fluency', 'new', 'pagerank-mnli-deberta-xlarge-entail_contradict-sum', 'score')": {
     "0": 0.0,
     "1": -0.0200804832,
     "2": -0.0403786427,
@@ -27397,7 +27397,7 @@
     "99": null,
     "average": 0.0140055908
   },
-  "('spearmanr', 'consistency', 'new', 'pagerank-mnli-deberta-entail_contradict-entropy', 'score')": {
+  "('spearmanr', 'consistency', 'new', 'pagerank-mnli-deberta-xlarge-entail_contradict-entropy', 'score')": {
     "0": 0.0052155066,
     "1": -0.0499445369,
     "2": -0.1767766953,
@@ -27500,7 +27500,7 @@
     "99": null,
     "average": 0.0166653996
   },
-  "('spearmanr', 'consistency', 'new', 'pagerank-mnli-deberta-entail_contradict-sum', 'score')": {
+  "('spearmanr', 'consistency', 'new', 'pagerank-mnli-deberta-xlarge-entail_contradict-sum', 'score')": {
     "0": 0.0052155066,
     "1": -0.0499445369,
     "2": -0.1767766953,
@@ -30796,7 +30796,7 @@
     "99": null,
     "average": 0.0255254384
   },
-  "('spearmanr', 'relevance', 'new', 'pagerank-mnli-deberta-entail_contradict-entropy', 'score')": {
+  "('spearmanr', 'relevance', 'new', 'pagerank-mnli-deberta-xlarge-entail_contradict-entropy', 'score')": {
     "0": 0.0825550407,
     "1": 0.3921851845,
     "2": -0.3692118036,
@@ -30899,7 +30899,7 @@
     "99": -0.2883667589,
     "average": -0.0176026744
   },
-  "('spearmanr', 'relevance', 'new', 'pagerank-mnli-deberta-entail_contradict-sum', 'score')": {
+  "('spearmanr', 'relevance', 'new', 'pagerank-mnli-deberta-xlarge-entail_contradict-sum', 'score')": {
     "0": 0.0231154114,
     "1": 0.3921851845,
     "2": -0.3692118036,
@@ -34195,7 +34195,7 @@
     "99": null,
     "average": -0.0172257524
   },
-  "('spearmanr', 'coherence', 'new', 'pagerank-mnli-deberta-entail_contradict-entropy', 'score')": {
+  "('spearmanr', 'coherence', 'new', 'pagerank-mnli-deberta-xlarge-entail_contradict-entropy', 'score')": {
     "0": -0.0328753907,
     "1": -0.1254714033,
     "2": -0.0254493299,
@@ -34298,7 +34298,7 @@
     "99": -0.1076035578,
     "average": -0.0099290986
   },
-  "('spearmanr', 'coherence', 'new', 'pagerank-mnli-deberta-entail_contradict-sum', 'score')": {
+  "('spearmanr', 'coherence', 'new', 'pagerank-mnli-deberta-xlarge-entail_contradict-sum', 'score')": {
     "0": 0.0618057345,
     "1": -0.1254714033,
     "2": -0.0254493299,
@@ -37594,7 +37594,7 @@
     "99": null,
     "average": -0.0439881995
   },
-  "('spearmanr', 'fluency', 'new', 'pagerank-mnli-deberta-entail_contradict-entropy', 'score')": {
+  "('spearmanr', 'fluency', 'new', 'pagerank-mnli-deberta-xlarge-entail_contradict-entropy', 'score')": {
     "0": -0.0956166644,
     "1": -0.0220970869,
     "2": -0.0307437731,
@@ -37697,7 +37697,7 @@
     "99": -0.5462184912,
     "average": -0.01603407
   },
-  "('spearmanr', 'fluency', 'new', 'pagerank-mnli-deberta-entail_contradict-sum', 'score')": {
+  "('spearmanr', 'fluency', 'new', 'pagerank-mnli-deberta-xlarge-entail_contradict-sum', 'score')": {
     "0": -0.0233015401,
     "1": -0.0220970869,
     "2": -0.0307437731,

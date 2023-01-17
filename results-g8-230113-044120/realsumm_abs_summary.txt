@@ -5,10 +5,10 @@ pearsonr     litepyramid_recall  new       bertscore-sentence-pagerank-cos-mpnet
                                            bertscore-sentence-pagerank-cos-mpnet-sum                           P                      -0.026
                                                                                                                R                       0.257
                                                                                                                F                       0.146
-                                           bertscore-sentence-pagerank-mnli-deberta-entail_contradict-entropy  P                       0.056
+                                           bertscore-sentence-pagerank-mnli-deberta-xlarge-entail_contradict-entropy  P                       0.056
                                                                                                                R                       0.151
                                                                                                                F                       0.078
-                                           bertscore-sentence-pagerank-mnli-deberta-entail_contradict-sum      P                       0.068
+                                           bertscore-sentence-pagerank-mnli-deberta-xlarge-entail_contradict-sum      P                       0.068
                                                                                                                R                       0.030
                                                                                                                F                       0.015
                                  PreCalc   PreCalc                                                             rouge_1_f_score         0.553
@@ -31,10 +31,10 @@ kendalltau   litepyramid_recall  new       bertscore-sentence-pagerank-cos-mpnet
                                            bertscore-sentence-pagerank-cos-mpnet-sum                           P                      -0.031
                                                                                                                R                       0.202
                                                                                                                F                       0.101
-                                           bertscore-sentence-pagerank-mnli-deberta-entail_contradict-entropy  P                       0.017
+                                           bertscore-sentence-pagerank-mnli-deberta-xlarge-entail_contradict-entropy  P                       0.017
                                                                                                                R                       0.145
                                                                                                                F                       0.081
-                                           bertscore-sentence-pagerank-mnli-deberta-entail_contradict-sum      P                       0.056
+                                           bertscore-sentence-pagerank-mnli-deberta-xlarge-entail_contradict-sum      P                       0.056
                                                                                                                R                       0.051
                                                                                                                F                       0.014
                                  PreCalc   PreCalc                                                             rouge_1_f_score         0.420
@@ -57,10 +57,10 @@ spearmanr    litepyramid_recall  new       bertscore-sentence-pagerank-cos-mpnet
                                            bertscore-sentence-pagerank-cos-mpnet-sum                           P                      -0.041
                                                                                                                R                       0.257
                                                                                                                F                       0.126
-                                           bertscore-sentence-pagerank-mnli-deberta-entail_contradict-entropy  P                       0.021
+                                           bertscore-sentence-pagerank-mnli-deberta-xlarge-entail_contradict-entropy  P                       0.021
                                                                                                                R                       0.192
                                                                                                                F                       0.110
-                                           bertscore-sentence-pagerank-mnli-deberta-entail_contradict-sum      P                       0.071
+                                           bertscore-sentence-pagerank-mnli-deberta-xlarge-entail_contradict-sum      P                       0.071
                                                                                                                R                       0.073
                                                                                                                F                       0.016
                                  PreCalc   PreCalc                                                             rouge_1_f_score         0.525

@@ -205,7 +205,7 @@
     "99": null,
     "average": 0.0298449152
   },
-  "('pearsonr', 'litepyramid_recall', 'new', 'pagerank-mnli-deberta-entail_contradict-entropy', 'score')": {
+  "('pearsonr', 'litepyramid_recall', 'new', 'pagerank-mnli-deberta-xlarge-entail_contradict-entropy', 'score')": {
     "0": 0.3929632452,
     "1": -0.0947447916,
     "2": 0.392641574,
@@ -308,7 +308,7 @@
     "99": 0.2228576994,
     "average": 0.0706555496
   },
-  "('pearsonr', 'litepyramid_recall', 'new', 'pagerank-mnli-deberta-entail_contradict-sum', 'score')": {
+  "('pearsonr', 'litepyramid_recall', 'new', 'pagerank-mnli-deberta-xlarge-entail_contradict-sum', 'score')": {
     "0": 0.3929632507,
     "1": 0.2002607868,
     "2": 0.3926415732,
@@ -2059,7 +2059,7 @@
     "99": null,
     "average": 0.0309528105
   },
-  "('kendalltau', 'litepyramid_recall', 'new', 'pagerank-mnli-deberta-entail_contradict-entropy', 'score')": {
+  "('kendalltau', 'litepyramid_recall', 'new', 'pagerank-mnli-deberta-xlarge-entail_contradict-entropy', 'score')": {
     "0": 0.045003516,
     "1": -0.1324764792,
     "2": 0.3696106355,
@@ -2162,7 +2162,7 @@
     "99": 0.090535746,
     "average": 0.0507687556
   },
-  "('kendalltau', 'litepyramid_recall', 'new', 'pagerank-mnli-deberta-entail_contradict-sum', 'score')": {
+  "('kendalltau', 'litepyramid_recall', 'new', 'pagerank-mnli-deberta-xlarge-entail_contradict-sum', 'score')": {
     "0": 0.045003516,
     "1": 0.2384576626,
     "2": 0.3696106355,
@@ -3913,7 +3913,7 @@
     "99": null,
     "average": 0.0335801231
   },
-  "('spearmanr', 'litepyramid_recall', 'new', 'pagerank-mnli-deberta-entail_contradict-entropy', 'score')": {
+  "('spearmanr', 'litepyramid_recall', 'new', 'pagerank-mnli-deberta-xlarge-entail_contradict-entropy', 'score')": {
     "0": 0.0716727724,
     "1": -0.1516099224,
     "2": 0.4488767236,
@@ -4016,7 +4016,7 @@
     "99": 0.1138300649,
     "average": 0.05754557
   },
-  "('spearmanr', 'litepyramid_recall', 'new', 'pagerank-mnli-deberta-entail_contradict-sum', 'score')": {
+  "('spearmanr', 'litepyramid_recall', 'new', 'pagerank-mnli-deberta-xlarge-entail_contradict-sum', 'score')": {
     "0": 0.0716727724,
     "1": 0.2855907841,
     "2": 0.4488767236,

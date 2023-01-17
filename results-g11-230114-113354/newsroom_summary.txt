@@ -1,0 +1,73 @@
+corr_metric  aspect                 approach  model                         score_name
+pearsonr     InformativenessRating  trad      bertscore-deberta-large-mnli  precision    -0.088
+                                                                            recall        0.331
+                                                                            f1            0.077
+                                    new       bertscore-deberta-large-mnli  precision     0.721
+                                                                            recall        0.814
+                                                                            f1            0.796
+             RelevanceRating        trad      bertscore-deberta-large-mnli  precision    -0.043
+                                                                            recall        0.328
+                                                                            f1            0.105
+                                    new       bertscore-deberta-large-mnli  precision     0.710
+                                                                            recall        0.767
+                                                                            f1            0.760
+             CoherenceRating        trad      bertscore-deberta-large-mnli  precision    -0.065
+                                                                            recall        0.264
+                                                                            f1            0.064
+                                    new       bertscore-deberta-large-mnli  precision     0.673
+                                                                            recall        0.711
+                                                                            f1            0.714
+             FluencyRating          trad      bertscore-deberta-large-mnli  precision    -0.053
+                                                                            recall        0.221
+                                                                            f1            0.051
+                                    new       bertscore-deberta-large-mnli  precision     0.608
+                                                                            recall        0.645
+                                                                            f1            0.643
+kendalltau   InformativenessRating  trad      bertscore-deberta-large-mnli  precision    -0.029
+                                                                            recall        0.285
+                                                                            f1            0.141
+                                    new       bertscore-deberta-large-mnli  precision     0.538
+                                                                            recall        0.648
+                                                                            f1            0.642
+             RelevanceRating        trad      bertscore-deberta-large-mnli  precision     0.005
+                                                                            recall        0.240
+                                                                            f1            0.151
+                                    new       bertscore-deberta-large-mnli  precision     0.507
+                                                                            recall        0.524
+                                                                            f1            0.541
+             CoherenceRating        trad      bertscore-deberta-large-mnli  precision     0.048
+                                                                            recall        0.245
+                                                                            f1            0.165
+                                    new       bertscore-deberta-large-mnli  precision     0.544
+                                                                            recall        0.561
+                                                                            f1            0.573
+             FluencyRating          trad      bertscore-deberta-large-mnli  precision     0.066
+                                                                            recall        0.228
+                                                                            f1            0.160
+                                    new       bertscore-deberta-large-mnli  precision     0.510
+                                                                            recall        0.489
+                                                                            f1            0.506
+spearmanr    InformativenessRating  trad      bertscore-deberta-large-mnli  precision    -0.020
+                                                                            recall        0.338
+                                                                            f1            0.172
+                                    new       bertscore-deberta-large-mnli  precision     0.642
+                                                                            recall        0.748
+                                                                            f1            0.739
+             RelevanceRating        trad      bertscore-deberta-large-mnli  precision     0.017
+                                                                            recall        0.306
+                                                                            f1            0.190
+                                    new       bertscore-deberta-large-mnli  precision     0.594
+                                                                            recall        0.629
+                                                                            f1            0.635
+             CoherenceRating        trad      bertscore-deberta-large-mnli  precision     0.057
+                                                                            recall        0.302
+                                                                            f1            0.196
+                                    new       bertscore-deberta-large-mnli  precision     0.639
+                                                                            recall        0.668
+                                                                            f1            0.674
+             FluencyRating          trad      bertscore-deberta-large-mnli  precision     0.084
+                                                                            recall        0.285
+                                                                            f1            0.205
+                                    new       bertscore-deberta-large-mnli  precision     0.605
+                                                                            recall        0.583
+                                                                            f1            0.595

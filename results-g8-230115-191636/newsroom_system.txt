@@ -1,0 +1,73 @@
+corr_metric  aspect                 approach  model                                                                     score_name
+pearsonr     InformativenessRating  new       bertscore-sentence-pagerank-mnli-deberta-large-entail_contradict-entropy  P             0.544
+                                                                                                                        R            -0.115
+                                                                                                                        F            -0.112
+                                              bertscore-sentence-pagerank-mnli-deberta-large-entail_contradict-sum      P             0.336
+                                                                                                                        R             0.169
+                                                                                                                        F             0.126
+             RelevanceRating        new       bertscore-sentence-pagerank-mnli-deberta-large-entail_contradict-entropy  P             0.357
+                                                                                                                        R            -0.069
+                                                                                                                        F            -0.206
+                                              bertscore-sentence-pagerank-mnli-deberta-large-entail_contradict-sum      P             0.163
+                                                                                                                        R             0.103
+                                                                                                                        F             0.098
+             CoherenceRating        new       bertscore-sentence-pagerank-mnli-deberta-large-entail_contradict-entropy  P             0.447
+                                                                                                                        R            -0.198
+                                                                                                                        F            -0.019
+                                              bertscore-sentence-pagerank-mnli-deberta-large-entail_contradict-sum      P             0.133
+                                                                                                                        R             0.212
+                                                                                                                        F             0.167
+             FluencyRating          new       bertscore-sentence-pagerank-mnli-deberta-large-entail_contradict-entropy  P             0.275
+                                                                                                                        R            -0.282
+                                                                                                                        F            -0.130
+                                              bertscore-sentence-pagerank-mnli-deberta-large-entail_contradict-sum      P            -0.020
+                                                                                                                        R             0.207
+                                                                                                                        F             0.113
+kendalltau   InformativenessRating  new       bertscore-sentence-pagerank-mnli-deberta-large-entail_contradict-entropy  P             0.384
+                                                                                                                        R            -0.059
+                                                                                                                        F            -0.130
+                                              bertscore-sentence-pagerank-mnli-deberta-large-entail_contradict-sum      P             0.354
+                                                                                                                        R            -0.109
+                                                                                                                        F             0.073
+             RelevanceRating        new       bertscore-sentence-pagerank-mnli-deberta-large-entail_contradict-entropy  P             0.200
+                                                                                                                        R            -0.014
+                                                                                                                        F            -0.076
+                                              bertscore-sentence-pagerank-mnli-deberta-large-entail_contradict-sum      P             0.189
+                                                                                                                        R            -0.071
+                                                                                                                        F             0.133
+             CoherenceRating        new       bertscore-sentence-pagerank-mnli-deberta-large-entail_contradict-entropy  P             0.295
+                                                                                                                        R            -0.089
+                                                                                                                        F            -0.071
+                                              bertscore-sentence-pagerank-mnli-deberta-large-entail_contradict-sum      P             0.296
+                                                                                                                        R            -0.033
+                                                                                                                        F             0.020
+             FluencyRating          new       bertscore-sentence-pagerank-mnli-deberta-large-entail_contradict-entropy  P             0.160
+                                                                                                                        R            -0.106
+                                                                                                                        F            -0.090
+                                              bertscore-sentence-pagerank-mnli-deberta-large-entail_contradict-sum      P             0.177
+                                                                                                                        R            -0.001
+                                                                                                                        F            -0.016
+spearmanr    InformativenessRating  new       bertscore-sentence-pagerank-mnli-deberta-large-entail_contradict-entropy  P             0.543
+                                                                                                                        R            -0.104
+                                                                                                                        F            -0.201
+                                              bertscore-sentence-pagerank-mnli-deberta-large-entail_contradict-sum      P             0.491
+                                                                                                                        R            -0.157
+                                                                                                                        F             0.109
+             RelevanceRating        new       bertscore-sentence-pagerank-mnli-deberta-large-entail_contradict-entropy  P             0.293
+                                                                                                                        R            -0.006
+                                                                                                                        F            -0.115
+                                              bertscore-sentence-pagerank-mnli-deberta-large-entail_contradict-sum      P             0.288
+                                                                                                                        R            -0.119
+                                                                                                                        F             0.206
+             CoherenceRating        new       bertscore-sentence-pagerank-mnli-deberta-large-entail_contradict-entropy  P             0.426
+                                                                                                                        R            -0.140
+                                                                                                                        F            -0.122
+                                              bertscore-sentence-pagerank-mnli-deberta-large-entail_contradict-sum      P             0.420
+                                                                                                                        R            -0.036
+                                                                                                                        F             0.018
+             FluencyRating          new       bertscore-sentence-pagerank-mnli-deberta-large-entail_contradict-entropy  P             0.247
+                                                                                                                        R            -0.138
+                                                                                                                        F            -0.139
+                                              bertscore-sentence-pagerank-mnli-deberta-large-entail_contradict-sum      P             0.250
+                                                                                                                        R            -0.010
+                                                                                                                        F            -0.028

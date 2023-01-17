@@ -17,13 +17,13 @@ pearsonr     InformativenessRating  new       bertscore-sentence-mnli-roberta-no
                                               bertscore-sentence-mnli-bart-entail_contradict     P             0.313
                                                                                                  R             0.218
                                                                                                  F            -0.145
-                                              bertscore-sentence-mnli-deberta-not_neutral        P             0.094
+                                              bertscore-sentence-mnli-deberta-xlarge-not_neutral        P             0.094
                                                                                                  R            -0.120
                                                                                                  F            -0.101
-                                              bertscore-sentence-mnli-deberta-entail_only        P             0.303
+                                              bertscore-sentence-mnli-deberta-xlarge-entail_only        P             0.303
                                                                                                  R             0.030
                                                                                                  F             0.051
-                                              bertscore-sentence-mnli-deberta-entail_contradict  P             0.327
+                                              bertscore-sentence-mnli-deberta-xlarge-entail_contradict  P             0.327
                                                                                                  R             0.113
                                                                                                  F             0.137
              RelevanceRating        new       bertscore-sentence-mnli-roberta-not_neutral        P             0.134
@@ -44,13 +44,13 @@ pearsonr     InformativenessRating  new       bertscore-sentence-mnli-roberta-no
                                               bertscore-sentence-mnli-bart-entail_contradict     P             0.300
                                                                                                  R             0.138
                                                                                                  F            -0.284
-                                              bertscore-sentence-mnli-deberta-not_neutral        P            -0.002
+                                              bertscore-sentence-mnli-deberta-xlarge-not_neutral        P            -0.002
                                                                                                  R            -0.359
                                                                                                  F            -0.363
-                                              bertscore-sentence-mnli-deberta-entail_only        P             0.276
+                                              bertscore-sentence-mnli-deberta-xlarge-entail_only        P             0.276
                                                                                                  R            -0.126
                                                                                                  F            -0.117
-                                              bertscore-sentence-mnli-deberta-entail_contradict  P             0.301
+                                              bertscore-sentence-mnli-deberta-xlarge-entail_contradict  P             0.301
                                                                                                  R             0.052
                                                                                                  F            -0.053
              CoherenceRating        new       bertscore-sentence-mnli-roberta-not_neutral        P             0.177
@@ -71,13 +71,13 @@ pearsonr     InformativenessRating  new       bertscore-sentence-mnli-roberta-no
                                               bertscore-sentence-mnli-bart-entail_contradict     P             0.283
                                                                                                  R            -0.053
                                                                                                  F            -0.268
-                                              bertscore-sentence-mnli-deberta-not_neutral        P             0.148
+                                              bertscore-sentence-mnli-deberta-xlarge-not_neutral        P             0.148
                                                                                                  R            -0.340
                                                                                                  F            -0.302
-                                              bertscore-sentence-mnli-deberta-entail_only        P             0.266
+                                              bertscore-sentence-mnli-deberta-xlarge-entail_only        P             0.266
                                                                                                  R            -0.289
                                                                                                  F            -0.276
-                                              bertscore-sentence-mnli-deberta-entail_contradict  P             0.291
+                                              bertscore-sentence-mnli-deberta-xlarge-entail_contradict  P             0.291
                                                                                                  R            -0.149
                                                                                                  F             0.075
              FluencyRating          new       bertscore-sentence-mnli-roberta-not_neutral        P             0.148
@@ -98,13 +98,13 @@ pearsonr     InformativenessRating  new       bertscore-sentence-mnli-roberta-no
                                               bertscore-sentence-mnli-bart-entail_contradict     P             0.112
                                                                                                  R            -0.185
                                                                                                  F            -0.119
-                                              bertscore-sentence-mnli-deberta-not_neutral        P             0.112
+                                              bertscore-sentence-mnli-deberta-xlarge-not_neutral        P             0.112
                                                                                                  R            -0.339
                                                                                                  F            -0.299
-                                              bertscore-sentence-mnli-deberta-entail_only        P             0.097
+                                              bertscore-sentence-mnli-deberta-xlarge-entail_only        P             0.097
                                                                                                  R            -0.366
                                                                                                  F            -0.366
-                                              bertscore-sentence-mnli-deberta-entail_contradict  P             0.113
+                                              bertscore-sentence-mnli-deberta-xlarge-entail_contradict  P             0.113
                                                                                                  R            -0.266
                                                                                                  F             0.018
 kendalltau   InformativenessRating  new       bertscore-sentence-mnli-roberta-not_neutral        P             0.062
@@ -125,13 +125,13 @@ kendalltau   InformativenessRating  new       bertscore-sentence-mnli-roberta-no
                                               bertscore-sentence-mnli-bart-entail_contradict     P             0.244
                                                                                                  R             0.151
                                                                                                  F             0.078
-                                              bertscore-sentence-mnli-deberta-not_neutral        P             0.061
+                                              bertscore-sentence-mnli-deberta-xlarge-not_neutral        P             0.061
                                                                                                  R            -0.045
                                                                                                  F            -0.020
-                                              bertscore-sentence-mnli-deberta-entail_only        P             0.204
+                                              bertscore-sentence-mnli-deberta-xlarge-entail_only        P             0.204
                                                                                                  R             0.009
                                                                                                  F             0.031
-                                              bertscore-sentence-mnli-deberta-entail_contradict  P             0.204
+                                              bertscore-sentence-mnli-deberta-xlarge-entail_contradict  P             0.204
                                                                                                  R             0.025
                                                                                                  F             0.115
              RelevanceRating        new       bertscore-sentence-mnli-roberta-not_neutral        P             0.101
@@ -152,13 +152,13 @@ kendalltau   InformativenessRating  new       bertscore-sentence-mnli-roberta-no
                                               bertscore-sentence-mnli-bart-entail_contradict     P             0.173
                                                                                                  R             0.145
                                                                                                  F             0.138
-                                              bertscore-sentence-mnli-deberta-not_neutral        P            -0.004
+                                              bertscore-sentence-mnli-deberta-xlarge-not_neutral        P            -0.004
                                                                                                  R            -0.177
                                                                                                  F            -0.158
-                                              bertscore-sentence-mnli-deberta-entail_only        P             0.140
+                                              bertscore-sentence-mnli-deberta-xlarge-entail_only        P             0.140
                                                                                                  R            -0.076
                                                                                                  F            -0.066
-                                              bertscore-sentence-mnli-deberta-entail_contradict  P             0.142
+                                              bertscore-sentence-mnli-deberta-xlarge-entail_contradict  P             0.142
                                                                                                  R             0.042
                                                                                                  F            -0.002
              CoherenceRating        new       bertscore-sentence-mnli-roberta-not_neutral        P             0.116
@@ -179,13 +179,13 @@ kendalltau   InformativenessRating  new       bertscore-sentence-mnli-roberta-no
                                               bertscore-sentence-mnli-bart-entail_contradict     P             0.189
                                                                                                  R            -0.017
                                                                                                  F             0.001
-                                              bertscore-sentence-mnli-deberta-not_neutral        P             0.114
+                                              bertscore-sentence-mnli-deberta-xlarge-not_neutral        P             0.114
                                                                                                  R            -0.197
                                                                                                  F            -0.156
-                                              bertscore-sentence-mnli-deberta-entail_only        P             0.170
+                                              bertscore-sentence-mnli-deberta-xlarge-entail_only        P             0.170
                                                                                                  R            -0.216
                                                                                                  F            -0.206
-                                              bertscore-sentence-mnli-deberta-entail_contradict  P             0.166
+                                              bertscore-sentence-mnli-deberta-xlarge-entail_contradict  P             0.166
                                                                                                  R            -0.102
                                                                                                  F             0.019
              FluencyRating          new       bertscore-sentence-mnli-roberta-not_neutral        P             0.130
@@ -206,13 +206,13 @@ kendalltau   InformativenessRating  new       bertscore-sentence-mnli-roberta-no
                                               bertscore-sentence-mnli-bart-entail_contradict     P             0.088
                                                                                                  R            -0.087
                                                                                                  F             0.032
-                                              bertscore-sentence-mnli-deberta-not_neutral        P             0.081
+                                              bertscore-sentence-mnli-deberta-xlarge-not_neutral        P             0.081
                                                                                                  R            -0.226
                                                                                                  F            -0.180
-                                              bertscore-sentence-mnli-deberta-entail_only        P             0.067
+                                              bertscore-sentence-mnli-deberta-xlarge-entail_only        P             0.067
                                                                                                  R            -0.265
                                                                                                  F            -0.263
-                                              bertscore-sentence-mnli-deberta-entail_contradict  P             0.069
+                                              bertscore-sentence-mnli-deberta-xlarge-entail_contradict  P             0.069
                                                                                                  R            -0.174
                                                                                                  F            -0.045
 spearmanr    InformativenessRating  new       bertscore-sentence-mnli-roberta-not_neutral        P             0.087
@@ -233,13 +233,13 @@ spearmanr    InformativenessRating  new       bertscore-sentence-mnli-roberta-no
                                               bertscore-sentence-mnli-bart-entail_contradict     P             0.343
                                                                                                  R             0.214
                                                                                                  F             0.094
-                                              bertscore-sentence-mnli-deberta-not_neutral        P             0.092
+                                              bertscore-sentence-mnli-deberta-xlarge-not_neutral        P             0.092
                                                                                                  R            -0.054
                                                                                                  F            -0.027
-                                              bertscore-sentence-mnli-deberta-entail_only        P             0.295
+                                              bertscore-sentence-mnli-deberta-xlarge-entail_only        P             0.295
                                                                                                  R             0.031
                                                                                                  F             0.047
-                                              bertscore-sentence-mnli-deberta-entail_contradict  P             0.298
+                                              bertscore-sentence-mnli-deberta-xlarge-entail_contradict  P             0.298
                                                                                                  R             0.048
                                                                                                  F             0.174
              RelevanceRating        new       bertscore-sentence-mnli-roberta-not_neutral        P             0.155
@@ -260,13 +260,13 @@ spearmanr    InformativenessRating  new       bertscore-sentence-mnli-roberta-no
                                               bertscore-sentence-mnli-bart-entail_contradict     P             0.248
                                                                                                  R             0.211
                                                                                                  F             0.180
-                                              bertscore-sentence-mnli-deberta-not_neutral        P            -0.007
+                                              bertscore-sentence-mnli-deberta-xlarge-not_neutral        P            -0.007
                                                                                                  R            -0.263
                                                                                                  F            -0.228
-                                              bertscore-sentence-mnli-deberta-entail_only        P             0.203
+                                              bertscore-sentence-mnli-deberta-xlarge-entail_only        P             0.203
                                                                                                  R            -0.120
                                                                                                  F            -0.100
-                                              bertscore-sentence-mnli-deberta-entail_contradict  P             0.208
+                                              bertscore-sentence-mnli-deberta-xlarge-entail_contradict  P             0.208
                                                                                                  R             0.067
                                                                                                  F             0.019
              CoherenceRating        new       bertscore-sentence-mnli-roberta-not_neutral        P             0.185
@@ -287,13 +287,13 @@ spearmanr    InformativenessRating  new       bertscore-sentence-mnli-roberta-no
                                               bertscore-sentence-mnli-bart-entail_contradict     P             0.288
                                                                                                  R            -0.019
                                                                                                  F            -0.004
-                                              bertscore-sentence-mnli-deberta-not_neutral        P             0.172
+                                              bertscore-sentence-mnli-deberta-xlarge-not_neutral        P             0.172
                                                                                                  R            -0.285
                                                                                                  F            -0.231
-                                              bertscore-sentence-mnli-deberta-entail_only        P             0.235
+                                              bertscore-sentence-mnli-deberta-xlarge-entail_only        P             0.235
                                                                                                  R            -0.309
                                                                                                  F            -0.298
-                                              bertscore-sentence-mnli-deberta-entail_contradict  P             0.243
+                                              bertscore-sentence-mnli-deberta-xlarge-entail_contradict  P             0.243
                                                                                                  R            -0.158
                                                                                                  F             0.023
              FluencyRating          new       bertscore-sentence-mnli-roberta-not_neutral        P             0.196
@@ -314,12 +314,12 @@ spearmanr    InformativenessRating  new       bertscore-sentence-mnli-roberta-no
                                               bertscore-sentence-mnli-bart-entail_contradict     P             0.135
                                                                                                  R            -0.126
                                                                                                  F             0.060
-                                              bertscore-sentence-mnli-deberta-not_neutral        P             0.120
+                                              bertscore-sentence-mnli-deberta-xlarge-not_neutral        P             0.120
                                                                                                  R            -0.318
                                                                                                  F            -0.262
-                                              bertscore-sentence-mnli-deberta-entail_only        P             0.092
+                                              bertscore-sentence-mnli-deberta-xlarge-entail_only        P             0.092
                                                                                                  R            -0.391
                                                                                                  F            -0.390
-                                              bertscore-sentence-mnli-deberta-entail_contradict  P             0.103
+                                              bertscore-sentence-mnli-deberta-xlarge-entail_contradict  P             0.103
                                                                                                  R            -0.266
                                                                                                  F            -0.067

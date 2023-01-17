@@ -4,6 +4,6 @@ bertscore-sentence-mnli-roberta-entail_contradict
 bertscore-sentence-mnli-bart-not_neutral
 bertscore-sentence-mnli-bart-entail_only
 bertscore-sentence-mnli-bart-entail_contradict
-bertscore-sentence-mnli-deberta-not_neutral
-bertscore-sentence-mnli-deberta-entail_only
-bertscore-sentence-mnli-deberta-entail_contradict
+bertscore-sentence-mnli-deberta-xlarge-not_neutral
+bertscore-sentence-mnli-deberta-xlarge-entail_only
+bertscore-sentence-mnli-deberta-xlarge-entail_contradict

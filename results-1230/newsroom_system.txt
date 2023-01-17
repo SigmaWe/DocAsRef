@@ -209,46 +209,46 @@ pearsonr     InformativenessRating  trad      bertscore                         
                                     new       bertscore-sentence-mnli-bart-topp-0.7     P            -0.109
                                                                                         R            -0.198
                                                                                         F            -0.184
-                                    trad      bertscore-sentence-mnli-deberta           P             0.211
+                                    trad      bertscore-sentence-mnli-deberta-xlarge           P             0.211
                                                                                         R             0.213
                                                                                         F             0.213
-                                    new       bertscore-sentence-mnli-deberta           P             0.143
+                                    new       bertscore-sentence-mnli-deberta-xlarge           P             0.143
                                                                                         R            -0.070
                                                                                         F            -0.052
-                                    trad      bertscore-sentence-mnli-deberta-topk-5    P             0.228
+                                    trad      bertscore-sentence-mnli-deberta-xlarge-topk-5    P             0.228
                                                                                         R             0.191
                                                                                         F             0.206
-                                    new       bertscore-sentence-mnli-deberta-topk-5    P             0.232
+                                    new       bertscore-sentence-mnli-deberta-xlarge-topk-5    P             0.232
                                                                                         R             0.101
                                                                                         F             0.146
-                                    trad      bertscore-sentence-mnli-deberta-topk-10   P             0.213
+                                    trad      bertscore-sentence-mnli-deberta-xlarge-topk-10   P             0.213
                                                                                         R             0.194
                                                                                         F             0.202
-                                    new       bertscore-sentence-mnli-deberta-topk-10   P             0.245
+                                    new       bertscore-sentence-mnli-deberta-xlarge-topk-10   P             0.245
                                                                                         R             0.007
                                                                                         F             0.054
-                                    trad      bertscore-sentence-mnli-deberta-topk-20   P             0.213
+                                    trad      bertscore-sentence-mnli-deberta-xlarge-topk-20   P             0.213
                                                                                         R             0.194
                                                                                         F             0.202
-                                    new       bertscore-sentence-mnli-deberta-topk-20   P             0.212
+                                    new       bertscore-sentence-mnli-deberta-xlarge-topk-20   P             0.212
                                                                                         R            -0.005
                                                                                         F             0.024
-                                    trad      bertscore-sentence-mnli-deberta-topp-0.2  P             0.245
+                                    trad      bertscore-sentence-mnli-deberta-xlarge-topp-0.2  P             0.245
                                                                                         R             0.203
                                                                                         F             0.219
-                                    new       bertscore-sentence-mnli-deberta-topp-0.2  P             0.207
+                                    new       bertscore-sentence-mnli-deberta-xlarge-topp-0.2  P             0.207
                                                                                         R             0.104
                                                                                         F             0.124
-                                    trad      bertscore-sentence-mnli-deberta-topp-0.5  P             0.256
+                                    trad      bertscore-sentence-mnli-deberta-xlarge-topp-0.5  P             0.256
                                                                                         R             0.212
                                                                                         F             0.234
-                                    new       bertscore-sentence-mnli-deberta-topp-0.5  P             0.184
+                                    new       bertscore-sentence-mnli-deberta-xlarge-topp-0.5  P             0.184
                                                                                         R            -0.009
                                                                                         F             0.020
-                                    trad      bertscore-sentence-mnli-deberta-topp-0.7  P             0.225
+                                    trad      bertscore-sentence-mnli-deberta-xlarge-topp-0.7  P             0.225
                                                                                         R             0.192
                                                                                         F             0.204
-                                    new       bertscore-sentence-mnli-deberta-topp-0.7  P             0.237
+                                    new       bertscore-sentence-mnli-deberta-xlarge-topp-0.7  P             0.237
                                                                                         R            -0.034
                                                                                         F             0.005
                                     trad      rouge                                     rouge1        0.368
@@ -531,46 +531,46 @@ pearsonr     InformativenessRating  trad      bertscore                         
                                     new       bertscore-sentence-mnli-bart-topp-0.7     P            -0.135
                                                                                         R            -0.352
                                                                                         F            -0.343
-                                    trad      bertscore-sentence-mnli-deberta           P             0.151
+                                    trad      bertscore-sentence-mnli-deberta-xlarge           P             0.151
                                                                                         R             0.142
                                                                                         F             0.155
-                                    new       bertscore-sentence-mnli-deberta           P             0.027
+                                    new       bertscore-sentence-mnli-deberta-xlarge           P             0.027
                                                                                         R            -0.330
                                                                                         F            -0.332
-                                    trad      bertscore-sentence-mnli-deberta-topk-5    P             0.164
+                                    trad      bertscore-sentence-mnli-deberta-xlarge-topk-5    P             0.164
                                                                                         R             0.132
                                                                                         F             0.154
-                                    new       bertscore-sentence-mnli-deberta-topk-5    P            -0.011
+                                    new       bertscore-sentence-mnli-deberta-xlarge-topk-5    P            -0.011
                                                                                         R            -0.159
                                                                                         F            -0.120
-                                    trad      bertscore-sentence-mnli-deberta-topk-10   P             0.151
+                                    trad      bertscore-sentence-mnli-deberta-xlarge-topk-10   P             0.151
                                                                                         R             0.135
                                                                                         F             0.151
-                                    new       bertscore-sentence-mnli-deberta-topk-10   P             0.023
+                                    new       bertscore-sentence-mnli-deberta-xlarge-topk-10   P             0.023
                                                                                         R            -0.272
                                                                                         F            -0.230
-                                    trad      bertscore-sentence-mnli-deberta-topk-20   P             0.151
+                                    trad      bertscore-sentence-mnli-deberta-xlarge-topk-20   P             0.151
                                                                                         R             0.135
                                                                                         F             0.151
-                                    new       bertscore-sentence-mnli-deberta-topk-20   P            -0.057
+                                    new       bertscore-sentence-mnli-deberta-xlarge-topk-20   P            -0.057
                                                                                         R            -0.298
                                                                                         F            -0.287
-                                    trad      bertscore-sentence-mnli-deberta-topp-0.2  P             0.249
+                                    trad      bertscore-sentence-mnli-deberta-xlarge-topp-0.2  P             0.249
                                                                                         R             0.138
                                                                                         F             0.204
-                                    new       bertscore-sentence-mnli-deberta-topp-0.2  P            -0.041
+                                    new       bertscore-sentence-mnli-deberta-xlarge-topp-0.2  P            -0.041
                                                                                         R            -0.149
                                                                                         F            -0.156
-                                    trad      bertscore-sentence-mnli-deberta-topp-0.5  P             0.196
+                                    trad      bertscore-sentence-mnli-deberta-xlarge-topp-0.5  P             0.196
                                                                                         R             0.154
                                                                                         F             0.183
-                                    new       bertscore-sentence-mnli-deberta-topp-0.5  P            -0.112
+                                    new       bertscore-sentence-mnli-deberta-xlarge-topp-0.5  P            -0.112
                                                                                         R            -0.281
                                                                                         F            -0.297
-                                    trad      bertscore-sentence-mnli-deberta-topp-0.7  P             0.168
+                                    trad      bertscore-sentence-mnli-deberta-xlarge-topp-0.7  P             0.168
                                                                                         R             0.130
                                                                                         F             0.155
-                                    new       bertscore-sentence-mnli-deberta-topp-0.7  P             0.034
+                                    new       bertscore-sentence-mnli-deberta-xlarge-topp-0.7  P             0.034
                                                                                         R            -0.309
                                                                                         F            -0.302
                                     trad      rouge                                     rouge1        0.337
@@ -853,46 +853,46 @@ pearsonr     InformativenessRating  trad      bertscore                         
                                     new       bertscore-sentence-mnli-bart-topp-0.7     P             0.025
                                                                                         R            -0.221
                                                                                         F            -0.199
-                                    trad      bertscore-sentence-mnli-deberta           P             0.162
+                                    trad      bertscore-sentence-mnli-deberta-xlarge           P             0.162
                                                                                         R             0.161
                                                                                         F             0.172
-                                    new       bertscore-sentence-mnli-deberta           P             0.188
+                                    new       bertscore-sentence-mnli-deberta-xlarge           P             0.188
                                                                                         R            -0.301
                                                                                         F            -0.266
-                                    trad      bertscore-sentence-mnli-deberta-topk-5    P             0.170
+                                    trad      bertscore-sentence-mnli-deberta-xlarge-topk-5    P             0.170
                                                                                         R             0.144
                                                                                         F             0.164
-                                    new       bertscore-sentence-mnli-deberta-topk-5    P            -0.016
+                                    new       bertscore-sentence-mnli-deberta-xlarge-topk-5    P            -0.016
                                                                                         R            -0.070
                                                                                         F            -0.059
-                                    trad      bertscore-sentence-mnli-deberta-topk-10   P             0.163
+                                    trad      bertscore-sentence-mnli-deberta-xlarge-topk-10   P             0.163
                                                                                         R             0.144
                                                                                         F             0.162
-                                    new       bertscore-sentence-mnli-deberta-topk-10   P             0.045
+                                    new       bertscore-sentence-mnli-deberta-xlarge-topk-10   P             0.045
                                                                                         R            -0.208
                                                                                         F            -0.168
-                                    trad      bertscore-sentence-mnli-deberta-topk-20   P             0.163
+                                    trad      bertscore-sentence-mnli-deberta-xlarge-topk-20   P             0.163
                                                                                         R             0.144
                                                                                         F             0.162
-                                    new       bertscore-sentence-mnli-deberta-topk-20   P             0.050
+                                    new       bertscore-sentence-mnli-deberta-xlarge-topk-20   P             0.050
                                                                                         R            -0.225
                                                                                         F            -0.193
-                                    trad      bertscore-sentence-mnli-deberta-topp-0.2  P             0.177
+                                    trad      bertscore-sentence-mnli-deberta-xlarge-topp-0.2  P             0.177
                                                                                         R             0.111
                                                                                         F             0.146
-                                    new       bertscore-sentence-mnli-deberta-topp-0.2  P             0.225
+                                    new       bertscore-sentence-mnli-deberta-xlarge-topp-0.2  P             0.225
                                                                                         R            -0.192
                                                                                         F            -0.092
-                                    trad      bertscore-sentence-mnli-deberta-topp-0.5  P             0.177
+                                    trad      bertscore-sentence-mnli-deberta-xlarge-topp-0.5  P             0.177
                                                                                         R             0.144
                                                                                         F             0.165
-                                    new       bertscore-sentence-mnli-deberta-topp-0.5  P             0.175
+                                    new       bertscore-sentence-mnli-deberta-xlarge-topp-0.5  P             0.175
                                                                                         R            -0.309
                                                                                         F            -0.244
-                                    trad      bertscore-sentence-mnli-deberta-topp-0.7  P             0.170
+                                    trad      bertscore-sentence-mnli-deberta-xlarge-topp-0.7  P             0.170
                                                                                         R             0.145
                                                                                         F             0.163
-                                    new       bertscore-sentence-mnli-deberta-topp-0.7  P             0.211
+                                    new       bertscore-sentence-mnli-deberta-xlarge-topp-0.7  P             0.211
                                                                                         R            -0.292
                                                                                         F            -0.238
                                     trad      rouge                                     rouge1        0.289
@@ -1175,46 +1175,46 @@ pearsonr     InformativenessRating  trad      bertscore                         
                                     new       bertscore-sentence-mnli-bart-topp-0.7     P            -0.030
                                                                                         R            -0.241
                                                                                         F            -0.210
-                                    trad      bertscore-sentence-mnli-deberta           P             0.100
+                                    trad      bertscore-sentence-mnli-deberta-xlarge           P             0.100
                                                                                         R             0.048
                                                                                         F             0.090
-                                    new       bertscore-sentence-mnli-deberta           P             0.169
+                                    new       bertscore-sentence-mnli-deberta-xlarge           P             0.169
                                                                                         R            -0.321
                                                                                         F            -0.281
-                                    trad      bertscore-sentence-mnli-deberta-topk-5    P             0.107
+                                    trad      bertscore-sentence-mnli-deberta-xlarge-topk-5    P             0.107
                                                                                         R             0.031
                                                                                         F             0.083
-                                    new       bertscore-sentence-mnli-deberta-topk-5    P            -0.078
+                                    new       bertscore-sentence-mnli-deberta-xlarge-topk-5    P            -0.078
                                                                                         R            -0.115
                                                                                         F            -0.105
-                                    trad      bertscore-sentence-mnli-deberta-topk-10   P             0.100
+                                    trad      bertscore-sentence-mnli-deberta-xlarge-topk-10   P             0.100
                                                                                         R             0.032
                                                                                         F             0.080
-                                    new       bertscore-sentence-mnli-deberta-topk-10   P            -0.030
+                                    new       bertscore-sentence-mnli-deberta-xlarge-topk-10   P            -0.030
                                                                                         R            -0.202
                                                                                         F            -0.171
-                                    trad      bertscore-sentence-mnli-deberta-topk-20   P             0.100
+                                    trad      bertscore-sentence-mnli-deberta-xlarge-topk-20   P             0.100
                                                                                         R             0.032
                                                                                         F             0.080
-                                    new       bertscore-sentence-mnli-deberta-topk-20   P            -0.010
+                                    new       bertscore-sentence-mnli-deberta-xlarge-topk-20   P            -0.010
                                                                                         R            -0.240
                                                                                         F            -0.213
-                                    trad      bertscore-sentence-mnli-deberta-topp-0.2  P             0.124
+                                    trad      bertscore-sentence-mnli-deberta-xlarge-topp-0.2  P             0.124
                                                                                         R             0.010
                                                                                         F             0.081
-                                    new       bertscore-sentence-mnli-deberta-topp-0.2  P             0.180
+                                    new       bertscore-sentence-mnli-deberta-xlarge-topp-0.2  P             0.180
                                                                                         R            -0.283
                                                                                         F            -0.171
-                                    trad      bertscore-sentence-mnli-deberta-topp-0.5  P             0.118
+                                    trad      bertscore-sentence-mnli-deberta-xlarge-topp-0.5  P             0.118
                                                                                         R             0.041
                                                                                         F             0.095
-                                    new       bertscore-sentence-mnli-deberta-topp-0.5  P             0.113
+                                    new       bertscore-sentence-mnli-deberta-xlarge-topp-0.5  P             0.113
                                                                                         R            -0.334
                                                                                         F            -0.271
-                                    trad      bertscore-sentence-mnli-deberta-topp-0.7  P             0.108
+                                    trad      bertscore-sentence-mnli-deberta-xlarge-topp-0.7  P             0.108
                                                                                         R             0.032
                                                                                         F             0.082
-                                    new       bertscore-sentence-mnli-deberta-topp-0.7  P             0.175
+                                    new       bertscore-sentence-mnli-deberta-xlarge-topp-0.7  P             0.175
                                                                                         R            -0.327
                                                                                         F            -0.261
                                     trad      rouge                                     rouge1        0.195
@@ -1497,46 +1497,46 @@ kendalltau   InformativenessRating  trad      bertscore                         
                                     new       bertscore-sentence-mnli-bart-topp-0.7     P            -0.073
                                                                                         R            -0.118
                                                                                         F            -0.121
-                                    trad      bertscore-sentence-mnli-deberta           P             0.137
+                                    trad      bertscore-sentence-mnli-deberta-xlarge           P             0.137
                                                                                         R             0.152
                                                                                         F             0.153
-                                    new       bertscore-sentence-mnli-deberta           P             0.074
+                                    new       bertscore-sentence-mnli-deberta-xlarge           P             0.074
                                                                                         R            -0.005
                                                                                         F             0.018
-                                    trad      bertscore-sentence-mnli-deberta-topk-5    P             0.139
+                                    trad      bertscore-sentence-mnli-deberta-xlarge-topk-5    P             0.139
                                                                                         R             0.124
                                                                                         F             0.144
-                                    new       bertscore-sentence-mnli-deberta-topk-5    P             0.188
+                                    new       bertscore-sentence-mnli-deberta-xlarge-topk-5    P             0.188
                                                                                         R             0.104
                                                                                         F             0.139
-                                    trad      bertscore-sentence-mnli-deberta-topk-10   P             0.137
+                                    trad      bertscore-sentence-mnli-deberta-xlarge-topk-10   P             0.137
                                                                                         R             0.124
                                                                                         F             0.147
-                                    new       bertscore-sentence-mnli-deberta-topk-10   P             0.175
+                                    new       bertscore-sentence-mnli-deberta-xlarge-topk-10   P             0.175
                                                                                         R             0.043
                                                                                         F             0.051
-                                    trad      bertscore-sentence-mnli-deberta-topk-20   P             0.137
+                                    trad      bertscore-sentence-mnli-deberta-xlarge-topk-20   P             0.137
                                                                                         R             0.124
                                                                                         F             0.147
-                                    new       bertscore-sentence-mnli-deberta-topk-20   P             0.170
+                                    new       bertscore-sentence-mnli-deberta-xlarge-topk-20   P             0.170
                                                                                         R             0.042
                                                                                         F             0.068
-                                    trad      bertscore-sentence-mnli-deberta-topp-0.2  P             0.171
+                                    trad      bertscore-sentence-mnli-deberta-xlarge-topp-0.2  P             0.171
                                                                                         R             0.117
                                                                                         F             0.151
-                                    new       bertscore-sentence-mnli-deberta-topp-0.2  P             0.191
+                                    new       bertscore-sentence-mnli-deberta-xlarge-topp-0.2  P             0.191
                                                                                         R             0.112
                                                                                         F             0.121
-                                    trad      bertscore-sentence-mnli-deberta-topp-0.5  P             0.193
+                                    trad      bertscore-sentence-mnli-deberta-xlarge-topp-0.5  P             0.193
                                                                                         R             0.133
                                                                                         F             0.173
-                                    new       bertscore-sentence-mnli-deberta-topp-0.5  P             0.155
+                                    new       bertscore-sentence-mnli-deberta-xlarge-topp-0.5  P             0.155
                                                                                         R             0.025
                                                                                         F             0.038
-                                    trad      bertscore-sentence-mnli-deberta-topp-0.7  P             0.137
+                                    trad      bertscore-sentence-mnli-deberta-xlarge-topp-0.7  P             0.137
                                                                                         R             0.125
                                                                                         F             0.144
-                                    new       bertscore-sentence-mnli-deberta-topp-0.7  P             0.154
+                                    new       bertscore-sentence-mnli-deberta-xlarge-topp-0.7  P             0.154
                                                                                         R             0.022
                                                                                         F             0.059
                                     trad      rouge                                     rouge1        0.248
@@ -1819,46 +1819,46 @@ kendalltau   InformativenessRating  trad      bertscore                         
                                     new       bertscore-sentence-mnli-bart-topp-0.7     P            -0.102
                                                                                         R            -0.228
                                                                                         F            -0.229
-                                    trad      bertscore-sentence-mnli-deberta           P             0.073
+                                    trad      bertscore-sentence-mnli-deberta-xlarge           P             0.073
                                                                                         R             0.059
                                                                                         F             0.085
-                                    new       bertscore-sentence-mnli-deberta           P            -0.018
+                                    new       bertscore-sentence-mnli-deberta-xlarge           P            -0.018
                                                                                         R            -0.155
                                                                                         F            -0.136
-                                    trad      bertscore-sentence-mnli-deberta-topk-5    P             0.073
+                                    trad      bertscore-sentence-mnli-deberta-xlarge-topk-5    P             0.073
                                                                                         R             0.046
                                                                                         F             0.080
-                                    new       bertscore-sentence-mnli-deberta-topk-5    P             0.047
+                                    new       bertscore-sentence-mnli-deberta-xlarge-topk-5    P             0.047
                                                                                         R            -0.068
                                                                                         F            -0.029
-                                    trad      bertscore-sentence-mnli-deberta-topk-10   P             0.073
+                                    trad      bertscore-sentence-mnli-deberta-xlarge-topk-10   P             0.073
                                                                                         R             0.047
                                                                                         F             0.083
-                                    new       bertscore-sentence-mnli-deberta-topk-10   P             0.070
+                                    new       bertscore-sentence-mnli-deberta-xlarge-topk-10   P             0.070
                                                                                         R            -0.117
                                                                                         F            -0.099
-                                    trad      bertscore-sentence-mnli-deberta-topk-20   P             0.073
+                                    trad      bertscore-sentence-mnli-deberta-xlarge-topk-20   P             0.073
                                                                                         R             0.047
                                                                                         F             0.083
-                                    new       bertscore-sentence-mnli-deberta-topk-20   P             0.035
+                                    new       bertscore-sentence-mnli-deberta-xlarge-topk-20   P             0.035
                                                                                         R            -0.113
                                                                                         F            -0.107
-                                    trad      bertscore-sentence-mnli-deberta-topp-0.2  P             0.147
+                                    trad      bertscore-sentence-mnli-deberta-xlarge-topp-0.2  P             0.147
                                                                                         R             0.054
                                                                                         F             0.102
-                                    new       bertscore-sentence-mnli-deberta-topp-0.2  P             0.023
+                                    new       bertscore-sentence-mnli-deberta-xlarge-topp-0.2  P             0.023
                                                                                         R            -0.028
                                                                                         F            -0.043
-                                    trad      bertscore-sentence-mnli-deberta-topp-0.5  P             0.131
+                                    trad      bertscore-sentence-mnli-deberta-xlarge-topp-0.5  P             0.131
                                                                                         R             0.066
                                                                                         F             0.105
-                                    new       bertscore-sentence-mnli-deberta-topp-0.5  P            -0.041
+                                    new       bertscore-sentence-mnli-deberta-xlarge-topp-0.5  P            -0.041
                                                                                         R            -0.129
                                                                                         F            -0.122
-                                    trad      bertscore-sentence-mnli-deberta-topp-0.7  P             0.075
+                                    trad      bertscore-sentence-mnli-deberta-xlarge-topp-0.7  P             0.075
                                                                                         R             0.047
                                                                                         F             0.080
-                                    new       bertscore-sentence-mnli-deberta-topp-0.7  P             0.006
+                                    new       bertscore-sentence-mnli-deberta-xlarge-topp-0.7  P             0.006
                                                                                         R            -0.145
                                                                                         F            -0.130
                                     trad      rouge                                     rouge1        0.252
@@ -2141,46 +2141,46 @@ kendalltau   InformativenessRating  trad      bertscore                         
                                     new       bertscore-sentence-mnli-bart-topp-0.7     P             0.029
                                                                                         R            -0.131
                                                                                         F            -0.117
-                                    trad      bertscore-sentence-mnli-deberta           P             0.113
+                                    trad      bertscore-sentence-mnli-deberta-xlarge           P             0.113
                                                                                         R             0.133
                                                                                         F             0.123
-                                    new       bertscore-sentence-mnli-deberta           P             0.101
+                                    new       bertscore-sentence-mnli-deberta-xlarge           P             0.101
                                                                                         R            -0.177
                                                                                         F            -0.142
-                                    trad      bertscore-sentence-mnli-deberta-topk-5    P             0.115
+                                    trad      bertscore-sentence-mnli-deberta-xlarge-topk-5    P             0.115
                                                                                         R             0.114
                                                                                         F             0.113
-                                    new       bertscore-sentence-mnli-deberta-topk-5    P             0.042
+                                    new       bertscore-sentence-mnli-deberta-xlarge-topk-5    P             0.042
                                                                                         R            -0.025
                                                                                         F             0.003
-                                    trad      bertscore-sentence-mnli-deberta-topk-10   P             0.113
+                                    trad      bertscore-sentence-mnli-deberta-xlarge-topk-10   P             0.113
                                                                                         R             0.116
                                                                                         F             0.116
-                                    new       bertscore-sentence-mnli-deberta-topk-10   P             0.067
+                                    new       bertscore-sentence-mnli-deberta-xlarge-topk-10   P             0.067
                                                                                         R            -0.112
                                                                                         F            -0.101
-                                    trad      bertscore-sentence-mnli-deberta-topk-20   P             0.113
+                                    trad      bertscore-sentence-mnli-deberta-xlarge-topk-20   P             0.113
                                                                                         R             0.116
                                                                                         F             0.116
-                                    new       bertscore-sentence-mnli-deberta-topk-20   P             0.082
+                                    new       bertscore-sentence-mnli-deberta-xlarge-topk-20   P             0.082
                                                                                         R            -0.120
                                                                                         F            -0.088
-                                    trad      bertscore-sentence-mnli-deberta-topp-0.2  P             0.116
+                                    trad      bertscore-sentence-mnli-deberta-xlarge-topp-0.2  P             0.116
                                                                                         R             0.092
                                                                                         F             0.092
-                                    new       bertscore-sentence-mnli-deberta-topp-0.2  P             0.208
+                                    new       bertscore-sentence-mnli-deberta-xlarge-topp-0.2  P             0.208
                                                                                         R            -0.109
                                                                                         F            -0.031
-                                    trad      bertscore-sentence-mnli-deberta-topp-0.5  P             0.123
+                                    trad      bertscore-sentence-mnli-deberta-xlarge-topp-0.5  P             0.123
                                                                                         R             0.107
                                                                                         F             0.109
-                                    new       bertscore-sentence-mnli-deberta-topp-0.5  P             0.157
+                                    new       bertscore-sentence-mnli-deberta-xlarge-topp-0.5  P             0.157
                                                                                         R            -0.177
                                                                                         F            -0.138
-                                    trad      bertscore-sentence-mnli-deberta-topp-0.7  P             0.115
+                                    trad      bertscore-sentence-mnli-deberta-xlarge-topp-0.7  P             0.115
                                                                                         R             0.113
                                                                                         F             0.113
-                                    new       bertscore-sentence-mnli-deberta-topp-0.7  P             0.141
+                                    new       bertscore-sentence-mnli-deberta-xlarge-topp-0.7  P             0.141
                                                                                         R            -0.169
                                                                                         F            -0.123
                                     trad      rouge                                     rouge1        0.208
@@ -2463,46 +2463,46 @@ kendalltau   InformativenessRating  trad      bertscore                         
                                     new       bertscore-sentence-mnli-bart-topp-0.7     P             0.010
                                                                                         R            -0.133
                                                                                         F            -0.121
-                                    trad      bertscore-sentence-mnli-deberta           P             0.061
+                                    trad      bertscore-sentence-mnli-deberta-xlarge           P             0.061
                                                                                         R             0.031
                                                                                         F             0.067
-                                    new       bertscore-sentence-mnli-deberta           P             0.080
+                                    new       bertscore-sentence-mnli-deberta-xlarge           P             0.080
                                                                                         R            -0.213
                                                                                         F            -0.176
-                                    trad      bertscore-sentence-mnli-deberta-topk-5    P             0.061
+                                    trad      bertscore-sentence-mnli-deberta-xlarge-topk-5    P             0.061
                                                                                         R             0.010
                                                                                         F             0.057
-                                    new       bertscore-sentence-mnli-deberta-topk-5    P            -0.043
+                                    new       bertscore-sentence-mnli-deberta-xlarge-topk-5    P            -0.043
                                                                                         R            -0.074
                                                                                         F            -0.063
-                                    trad      bertscore-sentence-mnli-deberta-topk-10   P             0.061
+                                    trad      bertscore-sentence-mnli-deberta-xlarge-topk-10   P             0.061
                                                                                         R             0.013
                                                                                         F             0.061
-                                    new       bertscore-sentence-mnli-deberta-topk-10   P            -0.021
+                                    new       bertscore-sentence-mnli-deberta-xlarge-topk-10   P            -0.021
                                                                                         R            -0.143
                                                                                         F            -0.144
-                                    trad      bertscore-sentence-mnli-deberta-topk-20   P             0.061
+                                    trad      bertscore-sentence-mnli-deberta-xlarge-topk-20   P             0.061
                                                                                         R             0.013
                                                                                         F             0.061
-                                    new       bertscore-sentence-mnli-deberta-topk-20   P             0.015
+                                    new       bertscore-sentence-mnli-deberta-xlarge-topk-20   P             0.015
                                                                                         R            -0.156
                                                                                         F            -0.124
-                                    trad      bertscore-sentence-mnli-deberta-topp-0.2  P             0.097
+                                    trad      bertscore-sentence-mnli-deberta-xlarge-topp-0.2  P             0.097
                                                                                         R            -0.002
                                                                                         F             0.070
-                                    new       bertscore-sentence-mnli-deberta-topp-0.2  P             0.143
+                                    new       bertscore-sentence-mnli-deberta-xlarge-topp-0.2  P             0.143
                                                                                         R            -0.167
                                                                                         F            -0.116
-                                    trad      bertscore-sentence-mnli-deberta-topp-0.5  P             0.091
+                                    trad      bertscore-sentence-mnli-deberta-xlarge-topp-0.5  P             0.091
                                                                                         R             0.016
                                                                                         F             0.079
-                                    new       bertscore-sentence-mnli-deberta-topp-0.5  P             0.088
+                                    new       bertscore-sentence-mnli-deberta-xlarge-topp-0.5  P             0.088
                                                                                         R            -0.213
                                                                                         F            -0.164
-                                    trad      bertscore-sentence-mnli-deberta-topp-0.7  P             0.061
+                                    trad      bertscore-sentence-mnli-deberta-xlarge-topp-0.7  P             0.061
                                                                                         R             0.011
                                                                                         F             0.057
-                                    new       bertscore-sentence-mnli-deberta-topp-0.7  P             0.094
+                                    new       bertscore-sentence-mnli-deberta-xlarge-topp-0.7  P             0.094
                                                                                         R            -0.204
                                                                                         F            -0.157
                                     trad      rouge                                     rouge1        0.167
@@ -2785,46 +2785,46 @@ spearmanr    InformativenessRating  trad      bertscore                         
                                     new       bertscore-sentence-mnli-bart-topp-0.7     P            -0.102
                                                                                         R            -0.167
                                                                                         F            -0.182
-                                    trad      bertscore-sentence-mnli-deberta           P             0.196
+                                    trad      bertscore-sentence-mnli-deberta-xlarge           P             0.196
                                                                                         R             0.219
                                                                                         F             0.226
-                                    new       bertscore-sentence-mnli-deberta           P             0.095
+                                    new       bertscore-sentence-mnli-deberta-xlarge           P             0.095
                                                                                         R            -0.002
                                                                                         F             0.025
-                                    trad      bertscore-sentence-mnli-deberta-topk-5    P             0.200
+                                    trad      bertscore-sentence-mnli-deberta-xlarge-topk-5    P             0.200
                                                                                         R             0.182
                                                                                         F             0.216
-                                    new       bertscore-sentence-mnli-deberta-topk-5    P             0.290
+                                    new       bertscore-sentence-mnli-deberta-xlarge-topk-5    P             0.290
                                                                                         R             0.159
                                                                                         F             0.215
-                                    trad      bertscore-sentence-mnli-deberta-topk-10   P             0.196
+                                    trad      bertscore-sentence-mnli-deberta-xlarge-topk-10   P             0.196
                                                                                         R             0.183
                                                                                         F             0.220
-                                    new       bertscore-sentence-mnli-deberta-topk-10   P             0.274
+                                    new       bertscore-sentence-mnli-deberta-xlarge-topk-10   P             0.274
                                                                                         R             0.073
                                                                                         F             0.089
-                                    trad      bertscore-sentence-mnli-deberta-topk-20   P             0.196
+                                    trad      bertscore-sentence-mnli-deberta-xlarge-topk-20   P             0.196
                                                                                         R             0.183
                                                                                         F             0.220
-                                    new       bertscore-sentence-mnli-deberta-topk-20   P             0.255
+                                    new       bertscore-sentence-mnli-deberta-xlarge-topk-20   P             0.255
                                                                                         R             0.064
                                                                                         F             0.096
-                                    trad      bertscore-sentence-mnli-deberta-topp-0.2  P             0.250
+                                    trad      bertscore-sentence-mnli-deberta-xlarge-topp-0.2  P             0.250
                                                                                         R             0.185
                                                                                         F             0.221
-                                    new       bertscore-sentence-mnli-deberta-topp-0.2  P             0.279
+                                    new       bertscore-sentence-mnli-deberta-xlarge-topp-0.2  P             0.279
                                                                                         R             0.155
                                                                                         F             0.171
-                                    trad      bertscore-sentence-mnli-deberta-topp-0.5  P             0.281
+                                    trad      bertscore-sentence-mnli-deberta-xlarge-topp-0.5  P             0.281
                                                                                         R             0.202
                                                                                         F             0.258
-                                    new       bertscore-sentence-mnli-deberta-topp-0.5  P             0.216
+                                    new       bertscore-sentence-mnli-deberta-xlarge-topp-0.5  P             0.216
                                                                                         R             0.036
                                                                                         F             0.069
-                                    trad      bertscore-sentence-mnli-deberta-topp-0.7  P             0.199
+                                    trad      bertscore-sentence-mnli-deberta-xlarge-topp-0.7  P             0.199
                                                                                         R             0.183
                                                                                         F             0.216
-                                    new       bertscore-sentence-mnli-deberta-topp-0.7  P             0.217
+                                    new       bertscore-sentence-mnli-deberta-xlarge-topp-0.7  P             0.217
                                                                                         R             0.041
                                                                                         F             0.081
                                     trad      rouge                                     rouge1        0.368
@@ -3107,46 +3107,46 @@ spearmanr    InformativenessRating  trad      bertscore                         
                                     new       bertscore-sentence-mnli-bart-topp-0.7     P            -0.136
                                                                                         R            -0.316
                                                                                         F            -0.318
-                                    trad      bertscore-sentence-mnli-deberta           P             0.117
+                                    trad      bertscore-sentence-mnli-deberta-xlarge           P             0.117
                                                                                         R             0.085
                                                                                         F             0.127
-                                    new       bertscore-sentence-mnli-deberta           P            -0.020
+                                    new       bertscore-sentence-mnli-deberta-xlarge           P            -0.020
                                                                                         R            -0.229
                                                                                         F            -0.203
-                                    trad      bertscore-sentence-mnli-deberta-topk-5    P             0.121
+                                    trad      bertscore-sentence-mnli-deberta-xlarge-topk-5    P             0.121
                                                                                         R             0.068
                                                                                         F             0.123
-                                    new       bertscore-sentence-mnli-deberta-topk-5    P             0.079
+                                    new       bertscore-sentence-mnli-deberta-xlarge-topk-5    P             0.079
                                                                                         R            -0.095
                                                                                         F            -0.038
-                                    trad      bertscore-sentence-mnli-deberta-topk-10   P             0.117
+                                    trad      bertscore-sentence-mnli-deberta-xlarge-topk-10   P             0.117
                                                                                         R             0.068
                                                                                         F             0.126
-                                    new       bertscore-sentence-mnli-deberta-topk-10   P             0.111
+                                    new       bertscore-sentence-mnli-deberta-xlarge-topk-10   P             0.111
                                                                                         R            -0.173
                                                                                         F            -0.160
-                                    trad      bertscore-sentence-mnli-deberta-topk-20   P             0.117
+                                    trad      bertscore-sentence-mnli-deberta-xlarge-topk-20   P             0.117
                                                                                         R             0.068
                                                                                         F             0.126
-                                    new       bertscore-sentence-mnli-deberta-topk-20   P             0.045
+                                    new       bertscore-sentence-mnli-deberta-xlarge-topk-20   P             0.045
                                                                                         R            -0.183
                                                                                         F            -0.164
-                                    trad      bertscore-sentence-mnli-deberta-topp-0.2  P             0.214
+                                    trad      bertscore-sentence-mnli-deberta-xlarge-topp-0.2  P             0.214
                                                                                         R             0.101
                                                                                         F             0.154
-                                    new       bertscore-sentence-mnli-deberta-topp-0.2  P             0.035
+                                    new       bertscore-sentence-mnli-deberta-xlarge-topp-0.2  P             0.035
                                                                                         R            -0.048
                                                                                         F            -0.060
-                                    trad      bertscore-sentence-mnli-deberta-topp-0.5  P             0.192
+                                    trad      bertscore-sentence-mnli-deberta-xlarge-topp-0.5  P             0.192
                                                                                         R             0.109
                                                                                         F             0.157
-                                    new       bertscore-sentence-mnli-deberta-topp-0.5  P            -0.064
+                                    new       bertscore-sentence-mnli-deberta-xlarge-topp-0.5  P            -0.064
                                                                                         R            -0.200
                                                                                         F            -0.183
-                                    trad      bertscore-sentence-mnli-deberta-topp-0.7  P             0.122
+                                    trad      bertscore-sentence-mnli-deberta-xlarge-topp-0.7  P             0.122
                                                                                         R             0.068
                                                                                         F             0.123
-                                    new       bertscore-sentence-mnli-deberta-topp-0.7  P             0.022
+                                    new       bertscore-sentence-mnli-deberta-xlarge-topp-0.7  P             0.022
                                                                                         R            -0.205
                                                                                         F            -0.188
                                     trad      rouge                                     rouge1        0.359
@@ -3429,46 +3429,46 @@ spearmanr    InformativenessRating  trad      bertscore                         
                                     new       bertscore-sentence-mnli-bart-topp-0.7     P             0.047
                                                                                         R            -0.184
                                                                                         F            -0.170
-                                    trad      bertscore-sentence-mnli-deberta           P             0.160
+                                    trad      bertscore-sentence-mnli-deberta-xlarge           P             0.160
                                                                                         R             0.184
                                                                                         F             0.169
-                                    new       bertscore-sentence-mnli-deberta           P             0.161
+                                    new       bertscore-sentence-mnli-deberta-xlarge           P             0.161
                                                                                         R            -0.252
                                                                                         F            -0.199
-                                    trad      bertscore-sentence-mnli-deberta-topk-5    P             0.163
+                                    trad      bertscore-sentence-mnli-deberta-xlarge-topk-5    P             0.163
                                                                                         R             0.153
                                                                                         F             0.160
-                                    new       bertscore-sentence-mnli-deberta-topk-5    P             0.058
+                                    new       bertscore-sentence-mnli-deberta-xlarge-topk-5    P             0.058
                                                                                         R            -0.027
                                                                                         F             0.020
-                                    trad      bertscore-sentence-mnli-deberta-topk-10   P             0.160
+                                    trad      bertscore-sentence-mnli-deberta-xlarge-topk-10   P             0.160
                                                                                         R             0.155
                                                                                         F             0.162
-                                    new       bertscore-sentence-mnli-deberta-topk-10   P             0.090
+                                    new       bertscore-sentence-mnli-deberta-xlarge-topk-10   P             0.090
                                                                                         R            -0.163
                                                                                         F            -0.139
-                                    trad      bertscore-sentence-mnli-deberta-topk-20   P             0.160
+                                    trad      bertscore-sentence-mnli-deberta-xlarge-topk-20   P             0.160
                                                                                         R             0.155
                                                                                         F             0.162
-                                    new       bertscore-sentence-mnli-deberta-topk-20   P             0.126
+                                    new       bertscore-sentence-mnli-deberta-xlarge-topk-20   P             0.126
                                                                                         R            -0.163
                                                                                         F            -0.122
-                                    trad      bertscore-sentence-mnli-deberta-topp-0.2  P             0.167
+                                    trad      bertscore-sentence-mnli-deberta-xlarge-topp-0.2  P             0.167
                                                                                         R             0.123
                                                                                         F             0.131
-                                    new       bertscore-sentence-mnli-deberta-topp-0.2  P             0.307
+                                    new       bertscore-sentence-mnli-deberta-xlarge-topp-0.2  P             0.307
                                                                                         R            -0.142
                                                                                         F            -0.045
-                                    trad      bertscore-sentence-mnli-deberta-topp-0.5  P             0.180
+                                    trad      bertscore-sentence-mnli-deberta-xlarge-topp-0.5  P             0.180
                                                                                         R             0.146
                                                                                         F             0.160
-                                    new       bertscore-sentence-mnli-deberta-topp-0.5  P             0.238
+                                    new       bertscore-sentence-mnli-deberta-xlarge-topp-0.5  P             0.238
                                                                                         R            -0.256
                                                                                         F            -0.185
-                                    trad      bertscore-sentence-mnli-deberta-topp-0.7  P             0.163
+                                    trad      bertscore-sentence-mnli-deberta-xlarge-topp-0.7  P             0.163
                                                                                         R             0.152
                                                                                         F             0.160
-                                    new       bertscore-sentence-mnli-deberta-topp-0.7  P             0.207
+                                    new       bertscore-sentence-mnli-deberta-xlarge-topp-0.7  P             0.207
                                                                                         R            -0.240
                                                                                         F            -0.178
                                     trad      rouge                                     rouge1        0.313
@@ -3751,46 +3751,46 @@ spearmanr    InformativenessRating  trad      bertscore                         
                                     new       bertscore-sentence-mnli-bart-topp-0.7     P             0.011
                                                                                         R            -0.199
                                                                                         F            -0.181
-                                    trad      bertscore-sentence-mnli-deberta           P             0.075
+                                    trad      bertscore-sentence-mnli-deberta-xlarge           P             0.075
                                                                                         R             0.046
                                                                                         F             0.078
-                                    new       bertscore-sentence-mnli-deberta           P             0.126
+                                    new       bertscore-sentence-mnli-deberta-xlarge           P             0.126
                                                                                         R            -0.303
                                                                                         F            -0.257
-                                    trad      bertscore-sentence-mnli-deberta-topk-5    P             0.076
+                                    trad      bertscore-sentence-mnli-deberta-xlarge-topk-5    P             0.076
                                                                                         R             0.020
                                                                                         F             0.069
-                                    new       bertscore-sentence-mnli-deberta-topk-5    P            -0.053
+                                    new       bertscore-sentence-mnli-deberta-xlarge-topk-5    P            -0.053
                                                                                         R            -0.119
                                                                                         F            -0.088
-                                    trad      bertscore-sentence-mnli-deberta-topk-10   P             0.075
+                                    trad      bertscore-sentence-mnli-deberta-xlarge-topk-10   P             0.075
                                                                                         R             0.022
                                                                                         F             0.071
-                                    new       bertscore-sentence-mnli-deberta-topk-10   P            -0.016
+                                    new       bertscore-sentence-mnli-deberta-xlarge-topk-10   P            -0.016
                                                                                         R            -0.204
                                                                                         F            -0.195
-                                    trad      bertscore-sentence-mnli-deberta-topk-20   P             0.075
+                                    trad      bertscore-sentence-mnli-deberta-xlarge-topk-20   P             0.075
                                                                                         R             0.022
                                                                                         F             0.071
-                                    new       bertscore-sentence-mnli-deberta-topk-20   P             0.015
+                                    new       bertscore-sentence-mnli-deberta-xlarge-topk-20   P             0.015
                                                                                         R            -0.217
                                                                                         F            -0.187
-                                    trad      bertscore-sentence-mnli-deberta-topp-0.2  P             0.127
+                                    trad      bertscore-sentence-mnli-deberta-xlarge-topp-0.2  P             0.127
                                                                                         R            -0.005
                                                                                         F             0.075
-                                    new       bertscore-sentence-mnli-deberta-topp-0.2  P             0.196
+                                    new       bertscore-sentence-mnli-deberta-xlarge-topp-0.2  P             0.196
                                                                                         R            -0.237
                                                                                         F            -0.171
-                                    trad      bertscore-sentence-mnli-deberta-topp-0.5  P             0.121
+                                    trad      bertscore-sentence-mnli-deberta-xlarge-topp-0.5  P             0.121
                                                                                         R             0.022
                                                                                         F             0.095
-                                    new       bertscore-sentence-mnli-deberta-topp-0.5  P             0.120
+                                    new       bertscore-sentence-mnli-deberta-xlarge-topp-0.5  P             0.120
                                                                                         R            -0.306
                                                                                         F            -0.247
-                                    trad      bertscore-sentence-mnli-deberta-topp-0.7  P             0.076
+                                    trad      bertscore-sentence-mnli-deberta-xlarge-topp-0.7  P             0.076
                                                                                         R             0.020
                                                                                         F             0.069
-                                    new       bertscore-sentence-mnli-deberta-topp-0.7  P             0.133
+                                    new       bertscore-sentence-mnli-deberta-xlarge-topp-0.7  P             0.133
                                                                                         R            -0.298
                                                                                         F            -0.234
                                     trad      rouge                                     rouge1        0.263

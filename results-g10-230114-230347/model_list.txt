@@ -1,0 +1,9 @@
+bertscore-sentence-mnli-deberta-large-not_neutral
+bertscore-sentence-mnli-deberta-large-entail_only
+bertscore-sentence-mnli-deberta-large-entail_contradict
+bertscore-sentence-mnli-deberta-large-entail_contradict-topk-5
+bertscore-sentence-mnli-deberta-large-entail_contradict-topk-10
+bertscore-sentence-mnli-deberta-large-entail_contradict-topk-20
+bertscore-sentence-mnli-deberta-large-entail_contradict-topp-0.2
+bertscore-sentence-mnli-deberta-large-entail_contradict-topp-0.5
+bertscore-sentence-mnli-deberta-large-entail_contradict-topp-0.7

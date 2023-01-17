@@ -1,4 +1,4 @@
 bertscore-sentence-pagerank-cos-mpnet-entropy
 bertscore-sentence-pagerank-cos-mpnet-sum
-bertscore-sentence-pagerank-mnli-deberta-entail_contradict-entropy
-bertscore-sentence-pagerank-mnli-deberta-entail_contradict-sum
+bertscore-sentence-pagerank-mnli-deberta-xlarge-entail_contradict-entropy
+bertscore-sentence-pagerank-mnli-deberta-xlarge-entail_contradict-sum

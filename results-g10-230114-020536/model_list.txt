@@ -1,0 +1,12 @@
+bertscore-sentence-mnli-roberta-entail_contradict-topk-5
+bertscore-sentence-mnli-roberta-entail_contradict-topk-10
+bertscore-sentence-mnli-roberta-entail_contradict-topk-20
+bertscore-sentence-mnli-roberta-entail_contradict-topp-0.2
+bertscore-sentence-mnli-roberta-entail_contradict-topp-0.5
+bertscore-sentence-mnli-roberta-entail_contradict-topp-0.7
+bertscore-sentence-mnli-deberta-xlarge-entail_contradict-topk-5
+bertscore-sentence-mnli-deberta-xlarge-entail_contradict-topk-10
+bertscore-sentence-mnli-deberta-xlarge-entail_contradict-topk-20
+bertscore-sentence-mnli-deberta-xlarge-entail_contradict-topp-0.2
+bertscore-sentence-mnli-deberta-xlarge-entail_contradict-topp-0.5
+bertscore-sentence-mnli-deberta-xlarge-entail_contradict-topp-0.7
