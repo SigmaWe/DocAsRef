@@ -30,7 +30,7 @@ We have these groups of environments:
 - Group 8: PageRank + Group 2
 - Group 9: AnyRef (pegasus-newsroom) + Group 2
 - Group 10: Top + Group 2
-- Group 11: classic bertscore + deberta-large-mnli
+- Group 11: classic bertscore + deberta-large-mnli + Top
 
 ## Approach 0: just replacing human summaries with documents
 

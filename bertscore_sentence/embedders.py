@@ -10,6 +10,7 @@ import sentence_transformers
 def init_sent_embedder(name: str) -> dar_type.Embedder:
     embedder: dar_type.Embedder = sentence_transformers.SentenceTransformer(name)
     embedder.__name__ = name
+    return embedder
 
 
 sent_embedders = {

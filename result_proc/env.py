@@ -7,6 +7,10 @@ result_path_bases = [
     "/home/turx/dar-archive/results-g5-230110-063411",
     "/home/turx/dar-archive/results-g8-230113-044120",
     "/home/turx/dar-archive/results-g10-230114-020536",
-    "/home/turx/dar-archive/results-g11-230114-113354"
+    "/home/turx/dar-archive/results-g10-230114-230347",
+    "/home/turx/dar-archive/results-g8-230115-191636",
+    "/home/turx/dar-archive/results-g9-230116-102957",
+    "/home/turx/dar-archive/results-g11-230116-131304",
+    "/home/turx/dar-archive/results-g11-230116-144021",
 ]
 summary_dir = "/home/turx/dar-archive/results_summary"

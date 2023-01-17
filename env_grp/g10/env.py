@@ -13,8 +13,6 @@ metrics = dict()
 
 for metric_name, metric_f in raw_metrics.items():
     metrics[metric_name] = metric_f
-    if "entail_contradict" not in metric_name:
-        continue
     for topk in [5, 10, 20]:
         metrics["-".join([metric_name, "topk", str(topk)])] = functools.partial(top.topk_compute, metric_compute_f=metric_f, topk=topk)
     for topp in [0.2, 0.5, 0.7]:

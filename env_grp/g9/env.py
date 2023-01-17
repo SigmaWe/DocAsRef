@@ -1,5 +1,6 @@
 # Group 9: AnyRef (pegasus-newsroom, pegasus-cnndm) + Group 2
 
+from env_root import *
 from env_grp.g2.env import *
 
 ### MODELS ###
