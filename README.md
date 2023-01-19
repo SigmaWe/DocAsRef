@@ -31,6 +31,7 @@ We have these groups of environments:
 - Group 9: AnyRef (pegasus-newsroom) + Group 2
 - Group 10: Top + Group 2
 - Group 11: classic bertscore + deberta-large-mnli + Top
+- Group 12: classic (moverscore)
 
 ## Approach 0: just replacing human summaries with documents
 

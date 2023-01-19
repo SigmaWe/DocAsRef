@@ -12,5 +12,6 @@ result_path_bases = [
     "/home/turx/dar-archive/results-g9-230116-102957",
     "/home/turx/dar-archive/results-g11-230116-131304",
     "/home/turx/dar-archive/results-g11-230116-144021",
+    "/home/turx/dar-archive/results-g12-230118-220300",
 ]
 summary_dir = "/home/turx/dar-archive/results_summary"
