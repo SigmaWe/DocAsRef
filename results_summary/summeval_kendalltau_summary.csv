@@ -501,3 +501,5 @@ bertscore-deberta-xlarge-mnli-topp-0.5_f1,0.289,0.238,0.204,0.195
 bertscore-deberta-xlarge-mnli-topp-0.7_precision,0.331,0.23,0.268,0.247
 bertscore-deberta-xlarge-mnli-topp-0.7_recall,0.233,0.226,0.163,0.154
 bertscore-deberta-xlarge-mnli-topp-0.7_f1,0.284,0.248,0.219,0.197
+moverscore-1gram_scores,0.147,0.194,0.109,0.074
+moverscore-2gram_scores,0.147,0.194,0.109,0.074

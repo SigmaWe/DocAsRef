@@ -1,0 +1,373 @@
+corr_metric  aspect       approach  model             score_name               
+pearsonr     consistency  new       moverscore-1gram  scores                       0.136
+                                    moverscore-2gram  scores                       0.136
+                          PreCalc   PreCalc           rouge_1_precision            0.193
+                                                      rouge_1_recall               0.109
+                                                      rouge_1_f_score              0.190
+                                                      rouge_2_precision            0.090
+                                                      rouge_2_recall               0.050
+                                                      rouge_2_f_score              0.079
+                                                      rouge_l_precision            0.166
+                                                      rouge_l_recall               0.072
+                                                      rouge_l_f_score              0.149
+                                                      rouge_we_1_p                 0.203
+                                                      rouge_we_1_r                 0.108
+                                                      rouge_we_1_f                 0.199
+                                                      rouge_we_2_p                 0.101
+                                                      rouge_we_2_r                 0.046
+                                                      rouge_we_2_f                 0.089
+                                                      meteor                       0.115
+                                                      cider                        0.008
+                                                      s3_pyr                       0.086
+                                                      s3_resp                      0.077
+                                                      mover_score                  0.124
+                                                      sentence_movers_glove_sms    0.003
+                                                      bleu                         0.087
+                                                      bert_score_precision         0.138
+                                                      bert_score_recall            0.064
+                                                      bert_score_f1                0.117
+                                                      blanc                        0.153
+                                                      summaqa_avg_prob            -0.089
+                                                      summaqa_avg_fscore          -0.009
+                                                      supert                       0.162
+             relevance    new       moverscore-1gram  scores                       0.371
+                                    moverscore-2gram  scores                       0.371
+                          PreCalc   PreCalc           rouge_1_precision            0.395
+                                                      rouge_1_recall               0.374
+                                                      rouge_1_f_score              0.462
+                                                      rouge_2_precision            0.328
+                                                      rouge_2_recall               0.297
+                                                      rouge_2_f_score              0.334
+                                                      rouge_l_precision            0.395
+                                                      rouge_l_recall               0.349
+                                                      rouge_l_f_score              0.440
+                                                      rouge_we_1_p                 0.394
+                                                      rouge_we_1_r                 0.377
+                                                      rouge_we_1_f                 0.464
+                                                      rouge_we_2_p                 0.363
+                                                      rouge_we_2_r                 0.339
+                                                      rouge_we_2_f                 0.384
+                                                      meteor                       0.365
+                                                      cider                        0.030
+                                                      s3_pyr                       0.359
+                                                      s3_resp                      0.318
+                                                      mover_score                  0.309
+                                                      sentence_movers_glove_sms    0.201
+                                                      bleu                         0.302
+                                                      bert_score_precision         0.326
+                                                      bert_score_recall            0.289
+                                                      bert_score_f1                0.346
+                                                      blanc                        0.260
+                                                      summaqa_avg_prob             0.094
+                                                      summaqa_avg_fscore           0.188
+                                                      supert                       0.413
+             coherence    new       moverscore-1gram  scores                       0.469
+                                    moverscore-2gram  scores                       0.469
+                          PreCalc   PreCalc           rouge_1_precision            0.305
+                                                      rouge_1_recall               0.333
+                                                      rouge_1_f_score              0.370
+                                                      rouge_2_precision            0.228
+                                                      rouge_2_recall               0.227
+                                                      rouge_2_f_score              0.239
+                                                      rouge_l_precision            0.283
+                                                      rouge_l_recall               0.288
+                                                      rouge_l_f_score              0.329
+                                                      rouge_we_1_p                 0.302
+                                                      rouge_we_1_r                 0.331
+                                                      rouge_we_1_f                 0.368
+                                                      rouge_we_2_p                 0.234
+                                                      rouge_we_2_r                 0.247
+                                                      rouge_we_2_f                 0.258
+                                                      meteor                       0.266
+                                                      cider                       -0.073
+                                                      s3_pyr                       0.277
+                                                      s3_resp                      0.249
+                                                      mover_score                  0.182
+                                                      sentence_movers_glove_sms    0.142
+                                                      bleu                         0.164
+                                                      bert_score_precision         0.206
+                                                      bert_score_recall            0.294
+                                                      bert_score_f1                0.276
+                                                      blanc                        0.210
+                                                      summaqa_avg_prob             0.030
+                                                      summaqa_avg_fscore           0.118
+                                                      supert                       0.324
+             fluency      new       moverscore-1gram  scores                       0.226
+                                    moverscore-2gram  scores                       0.226
+                          PreCalc   PreCalc           rouge_1_precision            0.119
+                                                      rouge_1_recall               0.058
+                                                      rouge_1_f_score              0.112
+                                                      rouge_2_precision            0.092
+                                                      rouge_2_recall               0.052
+                                                      rouge_2_f_score              0.080
+                                                      rouge_l_precision            0.137
+                                                      rouge_l_recall               0.073
+                                                      rouge_l_f_score              0.126
+                                                      rouge_we_1_p                 0.127
+                                                      rouge_we_1_r                 0.052
+                                                      rouge_we_1_f                 0.116
+                                                      rouge_we_2_p                 0.123
+                                                      rouge_we_2_r                 0.076
+                                                      rouge_we_2_f                 0.113
+                                                      meteor                       0.095
+                                                      cider                        0.099
+                                                      s3_pyr                       0.069
+                                                      s3_resp                      0.052
+                                                      mover_score                  0.143
+                                                      sentence_movers_glove_sms    0.023
+                                                      bleu                         0.101
+                                                      bert_score_precision         0.212
+                                                      bert_score_recall            0.112
+                                                      bert_score_f1                0.187
+                                                      blanc                        0.194
+                                                      summaqa_avg_prob             0.250
+                                                      summaqa_avg_fscore           0.257
+                                                      supert                       0.185
+kendalltau   consistency  new       moverscore-1gram  scores                       0.100
+                                    moverscore-2gram  scores                       0.100
+                          PreCalc   PreCalc           rouge_1_precision            0.138
+                                                      rouge_1_recall               0.085
+                                                      rouge_1_f_score              0.146
+                                                      rouge_2_precision            0.078
+                                                      rouge_2_recall               0.050
+                                                      rouge_2_f_score              0.076
+                                                      rouge_l_precision            0.115
+                                                      rouge_l_recall               0.067
+                                                      rouge_l_f_score              0.122
+                                                      rouge_we_1_p                 0.148
+                                                      rouge_we_1_r                 0.092
+                                                      rouge_we_1_f                 0.151
+                                                      rouge_we_2_p                 0.081
+                                                      rouge_we_2_r                 0.042
+                                                      rouge_we_2_f                 0.074
+                                                      meteor                       0.104
+                                                      cider                       -0.047
+                                                      s3_pyr                       0.086
+                                                      s3_resp                      0.074
+                                                      mover_score                  0.123
+                                                      sentence_movers_glove_sms    0.006
+                                                      bleu                         0.062
+                                                      bert_score_precision         0.109
+                                                      bert_score_recall            0.051
+                                                      bert_score_f1                0.090
+                                                      blanc                        0.062
+                                                      summaqa_avg_prob            -0.083
+                                                      summaqa_avg_fscore          -0.000
+                                                      supert                       0.078
+             relevance    new       moverscore-1gram  scores                       0.279
+                                    moverscore-2gram  scores                       0.279
+                          PreCalc   PreCalc           rouge_1_precision            0.294
+                                                      rouge_1_recall               0.242
+                                                      rouge_1_f_score              0.334
+                                                      rouge_2_precision            0.241
+                                                      rouge_2_recall               0.206
+                                                      rouge_2_f_score              0.238
+                                                      rouge_l_precision            0.298
+                                                      rouge_l_recall               0.234
+                                                      rouge_l_f_score              0.329
+                                                      rouge_we_1_p                 0.300
+                                                      rouge_we_1_r                 0.245
+                                                      rouge_we_1_f                 0.337
+                                                      rouge_we_2_p                 0.270
+                                                      rouge_we_2_r                 0.232
+                                                      rouge_we_2_f                 0.277
+                                                      meteor                       0.244
+                                                      cider                       -0.006
+                                                      s3_pyr                       0.234
+                                                      s3_resp                      0.216
+                                                      mover_score                  0.228
+                                                      sentence_movers_glove_sms    0.137
+                                                      bleu                         0.230
+                                                      bert_score_precision         0.249
+                                                      bert_score_recall            0.190
+                                                      bert_score_f1                0.255
+                                                      blanc                        0.185
+                                                      summaqa_avg_prob             0.059
+                                                      summaqa_avg_fscore           0.112
+                                                      supert                       0.297
+             coherence    new       moverscore-1gram  scores                       0.321
+                                    moverscore-2gram  scores                       0.321
+                          PreCalc   PreCalc           rouge_1_precision            0.219
+                                                      rouge_1_recall               0.208
+                                                      rouge_1_f_score              0.257
+                                                      rouge_2_precision            0.143
+                                                      rouge_2_recall               0.137
+                                                      rouge_2_f_score              0.142
+                                                      rouge_l_precision            0.190
+                                                      rouge_l_recall               0.185
+                                                      rouge_l_f_score              0.225
+                                                      rouge_we_1_p                 0.225
+                                                      rouge_we_1_r                 0.214
+                                                      rouge_we_1_f                 0.255
+                                                      rouge_we_2_p                 0.153
+                                                      rouge_we_2_r                 0.151
+                                                      rouge_we_2_f                 0.172
+                                                      meteor                       0.163
+                                                      cider                       -0.087
+                                                      s3_pyr                       0.170
+                                                      s3_resp                      0.151
+                                                      mover_score                  0.137
+                                                      sentence_movers_glove_sms    0.081
+                                                      bleu                         0.116
+                                                      bert_score_precision         0.146
+                                                      bert_score_recall            0.183
+                                                      bert_score_f1                0.193
+                                                      blanc                        0.136
+                                                      summaqa_avg_prob             0.001
+                                                      summaqa_avg_fscore           0.063
+                                                      supert                       0.259
+             fluency      new       moverscore-1gram  scores                       0.154
+                                    moverscore-2gram  scores                       0.154
+                          PreCalc   PreCalc           rouge_1_precision            0.067
+                                                      rouge_1_recall               0.003
+                                                      rouge_1_f_score              0.023
+                                                      rouge_2_precision            0.032
+                                                      rouge_2_recall               0.008
+                                                      rouge_2_f_score              0.012
+                                                      rouge_l_precision            0.067
+                                                      rouge_l_recall               0.017
+                                                      rouge_l_f_score              0.031
+                                                      rouge_we_1_p                 0.069
+                                                      rouge_we_1_r                 0.003
+                                                      rouge_we_1_f                 0.029
+                                                      rouge_we_2_p                 0.063
+                                                      rouge_we_2_r                 0.034
+                                                      rouge_we_2_f                 0.044
+                                                      meteor                       0.033
+                                                      cider                        0.056
+                                                      s3_pyr                       0.004
+                                                      s3_resp                      0.010
+                                                      mover_score                  0.143
+                                                      sentence_movers_glove_sms    0.053
+                                                      bleu                         0.017
+                                                      bert_score_precision         0.128
+                                                      bert_score_recall            0.036
+                                                      bert_score_f1                0.085
+                                                      blanc                        0.104
+                                                      summaqa_avg_prob             0.142
+                                                      summaqa_avg_fscore           0.165
+                                                      supert                       0.097
+spearmanr    consistency  new       moverscore-1gram  scores                       0.155
+                                    moverscore-2gram  scores                       0.155
+                          PreCalc   PreCalc           rouge_1_precision            0.206
+                                                      rouge_1_recall               0.122
+                                                      rouge_1_f_score              0.208
+                                                      rouge_2_precision            0.108
+                                                      rouge_2_recall               0.070
+                                                      rouge_2_f_score              0.106
+                                                      rouge_l_precision            0.177
+                                                      rouge_l_recall               0.090
+                                                      rouge_l_f_score              0.175
+                                                      rouge_we_1_p                 0.227
+                                                      rouge_we_1_r                 0.132
+                                                      rouge_we_1_f                 0.215
+                                                      rouge_we_2_p                 0.122
+                                                      rouge_we_2_r                 0.062
+                                                      rouge_we_2_f                 0.115
+                                                      meteor                       0.146
+                                                      cider                       -0.059
+                                                      s3_pyr                       0.119
+                                                      s3_resp                      0.103
+                                                      mover_score                  0.181
+                                                      sentence_movers_glove_sms    0.011
+                                                      bleu                         0.089
+                                                      bert_score_precision         0.162
+                                                      bert_score_recall            0.074
+                                                      bert_score_f1                0.131
+                                                      blanc                        0.093
+                                                      summaqa_avg_prob            -0.126
+                                                      summaqa_avg_fscore          -0.006
+                                                      supert                       0.100
+             relevance    new       moverscore-1gram  scores                       0.403
+                                    moverscore-2gram  scores                       0.403
+                          PreCalc   PreCalc           rouge_1_precision            0.440
+                                                      rouge_1_recall               0.357
+                                                      rouge_1_f_score              0.498
+                                                      rouge_2_precision            0.362
+                                                      rouge_2_recall               0.308
+                                                      rouge_2_f_score              0.355
+                                                      rouge_l_precision            0.444
+                                                      rouge_l_recall               0.347
+                                                      rouge_l_f_score              0.493
+                                                      rouge_we_1_p                 0.449
+                                                      rouge_we_1_r                 0.364
+                                                      rouge_we_1_f                 0.502
+                                                      rouge_we_2_p                 0.398
+                                                      rouge_we_2_r                 0.336
+                                                      rouge_we_2_f                 0.409
+                                                      meteor                       0.362
+                                                      cider                       -0.002
+                                                      s3_pyr                       0.345
+                                                      s3_resp                      0.323
+                                                      mover_score                  0.359
+                                                      sentence_movers_glove_sms    0.199
+                                                      bleu                         0.346
+                                                      bert_score_precision         0.373
+                                                      bert_score_recall            0.288
+                                                      bert_score_f1                0.387
+                                                      blanc                        0.264
+                                                      summaqa_avg_prob             0.089
+                                                      summaqa_avg_fscore           0.165
+                                                      supert                       0.418
+             coherence    new       moverscore-1gram  scores                       0.459
+                                    moverscore-2gram  scores                       0.459
+                          PreCalc   PreCalc           rouge_1_precision            0.327
+                                                      rouge_1_recall               0.308
+                                                      rouge_1_f_score              0.380
+                                                      rouge_2_precision            0.216
+                                                      rouge_2_recall               0.213
+                                                      rouge_2_f_score              0.221
+                                                      rouge_l_precision            0.292
+                                                      rouge_l_recall               0.272
+                                                      rouge_l_f_score              0.336
+                                                      rouge_we_1_p                 0.340
+                                                      rouge_we_1_r                 0.314
+                                                      rouge_we_1_f                 0.384
+                                                      rouge_we_2_p                 0.238
+                                                      rouge_we_2_r                 0.233
+                                                      rouge_we_2_f                 0.256
+                                                      meteor                       0.254
+                                                      cider                       -0.120
+                                                      s3_pyr                       0.254
+                                                      s3_resp                      0.235
+                                                      mover_score                  0.213
+                                                      sentence_movers_glove_sms    0.113
+                                                      bleu                         0.172
+                                                      bert_score_precision         0.216
+                                                      bert_score_recall            0.277
+                                                      bert_score_f1                0.290
+                                                      blanc                        0.200
+                                                      summaqa_avg_prob             0.006
+                                                      summaqa_avg_fscore           0.095
+                                                      supert                       0.356
+             fluency      new       moverscore-1gram  scores                       0.216
+                                    moverscore-2gram  scores                       0.216
+                          PreCalc   PreCalc           rouge_1_precision            0.103
+                                                      rouge_1_recall               0.006
+                                                      rouge_1_f_score              0.040
+                                                      rouge_2_precision            0.059
+                                                      rouge_2_recall               0.011
+                                                      rouge_2_f_score              0.025
+                                                      rouge_l_precision            0.102
+                                                      rouge_l_recall               0.030
+                                                      rouge_l_f_score              0.059
+                                                      rouge_we_1_p                 0.108
+                                                      rouge_we_1_r                 0.011
+                                                      rouge_we_1_f                 0.044
+                                                      rouge_we_2_p                 0.097
+                                                      rouge_we_2_r                 0.061
+                                                      rouge_we_2_f                 0.073
+                                                      meteor                       0.059
+                                                      cider                        0.077
+                                                      s3_pyr                       0.024
+                                                      s3_resp                      0.019
+                                                      mover_score                  0.203
+                                                      sentence_movers_glove_sms    0.070
+                                                      bleu                         0.030
+                                                      bert_score_precision         0.193
+                                                      bert_score_recall            0.059
+                                                      bert_score_f1                0.130
+                                                      blanc                        0.143
+                                                      summaqa_avg_prob             0.211
+                                                      summaqa_avg_fscore           0.245
+                                                      supert                       0.136

@@ -177,3 +177,5 @@ bertscore-deberta-xlarge-mnli-topk-20
 bertscore-deberta-xlarge-mnli-topp-0.2
 bertscore-deberta-xlarge-mnli-topp-0.5
 bertscore-deberta-xlarge-mnli-topp-0.7
+moverscore-1gram
+moverscore-2gram
