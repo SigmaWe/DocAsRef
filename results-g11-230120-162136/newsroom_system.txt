@@ -1,0 +1,73 @@
+corr_metric  aspect                 approach  model                    score_name
+pearsonr     InformativenessRating  new       bertscore-deberta-large  precision     0.343
+                                                                       recall        0.360
+                                                                       f1            0.395
+                                              bertscore-bart-large     precision     0.380
+                                                                       recall        0.232
+                                                                       f1            0.282
+             RelevanceRating        new       bertscore-deberta-large  precision     0.178
+                                                                       recall        0.244
+                                                                       f1            0.254
+                                              bertscore-bart-large     precision     0.256
+                                                                       recall        0.113
+                                                                       f1            0.158
+             CoherenceRating        new       bertscore-deberta-large  precision     0.108
+                                                                       recall       -0.036
+                                                                       f1            0.016
+                                              bertscore-bart-large     precision     0.102
+                                                                       recall       -0.196
+                                                                       f1           -0.137
+             FluencyRating          new       bertscore-deberta-large  precision     0.109
+                                                                       recall       -0.106
+                                                                       f1           -0.037
+                                              bertscore-bart-large     precision    -0.022
+                                                                       recall       -0.276
+                                                                       f1           -0.233
+kendalltau   InformativenessRating  new       bertscore-deberta-large  precision     0.283
+                                                                       recall        0.300
+                                                                       f1            0.306
+                                              bertscore-bart-large     precision     0.288
+                                                                       recall        0.187
+                                                                       f1            0.210
+             RelevanceRating        new       bertscore-deberta-large  precision     0.194
+                                                                       recall        0.279
+                                                                       f1            0.261
+                                              bertscore-bart-large     precision     0.232
+                                                                       recall        0.155
+                                                                       f1            0.172
+             CoherenceRating        new       bertscore-deberta-large  precision     0.083
+                                                                       recall        0.051
+                                                                       f1            0.066
+                                              bertscore-bart-large     precision     0.068
+                                                                       recall       -0.086
+                                                                       f1           -0.075
+             FluencyRating          new       bertscore-deberta-large  precision     0.090
+                                                                       recall        0.005
+                                                                       f1            0.027
+                                              bertscore-bart-large     precision     0.007
+                                                                       recall       -0.148
+                                                                       f1           -0.127
+spearmanr    InformativenessRating  new       bertscore-deberta-large  precision     0.414
+                                                                       recall        0.418
+                                                                       f1            0.436
+                                              bertscore-bart-large     precision     0.412
+                                                                       recall        0.279
+                                                                       f1            0.301
+             RelevanceRating        new       bertscore-deberta-large  precision     0.289
+                                                                       recall        0.396
+                                                                       f1            0.365
+                                              bertscore-bart-large     precision     0.330
+                                                                       recall        0.225
+                                                                       f1            0.243
+             CoherenceRating        new       bertscore-deberta-large  precision     0.128
+                                                                       recall        0.069
+                                                                       f1            0.088
+                                              bertscore-bart-large     precision     0.087
+                                                                       recall       -0.137
+                                                                       f1           -0.110
+             FluencyRating          new       bertscore-deberta-large  precision     0.137
+                                                                       recall        0.005
+                                                                       f1            0.047
+                                              bertscore-bart-large     precision    -0.002
+                                                                       recall       -0.205
+                                                                       f1           -0.175

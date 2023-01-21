@@ -1,0 +1,25 @@
+corr_metric  aspect   approach  model      score_name
+pearsonr     Pyramid  new       bertscore  precision    0.357
+                                           recall       0.467
+                                           f1           0.463
+                                rouge      rouge1       0.378
+                                           rouge2       0.173
+                                           rougeL       0.247
+                                           rougeLsum    0.373
+                                bleurt     scores       0.449
+kendalltau   Pyramid  new       bertscore  precision    0.303
+                                           recall       0.353
+                                           f1           0.378
+                                rouge      rouge1       0.285
+                                           rouge2       0.203
+                                           rougeL       0.184
+                                           rougeLsum    0.279
+                                bleurt     scores       0.293
+spearmanr    Pyramid  new       bertscore  precision    0.429
+                                           recall       0.484
+                                           f1           0.520
+                                rouge      rouge1       0.393
+                                           rouge2       0.268
+                                           rougeL       0.254
+                                           rougeLsum    0.384
+                                bleurt     scores       0.408

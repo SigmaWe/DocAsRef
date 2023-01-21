@@ -1,0 +1,9 @@
+,consistency,relevance,coherence,fluency
+bertscore_precision,0.007,0.16,0.205,0.066
+bertscore_recall,0.13,0.272,0.215,0.116
+bertscore_f1,0.072,0.23,0.24,0.111
+rouge_rouge1,0.125,0.188,0.087,0.091
+rouge_rouge2,0.138,0.142,0.081,0.085
+rouge_rougeL,0.102,0.154,0.114,0.081
+rouge_rougeLsum,0.102,0.154,0.114,0.081
+bleurt_scores,0.04,0.157,0.127,0.071

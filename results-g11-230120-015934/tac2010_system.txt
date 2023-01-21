@@ -1,0 +1,28 @@
+corr_metric  aspect      approach  model                      score_name
+pearsonr     Pyramid     new       bertscore-bart-large-mnli  precision    0.626
+                                                              recall       0.276
+                                                              f1           0.451
+             Linguistic  new       bertscore-bart-large-mnli  precision    0.046
+                                                              recall       0.024
+                                                              f1           0.041
+             Overall     new       bertscore-bart-large-mnli  precision    0.425
+                                                              recall       0.408
+                                                              f1           0.452
+kendalltau   Pyramid     new       bertscore-bart-large-mnli  precision    0.447
+                                                              recall       0.185
+                                                              f1           0.279
+             Linguistic  new       bertscore-bart-large-mnli  precision    0.021
+                                                              recall       0.023
+                                                              f1           0.016
+             Overall     new       bertscore-bart-large-mnli  precision    0.242
+                                                              recall       0.264
+                                                              f1           0.303
+spearmanr    Pyramid     new       bertscore-bart-large-mnli  precision    0.639
+                                                              recall       0.263
+                                                              f1           0.419
+             Linguistic  new       bertscore-bart-large-mnli  precision    0.036
+                                                              recall       0.037
+                                                              f1           0.026
+             Overall     new       bertscore-bart-large-mnli  precision    0.344
+                                                              recall       0.375
+                                                              f1           0.412

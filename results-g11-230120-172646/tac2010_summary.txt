@@ -1,0 +1,28 @@
+corr_metric  aspect      approach  model                         score_name
+pearsonr     Pyramid     new       bertscore-roberta-large-mnli  precision    0.406
+                                                                 recall       0.455
+                                                                 f1           0.468
+             Linguistic  new       bertscore-roberta-large-mnli  precision    0.328
+                                                                 recall       0.433
+                                                                 f1           0.414
+             Overall     new       bertscore-roberta-large-mnli  precision    0.410
+                                                                 recall       0.452
+                                                                 f1           0.470
+kendalltau   Pyramid     new       bertscore-roberta-large-mnli  precision    0.340
+                                                                 recall       0.351
+                                                                 f1           0.374
+             Linguistic  new       bertscore-roberta-large-mnli  precision    0.238
+                                                                 recall       0.267
+                                                                 f1           0.279
+             Overall     new       bertscore-roberta-large-mnli  precision    0.323
+                                                                 recall       0.354
+                                                                 f1           0.363
+spearmanr    Pyramid     new       bertscore-roberta-large-mnli  precision    0.469
+                                                                 recall       0.481
+                                                                 f1           0.509
+             Linguistic  new       bertscore-roberta-large-mnli  precision    0.306
+                                                                 recall       0.340
+                                                                 f1           0.356
+             Overall     new       bertscore-roberta-large-mnli  precision    0.418
+                                                                 recall       0.450
+                                                                 f1           0.464

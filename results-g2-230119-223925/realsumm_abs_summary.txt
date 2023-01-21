@@ -1,0 +1,52 @@
+corr_metric  aspect              approach  model                                 score_name          
+pearsonr     litepyramid_recall  new       bertscore-sentence-cos-deberta-large  P                      -0.126
+                                                                                 R                       0.102
+                                                                                 F                      -0.092
+                                 PreCalc   PreCalc                               rouge_1_f_score         0.553
+                                                                                 rouge_2_recall          0.591
+                                                                                 rouge_l_recall          0.622
+                                                                                 rouge_2_precision       0.329
+                                                                                 rouge_2_f_score         0.489
+                                                                                 rouge_1_precision       0.224
+                                                                                 rouge_1_recall          0.661
+                                                                                 rouge_l_precision       0.228
+                                                                                 rouge_l_f_score         0.501
+                                                                                 js-2                    0.490
+                                                                                 mover_score             0.511
+                                                                                 bert_recall_score       0.606
+                                                                                 bert_precision_score    0.242
+                                                                                 bert_f_score            0.470
+kendalltau   litepyramid_recall  new       bertscore-sentence-cos-deberta-large  P                      -0.092
+                                                                                 R                       0.082
+                                                                                 F                      -0.072
+                                 PreCalc   PreCalc                               rouge_1_f_score         0.420
+                                                                                 rouge_2_recall          0.469
+                                                                                 rouge_l_recall          0.505
+                                                                                 rouge_2_precision       0.255
+                                                                                 rouge_2_f_score         0.357
+                                                                                 rouge_1_precision       0.182
+                                                                                 rouge_1_recall          0.525
+                                                                                 rouge_l_precision       0.180
+                                                                                 rouge_l_f_score         0.384
+                                                                                 js-2                    0.360
+                                                                                 mover_score             0.396
+                                                                                 bert_recall_score       0.456
+                                                                                 bert_precision_score    0.185
+                                                                                 bert_f_score            0.333
+spearmanr    litepyramid_recall  new       bertscore-sentence-cos-deberta-large  P                      -0.123
+                                                                                 R                       0.103
+                                                                                 F                      -0.097
+                                 PreCalc   PreCalc                               rouge_1_f_score         0.525
+                                                                                 rouge_2_recall          0.562
+                                                                                 rouge_l_recall          0.603
+                                                                                 rouge_2_precision       0.329
+                                                                                 rouge_2_f_score         0.452
+                                                                                 rouge_1_precision       0.234
+                                                                                 rouge_1_recall          0.627
+                                                                                 rouge_l_precision       0.238
+                                                                                 rouge_l_f_score         0.485
+                                                                                 js-2                    0.458
+                                                                                 mover_score             0.495
+                                                                                 bert_recall_score       0.568
+                                                                                 bert_precision_score    0.242
+                                                                                 bert_f_score            0.427

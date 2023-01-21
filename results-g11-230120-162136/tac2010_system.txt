@@ -1,0 +1,55 @@
+corr_metric  aspect      approach  model                    score_name
+pearsonr     Pyramid     new       bertscore-deberta-large  precision    0.606
+                                                            recall       0.333
+                                                            f1           0.488
+                                   bertscore-bart-large     precision    0.634
+                                                            recall       0.285
+                                                            f1           0.453
+             Linguistic  new       bertscore-deberta-large  precision    0.058
+                                                            recall       0.038
+                                                            f1           0.057
+                                   bertscore-bart-large     precision    0.041
+                                                            recall       0.035
+                                                            f1           0.047
+             Overall     new       bertscore-deberta-large  precision    0.398
+                                                            recall       0.442
+                                                            f1           0.453
+                                   bertscore-bart-large     precision    0.437
+                                                            recall       0.424
+                                                            f1           0.467
+kendalltau   Pyramid     new       bertscore-deberta-large  precision    0.449
+                                                            recall       0.217
+                                                            f1           0.318
+                                   bertscore-bart-large     precision    0.449
+                                                            recall       0.183
+                                                            f1           0.297
+             Linguistic  new       bertscore-deberta-large  precision    0.008
+                                                            recall       0.021
+                                                            f1           0.018
+                                   bertscore-bart-large     precision    0.027
+                                                            recall       0.027
+                                                            f1           0.014
+             Overall     new       bertscore-deberta-large  precision    0.246
+                                                            recall       0.287
+                                                            f1           0.295
+                                   bertscore-bart-large     precision    0.248
+                                                            recall       0.277
+                                                            f1           0.295
+spearmanr    Pyramid     new       bertscore-deberta-large  precision    0.622
+                                                            recall       0.328
+                                                            f1           0.464
+                                   bertscore-bart-large     precision    0.637
+                                                            recall       0.274
+                                                            f1           0.437
+             Linguistic  new       bertscore-deberta-large  precision    0.019
+                                                            recall       0.043
+                                                            f1           0.033
+                                   bertscore-bart-large     precision    0.043
+                                                            recall       0.055
+                                                            f1           0.023
+             Overall     new       bertscore-deberta-large  precision    0.332
+                                                            recall       0.406
+                                                            f1           0.401
+                                   bertscore-bart-large     precision    0.350
+                                                            recall       0.392
+                                                            f1           0.408

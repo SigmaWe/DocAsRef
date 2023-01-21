@@ -1,0 +1,10 @@
+corr_metric  aspect   approach  model                         score_name
+pearsonr     Pyramid  new       bertscore-deberta-large-mnli  precision    0.472
+                                                              recall       0.460
+                                                              f1           0.485
+kendalltau   Pyramid  new       bertscore-deberta-large-mnli  precision    0.362
+                                                              recall       0.388
+                                                              f1           0.396
+spearmanr    Pyramid  new       bertscore-deberta-large-mnli  precision    0.496
+                                                              recall       0.526
+                                                              f1           0.539

@@ -1,0 +1,73 @@
+corr_metric  aspect                 approach  model                         score_name
+pearsonr     InformativenessRating  new       bertscore-roberta-large-mnli  precision    0.686
+                                                                            recall       0.795
+                                                                            f1           0.744
+                                              bertscore-bart-large-mnli     precision    0.763
+                                                                            recall       0.823
+                                                                            f1           0.823
+             RelevanceRating        new       bertscore-roberta-large-mnli  precision    0.670
+                                                                            recall       0.743
+                                                                            f1           0.711
+                                              bertscore-bart-large-mnli     precision    0.763
+                                                                            recall       0.785
+                                                                            f1           0.796
+             CoherenceRating        new       bertscore-roberta-large-mnli  precision    0.629
+                                                                            recall       0.690
+                                                                            f1           0.664
+                                              bertscore-bart-large-mnli     precision    0.694
+                                                                            recall       0.694
+                                                                            f1           0.713
+             FluencyRating          new       bertscore-roberta-large-mnli  precision    0.561
+                                                                            recall       0.625
+                                                                            f1           0.594
+                                              bertscore-bart-large-mnli     precision    0.632
+                                                                            recall       0.633
+                                                                            f1           0.648
+kendalltau   InformativenessRating  new       bertscore-roberta-large-mnli  precision    0.526
+                                                                            recall       0.644
+                                                                            f1           0.590
+                                              bertscore-bart-large-mnli     precision    0.574
+                                                                            recall       0.666
+                                                                            f1           0.675
+             RelevanceRating        new       bertscore-roberta-large-mnli  precision    0.472
+                                                                            recall       0.528
+                                                                            f1           0.499
+                                              bertscore-bart-large-mnli     precision    0.521
+                                                                            recall       0.557
+                                                                            f1           0.557
+             CoherenceRating        new       bertscore-roberta-large-mnli  precision    0.519
+                                                                            recall       0.542
+                                                                            f1           0.546
+                                              bertscore-bart-large-mnli     precision    0.572
+                                                                            recall       0.524
+                                                                            f1           0.573
+             FluencyRating          new       bertscore-roberta-large-mnli  precision    0.467
+                                                                            recall       0.460
+                                                                            f1           0.476
+                                              bertscore-bart-large-mnli     precision    0.544
+                                                                            recall       0.478
+                                                                            f1           0.531
+spearmanr    InformativenessRating  new       bertscore-roberta-large-mnli  precision    0.617
+                                                                            recall       0.737
+                                                                            f1           0.680
+                                              bertscore-bart-large-mnli     precision    0.676
+                                                                            recall       0.764
+                                                                            f1           0.773
+             RelevanceRating        new       bertscore-roberta-large-mnli  precision    0.554
+                                                                            recall       0.621
+                                                                            f1           0.582
+                                              bertscore-bart-large-mnli     precision    0.613
+                                                                            recall       0.654
+                                                                            f1           0.655
+             CoherenceRating        new       bertscore-roberta-large-mnli  precision    0.609
+                                                                            recall       0.632
+                                                                            f1           0.641
+                                              bertscore-bart-large-mnli     precision    0.672
+                                                                            recall       0.619
+                                                                            f1           0.670
+             FluencyRating          new       bertscore-roberta-large-mnli  precision    0.548
+                                                                            recall       0.550
+                                                                            f1           0.563
+                                              bertscore-bart-large-mnli     precision    0.644
+                                                                            recall       0.560
+                                                                            f1           0.621

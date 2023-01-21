@@ -1,0 +1,28 @@
+corr_metric  aspect      approach  model                         score_name
+pearsonr     Pyramid     new       bertscore-deberta-large-mnli  precision    0.633
+                                                                 recall       0.391
+                                                                 f1           0.545
+             Linguistic  new       bertscore-deberta-large-mnli  precision    0.070
+                                                                 recall       0.043
+                                                                 f1           0.066
+             Overall     new       bertscore-deberta-large-mnli  precision    0.418
+                                                                 recall       0.475
+                                                                 f1           0.482
+kendalltau   Pyramid     new       bertscore-deberta-large-mnli  precision    0.459
+                                                                 recall       0.254
+                                                                 f1           0.364
+             Linguistic  new       bertscore-deberta-large-mnli  precision    0.045
+                                                                 recall       0.035
+                                                                 f1           0.025
+             Overall     new       bertscore-deberta-large-mnli  precision    0.268
+                                                                 recall       0.324
+                                                                 f1           0.316
+spearmanr    Pyramid     new       bertscore-deberta-large-mnli  precision    0.659
+                                                                 recall       0.384
+                                                                 f1           0.528
+             Linguistic  new       bertscore-deberta-large-mnli  precision    0.066
+                                                                 recall       0.055
+                                                                 f1           0.048
+             Overall     new       bertscore-deberta-large-mnli  precision    0.373
+                                                                 recall       0.446
+                                                                 f1           0.438

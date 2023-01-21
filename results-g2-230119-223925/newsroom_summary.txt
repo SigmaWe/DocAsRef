@@ -1,0 +1,37 @@
+corr_metric  aspect                 approach  model                                 score_name
+pearsonr     InformativenessRating  new       bertscore-sentence-cos-deberta-large  P            0.443
+                                                                                    R            0.534
+                                                                                    F            0.510
+             RelevanceRating        new       bertscore-sentence-cos-deberta-large  P            0.435
+                                                                                    R            0.495
+                                                                                    F            0.482
+             CoherenceRating        new       bertscore-sentence-cos-deberta-large  P            0.539
+                                                                                    R            0.558
+                                                                                    F            0.574
+             FluencyRating          new       bertscore-sentence-cos-deberta-large  P            0.528
+                                                                                    R            0.489
+                                                                                    F            0.532
+kendalltau   InformativenessRating  new       bertscore-sentence-cos-deberta-large  P            0.310
+                                                                                    R            0.393
+                                                                                    F            0.390
+             RelevanceRating        new       bertscore-sentence-cos-deberta-large  P            0.326
+                                                                                    R            0.331
+                                                                                    F            0.358
+             CoherenceRating        new       bertscore-sentence-cos-deberta-large  P            0.427
+                                                                                    R            0.432
+                                                                                    F            0.474
+             FluencyRating          new       bertscore-sentence-cos-deberta-large  P            0.399
+                                                                                    R            0.382
+                                                                                    F            0.425
+spearmanr    InformativenessRating  new       bertscore-sentence-cos-deberta-large  P            0.397
+                                                                                    R            0.482
+                                                                                    F            0.474
+             RelevanceRating        new       bertscore-sentence-cos-deberta-large  P            0.393
+                                                                                    R            0.415
+                                                                                    F            0.425
+             CoherenceRating        new       bertscore-sentence-cos-deberta-large  P            0.522
+                                                                                    R            0.537
+                                                                                    F            0.570
+             FluencyRating          new       bertscore-sentence-cos-deberta-large  P            0.491
+                                                                                    R            0.475
+                                                                                    F            0.520

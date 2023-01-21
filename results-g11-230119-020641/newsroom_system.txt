@@ -1,0 +1,253 @@
+corr_metric  aspect                 approach  model                                   score_name
+pearsonr     InformativenessRating  new       bertscore-deberta-xlarge-mnli           precision     0.238
+                                                                                      recall        0.265
+                                                                                      f1            0.277
+                                              bertscore-deberta-xlarge-mnli-topk-5    precision     0.349
+                                                                                      recall        0.238
+                                                                                      f1            0.329
+                                              bertscore-deberta-xlarge-mnli-topk-10   precision     0.313
+                                                                                      recall        0.221
+                                                                                      f1            0.282
+                                              bertscore-deberta-xlarge-mnli-topk-20   precision     0.257
+                                                                                      recall        0.254
+                                                                                      f1            0.276
+                                              bertscore-deberta-xlarge-mnli-topp-0.2  precision     0.288
+                                                                                      recall        0.115
+                                                                                      f1            0.197
+                                              bertscore-deberta-xlarge-mnli-topp-0.5  precision     0.361
+                                                                                      recall        0.182
+                                                                                      f1            0.258
+                                              bertscore-deberta-xlarge-mnli-topp-0.7  precision     0.295
+                                                                                      recall        0.198
+                                                                                      f1            0.249
+             RelevanceRating        new       bertscore-deberta-xlarge-mnli           precision     0.068
+                                                                                      recall        0.143
+                                                                                      f1            0.137
+                                              bertscore-deberta-xlarge-mnli-topk-5    precision     0.219
+                                                                                      recall        0.112
+                                                                                      f1            0.193
+                                              bertscore-deberta-xlarge-mnli-topk-10   precision     0.159
+                                                                                      recall        0.109
+                                                                                      f1            0.146
+                                              bertscore-deberta-xlarge-mnli-topk-20   precision     0.080
+                                                                                      recall        0.120
+                                                                                      f1            0.122
+                                              bertscore-deberta-xlarge-mnli-topp-0.2  precision     0.151
+                                                                                      recall        0.041
+                                                                                      f1            0.095
+                                              bertscore-deberta-xlarge-mnli-topp-0.5  precision     0.156
+                                                                                      recall        0.079
+                                                                                      f1            0.123
+                                              bertscore-deberta-xlarge-mnli-topp-0.7  precision     0.110
+                                                                                      recall        0.094
+                                                                                      f1            0.118
+             CoherenceRating        new       bertscore-deberta-xlarge-mnli           precision     0.009
+                                                                                      recall       -0.076
+                                                                                      f1           -0.049
+                                              bertscore-deberta-xlarge-mnli-topk-5    precision     0.063
+                                                                                      recall        0.009
+                                                                                      f1            0.041
+                                              bertscore-deberta-xlarge-mnli-topk-10   precision     0.091
+                                                                                      recall       -0.076
+                                                                                      f1           -0.006
+                                              bertscore-deberta-xlarge-mnli-topk-20   precision     0.024
+                                                                                      recall       -0.081
+                                                                                      f1           -0.047
+                                              bertscore-deberta-xlarge-mnli-topp-0.2  precision     0.275
+                                                                                      recall       -0.220
+                                                                                      f1           -0.074
+                                              bertscore-deberta-xlarge-mnli-topp-0.5  precision     0.195
+                                                                                      recall       -0.193
+                                                                                      f1           -0.095
+                                              bertscore-deberta-xlarge-mnli-topp-0.7  precision     0.064
+                                                                                      recall       -0.150
+                                                                                      f1           -0.091
+             FluencyRating          new       bertscore-deberta-xlarge-mnli           precision     0.002
+                                                                                      recall       -0.173
+                                                                                      f1           -0.125
+                                              bertscore-deberta-xlarge-mnli-topk-5    precision     0.009
+                                                                                      recall       -0.021
+                                                                                      f1           -0.008
+                                              bertscore-deberta-xlarge-mnli-topk-10   precision     0.046
+                                                                                      recall       -0.163
+                                                                                      f1           -0.086
+                                              bertscore-deberta-xlarge-mnli-topk-20   precision     0.018
+                                                                                      recall       -0.172
+                                                                                      f1           -0.118
+                                              bertscore-deberta-xlarge-mnli-topp-0.2  precision     0.202
+                                                                                      recall       -0.328
+                                                                                      f1           -0.191
+                                              bertscore-deberta-xlarge-mnli-topp-0.5  precision     0.146
+                                                                                      recall       -0.288
+                                                                                      f1           -0.194
+                                              bertscore-deberta-xlarge-mnli-topp-0.7  precision     0.059
+                                                                                      recall       -0.248
+                                                                                      f1           -0.170
+kendalltau   InformativenessRating  new       bertscore-deberta-xlarge-mnli           precision     0.209
+                                                                                      recall        0.251
+                                                                                      f1            0.259
+                                              bertscore-deberta-xlarge-mnli-topk-5    precision     0.252
+                                                                                      recall        0.217
+                                                                                      f1            0.262
+                                              bertscore-deberta-xlarge-mnli-topk-10   precision     0.244
+                                                                                      recall        0.186
+                                                                                      f1            0.242
+                                              bertscore-deberta-xlarge-mnli-topk-20   precision     0.217
+                                                                                      recall        0.226
+                                                                                      f1            0.244
+                                              bertscore-deberta-xlarge-mnli-topp-0.2  precision     0.251
+                                                                                      recall        0.133
+                                                                                      f1            0.195
+                                              bertscore-deberta-xlarge-mnli-topp-0.5  precision     0.312
+                                                                                      recall        0.170
+                                                                                      f1            0.204
+                                              bertscore-deberta-xlarge-mnli-topp-0.7  precision     0.249
+                                                                                      recall        0.205
+                                                                                      f1            0.227
+             RelevanceRating        new       bertscore-deberta-xlarge-mnli           precision     0.069
+                                                                                      recall        0.196
+                                                                                      f1            0.164
+                                              bertscore-deberta-xlarge-mnli-topk-5    precision     0.174
+                                                                                      recall        0.144
+                                                                                      f1            0.171
+                                              bertscore-deberta-xlarge-mnli-topk-10   precision     0.131
+                                                                                      recall        0.134
+                                                                                      f1            0.154
+                                              bertscore-deberta-xlarge-mnli-topk-20   precision     0.082
+                                                                                      recall        0.177
+                                                                                      f1            0.148
+                                              bertscore-deberta-xlarge-mnli-topp-0.2  precision     0.130
+                                                                                      recall        0.081
+                                                                                      f1            0.110
+                                              bertscore-deberta-xlarge-mnli-topp-0.5  precision     0.141
+                                                                                      recall        0.158
+                                                                                      f1            0.145
+                                              bertscore-deberta-xlarge-mnli-topp-0.7  precision     0.108
+                                                                                      recall        0.178
+                                                                                      f1            0.156
+             CoherenceRating        new       bertscore-deberta-xlarge-mnli           precision    -0.001
+                                                                                      recall        0.041
+                                                                                      f1            0.031
+                                              bertscore-deberta-xlarge-mnli-topk-5    precision     0.034
+                                                                                      recall       -0.006
+                                                                                      f1            0.010
+                                              bertscore-deberta-xlarge-mnli-topk-10   precision     0.033
+                                                                                      recall       -0.023
+                                                                                      f1            0.025
+                                              bertscore-deberta-xlarge-mnli-topk-20   precision     0.014
+                                                                                      recall        0.021
+                                                                                      f1            0.033
+                                              bertscore-deberta-xlarge-mnli-topp-0.2  precision     0.206
+                                                                                      recall       -0.097
+                                                                                      f1           -0.026
+                                              bertscore-deberta-xlarge-mnli-topp-0.5  precision     0.152
+                                                                                      recall       -0.054
+                                                                                      f1           -0.027
+                                              bertscore-deberta-xlarge-mnli-topp-0.7  precision     0.039
+                                                                                      recall       -0.003
+                                                                                      f1           -0.002
+             FluencyRating          new       bertscore-deberta-xlarge-mnli           precision    -0.002
+                                                                                      recall       -0.049
+                                                                                      f1           -0.026
+                                              bertscore-deberta-xlarge-mnli-topk-5    precision    -0.008
+                                                                                      recall       -0.006
+                                                                                      f1            0.008
+                                              bertscore-deberta-xlarge-mnli-topk-10   precision     0.027
+                                                                                      recall       -0.098
+                                                                                      f1           -0.039
+                                              bertscore-deberta-xlarge-mnli-topk-20   precision     0.019
+                                                                                      recall       -0.065
+                                                                                      f1           -0.023
+                                              bertscore-deberta-xlarge-mnli-topp-0.2  precision     0.117
+                                                                                      recall       -0.159
+                                                                                      f1           -0.086
+                                              bertscore-deberta-xlarge-mnli-topp-0.5  precision     0.122
+                                                                                      recall       -0.128
+                                                                                      f1           -0.091
+                                              bertscore-deberta-xlarge-mnli-topp-0.7  precision     0.039
+                                                                                      recall       -0.087
+                                                                                      f1           -0.055
+spearmanr    InformativenessRating  new       bertscore-deberta-xlarge-mnli           precision     0.282
+                                                                                      recall        0.359
+                                                                                      f1            0.360
+                                              bertscore-deberta-xlarge-mnli-topk-5    precision     0.350
+                                                                                      recall        0.308
+                                                                                      f1            0.359
+                                              bertscore-deberta-xlarge-mnli-topk-10   precision     0.356
+                                                                                      recall        0.257
+                                                                                      f1            0.342
+                                              bertscore-deberta-xlarge-mnli-topk-20   precision     0.298
+                                                                                      recall        0.326
+                                                                                      f1            0.341
+                                              bertscore-deberta-xlarge-mnli-topp-0.2  precision     0.352
+                                                                                      recall        0.206
+                                                                                      f1            0.271
+                                              bertscore-deberta-xlarge-mnli-topp-0.5  precision     0.429
+                                                                                      recall        0.246
+                                                                                      f1            0.289
+                                              bertscore-deberta-xlarge-mnli-topp-0.7  precision     0.354
+                                                                                      recall        0.305
+                                                                                      f1            0.324
+             RelevanceRating        new       bertscore-deberta-xlarge-mnli           precision     0.103
+                                                                                      recall        0.288
+                                                                                      f1            0.256
+                                              bertscore-deberta-xlarge-mnli-topk-5    precision     0.258
+                                                                                      recall        0.194
+                                                                                      f1            0.249
+                                              bertscore-deberta-xlarge-mnli-topk-10   precision     0.196
+                                                                                      recall        0.177
+                                                                                      f1            0.215
+                                              bertscore-deberta-xlarge-mnli-topk-20   precision     0.121
+                                                                                      recall        0.245
+                                                                                      f1            0.225
+                                              bertscore-deberta-xlarge-mnli-topp-0.2  precision     0.207
+                                                                                      recall        0.107
+                                                                                      f1            0.162
+                                              bertscore-deberta-xlarge-mnli-topp-0.5  precision     0.222
+                                                                                      recall        0.219
+                                                                                      f1            0.212
+                                              bertscore-deberta-xlarge-mnli-topp-0.7  precision     0.164
+                                                                                      recall        0.254
+                                                                                      f1            0.234
+             CoherenceRating        new       bertscore-deberta-xlarge-mnli           precision    -0.007
+                                                                                      recall        0.044
+                                                                                      f1            0.039
+                                              bertscore-deberta-xlarge-mnli-topk-5    precision     0.064
+                                                                                      recall       -0.005
+                                                                                      f1            0.031
+                                              bertscore-deberta-xlarge-mnli-topk-10   precision     0.067
+                                                                                      recall       -0.048
+                                                                                      f1            0.015
+                                              bertscore-deberta-xlarge-mnli-topk-20   precision     0.021
+                                                                                      recall        0.012
+                                                                                      f1            0.038
+                                              bertscore-deberta-xlarge-mnli-topp-0.2  precision     0.298
+                                                                                      recall       -0.158
+                                                                                      f1           -0.038
+                                              bertscore-deberta-xlarge-mnli-topp-0.5  precision     0.217
+                                                                                      recall       -0.095
+                                                                                      f1           -0.047
+                                              bertscore-deberta-xlarge-mnli-topp-0.7  precision     0.065
+                                                                                      recall       -0.025
+                                                                                      f1           -0.015
+             FluencyRating          new       bertscore-deberta-xlarge-mnli           precision     0.001
+                                                                                      recall       -0.063
+                                                                                      f1           -0.032
+                                              bertscore-deberta-xlarge-mnli-topk-5    precision    -0.003
+                                                                                      recall       -0.011
+                                                                                      f1            0.008
+                                              bertscore-deberta-xlarge-mnli-topk-10   precision     0.035
+                                                                                      recall       -0.135
+                                                                                      f1           -0.058
+                                              bertscore-deberta-xlarge-mnli-topk-20   precision     0.027
+                                                                                      recall       -0.082
+                                                                                      f1           -0.028
+                                              bertscore-deberta-xlarge-mnli-topp-0.2  precision     0.167
+                                                                                      recall       -0.243
+                                                                                      f1           -0.144
+                                              bertscore-deberta-xlarge-mnli-topp-0.5  precision     0.188
+                                                                                      recall       -0.184
+                                                                                      f1           -0.124
+                                              bertscore-deberta-xlarge-mnli-topp-0.7  precision     0.068
+                                                                                      recall       -0.119
+                                                                                      f1           -0.075

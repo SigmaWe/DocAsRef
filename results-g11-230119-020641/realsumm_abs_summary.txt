@@ -1,0 +1,106 @@
+corr_metric  aspect              approach  model                                   score_name          
+pearsonr     litepyramid_recall  new       bertscore-deberta-xlarge-mnli           precision              -0.010
+                                                                                   recall                  0.329
+                                                                                   f1                      0.224
+                                           bertscore-deberta-xlarge-mnli-topk-5    precision              -0.093
+                                                                                   recall                  0.191
+                                                                                   f1                      0.056
+                                           bertscore-deberta-xlarge-mnli-topk-10   precision              -0.051
+                                                                                   recall                  0.286
+                                                                                   f1                      0.150
+                                           bertscore-deberta-xlarge-mnli-topk-20   precision              -0.009
+                                                                                   recall                  0.328
+                                                                                   f1                      0.218
+                                           bertscore-deberta-xlarge-mnli-topp-0.2  precision              -0.096
+                                                                                   recall                  0.217
+                                                                                   f1                      0.078
+                                           bertscore-deberta-xlarge-mnli-topp-0.5  precision              -0.045
+                                                                                   recall                  0.297
+                                                                                   f1                      0.176
+                                           bertscore-deberta-xlarge-mnli-topp-0.7  precision              -0.018
+                                                                                   recall                  0.316
+                                                                                   f1                      0.210
+                                 PreCalc   PreCalc                                 rouge_1_f_score         0.553
+                                                                                   rouge_2_recall          0.591
+                                                                                   rouge_l_recall          0.622
+                                                                                   rouge_2_precision       0.329
+                                                                                   rouge_2_f_score         0.489
+                                                                                   rouge_1_precision       0.224
+                                                                                   rouge_1_recall          0.661
+                                                                                   rouge_l_precision       0.228
+                                                                                   rouge_l_f_score         0.501
+                                                                                   js-2                    0.490
+                                                                                   mover_score             0.511
+                                                                                   bert_recall_score       0.606
+                                                                                   bert_precision_score    0.242
+                                                                                   bert_f_score            0.470
+kendalltau   litepyramid_recall  new       bertscore-deberta-xlarge-mnli           precision               0.001
+                                                                                   recall                  0.251
+                                                                                   f1                      0.164
+                                           bertscore-deberta-xlarge-mnli-topk-5    precision              -0.071
+                                                                                   recall                  0.127
+                                                                                   f1                      0.026
+                                           bertscore-deberta-xlarge-mnli-topk-10   precision              -0.033
+                                                                                   recall                  0.212
+                                                                                   f1                      0.110
+                                           bertscore-deberta-xlarge-mnli-topk-20   precision               0.005
+                                                                                   recall                  0.248
+                                                                                   f1                      0.158
+                                           bertscore-deberta-xlarge-mnli-topp-0.2  precision              -0.079
+                                                                                   recall                  0.151
+                                                                                   f1                      0.050
+                                           bertscore-deberta-xlarge-mnli-topp-0.5  precision              -0.022
+                                                                                   recall                  0.225
+                                                                                   f1                      0.129
+                                           bertscore-deberta-xlarge-mnli-topp-0.7  precision              -0.006
+                                                                                   recall                  0.241
+                                                                                   f1                      0.151
+                                 PreCalc   PreCalc                                 rouge_1_f_score         0.420
+                                                                                   rouge_2_recall          0.469
+                                                                                   rouge_l_recall          0.505
+                                                                                   rouge_2_precision       0.255
+                                                                                   rouge_2_f_score         0.357
+                                                                                   rouge_1_precision       0.182
+                                                                                   rouge_1_recall          0.525
+                                                                                   rouge_l_precision       0.180
+                                                                                   rouge_l_f_score         0.384
+                                                                                   js-2                    0.360
+                                                                                   mover_score             0.396
+                                                                                   bert_recall_score       0.456
+                                                                                   bert_precision_score    0.185
+                                                                                   bert_f_score            0.333
+spearmanr    litepyramid_recall  new       bertscore-deberta-xlarge-mnli           precision               0.001
+                                                                                   recall                  0.325
+                                                                                   f1                      0.214
+                                           bertscore-deberta-xlarge-mnli-topk-5    precision              -0.096
+                                                                                   recall                  0.166
+                                                                                   f1                      0.032
+                                           bertscore-deberta-xlarge-mnli-topk-10   precision              -0.036
+                                                                                   recall                  0.275
+                                                                                   f1                      0.142
+                                           bertscore-deberta-xlarge-mnli-topk-20   precision               0.004
+                                                                                   recall                  0.323
+                                                                                   f1                      0.206
+                                           bertscore-deberta-xlarge-mnli-topp-0.2  precision              -0.098
+                                                                                   recall                  0.198
+                                                                                   f1                      0.067
+                                           bertscore-deberta-xlarge-mnli-topp-0.5  precision              -0.030
+                                                                                   recall                  0.290
+                                                                                   f1                      0.163
+                                           bertscore-deberta-xlarge-mnli-topp-0.7  precision              -0.009
+                                                                                   recall                  0.313
+                                                                                   f1                      0.196
+                                 PreCalc   PreCalc                                 rouge_1_f_score         0.525
+                                                                                   rouge_2_recall          0.562
+                                                                                   rouge_l_recall          0.603
+                                                                                   rouge_2_precision       0.329
+                                                                                   rouge_2_f_score         0.452
+                                                                                   rouge_1_precision       0.234
+                                                                                   rouge_1_recall          0.627
+                                                                                   rouge_l_precision       0.238
+                                                                                   rouge_l_f_score         0.485
+                                                                                   js-2                    0.458
+                                                                                   mover_score             0.495
+                                                                                   bert_recall_score       0.568
+                                                                                   bert_precision_score    0.242
+                                                                                   bert_f_score            0.427

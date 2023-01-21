@@ -1,0 +1,11 @@
+{
+  "('pearsonr', 'Pyramid', 'new', 'bertscore-deberta-large-mnli', 'precision')": 0.632953489,
+  "('pearsonr', 'Pyramid', 'new', 'bertscore-deberta-large-mnli', 'recall')": 0.3905723054,
+  "('pearsonr', 'Pyramid', 'new', 'bertscore-deberta-large-mnli', 'f1')": 0.5445482363,
+  "('kendalltau', 'Pyramid', 'new', 'bertscore-deberta-large-mnli', 'precision')": 0.4589371981,
+  "('kendalltau', 'Pyramid', 'new', 'bertscore-deberta-large-mnli', 'recall')": 0.2541062802,
+  "('kendalltau', 'Pyramid', 'new', 'bertscore-deberta-large-mnli', 'f1')": 0.3642512077,
+  "('spearmanr', 'Pyramid', 'new', 'bertscore-deberta-large-mnli', 'precision')": 0.6594511255,
+  "('spearmanr', 'Pyramid', 'new', 'bertscore-deberta-large-mnli', 'recall')": 0.383533765,
+  "('spearmanr', 'Pyramid', 'new', 'bertscore-deberta-large-mnli', 'f1')": 0.5283379587
+}

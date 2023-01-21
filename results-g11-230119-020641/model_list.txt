@@ -1,0 +1,7 @@
+bertscore-deberta-xlarge-mnli
+bertscore-deberta-xlarge-mnli-topk-5
+bertscore-deberta-xlarge-mnli-topk-10
+bertscore-deberta-xlarge-mnli-topk-20
+bertscore-deberta-xlarge-mnli-topp-0.2
+bertscore-deberta-xlarge-mnli-topp-0.5
+bertscore-deberta-xlarge-mnli-topp-0.7

@@ -1,0 +1,73 @@
+corr_metric  aspect      approach  model      score_name
+pearsonr     Pyramid     new       bertscore  precision     0.589
+                                              recall        0.292
+                                              f1            0.481
+                                   rouge      rouge1        0.241
+                                              rouge2        0.360
+                                              rougeL        0.203
+                                              rougeLsum     0.237
+                                   bleurt     scores        0.385
+             Linguistic  new       bertscore  precision     0.012
+                                              recall       -0.036
+                                              f1           -0.012
+                                   rouge      rouge1        0.027
+                                              rouge2        0.007
+                                              rougeL        0.038
+                                              rougeLsum     0.031
+                                   bleurt     scores        0.085
+             Overall     new       bertscore  precision     0.339
+                                              recall        0.340
+                                              f1            0.368
+                                   rouge      rouge1        0.317
+                                              rouge2        0.345
+                                              rougeL        0.314
+                                              rougeLsum     0.318
+                                   bleurt     scores        0.352
+kendalltau   Pyramid     new       bertscore  precision     0.438
+                                              recall        0.229
+                                              f1            0.341
+                                   rouge      rouge1        0.183
+                                              rouge2        0.254
+                                              rougeL        0.163
+                                              rougeLsum     0.185
+                                   bleurt     scores        0.262
+             Linguistic  new       bertscore  precision    -0.025
+                                              recall       -0.049
+                                              f1           -0.080
+                                   rouge      rouge1        0.008
+                                              rouge2       -0.008
+                                              rougeL        0.012
+                                              rougeLsum     0.014
+                                   bleurt     scores        0.023
+             Overall     new       bertscore  precision     0.199
+                                              recall        0.225
+                                              f1            0.217
+                                   rouge      rouge1        0.225
+                                              rouge2        0.240
+                                              rougeL        0.207
+                                              rougeLsum     0.223
+                                   bleurt     scores        0.211
+spearmanr    Pyramid     new       bertscore  precision     0.629
+                                              recall        0.353
+                                              f1            0.511
+                                   rouge      rouge1        0.263
+                                              rouge2        0.384
+                                              rougeL        0.235
+                                              rougeLsum     0.258
+                                   bleurt     scores        0.394
+             Linguistic  new       bertscore  precision    -0.021
+                                              recall       -0.059
+                                              f1           -0.101
+                                   rouge      rouge1        0.010
+                                              rouge2       -0.000
+                                              rougeL        0.024
+                                              rougeLsum     0.015
+                                   bleurt     scores        0.061
+             Overall     new       bertscore  precision     0.282
+                                              recall        0.318
+                                              f1            0.314
+                                   rouge      rouge1        0.299
+                                              rouge2        0.313
+                                              rougeL        0.297
+                                              rougeLsum     0.300
+                                   bleurt     scores        0.290

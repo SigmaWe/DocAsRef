@@ -1,0 +1,73 @@
+corr_metric  aspect                 approach  model                                                  score_name
+pearsonr     InformativenessRating  new       bertscore-sentence-pagerank-cos-deberta-large-entropy  P            0.455
+                                                                                                     R            0.543
+                                                                                                     F            0.521
+                                              bertscore-sentence-pagerank-cos-deberta-large-sum      P            0.455
+                                                                                                     R            0.535
+                                                                                                     F            0.512
+             RelevanceRating        new       bertscore-sentence-pagerank-cos-deberta-large-entropy  P            0.447
+                                                                                                     R            0.504
+                                                                                                     F            0.493
+                                              bertscore-sentence-pagerank-cos-deberta-large-sum      P            0.447
+                                                                                                     R            0.496
+                                                                                                     F            0.486
+             CoherenceRating        new       bertscore-sentence-pagerank-cos-deberta-large-entropy  P            0.548
+                                                                                                     R            0.562
+                                                                                                     F            0.580
+                                              bertscore-sentence-pagerank-cos-deberta-large-sum      P            0.548
+                                                                                                     R            0.564
+                                                                                                     F            0.577
+             FluencyRating          new       bertscore-sentence-pagerank-cos-deberta-large-entropy  P            0.533
+                                                                                                     R            0.494
+                                                                                                     F            0.536
+                                              bertscore-sentence-pagerank-cos-deberta-large-sum      P            0.533
+                                                                                                     R            0.498
+                                                                                                     F            0.535
+kendalltau   InformativenessRating  new       bertscore-sentence-pagerank-cos-deberta-large-entropy  P            0.320
+                                                                                                     R            0.398
+                                                                                                     F            0.404
+                                              bertscore-sentence-pagerank-cos-deberta-large-sum      P            0.320
+                                                                                                     R            0.400
+                                                                                                     F            0.393
+             RelevanceRating        new       bertscore-sentence-pagerank-cos-deberta-large-entropy  P            0.332
+                                                                                                     R            0.339
+                                                                                                     F            0.366
+                                              bertscore-sentence-pagerank-cos-deberta-large-sum      P            0.332
+                                                                                                     R            0.343
+                                                                                                     F            0.364
+             CoherenceRating        new       bertscore-sentence-pagerank-cos-deberta-large-entropy  P            0.439
+                                                                                                     R            0.435
+                                                                                                     F            0.482
+                                              bertscore-sentence-pagerank-cos-deberta-large-sum      P            0.439
+                                                                                                     R            0.441
+                                                                                                     F            0.481
+             FluencyRating          new       bertscore-sentence-pagerank-cos-deberta-large-entropy  P            0.402
+                                                                                                     R            0.388
+                                                                                                     F            0.426
+                                              bertscore-sentence-pagerank-cos-deberta-large-sum      P            0.402
+                                                                                                     R            0.391
+                                                                                                     F            0.433
+spearmanr    InformativenessRating  new       bertscore-sentence-pagerank-cos-deberta-large-entropy  P            0.408
+                                                                                                     R            0.490
+                                                                                                     F            0.488
+                                              bertscore-sentence-pagerank-cos-deberta-large-sum      P            0.408
+                                                                                                     R            0.487
+                                                                                                     F            0.480
+             RelevanceRating        new       bertscore-sentence-pagerank-cos-deberta-large-entropy  P            0.398
+                                                                                                     R            0.419
+                                                                                                     F            0.435
+                                              bertscore-sentence-pagerank-cos-deberta-large-sum      P            0.398
+                                                                                                     R            0.423
+                                                                                                     F            0.432
+             CoherenceRating        new       bertscore-sentence-pagerank-cos-deberta-large-entropy  P            0.532
+                                                                                                     R            0.533
+                                                                                                     F            0.578
+                                              bertscore-sentence-pagerank-cos-deberta-large-sum      P            0.532
+                                                                                                     R            0.543
+                                                                                                     F            0.577
+             FluencyRating          new       bertscore-sentence-pagerank-cos-deberta-large-entropy  P            0.492
+                                                                                                     R            0.474
+                                                                                                     F            0.521
+                                              bertscore-sentence-pagerank-cos-deberta-large-sum      P            0.492
+                                                                                                     R            0.482
+                                                                                                     F            0.524
