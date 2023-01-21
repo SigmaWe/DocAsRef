@@ -4,11 +4,20 @@ file_path = path.abspath(__file__)
 sys.path.append(path.dirname(path.dirname(file_path)))
 
 import dar_type
-import sentence_transformers
+from sentence_transformers import SentenceTransformer, models
+import typing
+import functools
 
 
-def init_sent_embedder(name: str) -> dar_type.Embedder:
-    embedder: dar_type.Embedder = sentence_transformers.SentenceTransformer(name)
+def init_sent_embedder(name: str, pooling_mode: typing.Optional[str] = None) -> dar_type.Embedder:
+    if pooling_mode is None:
+        model = SentenceTransformer(name)
+    else:
+        word_embedding_model = models.Transformer(name)
+        pooling_model = models.Pooling(word_embedding_model.get_word_embedding_dimension(), pooling_mode=pooling_mode)
+        model = SentenceTransformer(modules=[word_embedding_model, pooling_model])
+    pool = model.start_multi_process_pool()
+    embedder: dar_type.Embedder = functools.partial(model.encode_multi_process, pool=pool)
     embedder.__name__ = name
     return embedder
 
@@ -16,4 +25,6 @@ def init_sent_embedder(name: str) -> dar_type.Embedder:
 sent_embedders = {
     "mpnet": init_sent_embedder("all-mpnet-base-v2"),
     "roberta": init_sent_embedder("all-roberta-large-v1"),
+    "deberta-large": init_sent_embedder("microsoft/deberta-large-mnli", pooling_mode="cls"),
+    "deberta-xlarge": init_sent_embedder("microsoft/deberta-xlarge-mnli", pooling_mode="cls"),
 }

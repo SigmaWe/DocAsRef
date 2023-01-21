@@ -1,6 +1,5 @@
 import typing
 import numpy as np
-import sentence_transformers
 import transformers
 from datasets.arrow_dataset import Dataset
 
@@ -12,14 +11,17 @@ TextListSegments = typing.List[typing.List[str]]
 TextSegments = typing.List[str]
 
 
-class Embedder(sentence_transformers.SentenceTransformer):
+class Embedder(typing.Protocol):  # sentence_transformers.SentenceTransformer
     __name__: str
+
+    def __call__(self, sentences: typing.List[str]) -> np.ndarray:
+               ...
 
 
 class SimilarityMatrixFunc(typing.Protocol):
     __name__: str
 
-    def __call__(self, cand_segments: TextSegments, ref_segments: TextSegments) -> np.ndarray:
+    def __call__(self, cand_segments: TextSegments, ref_segments: TextSegments) -> typing.Optional[np.ndarray]:
         ...
 
 

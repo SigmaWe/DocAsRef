@@ -7,7 +7,6 @@ from env_root import *
 from mnli.classifiers import mnli_classifiers
 from bertscore_sentence.embedders import sent_embedders
 
-
 ### METRICS ###
 
 import functools
@@ -18,6 +17,8 @@ import mnli.sim_expr
 metrics = {
     "bertscore-sentence-cos-mpnet": functools.partial(bertscore_sentence.compute_cos, embedder=sent_embedders["mpnet"]),
     "bertscore-sentence-cos-roberta": functools.partial(bertscore_sentence.compute_cos, embedder=sent_embedders["roberta"]),
+    "bertscore-sentence-cos-deberta-large": functools.partial(bertscore_sentence.compute_cos, embedder=sent_embedders["deberta-large"]),
+    "bertscore-sentence-cos-deberta-xlarge": functools.partial(bertscore_sentence.compute_cos, embedder=sent_embedders["deberta-xlarge"]),
 }
 
 for mnli_name in ["roberta", "bart", "deberta-large", "deberta-xlarge"]:

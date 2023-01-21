@@ -8,19 +8,14 @@ import warnings
 import typing
 
 
-def cos_sim_mat_f(cand_segments: dar_type.TextSegments, ref_segments: dar_type.TextSegments, embedder: dar_type.Embedder) -> np.ndarray:
-    def bert_encode(piece_segments: dar_type.TextSegments):
-        sent_emb_list = list()
-        for sent in piece_segments:
-            with torch.no_grad():
-                sent_emb_list.append(embedder.encode(sent, convert_to_numpy=True))
-        return np.stack(sent_emb_list, axis=0)
+def cos_sim_mat_f(cand_segments: dar_type.TextSegments, ref_segments: dar_type.TextSegments, embedder: dar_type.Embedder) -> typing.Optional[np.ndarray]:
+    if len(cand_segments) == 0 or len(ref_segments) == 0:
+        warnings.warn("Empty cand_segments or ref_segments; len(cand_segments)={}, len(ref_segments)={}".format(len(cand_segments), len(ref_segments)))
+        return None
 
-    # def bert_encode_multiprocess(piece_segments: dar_type.TextSegments):
-    #     pool = embedder.start_multi_process_pool()
-    #     sent_emb = embedder.encode_multi_process(sentences=piece_segments, pool=pool, batch_size=8)
-    #     embedder.stop_multi_process_pool(pool)
-    #     return sent_emb
+    def bert_encode(piece_segments: dar_type.TextSegments):
+        with torch.no_grad():
+            return embedder(piece_segments)
 
     ref_sent_emb = bert_encode(ref_segments)
     cand_sent_emb = bert_encode(cand_segments)
@@ -29,7 +24,7 @@ def cos_sim_mat_f(cand_segments: dar_type.TextSegments, ref_segments: dar_type.T
     cand_sent_emb_norms = np.linalg.norm(cand_sent_emb, axis=1)
     denominators = np.outer(ref_sent_emb_norms, cand_sent_emb_norms)
     sim_mat = np.divide(numerators, denominators)
-    return sim_mat
+    return sim_mat  # shape: (len(ref_segments), len(cand_segments))
 
 
 def score_np(predictions: dar_type.TextList, references: dar_type.TextList, sim_mat_f: dar_type.SimilarityMatrixFunc, idf_f: typing.Optional[dar_type.IdfScoreFunction] = None) -> np.ndarray:
@@ -38,6 +33,9 @@ def score_np(predictions: dar_type.TextList, references: dar_type.TextList, sim_
 
     for index in trange(len(cands), desc="bertscore-sentence {}".format(sim_mat_f.__name__), leave=False):  # all pieces, len(cands) == len(refs)
         sim_mat = sim_mat_f(cand_segments=cands[index], ref_segments=refs[index])
+        if sim_mat is None:
+            all_scores[index, :] = np.zeros((3,))
+            continue
         if idf_f is None:
             idf_list_r = np.ones(len(refs[index]))
             idf_list_p = np.ones(len(cands[index]))

@@ -1,5 +1,6 @@
 import sys
 from os import path
+import warnings
 file_path = path.abspath(__file__)
 sys.path.append(path.dirname(path.dirname(file_path)))
 
@@ -11,7 +12,10 @@ import dar_type
 import typing
 
 
-def mnli_sim_mat(cand_segments: dar_type.TextSegments, ref_segments: dar_type.TextSegments, classifiers: dar_type.PipelinesList, expr: dar_type.MNLISimilarityExpression) -> np.ndarray:
+def mnli_sim_mat(cand_segments: dar_type.TextSegments, ref_segments: dar_type.TextSegments, classifiers: dar_type.PipelinesList, expr: dar_type.MNLISimilarityExpression) -> typing.Optional[np.ndarray]:
+    if len(cand_segments) == 0 or len(ref_segments) == 0:
+        warnings.warn("Empty cand_segments or ref_segments; len(cand_segments)={}, len(ref_segments)={}".format(len(cand_segments), len(ref_segments)))
+        return None
     sent_pairs = ["[SEP]".join([x, y]) for x in ref_segments for y in cand_segments]
     sim_mat = np.array(similarity(sent_pairs, classifiers, expr)).reshape((len(ref_segments), len(cand_segments)))
     return sim_mat

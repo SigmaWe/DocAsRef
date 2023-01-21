@@ -1,4 +1,4 @@
-# Group 11: classic bertscore + deberta-large-mnli + Top
+# Group 11: classic bertscore + other models + Top
 
 from env_root import *
 
@@ -8,14 +8,13 @@ import classic.eval as classic
 import functools
 import top.eval as top
 
-bertscore_compute_deberta_large_mnli =  functools.partial(classic.bertscore_compute, model_type="microsoft/deberta-large-mnli")
-bertscore_compute_deberta_xlarge_mnli =  functools.partial(classic.bertscore_compute, model_type="microsoft/deberta-large-mnli")
-# bertscore_compute_deberta_v3_large =  functools.partial(classic.bertscore_compute, model_type="microsoft/deberta-v3-large", use_fast_tokenizer=False)
-
 metrics = {
-    "bertscore-deberta-large-mnli": bertscore_compute_deberta_large_mnli,
-    "bertscore-deberta-xlarge-mnli": bertscore_compute_deberta_xlarge_mnli,
-    # "bertscore-deberta-v3-large": bertscore_compute_deberta_v3_large,
+    "bertscore-deberta-large-mnli": functools.partial(classic.bertscore_compute, model_type="microsoft/deberta-large-mnli"),
+    "bertscore-roberta-large-mnli": functools.partial(classic.bertscore_compute, model_type="roberta-large-mnli"),
+    "bertscore-bart-large-mnli": functools.partial(classic.bertscore_compute, model_type="facebook/bart-large-mnli"),
+    "bertscore-deberta-xlarge-mnli": functools.partial(classic.bertscore_compute, model_type="microsoft/deberta-xlarge-mnli"),
+    "bertscore-deberta-large": functools.partial(classic.bertscore_compute, model_type="microsoft/deberta-large"),
+    "bertscore-bart-large": functools.partial(classic.bertscore_compute, model_type="facebook/bart-large"),
 }
 
 raw_metrics = metrics.copy()

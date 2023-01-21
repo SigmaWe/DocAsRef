@@ -1,6 +1,11 @@
 # Print the JSON output into a CSV format for importing into Excel/Google Sheets
 # modified from Forrest's EvalBase/print_result.py
 
+import sys
+from os import path
+file_path = path.abspath(__file__)
+sys.path.append(path.dirname(path.dirname(file_path)))
+
 import os
 import shutil
 import pandas as pd
@@ -121,16 +126,10 @@ def parse(
     table = [fmt.format(*row) for row in s]
     return '\n'.join(table) + "\n"
 
-datasets = {
-    "summeval": ["consistency", "relevance", "coherence", "fluency"],
-    "newsroom": ["InformativenessRating", "RelevanceRating", "CoherenceRating", "FluencyRating"],
-    "realsumm_abs": ["litepyramid_recall"],
-    "realsumm_ext": ["litepyramid_recall"],
-}
 corr_metrics = ["spearmanr", "pearsonr", "kendalltau"]
 levels = ["summary", "system"]
 
-from env import *
+from result_proc.env_snr_trad import *
 
 if __name__ == "__main__":
     if os.path.exists(summary_dir):

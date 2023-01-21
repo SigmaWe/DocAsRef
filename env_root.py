@@ -17,7 +17,7 @@ sys.path.append("/home/turx/EvalBase")
 import evalbase
 for ds_name in evalbase.datasets:
     evalbase.datasets[ds_name]["approaches"] = ["new"]
-from evalbase import newsroom, realsumm, summeval
+from evalbase import newsroom, realsumm, summeval, tac2010
 
 ### GLOBAL VARS ###
 

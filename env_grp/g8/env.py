@@ -24,7 +24,9 @@ weight_fs: typing.Dict[str, dar_type.SentenceWeightFunction] = {
 }
 
 sim_mat_fs: typing.Dict[str, dar_type.SimpleSimilarityMatrixFunc] = {
-    "cos-mpnet": functools.partial(bertscore_sentence.cos_sim_mat_f, embedder=sent_embedder_mpnet),
+    "cos-mpnet": functools.partial(bertscore_sentence.cos_sim_mat_f, embedder=sent_embedders["mpnet"]),
+    "cos-deberta-large": functools.partial(bertscore_sentence.cos_sim_mat_f, embedder=sent_embedders["deberta-large"]),
+    "cos-deberta-xlarge": functools.partial(bertscore_sentence.cos_sim_mat_f, embedder=sent_embedders["deberta-xlarge"]),
 }
 
 for mnli_name in ["deberta-large"]:
@@ -37,6 +39,7 @@ metrics: typing.Dict[str, dar_type.MetricComputeFunc] = dict()
 
 for sim_mat_f_name, sim_mat_f in sim_mat_fs.items():
     for weight_f_name, weight_f in weight_fs.items():
+        metrics["bertscore-sentence-{}".format(sim_mat_f_name)] = g2_metrics["bertscore-sentence-{}".format(sim_mat_f_name)]
         pagerank_get_idf_list = functools.partial(pagerank.get_idf, sim_mat_f=sim_mat_f, weight_f=weight_f)
         metrics["bertscore-sentence-pagerank-{}-{}".format(sim_mat_f_name, weight_f_name)] = functools.partial(g2_metrics["bertscore-sentence-{}".format(sim_mat_f_name)], idf_f = pagerank_get_idf_list)
 

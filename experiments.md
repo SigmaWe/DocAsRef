@@ -33,7 +33,7 @@ All experiment names must follow the order of dimension above, e.g., `sentence-c
   * Why no IDF? Error? (**please double check**)
 * BERTScore-sentence
   * cosine:
-    * Vanilla: mpnet (done), RoBERTa-large (done)
+    * Vanilla: mpnet (done), RoBERTa-large (done), DeBERTa-large (done), DeBERTa-xlarge (**not run**)
     * Add pseudoreference
       * top-k (done), top-p (done)
       * AnyRef (done)
