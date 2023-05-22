@@ -44,6 +44,9 @@ class MetricComputeFunc(typing.Protocol):
         ...
 
 
+MetricDict = typing.Dict[str, MetricComputeFunc]
+
+
 class DocWarning(Warning):
     """
     Warning raised when the document is malformed

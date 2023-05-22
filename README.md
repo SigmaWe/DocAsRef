@@ -16,22 +16,7 @@ Do not reinvent the wheel:
 
 For evaluation, set correct path to [EvalBase](https://github.com/SigmaWe/EvalBase), in [`eval.py`](eval.py)
 
-For metrics, reference [`env_grp/`](env_grp/)
-
-We have these groups of environments:
-
-- Group 1: classic (bertscore, rouge, bleurt)
-- Group 2: bertscore-sentence (cos, mnli)
-- Group 3: AnyRef (bart, pegasus-xum) + Group 1
-- Group 4: Top + Group 1
-- Group 5: AnyRef (pegasus-newsroom, pegasus-cnndm) + Group 1
-- Group 6: AnyRef (pegasus-large) + Group 1
-- <del>Group 7 (Dropped): AnyRef (pegasus-x-large) + Group 1</del>
-- Group 8: PageRank + Group 2
-- Group 9: AnyRef (pegasus-newsroom) + Group 2
-- Group 10: Top + Group 2
-- Group 11: classic bertscore + other models + Top
-- Group 12: classic (moverscore)
+For call to metrics and the experiment script, the super configuration is [`experiment.py`](experiment.py). To make a sub-configuration, make a copy of this `experiment.py` and modify for a subset.
 
 ## Approach 0: just replacing human summaries with documents
 
