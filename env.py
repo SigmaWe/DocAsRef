@@ -17,6 +17,19 @@ import torch
 path = os.path.dirname(os.path.abspath(__file__))
 n_gpu = torch.cuda.device_count()
 
+import warnings
+import pandas
+
+warnings.filterwarnings(
+    action="ignore",
+    message="You seem to be using the pipelines sequentially on GPU. In order to maximize efficiency please use a dataset",
+    category=UserWarning
+)
+warnings.simplefilter(
+    action="ignore",
+    category=pandas.errors.PerformanceWarning
+)
+
 ### LIBRARY VARS ###
 
 import datasets

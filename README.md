@@ -14,9 +14,7 @@ Do not reinvent the wheel:
 
 # Approaches
 
-For evaluation, set correct path to [EvalBase](https://github.com/SigmaWe/EvalBase), in [`eval.py`](eval.py)
-
-For call to metrics and the experiment script, the super configuration is [`experiment.py`](experiment.py). To make a sub-configuration, make a copy of this `experiment.py` and modify for a subset.
+For evaluation, set correct path to [EvalBase](https://github.com/SigmaWe/EvalBase), in [`experiment.py`](experiment.py), the super configuration. To make a sub-configuration, make a copy of this `experiment.py` and modify for a subset.
 
 ## Approach 0: just replacing human summaries with documents
 

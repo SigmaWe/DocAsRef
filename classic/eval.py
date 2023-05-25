@@ -12,12 +12,12 @@ from collections import defaultdict
 
 bertscore = evaluate.load("bertscore")
 rouge = evaluate.load("rouge")
-bleurt = evaluate.load("bleurt", config_name="BLEURT-20", module_type="metric")
+# bleurt = evaluate.load("bleurt", module_type="metric")
 
 
 bertscore_compute: dar_type.MetricComputeFunc = functools.partial(bertscore.compute, lang='en', use_fast_tokenizer=True)
 rouge_compute: dar_type.MetricComputeFunc = functools.partial(rouge.compute, use_aggregator=False)
-bleurt_compute: dar_type.MetricComputeFunc = bleurt.compute
+# bleurt_compute: dar_type.MetricComputeFunc = bleurt.compute
 
 
 def moverscore_partial(predictions: dar_type.TextList, references: dar_type.TextList, n_gram: int) -> dar_type.MetricScoreDict:

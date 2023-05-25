@@ -1,8 +1,10 @@
+import env
 import os
 import sys
 
 evalbase_path = "/home/turx/EvalBase"
 sys.path.append(evalbase_path)
+os.environ["PROTOCOL_BUFFERS_PYTHON_IMPLEMENTATION"] = "python"
 
 import evalbase
 import mnli.sim_expr as mnli_sim
@@ -19,7 +21,7 @@ classic_metrics = dict()
 classic_metrics.update(classic_update_metrics([
     "bertscore",
     "rouge",
-    "bleurt"
+    # "bleurt"
 ]))
 nlg_metrics.update(classic_metrics)
 bs_sent_metrics = dict()
@@ -97,10 +99,12 @@ classic_metrics.update(classic_update_metrics([
 ]))
 nlg_metrics.update(classic_metrics)
 nlg_metrics.update(top_update_metrics(classic_metrics))
-nlg_metrics.update(classic_update_metrics([
-    "moverscore-1gram",
-    "moverscore-2gram"
-]))
+
+# TODO: fix moverscore
+# nlg_metrics.update(classic_update_metrics([
+#     "moverscore-1gram",
+#     "moverscore-2gram"
+# ]))
 
 
 common_exp_config = {

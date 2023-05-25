@@ -12,7 +12,7 @@ mnli_models = {
     "roberta": "roberta-large-mnli",
     "bart": "facebook/bart-large-mnli",
     "deberta-large": "microsoft/deberta-large-mnli",
-    "deberta-xlarge": "microsoft/deberta-xlarge-mnli"
+    # "deberta-xlarge": "microsoft/deberta-xlarge-mnli"
 }
 mnli_classifiers: dar_type.PipelinesDict = dict()
 for model_name, model in mnli_models.items():

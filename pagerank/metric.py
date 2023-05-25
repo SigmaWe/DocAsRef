@@ -20,7 +20,7 @@ def additional_metrics(bs_sent_metrics: dar_type.MetricDict, model_names: typing
         "sum": np.sum,
     }
 
-    for weight_f_name in weight_fs.keys():
+    for weight_f_name in list(weight_fs.keys()):
         if weight_f_name not in weight_f_names:
             weight_fs.pop(weight_f_name)
 
