@@ -129,7 +129,7 @@ def parse(
 corr_metrics = ["spearmanr", "pearsonr", "kendalltau"]
 levels = ["summary", "system"]
 
-from result_proc.env_snr_trad import *
+from result_proc.env_snr import *
 
 if __name__ == "__main__":
     if os.path.exists(summary_dir):
