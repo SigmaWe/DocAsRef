@@ -17,7 +17,7 @@ def additional_metrics(metric_names: typing.List[str]) -> dar_type.MetricDict:
     metrics = {
         "bertscore": classic.bertscore_compute,
         "rouge": classic.rouge_compute,
-        # "bleurt": classic.bleurt_compute,
+        "bleurt": classic.bleurt_compute,
         "moverscore-1gram": classic.moverscore_compute_1gram,
         "moverscore-2gram": classic.moverscore_compute_2gram,
         "bertscore-deberta-large-mnli": functools.partial(classic.bertscore_compute, model_type="microsoft/deberta-large-mnli"),
