@@ -1,0 +1,5 @@
+This file contains the implementation of Shan., Shan.*, SDC, and SDC*.
+shannon.py: Shan.
+shannon_len.py: Shan.*
+SDC.py: SDC
+SDC_len.py: SDC*
