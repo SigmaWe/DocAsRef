@@ -16,7 +16,9 @@ classic_metrics = dict()
 classic_metrics.update(classic_update_metrics([
     "bertscore",
     "rouge",
-    # "bleurt"
+    "bleurt",
+    "moverscore-1gram",
+    "moverscore-2gram"
 ]))
 nlg_metrics.update(classic_metrics)
 bs_sent_metrics = dict()
@@ -90,16 +92,13 @@ classic_metrics.update(classic_update_metrics([
     "bertscore-bart-large-mnli",
     # "bertscore-deberta-xlarge-mnli",
     "bertscore-deberta-large",
-    "bertscore-bart-large"
+    "bertscore-bart-large",
+    "bertscore-roberta-base",
+    "bertscore-deberta-base",
+    "bertscore-bart-base",
 ]))
 nlg_metrics.update(classic_metrics)
 nlg_metrics.update(top_update_metrics(classic_metrics))
-
-# TODO: fix moverscore
-# nlg_metrics.update(classic_update_metrics([
-#     "moverscore-1gram",
-#     "moverscore-2gram"
-# ]))
 
 
 common_exp_config = {
@@ -117,6 +116,11 @@ evalbase.summeval.main(summeval_config)
 
 ## End of SummEval example ##
 
+### Example configurations for the Newsroom dataset ###
+newsroom_config.update(common_exp_config)
+evalbase.newsroom.main(newsroom_config)
+### End of configuration for the Newsroom dataset ###
+
 ### Example configurations for the ABStractive track in Realsumm ###
 realsumm_abs_config.update(common_exp_config)
 evalbase.realsumm.main(realsumm_abs_config)
@@ -128,30 +132,25 @@ realsumm_ext_config.update(common_exp_config)
 evalbase.realsumm.main(realsumm_ext_config)
 ### End of example for the EXtractive track in Realsumm ###
 
-### Example configurations for the Newsroom dataset ###
-newsroom_config.update(common_exp_config)
-evalbase.newsroom.main(newsroom_config)
-### End of configuration for the Newsroom dataset ###
+# ### Example configurations for the TAC 2010 dataset ###
+# tac2010_config.update(common_exp_config)
+# evalbase.tac2010.main(tac2010_config)
+# ### End of example for the TAC 2010 dataset ###
 
-### Example configurations for the TAC 2010 dataset ###
-tac2010_config.update(common_exp_config)
-evalbase.tac2010.main(tac2010_config)
-### End of example for the TAC 2010 dataset ###
+# ### Example configurations for the QAGS dataset ###
+# print("factcc.qags_main(), size: 235")
+# qags_config.update(common_exp_config)
+# evalbase.qaqs.main(qags_config)
+# ### End of example for the QAGS dataset ###
 
-### Example configurations for the QAGS dataset ###
-print("factcc.qags_main(), size: 235")
-qags_config.update(common_exp_config)
-evalbase.qaqs.main(qags_config)
-### End of example for the QAGS dataset ###
+# ### Example configurations for the Frank dataset ###
+# print("factcc.frank_main(): size: 1250")
+# frank_config.update(common_exp_config)
+# evalbase.frank.main(frank_config)
+# ### End of example for the Frank dataset ###
 
-### Example configurations for the Frank dataset ###
-print("factcc.frank_main(): size: 1250")
-frank_config.update(common_exp_config)
-evalbase.frank.main(frank_config)
-### End of example for the Frank dataset ###
-
-### Example configurations for the FastCC dataset ###
-print("factcc.factCC_main(): size: large")
-fastcc_config.update(common_exp_config)
-evalbase.factcc.main(fastcc_config)
-### End of example for the FastCC dataset ###
+# ### Example configurations for the FastCC dataset ###
+# print("factcc.factCC_main(): size: large")
+# fastcc_config.update(common_exp_config)
+# evalbase.factcc.main(fastcc_config)
+# ### End of example for the FastCC dataset ###

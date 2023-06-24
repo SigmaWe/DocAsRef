@@ -45,7 +45,7 @@ realsumm_abs_config = {
     "debug": False                    
 }
 
-realsumm_ext_config = realsumm_abs_config
+realsumm_ext_config = realsumm_abs_config.copy()
 realsumm_ext_config["dataset_name"] = "realsumm_ext"
 realsumm_ext_config["data_path"] = os.path.join(evalbase.path, "dataloader", "ext.pkl")  # you need to get this file. See ReadMe.
 

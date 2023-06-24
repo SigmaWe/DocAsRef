@@ -25,7 +25,10 @@ def additional_metrics(metric_names: typing.List[str]) -> dar_type.MetricDict:
         "bertscore-bart-large-mnli": functools.partial(classic.bertscore_compute, model_type="facebook/bart-large-mnli"),
         "bertscore-deberta-xlarge-mnli": functools.partial(classic.bertscore_compute, model_type="microsoft/deberta-xlarge-mnli"),
         "bertscore-deberta-large": functools.partial(classic.bertscore_compute, model_type="microsoft/deberta-large"),
-        "bertscore-bart-large": functools.partial(classic.bertscore_compute, model_type="facebook/bart-large")
+        "bertscore-bart-large": functools.partial(classic.bertscore_compute, model_type="facebook/bart-large"),
+        "bertscore-roberta-base": functools.partial(classic.bertscore_compute, model_type="roberta-base"),
+        "bertscore-deberta-base": functools.partial(classic.bertscore_compute, model_type="microsoft/deberta-base"),
+        "bertscore-bart-base": functools.partial(classic.bertscore_compute, model_type="facebook/bart-base"),
     }
 
     for metric_name in list(metrics.keys()):

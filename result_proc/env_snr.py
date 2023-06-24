@@ -30,6 +30,8 @@ result_path_bases = [
     # "/home/turx/dar-archive/results-g2-230119-223925",
     # "/home/turx/dar-archive/results-g11-230120-010031",
     # "/home/turx/dar-archive/results-g11-230120-162136"
-    "/home/turx/dar-archive/results-g13-230604"
+    # "/home/turx/dar-archive/results-g13-230604",
+    # "/home/turx/dar-archive/results-g13-230621",
+    "/home/turx/dar-archive/results-new-classic-230623",
 ]
 summary_dir = "/home/turx/dar-archive/results_snr_summary"
