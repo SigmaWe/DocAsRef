@@ -16,6 +16,7 @@ import bertscore_sentence.eval
 import mnli.eval
 import mnli.sim_expr
 
+# FIXME: Deprecated function. Keep for reference. To be removed in 3 months. 
 def additional_metrics(
     model_names: typing.List[str], 
     category: typing.Literal["cos", "mnli"], 

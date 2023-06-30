@@ -1,14 +1,27 @@
-import numpy as np
-import torch
-from tqdm.auto import trange
+# Python standard modules
 import functools
-import dar_type
-from text_preprocess import list_segmentation
 import warnings
 import typing
 
+# Common ML/math modules 
+import numpy as np
+import torch
+from tqdm.auto import trange
 
-def cos_sim_mat_f(cand_segments: dar_type.TextSegments, ref_segments: dar_type.TextSegments, embedder: dar_type.Embedder) -> typing.Optional[np.ndarray]:
+from text_preprocess import list_segmentation
+
+# Our own 
+import dar_type
+import mnli.sim 
+
+# Approach 1.1: Cosine similarity for sentence similarity 
+def get_similarity_matrix_cos(
+        cand_segments: dar_type.TextSegments, 
+        ref_segments: dar_type.TextSegments, 
+        embedder: dar_type.Embedder) -> typing.Optional[np.ndarray]:
+    """Compute the similarity matrix between two sets of sentences using Cosine similarity.
+    """
+
     if len(cand_segments) == 0 or len(ref_segments) == 0:
         warnings.warn("Empty cand_segments or ref_segments; len(cand_segments)={}, len(ref_segments)={}".format(len(cand_segments), len(ref_segments)))
         return None
@@ -25,6 +38,7 @@ def cos_sim_mat_f(cand_segments: dar_type.TextSegments, ref_segments: dar_type.T
     denominators = np.outer(ref_sent_emb_norms, cand_sent_emb_norms)
     sim_mat = np.divide(numerators, denominators)
     return sim_mat  # shape: (len(ref_segments), len(cand_segments))
+
 
 
 def score_np(predictions: dar_type.TextList, references: dar_type.TextList, sim_mat_f: dar_type.SimilarityMatrixFunc, idf_f: typing.Optional[dar_type.IdfScoreFunction] = None) -> np.ndarray:
@@ -56,7 +70,12 @@ def score_np(predictions: dar_type.TextList, references: dar_type.TextList, sim_
     return all_scores
 
 
-def compute(predictions: dar_type.TextList, references: dar_type.TextList, sim_mat_f: dar_type.SimilarityMatrixFunc, idf_f: typing.Optional[dar_type.IdfScoreFunction] = None) -> dar_type.MetricScoreDict:
+def compute(
+        predictions: dar_type.TextList, 
+        references: dar_type.TextList, 
+        sim_mat_f: dar_type.SimilarityMatrixFunc, 
+        idf_f: typing.Optional[dar_type.IdfScoreFunction] = None
+        ) -> dar_type.MetricScoreDict:
     cands, refs = predictions, references # simple renaming
     score_arr = score_np(predictions=cands, references=refs, sim_mat_f=sim_mat_f, idf_f=idf_f)
     return {
@@ -65,8 +84,14 @@ def compute(predictions: dar_type.TextList, references: dar_type.TextList, sim_m
         "F": score_arr[:, 2].tolist()
     }
 
-
-def compute_cos(predictions: dar_type.TextList, references: dar_type.TextList, embedder: dar_type.Embedder, idf_f: typing.Optional[dar_type.IdfScoreFunction] = None) -> dar_type.MetricScoreDict:
-    cos_sim_mat_f_with_embedder: dar_type.SimilarityMatrixFunc = functools.partial(cos_sim_mat_f, embedder=embedder)
+# Approach 1.1: use cosine similarity to estimate sentence similarity
+def compute_cos(
+        predictions: dar_type.TextList, 
+        references: dar_type.TextList, 
+        embedder: dar_type.Embedder, 
+        idf_f: typing.Optional[dar_type.IdfScoreFunction] = None
+        ) -> dar_type.MetricScoreDict:
+    cos_sim_mat_f_with_embedder: dar_type.SimilarityMatrixFunc = \
+        functools.partial(get_similarity_matrix_cos, embedder=embedder)
     cos_sim_mat_f_with_embedder.__name__ = " ".join(["cos", embedder.__name__])
     return compute(predictions=predictions, references=references, sim_mat_f=cos_sim_mat_f_with_embedder, idf_f=idf_f)
