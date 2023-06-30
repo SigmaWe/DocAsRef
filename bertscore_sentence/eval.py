@@ -57,10 +57,8 @@ def score_np(
             idf_list_r = np.ones(len(refs[index]))
             idf_list_p = np.ones(len(cands[index]))
         else:
-            # FIXME: The sentence weighting is not properly encapsulated here. 
-            # It should have taken two lists of strings as inputs, and return the weights for R and for P, respectively.
-            idf_list_r = idf_f(cands[index], sim_mat.T)
-            idf_list_p = idf_f(refs[index], sim_mat)
+            idf_list_r = idf_f(cands[index], sim_mat.T, sim_mat_f)
+            idf_list_p = idf_f(refs[index], sim_mat, sim_mat_f)
             if sum(idf_list_r) == 0:
                 idf_list_r = np.ones(len(refs[index]))
             if sum(idf_list_p) == 0:
@@ -97,9 +95,6 @@ def compute_cos(
         idf_f: typing.Optional[dar_type.IdfScoreFunction] = None
         ) -> dar_type.MetricScoreDict:
 
-    # FIXME: Poor design here. 
-    # embedder should be passed all the way into get_similarity_matrix_cos
-    # for idf_f to get embedder in score_np 
     cos_sim_mat_f_with_embedder: dar_type.SimilarityMatrixFunc = \
         functools.partial(get_similarity_matrix_cos, embedder=embedder)
     cos_sim_mat_f_with_embedder.__name__ = " ".join(["cos", embedder.__name__])

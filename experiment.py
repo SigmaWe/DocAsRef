@@ -100,6 +100,9 @@ names_of_enabled_pagerank_metrics = \
         for model_name in ["roberta-large-mnli", "bart-large-mnli", "deberta-large-mnli"]
         for mnli_expr in ["not_neutral", "entail_only", "entail_contradict"]
         for weight_f_name in ["entropy", "sum"]
+        # for model_name in ["deberta-large-mnli"] 
+        # for mnli_expr in ["entail_contradict"]
+        # for weight_f_name in ["entropy"]
     ] + \
     [ f"bertscore-sentence-pagerank-cos-{model_name}-{weight_f_name}"
             for model_name in ["mpnet", "roberta-large", "deberta-large"]

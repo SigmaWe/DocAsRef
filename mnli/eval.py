@@ -40,9 +40,6 @@ def compute_mnli(
         expr: dar_type.MNLISimilarityExpression, 
         idf_f: typing.Optional[dar_type.IdfScoreFunction] = None
         ) -> dar_type.MetricScoreDict:
-    # FIXME: Poor design here. 
-    # embedder should be passed all the way into get_similarity_matrix_cos
-    # for idf_f to get embedder in score_np 
     sim_mat_f: dar_type.SimilarityMatrixFunc = \
         functools.partial(get_similarity_matrix_mnli, classifiers=classifiers, expr=expr)
     sim_mat_f.__name__ = " ".join(["mnli", classifiers.__name__])

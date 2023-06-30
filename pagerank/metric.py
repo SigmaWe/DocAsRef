@@ -61,6 +61,8 @@ weight_fs: typing.Dict[str, dar_type.SentenceWeightFunction] = {
 
 metrics = dict()
 
+# FIXME: Simply add IDF_F onto preexisting metrics 
+
 # dot-product based sentence metrics 
 for model_name in bertscore_sentence.embedders.sent_embedders.keys(): # mpnet, roberta-large, deberta-large
     for weight_f_name, weight_f in weight_fs.items():
@@ -69,11 +71,7 @@ for model_name in bertscore_sentence.embedders.sent_embedders.keys(): # mpnet, r
                 bertscore_sentence.eval.compute_cos, 
                 embedder=bertscore_sentence.embedders.sent_embedders[model_name], 
                 idf_f = functools.partial(
-                    pagerank.eval.get_idf, 
-                    sim_mat_f=functools.partial(
-                        bertscore_sentence.eval.get_similarity_matrix_cos, 
-                        embedder = bertscore_sentence.embedders.sent_embedders[model_name]
-                    ), 
+                    pagerank.eval.get_idf,
                     weight_f=weight_f
                 )   
             )
@@ -92,12 +90,7 @@ for model_name in mnli_classifiers.keys(): # roberta-large-mnli, bart-large-mnli
                     classifiers=mnli_classifiers[model_name], 
                     expr=mnli_expr, 
                     idf_f = functools.partial(
-                        pagerank.eval.get_idf, 
-                        sim_mat_f=functools.partial(
-                            mnli.eval.get_similarity_matrix_mnli, 
-                            classifiers=mnli_classifiers[model_name], 
-                            expr=mnli_expr, 
-                        ),
+                        pagerank.eval.get_idf,
                         weight_f=weight_f
                     )
                 )

@@ -58,7 +58,7 @@ Implemented in [`/bertscore_sentence/eval.py/compute_cos()`](./bertscore_sentenc
 
 ### Approach 1.2 Sentence embedding + NLI-based similarity, no weighting
 
-Sentence similarity measure via NLI probabilities. Implemented in [`mnli/eval.py/bertscore_sentence_compute()`](./mnli/eval.py#L24-27). We send a pair of sentences (one from the document and the other from the system summary) to an NLI model, selected in [`mnli/classifier.py`](./mnli/classifiers.py), that estimates three probabilities between the two sentences: entailing ($E$), contradictory ($C$), and neutral ($N$). From the three probabilities, we use different expressions (defined in [./mnli/sim_expr.py](./mnli/sim_expr.py)) to define sentence similarity: $E-C$, $1-N$, and $E$ itself. Three foundation models are experimented: `roberta-large-mnli`, `facebook/bart-large-mnli`, and `microsoft/deberta-large-mnli`.
+Sentence similarity measure via NLI probabilities. Implemented in [`mnli/eval.py/compute_mnli()`](./mnli/eval.py#L24-27). We send a pair of sentences (one from the document and the other from the system summary) to an NLI model, selected in [`mnli/classifier.py`](./mnli/classifiers.py), that estimates three probabilities between the two sentences: entailing ($E$), contradictory ($C$), and neutral ($N$). From the three probabilities, we use different expressions (defined in [./mnli/sim_expr.py](./mnli/sim_expr.py)) to define sentence similarity: $E-C$, $1-N$, and $E$ itself. Three foundation models are experimented: `roberta-large-mnli`, `facebook/bart-large-mnli`, and `microsoft/deberta-large-mnli`.
 
 ### Approach 1.3 (NOT IMPLEMENTED YET)
 
