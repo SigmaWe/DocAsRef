@@ -44,13 +44,26 @@ for model_name in sent_embedders.keys(): # mpnet, roberta-large, deberta-large
             embedder=sent_embedders[model_name]   
         )
 
+        # 'bertscore-sentence-cos-mpnet',
+        # 'bertscore-sentence-cos-roberta-large',
+        # 'bertscore-sentence-cos-deberta-large', 
+
 # MNLI probability based sentence metrics 
 for model_name in mnli_classifiers.keys(): # roberta-large-mnli, bart-large-mnli, deberta-large-mnli 
     for mnli_expr in [mnli.sim_expr.not_neutral, mnli.sim_expr.entail_only, mnli.sim_expr.entail_contradict]:
         metrics["bertscore-sentence-mnli-{}-{}".format(model_name, mnli_expr.__name__)] = \
             functools.partial(
-                mnli.eval.bertscore_sentence_compute, 
+                mnli.eval.compute_mnli, 
                 classifiers=mnli_classifiers[model_name], 
                 expr=mnli_expr
             )
-
+        
+        # 'bertscore-sentence-mnli-roberta-large-mnli-not_neutral',
+        # 'bertscore-sentence-mnli-roberta-large-mnli-entail_only',
+        # 'bertscore-sentence-mnli-roberta-large-mnli-entail_contradict',
+        # 'bertscore-sentence-mnli-bart-large-mnli-not_neutral',
+        # 'bertscore-sentence-mnli-bart-large-mnli-entail_only',
+        # 'bertscore-sentence-mnli-bart-large-mnli-entail_contradict',
+        # 'bertscore-sentence-mnli-deberta-large-mnli-not_neutral',
+        # 'bertscore-sentence-mnli-deberta-large-mnli-entail_only',
+        # 'bertscore-sentence-mnli-deberta-large-mnli-entail_contradict'

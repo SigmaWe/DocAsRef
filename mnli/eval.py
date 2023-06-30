@@ -14,6 +14,7 @@ import dar_type
 
 
 # Approach 1.2: MNLI probabilties for sentence similarity
+# originally called mnli_sim_mat
 def get_similarity_matrix_mnli(
         cand_segments: dar_type.TextSegments, 
         ref_segments: dar_type.TextSegments, 
@@ -31,6 +32,7 @@ def get_similarity_matrix_mnli(
     return sim_mat
 
 # Approach 1.2: use NLI probabilities to estimate sentence similarity
+# Originally called bertscore_sentence_compute 
 def compute_mnli(
         predictions: dar_type.TextList, 
         references: dar_type.TextList, 
@@ -38,6 +40,9 @@ def compute_mnli(
         expr: dar_type.MNLISimilarityExpression, 
         idf_f: typing.Optional[dar_type.IdfScoreFunction] = None
         ) -> dar_type.MetricScoreDict:
+    # FIXME: Poor design here. 
+    # embedder should be passed all the way into get_similarity_matrix_cos
+    # for idf_f to get embedder in score_np 
     sim_mat_f: dar_type.SimilarityMatrixFunc = \
         functools.partial(get_similarity_matrix_mnli, classifiers=classifiers, expr=expr)
     sim_mat_f.__name__ = " ".join(["mnli", classifiers.__name__])

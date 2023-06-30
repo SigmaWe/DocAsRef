@@ -15,6 +15,7 @@ import dar_type
 import mnli.sim 
 
 # Approach 1.1: Cosine similarity for sentence similarity 
+# originally called sim_mat_cos_f
 def get_similarity_matrix_cos(
         cand_segments: dar_type.TextSegments, 
         ref_segments: dar_type.TextSegments, 
@@ -39,9 +40,11 @@ def get_similarity_matrix_cos(
     sim_mat = np.divide(numerators, denominators)
     return sim_mat  # shape: (len(ref_segments), len(cand_segments))
 
-
-
-def score_np(predictions: dar_type.TextList, references: dar_type.TextList, sim_mat_f: dar_type.SimilarityMatrixFunc, idf_f: typing.Optional[dar_type.IdfScoreFunction] = None) -> np.ndarray:
+def score_np(
+        predictions: dar_type.TextList, 
+        references: dar_type.TextList, 
+        sim_mat_f: dar_type.SimilarityMatrixFunc, # the function that computes the similarity matrix
+        idf_f: typing.Optional[dar_type.IdfScoreFunction] = None) -> np.ndarray:
     cands, refs = list_segmentation(predictions), list_segmentation(references)
     all_scores = np.empty((len(cands), 3))
 
@@ -54,6 +57,8 @@ def score_np(predictions: dar_type.TextList, references: dar_type.TextList, sim_
             idf_list_r = np.ones(len(refs[index]))
             idf_list_p = np.ones(len(cands[index]))
         else:
+            # FIXME: The sentence weighting is not properly encapsulated here. 
+            # It should have taken two lists of strings as inputs, and return the weights for R and for P, respectively.
             idf_list_r = idf_f(cands[index], sim_mat.T)
             idf_list_p = idf_f(refs[index], sim_mat)
             if sum(idf_list_r) == 0:
@@ -91,7 +96,12 @@ def compute_cos(
         embedder: dar_type.Embedder, 
         idf_f: typing.Optional[dar_type.IdfScoreFunction] = None
         ) -> dar_type.MetricScoreDict:
+
+    # FIXME: Poor design here. 
+    # embedder should be passed all the way into get_similarity_matrix_cos
+    # for idf_f to get embedder in score_np 
     cos_sim_mat_f_with_embedder: dar_type.SimilarityMatrixFunc = \
         functools.partial(get_similarity_matrix_cos, embedder=embedder)
     cos_sim_mat_f_with_embedder.__name__ = " ".join(["cos", embedder.__name__])
+
     return compute(predictions=predictions, references=references, sim_mat_f=cos_sim_mat_f_with_embedder, idf_f=idf_f)

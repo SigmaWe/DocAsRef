@@ -18,7 +18,7 @@ To run the experiments,
    python3 experiment.py
    ``` 
 
-   Feel free to edit the experiments in [`experiment.py`](experiment.py). Search for "comment/uncomment" to find all options. 
+   Feel free to edit the experiment configurations in [`experiment.py`](experiment.py). Search for "comment/uncomment" to find all options. 
 
 ## Approach 0: just replacing human summaries with documents
 
@@ -85,3 +85,8 @@ Implemented in `top/`
 Instead of top-k and top-p in Approach 1.5, we use models `google/pegasus-xsum` and `facebook/bart-large-cnn` to generate pseudo-reference from documents.
 
 Implemented in `anyref/`
+
+## Baselines 
+* SUPERT, BLANC, SummaQA, SueNes. 
+* BLEU, METEOR, BART, SDC*, Sentence-Mover-Distance (SMD). See [`./baseline/` folder](./baseline/).
+* GPT-3.5 Based. 
