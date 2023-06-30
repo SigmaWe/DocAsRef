@@ -1,49 +1,35 @@
 import env
 import os
+import typing
 
-from config import *
-import mnli.sim_expr as mnli_sim
-# from classic.metric import additional_metrics as classic_update_metrics
+import evalbase # the evaluation framework dependency
+
+import dar_type # data type definitions for DocAsRef 
+import dataset_config # configurations for datasets used in DocAsRef benchmarking 
+
+# import mnli.sim_expr as mnli_sim
 # from bertscore_sentence.metric import additional_metrics as bs_update_metrics
 # from anyref.metric import additional_metrics as anyref_update_metrics
 # from top.metric import additional_metrics as top_update_metrics
 # from pagerank.metric import additional_metrics as pagerank_update_metrics
-from baseline.metric import additional_metrics as baseline_update_metrics
+# from baseline.metric import additional_metrics as baseline_update_metrics
+
+
+def enable_metrics(
+    metric_dict: dar_type.MetricDict,
+    metric_names: typing.List[str]) -> dar_type.MetricDict:
+
+    metrics_enabled = {
+        metric_name:metric_fn 
+        for metric_name, metric_fn 
+        in metric_dict.items() 
+        if metric_name in metric_names} 
+    return metrics_enabled
 
 # Common configurations for all datasets
 
 nlg_metrics = dict()
-# classic_metrics = dict()
-# classic_metrics.update(classic_update_metrics([
-#     "bertscore",
-#     "rouge",
-#     "bleurt",  # requires datasets-2.10.0 per https://github.com/huggingface/evaluate/issues/449
-#     "moverscore-1gram",
-#     "moverscore-2gram"
-# ]))
-# nlg_metrics.update(classic_metrics)
-# bs_sent_metrics = dict()
-# bs_sent_metrics.update(bs_update_metrics([
-#     "mpnet",
-#     "roberta",
-#     "deberta-large",
-#     # "deberta-xlarge"
-# ], "cos"))
-# bs_sent_metrics.update(bs_update_metrics(
-#     model_names=[
-#         "roberta",
-#         "bart",
-#         "deberta-large",
-#         # "deberta-xlarge"
-#     ],
-#     category="mnli",
-#     mnli_exprs=[
-#         mnli_sim.not_neutral,
-#         mnli_sim.entail_only,
-#         mnli_sim.entail_contradict
-#     ]
-# ))
-# nlg_metrics.update(bs_sent_metrics)
+
 # nlg_metrics.update(anyref_update_metrics(classic_metrics, [
 #     "bart",
 #     "pegasus-xsum",
@@ -100,68 +86,96 @@ nlg_metrics = dict()
 # ]))
 # nlg_metrics.update(classic_metrics)
 # nlg_metrics.update(top_update_metrics(classic_metrics))
-baseline_metrics = dict()
-baseline_metrics.update(baseline_update_metrics([
-    "sacrebleu",
-    "meteor",
-    "bart",
-    # "reuse",  # TOFIX
-    # "sdc*",  # Slow
-    "smd"  # Linux only
-]))
-nlg_metrics.update(baseline_metrics)
+
+import classic.metric
+classic_metrics = classic.metric.metrics 
+names_of_enabled_classic_metrics = [
+    "rouge", 
+    "bleurt", # requires datasets-2.10.0 per https://github.com/huggingface/evaluate/issues/449
+    "moverscore-1gram", 
+    "moverscore-2gram", 
+    "bertscore-roberta-base", 
+    "bertscore-deberta-base", 
+    "bertscore-bart-base", 
+    "bertscore-deberta-large",
+    "bertscore-roberta-large",
+    "bertscore-bart-large",
+    "bertscore-deberta-large-mnli",
+    "bertscore-roberta-large-mnli",
+    "bertscore-bart-large-mnli",
+    ""
+    ]
+classic_metrics_enabled = enable_metrics(classic_metrics, names_of_enabled_classic_metrics)
+
+import bertscore_sentence.metric 
+bertscore_sentence_metrics = bertscore_sentence.metric.metrics
+names_of_enabled_bertscore_sentence_metrics =     [
+        'bertscore-sentence-cos-mpnet',
+        'bertscore-sentence-cos-roberta-large',
+        'bertscore-sentence-cos-deberta-large', 
+        'bertscore-sentence-mnli-roberta-large-mnli-not_neutral',
+        'bertscore-sentence-mnli-roberta-large-mnli-entail_only',
+        'bertscore-sentence-mnli-roberta-large-mnli-entail_contradict',
+        'bertscore-sentence-mnli-bart-large-mnli-not_neutral',
+        'bertscore-sentence-mnli-bart-large-mnli-entail_only',
+        'bertscore-sentence-mnli-bart-large-mnli-entail_contradict',
+        'bertscore-sentence-mnli-deberta-large-mnli-not_neutral',
+        'bertscore-sentence-mnli-deberta-large-mnli-entail_only',
+        'bertscore-sentence-mnli-deberta-large-mnli-entail_contradict'
+    ]
+#          [ "bertscore-sentence-mnli-{}-{}".format(model_name, mnli_expr)
+#                for model_name in ["roberta-large-mnli", "bart-large-mnli", "deberta-large-mnli"]
+#                for mnli_expr in ["not_neutral", "entail_only", "entail_contradict"]
+#          ]
+bertscore_sentence_metrics_enabled = enable_metrics(
+    bertscore_sentence_metrics, 
+    names_of_enabled_bertscore_sentence_metrics
+    )
 
 
+# baseline_metrics = dict()
+# baseline_metrics.update(baseline_update_metrics([
+#     "sacrebleu",
+#     "meteor",
+#     "bart",
+#     # "reuse",  # TOFIX
+#     # "sdc*",  # Slow
+#     "smd"  # Linux only
+# ]))
+# nlg_metrics.update(baseline_metrics)
+
+# nlg_metrics.update(classic_metrics_enabled)
+nlg_metrics.update(bertscore_sentence_metrics_enabled)
+
+# Running experiments on different datasets
+
+## Experiment configurations for all datasets 
 common_exp_config = {
     "nlg_metrics" : nlg_metrics,
     "corr_metrics" : ["spearmanr", "pearsonr", "kendalltau"],
-    "approaches": ["trad", "new"],
-    "eval_levels": ["summary", "system"],
+    # "approaches": ["trad", "new"],
+    "approaches": ["trad"],
+    # "eval_levels": ["summary", "system"],
+    "eval_levels": ["summary"],
     "result_path_root": "./results/",
-    "debug": False
+    "debug": False, 
 }
 
-### Example configurations for SummEval ###
-summeval_config.update(common_exp_config)
-evalbase.summeval.main(summeval_config)
+import dataset_config
 
-## End of SummEval example ##
+# To disable/enable the experiment on one dataset, 
+# comment/uncomment the corresponding line below
+experiment_fn_and_configs = [
+    (evalbase.summeval.main, dataset_config.summeval_config),
+    # dataset_config.newsroom_config,
+    # dataset_config.realsumm_abs_config,
+    # dataset_config.realsumm_ext_config,
+    # dataset_config.tac2010_config,
+    # dataset_config.qags_config, 
+    # dataset_config.frank_config, 
+    # dataset_config.fastcc_config
+]
 
-### Example configurations for the Newsroom dataset ###
-newsroom_config.update(common_exp_config)
-evalbase.newsroom.main(newsroom_config)
-### End of configuration for the Newsroom dataset ###
-
-### Example configurations for the ABStractive track in Realsumm ###
-realsumm_abs_config.update(common_exp_config)
-evalbase.realsumm.main(realsumm_abs_config)
-
-### End of example for the ABStractive track in Realsumm ###
-
-### Example configurations for the EXtractive track in Realsumm ###
-realsumm_ext_config.update(common_exp_config)
-evalbase.realsumm.main(realsumm_ext_config)
-### End of example for the EXtractive track in Realsumm ###
-
-### Example configurations for the TAC 2010 dataset ###
-tac2010_config.update(common_exp_config)
-evalbase.tac2010.main(tac2010_config)
-### End of example for the TAC 2010 dataset ###
-
-### Example configurations for the QAGS dataset ###
-print("factcc.qags_main(), size: 235")
-qags_config.update(common_exp_config)
-evalbase.qaqs.main(qags_config)
-### End of example for the QAGS dataset ###
-
-### Example configurations for the Frank dataset ###
-print("factcc.frank_main(): size: 1250")
-frank_config.update(common_exp_config)
-evalbase.frank.main(frank_config)
-### End of example for the Frank dataset ###
-
-### Example configurations for the FastCC dataset ###
-print("factcc.factCC_main(): size: large")
-fastcc_config.update(common_exp_config)
-evalbase.factcc.main(fastcc_config)
-### End of example for the FastCC dataset ###
+for (exp_fn, exp_config) in experiment_fn_and_configs:
+    exp_config.update(common_exp_config) 
+    exp_fn(exp_config)

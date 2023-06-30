@@ -1,8 +1,8 @@
 from multiprocessing import freeze_support
 import sys
-from os import path
-file_path = path.abspath(__file__)
-sys.path.append(path.dirname(path.dirname(file_path)))
+# from os import path
+# file_path = path.abspath(__file__)
+# sys.path.append(path.dirname(path.dirname(file_path)))
 
 import dar_type
 from sentence_transformers import SentenceTransformer, models
@@ -27,7 +27,7 @@ def init_sent_embedder(name: str, pooling_mode: typing.Optional[str] = None) -> 
 
 sent_embedders = {
     "mpnet": init_sent_embedder("all-mpnet-base-v2"),
-    "roberta": init_sent_embedder("all-roberta-large-v1"),
+    "roberta-large": init_sent_embedder("all-roberta-large-v1"),
     "deberta-large": init_sent_embedder("microsoft/deberta-large-mnli", pooling_mode="cls"),
     # "deberta-xlarge": init_sent_embedder("microsoft/deberta-xlarge-mnli", pooling_mode="cls"),
 }

@@ -7,15 +7,20 @@ import typing
 
 from mnli.classifiers import mnli_classifiers
 from bertscore_sentence.embedders import sent_embedders
+# from embedders import sent_embedders
 
 ### METRICS ###
 
 import functools
-import bertscore_sentence.eval as bertscore_sentence
+import bertscore_sentence.eval
 import mnli.eval
 import mnli.sim_expr
 
-def additional_metrics(model_names: typing.List[str], category: typing.Literal["cos", "mnli"], mnli_exprs: typing.List[dar_type.MNLISimilarityExpression] = []) -> dar_type.MetricDict:
+def additional_metrics(
+    model_names: typing.List[str], 
+    category: typing.Literal["cos", "mnli"], 
+    mnli_exprs: typing.List[dar_type.MNLISimilarityExpression] = []
+    ) -> dar_type.MetricDict:
     metrics = dict()
 
     if category == "cos":
@@ -27,3 +32,24 @@ def additional_metrics(model_names: typing.List[str], category: typing.Literal["
                 metrics["bertscore-sentence-mnli-{}-{}".format(mnli_name, mnli_expr.__name__)] = functools.partial(mnli.eval.bertscore_sentence_compute, classifiers=mnli_classifiers[mnli_name], expr=mnli_expr)
 
     return metrics
+
+metrics = dict()
+
+# dot-product based sentence metrics 
+for model_name in sent_embedders.keys(): # mpnet, roberta-large, deberta-large
+    metrics["bertscore-sentence-cos-{}".format(model_name)] = \
+        functools.partial(
+            bertscore_sentence.eval.compute_cos, 
+            embedder=sent_embedders[model_name]   
+        )
+
+# MNLI probability based sentence metrics 
+for model_name in mnli_classifiers.keys(): # roberta-large-mnli, bart-large-mnli, deberta-large-mnli 
+    for mnli_expr in [mnli.sim_expr.not_neutral, mnli.sim_expr.entail_only, mnli.sim_expr.entail_contradict]:
+        metrics["bertscore-sentence-mnli-{}-{}".format(model_name, mnli_expr.__name__)] = \
+            functools.partial(
+                mnli.eval.bertscore_sentence_compute, 
+                classifiers=mnli_classifiers[model_name], 
+                expr=mnli_expr
+            )
+

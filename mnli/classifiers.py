@@ -1,7 +1,7 @@
 import sys
-from os import path
-file_path = path.abspath(__file__)
-sys.path.append(path.dirname(path.dirname(file_path)))
+# from os import path
+# file_path = path.abspath(__file__)
+# sys.path.append(path.dirname(path.dirname(file_path)))
 
 from transformers import pipeline
 import env
@@ -9,9 +9,9 @@ import dar_type
 
 
 mnli_models = {
-    "roberta": "roberta-large-mnli",
-    "bart": "facebook/bart-large-mnli",
-    "deberta-large": "microsoft/deberta-large-mnli",
+    "roberta-large-mnli": "roberta-large-mnli",
+    "bart-large-mnli": "facebook/bart-large-mnli",
+    "deberta-large-mnli": "microsoft/deberta-large-mnli",
     # "deberta-xlarge": "microsoft/deberta-xlarge-mnli"
 }
 mnli_classifiers: dar_type.PipelinesDict = dict()

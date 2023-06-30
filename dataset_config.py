@@ -1,11 +1,10 @@
-import sys
 import os
 
-evalbase_path = "/home/turx/EvalBase"
-sys.path.append(evalbase_path)
-os.environ["PROTOCOL_BUFFERS_PYTHON_IMPLEMENTATION"] = "python"
+import evalbase # be sure that evalbase is in your PYTHONPATH
+data_path_root = os.path.join(evalbase.path, "dataloader")
 
-import evalbase
+os.environ["PROTOCOL_BUFFERS_PYTHON_IMPLEMENTATION"] = "python"
+# FIXME: What is the line above for? 
 
 summeval_config = {
     "dataset_name": "summeval",
@@ -15,7 +14,7 @@ summeval_config = {
     "system_summary_column": "SystemSummary",
     "reference_summary_column": "ReferenceSummary_0",  # the id ranges from 0 to 10
     "is_multi": False, # must be False for SummEval
-    "data_path": os.path.join(evalbase.path, "dataloader", "summeval_annotations.aligned.paired.scored.jsonl"),    
+    "data_path": os.path.join(data_path_root, "summeval_annotations.aligned.paired.scored.jsonl"),    
     "precalc_metrics": [  # keys from original SummEval json file
         'rouge_1_precision', 'rouge_1_recall', 'rouge_1_f_score',
         'rouge_2_precision', 'rouge_2_recall', 'rouge_2_f_score',
@@ -36,7 +35,7 @@ realsumm_abs_config = {
     "document_column": "ArticleText",
     "system_summary_column": "SystemSummary",
     "reference_summary_column": "ReferenceSummary",
-    "data_path": os.path.join(evalbase.path, "dataloader", "abs.pkl"),  # you need to get this file. See ReadMe.
+    "data_path": os.path.join(data_path_root,  "abs.pkl"),  # you need to get this file. See ReadMe.
     "result_path_root": "./results/",
     "precalc_metrics": ['rouge_1_f_score', 'rouge_2_recall', 'rouge_l_recall', 'rouge_2_precision',
                                 'rouge_2_f_score', 'rouge_1_precision', 'rouge_1_recall', 'rouge_l_precision',
@@ -47,7 +46,7 @@ realsumm_abs_config = {
 
 realsumm_ext_config = realsumm_abs_config.copy()
 realsumm_ext_config["dataset_name"] = "realsumm_ext"
-realsumm_ext_config["data_path"] = os.path.join(evalbase.path, "dataloader", "ext.pkl")  # you need to get this file. See ReadMe.
+realsumm_ext_config["data_path"] = os.path.join(data_path_root,  "ext.pkl")  # you need to get this file. See ReadMe.
 
 newsroom_config = {
     "dataset_name": "newsroom",
@@ -56,9 +55,9 @@ newsroom_config = {
     "document_column": "ArticleText",
     "system_summary_column": "SystemSummary",
     "reference_summary_column": "ReferenceSummary",
-    "human_eval_only_path": os.path.join(evalbase.path, "dataloader", "newsroom-human-eval.csv"),  # you need to get this file. See ReadMe.
-    "refs_path": os.path.join(evalbase.path, "dataloader", "test.jsonl"),  # you need to get this file. See ReadMe.
-    "human_eval_w_refs_path": os.path.join(evalbase.path, "dataloader", "newsroom_human_eval_with_refs.csv"), 
+    "human_eval_only_path": os.path.join(data_path_root,  "newsroom-human-eval.csv"),  # you need to get this file. See ReadMe.
+    "refs_path": os.path.join(data_path_root, "test.jsonl"),  # you need to get this file. See ReadMe.
+    "human_eval_w_refs_path": os.path.join(data_path_root,  "newsroom_human_eval_with_refs.csv"), 
     "precalc_metrics": [],
 }
 
@@ -70,7 +69,7 @@ tac2010_config = {
     "document_column": "ArticleText",
     "system_summary_column": "SystemSummary",
     "reference_summary_column": "ReferenceSummary",
-    "data_path": os.path.join(evalbase.path, "dataloader", "TAC2010"),  # This is a folder. See ReadMe.
+    "data_path": os.path.join(data_path_root,  "TAC2010"),  # This is a folder. See ReadMe.
     "precalc_metrics": [],
     "is_multi": True, # very important for TAC2010, multi-document summarization
     "debug": False
@@ -84,7 +83,7 @@ qags_config = {
     # FIXME only one summary is available
     "reference_summary_column": "sum",
     "approaches": ["new"],
-    "data_path": os.path.join(evalbase.path, "dataloader/qags/data"),
+    "data_path": os.path.join(data_path_root, "qags/data"),
     "precalc_metrics": []
 }
 
@@ -95,7 +94,7 @@ frank_config = {
     "system_summary_column": "sum",
     "reference_summary_column": "ref",
     "approaches": ["new"],
-    "data_path": os.path.join(evalbase.path, "dataloader/frank/data"),
+    "data_path": os.path.join(data_path_root, "frank/data"),
     "precalc_metrics": []
 }
 
@@ -112,6 +111,6 @@ fastcc_config = {
         "dev": "data-dev.jsonl",
         "test": "data-test.jsonl"
     },
-    "data_path": os.path.join(evalbase.path, "dataloader/factCC/data_pairing/data/generated_data/data-clipped"),
+    "data_path": os.path.join(data_path_root, "factCC/data_pairing/data/generated_data/data-clipped"),
     "precalc_metrics": []
 }
