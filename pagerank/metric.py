@@ -61,36 +61,48 @@ weight_fs: typing.Dict[str, dar_type.SentenceWeightFunction] = {
 
 metrics = dict()
 
-# FIXME: Simply add IDF_F onto preexisting metrics 
+basic_bertscore_sentence_metrics = bertscore_sentence.metric.metrics
 
-# dot-product based sentence metrics 
-for model_name in bertscore_sentence.embedders.sent_embedders.keys(): # mpnet, roberta-large, deberta-large
+for metric_name, metric_f in basic_bertscore_sentence_metrics.items():
     for weight_f_name, weight_f in weight_fs.items():
-        metrics[f"bertscore-sentence-pagerank-cos-{model_name}-{weight_f_name}"] = \
+        metrics[f"pagerank-{metric_name}-{weight_f_name}"] = \
             functools.partial(
-                bertscore_sentence.eval.compute_cos, 
-                embedder=bertscore_sentence.embedders.sent_embedders[model_name], 
+                metric_f, 
                 idf_f = functools.partial(
                     pagerank.eval.get_idf,
                     weight_f=weight_f
-                )   
+                )
             )
 
-        # 'bertscore-sentence-cos-mpnet',
-        # 'bertscore-sentence-cos-roberta-large',
-        # 'bertscore-sentence-cos-deberta-large', 
 
-# MNLI probability based sentence metrics 
-for model_name in mnli_classifiers.keys(): # roberta-large-mnli, bart-large-mnli, deberta-large-mnli 
-    for mnli_expr in [mnli.sim_expr.not_neutral, mnli.sim_expr.entail_only, mnli.sim_expr.entail_contradict]:
-        for weight_f_name, weight_f in weight_fs.items():
-            metrics[f"bertscore-sentence-pagerank-mnli-{model_name}-{mnli_expr.__name__}-{weight_f_name}"] = \
-                functools.partial(
-                    mnli.eval.compute_mnli, 
-                    classifiers=mnli_classifiers[model_name], 
-                    expr=mnli_expr, 
-                    idf_f = functools.partial(
-                        pagerank.eval.get_idf,
-                        weight_f=weight_f
-                    )
-                )
+# # dot-product based sentence metrics 
+# for model_name in bertscore_sentence.embedders.sent_embedders.keys(): # mpnet, roberta-large, deberta-large
+#     for weight_f_name, weight_f in weight_fs.items():
+#         metrics[f"bertscore-sentence-pagerank-cos-{model_name}-{weight_f_name}"] = \
+#             functools.partial(
+#                 bertscore_sentence.eval.compute_cos, 
+#                 embedder=bertscore_sentence.embedders.sent_embedders[model_name], 
+#                 idf_f = functools.partial(
+#                     pagerank.eval.get_idf,
+#                     weight_f=weight_f
+#                 )   
+#             )
+
+#         # 'bertscore-sentence-cos-mpnet',
+#         # 'bertscore-sentence-cos-roberta-large',
+#         # 'bertscore-sentence-cos-deberta-large', 
+
+# # MNLI probability based sentence metrics 
+# for model_name in mnli_classifiers.keys(): # roberta-large-mnli, bart-large-mnli, deberta-large-mnli 
+#     for mnli_expr in [mnli.sim_expr.not_neutral, mnli.sim_expr.entail_only, mnli.sim_expr.entail_contradict]:
+#         for weight_f_name, weight_f in weight_fs.items():
+#             metrics[f"bertscore-sentence-pagerank-mnli-{model_name}-{mnli_expr.__name__}-{weight_f_name}"] = \
+#                 functools.partial(
+#                     mnli.eval.compute_mnli, 
+#                     classifiers=mnli_classifiers[model_name], 
+#                     expr=mnli_expr, 
+#                     idf_f = functools.partial(
+#                         pagerank.eval.get_idf,
+#                         weight_f=weight_f
+#                     )
+#                 )

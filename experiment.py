@@ -96,7 +96,7 @@ import pagerank.metric
 # To disable/enable benchmarking the metrics,
 # comment/uncomment/edit the corresponding line below
 names_of_enabled_pagerank_metrics = \
-    [ f"bertscore-sentence-pagerank-mnli-{model_name}-{mnli_expr}-{weight_f_name}"
+    [ f"pagerank-bertscore-sentence-mnli-{model_name}-{mnli_expr}-{weight_f_name}"
         for model_name in ["roberta-large-mnli", "bart-large-mnli", "deberta-large-mnli"]
         for mnli_expr in ["not_neutral", "entail_only", "entail_contradict"]
         for weight_f_name in ["entropy", "sum"]
@@ -104,7 +104,7 @@ names_of_enabled_pagerank_metrics = \
         # for mnli_expr in ["entail_contradict"]
         # for weight_f_name in ["entropy"]
     ] + \
-    [ f"bertscore-sentence-pagerank-cos-{model_name}-{weight_f_name}"
+    [ f"pagerank-bertscore-sentence-cos-{model_name}-{weight_f_name}"
             for model_name in ["mpnet", "roberta-large", "deberta-large"]
             for weight_f_name in ["entropy", "sum"]
             # for model_name in ["mpnet"]
@@ -114,6 +114,7 @@ pagerank_metrics_enabled = enable_metrics(
     pagerank.metric.metrics,
     names_of_enabled_pagerank_metrics
     )
+
 
 # baseline_metrics = dict()
 # baseline_metrics.update(baseline_update_metrics([
@@ -150,7 +151,7 @@ import dataset_config
 # comment/uncomment the corresponding line below
 experiment_fn_and_configs = [
     (evalbase.summeval.main, dataset_config.summeval_config),
-    (evalbase.newsroom.main, dataset_config.newsroom_config),
+    # (evalbase.newsroom.main, dataset_config.newsroom_config),
     # (evalbase.realsumm.main, dataset_config.realsumm_abs_config),
     # (evalbase.realsumm.main, dataset_config.realsumm_ext_config),
     # (evalbase.tac2010.main, dataset_config.tac2010_config),
