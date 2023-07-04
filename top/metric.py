@@ -1,16 +1,23 @@
-# Top
+# Top-k or Top-p
 
-import functools
+import functools, typing
+
 import top.eval as top
+import bertscore_sentence.metric  
+
 import dar_type
 
-def additional_metrics(raw_metrics: dar_type.MetricDict) -> dar_type.MetricDict:
+def create_metrics(
+        base_metrics: dar_type.MetricDict, 
+        k_range: typing.List[int] = [5, 10, 20],
+        p_range: typing.List[float] = [0.2, 0.5, 0.7],
+        ) -> dar_type.MetricDict:
     metrics = dict()
 
-    for metric_name, metric_f in raw_metrics.items():
-        for topk in [5, 10, 20]:
-            metrics["-".join([metric_name, "topk", str(topk)])] = functools.partial(top.topk_compute, metric_compute_f=metric_f, topk=topk)
-        for topp in [0.2, 0.5, 0.7]:
-            metrics["-".join([metric_name, "topp", str(topp)])] = functools.partial(top.topp_compute, metric_compute_f=metric_f, topp=topp)
+    for metric_name, metric_f in base_metrics.items():
+        for topk in k_range:
+            metrics["-".join(["topK", metric_name, str(topk)])] = functools.partial(top.topk_compute, metric_compute_f=metric_f, topk=topk)
+        for topp in p_range:
+            metrics["-".join(["topP", metric_name, str(topp)])] = functools.partial(top.topp_compute, metric_compute_f=metric_f, topp=topp)
 
     return metrics

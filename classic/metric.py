@@ -24,8 +24,6 @@ bertscore = evaluate.load("bertscore")
 rouge = evaluate.load("rouge")
 bleurt = evaluate.load("bleurt", module_type="metric")
 
-# Define variants of BERTScores 
-bertscore_compute: dar_type.MetricComputeFunc = functools.partial(bertscore.compute, lang='en', use_fast_tokenizer=True)
 rouge_compute: dar_type.MetricComputeFunc = functools.partial(rouge.compute, use_aggregator=False)
 bleurt_compute: dar_type.MetricComputeFunc = bleurt.compute
 
@@ -45,14 +43,16 @@ metrics = {
     "rouge": rouge_compute,
     "bleurt": bleurt_compute,
     "moverscore-1gram": moverscore_compute_1gram,
-    "moverscore-2gram": moverscore_compute_2gram,
-    "bertscore-roberta-large-mnli": functools.partial(bertscore_compute, model_type="roberta-large-mnli"),
-    "bertscore-deberta-large-mnli": functools.partial(bertscore_compute, model_type="microsoft/deberta-large-mnli"),
-    "bertscore-bart-large-mnli": functools.partial(bertscore_compute, model_type="facebook/bart-large-mnli"),
-    "bertscore-roberta-large": functools.partial(bertscore_compute, model_type="roberta-large"),
-    "bertscore-deberta-large": functools.partial(bertscore_compute, model_type="microsoft/deberta-large"),
-    "bertscore-bart-large": functools.partial(bertscore_compute, model_type="facebook/bart-large"),
-    "bertscore-roberta-base": functools.partial(bertscore_compute, model_type="roberta-base"),
-    "bertscore-deberta-base": functools.partial(bertscore_compute, model_type="microsoft/deberta-base"),
-    "bertscore-bart-base": functools.partial(bertscore_compute, model_type="facebook/bart-base"),
+    "moverscore-2gram": moverscore_compute_2gram
+} 
+
+model_names = ["bert", "roberta", "facebook/bart", "microsoft/deberta"]
+sizes = ["base", "large"]
+
+bertscore_metrics = {
+    f"bertscore-{model_name}-{size}": 
+    functools.partial(bertscore.compute, model_type=f"{model_name}-{size}", use_fast_tokenizer=True)
+    for model_name in model_names for size in sizes
 }
+
+metrics.update(bertscore_metrics)

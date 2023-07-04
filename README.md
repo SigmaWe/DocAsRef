@@ -4,9 +4,7 @@ TL;DR: Using document as reference summary in summary evaluation
 
 Read the [**Background and terminology**](https://forrestbao.github.io/summarization_metrics.html) first.
 
-# Approaches
-
-
+## Usage 
 To run the experiments,
 1. First install the dependcies 
    ```bash
@@ -18,7 +16,29 @@ To run the experiments,
    python3 experiment.py
    ``` 
 
-   Feel free to edit the experiment configurations in [`experiment.py`](experiment.py). Search for "comment/uncomment" to find all options. 
+   Feel free to edit the experiment configurations in [`experiment.py`](experiment.py), which 
+   has two sections , 
+   * The metrics to be benchmarked 
+   * The datasets and evaluation settings.
+
+   Some metrics can be dis/enabled by directly (un)commenting 
+   correspondng lines in the `experiment.py` file.
+   For other metrics, mostly variants of BERTScore-sentence, 
+   please (un)comment lines for their hyperparameters, e.g., `weight_schemes = ["entropy", "sum"]` for the weighting schemes of BERTScore-sentence with PageRank-style sentence weighting. 
+   The dictionary correpsonding to metrics enabled in each approach
+   ends in the suffix `_enabled`. 
+   All enabled metrics are put together in the dictionary `all_metrics_enabled`.
+
+
+### File hierarchy
+The code for each approach below are in their own folders.
+Each folder must have a `metric.py` file that defines 
+* Either a dictionary `metrics` which maps a string, metric name, to a callable  which is a summary metric function, or 
+* A function `create_metric()` that wraps base summary metrics with additional features to create new variant metrics.
+
+Optionally, a folder may have an `eval.py` file containing functions for defining the respective metrics. 
+
+# Approaches 
 
 ## Approach 0: just replacing human summaries with documents
 
@@ -74,9 +94,15 @@ entropy ( sim(S1, D1), sim(S1, D2), ... )
 + 
 entropy ( sim(S2, D1), sim(S2, D2), ... )
 
+Original BERTScore uses IDF to weight tokens. 
+When expanding BERTScore to the sentence level, 
+we use a PageRank-style algorithm to weight sentences. 
+
 Implemented in `/pagerank`
 
 ### Approach 1.5 Pseudo-reference by Top-K and Top-P
+
+Due to the way that humans write summaries, the first few sentences in a document are more likely to be the most important ones. We use top-k (like first 3 sentences) and top-p (like the first 30% sentences) to select the first few sentences as pseudo-reference.
 
 Implemented in `top/`
 

@@ -1,7 +1,7 @@
 import sys
 from os import path
-file_path = path.abspath(__file__)
-sys.path.append(path.dirname(path.dirname(file_path)))
+# file_path = path.abspath(__file__)
+# sys.path.append(path.dirname(path.dirname(file_path)))
 
 import env
 import dar_type

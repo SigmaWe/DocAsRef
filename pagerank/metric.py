@@ -16,7 +16,7 @@ import mnli.eval
 import mnli.sim_expr
 import pagerank.eval 
 
-# Deprecated function. Remove in three months. 
+# FIXME: Deprecated function. Remove in three months. 
 def additional_metrics(
         bs_sent_metrics: dar_type.MetricDict, 
         model_names: typing.List[str], 
@@ -54,25 +54,28 @@ def additional_metrics(
 
     return metrics
 
-weight_fs: typing.Dict[str, dar_type.SentenceWeightFunction] = {
-    "entropy": scipy.stats.entropy,
-    "sum": np.sum,
-}
+def create_metrics(
+    base_metrics: dar_type.MetricDict,
+    weight_schemes: typing.List[str] = ["sum", "entropy"]
+    ) -> dar_type.MetricDict:
 
-metrics = dict()
+    weight_fs: typing.Dict[str, dar_type.SentenceWeightFunction] = {
+        "entropy": scipy.stats.entropy,
+        "sum": np.sum,
+    }
+    metrics = dict()
 
-basic_bertscore_sentence_metrics = bertscore_sentence.metric.metrics
-
-for metric_name, metric_f in basic_bertscore_sentence_metrics.items():
-    for weight_f_name, weight_f in weight_fs.items():
-        metrics[f"pagerank-{metric_name}-{weight_f_name}"] = \
-            functools.partial(
-                metric_f, 
-                idf_f = functools.partial(
-                    pagerank.eval.get_idf,
-                    weight_f=weight_f
+    for metric_name, metric_f in base_metrics.items():
+        for weight_f_name, weight_f in weight_fs.items():
+            metrics[f"pagerank-{metric_name}-{weight_f_name}"] = \
+                functools.partial(
+                    metric_f, 
+                    idf_f = functools.partial(
+                        pagerank.eval.get_idf,
+                        weight_f=weight_f
+                    )
                 )
-            )
+    return metrics 
 
 
 # # dot-product based sentence metrics 
