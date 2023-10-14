@@ -46,13 +46,25 @@ metrics = {
     "moverscore-2gram": moverscore_compute_2gram
 } 
 
-model_names = ["bert", "roberta", "facebook/bart", "microsoft/deberta"]
-sizes = ["base", "large"]
+model_id_map = {
+    "bert-base": "bert-base-uncased",
+    "bert-large": "bert-base-uncased",
+    "roberta-base": "roberta-base",
+    "roberta-large": "roberta-large",
+    "roberta-large-mnli": "roberta-large-mnli",
+    "bart-base": "facebook/bart-base",
+    "bart-large": "facebook/bart-large",
+    "bart-large-mnli": "facebook/bart-large-mnli",
+    "deberta-base": "microsoft/deberta-base",
+    "debera-v3-base": "microsoft/deberta-v3-base",
+    "deberta-base-mnli": "microsoft/deberta-base-mnli",
+    "deberta-v3-large": "microsoft/deberta-v3-large",
+}
 
 bertscore_metrics = {
-    f"bertscore-{model_name}-{size}": 
-    functools.partial(bertscore.compute, model_type=f"{model_name}-{size}", use_fast_tokenizer=True)
-    for model_name in model_names for size in sizes
+    f"bertscore-{model_name}": 
+    functools.partial(bertscore.compute, model_type=f"{model_id}", use_fast_tokenizer=True, idf=False)
+    for model_name, model_id in model_id_map.items()
 }
 
 metrics.update(bertscore_metrics)

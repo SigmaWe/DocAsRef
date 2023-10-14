@@ -129,6 +129,9 @@ def parse(
 corr_metrics = ["spearmanr", "pearsonr", "kendalltau"]
 levels = ["summary", "system"]
 
+# corr_metrics = ["spearmanr"]
+# levels = ["summary"]
+
 from result_proc.env_snr import *
 
 if __name__ == "__main__":

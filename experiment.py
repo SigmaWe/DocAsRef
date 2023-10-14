@@ -2,6 +2,9 @@ import env
 import os
 import typing
 
+import sys
+sys.path.append("/home/turx/EvalBase")
+
 import evalbase # the evaluation framework dependency
 
 import dar_type # data type definitions for DocAsRef 
@@ -28,21 +31,24 @@ names_of_enabled_classic_metrics = [
     "bleurt", # requires datasets-2.10.0 per https://github.com/huggingface/evaluate/issues/449
     "moverscore-1gram", 
     "moverscore-2gram", 
+    "bertscore-bert-base",
     "bertscore-roberta-base", 
     "bertscore-deberta-base", 
     "bertscore-bart-base", 
+    "bertscore-deberta-base-mnli",
+    "bertscore-deberta-v3-base",
+    "bertscore-deberta-v3-base-mnli-fever-anli",
     "bertscore-deberta-large",
     "bertscore-roberta-large",
     "bertscore-bart-large",
     "bertscore-deberta-large-mnli",
     "bertscore-roberta-large-mnli",
     "bertscore-bart-large-mnli",
-    ""
     ]
 classic_metrics_enabled = enable_metrics(
     classic.metric.metrics, 
     names_of_enabled_classic_metrics
-    )
+)
 
 
 ## Experiments for Approaches 1.1 + 1.2        ##
@@ -116,12 +122,9 @@ top_metrics_enabled = top.metric.create_metrics(
 import anyref.metric 
 
 base_metrics = { 
-    # **bertscore_sentence.metric.metrics, 
-    # pagerank.metric.metrics, 
     **bertscore_sentence_metrics_enabled, 
     **pagerank_metrics_enabled    
 }
-# base_metrics = pagerank.metric.metrics
 
 summarizer_names = [
     "bart",
@@ -143,11 +146,11 @@ names_of_enabled_baseline_metrics = [
 
 # Put all metrics together 
 all_metrics_enabled = {
-    # **classic_metrics_enabled,
-    # **bertscore_sentence_metrics_enabled, 
+    **classic_metrics_enabled,
+    **bertscore_sentence_metrics_enabled, 
     **pagerank_metrics_enabled,
-    # **top_metrics_enabled,
-    # **anyref_metrics_enabled
+    **top_metrics_enabled,
+    **anyref_metrics_enabled
 }
 
 
@@ -156,10 +159,8 @@ all_metrics_enabled = {
 common_exp_config = {
     "nlg_metrics" : all_metrics_enabled,
     "corr_metrics" : ["spearmanr", "pearsonr", "kendalltau"],
-    # "approaches": ["trad", "new"],
-    "approaches": ["trad"],
-    # "eval_levels": ["summary", "system"],
-    "eval_levels": ["summary"],
+    "approaches": ["trad", "new"],
+    "eval_levels": ["summary", "system"],
     "result_path_root": "./results/",
     "debug": False, 
 }
@@ -169,8 +170,8 @@ import dataset_config
 experiment_fn_and_configs = [
     (evalbase.summeval.main, dataset_config.summeval_config),
     (evalbase.newsroom.main, dataset_config.newsroom_config),
-    # (evalbase.realsumm.main, dataset_config.realsumm_abs_config),
-    # (evalbase.realsumm.main, dataset_config.realsumm_ext_config),
+    (evalbase.realsumm.main, dataset_config.realsumm_abs_config),
+    (evalbase.realsumm.main, dataset_config.realsumm_ext_config),
     # (evalbase.tac2010.main, dataset_config.tac2010_config),
     # (evalbase.qags.main, dataset_config.qags_config),
     # (evalbase.frank.main, dataset_config.frank_config),

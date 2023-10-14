@@ -1,5 +1,8 @@
 import os
 
+import sys
+sys.path.append("/home/turx/EvalBase")
+
 import evalbase # be sure that evalbase is in your PYTHONPATH
 data_path_root = os.path.join(evalbase.path, "dataloader")
 
