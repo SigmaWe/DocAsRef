@@ -1,0 +1,8 @@
+bertscore
+rouge
+bleurt
+bertscore-deberta-large-mnli
+bertscore-bart-large-mnli
+bertscore-deberta-large
+bertscore-bart-large
+bertscore-roberta-large-mnli

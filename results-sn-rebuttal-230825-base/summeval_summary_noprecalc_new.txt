@@ -1,0 +1,25 @@
+corr_metric  aspect       approach  model                   score_name               
+spearmanr    consistency  new       bertscore-roberta-base  precision                    0.295
+                          new       bertscore-bart-base     precision                    0.279
+                          new       bertscore-deberta-base  precision                    0.262
+             relevance    new       bertscore-roberta-base  precision                    0.284
+                          new       bertscore-bart-base     precision                    0.283
+                          new       bertscore-deberta-base  precision                    0.252
+             coherence    new       bertscore-roberta-base  precision                    0.381
+                          new       bertscore-bart-base     precision                    0.359
+                          new       bertscore-deberta-base  precision                    0.316
+             fluency      new       bertscore-roberta-base  precision                    0.228
+                          new       bertscore-bart-base     precision                    0.208
+                          new       bertscore-deberta-base  precision                    0.206
+pearsonr     consistency  new       bertscore-roberta-base  precision                    0.296
+                          new       bertscore-bart-base     precision                    0.288
+                          new       bertscore-deberta-base  precision                    0.278
+             relevance    new       bertscore-roberta-base  precision                    0.289
+                          new       bertscore-bart-base     precision                    0.294
+                          new       bertscore-deberta-base  precision                    0.261
+             coherence    new       bertscore-roberta-base  precision                    0.394
+                          new       bertscore-bart-base     precision                    0.378
+                          new       bertscore-deberta-base  precision                    0.327
+             fluency      new       bertscore-roberta-base  precision                    0.250
+                          new       bertscore-bart-base     precision                    0.226
+                          new       bertscore-deberta-base  precision                    0.239

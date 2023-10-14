@@ -1,0 +1,70 @@
+corr_metric  aspect              approach  model                   score_name          
+spearmanr    litepyramid_recall  trad      bertscore-roberta-base  precision              0.481
+                                                                   recall                 0.654
+                                                                   f1                     0.593
+                                           bertscore-deberta-base  precision              0.519
+                                                                   recall                 0.684
+                                                                   f1                     0.625
+                                           bertscore-bart-base     precision              0.439
+                                                                   recall                 0.613
+                                                                   f1                     0.527
+                                 PreCalc   PreCalc                 rouge_1_f_score        0.677
+                                                                   rouge_2_recall         0.677
+                                                                   rouge_l_recall         0.657
+                                                                   rouge_2_precision      0.661
+                                                                   rouge_2_f_score        0.685
+                                                                   rouge_1_precision      0.592
+                                                                   rouge_1_recall         0.639
+                                                                   rouge_l_precision      0.611
+                                                                   rouge_l_f_score        0.691
+                                                                   js-2                   0.676
+                                                                   mover_score            0.574
+                                                                   bert_recall_score      0.698
+                                                                   bert_precision_score   0.537
+                                                                   bert_f_score           0.654
+pearsonr     litepyramid_recall  trad      bertscore-roberta-base  precision              0.549
+                                                                   recall                 0.689
+                                                                   f1                     0.646
+                                           bertscore-deberta-base  precision              0.580
+                                                                   recall                 0.725
+                                                                   f1                     0.687
+                                           bertscore-bart-base     precision              0.510
+                                                                   recall                 0.658
+                                                                   f1                     0.602
+                                 PreCalc   PreCalc                 rouge_1_f_score        0.710
+                                                                   rouge_2_recall         0.677
+                                                                   rouge_l_recall         0.686
+                                                                   rouge_2_precision      0.634
+                                                                   rouge_2_f_score        0.671
+                                                                   rouge_1_precision      0.601
+                                                                   rouge_1_recall         0.685
+                                                                   rouge_l_precision      0.617
+                                                                   rouge_l_f_score        0.706
+                                                                   js-2                   0.677
+                                                                   mover_score            0.614
+                                                                   bert_recall_score      0.747
+                                                                   bert_precision_score   0.586
+                                                                   bert_f_score           0.712
+kendalltau   litepyramid_recall  trad      bertscore-roberta-base  precision              0.339
+                                                                   recall                 0.486
+                                                                   f1                     0.427
+                                           bertscore-deberta-base  precision              0.365
+                                                                   recall                 0.511
+                                                                   f1                     0.456
+                                           bertscore-bart-base     precision              0.300
+                                                                   recall                 0.443
+                                                                   f1                     0.366
+                                 PreCalc   PreCalc                 rouge_1_f_score        0.498
+                                                                   rouge_2_recall         0.495
+                                                                   rouge_l_recall         0.473
+                                                                   rouge_2_precision      0.482
+                                                                   rouge_2_f_score        0.501
+                                                                   rouge_1_precision      0.428
+                                                                   rouge_1_recall         0.463
+                                                                   rouge_l_precision      0.434
+                                                                   rouge_l_f_score        0.511
+                                                                   js-2                   0.497
+                                                                   mover_score            0.406
+                                                                   bert_recall_score      0.522
+                                                                   bert_precision_score   0.385
+                                                                   bert_f_score           0.480

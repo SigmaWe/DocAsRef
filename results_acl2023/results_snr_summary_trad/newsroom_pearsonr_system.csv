@@ -1,0 +1,9 @@
+,InformativenessRating,RelevanceRating,CoherenceRating,FluencyRating
+bertscore_precision,0.511,0.487,0.407,0.348
+bertscore_recall,0.285,0.301,0.149,0.149
+bertscore_f1,0.43,0.43,0.298,0.269
+rouge_rouge1,0.368,0.337,0.289,0.195
+rouge_rouge2,0.414,0.352,0.279,0.188
+rouge_rougeL,0.359,0.328,0.239,0.148
+rouge_rougeLsum,0.359,0.328,0.239,0.148
+bleurt_scores,0.385,0.3,0.21,0.102

@@ -1,0 +1,49 @@
+corr_metric  aspect                 approach  model  score_name
+spearmanr    InformativenessRating  trad      sdc*   sdc*_score    0.005
+                                    new       sdc*   sdc*_score   -0.139
+                                    trad      smd    SMS           0.448
+                                    new       smd    SMS           0.288
+             RelevanceRating        trad      sdc*   sdc*_score   -0.051
+                                    new       sdc*   sdc*_score   -0.068
+                                    trad      smd    SMS           0.423
+                                    new       smd    SMS           0.289
+             CoherenceRating        trad      sdc*   sdc*_score    0.032
+                                    new       sdc*   sdc*_score    0.279
+                                    trad      smd    SMS           0.326
+                                    new       smd    SMS           0.021
+             FluencyRating          trad      sdc*   sdc*_score    0.101
+                                    new       sdc*   sdc*_score    0.350
+                                    trad      smd    SMS           0.284
+                                    new       smd    SMS          -0.099
+pearsonr     InformativenessRating  trad      sdc*   sdc*_score    0.090
+                                    new       sdc*   sdc*_score   -0.070
+                                    trad      smd    SMS           0.231
+                                    new       smd    SMS          -0.095
+             RelevanceRating        trad      sdc*   sdc*_score    0.046
+                                    new       sdc*   sdc*_score    0.033
+                                    trad      smd    SMS           0.115
+                                    new       smd    SMS          -0.103
+             CoherenceRating        trad      sdc*   sdc*_score    0.149
+                                    new       sdc*   sdc*_score    0.296
+                                    trad      smd    SMS           0.157
+                                    new       smd    SMS          -0.120
+             FluencyRating          trad      sdc*   sdc*_score    0.178
+                                    new       sdc*   sdc*_score    0.320
+                                    trad      smd    SMS           0.145
+                                    new       smd    SMS          -0.114
+kendalltau   InformativenessRating  trad      sdc*   sdc*_score    0.001
+                                    new       sdc*   sdc*_score   -0.076
+                                    trad      smd    SMS           0.314
+                                    new       smd    SMS           0.201
+             RelevanceRating        trad      sdc*   sdc*_score   -0.038
+                                    new       sdc*   sdc*_score   -0.046
+                                    trad      smd    SMS           0.308
+                                    new       smd    SMS           0.196
+             CoherenceRating        trad      sdc*   sdc*_score    0.020
+                                    new       sdc*   sdc*_score    0.192
+                                    trad      smd    SMS           0.211
+                                    new       smd    SMS           0.020
+             FluencyRating          trad      sdc*   sdc*_score    0.069
+                                    new       sdc*   sdc*_score    0.250
+                                    trad      smd    SMS           0.188
+                                    new       smd    SMS          -0.066

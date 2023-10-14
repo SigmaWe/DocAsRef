@@ -1,0 +1,73 @@
+corr_metric  aspect                 approach  model      score_name  
+spearmanr    InformativenessRating  trad      sacrebleu  bleu_score     -0.081
+                                    new       sacrebleu  bleu_score      0.742
+                                    trad      meteor     meteor_score    0.242
+                                    new       meteor     meteor_score    0.715
+                                    trad      bart       Bart_Score      0.256
+                                    new       bart       Bart_Score      0.595
+             RelevanceRating        trad      sacrebleu  bleu_score     -0.012
+                                    new       sacrebleu  bleu_score      0.636
+                                    trad      meteor     meteor_score    0.223
+                                    new       meteor     meteor_score    0.623
+                                    trad      bart       Bart_Score      0.264
+                                    new       bart       Bart_Score      0.573
+             CoherenceRating        trad      sacrebleu  bleu_score     -0.051
+                                    new       sacrebleu  bleu_score      0.579
+                                    trad      meteor     meteor_score    0.163
+                                    new       meteor     meteor_score    0.565
+                                    trad      bart       Bart_Score      0.321
+                                    new       bart       Bart_Score      0.640
+             FluencyRating          trad      sacrebleu  bleu_score     -0.038
+                                    new       sacrebleu  bleu_score      0.487
+                                    trad      meteor     meteor_score    0.173
+                                    new       meteor     meteor_score    0.488
+                                    trad      bart       Bart_Score      0.348
+                                    new       bart       Bart_Score      0.621
+pearsonr     InformativenessRating  trad      sacrebleu  bleu_score     -0.134
+                                    new       sacrebleu  bleu_score      0.503
+                                    trad      meteor     meteor_score    0.056
+                                    new       meteor     meteor_score    0.746
+                                    trad      bart       Bart_Score      0.248
+                                    new       bart       Bart_Score      0.727
+             RelevanceRating        trad      sacrebleu  bleu_score     -0.095
+                                    new       sacrebleu  bleu_score      0.378
+                                    trad      meteor     meteor_score    0.069
+                                    new       meteor     meteor_score    0.677
+                                    trad      bart       Bart_Score      0.276
+                                    new       bart       Bart_Score      0.729
+             CoherenceRating        trad      sacrebleu  bleu_score     -0.131
+                                    new       sacrebleu  bleu_score      0.387
+                                    trad      meteor     meteor_score    0.003
+                                    new       meteor     meteor_score    0.588
+                                    trad      bart       Bart_Score      0.281
+                                    new       bart       Bart_Score      0.692
+             FluencyRating          trad      sacrebleu  bleu_score     -0.116
+                                    new       sacrebleu  bleu_score      0.356
+                                    trad      meteor     meteor_score   -0.010
+                                    new       meteor     meteor_score    0.542
+                                    trad      bart       Bart_Score      0.287
+                                    new       bart       Bart_Score      0.651
+kendalltau   InformativenessRating  trad      sacrebleu  bleu_score     -0.072
+                                    new       sacrebleu  bleu_score      0.627
+                                    trad      meteor     meteor_score    0.195
+                                    new       meteor     meteor_score    0.605
+                                    trad      bart       Bart_Score      0.215
+                                    new       bart       Bart_Score      0.493
+             RelevanceRating        trad      sacrebleu  bleu_score     -0.012
+                                    new       sacrebleu  bleu_score      0.527
+                                    trad      meteor     meteor_score    0.171
+                                    new       meteor     meteor_score    0.522
+                                    trad      bart       Bart_Score      0.211
+                                    new       bart       Bart_Score      0.477
+             CoherenceRating        trad      sacrebleu  bleu_score     -0.039
+                                    new       sacrebleu  bleu_score      0.483
+                                    trad      meteor     meteor_score    0.133
+                                    new       meteor     meteor_score    0.470
+                                    trad      bart       Bart_Score      0.275
+                                    new       bart       Bart_Score      0.533
+             FluencyRating          trad      sacrebleu  bleu_score     -0.032
+                                    new       sacrebleu  bleu_score      0.397
+                                    trad      meteor     meteor_score    0.145
+                                    new       meteor     meteor_score    0.398
+                                    trad      bart       Bart_Score      0.292
+                                    new       bart       Bart_Score      0.526

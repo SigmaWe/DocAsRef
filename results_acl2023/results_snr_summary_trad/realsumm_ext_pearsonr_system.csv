@@ -1,0 +1,9 @@
+,litepyramid_recall
+bertscore_precision,0.281
+bertscore_recall,0.416
+bertscore_f1,0.364
+rouge_rouge1,0.363
+rouge_rouge2,0.416
+rouge_rougeL,0.408
+rouge_rougeLsum,0.408
+bleurt_scores,0.385

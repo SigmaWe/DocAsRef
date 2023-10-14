@@ -1,0 +1,37 @@
+corr_metric  aspect      approach  model                   score_name
+spearmanr    Pyramid     new       bertscore-bert-base     precision    0.318
+                                                           recall       0.297
+                                                           f1           0.328
+                                   bertscore-roberta-base  precision    0.329
+                                                           recall       0.260
+                                                           f1           0.325
+                                   bertscore-bart-base     precision    0.319
+                                                           recall       0.254
+                                                           f1           0.308
+                                   bertscore-deberta-base  precision    0.315
+                                                           recall       0.295
+                                                           f1           0.332
+             Linguistic  new       bertscore-bert-base     precision    0.218
+                                                           recall       0.213
+                                                           f1           0.225
+                                   bertscore-roberta-base  precision    0.228
+                                                           recall       0.193
+                                                           f1           0.232
+                                   bertscore-bart-base     precision    0.216
+                                                           recall       0.152
+                                                           f1           0.196
+                                   bertscore-deberta-base  precision    0.216
+                                                           recall       0.215
+                                                           f1           0.233
+             Overall     new       bertscore-bert-base     precision    0.296
+                                                           recall       0.277
+                                                           f1           0.305
+                                   bertscore-roberta-base  precision    0.298
+                                                           recall       0.250
+                                                           f1           0.301
+                                   bertscore-bart-base     precision    0.294
+                                                           recall       0.232
+                                                           f1           0.283
+                                   bertscore-deberta-base  precision    0.289
+                                                           recall       0.277
+                                                           f1           0.307

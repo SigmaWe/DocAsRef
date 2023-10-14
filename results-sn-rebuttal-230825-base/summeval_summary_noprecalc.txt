@@ -1,0 +1,49 @@
+corr_metric  aspect       approach  model                   score_name               
+spearmanr    consistency  trad      bertscore-roberta-base  precision                   -0.013
+                          new       bertscore-roberta-base  precision                    0.295
+                          trad      bertscore-bart-base     precision                    0.004
+                          new       bertscore-bart-base     precision                    0.279
+                          trad      bertscore-deberta-base  precision                    0.057
+                          new       bertscore-deberta-base  precision                    0.262
+             relevance    trad      bertscore-roberta-base  precision                    0.100
+                          new       bertscore-roberta-base  precision                    0.284
+                          trad      bertscore-bart-base     precision                    0.152
+                          new       bertscore-bart-base     precision                    0.283
+                          trad      bertscore-deberta-base  precision                    0.169
+                          new       bertscore-deberta-base  precision                    0.252
+             coherence    trad      bertscore-roberta-base  precision                    0.173
+                          new       bertscore-roberta-base  precision                    0.381
+                          trad      bertscore-bart-base     precision                    0.205
+                          new       bertscore-bart-base     precision                    0.359
+                          trad      bertscore-deberta-base  precision                    0.182
+                          new       bertscore-deberta-base  precision                    0.316
+             fluency      trad      bertscore-roberta-base  precision                    0.071
+                          new       bertscore-roberta-base  precision                    0.228
+                          trad      bertscore-bart-base     precision                    0.080
+                          new       bertscore-bart-base     precision                    0.208
+                          trad      bertscore-deberta-base  precision                    0.112
+                          new       bertscore-deberta-base  precision                    0.206
+pearsonr     consistency  trad      bertscore-roberta-base  precision                   -0.015
+                          new       bertscore-roberta-base  precision                    0.296
+                          trad      bertscore-bart-base     precision                    0.017
+                          new       bertscore-bart-base     precision                    0.288
+                          trad      bertscore-deberta-base  precision                    0.092
+                          new       bertscore-deberta-base  precision                    0.278
+             relevance    trad      bertscore-roberta-base  precision                    0.102
+                          new       bertscore-roberta-base  precision                    0.289
+                          trad      bertscore-bart-base     precision                    0.153
+                          new       bertscore-bart-base     precision                    0.294
+                          trad      bertscore-deberta-base  precision                    0.176
+                          new       bertscore-deberta-base  precision                    0.261
+             coherence    trad      bertscore-roberta-base  precision                    0.209
+                          new       bertscore-roberta-base  precision                    0.394
+                          trad      bertscore-bart-base     precision                    0.246
+                          new       bertscore-bart-base     precision                    0.378
+                          trad      bertscore-deberta-base  precision                    0.218
+                          new       bertscore-deberta-base  precision                    0.327
+             fluency      trad      bertscore-roberta-base  precision                    0.086
+                          new       bertscore-roberta-base  precision                    0.250
+                          trad      bertscore-bart-base     precision                    0.113
+                          new       bertscore-bart-base     precision                    0.226
+                          trad      bertscore-deberta-base  precision                    0.143
+                          new       bertscore-deberta-base  precision                    0.239

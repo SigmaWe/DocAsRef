@@ -1,0 +1,10 @@
+corr_metric  aspect      approach  model                        score_name
+spearmanr    Pyramid     new       bertscore-deberta-base-mnli  precision    0.326
+                                                                recall       0.312
+                                                                f1           0.339
+             Linguistic  new       bertscore-deberta-base-mnli  precision    0.256
+                                                                recall       0.243
+                                                                f1           0.264
+             Overall     new       bertscore-deberta-base-mnli  precision    0.298
+                                                                recall       0.290
+                                                                f1           0.312

@@ -1,0 +1,109 @@
+corr_metric  aspect                 approach  model                   score_name
+spearmanr    InformativenessRating  trad      bertscore-roberta-base  precision    -0.071
+                                                                      recall        0.320
+                                                                      f1            0.125
+                                              bertscore-deberta-base  precision    -0.084
+                                                                      recall        0.350
+                                                                      f1            0.181
+                                              bertscore-bart-base     precision    -0.089
+                                                                      recall        0.297
+                                                                      f1            0.107
+             RelevanceRating        trad      bertscore-roberta-base  precision    -0.007
+                                                                      recall        0.295
+                                                                      f1            0.162
+                                              bertscore-deberta-base  precision    -0.032
+                                                                      recall        0.296
+                                                                      f1            0.175
+                                              bertscore-bart-base     precision    -0.029
+                                                                      recall        0.259
+                                                                      f1            0.141
+             CoherenceRating        trad      bertscore-roberta-base  precision    -0.018
+                                                                      recall        0.285
+                                                                      f1            0.139
+                                              bertscore-deberta-base  precision    -0.025
+                                                                      recall        0.309
+                                                                      f1            0.161
+                                              bertscore-bart-base     precision    -0.023
+                                                                      recall        0.270
+                                                                      f1            0.126
+             FluencyRating          trad      bertscore-roberta-base  precision    -0.026
+                                                                      recall        0.268
+                                                                      f1            0.137
+                                              bertscore-deberta-base  precision    -0.024
+                                                                      recall        0.290
+                                                                      f1            0.166
+                                              bertscore-bart-base     precision     0.003
+                                                                      recall        0.275
+                                                                      f1            0.150
+pearsonr     InformativenessRating  trad      bertscore-roberta-base  precision    -0.099
+                                                                      recall        0.323
+                                                                      f1            0.088
+                                              bertscore-deberta-base  precision    -0.120
+                                                                      recall        0.305
+                                                                      f1            0.060
+                                              bertscore-bart-base     precision    -0.128
+                                                                      recall        0.238
+                                                                      f1            0.003
+             RelevanceRating        trad      bertscore-roberta-base  precision    -0.045
+                                                                      recall        0.322
+                                                                      f1            0.119
+                                              bertscore-deberta-base  precision    -0.074
+                                                                      recall        0.293
+                                                                      f1            0.083
+                                              bertscore-bart-base     precision    -0.081
+                                                                      recall        0.247
+                                                                      f1            0.039
+             CoherenceRating        trad      bertscore-roberta-base  precision    -0.087
+                                                                      recall        0.252
+                                                                      f1            0.063
+                                              bertscore-deberta-base  precision    -0.104
+                                                                      recall        0.240
+                                                                      f1            0.041
+                                              bertscore-bart-base     precision    -0.109
+                                                                      recall        0.184
+                                                                      f1           -0.005
+             FluencyRating          trad      bertscore-roberta-base  precision    -0.080
+                                                                      recall        0.216
+                                                                      f1            0.045
+                                              bertscore-deberta-base  precision    -0.101
+                                                                      recall        0.202
+                                                                      f1            0.026
+                                              bertscore-bart-base     precision    -0.097
+                                                                      recall        0.162
+                                                                      f1           -0.006
+kendalltau   InformativenessRating  trad      bertscore-roberta-base  precision    -0.063
+                                                                      recall        0.272
+                                                                      f1            0.096
+                                              bertscore-deberta-base  precision    -0.051
+                                                                      recall        0.304
+                                                                      f1            0.153
+                                              bertscore-bart-base     precision    -0.074
+                                                                      recall        0.251
+                                                                      f1            0.089
+             RelevanceRating        trad      bertscore-roberta-base  precision    -0.010
+                                                                      recall        0.228
+                                                                      f1            0.119
+                                              bertscore-deberta-base  precision    -0.022
+                                                                      recall        0.237
+                                                                      f1            0.131
+                                              bertscore-bart-base     precision    -0.026
+                                                                      recall        0.201
+                                                                      f1            0.104
+             CoherenceRating        trad      bertscore-roberta-base  precision    -0.015
+                                                                      recall        0.235
+                                                                      f1            0.117
+                                              bertscore-deberta-base  precision    -0.016
+                                                                      recall        0.262
+                                                                      f1            0.136
+                                              bertscore-bart-base     precision    -0.006
+                                                                      recall        0.232
+                                                                      f1            0.107
+             FluencyRating          trad      bertscore-roberta-base  precision    -0.025
+                                                                      recall        0.223
+                                                                      f1            0.113
+                                              bertscore-deberta-base  precision    -0.009
+                                                                      recall        0.236
+                                                                      f1            0.136
+                                              bertscore-bart-base     precision     0.005
+                                                                      recall        0.236
+                                                                      f1            0.122

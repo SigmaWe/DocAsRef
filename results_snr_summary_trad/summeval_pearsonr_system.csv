@@ -1,9 +1,6 @@
 ,consistency,relevance,coherence,fluency
-bertscore_precision,0.22,0.462,0.361,0.194
-bertscore_recall,0.129,0.387,0.384,0.118
-bertscore_f1,0.2,0.482,0.419,0.179
-rouge_rouge1,0.203,0.458,0.369,0.127
-rouge_rouge2,0.086,0.328,0.238,0.086
-rouge_rougeL,0.139,0.356,0.269,0.119
-rouge_rougeLsum,0.139,0.356,0.269,0.119
-bleurt_scores,0.315,0.504,0.374,0.213
+sacrebleu_bleu_score,0.061,0.33,0.201,0.11
+meteor_meteor_score,0.102,0.294,0.217,0.093
+bart_Bart_Score,0.111,0.481,0.313,0.3
+sdc*_sdc*_score,0.056,0.074,0.05,0.002
+smd_SMS,-0.09,0.083,0.189,-0.007

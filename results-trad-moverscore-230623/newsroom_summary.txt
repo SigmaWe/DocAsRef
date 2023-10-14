@@ -1,0 +1,25 @@
+corr_metric  aspect                 approach  model             score_name
+spearmanr    InformativenessRating  trad      moverscore-1gram  scores        0.136
+                                              moverscore-2gram  scores        0.136
+             RelevanceRating        trad      moverscore-1gram  scores        0.153
+                                              moverscore-2gram  scores        0.153
+             CoherenceRating        trad      moverscore-1gram  scores        0.112
+                                              moverscore-2gram  scores        0.112
+             FluencyRating          trad      moverscore-1gram  scores        0.077
+                                              moverscore-2gram  scores        0.077
+pearsonr     InformativenessRating  trad      moverscore-1gram  scores       -0.031
+                                              moverscore-2gram  scores       -0.031
+             RelevanceRating        trad      moverscore-1gram  scores        0.008
+                                              moverscore-2gram  scores        0.008
+             CoherenceRating        trad      moverscore-1gram  scores       -0.056
+                                              moverscore-2gram  scores       -0.056
+             FluencyRating          trad      moverscore-1gram  scores       -0.068
+                                              moverscore-2gram  scores       -0.068
+kendalltau   InformativenessRating  trad      moverscore-1gram  scores        0.110
+                                              moverscore-2gram  scores        0.110
+             RelevanceRating        trad      moverscore-1gram  scores        0.125
+                                              moverscore-2gram  scores        0.125
+             CoherenceRating        trad      moverscore-1gram  scores        0.094
+                                              moverscore-2gram  scores        0.094
+             FluencyRating          trad      moverscore-1gram  scores        0.056
+                                              moverscore-2gram  scores        0.056

@@ -1,9 +1,6 @@
 ,litepyramid_recall
-bertscore_precision,0.455
-bertscore_recall,0.634
-bertscore_f1,0.569
-rouge_rouge1,0.682
-rouge_rouge2,0.698
-rouge_rougeL,0.687
-rouge_rougeLsum,0.687
-bleurt_scores,0.582
+sacrebleu_bleu_score,0.678
+meteor_meteor_score,0.696
+bart_Bart_Score,0.441
+sdc*_sdc*_score,-0.257
+smd_SMS,0.501
