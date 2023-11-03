@@ -1,0 +1,497 @@
+{
+  "('pearsonr', 'human', 'new', 'bertscore-sentence-cos-mpnet', 'P')": {
+    "0": 0.6523168225,
+    "1": 0.8836796854,
+    "average": 0.767998254
+  },
+  "('pearsonr', 'human', 'new', 'bertscore-sentence-cos-mpnet', 'R')": {
+    "0": 0.9964892049,
+    "1": 0.8216000345,
+    "average": 0.9090446197
+  },
+  "('pearsonr', 'human', 'new', 'bertscore-sentence-cos-mpnet', 'F')": {
+    "0": 0.9925326034,
+    "1": 0.881378723,
+    "average": 0.9369556632
+  },
+  "('pearsonr', 'human', 'new', 'bertscore-sentence-cos-roberta', 'P')": {
+    "0": 0.7616395933,
+    "1": 0.8423049729,
+    "average": 0.8019722831
+  },
+  "('pearsonr', 'human', 'new', 'bertscore-sentence-cos-roberta', 'R')": {
+    "0": 0.9928982106,
+    "1": 0.5333381858,
+    "average": 0.7631181982
+  },
+  "('pearsonr', 'human', 'new', 'bertscore-sentence-cos-roberta', 'F')": {
+    "0": 0.988378774,
+    "1": 0.7037292882,
+    "average": 0.8460540311
+  },
+  "('pearsonr', 'human', 'new', 'bertscore-sentence-mnli-roberta-not_neutral', 'P')": {
+    "0": 0.05947937,
+    "1": -0.6886233732,
+    "average": -0.3145720016
+  },
+  "('pearsonr', 'human', 'new', 'bertscore-sentence-mnli-roberta-not_neutral', 'R')": {
+    "0": 0.4938209264,
+    "1": -0.9630750169,
+    "average": -0.2346270452
+  },
+  "('pearsonr', 'human', 'new', 'bertscore-sentence-mnli-roberta-not_neutral', 'F')": {
+    "0": 0.4330768299,
+    "1": -0.949933078,
+    "average": -0.258428124
+  },
+  "('pearsonr', 'human', 'new', 'bertscore-sentence-mnli-roberta-entail_only', 'P')": {
+    "0": 0.3226130539,
+    "1": 0.9998038969,
+    "average": 0.6612084754
+  },
+  "('pearsonr', 'human', 'new', 'bertscore-sentence-mnli-roberta-entail_only', 'R')": {
+    "0": 0.5877117304,
+    "1": 0.933071025,
+    "average": 0.7603913777
+  },
+  "('pearsonr', 'human', 'new', 'bertscore-sentence-mnli-roberta-entail_only', 'F')": {
+    "0": 0.5645184323,
+    "1": 0.9568984177,
+    "average": 0.760708425
+  },
+  "('pearsonr', 'human', 'new', 'bertscore-sentence-mnli-roberta-entail_contradict', 'P')": {
+    "0": 0.3521710885,
+    "1": 0.9998703776,
+    "average": 0.6760207331
+  },
+  "('pearsonr', 'human', 'new', 'bertscore-sentence-mnli-roberta-entail_contradict', 'R')": {
+    "0": 0.6881255546,
+    "1": 0.9688964374,
+    "average": 0.828510996
+  },
+  "('pearsonr', 'human', 'new', 'bertscore-sentence-mnli-roberta-entail_contradict', 'F')": {
+    "0": 0.6805524563,
+    "1": 0.9061032489,
+    "average": 0.7933278526
+  },
+  "('pearsonr', 'human', 'new', 'bertscore-sentence-mnli-bart-not_neutral', 'P')": {
+    "0": 0.2051125563,
+    "1": 0.5603971085,
+    "average": 0.3827548324
+  },
+  "('pearsonr', 'human', 'new', 'bertscore-sentence-mnli-bart-not_neutral', 'R')": {
+    "0": 0.1295401693,
+    "1": 0.9281542471,
+    "average": 0.5288472082
+  },
+  "('pearsonr', 'human', 'new', 'bertscore-sentence-mnli-bart-not_neutral', 'F')": {
+    "0": 0.1144687052,
+    "1": 0.9252607751,
+    "average": 0.5198647401
+  },
+  "('pearsonr', 'human', 'new', 'bertscore-sentence-mnli-bart-entail_only', 'P')": {
+    "0": 0.921654899,
+    "1": 0.9537935653,
+    "average": 0.9377242322
+  },
+  "('pearsonr', 'human', 'new', 'bertscore-sentence-mnli-bart-entail_only', 'R')": {
+    "0": 0.770946228,
+    "1": 0.8372773713,
+    "average": 0.8041117997
+  },
+  "('pearsonr', 'human', 'new', 'bertscore-sentence-mnli-bart-entail_only', 'F')": {
+    "0": 0.7948027011,
+    "1": 0.8649306494,
+    "average": 0.8298666752
+  },
+  "('pearsonr', 'human', 'new', 'bertscore-sentence-mnli-bart-entail_contradict', 'P')": {
+    "0": 0.9240466736,
+    "1": 0.9618711344,
+    "average": 0.942958904
+  },
+  "('pearsonr', 'human', 'new', 'bertscore-sentence-mnli-bart-entail_contradict', 'R')": {
+    "0": 0.8108151236,
+    "1": 0.8552488098,
+    "average": 0.8330319667
+  },
+  "('pearsonr', 'human', 'new', 'bertscore-sentence-mnli-bart-entail_contradict', 'F')": {
+    "0": 0.8319969862,
+    "1": 0.8811877631,
+    "average": 0.8565923746
+  },
+  "('pearsonr', 'human', 'new', 'bertscore-sentence-mnli-deberta-not_neutral', 'P')": {
+    "0": -0.2552969672,
+    "1": 0.9779677455,
+    "average": 0.3613353892
+  },
+  "('pearsonr', 'human', 'new', 'bertscore-sentence-mnli-deberta-not_neutral', 'R')": {
+    "0": -0.6462106152,
+    "1": -0.3784708357,
+    "average": -0.5123407254
+  },
+  "('pearsonr', 'human', 'new', 'bertscore-sentence-mnli-deberta-not_neutral', 'F')": {
+    "0": -0.5926340368,
+    "1": 0.2590484996,
+    "average": -0.1667927686
+  },
+  "('pearsonr', 'human', 'new', 'bertscore-sentence-mnli-deberta-entail_only', 'P')": {
+    "0": 0.1684693914,
+    "1": 0.9651428983,
+    "average": 0.5668061449
+  },
+  "('pearsonr', 'human', 'new', 'bertscore-sentence-mnli-deberta-entail_only', 'R')": {
+    "0": -0.6139918453,
+    "1": 0.7191224856,
+    "average": 0.0525653202
+  },
+  "('pearsonr', 'human', 'new', 'bertscore-sentence-mnli-deberta-entail_only', 'F')": {
+    "0": -0.524233183,
+    "1": 0.7601658352,
+    "average": 0.1179663261
+  },
+  "('pearsonr', 'human', 'new', 'bertscore-sentence-mnli-deberta-entail_contradict', 'P')": {
+    "0": 0.1776970083,
+    "1": 0.9512483383,
+    "average": 0.5644726733
+  },
+  "('pearsonr', 'human', 'new', 'bertscore-sentence-mnli-deberta-entail_contradict', 'R')": {
+    "0": -0.5578563201,
+    "1": 0.8738149265,
+    "average": 0.1579793032
+  },
+  "('pearsonr', 'human', 'new', 'bertscore-sentence-mnli-deberta-entail_contradict', 'F')": {
+    "0": -0.4785149282,
+    "1": 0.9011416499,
+    "average": 0.2113133608
+  },
+  "('kendalltau', 'human', 'new', 'bertscore-sentence-cos-mpnet', 'P')": {
+    "0": 0.632455532,
+    "1": 0.632455532,
+    "average": 0.632455532
+  },
+  "('kendalltau', 'human', 'new', 'bertscore-sentence-cos-mpnet', 'R')": {
+    "0": 0.632455532,
+    "1": 0.632455532,
+    "average": 0.632455532
+  },
+  "('kendalltau', 'human', 'new', 'bertscore-sentence-cos-mpnet', 'F')": {
+    "0": 0.632455532,
+    "1": 0.632455532,
+    "average": 0.632455532
+  },
+  "('kendalltau', 'human', 'new', 'bertscore-sentence-cos-roberta', 'P')": {
+    "0": 0.632455532,
+    "1": 0.632455532,
+    "average": 0.632455532
+  },
+  "('kendalltau', 'human', 'new', 'bertscore-sentence-cos-roberta', 'R')": {
+    "0": 0.632455532,
+    "1": 0.316227766,
+    "average": 0.474341649
+  },
+  "('kendalltau', 'human', 'new', 'bertscore-sentence-cos-roberta', 'F')": {
+    "0": 0.632455532,
+    "1": 0.632455532,
+    "average": 0.632455532
+  },
+  "('kendalltau', 'human', 'new', 'bertscore-sentence-mnli-roberta-not_neutral', 'P')": {
+    "0": 0.316227766,
+    "1": -0.632455532,
+    "average": -0.158113883
+  },
+  "('kendalltau', 'human', 'new', 'bertscore-sentence-mnli-roberta-not_neutral', 'R')": {
+    "0": 0.316227766,
+    "1": -0.632455532,
+    "average": -0.158113883
+  },
+  "('kendalltau', 'human', 'new', 'bertscore-sentence-mnli-roberta-not_neutral', 'F')": {
+    "0": 0.316227766,
+    "1": -0.632455532,
+    "average": -0.158113883
+  },
+  "('kendalltau', 'human', 'new', 'bertscore-sentence-mnli-roberta-entail_only', 'P')": {
+    "0": 0.316227766,
+    "1": 0.632455532,
+    "average": 0.474341649
+  },
+  "('kendalltau', 'human', 'new', 'bertscore-sentence-mnli-roberta-entail_only', 'R')": {
+    "0": 0.632455532,
+    "1": 0.632455532,
+    "average": 0.632455532
+  },
+  "('kendalltau', 'human', 'new', 'bertscore-sentence-mnli-roberta-entail_only', 'F')": {
+    "0": 0.316227766,
+    "1": 0.632455532,
+    "average": 0.474341649
+  },
+  "('kendalltau', 'human', 'new', 'bertscore-sentence-mnli-roberta-entail_contradict', 'P')": {
+    "0": 0.316227766,
+    "1": 0.632455532,
+    "average": 0.474341649
+  },
+  "('kendalltau', 'human', 'new', 'bertscore-sentence-mnli-roberta-entail_contradict', 'R')": {
+    "0": 0.632455532,
+    "1": 0.632455532,
+    "average": 0.632455532
+  },
+  "('kendalltau', 'human', 'new', 'bertscore-sentence-mnli-roberta-entail_contradict', 'F')": {
+    "0": 0.632455532,
+    "1": 0.632455532,
+    "average": 0.632455532
+  },
+  "('kendalltau', 'human', 'new', 'bertscore-sentence-mnli-bart-not_neutral', 'P')": {
+    "0": 0.0,
+    "1": 0.632455532,
+    "average": 0.316227766
+  },
+  "('kendalltau', 'human', 'new', 'bertscore-sentence-mnli-bart-not_neutral', 'R')": {
+    "0": 0.316227766,
+    "1": 0.632455532,
+    "average": 0.474341649
+  },
+  "('kendalltau', 'human', 'new', 'bertscore-sentence-mnli-bart-not_neutral', 'F')": {
+    "0": 0.0,
+    "1": 0.632455532,
+    "average": 0.316227766
+  },
+  "('kendalltau', 'human', 'new', 'bertscore-sentence-mnli-bart-entail_only', 'P')": {
+    "0": 0.632455532,
+    "1": 0.632455532,
+    "average": 0.632455532
+  },
+  "('kendalltau', 'human', 'new', 'bertscore-sentence-mnli-bart-entail_only', 'R')": {
+    "0": 0.632455532,
+    "1": 0.632455532,
+    "average": 0.632455532
+  },
+  "('kendalltau', 'human', 'new', 'bertscore-sentence-mnli-bart-entail_only', 'F')": {
+    "0": 0.632455532,
+    "1": 0.632455532,
+    "average": 0.632455532
+  },
+  "('kendalltau', 'human', 'new', 'bertscore-sentence-mnli-bart-entail_contradict', 'P')": {
+    "0": 0.632455532,
+    "1": 0.632455532,
+    "average": 0.632455532
+  },
+  "('kendalltau', 'human', 'new', 'bertscore-sentence-mnli-bart-entail_contradict', 'R')": {
+    "0": 0.632455532,
+    "1": 0.632455532,
+    "average": 0.632455532
+  },
+  "('kendalltau', 'human', 'new', 'bertscore-sentence-mnli-bart-entail_contradict', 'F')": {
+    "0": 0.632455532,
+    "1": 0.632455532,
+    "average": 0.632455532
+  },
+  "('kendalltau', 'human', 'new', 'bertscore-sentence-mnli-deberta-not_neutral', 'P')": {
+    "0": 0.0,
+    "1": 0.632455532,
+    "average": 0.316227766
+  },
+  "('kendalltau', 'human', 'new', 'bertscore-sentence-mnli-deberta-not_neutral', 'R')": {
+    "0": -0.632455532,
+    "1": -0.316227766,
+    "average": -0.474341649
+  },
+  "('kendalltau', 'human', 'new', 'bertscore-sentence-mnli-deberta-not_neutral', 'F')": {
+    "0": -0.632455532,
+    "1": 0.316227766,
+    "average": -0.158113883
+  },
+  "('kendalltau', 'human', 'new', 'bertscore-sentence-mnli-deberta-entail_only', 'P')": {
+    "0": 0.0,
+    "1": 0.632455532,
+    "average": 0.316227766
+  },
+  "('kendalltau', 'human', 'new', 'bertscore-sentence-mnli-deberta-entail_only', 'R')": {
+    "0": -0.632455532,
+    "1": 0.632455532,
+    "average": 0.0
+  },
+  "('kendalltau', 'human', 'new', 'bertscore-sentence-mnli-deberta-entail_only', 'F')": {
+    "0": -0.632455532,
+    "1": 0.632455532,
+    "average": 0.0
+  },
+  "('kendalltau', 'human', 'new', 'bertscore-sentence-mnli-deberta-entail_contradict', 'P')": {
+    "0": 0.0,
+    "1": 0.632455532,
+    "average": 0.316227766
+  },
+  "('kendalltau', 'human', 'new', 'bertscore-sentence-mnli-deberta-entail_contradict', 'R')": {
+    "0": -0.632455532,
+    "1": 0.632455532,
+    "average": 0.0
+  },
+  "('kendalltau', 'human', 'new', 'bertscore-sentence-mnli-deberta-entail_contradict', 'F')": {
+    "0": -0.632455532,
+    "1": 0.632455532,
+    "average": 0.0
+  },
+  "('spearmanr', 'human', 'new', 'bertscore-sentence-cos-mpnet', 'P')": {
+    "0": 0.7071067812,
+    "1": 0.7071067812,
+    "average": 0.7071067812
+  },
+  "('spearmanr', 'human', 'new', 'bertscore-sentence-cos-mpnet', 'R')": {
+    "0": 0.7071067812,
+    "1": 0.7071067812,
+    "average": 0.7071067812
+  },
+  "('spearmanr', 'human', 'new', 'bertscore-sentence-cos-mpnet', 'F')": {
+    "0": 0.7071067812,
+    "1": 0.7071067812,
+    "average": 0.7071067812
+  },
+  "('spearmanr', 'human', 'new', 'bertscore-sentence-cos-roberta', 'P')": {
+    "0": 0.7071067812,
+    "1": 0.7071067812,
+    "average": 0.7071067812
+  },
+  "('spearmanr', 'human', 'new', 'bertscore-sentence-cos-roberta', 'R')": {
+    "0": 0.7071067812,
+    "1": 0.3535533906,
+    "average": 0.5303300859
+  },
+  "('spearmanr', 'human', 'new', 'bertscore-sentence-cos-roberta', 'F')": {
+    "0": 0.7071067812,
+    "1": 0.7071067812,
+    "average": 0.7071067812
+  },
+  "('spearmanr', 'human', 'new', 'bertscore-sentence-mnli-roberta-not_neutral', 'P')": {
+    "0": 0.3535533906,
+    "1": -0.7071067812,
+    "average": -0.1767766953
+  },
+  "('spearmanr', 'human', 'new', 'bertscore-sentence-mnli-roberta-not_neutral', 'R')": {
+    "0": 0.3535533906,
+    "1": -0.7071067812,
+    "average": -0.1767766953
+  },
+  "('spearmanr', 'human', 'new', 'bertscore-sentence-mnli-roberta-not_neutral', 'F')": {
+    "0": 0.3535533906,
+    "1": -0.7071067812,
+    "average": -0.1767766953
+  },
+  "('spearmanr', 'human', 'new', 'bertscore-sentence-mnli-roberta-entail_only', 'P')": {
+    "0": 0.3535533906,
+    "1": 0.7071067812,
+    "average": 0.5303300859
+  },
+  "('spearmanr', 'human', 'new', 'bertscore-sentence-mnli-roberta-entail_only', 'R')": {
+    "0": 0.7071067812,
+    "1": 0.7071067812,
+    "average": 0.7071067812
+  },
+  "('spearmanr', 'human', 'new', 'bertscore-sentence-mnli-roberta-entail_only', 'F')": {
+    "0": 0.3535533906,
+    "1": 0.7071067812,
+    "average": 0.5303300859
+  },
+  "('spearmanr', 'human', 'new', 'bertscore-sentence-mnli-roberta-entail_contradict', 'P')": {
+    "0": 0.3535533906,
+    "1": 0.7071067812,
+    "average": 0.5303300859
+  },
+  "('spearmanr', 'human', 'new', 'bertscore-sentence-mnli-roberta-entail_contradict', 'R')": {
+    "0": 0.7071067812,
+    "1": 0.7071067812,
+    "average": 0.7071067812
+  },
+  "('spearmanr', 'human', 'new', 'bertscore-sentence-mnli-roberta-entail_contradict', 'F')": {
+    "0": 0.7071067812,
+    "1": 0.7071067812,
+    "average": 0.7071067812
+  },
+  "('spearmanr', 'human', 'new', 'bertscore-sentence-mnli-bart-not_neutral', 'P')": {
+    "0": 0.0,
+    "1": 0.7071067812,
+    "average": 0.3535533906
+  },
+  "('spearmanr', 'human', 'new', 'bertscore-sentence-mnli-bart-not_neutral', 'R')": {
+    "0": 0.3535533906,
+    "1": 0.7071067812,
+    "average": 0.5303300859
+  },
+  "('spearmanr', 'human', 'new', 'bertscore-sentence-mnli-bart-not_neutral', 'F')": {
+    "0": 0.0,
+    "1": 0.7071067812,
+    "average": 0.3535533906
+  },
+  "('spearmanr', 'human', 'new', 'bertscore-sentence-mnli-bart-entail_only', 'P')": {
+    "0": 0.7071067812,
+    "1": 0.7071067812,
+    "average": 0.7071067812
+  },
+  "('spearmanr', 'human', 'new', 'bertscore-sentence-mnli-bart-entail_only', 'R')": {
+    "0": 0.7071067812,
+    "1": 0.7071067812,
+    "average": 0.7071067812
+  },
+  "('spearmanr', 'human', 'new', 'bertscore-sentence-mnli-bart-entail_only', 'F')": {
+    "0": 0.7071067812,
+    "1": 0.7071067812,
+    "average": 0.7071067812
+  },
+  "('spearmanr', 'human', 'new', 'bertscore-sentence-mnli-bart-entail_contradict', 'P')": {
+    "0": 0.7071067812,
+    "1": 0.7071067812,
+    "average": 0.7071067812
+  },
+  "('spearmanr', 'human', 'new', 'bertscore-sentence-mnli-bart-entail_contradict', 'R')": {
+    "0": 0.7071067812,
+    "1": 0.7071067812,
+    "average": 0.7071067812
+  },
+  "('spearmanr', 'human', 'new', 'bertscore-sentence-mnli-bart-entail_contradict', 'F')": {
+    "0": 0.7071067812,
+    "1": 0.7071067812,
+    "average": 0.7071067812
+  },
+  "('spearmanr', 'human', 'new', 'bertscore-sentence-mnli-deberta-not_neutral', 'P')": {
+    "0": 0.0,
+    "1": 0.7071067812,
+    "average": 0.3535533906
+  },
+  "('spearmanr', 'human', 'new', 'bertscore-sentence-mnli-deberta-not_neutral', 'R')": {
+    "0": -0.7071067812,
+    "1": -0.3535533906,
+    "average": -0.5303300859
+  },
+  "('spearmanr', 'human', 'new', 'bertscore-sentence-mnli-deberta-not_neutral', 'F')": {
+    "0": -0.7071067812,
+    "1": 0.3535533906,
+    "average": -0.1767766953
+  },
+  "('spearmanr', 'human', 'new', 'bertscore-sentence-mnli-deberta-entail_only', 'P')": {
+    "0": 0.0,
+    "1": 0.7071067812,
+    "average": 0.3535533906
+  },
+  "('spearmanr', 'human', 'new', 'bertscore-sentence-mnli-deberta-entail_only', 'R')": {
+    "0": -0.7071067812,
+    "1": 0.7071067812,
+    "average": 0.0
+  },
+  "('spearmanr', 'human', 'new', 'bertscore-sentence-mnli-deberta-entail_only', 'F')": {
+    "0": -0.7071067812,
+    "1": 0.7071067812,
+    "average": 0.0
+  },
+  "('spearmanr', 'human', 'new', 'bertscore-sentence-mnli-deberta-entail_contradict', 'P')": {
+    "0": 0.0,
+    "1": 0.7071067812,
+    "average": 0.3535533906
+  },
+  "('spearmanr', 'human', 'new', 'bertscore-sentence-mnli-deberta-entail_contradict', 'R')": {
+    "0": -0.7071067812,
+    "1": 0.7071067812,
+    "average": 0.0
+  },
+  "('spearmanr', 'human', 'new', 'bertscore-sentence-mnli-deberta-entail_contradict', 'F')": {
+    "0": -0.7071067812,
+    "1": 0.7071067812,
+    "average": 0.0
+  }
+}
