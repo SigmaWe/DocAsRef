@@ -1,0 +1,100 @@
+corr_metric  aspect  approach  model                                              score_name
+pearsonr     human   new       bertscore-sentence-cos-mpnet                       P             0.046
+                                                                                  R            -0.064
+                                                                                  F            -0.049
+                               bertscore-sentence-cos-roberta                     P             0.055
+                                                                                  R            -0.059
+                                                                                  F            -0.041
+                               bertscore-sentence-mnli-roberta-not_neutral        P             0.076
+                                                                                  R            -0.139
+                                                                                  F            -0.137
+                               bertscore-sentence-mnli-roberta-entail_only        P             0.555
+                                                                                  R             0.271
+                                                                                  F             0.332
+                               bertscore-sentence-mnli-roberta-entail_contradict  P             0.555
+                                                                                  R             0.329
+                                                                                  F            -0.022
+                               bertscore-sentence-mnli-bart-not_neutral           P             0.099
+                                                                                  R            -0.088
+                                                                                  F            -0.088
+                               bertscore-sentence-mnli-bart-entail_only           P             0.607
+                                                                                  R             0.334
+                                                                                  F             0.391
+                               bertscore-sentence-mnli-bart-entail_contradict     P             0.591
+                                                                                  R             0.249
+                                                                                  F            -0.034
+                               bertscore-sentence-mnli-deberta-not_neutral        P             0.281
+                                                                                  R            -0.095
+                                                                                  F            -0.085
+                               bertscore-sentence-mnli-deberta-entail_only        P             0.628
+                                                                                  R             0.299
+                                                                                  F             0.363
+                               bertscore-sentence-mnli-deberta-entail_contradict  P             0.633
+                                                                                  R             0.296
+                                                                                  F            -0.013
+kendalltau   human   new       bertscore-sentence-cos-mpnet                       P             0.134
+                                                                                  R            -0.044
+                                                                                  F            -0.019
+                               bertscore-sentence-cos-roberta                     P             0.140
+                                                                                  R            -0.037
+                                                                                  F            -0.008
+                               bertscore-sentence-mnli-roberta-not_neutral        P             0.017
+                                                                                  R            -0.099
+                                                                                  F            -0.101
+                               bertscore-sentence-mnli-roberta-entail_only        P             0.462
+                                                                                  R             0.287
+                                                                                  F             0.314
+                               bertscore-sentence-mnli-roberta-entail_contradict  P             0.464
+                                                                                  R             0.281
+                                                                                  F             0.022
+                               bertscore-sentence-mnli-bart-not_neutral           P            -0.090
+                                                                                  R            -0.067
+                                                                                  F            -0.066
+                               bertscore-sentence-mnli-bart-entail_only           P             0.481
+                                                                                  R             0.393
+                                                                                  F             0.402
+                               bertscore-sentence-mnli-bart-entail_contradict     P             0.472
+                                                                                  R             0.230
+                                                                                  F            -0.046
+                               bertscore-sentence-mnli-deberta-not_neutral        P             0.237
+                                                                                  R            -0.076
+                                                                                  F            -0.066
+                               bertscore-sentence-mnli-deberta-entail_only        P             0.534
+                                                                                  R             0.374
+                                                                                  F             0.385
+                               bertscore-sentence-mnli-deberta-entail_contradict  P             0.534
+                                                                                  R             0.270
+                                                                                  F            -0.003
+spearmanr    human   new       bertscore-sentence-cos-mpnet                       P             0.164
+                                                                                  R            -0.054
+                                                                                  F            -0.024
+                               bertscore-sentence-cos-roberta                     P             0.172
+                                                                                  R            -0.045
+                                                                                  F            -0.010
+                               bertscore-sentence-mnli-roberta-not_neutral        P             0.021
+                                                                                  R            -0.121
+                                                                                  F            -0.124
+                               bertscore-sentence-mnli-roberta-entail_only        P             0.565
+                                                                                  R             0.352
+                                                                                  F             0.384
+                               bertscore-sentence-mnli-roberta-entail_contradict  P             0.568
+                                                                                  R             0.345
+                                                                                  F             0.027
+                               bertscore-sentence-mnli-bart-not_neutral           P            -0.110
+                                                                                  R            -0.082
+                                                                                  F            -0.081
+                               bertscore-sentence-mnli-bart-entail_only           P             0.589
+                                                                                  R             0.481
+                                                                                  F             0.492
+                               bertscore-sentence-mnli-bart-entail_contradict     P             0.578
+                                                                                  R             0.282
+                                                                                  F            -0.057
+                               bertscore-sentence-mnli-deberta-not_neutral        P             0.290
+                                                                                  R            -0.093
+                                                                                  F            -0.081
+                               bertscore-sentence-mnli-deberta-entail_only        P             0.653
+                                                                                  R             0.457
+                                                                                  F             0.471
+                               bertscore-sentence-mnli-deberta-entail_contradict  P             0.654
+                                                                                  R             0.330
+                                                                                  F            -0.004
